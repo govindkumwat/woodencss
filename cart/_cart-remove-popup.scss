@@ -1,0 +1,21 @@
+.ws-cart-remove{
+    background:$alert-success; 
+    text-align: left;
+    border:1px solid #6fbf81;
+    transition:0.3s all ease;
+    margin:0 auto 5px;
+        p{ 
+            @include font-size(13px); 
+            line-height:18px;
+            color:$secondary-color;
+            padding:$space5+3 $space10;
+        }
+        .undo-text{
+            display: inline-block;
+            color: $secondary-color;
+            font-family: $robotomedium;
+            text-decoration: underline;
+            font-size: 14px;
+            margin-left:10px;
+        }
+}

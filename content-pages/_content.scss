@@ -1,0 +1,49 @@
+.privacy-polices{  position:relative;
+       aside{ background:#F9F9FA; padding:$space15; width:270px; float:left;} 
+      .heading{@include font-size(18px); color:#4A4A4A;}
+      
+      .side-menu{ padding:0; margin:0;
+            li{ display:block; border-bottom:$common-border;
+             &:last-child{ border-bottom:none;} 
+            }
+            a{@include font-size(14px); color:#515151; padding:$space10 0; display:block;
+             &:hover, &.active{ color:$color-warning;}
+            }
+        }
+      
+
+      article{ width:72%; float:right; 
+          ol{ padding:0 0 0 $space30; margin:$space0 0 $space15; 
+          li{ color:#4A4A4A; @include font-size(14px); padding-bottom:$space10;}
+      }
+      
+       ul{ padding:0 0 0 $space20; margin:$space10 0 $space20; 
+          li{ color:#4A4A4A; @include font-size(14px); padding-bottom:$space10; 
+           &:before{ @include size(10px); background:#404040; @include border-radius(100%); content:''; display:inline-block; margin-right:$space10}
+          }
+       }
+      
+      }
+      h1, h3{ color:#4A4A4A; @include font-size(18px); font-weight:normal; margin:0;}
+      p{color:#4A4A4A; @include font-size(14px); padding:$space15 0;}
+       
+    
+      
+}
+
+
+
+
+
+
+
+@media #{$screen-desktop}{
+   .privacy-polices article{ width:70%;}   
+   
+}
+
+@media #{$screen-tablet}{
+   .privacy-polices article{ width:68%;}   
+   .privacy-polices aside{ width:220px;}
+    
+}

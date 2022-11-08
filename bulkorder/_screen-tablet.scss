@@ -1,0 +1,262 @@
+@media screen and (max-width:1024px) {
+  .bulk-banner {
+    padding: 30px 0;
+    .detail-text{font-size: 15px;}
+    span {
+      @include font-size(16px);
+    }
+
+    .bulk-banner-heading {
+      @include font-size(40px);
+      line-height: 46px;
+    }
+
+    .bulk-form {
+      max-width: 350px;
+    }
+
+    .bulk-heading {
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn-warning {
+    @include font-size(16px);
+    display: inline-block;
+  }
+
+  .order-with-us {
+    margin: 20px auto;
+
+    article {
+      min-width: 300px;
+      padding: 20px;
+
+      .list {
+        margin-top: 20px;
+      }
+    }
+
+    .title {
+      @include font-size(20px);
+      line-height: 26px;
+    }
+  }
+
+  .offer-banner {
+    margin: 15px auto;
+    padding: 10px 0;
+  }
+
+  .home-solution {
+    padding: 40px 0;
+
+    .home-list {
+      padding-top: 0;
+
+      a {
+        margin: 0 0 $space25;
+      }
+    }
+  }
+
+  .store-block {
+    padding: 35px 0;
+
+    figure {
+      max-width: 630px;
+      margin: 0 auto;
+    }
+  }
+
+  .warehouse-block {
+    padding: 35px 0;
+
+    &::before {
+      top: 55%;
+    }
+
+    .warehouse-list {
+      padding: 15px 0 0;
+    }
+  }
+
+  .warehouse-wrpr {
+    padding: $space30+5px 0;
+  }
+
+  .faq-section {
+    padding: 40px 0;
+
+    .faq-wrpr {
+      padding: 25px;
+      margin-top: 10px;
+
+      .qusTab {
+        padding: 12px 10px;
+        @include font-size(15px);
+
+        &::after {
+          font-size: 18px;
+        }
+      }
+
+      .AnsBox {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+@media #{$screen-tablet} {
+  .bulk-banner {
+    background-position: top;
+
+    .bulk-banner-heading {
+      @include font-size(35px);
+      line-height: 40px;
+    }
+
+    .detail-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 10px auto 5px;
+    }
+
+    .bulk-form {
+      max-width: 280px;
+      padding: 15px;
+
+      .bulk-heading {
+        @include font-size(19px);
+        line-height: 23px;
+      }
+
+      .field {
+        input[type="submit"] {
+          @include font-size(16px);
+        }
+      }
+    }
+  }
+
+  .customizing-furniture {
+
+    ul {
+      margin: 0;
+
+      li {
+        figcaption {
+          padding: 10px 6px 20px;
+          @include font-size(14px);
+        }
+      }
+    }
+  }
+
+  .bulk-title {
+    @include font-size(24px);
+    line-height: 30px;
+
+    .small-title {
+      margin-top: 5px;
+    }
+  }
+
+  .order-with-us {
+    margin: 10px auto;
+
+    article {
+      min-width: 230px;
+      padding: 15px;
+      margin-right: 20px;
+
+      &::before {
+        @include size(90px, 90px);
+        top: -30px;
+      }
+
+      .list {
+        margin-top: $space15;
+
+        li {
+          @include font-size(13px);
+          line-height: 19px;
+          margin-bottom: 6px;
+        }
+      }
+
+      img {
+        height: 65px;
+      }
+    }
+
+    .title {
+      @include font-size(17px);
+      line-height: 22px;
+      margin: 5px auto 0;
+    }
+  }
+
+  .about-work {
+    padding: 30px 0;
+  }
+
+  .home-solution {
+    padding: 30px 0;
+
+    .home-list {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5px 0 0;
+      }
+    }
+  }
+
+  .store-block {
+    padding: 30px 0;
+
+    figure {
+      margin-top: 15px;
+    }
+  }
+
+  .warehouse-block {
+    padding: 30px 0;
+
+    .warehouse-list {
+      padding: 0;
+    }
+    .slick-dots li button:before{background:$secondary-300;border-radius: 50%;}
+    .slick-dots li.slick-active button:before{background:$primary-color;}
+  }
+
+  .warehouse-wrpr {
+    padding: 10px 0 30px;
+
+    .left-box {
+      margin-right: 20px;
+
+      .bulk-title {
+        margin: 0 0 10px;
+      }
+    }
+
+    .right-box {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .faq-section {
+    padding: 30px 0;
+    .faq-wrpr{
+      padding: 20px;
+    margin-top: 0px;
+    &::after{display: none;}
+    }
+  }
+  .customer-reviews .in figure{height: 170px;}
+}

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'robotobold';
+    src: 
+           url('#{$fonts-path}/roboto-bold-webfont.woff') format('woff'),
+        url('#{$fonts-path}/roboto-bold-webfont.eot') format('eot'),
+        url('#{$fonts-path}/roboto-bold-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display:swap;
+} 
+
+@font-face {
+    font-family: 'robotomedium';
+    src: 
+        url('#{$fonts-path}/roboto-medium-webfont.woff') format('woff'),
+        url('#{$fonts-path}/roboto-medium-webfont.eot') format('eot'),
+        url('#{$fonts-path}/roboto-medium-webfont.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+     font-display:swap;
+}  
+
+@font-face {
+    font-family: 'robotoregular';
+    src: 
+        url('#{$fonts-path}/roboto-regular-webfont.woff') format('woff'),
+        url('#{$fonts-path}/roboto-regular-webfont.eot') format('eot'),
+        url('#{$fonts-path}/roboto-regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  font-style: normal;
+  font-weight: normal;
+   font-display: swap; 
+  src: 
+       url('#{$fonts-path}/Roboto-Light-webfont.woff') format('woff'),
+       url('#{$fonts-path}/roboto-light-webfont.woff2') format('woff2'),
+        url('#{$fonts-path}/roboto-light-webfont.eot') format('eot'),
+        url('#{$fonts-path}/roboto-light-webfont.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'sacramentoregular';
+    src: url('#{$fonts-path}/sacramento-regular-webfont.woff2') format('woff2'),
+         url('#{$fonts-path}/sacramento-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+}
+@font-face {
+    font-family: 'blenda_scriptregular';
+    src: url('#{$fonts-path}/blenda_script-webfont.woff2') format('woff2'),
+         url('#{$fonts-path}/blenda_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+} 
+
+@font-face {
+    font-family: "Open Sans";
+    src: 
+        url('#{$fonts-path}/OpenSans-Regular.woff') format('woff'),
+        url('#{$fonts-path}/OpenSans-Regular.eot') format('eot'),
+        url('#{$fonts-path}/OpenSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  font-display: swap; 
+
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: 
+        url('#{$fonts-path}/OpenSans-SemiBold.woff') format('woff'),
+        url('#{$fonts-path}/OpenSans-SemiBold.eot') format('eot'),
+        url('#{$fonts-path}/OpenSans-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+     font-display: swap; 
+}
+@font-face{ 
+    font-family:'pangramlight';  
+    src:url('#{$pangram-path}/pangram-light-webfont.woff2') format('woff2'),
+        url('#{$pangram-path}/pangram-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+} 
+@font-face{
+    font-family:'pangrammedium';
+    src:url('#{$pangram-path}/pangram-medium-webfont.woff2') format('woff2'), 
+        url('#{$pangram-path}/pangram-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+     font-display: swap; 
+} 
+@font-face{ 
+    font-family:'pangramregular';
+    src:url('#{$pangram-path}/pangram-regular-webfont.woff2') format('woff2'),
+        url('#{$pangram-path}/pangram-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+}
+@font-face{
+    font-family:'pangrambold';
+    src:url('#{$pangram-path}/pangram-bold-webfont.woff2') format('woff2'),
+        url('#{$pangram-path}/pangram-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+}
+@font-face{
+    font-family:'pangramblack';
+    src:url('#{$pangram-path}/pangram-black-webfont.woff2') format('woff2'),
+        url('#{$pangram-path}/pangram-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap; 
+} 
+@font-face {
+    font-family: 'Spartan', sans-serif;
+    src: url('#{$fonts-path}/spartan-variablefont_wght-webfont.woff2') format('woff2'),
+         url('#{$fonts-path}/spartan-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

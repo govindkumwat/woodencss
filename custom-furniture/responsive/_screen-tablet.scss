@@ -1,0 +1,33 @@
+//Home Tablet
+@media #{$screen-tablet}{
+   .custm-banner { height: 380px;
+        .container { padding: $space20 0; }
+        aside { margin-left: $space0; }
+    }
+    .banner-customize { padding: $space20; width: 300px;
+        ul {
+            li { padding: $space15; }
+        }
+    }
+    .custome-imagine {
+        ul {
+            li {
+                img { width: 135px; }
+            }
+        }
+    }
+    .custom-make {
+        ul { width: 710px; }
+    }
+    .perfect-furniture {
+        ul {
+            li{ @include font-size(14px); line-height: normal;
+                &:first-child { margin-top: 75px; }
+                br { display: none; }
+            }
+        }
+    }
+    .custom-heading { @include font-size(25px); }
+    .thanku-success-msg{ width: 400px; } 
+}
+

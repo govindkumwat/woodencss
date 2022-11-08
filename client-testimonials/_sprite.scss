@@ -1,0 +1,21 @@
+.svg-star-dims {
+        @include size(25px);
+        background: url("../mobile/images-m/product-detail-new/unfill-str.svg") no-repeat;
+}
+
+.svg-star-off {
+        background: url("../mobile/images-m/product-detail-new/unfill-str.svg") no-repeat;
+}
+
+.svg-star-off-dims {
+        @include size(25px);
+        background: url("../mobile/images-m/product-detail-new/star.svg") no-repeat;
+}
+.star-off{
+        
+        background: url("../images/testimonials/star-gray.svg") no-repeat;
+}
+.star-on{
+        
+        background: url("../images/testimonials/star.svg") no-repeat;
+}

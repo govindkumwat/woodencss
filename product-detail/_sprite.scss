@@ -1,0 +1,82 @@
+%svg-common {
+	
+        background: url("../images/product-detail/sprite.view-b7ee3ad5.svg") no-repeat;
+}
+ 
+.svg-cat-video {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-cat-video-dims {
+	width: 40px;
+	height: 40px;
+}
+
+.svg-largein {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-largein-dims {
+	width: 86px;
+	height: 57px;
+}
+
+.svg-star {
+	@extend %svg-common;
+	background-position: 0 98.68591907754636%;
+}
+
+.svg-star-dims {
+	width: 30.746px;
+	height: 29.241px;
+}
+
+.svg-star-off {
+	@extend %svg-common;
+	background-position: 32.27790958909862% 98.68591907754636%;
+}
+
+.svg-star-off-dims {
+	width: 30.746px;
+	height: 29.241px;
+}
+
+
+
+//normal;
+
+%svg-commonone {
+	background: url("../images/product-detail/sprite.view-56c440ef.svg") no-repeat;
+}
+
+.svg-attachment {
+	@extend %svg-commonone;
+	background-position: 0 0;
+}
+
+.svg-attachment-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-customize {
+	@extend %svg-commonone;
+	background-position: 100% 0;
+}
+
+.svg-customize-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-truck-black {
+	@extend %svg-commonone;
+	background-position: 0 100%;
+}
+
+.svg-truck-black-dims {
+	width: 22px;
+	height: 16px;
+} 

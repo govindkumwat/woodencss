@@ -1,0 +1,44 @@
+
+.title{font-size:22px;font-family:robotomedium;color:#333;font-weight:400;padding:10px 0}
+.orderde .title small{padding-left:5px}
+.orderde .detail table{font-size:15px;color:#3c3c3c;border:1px solid #ccc;padding:16px 12px;}
+.orderde .detail table.one tr td{padding: 0 2px; display:inline-block;}
+.orderde .two{ padding:0!important; margin:$space20 0;}
+.orderde .two tr th{ background:#e3e3e3; font-weight:normal; padding:$space5; color:#000;} 
+.orderde .two tr td{  padding:$space5;border-right:1px solid #ccc; width:50%;}
+.orderde  table tr td b{ font-weight:normal; font-family:$robotomedium;}
+
+.orderde .steps .tooltip{ display:none;}
+
+.order-track{  
+
+    
+    
+              .product-informations{ border:$common-border;
+               thead{ 
+                   th{padding:$space5 $space5+3; background:#e3e3e3; @include font-size(15px); font-weight:normal;}
+               }
+               tbody{ 
+                   td{@include font-size(13px); color:#505050; padding:$space5 $space5+3;border:$common-border; border-bottom:none; border-right:none; vertical-align:top;}
+               } 
+                  
+              }
+             
+             
+              .order-status{ margin-top:$space40; position:relative; text-align:center;
+                   li{display:inline-block; padding:0 $space30+2 $space20; margin:0 -4px; position:relative; 
+                      a{color:#505050; @include font-size(13px);}
+                      &:after{@include size(20px); background:$bg-white; border:2px solid #e5e5e5; content:"";  text-align:center; line-height:$space20; position:absolute; left:0; right:0; margin:0 auto; bottom:-15px; @include border-radius(100%);}
+                      &:before{content:"";  position:absolute; left:0;  bottom:-8px; @include size(100%,8px); background:#e3e3e3;}
+                    &.select{
+                              &:before{ background:#0fb60f;}   
+                              &:after{ border-color:#0fb60f; content:"\f00c"; font-family:$fontawesome; color:#0fb60f;}
+                          
+                    }
+                    &:first-child, &:last-child{&:before{@include border-radius(5px);}}
+                  }
+               
+              }
+}
+
+

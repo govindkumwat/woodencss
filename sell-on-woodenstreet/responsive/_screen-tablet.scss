@@ -1,0 +1,78 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .sellon{
+        .m-police{margin-top: 25px;}
+        .common-text{ margin: 0;
+            font-size:$font-size-25+2;
+            p{
+                padding: $space10 0;
+            }
+        }
+    .sellon-banner{
+                 height: auto; background-size: 100%; background-position: right top; padding: $space40 0 $space25;
+                 article{
+                     padding-top: 0;
+                 }
+                 .heading{
+                     font-size: $space20+2; margin: 0;
+                 } 
+                 p{
+                     font-size: $font-size-10+2;
+                 }
+    }
+    .grow-business{
+        .grow-process-mob{
+            li{width: 210px;}
+            li.million{
+                top: 60px;
+            }
+            small{
+                font-size: $font-size-15 - 1;
+            }
+            p{
+                font-size: $font-size-10+2; line-height: 20px;
+            }
+            li.support{
+                    left: 40px; top: 180px;
+            }
+            li.shipping{
+                    right: 35px; top: 200px;
+            }
+            li.contact{
+                top: 220px;
+            }
+            .number{
+                    font-size:$font-size-15+1; padding-top:$space10+2;
+                    p{
+                        font-size: $font-size-10+4;
+                    }
+            } 
+        }
+    }
+    .faq-box{
+        margin-top: $space30+5;
+        .tab-content{
+            margin-left: $space15+3;
+        }
+        .smk_accordion{
+            .accordion_in{
+                text-align: left;
+            }
+        }
+        .tab-links{
+            a{
+                line-height: 20px;font-size: 14px;
+            }
+        }
+    }
+    .m-police{
+        .service{
+            li{
+                width: 32%; padding: $space15;
+            }
+        }
+    }
+    }
+
+}
+

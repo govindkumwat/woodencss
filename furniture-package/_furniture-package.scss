@@ -1,0 +1,89 @@
+// Furniture Package
+.furniturepackage{ 
+    .container-1220{ width:1220px; margin:0 auto;}  
+  
+   .banner{ img{ vertical-align:bottom;}}
+    .content{ text-align:center;  margin:$space20 auto 0; border-bottom:$common-border; padding-bottom:$space20;
+             h1{  font-family: $robotomedium; @include font-size(24px); font-weight:normal;}
+              p{font-size:$font-size-10+3; font-family:$robotolight; line-height:$space20+2;}
+    }
+    
+    .packages{  display: flex; flex-wrap:wrap; 
+           li{display: flex; justify-content:space-around; width:48%; align-items:center; margin-top:$space30+5;} 
+           img{ width:55%;}
+           article{ text-align:center; width:36%;} 
+            strong{@include font-size(30px); font-family:$robotomedium; font-weight:500; color:#333333; padding-bottom:$space10; display:block;}
+            span{@include font-size(25px); font-family:$robotobold; color:#333333; display:block; padding-bottom:$space5;}
+            p{@include font-size(16px); display:block;  font-family:$robotolight;}
+           small{@include font-size(13px);  font-family:$robotolight;}
+          .view-details{@include font-size(13px); color:$color-dark-gray;  font-family:$robotolight; border:1px solid #a1a1a1; margin-top:$space25;  text-align:center; display:block; padding:$space5 $space10; }
+      
+    }
+    
+    .creatown{text-align:center;  margin:$space40+40 auto 0;   padding-bottom:$space20; background:url("#{$images-path}/furniture-package-details/inquery.png") no-repeat right top;
+            span{font-size:$font-size-30;font-family: $robotomedium; text-transform: uppercase; padding-bottom:$space15; display:block;}
+            p{font-size:$font-size-10+6; font-family:$robotolight;}
+            .inquiry-btn {@include font-size(20px); margin-bottom:$space40+10;  font-family:$robotolight; color:$color-dark-gray; border:2px solid #f67e7d; @include border-radius(4px); margin-top:$space15; text-align:center; display:inline-block; padding:$space10 $space40+20;}
+       }
+    
+    .happy_cust{ display: flex; padding:$space40+20 0; justify-content:space-between; align-items:center;
+            article{width:43%; text-align:left;
+             img{ vertical-align:middle; float:left;}
+             span{@include font-size(53px); font-family:$robotomedium;}
+             p{font-size:$font-size-10+6;font-family:$robotolight; padding-top:$space5;}
+            .view-review{@include font-size(14px); color:$color-dark-gray; border:2px solid #000; margin-top:$space20;  text-align:center; display:inline-block; padding:$space5+4 $space40;}
+            .view-review:hover{border:2px solid #a1a1a1;}
+    }
+    
+    figure{width:57%; }
+    }
+    
+       .heading{font-size:$font-size-20;  text-align:center;  position: relative;
+          &:before{ position:absolute; left:0; top:13px; content:""; @include size(100%,1px); background:#d1d2d4;}
+           span{ background:$bg-white; padding:0 $space10; display:inline-block; z-index:1; position:relative;}
+       }
+    .morereason{ margin-bottom:$space30; }
+    
+    .reasons-list{
+        display: flex; 
+        justify-content:space-around;  
+        margin:40px auto;
+        width:80%;
+         li{@include all-furniture-package-icon-sprites; text-align:center; width:12%;}
+         i{ @include size(75px); display: block; margin:0 auto;}
+    }
+      
+       
+   
+    
+   
+    
+}
+
+
+//responsive 
+@media #{$screen-desktop}{
+     .furniturepackage{ 
+         .container-1220{ width:960px;} 
+         .creatown{ margin:$space40+20 auto 0; padding-bottom:0;}
+             .reasons-list{width:auto;}
+       }
+    
+}
+
+@media #{$screen-tablet}{
+    .furniturepackage{ 
+        .container-1220{ width:730px;}  
+        .packages{
+            strong{@include font-size(25px); padding-bottom:$space5;}
+              p{@include font-size(14px);}
+             span{@include font-size(20px);}
+            .view-details{ margin-top:$space0;}
+        }
+     .happy_cust{ padding:$space40 0;}
+    }
+    
+}
+
+
+

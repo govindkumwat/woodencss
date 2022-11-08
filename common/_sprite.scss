@@ -1,0 +1,114 @@
+%svg-common {
+	background: url("svg/sprite.view-b8431e7e.svg") no-repeat;
+}
+
+.svg-call {
+	@extend %svg-common;
+	background-position: 65.60310123751306% 96.93548387096774%;
+}
+
+.svg-call-dims {
+	width: 20.93px;
+	height: 21px;
+}
+
+.svg-cart {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 60.794638583054095%;
+}
+
+.svg-cart-dims {
+	width: 22px;
+	height: 20.33px;
+}
+
+.svg-email {
+	@extend %svg-common;
+	background-position: 0 32.88490284005979%;
+}
+
+.svg-email-dims {
+	width: 22px;
+	height: 16.1px;
+}
+
+.svg-interior {
+	@extend %svg-common;
+	background-position: 66.66666666666667% 0;
+}
+
+.svg-interior-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-like {
+	@extend %svg-common;
+	background-position: 0 62.459016393442624%;
+}
+
+.svg-like-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-notification {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-notification-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-search {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-search-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-support {
+	@extend %svg-common;
+	background-position: 100% 36.0655737704918%;
+}
+
+.svg-support-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-support-fill {
+	@extend %svg-common;
+	background-position: 0 98.52459016393442%;
+}
+
+.svg-support-fill-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-truck {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 98.52459016393442%;
+}
+
+.svg-truck-dims {
+	width: 20px;
+	height: 22px;
+}
+
+.svg-truck-b {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 0;
+}
+
+.svg-truck-b-dims {
+	width: 22px;
+	height: 16px;
+}
+

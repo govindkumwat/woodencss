@@ -1,0 +1,134 @@
+
+//common css
+.container-1425 { max-width:1400px; margin:0 auto} 
+.black_btn { background: $bg-black; font-family:$robotoregular; text-align: center; color:$color-white; padding: $space15 $space30; display: inline-block; @include border-radius(3px); text-transform: uppercase; @include font-size(16px);}
+.restaurant_heading{ font-family:$robotobold; @include font-size(30px); font-weight: normal; padding:$space30 0;
+         p{@include font-size(14px); font-family:$robotoregular; margin-top:$space10;}
+         span{ font-family:$robotolight; }
+}
+.text_center{ text-align:center;}
+
+.figure-lazy { position: relative; background: $bg-light-soft;          
+  img{position:absolute; top:0; left:0; bottom:0; right:0 ;margin:auto; width:auto;}
+   &:before {content:'';display:block; padding-top:100%; }
+  }
+
+.banner_top {  position: relative; height: 436px; background-repeat: no-repeat; background-position: center; @include font-size(40px); font-family: $robotolight;  
+             
+             &:before{content: ''; display: inline-block; height: 100%; vertical-align: middle;}
+             
+             
+  article { text-align: left; line-height: normal;  display: inline-block;  vertical-align: middle; margin-left: 100px;
+    p { @include font-size(20px); font-family: $robotolight; margin: $space10 0 $space15+1; }
+  }
+
+  h1 { font-family: robotomedium; font-weight: normal; margin: $space0;}
+  
+}
+
+.most_link { text-align: center; border-bottom: $common-border; padding: $space5 0; 
+     a { padding: $space10; margin: 0 $space10; display: inline-block; @include font-size(16px);  color: $color-black;
+      &:hover, &:last-child { color:$color-orange;}
+      
+     }
+     &.fixed { position: fixed;  top: 0; z-index: 999; background: #fff; left: 0; right: 0; padding: 3px; max-width: 100%; }
+}
+
+
+.category_main{ display:flex; flex-wrap:wrap; flex:1; justify-content: space-between; text-align:center;                     
+                a{ background: #F5F5F5;  width:23.5%; padding:$space25; margin-bottom:2%; color:$color-black; @include font-size(16px) }                 
+                i{ @include size(160px,116px); display: block; margin:0 auto $space5; background-image: url(../images/generated/restaurant/icons-s9d8f02190f.png);
+                  background-repeat: no-repeat;}   
+
+}
+   
+
+.top_selling{
+        li{display:inline-block; margin-right:$space30; padding-bottom:$space5;
+         &.active, &:hover{ border-bottom:1px solid $color-orange;}
+        } 
+        a{ @include font-size(16px); color: $color-black;
+          
+        }
+        section{ display:flex; text-align:center; margin-top:$space30;
+              a{ width: 23.5%; margin-right: 22px; 
+                &:last-child { margin-right: $space0; }
+              }
+              figure { @extend .figure-lazy; margin-bottom: $space5;
+                 &:before { padding-top:98%; } 
+              }
+        }
+        
+    
+}
+
+.process{ background-image: linear-gradient(50.69deg, rgba(253, 109, 74, 1) 0%, rgba(251, 89, 79, 1) 43.82%, rgba(249, 62, 86, 1) 100%); margin: $space25*2 0; padding:$space30*2 0; color:$color-white; 
+        .heading{  @include font-size(25px); margin-bottom:$space20; 
+                   &:after{ border-bottom:2px solid $color-white; content:''; display:block; width:120px; padding-top:$space15 } 
+        } 
+        .heading_bottom { display:flex; flex-wrap:wrap;
+                        .title{ font-family:$robotobold; font-weight:normal; @include font-size(45px); line-height:normal; border-right:2px solid $color-white;; padding-right:$space25*2}
+                        p{ width: 40%;  padding-left:$space40}
+                        
+        }
+        
+        .black_btn{ background: none; border:2px solid $color-white; margin-top:$space20; height:100%; width: 22%; padding: $space15 $space0; }         
+       
+        .section_bottom{ display:flex;}
+        ul{ display:flex; width:72%; margin:$space30 0 0 6%; justify-content: space-between; 
+            li{ border:2px solid $color-white; @include border-radius(35px); width:23%; padding:$space30 0; text-align:center; 
+                img{ display:block; margin:0 auto $space10; height: 60px; }   
+            }
+        }  
+         
+}
+
+.customize{ display:flex; align-items:center; justify-content: space-between; border-bottom:$common-border; margin-bottom: $space15*2;  padding-bottom:$space25*2;          
+           article { width:59%;
+               + article { width:30%}
+                 &:before { padding-top: 81%; } 
+           }
+           .heading{ font-family:$robotobold; @include font-size(25px); font-weight: normal; line-height: normal;
+                     span{ display:block; @include font-size(50px);} 
+           }  
+           p{ line-height:30px; margin: $space15 0}
+}
+
+.completed_projects { display: none; padding-bottom: $space40; border-bottom: $common-border;
+  img { margin: auto; }
+  article  { margin: $space5 $space15 $space15; }
+  figure { @extend .figure-lazy; @include box-shadow(0px 3px 6px rgba(0,0,0,0.15)); padding: $space20; background: $bg-white;
+     &:before { padding-top: 76%; } 
+  }
+}
+
+.makes_stand { display: flex; justify-content: space-between; align-items: center; padding: $space40 $space0;
+  article { @include font-size(25px); font-family: $robotobold; width: 30%; }
+  ul{ width: 60%; @include font-size(18px);
+    li{ border-bottom: $common-border; margin-bottom: $space20; float: left;
+      p { padding: $space5+2 $space0 $space20; }
+      i{ @include size(45px, 40px); float: left; margin: $space25 $space20 $space30+5 0; background-image: url(../images/generated/restaurant/icons-s9d8f02190f.png);
+        background-repeat: no-repeat;}  
+        .icons-best-price{background-position: 0 0;} 
+        .icons-quality { background-position: 0 -700px;}
+        .icons-dining-table { background-position: 0 -312px;}
+        .icons-carpenter {background-position: 0 -272px;}
+      &:last-child { border-bottom: none; margin-bottom: $space0; }
+    } 
+  }
+  p { @include font-size(14px); font-family: $robotolight; padding: $space15 $space0 $space20; }
+}
+
+.restaurant_form { background: $bg-black; text-align: center; padding: $space30 $space0 $space40; margin-bottom: $space30;
+    .restaurant_heading { color: $color-white; }
+    img { vertical-align: middle;}
+    label { color: #737373; margin-right: $space20; @include font-size(15px); font-family: $robotobold; display: inline-block; margin-top: $space10; }
+    .form-control { background: $bg-white; padding: $space10 $space15; width: 350px; height: 42px;@include border-radius(5px); display: inline-block; vertical-align: top; }
+     form { width: 500px; display: inline-block; vertical-align: middle; text-align: right;
+        div { margin-bottom: $space15; }
+     }
+     textarea.form-control { height: 70px; }
+     .black_btn { background: $bg-orange; width: 350px; cursor: pointer; }
+}
+.resto-common { margin: $space0 auto $space40; }
+.last-btn { margin-top: $space10; }

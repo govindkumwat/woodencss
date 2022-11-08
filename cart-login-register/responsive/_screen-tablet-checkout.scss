@@ -1,0 +1,53 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    // checkout page
+.checkout-new{
+    .check-left{//width: 510px; 
+                width: 495px;
+                .form-group{
+                    label{float: none; width: auto; display: block;}
+                    .form-control{width: 100%;}
+                }
+    }
+    .check-right{width: 210px;}
+}
+.ship-address{width: 253px;}
+.ship-payment{width: 220px;}
+
+//
+.billing-address{width: 48%;
+                .form-half{margin-top: $space5;}
+}
+.shipping-address{margin-right: $zero;}
+
+
+
+//old design
+.checkout-new .checkout-step ul li+li+li.active a, .checkout-new .checkout-step ul li+li.active a, .checkout-new .checkout-step ul li.active a {
+    background: #5F6064;
+    padding-right: 19px;
+    border-left: 1px solid #fff;
+    width: auto;
+    margin-left: 0;
+}
+.checkout-new .checkout-step ul li a {
+    padding: 11px 20px;
+}
+.checkout-new .check-left .form-group .form-half {
+    width: 46%;
+}
+.checkout-new .checkout-step ul li+li+li.active a, .checkout-new .checkout-step ul li+li.active a, .checkout-new .checkout-step ul li.active a {
+    background: #5F6064;
+    padding-right: 19px;
+    border-left: 1px solid #fff;
+    width: auto;
+    margin-left: 0;
+}
+.checkout-new .checkout-step ul li a {
+    padding: 11px 20px;
+}
+.checkout-new .checkout-step ul li+li {
+    background: 0 0;
+}
+}
+

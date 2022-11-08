@@ -1,0 +1,1251 @@
+.noscroll {
+  overflow: hidden;
+}
+
+.figure {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+  }
+
+  img {
+    position: absolute;
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    mix-blend-mode: darken;
+  }
+}
+
+.workstation-banner {
+
+
+  .Topsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .MainSlider {
+    width: 73%;
+    margin: 0 auto;
+    margin-right: 10px;
+
+    figure {
+      @extend .figure;
+
+      &:before {
+        padding-top: 49% !important;
+      }
+    }
+
+    .slick-track {
+      overflow: hidden;
+    }
+
+    .slick-arrow {
+      background: #ffffffa1;
+      width: 30px;
+      height: 30px;
+
+    }
+
+    .slick-prev {
+      left: 0;
+      z-index: 1;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .slick-prev,
+    .slick-next {
+      &:before {
+        font-size: 16px;
+        color: $secondary-color;
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  .rightBanner {
+    width: 26%;
+
+    figure {
+      @extend .figure;
+      margin: 0;
+
+      &:before {
+        padding-top: 137% !important;
+      }
+    }
+  }
+
+
+}
+
+.headingflex {
+  display: flex;
+  justify-content: space-between;
+
+  .title {
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    .subtitle {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+
+  .view-link {
+    color: $secondary-color;
+    font-family: $pangrammedium;
+    padding: 10px 0 0;
+    font-size: 15px;
+    display: block;
+
+    svg {
+      vertical-align: sub;
+      margin-left: 3px;
+    }
+  }
+}
+
+.common-btn {
+  color: $color-white;
+  background: $primary-color;
+  @include font-size(17px);
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 8px $space30+8;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition: 0.3s all ease-in-out;
+  font-family: $pangrammedium;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    background: $bg-white;
+  }
+
+  &.loadr {
+    position: relative;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      border: 3px solid $light-gray;
+      border-top: 3px solid $primary-color;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      vertical-align: bottom;
+      margin-left: 6px;
+      animation: spin 2s linear infinite;
+      vertical-align: sub;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+
+.common-space {
+  margin: $space25 auto !important;
+  padding: $space30+5 0;
+}
+
+.title {
+  @include font-size(22px);
+  line-height: 30px;
+  color: $secondary-color;
+  font-family: $pangrammedium;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: $space30;
+
+  .subtitle {
+    @include font-size(18px);
+    line-height: 23px;
+    color: $secondary-color;
+    font-family: $pangramregular;
+    display: block;
+  }
+}
+
+.Ws-workspace {
+  .more-content {
+    position: relative;
+    height: 22px;
+    max-width: 880px;
+    margin: 0px auto 20px;
+    text-align: center;
+    overflow: hidden;
+    @include font-size(14px);
+    line-height: 20px;
+    color: $secondary-600;
+    font-family: $pangramregular;
+    letter-spacing: 0.02em;
+
+    b,
+    strong,
+    a {
+      font-family: $pangrammedium;
+      color: $secondary-color;
+    }
+
+    &.show {
+      height: auto;
+
+      .show-more {
+        position: unset;
+
+        &::before {
+          content: '-';
+          line-height: 20px;
+        }
+      }
+    }
+
+    .show-more {
+      bottom: 0px;
+      right: 0px;
+      cursor: pointer;
+      color: #E57200;
+      padding-left: 10px;
+      background: #fff;
+      position: absolute;
+
+      &:before {
+        content: "+";
+        font-size: 24px;
+      }
+    }
+  }
+
+  .wrokspace-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+
+    .single-box {
+      width: 24%;
+      margin: 0 0 35px;
+      display: block;
+
+      figure {
+        @extend .figure;
+
+        &:before {
+          padding-top: 76%;
+        }
+      }
+
+      img {
+        transition: 0.3s all ease-in-out;
+      }
+
+      &:hover {
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  figure {
+    margin-bottom: 6px;
+
+    img {
+      border-radius: 2px;
+    }
+  }
+
+  .name {
+    @include font-size(17px);
+    line-height: 22px;
+    color: $secondary-color;
+    font-family: $pangramregular;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+  }
+
+  .price {
+    @include font-size(14px);
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    padding: 3px 0 0;
+    display: inline-block;
+    font-family: $pangramregular;
+
+    b {
+      font-family: $pangrammedium;
+      font-weight: normal;
+    }
+  }
+}
+
+.talk-designer-form {
+  background: $bg-white;
+  padding: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+  @include border-radius(4px);
+  width: 30%;
+
+  .title {
+    margin-bottom: 15px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+
+    small {
+      border-bottom: 1px solid #dddddd;
+      display: block;
+      width: 30%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .field {
+    margin-bottom: 15px;
+
+    .field__input {
+      border-color: #dedede;
+      height: 50px;
+    }
+  }
+
+  .font-14 {
+    @include font-size(13px);
+    color: $text-color;
+  }
+
+  .consultation-btn {
+    @include font-size(17px);
+    padding: $space10 $space10+2;
+    display: block;
+    text-align: center;
+  }
+}
+
+.talk-designer-popup {
+  position: relative;
+
+  .close-popup {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .inner-wrpr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+
+    .talk-designer-form {
+      width: auto;
+      box-shadow: none;
+
+      .common-btn {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 0;
+
+        &:hover {
+          background-color: #ff6f3c;
+          color: $color-white;
+          border-color: #ff6f3c;
+        }
+      }
+    }
+
+    .left {
+      width: 412px;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+.workplace-planning {
+  background: url('../images/office-furniture/workplace-design.jpg')no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+
+  .container-fluid {
+    max-width: 90%;
+  }
+
+  .title {
+    text-align: left;
+    @include font-size(36px);
+    line-height: 45px;
+    margin-bottom: $space20;
+
+    .subtitle {
+      font-size: 15px;
+      line-height: 20px;
+      margin: 10px 0 0;
+    }
+  }
+
+  .common-btn {
+    padding: 8px 18px;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+}
+
+.rectangle {
+  figure {
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.top-selling,
+.sliderSection {
+  position: relative;
+
+  &.no-bg {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 45%;
+    background: #F1F9F9;
+  }
+
+  .workspace-box {
+    display: block;
+    margin: 0 7px;
+    color: $secondary-color;
+    font-family: $pangramregular;
+
+    &:hover {
+      img {
+        transform: scale(1.04);
+      }
+    }
+
+    .name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 95%;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    .price {
+      font-size: 14px;
+      margin: 4px 0 0;
+      letter-spacing: 0.02em;
+      font-family: $pangrammedium;
+
+      .offprice {
+        margin: 0 4px;
+        color: $secondary-600;
+        font-size: 13px;
+        font-family: $pangramregular;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .discount-tag {
+    @include font-size(13px);
+    font-family: $pangrammedium;
+    color: $success-color;
+  }
+}
+
+.sliderSection {
+  figure {
+    &:before {
+      padding-top: 69%;
+    }
+  }
+
+  &:before {
+    display: none;
+  }
+}
+
+.emi-banner {
+  background: $light-gray;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+
+  img {
+    padding: 0 30px;
+    max-width: 490px;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
+  small {
+    border: 1px solid #eee;
+    height: 90px;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+  }
+}
+
+.mb-view {
+  display: none;
+}
+
+.workspace-slider,
+.bannerSlider {
+
+
+  .slick-next,
+  .slick-prev {
+    width: 35px;
+    height: 35px;
+    background: $bg-white;
+    top: 44%;
+  }
+
+  .slick-prev {
+    left: 6px;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: 6px;
+  }
+
+  figure {
+    background: $light-gray;
+    @extend .figure;
+    margin-bottom: 6px;
+  }
+}
+
+.NewArrivals {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 45%;
+    background: #F1F9F9;
+  }
+
+  span {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+    font-family: $pangramregular;
+    font-size: 15px;
+    line-height: 20px;
+    color: $secondary-color;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    color: $secondary-color;
+
+    strike {
+      @include font-size(14px);
+      margin: 0 3px;
+    }
+  }
+
+  .container-1200 {
+    max-width: 96%;
+  }
+
+  label {
+    font-family: $pangrammedium;
+  }
+}
+
+.bannerSlider {
+  a {
+    margin-right: $space10;
+    display: inline-block;
+  }
+
+  figure {
+    &:before {
+      padding-top: 150%;
+    }
+  }
+}
+
+//responsive media scss
+@media only screen and (min-width:1400px) and (max-width:1550px) {
+  .workstation-banner {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:1366px) {
+  .workstation-banner {
+    height: 470px;
+  }
+
+  .Ws-workspace {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .workstation-banner {
+    height: 442px;
+
+    .heading {
+      font-size: 26px;
+      line-height: 36px;
+
+      .subheading {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .common-space {
+    padding: $space20 0;
+  }
+
+  .common-btn {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 8px 30px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+
+    .subtitle {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .Ws-workspace {
+    .wrokspace-list {
+      .single-box {
+        margin: 0 0 28px;
+      }
+    }
+
+    .name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .workspace-slider .slick-next {
+    right: 2px;
+  }
+
+  .headingflex {
+    .title {
+      .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        color: $secondary-600;
+      }
+    }
+
+    .view-link {
+      svg {
+        vertical-align: sub !important;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+  .common-space {
+    margin: 10px auto !important;
+  }
+
+  .workstation-banner {
+    height: 355px;
+  }
+
+  .Ws-workspace {
+    .name {
+      font-size: 15px;
+    }
+
+    .price {
+      padding: 0;
+    }
+  }
+
+  .talk-designer-popup {
+    .inner-wrpr {
+      width: 700px;
+
+      .left {
+        background: url(../images/office-furniture/banner-form.jpg) no-repeat;
+        background-size: cover;
+
+        img {
+          display: none;
+        }
+      }
+
+      .talk-designer-form {
+        width: 100%;
+
+        .title {
+          font-size: 26px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .workplace-planning {
+    padding: 35px 0;
+
+    .title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  .slick-dots {
+    text-align: center;
+    margin: 10px auto 0;
+
+    li {
+      &.slick-active {
+        button {
+          &:before {
+            background: $primary-color;
+          }
+        }
+      }
+
+      button {
+        &:before {
+          background: $secondary-500;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .workstation-banner {
+    height: 267px;
+
+    .heading {
+      font-size: 22px;
+      line-height: 31px;
+
+      .subheading {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .common-btn {
+    font-size: 15px !important;
+    line-height: 18px;
+  }
+
+  .title {
+    font-size: 20px !important;
+    line-height: 26px;
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .Ws-workspace {
+    .wrokspace-list {
+      .single-box {
+        width: 48%;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+
+  .workplace-planning {
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .emi-banner {
+    padding: 20px 0;
+
+    img {
+      padding: 0 15px;
+      max-width: 330px;
+      display: inline-block;
+    }
+
+    small {
+      height: 40px;
+      top: 20px
+    }
+  }
+
+}
+
+@media screen and (max-width:767px) {
+
+  .gray-bg {
+    background: $bg-white;
+  }
+
+  .main-slider {
+    figure {
+      position: relative;
+      overflow: auto;
+
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    .carousel__nav {
+      display: none;
+    }
+
+    .carousel__slide {
+      display: inline-block;
+    }
+  }
+
+  .title {
+    font-size: 18px !important;
+    line-height: 23px;
+    margin-bottom: 20px;
+    h2,h1,h3,h4,h5{margin:0;}
+    .subtitle {
+      font-size: 13px !important;
+    }
+  }
+
+  .workstation-banner {
+    padding: 30px 10px 210px;
+    background-position: 87%;
+
+    .heading {
+      font-family: $pangrammedium;
+      text-align: left;
+      font-size: 20px;
+      line-height: 26px;
+
+      .subheading {
+        font-family: $pangramregular;
+        font-size: 14px;
+      }
+    }
+
+    .common-btn {
+      display: block;
+      max-width: 145px;
+      padding: 8px 10px;
+    }
+  }
+
+  .common-space {
+    margin: 0 auto !important;
+    padding: $space25 $space10;
+  }
+
+  .talk-designer-popup {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    .close-popup {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      padding: 5px;
+
+      svg {
+        path {
+          fill: $secondary-color;
+        }
+      }
+    }
+
+    .left {
+      display: none;
+    }
+
+    .inner-wrpr {
+      display: block;
+      width: auto;
+      padding: 0;
+
+      .talk-designer-form {
+        padding: 35px 20px 20px;
+
+        .common-btn {
+          margin-top: 20px;
+          line-height: 20px;
+          @include border-radius(3px);
+        }
+
+        .font-14 {
+          line-height: 18px;
+          margin-top: 2px;
+          font-family: $pangramregular;
+        }
+
+        .title {
+          line-height: 20px;
+
+          small {
+            display: none;
+          }
+        }
+
+        .field {
+          .field__input {
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  .NewArrivals .container-1200 {
+    max-width: 100%;
+  }
+
+  .NewArrivals {
+    margin-right: -10px;
+    margin-top: 10px;
+
+    &::before {
+      display: none;
+    }
+
+    .headingType {
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    span {
+      @include font-size(14px);
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 3px;
+      color: $secondary-color;
+      font-family: $pangramregular;
+
+      strike {
+        color: $secondary-600;
+        @include font-size(13px);
+      }
+    }
+  }
+
+  .Ws-workspace {
+    .more-content{
+      @include font-size(12.5px);
+    }
+    .name {
+      @include font-size(13px);
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      font-family: $pangrammedium;
+    }
+
+    .price {
+      @include font-size(13px);
+      line-height: 18px;
+      color: $secondary-700;
+      letter-spacing: 0.01em;
+    }
+
+    .more-content {
+
+      b,
+      strong,
+      a {
+        font-weight: normal;
+      }
+    }
+
+    .wrokspace-list {
+      .single-box {
+        &:nth-last-child(-n+2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .thanku-success-msg {
+    background: #fff;
+    position: relative;
+  }
+
+  .thanku-success-msg .swpmodal-close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    color: #000;
+  }
+
+  .mb-view {
+    text-align: center;
+    margin: $space25 auto 0;
+    display: block;
+    .view-link {
+      display: inline-block;
+      color: $color-white;
+      background: $primary-color;
+      padding: 8px $space20;
+      @include border-radius(3px);
+      @include font-size(14px);
+      font-family: $pangramregular;
+
+      svg {
+        vertical-align: sub;
+
+        path {
+          stroke: $color-white;
+        }
+      }
+    }
+  }
+
+  .workplace-planning {
+    background-position: 10%;
+
+    .title {
+      text-align: center;
+      font-size: 24px !important;
+
+      .subtitle {
+        font-size: 14px !important;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .common-btn {
+      display: block;
+      text-align: center;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+
+  .top-selling {
+
+    &::before {
+      display: none;
+    }
+
+    &.mb-flow {
+      background: $light-gray;
+
+      .workspace-slider {
+        &.office-chair {
+          li {
+            margin-right: 10px;
+            width: 65%;
+
+            a {
+              width: 100%;
+            }
+          }
+        }
+
+        li {
+          display: inline-block;
+          width: 75%;
+        }
+      }
+    }
+
+    .workspace-slider {
+      display: block;
+      white-space: nowrap;
+      overflow: auto;
+      margin-right: -10px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        display: inline-block;
+        width: 75%;
+
+        .name {
+          @include font-size(13px);
+          line-height: 18px;
+          letter-spacing: 0.01em;
+        }
+
+        .price {
+          @include font-size(13px);
+          margin: 2px 0 0;
+          letter-spacing: 0;
+          font-family: $pangrammedium;
+
+          .offprice {
+            @include font-size(12px);
+          }
+        }
+      }
+    }
+  }
+
+  .emi-banner {
+    background: $bg-white;
+    border-bottom: $common-border;
+
+    small {
+      display: none;
+    }
+
+    img {
+      padding: 0 10px;
+      max-width: 100%;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .sliderSection,
+  .top-selling {
+    .workspace-box {
+      margin: 0 $space10 $space15 0px;
+      display: inline-block;
+      width: 65%;
+
+      .price {
+        @include font-size(13px);
+        margin: 2px 0 0;
+
+        .offprice,
+        .discount-tag {
+          @include font-size(12px);
+        }
+      }
+
+      ;
+    }
+
+    .discount-tag {
+      @include font-size(12px);
+    }
+
+  }
+
+  .bannerSlider {
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+    background: $bg-white;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width : 320px) {}

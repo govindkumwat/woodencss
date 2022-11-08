@@ -1,0 +1,8 @@
+@media #{$screen-desktop}{
+    .living-furniture{
+        img{@include size(auto);} 
+      .bedroom-categorie-slider{a{@include font-size(13px);} }
+     .space40{ height:25px;}
+     .product-new { a{width: 32%;}}
+    }
+} 

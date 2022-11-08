@@ -1,0 +1,21 @@
+.order-list{ border:$common-border; padding:$space15; margin-bottom:$space20; @include border-radius(4px); line-height:$space20+2; display:flex; justify-content:space-between; flex-wrap:wrap;
+   .order-detail{ color:#999999; @include font-size(14px);  border-right:$common-border;  width:35%;}
+   .order-id{ color:#0fb60f; @include font-size(16px);}
+   b{font-weight:normal;}
+  .order-image{width:65%;  padding-left:$space30; padding-top:$space20;}
+  .price{@include font-size(13px); color:#000; display:inline-block; vertical-align:top; padding-left:$space10;
+    small{ display:inline-block; color:#999999; padding-left:$space5;}
+    span{ display:block;}
+  } 
+ .btn{ padding:$space5 - 2 $space20;}
+
+}
+ .order .form-group.hidden{ display:none;}
+
+ .pagination{ text-align:center;
+          a{ display:inline-block; @include font-size(14px); margin:0 2px; border:$common-border; padding:$space5 - 2 $space10; color:#999999;}
+         .results{ @include font-size(13px); color:#999999;}
+} 
+
+
+

@@ -1,0 +1,89 @@
+
+.faq-wrpr{
+    background: $light-gray;
+    .tab-content{
+      .Qustions{
+        background: $bg-white;
+        padding: 30px;
+        li{
+          &:last-child{
+            .qusTab{border-bottom: 0;}
+          }
+        }
+        .qusTab {
+          padding: 14px 10px;
+          display: block;
+          font-family: $pangrammedium;
+          font-size: 15px;
+          line-height: 20px;
+          color: $secondary-color;
+          cursor: pointer;
+          border-bottom: $common-border;
+          position: relative;
+          &.current{
+            background: $light-gray;
+            border-bottom: $common-border;
+            &::after{transform: rotate(-45deg);}
+          }
+          &::after{
+            content: '';
+            @include size(9px,9px);
+            color: $secondary-600;
+            border-right: 1px solid;
+            border-top: 1px solid;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            transform: rotate(135deg);
+            transition: 0.3s all ease;
+          }
+        }
+        .AnsBox{
+          padding: 15px;
+          color: $secondary-color;
+          font-size: 14px;
+          line-height: 20px;
+          display: none;
+          p,ul li,ol li{
+            margin-bottom: 10px;
+            font-family: $pangramregular;
+            letter-spacing: 0.01em;
+            color: $secondary-600;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:1024px){
+    .faq-wrpr {
+      .tab-content {
+        .Qustions{
+          padding:20px;
+          .qusTab{
+            font-size: 14px;
+            line-height: 18px;
+            padding: 12px 10px;
+          }
+          .AnsBox{
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width:767px){
+    .faq-wrpr {
+        .tab-content{
+          .Qustions{
+            padding: 5px;
+            .qusTab{
+              padding: 8px 30px 8px 8px;
+              font-size: 13px;
+              line-height: 18px;
+            }
+            .AnsBox{padding: 5px;font-size: 12px;line-height: 17px;}
+          }
+        }
+      }
+  }

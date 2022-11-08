@@ -1,0 +1,65 @@
+.myacoount-main{ min-height:700px;}
+   .glob{ display:none;}
+.my-account{ margin-bottom: $space10*5;
+          
+             h3, h4{ font-size: 20px; border-bottom: $common-border; font-weight:normal; padding-bottom: $space10; margin:$space20 0 $space30;}
+            
+             .btn{ background:#e57200; width:auto; border: 0; cursor: pointer; margin-top: $space10; text-transform: uppercase; font-size: 13px; color: #fff; @include border-radius(3px); display: inline-block; }
+             
+    a{ color: #000;}
+
+    .sidebar{ float: left; width:26%;
+              a{ display: block; border-bottom: 2px solid #e7ebed; padding: $space10; position: relative;
+                 &:after{ content:"\f105"; font-family:$font-family-awesome; font-size:20px; position: absolute; right:15px;}
+              &:hover{ background: #e7ebed}
+              }
+              
+              .logout-button{ margin-top: $space20;
+                    a{ border: none; background:#e57200; color: #fff; text-align:center; @include border-radius(5px); text-transform: uppercase; font-size: 15px;
+                    &:after{ content:"";}
+                    }
+                    
+                }
+    }
+    .right{ float: right; width: 70%;  float: right; 
+             h4{ border-bottom: none; padding: 0; margin-top:$space10; margin-bottom:$space10;}
+            form{border:$common-border; @include border-radius(3px); padding: $space20;
+                 .form-group{ display: inline-block; width: 45%; margin:0 $space20 $space10 0; vertical-align: top; float:none;
+                              .error{ color: red; font-size: 12px;}
+                 }
+                 input{ border: $common-border; width: 100%; padding:10px 10px; @include border-radius(3px);}
+                 label{ font-size: 13px; color:#818181;}
+                 input.btn{ width: inherit; border:0}
+               
+            }
+    } 
+    .myaccount-options{
+        
+            li{ width:45%; display:inline-block; vertical-align:top; border: $common-border; margin: $space10; @include border-radius(5px); @include all-my-account-sprites;
+                i{  @include size(50px,51px); float:left; margin-right:$space10+2;}
+                a{display: block; text-transform: capitalize; padding: $space10 $space15; font-size: 16px; font-family:$robotomedium;
+                   span{ display: block; font-size: 13px; color: #5d5d5d; font-family: $robotolight; text-transform:lowercase;
+                    &:first-letter{ text-transform:capitalize; }  
+                   }
+                }
+            }
+            
+        
+    }
+  
+}
+//newsletter
+.newsletter{
+     .form{ width:100%; border-collapse:collapse; border-spacing:0;}
+      tr{
+         td{ display:inline-block;
+           label{ display:inline-block; padding:0 $space15; vertical-align:middle;
+            input{ width:auto!important; vertical-align:middle;} 
+           }
+           
+        }
+    }
+    
+}
+ 
+ 

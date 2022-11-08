@@ -1,0 +1,33 @@
+// example: @include arrow("left", #cccccc, 10);
+@mixin arrow($direction, $color, $size) {
+    $pxSize: $size + px;
+    //$remSize: ($size / 10) + rem;
+    content: ""; 
+    width: 0;
+    height: 0;
+    clear: both;
+    @if $direction == "left"{
+        border-top: $pxSize solid transparent;
+        border-right: $pxSize solid $color;
+        border-bottom: $pxSize solid transparent;
+
+
+    }@else if $direction == "right"{
+        border-top: $pxSize solid transparent;
+        border-bottom: $pxSize solid transparent;
+        border-left: $pxSize solid $color;
+
+
+    }@else if $direction == "up"{
+        border-left: $pxSize solid transparent;
+        border-right: $pxSize solid transparent;
+        border-bottom: $pxSize solid $color;
+
+    }@else if $direction == "down"{
+        border-left: $pxSize solid transparent;
+        border-right: $pxSize solid transparent;
+        border-top: $pxSize solid $color;
+
+    }
+
+}

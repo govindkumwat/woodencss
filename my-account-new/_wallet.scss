@@ -1,0 +1,109 @@
+.account_wallet {
+
+    .total-Balance {
+        padding: $space20 $space0;
+        border-bottom: $common-border;
+
+        figure {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: $space20;
+        }
+        
+        .orange {
+            color: $primary-color;  
+            display: block;
+            @include font-size(22px);
+            line-height: 28px;
+        }
+   
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 23px;
+            color: $secondary-color;
+            font-family: $pangrammedium;
+            letter-spacing: 0.01em;
+        }
+
+        .btn-common {
+            float: right;
+            margin-top: $space5;
+        }
+    }
+
+    .list {
+        width: 100%;
+        text-align: left;
+        padding: $space20 $space0;
+        border-collapse: collapse;
+        display: block;
+
+        thead {
+            th {
+                background: none;
+                padding: $space5 $space10;
+                font-weight: normal;
+                width: 12%;
+                @include font-size(15px);
+                text-align: left;
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: $common-border;
+
+                td {
+                    padding: $space10;
+                    @include font-size(14px);
+                    font-family: $robotolight;
+                }
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+
+                span {
+                    font-family: $robotoregular;
+
+                    &:before {
+                        @include size(10px);
+                        background: #E57200;
+                        display: inline-block;
+                        content: '';
+                        @include border-radius(100%);
+                        margin-right: $space5;
+                    }
+                }
+
+                .reedemed {
+                    &:before {
+                        background: #03AE12;
+                    }
+                }
+
+                .Pending {
+                    &:before {
+                        background: #FF0000;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.empty-wallet {
+    text-align: center;
+    margin-top: $space30*2;
+
+    p {
+        margin-top: $space15;
+        @include font-size(16px);
+        font-family: $robotolight;
+    }
+}

@@ -1,0 +1,678 @@
+//Banner
+.font-light {
+	font-family: $robotolight;
+}
+
+.font-medium {
+	font-family: $robotomedium;
+	font-weight: normal
+}
+
+.font-awesome {
+	font-family: $fontawesome;
+	font-weight: normal
+}
+.sellon {
+	padding-bottom: $space30;
+	.container-1300 {
+		max-width: 1300px;
+		margin: 0 auto;
+    i{
+      background-image: url(../images/generated/sellon-icons-sd14c90fd4c.png);
+      background-repeat: no-repeat;
+    }
+    .sellon-icons-heading{
+      background-position: 0 -213px;
+    }
+		.common-text {
+			text-align: center!important;
+			@include font-size(30px);
+			color: #000;
+			@extend .font-light;
+			margin-bottom: $space20;
+			border: none;
+			line-height: normal;
+			overflow: hidden;
+			strong {
+				@extend .font-medium;
+				display: inline-block;
+			}
+			p {
+				@include font-size(14px);
+				line-height: 25px;
+				text-align: center!important;
+				padding: $space15 $space0;
+			}
+			i {
+				display: inline-block;
+				@include size(55px, 20px);
+			}
+		}
+		.btn-selling {
+			background: $bg-warning;
+			@include font-size(15px);
+			margin-top: $space20;
+			color: #fff;
+			display: inline-block;
+			padding: $space10+2 $space40;
+			@include border-radius(3px);
+			box-sizing: border-box;
+			&:hover {
+				background: $bg-warning-dark;
+			}
+		}
+		.text-space {
+			padding-left: $space10;
+		}
+	}
+	.sellon-banner {
+		background: url("#{$images-path}/sell-on-wooden/banner.jpg") no-repeat 0 0;
+		box-sizing: border-box;
+		height: 420px;
+		margin-top: $space0;
+		text-align: center;
+		color: $color-white;
+		padding-top: 60px;
+		span {
+			border-bottom: 4px solid $bg-warning;
+			@include font-size(20px);
+			@extend .font-light;
+			display: inline-block;
+			padding-bottom: $space10+2;
+			margin-bottom: 10px;
+		}
+		.heading {
+			@include font-size(40px);
+			@extend .font-medium;
+			line-height: normal;
+      
+		}
+		p {
+			@include font-size(15px);
+			padding: $space5 $space0;
+		}
+		article {
+			float: right;
+			padding-top: $space40+20;
+			box-sizing: border-box;
+		}
+	}
+	.field__input{
+		border: 1px solid #d3d3d3;
+		&:focus{border:1px solid $secondary-700;}
+	}
+	.sell-wrapper {
+		background: #fff;
+	}
+	//Form & Detail
+	.sellon-banner-detail {
+		background: #f4f4f4;
+		margin-top: $space40+10;
+		padding-bottom: $space40+10;
+		.container {
+			@include border-radius(3px);
+			@include box-shadow(none);
+		}
+		form {
+			margin: 0;
+			padding: 0;
+			background: none;
+			@include box-shadow(none);
+			width: 585px;
+			margin: $space20 auto 0;
+			padding-bottom: $space40+40;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.title {
+				font-size: $font-size-15+1;
+				color: #000000;
+				font-family: $font-family-medium;
+				display: block;
+				width: 100%;
+				font-weight: normal;
+				margin:0;
+			}
+		}
+		.full {
+			width: 100%;
+		}
+		.text {
+			@extend .font-light;
+			color: #333;
+			text-align: center;
+			padding: 10px 45px 25px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		.inset {
+			padding: 45px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.export-heading {
+			text-align: left;
+		}
+		.export-form {
+			background: $bg-white;
+			padding: $space25;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.20);
+			.personal_detail {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.selector {
+				position: relative;
+				left: 0px;
+				top: 0
+			}
+			.warning{font-size: 12px;color: $color-red;padding-top: 5px;}
+      .bottom{
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+      }
+		}
+		.right {
+			width: 330px;
+			text-align: center;
+			border-left: 1px solid #e5e5e5;
+			position: relative;
+			span {
+				@include font-size(24px);
+				@extend .font-light;
+				&:after {
+					display: inline-block;
+					text-align: center;
+					@extend .font-awesome;
+					content: '\f0d7';
+					color: #cccccc;
+				}
+			}
+			strong {
+				@extend .font-medium;
+				display: block;
+			}
+			a {
+				display: block;
+				color: #000;
+				@include font-size(18px);
+				@extend .font-light;
+				margin-top: 30px;
+			}
+			i {
+				@include font-size(36px);
+				color: $color-warning;
+			}
+			&:before {
+				@include center(false,
+				true);
+				@include size(3px,
+				32px);
+				content: '';
+				background: $bg-warning;
+				left: -2px;
+			}
+		}
+		label {
+			display: block;
+			font-size: $font-size-10+3;
+			color: $secondary-color;
+      		margin-bottom: 3px;
+			font-family: $robotoregular;
+			input[type=checkbox] {
+				vertical-align: middle;
+				margin-right: 10px;
+				@include size(15px,
+				15px);
+				cursor: pointer;
+			}
+		}
+		.categorie {
+			border: 1px solid #b7b7b7;
+			background: #fff;
+			font-size: $font-size-10+3;
+			color: #616161;
+			padding: 5px 20px;
+			margin: 15px 0px 25px;
+			width: 100%;
+			height: 180px;
+			@include border-radius(3px);
+			overflow: auto;
+		}
+		.heading {
+			font-size: 24px;
+			@extend .font-light;
+			color: #000;
+			text-align: center;
+			padding-top: 25px;
+			display: block;
+			strong {
+				font-family: $font-family-medium;
+				font-weight: normal;
+			}
+		}
+		.bottom {
+			display: flex;
+		}
+		.selector {
+			@include size(48%!important,
+			42px);
+			margin-top: 15px!important;
+			border: 1px solid #b7b7b7;
+			@include border-radius(3px);
+			padding: 10px 5px;
+			box-sizing: border-box;
+			span {
+				@include size(100%!important,
+				100%!important);
+				overflow: hidden;
+				white-space: normal;
+				text-overflow: ellipsis;
+				color: #8b8b8b;
+				&:after {
+					top: 10px;
+				}
+			}
+			select {
+				width: 100%;
+			}
+		}
+		.success {
+			margin: 10px auto 0px;
+			max-width: 520px;
+			display: block;
+		}
+		.CtypeDrop {
+			background:#fff url("#{$images-path}/down-arrow.png") no-repeat right center;
+			font-size: 12px;
+			background-size: 22px;
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			white-space: normal;
+			padding: 5px 10px;
+			&::placeholder{color: #979797;}
+		}
+	}
+	.export-form {
+		select::-ms-expand {
+			display: none;
+		}
+	}
+	.grow-business {
+		border-bottom: 1px solid #dadada;
+		margin-top: $space40+10;
+		img {
+			vertical-align: bottom;
+		}
+		.grow-progrees {
+			text-align: center;
+			position: relative;
+		}
+		.grow-process-mob {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			li {
+				position: relative;
+				margin-bottom: $space20;
+				position: absolute;
+				width: 262px;
+				margin: 0 auto;
+				&:before {
+					position: absolute;
+					left: 0;
+					top: 0;
+					content: '';
+					@include size(65px,
+					68px);
+					display: none;
+				}
+				&.million {
+					top: 85px;
+					left: 0;
+					right: 0;
+				}
+				&.support {
+					top: 250px;
+					left: 150px;
+				}
+				&.shipping {
+					top: 275px;
+					right: 120px;
+				}
+				&.contact {
+					top: 320px;
+					right: 0;
+					left: 0;
+					.btn-selling {
+						margin-top: $space15;
+						text-transform: uppercase;
+					}
+				}
+			}
+			small {
+				@include font-size(18px);
+				color: #e57200;
+				font-family: $font-family-medium;
+				display: block;
+				padding-top: $space10;
+			}
+			p {
+				@extend .font-light;
+				@include font-size(14px);
+				color: #000;
+				line-height: 25px;
+			}
+			.number {
+				color: #000;
+				@include font-size(20px);
+				display: inline-block;
+				p {
+					@extend .font-light;
+					@include font-size(18px);
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.faq-box {
+		margin-top: $space40+10;
+		box-sizing: border-box;
+		.tab-links {
+			border: 1px solid #dadada;
+			width: 23%;
+			float: left;
+			li {
+				border-bottom: 1px solid #dadada;
+        .sellon-icons-registration{background-position: 0 -553px;}
+        .sellon-icons-registration-h{background-position: 0 -491px;}
+        .sellon-icons-cataloging{background-position: 0 -151px;}
+        .sellon-icons-cataloging-h{background-position: 0 -89px;}
+        .sellon-icons-shipping{background-position: 0 -813px;}
+        .sellon-icons-shipping-h{background-position: 0 -751px;}
+        .sellon-icons-payement{background-position: 0 -429px;}
+        .sellon-icons-payement-h{background-position: 0 -299px;}
+				&:last-child {
+					border-bottom: none;
+				}
+				&.active {
+					a {
+						color: $bg-warning;
+						small {
+							display: block;
+						}
+					}
+				}
+			}
+			a {
+				@include font-size(15px);
+				color: #000;
+				text-align: center;
+				display: block;
+				padding: $space20 $space0;
+				&:hover {
+					color: $bg-warning;
+					small {
+						display: block;
+					}
+				}
+			}
+			i,
+			small {
+				display: block;
+				@include size(62px,
+				62px);
+				margin: 0 auto $space5+3;
+			}
+			small {
+				display: none;
+        background-image: url(../images/generated/sellon-icons-sd14c90fd4c.png);
+        background-repeat: no-repeat;
+			}
+		}
+		.tab-content {
+			width: 74%;
+			margin-left: $space25;
+			float: left;
+			table {
+				border-collapse: collapse;
+				margin-bottom: $space10;
+				text-align: left;
+				td,
+				th {
+					border: 1px solid #dadada;
+					padding: $space10;
+				}
+			}
+		}
+		.smk_accordion .acc_head .acc_icon_expand {
+			left: inherit;
+			right: 10px;
+			background: none;
+		}
+		.smk_accordion .acc_active>.acc_head .acc_icon_expand {
+			background: none;
+		}
+		.acc_active .acc_head {
+			background: none;
+			border-bottom: none;
+		}
+		.smk_accordion .accordion_in {
+			margin: $space0 $space0 $space20;
+		}
+		.smk_accordion .acc_active>.acc_head .acc_icon_expand:before {
+			color: #000;
+		}
+		.smk_accordion .acc_content {
+			@include font-size(13px);
+			@extend .font-light;
+			border-top: none;
+			padding: 0px 20px;
+		}
+		.smk_accordion .acc_content span {
+			padding-bottom: 10px;
+			display: block;
+			color: $secondary-600;
+			font-family: $robotoregular;
+		}
+		.point {
+			position: relative;
+			display: inline-block;
+			padding-left: 15px;
+			&:before {
+				position: absolute;
+				@include size(8px,
+				8px);
+				background: #000;
+				left: 0;
+				top: 5px;
+				content: '';
+				@include border-radius(100%);
+			}
+		}
+		.sub-heading {
+			@include font-size(14px);
+			padding-bottom: $space10;
+			font-family: $font-family-medium;
+		}
+		.btn-selling {
+			float: right;
+			margin-top: $space0;
+		}
+		.acc_content {
+			height: 325px;
+		}
+	}
+	.m-police {
+		margin-top: $space40+10;
+		.tab-links {
+			padding-left: $space25;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: $space15;
+				border-bottom: 5px solid transparent;
+				a {
+					@include font-size(18px);
+					color: #000;
+					font-family: $font-family-medium;
+					display: block;
+					padding: 0 8px;
+				}
+				&.active {
+					border-bottom: 5px solid $bg-warning;
+				}
+			}
+		}
+		.tab-content {
+			padding: $space30+10 $space30;
+			border: 1px solid #dadada;
+			@include border-radius(3px);
+			height: 380px;
+			overflow: auto;
+			p,
+			li {
+				@include font-size(13px);
+				line-height: $space20;
+				padding-bottom: $space20;
+				color: $secondary-700;
+			}
+			small {
+				color: $secondary-700;
+				@include font-size(13px);
+				font-family: $font-family-bold;
+			}
+			ol {
+				list-style-type: decimal;
+				margin-left: 20px;
+			}
+			.point {
+				position: relative;
+				display: inline-block;
+				padding-left: 15px;
+				&:before {
+					position: absolute;
+					@include size(8px,
+					8px);
+					background: #000;
+					left: 0;
+					top: 5px;
+					content: '';
+					@include border-radius(100%);
+				}
+			}
+		}
+		.service {
+			li {
+				text-align: center;
+				width: 33%;
+				vertical-align: top;
+				padding: $space15 $space30;
+				display: inline-block;
+				box-sizing: border-box;
+			}
+			i {
+				display: block;
+				@include size(65px,
+				68px);
+				margin: 0 auto;
+        &.sellon-icons-cart{background-position: 0 -21px;}
+        &.sellon-icons-payement-two{background-position: 0 -361px;}
+        &.sellon-icons-sell{background-position: 0 -615px;}
+			}
+			span {
+				@include font-size(18px);
+				color: #000;
+				display: block;
+				font-family: $font-family-medium;
+				padding: $space15 $space0 $space10;
+			}
+			p {
+				@extend .font-light;
+				@include font-size(14px);
+				color: #000;
+				line-height: 25px
+			}
+		}
+		table {
+			border-collapse: collapse;
+			margin-bottom: $space10;
+			text-align: left;
+			width: 100%;
+			td,
+			th {
+				border: 1px solid #dadada;
+				padding: $space10;
+			}
+		}
+		.customer-detail {
+			ul {
+				li {
+					padding-bottom: 0px;
+					list-style-type: circle;
+					padding-left: 10px;
+				}
+			}
+		}
+		.title {
+			@include font-size(14px);
+			font-family: $font-family-bold;
+		}
+	}
+	.success {
+		position: relative;
+		background: url(../image/success.png) 5px 15px no-repeat #eaf7d9;
+		border: 1px solid #ccc;
+		margin: 10px auto 0px;
+		max-width: 520px;
+		display: block;
+		padding: 10px 10px 10px 33px;
+		color: #555;
+	}
+}
+
+.export-form {
+	.field{
+    margin-top: 20px;
+	  width: 49%;
+  }
+  .btn {
+    border-radius: 3px;
+    margin-left: 14px;
+    padding: 11px 45px;
+    cursor: pointer;
+  }
+  .box-code {
+    width: 100%;
+    img{
+      position: absolute;
+      top: 1px;
+      right: 45px;
+    }
+    #reload {
+      border: 0;
+      background: url(../images/export/reload.png) no-repeat;
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 2px;
+      right: 6px;
+    }
+  }
+}
+.thanku-success-msg {
+	position: relative;
+	.swpmodal-close {
+		top: 0;
+		@include font-size(20px);
+		cursor: pointer;
+	}
+}
+
+// Responsive
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";

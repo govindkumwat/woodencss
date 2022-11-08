@@ -1,0 +1,120 @@
+.onlineStore {
+    padding: $space30*2 0px;
+
+    .headingOnline {
+        text-align: center;
+        font-family: $pangrammedium;
+        color: $secondary-color;
+        font-size: 22px;
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 22px;
+            display: inline;
+            margin: 0;
+        }
+    }
+
+    .furniture-list {
+        a {
+            margin-right: $space0; 
+            margin-bottom: $space10; 
+            display: block;
+            figure {
+                @extend .figure;
+                border-radius: 0;
+                margin: auto;
+                img{height: auto !important;}
+                &:before {
+                    padding-top: 67% !important;  
+                }
+            }
+            &:hover {
+                img {
+                    transform: scale(1.04);
+                }
+            }
+        }
+    }
+}
+
+.more-content {
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    color: $secondary-600;
+    font-family: $pangramregular;
+    letter-spacing: 0.02em;
+
+    &.more {
+        height: auto;
+
+        .moreButton {
+            position: inherit;
+
+            &:before {
+                content: 'Less';
+            }
+        }
+    }
+
+    a {
+        color: $primary-color;
+
+        &:hover {
+            color: $hover-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.moreButton {
+    font-size: 14px;
+    display: inline-block;
+    color: $primary-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $bg-white;
+    padding-left: 5px;
+    cursor: pointer;
+
+    &:before {
+        content: 'Read More..';
+        display: inline-block;
+    }
+
+    &:hover {
+        &:before {
+            text-decoration: none;
+        }
+    }
+}
+.grid-block {
+    padding:$space40 $space20;
+    .right-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        a{
+            figure{ 
+                @extend .figure;
+                img{height: auto !important;}
+                &::before{
+                    padding-top:82% !important;
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.04);
+                }
+                .name{color: $hover-color;transition: 0.3s all ease-in-out;}
+            }
+        }
+    }
+}

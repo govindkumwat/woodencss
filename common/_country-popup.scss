@@ -1,0 +1,29 @@
+.location-popup{ width:300px; z-index:999999; position:relative; background:$bg-white; @include border-radius(5px); margin:$space0 auto;   padding:$space5 - 4  0 $space15;
+     .heading{ background:#fe932e; padding:$space10 $space15; @include border-radius(5px 5px 0 0); margin:0 1px; position:relative;
+       &:after{ position:absolute; left:0; right:0; margin:0 auto; bottom:-10px; content:''; width:0; height:0;  border-left:10px solid transparent; border-right:10px solid transparent;border-top: 10px solid #fe932e;}
+     }
+      img{display:inline-block; vertical-align:top; margin-right:$space15;}
+    .title{@include font-size(20px); color:$bg-white; font-family:$robotoregular; display:inline-block; padding-top:$space5 - 3;}
+    .click{ padding-bottom:$space20; }
+    .country-name {display:block; @include font-size(22px); @include border-radius(30px); border:1px solid #e56353; padding:$space10 $space10; color:#e56353; margin-top:$space15+3;
+       &.active { color: #fff; background: #e56353;}
+    }
+    .close-btn { position: absolute; top:8px; right:15px; color: #b3aeae; @include font-size(16px);}
+    
+    .country-list{ padding:0; margin:$space25 $space10 0; display:flex; justify-content:space-between; flex-wrap:wrap;
+        i{ display:block; @include size(37px,26px); margin:0 auto $space5;}
+        li{ border:$common-border; @include border-radius(3px);  width:48%; text-align:center; margin-bottom:$space10;}
+        a{ color:$color-gray;@include font-size(13px); display:block; padding:$space10+2 $space0;}
+         .india{background:url("#{$images-path}/common/india.png") no-repeat center 0;}
+         .uk{background:url("#{$images-path}/common/uk.png") no-repeat center 0;}
+         .usa{background:url("#{$images-path}/common/usa.png") no-repeat center 0;}
+         .other{background:url("#{$images-path}/common/other.png") no-repeat center 0;}
+        
+         
+    }
+    
+}
+
+#boxes_mobile #dialog_mobile, #boxes_mobile .window_mobile{position: fixed;}
+#boxes_mobile .window_mobile{display: none; z-index: 9999;}
+#mask_mobile{ position:fixed;left: 0; top:0; bottom:0; z-index: 9999; right:0; background-color: #000; display: none; opacity: .8;}

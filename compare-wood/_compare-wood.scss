@@ -1,0 +1,61 @@
+// compare wood
+.text-center { text-align: center;}
+.comparewood{padding:0 0 50px}
+.comparewood-banner{background:url(../images/compare-wood/compare-wood-banner.jpg) center center no-repeat;height:490px;padding:115px 0 0;margin:0 0 40px;background-size:cover}
+.comparewood-banner article{background:rgba(0,0,0,.6);text-align:center;color:#fff;width:880px;padding:25px}
+.comparewood-banner .heading{font-size:50px;font-weight:300;text-transform:uppercase;text-shadow:1px 1px 3px rgba(0,0,0,.3);line-height:65px}
+.comparewood-banner .heading strong{font-size:64px;font-family:robotoregular;font-weight:400}
+.comparewood-banner em{font-size:25px;font-family:"Times New Roman",Times,serif;font-weight:400;border-top:1px solid #b6e1da;margin:12px 0 0;padding:18px 0 0;display:inline-block}
+.comparewood .comtext ul li,.comparewood .comwood ul li p span{font-family:robotoregular;color:#000;font-weight:400}
+.comparewood .comwood ul{margin:70px 0 34px;border-bottom:2px solid #eee;padding:0 0 22px}
+.comparewood .comwood ul li{float:left;width:33%}
+.comparewood .comwood ul li p span{display:block;font-size:30px}
+.comparewood .comwood ul li p{font-size:13px;padding:0 0 0 30px;margin:30px 0 0; text-align:left;}
+.comparewood .comwood ul li+li p{border-left:2px solid #eee; color:#636363;}
+.comparewood .comtext{margin:0 0 45px;padding:0 0 36px}
+.comparewood .comtext ul{padding:20px 0 0;float:left;width:316px;margin:0 0 0 10px;background:#e5e5e5;position:relative}
+.comparewood .comtext ul li span{font-size:20px;font-weight:400;display:block}
+.comparewood .comtext ul li{font-size:13px;padding:0 25px 30px;position:relative; line-height:25px;}
+.comparewood .comtext ul:before{width:1px;background:#999;content:'';position:absolute;bottom:0;top:20px}
+.comparewood .comtext ul li:before{width:10px;height:10px;background:#fff;content:'';position:absolute;border:1px solid #929292;left:-6px;top:0;border-radius:50%}
+.comparewood .comtext ul li.crigreen:before{background-color:#9aca40}
+.comparewood .comtext ul li.criorange:before{background-color:#ffbb42}
+.comparewood .comtext ul+ul{background:0 0;margin-left:21px}
+.comparewood .comtext ul+ul:before{background:#ccc}
+.comparewood .comtext ul+ul li span{color:#505050}
+.comparewood .woodiden{background:url(../images/compare-wood/wood-iden-bg.jpg) no-repeat;padding:65px 28px;height:490px;margin:0 0 60px}
+.comparewood .woodiden .title{font-size:30px;color:#fff;text-shadow:1px 1px 3px rgba(0,0,0,.3);padding:0 0 40px}
+.comparewood .woodiden .inside{float:left;width:464px}
+.comparewood .woodiden .inside+.inside{margin-left:16px}
+.comparewood .woodiden section{background:#fff;border-radius:3px;padding:30px 22px;margin:0 0 24px}
+.comparewood .woodiden section article{float:left;width:270px; text-align:left;}
+.comparewood .woodiden section article span{font-size:16px}
+.comparewood .woodiden section article p{font-size:13px;color:#000;line-height:22px;padding:5px 0 0}
+.comparewood .woodiden section figure{float:right;width:142px}
+.comparewood .woodiden section figure img{width:135px;height:135px;border-radius:50%;border:3px solid #d9d9d9}
+.comparewood .woodiden section figure figcaption{font-size:16px;color:#e07a32;letter-spacing:1px}
+.comparewood .woodiden .woodtext{border:1px solid #fff;border-radius:20px;font-size:16px;color:#fff;text-transform:uppercase;letter-spacing:1px;padding:3px 30px}
+.comparewood .comtable table{border:1px solid #000}
+.comparewood .comtable table thead tr th{font-family:robotomedium;font-weight:400}
+.comparewood .comtable table thead tr th,.comparewood .comtable table tr td{font-size:16px;border:1px solid #000;padding:8px}
+.about-choose ul li { width:16.5%; padding: 0 1%; font-size: 14px;line-height: normal; position: relative;}
+.about-work ul li i { width: 32px; height: 32px;background: #e07a32; color: #fff;border-radius: 50%; display: block;font-style: normal;font-size: 18px;line-height: 30px;margin: 0 auto 25px;}
+.about-choose ul li i {width: 64px; height: 58px; background: url(../images/compare-wood/about-icon.png) no-repeat; border-radius: inherit;}
+.about-choose ul li .quality {background-position: -66px 0;}
+.about-choose ul li .price {background-position: -138px 0;}
+.about-choose ul li .return {background-position: -207px 0;}
+.about-choose ul li .emi {background-position: -276px 0;}
+.about-choose ul li .freeins {background-position: -345px 0;}
+.h1-heading { text-align: center; font-size: 1.5625rem; font-family: robotomedium; font-weight: 400; line-height: normal; display: inline-block; background: #f5f5f5; padding: 5px 20px;}
+.bigheading { text-align: center; margin: 15px 0px;}
+.aboutus .heading { font-size: 28px; color: #000; padding: 10px 0; border-bottom: 1px solid #cbcaca; display: inline-block;}
+.aboutus .heading span{color: #e07a32;}
+.aboutus p { font-size: 14px; padding: 10px 0; line-height: 25px;}
+.about-work { margin: 0 0 50px;}
+.about-work ul { margin: 28px 0 0;}
+.about-work ul li { float: left;}
+.about-choose ul li+li:before { background-image: linear-gradient(to top, #ffffff,#dcdcdc 50%,#ffffff); width: 1px; height: 90px; content: ''; position: absolute;left: 0;}
+
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss"; 

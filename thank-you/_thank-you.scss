@@ -1,0 +1,70 @@
+.thankyou-section { padding: $space40 0; background: $color-light-gray; color: #363636;
+    .flex { display:flex; justify-content: space-between; flex-wrap: wrap; }                
+    .thanku-center { width: 100%; background: $bg-white; padding:60px 30px; margin-bottom: $space10;text-align: center;box-shadow: 1px 0px 10px #dbdbdb;}
+    .top-title { line-height: 28px; padding-bottom: $space10;
+                 figure{text-align:center;}
+      .thanku-icons { vertical-align: middle; display: inline-block; } 
+      p { display:block; vertical-align: middle; @include font-size(15px);
+        span { display:block; @include font-size(22px); color: $bg-green; }
+      }
+    }
+    .label { @include font-size(18px); padding: $space15 0; border-top: $common-border; align-items: center; display: flex; justify-content: space-between;}
+    .odrId { font-size: 13px; }
+    .deli-detail { display: flex; justify-content: space-between; margin-bottom: $space30;
+      .half { width: 48%; }
+       .title {  border-bottom: $common-border; padding-bottom: $space5; margin-bottom: $space5; }
+       .name { display: block; @include font-size(15px); }
+    }
+     .odr-detail { display: flex; flex-wrap: wrap; justify-content: space-between; padding: $space10 $space0; align-items: center; border-bottom: $common-border; position: relative; 
+       &:last-child { border-bottom: none; }
+     }
+     .product-box {
+     figure { display: inline-block;  margin-right: 20px; width: 90px; }
+        p { display: inline-block; vertical-align: top;line-height: 20px;
+            .name { @include oneline();  display: block; color:#4A4A4A; 
+            &:hover { color: $color-orange; }
+            }
+             small { display: block; color: #8B8B8B; }
+        }  
+      }
+       .save-price { display:block; color: $color-orange; }
+     .price { line-height: normal; }
+      .help { @include font-size(13px); color: $color-black; padding: $space5+3px $space0; display:block; line-height: normal;
+         &:before { display: inline-block; content: '?'; margin-right: $space5; background: $bg-orange; @include size(15px); @include border-radius(100%); color: $color-white; line-height: 15px; @include font-size(11px); text-align: center; vertical-align: middle; }
+      }
+    .thanku-right { width: 30%; text-align: center; }
+    .just-click { background: $bg-white; padding: $space20;  margin-bottom: $space15;
+      .Tracking-icons { display: block; }
+      span { @include font-size(18px); display: block; margin: $space5 0; }
+      .bold { font-family: $robotomedium; }
+    }
+   
+}
+ .commen_btn  { background: $bg-orange;color: $color-white; padding: $space10 $space40;margin-top: $space10;text-transform: uppercase; @include border-radius(3px); display: inline-block;  }
+.payment-cancel { text-align: center; padding: $space40*2+$space20 0; background: #f7f7f8;
+  .title { @include font-size(24px); font-family: $robotolight; margin: $space10 0;
+    span { font-family: $robotoregular; }
+  }
+  .commen_btn { text-transform: uppercase; font-family: $robotolight;  }
+  .shop { 
+      a { display: inline-block; margin-top: $space10; color: $color-orange; text-decoration: underline;
+        &:hover { text-decoration: none;  }
+      }
+  }
+}
+
+
+@media #{$screen-tablet}{
+    .thankyou-section {
+        .thanku-center{padding: $space40 $space20;}
+        .top-title {
+            p { @include font-size(13px);
+              span { @include font-size(17px); }
+            }
+        }
+        .product-box {
+            figure { margin-right: $space10; }
+            p{ width: 225px;}
+        }
+    }
+}

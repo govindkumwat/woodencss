@@ -1,0 +1,44 @@
+.terms-of-use { padding: $space15 0 $space40; background: #f5f5f5;
+    .left { width: 20%;
+      a { display:block; color: $color-black; @include font-size(14px); padding: $space5+3 0; border-bottom: $common-border; 
+        &.active { color: $color-orange; }
+        &:last-child { border-bottom: none; }
+        &:hover { color: $color-orange; }
+      }
+      .title { @include font-size(16px); margin-bottom: $space10;  }
+    }
+    .right { width: 78%; color: #515151; background: $bg-white; padding: $space20;
+      p { margin-bottom: $space15; }
+    }
+    h1, h2, h3, h4, strong { font-weight: normal; font-family: $robotomedium; }
+    #most-viewed { padding: $space10 $space15; background: $bg-white; }
+    a { color: $color-orange; }
+    .container { display: flex; justify-content: space-between; max-width: 1200px;}
+    ul, ol {
+        li{ margin-bottom: $space5; }
+    }
+    
+    
+    ul { padding-left: $space40; 
+         li { position: relative; 
+          &:before{ content: ""; @include size(8px); background: $bg-orange; position:absolute; left:-15px; top:8px;  @include border-radius(100%);}
+         }
+    }
+}    
+.terms-of-use {
+    &.term-conditions-app {    
+        .right { width: 1100px; margin: auto;  } 
+        ol { padding-left: 40px; margin: $space15 0; }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .terms-of-use {
+        &.term-conditions-app { padding: 0px;
+            .right { width: auto;  } 
+            ol { padding-left: 20px; margin: $space15 0; }
+            ul { padding-left: 20px; }
+        }
+    }
+} 

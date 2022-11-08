@@ -1,0 +1,30 @@
+@media #{$screen-desktop}{
+
+    .cate-strip{
+         .heading{ width:232px;}
+         img{@include size(auto);}
+          .title{ @include font-size(15px);}
+    }
+
+
+//wishlist cart
+ .w-cart{  
+   .w-tooltip{  width:80px;  @include font-size(12px); left:-31px; line-height:$space15+3;}
+  
+      .remove{display:inline-block;}
+      .fill, .add{ display:none;}
+      .simple{ display:inline-block;}
+      
+   &.active{
+        .remove{display:none;}
+        .add{display:inline-block;}
+        .fill{ display:inline-block;}
+        .simple{ display:none;}
+   } 
+  
+
+   
+  
+ }     
+
+}

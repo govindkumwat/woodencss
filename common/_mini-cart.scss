@@ -1,0 +1,76 @@
+.ws-mini-cart{ width:450px; position:fixed; right:-550px; bottom:0; top:0; background:$bg-white; z-index:9999;        
+      .loader{ position  : relative;background: #f7f7f8;
+             img{position:absolute; top:0; left:0;  bottom:0; right:0; margin:auto; }
+            &:before{ content:'';display: block; padding-top:160%;} 
+        }          
+               
+  img{ vertical-align:bottom;}
+  .btn-shop{ @include font-size(14px); color:$color-warning; border:1px solid $color-warning; padding:$space5 $space15; font-family:$robotoregular;}
+  .mCustomScrollbar{max-height:100vh; padding-bottom:250px; display:block;}
+  .btn-notification{ width:210px; margin:$space15 auto; display:block; text-align:center;
+   &:hover{ color:$color-white; background:$bg-warning;}
+  }
+   
+  
+   
+  
+ }
+.mini-cart-top { background: #2A3A56; padding: $space15 $space15 $space0;
+ .title { @include font-size(20px); font-family: $robotolight; color: $color-white; margin: $space15 $space0 $space20; display:block; }
+ .mini-cart-back{ display: inline-block; cursor:pointer;
+     img { vertical-align: middle; }
+ }
+}  
+.mini-cart-tabs{  text-align:center; 
+     li{display:inline-block; width:33.3%; @include font-size(14px); position:relative;
+        &.active{
+            a{ color:$color-warning; background:$bg-white; @include border-radius(5px 5px 0 0); }
+        } 
+     }
+     a{display:block;  color:$color-white; padding:$space10 $space0;} 
+     
+     .notificationCount{
+         display:inline-block; vertical-align: middle; margin-left: $space5; @include font-size(10px);  color:$color-white; @include size(18px); background:$bg-orange; @include border-radius(100%); text-align:center; line-height:$space15+3;
+     }
+     
+     
+       
+} 
+
+
+.mini-cart-options{ display:none; 
+      .iteam{border-bottom:$common-border; padding:$space20 $space10 $space25 $space40+35; position:relative; }
+      span{@include font-size(20px); color:#373737; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+      p{@include font-size(13px);color:#8B8B8B; padding-bottom:$space10 ;}
+     .circel{ @include size(51px); background:#F5F5F5; @include border-radius(100%); display:block; position:absolute; top:$space25; left:$space10; text-align:center; line-height:$space30+5;} 
+     .btn-close{position:absolute; bottom:$space30; right:$space15;}
+     .btn-clear{ @include font-size(14px); color:$color-warning; text-align:right; display:block; text-decoration:underline; padding-right:$space15; padding-top:$space10; cursor:pointer;}
+    &.active{ display:block; }
+}
+
+.mini-cart-product{ padding:$space0 $space15; display:none; 
+      li{ position:relative; padding:$space15+3 $space0 $space15+3  $space40+55;  color:#707070; @include font-size(13px); border-bottom:$common-border;
+       &:last-child{ border-bottom:none;}
+      }
+      img{ position:absolute; left:0; top:$space25+3; width:82px;}
+      span{display:block; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+      p{display:inline-block; width:49%; font-family:$robotolight; line-height:$space15+3; vertical-align:top; padding-top:$space5;}
+      .right-text{border-left:$common-border; padding-left:$space10; @include font-size(11px);}
+      strong{ font-family:$robotoregular; @include font-size(15px); display:block; font-weight:normal;}
+     .color-orange{ color:$color-warning;}
+     a{font-family:$robotolight; @include font-size(13px); display:inline-block;  color:#707070; border:$common-border; margin-right:$space5; text-align:center;  margin-top:$space10; padding:$space5 - 2 $space10; width:48%;
+       &:hover, &.goToCart, &.goTowishList{ background:$bg-warning; color:$color-white; border-color:$color-warning;} 
+     }
+    .btn-move{ margin-right:0;}
+}
+
+.notifications{ text-align:center;  padding:$space40+40 0;  
+       .circel{ @include size(120px); background:#F5F5F5; @include border-radius(100%); display:block;  text-align:center; line-height:80px; margin:0 auto; position: inherit}  
+       span{ color:#707070; display:block; margin:$space15 auto; @include font-size(20px);}
+     img{ position:inherit;}
+}  
+.mini-cart-overlay{ display:none;}
+.mini-cart-overlay.active{ background: rgba(0,0,0,0.5);position:fixed; width:100%; height: 100%; z-index: 999; top:0; opacity: 1; transition: all 0.4s ease; display:block;
+  .swpmodal-close{ position:absolute; right:455px; top:5px; color:$color-white; @include font-size(30px); cursor:pointer;}
+}
+.no-scroll{overflow:hidden!important; position:fixed!important; width:100%; height:100%;}

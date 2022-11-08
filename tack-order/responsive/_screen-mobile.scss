@@ -1,0 +1,137 @@
+@media #{$screen-mobile}{
+.m-font13{ font-size: 13px;}
+.m-padding10{ padding: 10px;}
+.m-font25{ font-size: 25px;}
+.m-font18{font-size: 18px;}
+.m-font13{font-size: 13px;}
+.m-paddingt{ margin-top:10px;} 
+.m-paddingt{padding-top:10px;} 
+.m-padding10{ padding:10px;} 
+.m-paddingt10{ padding-top:10px;} 
+.m-margint20{ margin-top:20px;}
+.m-margin0{ margin:0px;}
+.m-padding0{ padding:0px;} 
+.m-margint10{ margin-top:10px;} 
+.m-margintb10{ margin-bottom:10px;}  
+.m-hide{ display:none;}
+.m-float-width-none{ float:none;}
+.m-text-align-center{ text-align:center;}
+ 
+.orderde{ 
+    .title{ @extend .m-font18;}
+    .detail{
+        table{ float:none; @extend .m-font13; width: 100%;}
+        article{  float:none; @extend .m-padding10; border:$zero; text-align:center;}
+    }
+    .alldet{
+        thead{ @extend .m-hide;}
+        tr{
+            &:nth-child(odd){background: $bg-light;}
+            td{position:$postion-relative; display: block; padding-left:$space30*5;
+               &:before{ position:$postion-absolute; width: 40%; white-space: nowrap; left: 15px; font-family: $font-family-medium;}
+               &:nth-child(1){
+                   &:before{ content:'Product Image :';}
+               }
+               &:nth-child(2){
+                   &:before{ content:'Product Name :';}
+               }
+               &:nth-child(3){
+                   &:before{ content:'Model :';}
+               }
+               &:nth-child(4){
+                   &:before{ content:'Quantity :';}
+               }
+               &:nth-child(5){
+                   &:before{ content:'Price :';}
+               }
+               &:nth-child(6){
+                   &:before{ content:'Total :';}
+               }
+            }
+        }
+    }
+    .steps{padding-bottom: $space30+10; @extend .m-paddingt10; @extend .m-margint20;
+        li{@extend .m-float-width-none; text-align: left; padding-left: $space30; position: $postion-relative; @extend .m-margint20; @extend .m-font13;
+           i{ position:$postion-absolute; left: $zero; top: $zero; width: 10px; height: 10px;}
+           &:first-child{
+               &:before{@include border-radius(0); left: 5px;}
+           }
+           &:last-child{
+               &:before{@include border-radius(0);}
+           }
+           &:before{ height: 100px; left:5px; width: 4px; top: 12px;}
+           .icon{@extend .m-margin0;}
+           &.active{
+               i{
+                   &:after{@include font-size(8px); @extend .m-padding0; line-height: 11px;}
+               }
+           }
+           .icon{@include size(45px,42px); background-size: 350px; @include background-position(0,-217);}
+           .icon-rawsta{@include background-position(-51,-217);}
+           .icon-quacheck{@include background-position(-99,-217);}
+           .icon-readis{@include background-position(-148,-217);}
+           .icon-transit{@include background-position(-199,-217);}
+           .icon-delivered{@include background-position(-247,-217);}
+        }
+        .tooltip{
+            .inside{left: 10px;}
+        }
+    }
+}
+
+.tobanner{ @extend .m-padding10; height: 365px; @extend .m-text-align-center; background-position: center bottom 12px;
+.heading{@extend .m-font25;}
+p{@extend .m-font13;}
+}
+.trackorder{
+    .my-account{@extend .m-margint10;
+        article{@extend .m-float-width-none; @extend .m-margintb10; @extend .m-padding10; width:100%; float:none;}
+        .form-group{
+            .btn{ font-size:14px; color:$color-white; float: left; width:100px; padding:$space5+3 $space10 $space5+3 $space40; @include background-position(8,5)};
+        }
+    }
+    figure{@extend .m-float-width-none; @extend .m-text-align-center; width:100%; margin-top:$space10;
+    img{margin: auto;}
+    }
+    p{ text-align:center;}
+}
+ 
+
+
+
+.orderde {
+    .steps{ display: table-cell;
+      li{ width: 100%; margin: $space0;
+          &:before {height: 115px;}
+          i{left: 0px;
+          } 
+          
+          &.active i { @include size(14px);
+          &:after {@include font-size(8px); line-height: $space0+3; padding-left: $space0;}
+          }
+           .icon{background:url("#{$images-path}/cartsprite.png") no-repeat left; @include size(62px,55px); margin: $space10 $space0 $space5; display:block;}
+            .icon-orderplace{background-position:-6px -6px;}
+             .icon-rawsta{background-position:-75px -6px;}
+             .icon-quacheck{background-position:-145px -6px;}
+             .icon-readis{background-position:-205px -6px;}
+             .icon-transit{background-position:-269px -6px;}
+             .icon-delivered{background-position:-340px -6px;}
+        }
+        .tooltip {
+            .inside{background: #fff; z-index: 999; left: $space0;
+              span {float: left;}
+            }
+            ul { display: inline-block;
+                li{display: inline; float: none;}
+                li + li{padding-left: $space5;}
+            }
+        }
+    }
+}
+.deladdress {
+    address{display: block; text-align: right; padding-bottom: $space20;}
+     p { display: block; text-align: right;}
+}
+
+
+}

@@ -1,0 +1,117 @@
+//Product review 
+.product-review{padding-top:$space40+10;         
+        .topheading{text-align: center; padding-bottom:$space40+5;
+         .title{@include font-size(25px); margin-bottom:$space5;}
+           p{ @include font-size(14px);font-family:$robotolight;}
+           img{ margin-bottom:$space20;}
+        }
+     .review-write{color:#000;margin-top:$space10;display:inline-block;padding:$space10  $space40+10; background:#e9e8e8; @include border-radius(3px); @include font-size(16px);
+          &:hover{background:#e57200;color:#fff}
+     }
+     
+
+
+   .left{float:left;width:47%;}
+   .count{@include size(27px); @include border-radius(100%); border:1px solid $color-warning; display:inline-block; vertical-align:middle; margin:0 $space5 - 3 ;
+     small{@include size(17px); display:block; background:$bg-warning;@include border-radius(100%); display:block; margin:4px auto;}
+   }
+   .starout{ float:left;  margin-right:$space10;
+       p{ font-family:$robotomedium; @include font-size(19px);  @include size(90px,82px); margin:0 auto; line-height:$space40+40+10; text-align:center; background: url("#{$images-path}/product-detail/review-yellow.png")no-repeat 0 0;}
+      span{  @include font-size(13px); color:$color-black; font-family:$robotoregular;
+        small{ @include font-size(12px); display:block; line-height:$space10+4; font-family:$robotolight;}
+      }
+   }
+   
+   ul{ float:left;  width:72%;  
+      li{line-height:normal;text-transform:uppercase;margin:$space5+2 0 0;
+            span{float:left;}
+            .line{height:17px;background:#e9e8e8;float:left;line-height:normal;margin:$space0 $space10; width:270px; position:relative}
+            .rating-line{position:absolute;top:0; left:0; width:50%;background:$bg-warning;height:100%}
+           .litwo-star .rating-line{width:30%}
+           .lithree-star .rating-line{width:5%}
+      }   
+   }
+    .starno{@include font-size(13px); font-family:$robotolight; text-transform:capitalize; width:15px;}
+
+    .right{  width:53%; float:left;
+             figure{ position:relative;   margin:0 1px 5px; float:left;  width:164px;
+               img{position:absolute;  top:50%; left:50%; transform:translate(-50%,-50%);}
+               &:before{ content:'';  display: block; padding-top:74%;} 
+         }
+ 
+    }
+ 
+    .review-slider{display:none; }
+    .slick-dots{ margin:0 auto; text-align:center; 
+          li{border:none; @include border-radius(0px); width:auto; padding:0; margin:0; float:none; 
+          button{ margin:0 $space5; 
+            &:before{@include border-radius(100%); background:#e9e8e8;}
+          }
+          &.slick-active{
+              button{ &:before{ background:$bg-warning;}}
+             
+          } 
+       }
+   }
+    
+
+}
+//proreview-customer
+.proreview-customer{ padding-top:$space20; text-align:center;
+          .content{ border-top:$common-border; margin-top:$space15; padding-top:$space20;}
+          figure{ width:17%; display:inline-block; vertical-align:top;
+              &:before{ padding-top:80%;}
+          }
+          article{ display:inline-block; vertical-align:top; width:80%; padding-top:$space10;  text-align:left;
+              p{ line-height:$space20+2; @include font-size(13px);  padding-top:$space5+3;}
+               .star{width:78px; display:block; padding-bottom:$space5+2;}
+                  span{color: #545454; @include font-size(15px); display:inline-block;
+                     &.pull-left{ float:none;}
+                  }
+                  small{@include font-size(13px); display:inline-block; padding-left:$space5;
+                    &.pull-right{ float:none;}
+                  } 
+          } 
+        
+          .full{
+              article{ width:100%;}
+               .btn-helpful{ margin-left:$space10;}
+          }
+          
+ .btn-helpful{margin-top:$space10;/*&:before{  left:27px;}*/}
+ .pagination{ padding-top:$space20;}
+ .links{display:inline-block;
+     b{border:$common-border;padding:$space5 - 2 $space10; color:$color-warning;}
+    a{ padding:$space5 - 2 $space10; border:$common-border; color:$color-black;}
+ }
+ 
+ .results{ display:none; padding-top:$space5 - 2;}
+ 
+}
+
+ //media css start 
+
+@media #{$screen-tablet}{  
+    .product-review{ padding-top:$space20;
+        li{
+            .line{ width:230px;}
+           
+        } 
+        .right{ padding-left:$space15;
+         img{ margin-bottom:$space5;}
+        } 
+        ul{ width:60%;
+            li .line { width:155px;}
+        }
+ 
+    }
+    .proreview-customer{
+        .full{.btn-helpful{ margin-left:0;}}
+        .btn-helpful{ margin-left:0;}
+       
+    }
+   
+     
+    
+}
+

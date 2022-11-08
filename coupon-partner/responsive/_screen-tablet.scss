@@ -1,0 +1,11 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .partner-content {
+        ul{
+            li{
+                img{max-width:90%;}
+            }
+        } 
+    }
+}
+

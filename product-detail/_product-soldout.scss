@@ -1,0 +1,10 @@
+  .sold-out-product{ margin-top:$space15;  text-align:center; 
+                .item_outof_stock{ color:$color-warning; @include font-size(24px); font-family:$robotomedium; padding:0;}
+                 p{color:#4A4949; @include font-size(13px); font-family:$robotoregular; padding:$space5 0;}
+                form{ display:flex; justify-content:space-between; flex-wrap:wrap;}
+                .field{ width:48%; margin-bottom:$space10+2;}
+                [type="submit"]{ background:$bg-warning; color:$color-white; text-transform:uppercase; @include border-radius(4px); padding:$space10+2 0;  cursor:pointer; @include font-size(14px); width:100%;}
+      
+      
+      }  
+

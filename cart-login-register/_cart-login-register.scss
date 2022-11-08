@@ -1,0 +1,60 @@
+// Login   
+
+.login_account{width:690px;margin:25px auto 30px;} 
+.login_account h1{font-size:16px; font-family:$robotomedium; color:#000;font-weight:400;text-transform:uppercase;text-align:center;border-bottom:1px solid #e5e5e5;padding:0 10px 10px}
+
+.login_account p{font-size:13px;text-align:center;margin:10px 0 0; line-height: 22px;}
+.login_account p a{color:$color-warning;}
+.login_account .left{width:342px; margin:25px auto 0;}
+.login_account .left label{font-size:15px;color:#000;font-weight:400;text-transform:uppercase;margin-top:10px;display:inline-block;cursor:inherit}
+.login_account .left input[type=email],.login_account .left input[type=password],.login_account .left input[type=text]{width:262px;padding:11px 8px;border:1px solid #cccbcb;margin:5px 0 0;outline:0;font-size:13px;
+@include placeholder{color: #989797;}
+}
+.buttoncheckout a,.login_account .left input[type=submit]{-webkit-box-shadow:inset 0 1px #e98748;-moz-box-shadow:inset 0 1px #e98748}
+.login_account .left input[type=submit]{background: $bg-warning; border: $zero; @include border-radius(3px); cursor:pointer; padding:10px 20px;font-size:15px;color:#fff;text-transform:uppercase;margin:10px 0 0;float:left;font-weight:400}
+.login_account .left a{font-size:12px;color:$color-warning;margin:20px 54px 0 0;float:right;text-transform:uppercase}
+#msg {color: red;font-size: 12px;}
+.login_account #column-left{width:100%}
+.login_account .left .checked{margin:10px 0 0;line-height:normal}
+.login_account .left .checked input[type=checkbox]{margin:1px 4px 0 0;-webkit-appearance:checkbox;vertical-align:middle}
+.login_account .left .checked label{font-size:13px;color:#282828;text-transform:inherit;margin:0}
+.signup_account .left .error{margin:0 0 10px;text-align:left;font-size:12px; display:block; color:red;}
+ 
+//checkout login
+
+.login_account .tab-links ul{text-align:center;margin:0 0 10px;border-bottom:1px solid #e5e5e5}
+.login_account .tab-links ul li{display:inline-block}
+.login_account .tab-links ul li a{font-size:14px;font-family:robotomedium;color:#333;font-weight:400;text-transform:uppercase;padding:10px 20px;display:block;position:relative}
+.login_account .tab-links ul li.active a{color:#e07a32}
+.login_account .tab-links ul li a:after{display:block;background-color:#e07b32;content:'';position:absolute;bottom:-1px;left:0;width:0;height:1px;-webkit-transition:all .5s ease 0;-moz-transition:all .5s ease 0;-o-transition:all .5s ease 0;transition:all .5s ease 0}
+.login_account .tab-links ul li.active a:after{width:100%}
+.login_account .tab-content{margin:0 0 50px}
+.login_account .tab-content h4{border-bottom:0}
+.login_account .tab-content .leftnone{float:none;border:0;margin:auto;width:280px;padding:0}
+.login_account .tab-content p{display:inline-block;font-size:12px;width:100%}
+.login_account .tab-content .login_account{margin-top:10px}
+ 
+//forgotten password
+.forgotten-password{
+    .left{float: none; border: 0; margin: auto; width: 285px;}
+}
+
+.login_account{
+    .tab-content{
+        h1{@include font-size(12px); border: $zero; text-transform: inherit;}
+    }
+}
+  
+
+
+.warning{position: relative; background: url("#{$images-path}/product-detail/warning.png") 5px 15px no-repeat #ffd1d1;border: 1px solid #ccc; padding:$space10 $space10 $space10 $space30+3; margin-bottom:15px;color:#555; @include border-radius(5px);
+   a{ color:#4496d2;}
+   .close{float: right;padding-top: 9px; padding-right: 4px; cursor: pointer;padding-left: 10px;}
+  } 
+
+.glob{ display: none}
+.hidden, .cusreview .halfchart span { display: none !important;}
+ 
+//checkout
+@import "responsive/_screen-tablet-checkout.scss";  
+@import "responsive/_screen-mobile-checkout.scss";  

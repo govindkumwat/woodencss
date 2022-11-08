@@ -1,0 +1,117 @@
+
+@media screen and (max-width:1600px){   
+    .category-four {
+        .col {
+            .cart-hover{  
+                top:52%; 
+            }
+        }
+    }
+    .category-common {
+        .col {
+            .cart-hover{  
+                top:48%;
+            }
+        }
+    }
+}
+@media screen and (max-width:1366px) {
+    .category-common {
+        width: 76%;
+        &.category-four{
+            .col{
+                .cart-hover{bottom: 35%;}
+            }
+        }
+        .col {
+            .cart-hover{top:43%;}
+        }
+    }
+    .left-filter{
+        width: 23%; 
+    }
+}
+@media screen and (max-width:1280px){
+    .category-common .col .cart-hover .cart-btn{font-size: 14px;}
+    
+}
+@media #{$screen-desktop}{ 
+   .left-filter {
+    width: 26%;
+}
+   .category-common{ 
+    width: 73%;
+       .col{
+        .cart-hover{
+            top:35%;
+            .cart-btn{
+                @include font-size(13px);
+                padding: 5px 10px;
+            }
+        }
+       }
+   }
+   .category-four{ 
+    .col {
+        .cart-hover{
+            top:48%;
+        }
+    }
+   }
+   .category-desription{
+       margin:10px 0;
+        .category-more-toogle{
+               max-width: 640px; 
+           }
+   }
+   .FindBox{ 
+        .SelectBox{
+            vertical-align: top;
+        }
+    }
+   .slider-wrapper { width: inherit; margin-left: inherit; }
+   .popular-category{
+       padding: 25px 0;
+       .subhead{
+           font-size: 22px;
+            line-height: 26px;
+            padding: 0px 0 20px;
+       }
+       .category-list{
+           max-width: 870px;
+           grid-row-gap: 20px;
+       }
+    }
+}
+@media screen and (max-width:1024px){
+    .category-common {
+        .col {
+            .price {
+                strike{padding:0px 5px 0px 5px;}
+                p{float:none;}
+            }
+        }
+    }
+    .left-filter .toggle-btn .slider:before{
+        @include size(16px);
+    }
+    .left-filter article.SortBy .m-fiopen span{@include font-size(13px);}
+    .left-filter .toggle-btn .switch{
+        height: 20px;
+        width: 40px;
+    }
+    .left-filter .shiptext{font-size: 14px;line-height: 18px;}
+    .left-filter .pintext{font-size: 12px;}
+    .category-four{
+        .col{
+            width: 32.5%; 
+            &:nth-of-type(4n){margin-right: 0.8%;}
+        }
+    }
+    .filter_slider_main.fixed .category-slider article a{display:inline-block;}
+    .category-slider { 
+        .slick-prev, .slick-next{left:-10px;}
+        .slick-next{right:-10px;left:unset;} 
+    }
+}
+

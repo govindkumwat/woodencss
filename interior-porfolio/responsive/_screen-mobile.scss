@@ -1,0 +1,36 @@
+@media #{$screen-mobile}{
+ .interportfolio{ background:$bg-white;     
+    .title{margin: 0; font-size: $font-size-20+2; padding: $space20 $space0; display:none;}
+    .box{margin-bottom: $space5; width:100%;
+         .first{width:auto; margin-right: $space0; margin-bottom: $space5 - 2; float: none;}
+        .second, .third{width: 49%;}
+        .fourth{display: inline-block; float: none; width: 100%;}
+        .fifth{width: 100%;}
+        figure{ margin-top: $space5 - 2;}
+        img{ width: 100%;}
+    }
+    .demo-gallery{margin-bottom: $space30; margin-top:$space20;
+      .heading{ text-align:center;} 
+  
+    }
+    figure{float: none;}
+    .btn-warning{ color:$color-white;}
+    .btn-warning { display:none;}
+
+}
+.interior-design{
+    .portfolio-banner{ height: 400px; padding-top: $space0;
+                       .container{ background:$bg-white; padding:$space10 0; margin:0 $space10;}
+                       .title{ padding:$space10 0;color:$color-black; @include font-size(16px);
+                        &:after{ background:$color-warning; width:100px;}
+                       }
+                       .pera{padding: 10px 0 0; background: $bg-white; color: $color-black; margin: 0; font-size: 12px; padding: 0 2% 10px; line-height: 20px;}
+                       .heading{padding-bottom: 5px; font-size: $font-size-20;color:$color-black; padding:$space10 0;} 
+                       .btn-warning{ color:$color-white;}
+                       
+    }
+}
+
+.portfolio-main{ padding-bottom:0;}
+.m-interior-button{.btn-warning{float: right; width:60%; @include border-radius(0); padding:$space10+3 $space0;  } }
+}

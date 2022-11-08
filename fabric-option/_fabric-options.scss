@@ -1,0 +1,245 @@
+//Fabric Option
+
+.faboption{
+    padding: $space30 - 2 $space0;
+        aside{
+            float: left;
+            width: percentage(260px / $width-container); 
+            padding:$space10+2 $space10 - 1;
+                .title{@include font-size(18px); border-bottom: $border1 #c7c7c7; display: block; padding-bottom: $space10 - 1; margin-bottom: $space15; font-family: $font-family-regular;}
+                span{@include font-size(14px); display: block; font-family:$robotomedium;}
+                ul{margin-bottom: $space15;}
+                li{@include font-size(13px);  border-bottom:$border1 #c7c7c7; padding: $space10 0 $space10 - 3;}
+                small{@include font-size(13px); background: $bg-white; float: right; padding: $space0 $space10;}
+            } 
+    .faright{
+        float: right;
+        width: percentage(820px / $width-container);
+        li{
+            float: left; 
+            width: 260px; 
+            margin: 0 19px 20px 0;  
+            position: relative;
+            @include every(3){
+                margin-right: $zero;
+                .zoom{left: inherit; right: 265px;}
+            }
+            small{
+                @include font-size(12px); 
+                color: #616161; 
+                display: block;
+            }
+            a{
+                float: right; 
+                @include font-size(11px); 
+                text-transform: uppercase; 
+                border: $border1 #aeaeae; 
+                @include border-radius(2px); 
+                color: #000; padding: 0 10px; 
+                margin: 5px 0 0 0; 
+                cursor: pointer;
+            }
+                figure{@include size(260px); margin-bottom: 10px; position: relative;
+                       &:hover{
+                           .zoom{display: block;}
+                           #mark{display: block !important;}
+                           
+                       }
+                }
+                p{display: inline-block; @include font-size(14px); line-height: 20px; padding:0;}
+             }
+             img{display: block;}
+             p{padding:7px 0px 10px; font-size: 13px; line-height: 22px;}
+             .heading{@include font-size(18px); padding-top: $space10+2; border-bottom: $border1 #c7c7c7; margin-bottom: 20px; padding-bottom: 10px;}
+             .text{background: #f9f9f9; padding: $space10; border: $border1 #cccccc; position: absolute; top: 185px; width: 545px; z-index:2; display:none;
+                   p{float: right; width: 48%; font-family:$robotolight; line-height: 24px; padding: 20px 0;}
+             }
+    } 
+    #infscr-loading{
+        img{ margin: 10px auto 0;}
+    }
+    
+    .fabric-loader{  position:relative; min-height:400px;
+           img{margin:auto; position:absolute;  left:0; right:0; top:0; bottom:0; }
+      } 
+}
+.show{cursor:crosshair;
+                 &:before{ content: ''; border: 8px solid transparent;             
+    -o-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round; 
+  -moz-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  -ms-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  -webkit-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round; background-color: transparent !important; z-index: 1; position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+                 }
+                 //&:after{position: absolute; @include size(100px,24px); bottom: 10px; right: 0; content: url("#{$images-path}/fabric-option/watermark.png");}
+              
+            
+             }
+.custom-check{
+    i{@include size(18px); @include border-radius(2px); border: $border1 #adaea9; position: relative; display: inline-block; vertical-align: middle; margin-right: $space5; @include transitionall;
+      &.active{background: $bg-warning; border-color: $bg-warning;
+               &:before{content: '\f00c'; font-family: $font-family-awesome; color: $color-white; display: block; line-height: 18px; text-align: center; @include font-size(11px);}
+      }
+    }
+    input[type="checkbox"], input[type="radio"]{position: absolute; @include size(100%); opacity: 0; cursor: pointer; left: $zero; top: $zero;}
+}
+
+.m-fabric-filter{@extend .hide;}
+
+//zoom effects css
+
+.show {
+height: 260px;
+overflow: hidden;
+position: relative;
+left: 0;
+img{max-width: 100%;}
+}
+.zoom {
+position: absolute;
+left: 300px;
+top: 0;
+z-index: 3;
+width: 400px;
+height: 400px;
+display: none;
+overflow: hidden;
+border: 1px solid #eee; display: none;
+}
+.zoom img {
+position: absolute;
+left: 0;
+top: 0;
+}
+.zoomeffect{
+    display: none;
+img{position:unset;display:block;height:auto!important;}
+}
+#mark{
+border: 2px solid #fff; @include box-shadow(0 0 4px rgba(0,0,0,.19)); 
+}
+.category-common{
+    .col{
+        figure{
+            overflow: unset; 
+            &:before{display:none;}
+            img{
+                width:100%;
+                height: 100%;
+                margin:0;
+            }
+        }
+        .proud-name{
+            .heading{border:0;}
+        }
+    }
+    &.category-three{
+        .col{
+            @include every(3){
+                margin-right: $space0;
+                .zoom{left: inherit; right: 400px;}
+            }
+        }
+    }
+    &.category-four{
+        .col{
+            @include every(4){
+                margin-right: $space0;
+                .zoom{left: inherit; right: 300px;}
+            }
+            @include every(3){
+                margin-right: $space0;
+                .zoom{left: inherit; right: 295px;}
+            }
+        }
+    }
+}
+
+@media #{$screen-desktop}{
+
+    //Fabric Options
+.faboption{
+    .faright{
+        ul{display: flex; flex-wrap: wrap;}
+        li{ width: 225px;
+            figure, .show{@include size(auto);}
+            figure{
+                    &:hover{
+                        #mark{display: none !important;}
+                    }
+                }
+        }
+        .show{
+            &:before{display: none;}
+        }
+    }
+    .zoom{display: none !important;}
+}
+    
+}
+
+
+@media #{$screen-tablet}{
+.faboption{
+    aside{
+        li{@include font-size(12px);}
+        small{padding: 0;}
+    }
+    .faright{
+        li{ width: 174px; margin-right: $space10; @include font-size(12px); line-height: 20px; margin-bottom: 15px;
+            a{font-size: 10px; padding: 0 5px;}
+        }
+        small{ display:none;}
+        ul{
+            span{display: block; @include font-size(14px);}
+            p{padding-left: 0; font-size: 12px; @include oneline; width: 110px;}
+        }
+    }
+}
+    
+}
+
+@media #{$screen-mobile}{
+.m-fabric-filter{ position: fixed; 
+                  @include size(100%,55px); 
+                  bottom: 0; left: 0; 
+                  @include box-shadow(0 -2px 7px 1px rgba(0,0,0,0.1)); 
+                  background: #fff; z-index: 99; 
+                  display: block; text-align: center; @include font-size(15px); padding-top:20px; text-transform: uppercase;
+                  svg {
+                          margin: 0px 7px -4px 0px;
+                  }
+}
+.faboption{ padding:0; 
+    aside{ position: fixed; bottom:-500px; z-index: 999; left: 0; width: 100%; height: 450px; overflow: scroll; padding-bottom: 60px; background: $bg-white; padding-bottom: 15px; } 
+    .faright{ float:none; width:100%;
+             li{width: 50%; padding:0 5px 20px; float: none; margin:0; text-align: center;
+                figure{margin-bottom: 5px;}
+                a{float: none; display: inline-block;}
+             }
+             ul{
+                 p{width: auto; display: block;}
+             }
+             img{width: 100%;}
+              .heading{ padding:10px;}
+    }
+    .result{position: fixed; bottom: 0; background: $bg-white; @include size(100%,55px); left: 0; padding: 5px 2%;
+            label{ margin-left: 5px;}
+            span{@include font-size(13px); display: inline-block; margin: 0 3px;}
+            i{@include size(15px); font-size: 10px; font-style: normal; text-align: center; line-height: 13px; margin-left: 3px;}
+    }
+}
+
+.main-header.interior-overlay{
+  background: rgba(0,0,0,0.8);
+  position  : fixed;
+  width     : 100%;
+  height    : 100%;
+  z-index   : 999;
+  top       : 0;
+  opacity   : 1;
+  transition: all 0.4s ease;
+}  
+
+}
+

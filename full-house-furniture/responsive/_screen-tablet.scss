@@ -1,0 +1,30 @@
+@media #{$screen-tablet}{
+.fuhode-banner{
+    .heading{@include font-size(26px);}
+}
+.fuhode-what{
+    .tabs{padding-right: $space10;}
+    .tab-links{width: 220px;}
+    .tab-content{padding-left: $space20;}
+}
+.fuhode-video{margin: 40px auto 40px
+    article{width: 440px;}
+      .video{@include size(428px,240px);}
+      iframe{@include size(100%);}
+} 
+.full-houdesign{ 
+    .fuhode-media{
+        .bottom{
+            li{width: 18%;}
+        }
+    }
+}  
+//Detail
+.fuhodetail-outer-bhk{padding: 30px 0;
+                      section{flex-wrap: wrap; margin: $space20 $space0;}
+                      article{width: 49%; margin-bottom: $space10;}
+    .platinum{border-top: 1px solid #eeeeee;}
+    .gold{margin: 0 0 10px;}
+}
+.fuhodetail-packages{padding: 40px 0;}
+}

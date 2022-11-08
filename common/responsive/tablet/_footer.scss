@@ -1,0 +1,12 @@
+.footer{
+    .footer-menu{ width:17%;
+        .title{ @include font-size(14px);}
+        li{
+            a{@include font-size(12px);}
+        }
+    }
+    .facebook-like{ width:29%;}
+ .socail-link-title{ margin-left:0; @include font-size(13px); margin-right:0; margin-bottom:$space5;}
+}
+
+#backtop{ display:none;}

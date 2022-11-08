@@ -1,0 +1,54 @@
+  .homeslide,
+  .interior-design {
+
+    .slick-prev,
+    .slick-next {
+      z-index: 1;
+      left: 0;
+      background: rgba(243, 243, 243, 0.8);
+      opacity: 1;
+      @include size(43px, 79px);
+      @include border-radius(0 3px 3px 0);
+      text-align: center;
+
+      &:hover {
+        background: #f3f3f3;
+      }
+    }
+
+    .slick-next {
+      right: 0;
+      left: inherit;
+      @include border-radius(3px 0px 0px 3px);
+      ;
+    }
+
+  }
+
+  .customer-slider,
+  .slider-for {
+    .slick-dots {
+      margin: auto;
+      text-align: center;
+
+      li {
+        button {
+          &:before {
+            @include border-radius(100%);
+            background: #fff;
+            border: 1px solid #dbdbdb;
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              background: #f37920;
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+
+  }

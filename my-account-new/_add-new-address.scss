@@ -1,0 +1,72 @@
+.add-new-address { padding: $space20; border:  $common-border;
+   .title { @include font-size(16px); text-transform: uppercase; margin-bottom: $space15; }
+   .box{ width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin-bottom: $space10; position: relative; 
+        .form-control { border: $common-border; display:inline-block; padding: $space10; @include border-radius(3px); width:60%; }
+          label {@include font-size(14px); display:inline-block; width: 40%;
+            span { color: red; }
+          }
+          .error-block { margin-left: 40%; }
+      }
+      .top-title { color: $color-orange; display:block; margin-bottom: $space10; }
+       article { width: 48%; display: inline-block; vertical-align: top; }
+       .checkbox { display: block; position: relative; padding-left: 30px; margin-bottom: 12px; cursor: pointer; -webkit-user-select: none;-moz-user-select: none;  -ms-user-select: none;  user-select: none;
+         input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+        .checkmark { position: absolute; top: 3px; left: 0; @include size(20px); border: 1px solid #E57200; @include border-radius(3px); }
+        .checkmark:after { content: "";position: absolute;display: none; }
+         input:checked ~ .checkmark:after { display: block; }
+        .checkmark:after { left: 6px; top: 1px; width: 5px; height: 10px; border: solid #E57200; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+       }
+       .save-address { width:60%; float: right; position: relative; 
+         .cancel { position: absolute; right: -70px; bottom: 5px; color: #4A4A4A; text-transform: uppercase; }
+       }
+     
+      .bill-address { margin-left: 4%; 
+        .checkbox {@include font-size(16px); text-transform: uppercase; }
+      }
+      .pinName { position: absolute; right: 10px; top: 10px; border-left: 1px solid #ccc; padding-left: $space10; line-height: normal; }
+      
+}
+
+.form-editnew {
+    .add-new-address { border-top: none; }
+}
+   .no-address { text-align: center; margin-top: $space30*2;
+           span{ @include font-size(20px); display: block; margin: $space20 0 $space5; }      
+            .btn-common {  padding: $space10 - 3 $space40; margin-top: $space20; display: inline-block; width: auto;
+               &:before { content: '+'; display: inline-block; margin-right: $space5; @include font-size(18px);  }
+             }
+   }
+
+   @media #{$screen-desktop}{
+       .add-new-address { 
+          .checkbox {@include font-size(13px);}
+       }
+   }
+@media #{$screen-tablet}{
+    .add-new-address{ 
+        article { width: 100%;  }
+         .bill-address { margin-left: 0px; width: 100%; margin-top: $space20; }
+         .save-address {
+             .cancel { position: inherit; bottom: inherit; right: inherit; }
+         }
+    }
+    
+    .form-editnew {
+        .add-new-address { 
+            .title { @include font-size(12px); }
+            article { width: 48%;  }
+            .bill-address { margin-left: 4%; width: 48%; margin-top: $space0; 
+             .checkbox { @include font-size(12px); line-height: normal; margin-bottom: $space5+3px; }
+            }
+            .box {
+                label, .form-control { width: 100%; }
+            }
+            .save-address { width: 100%; float: none; }
+        }
+    }
+    
+    
+}
+
+
+

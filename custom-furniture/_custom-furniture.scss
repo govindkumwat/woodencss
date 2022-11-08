@@ -1,0 +1,130 @@
+
+.figure-lazy { position: relative;
+    img { position: absolute; mix-blend-mode: darken; top: 0; left: 0; bottom: 0; right: 0; margin: auto; }
+    &:before { content: ''; display: block; padding-top: 100%; }
+  }
+
+ .custm-btn { background: #FFD922; margin-top: $space15; display: block; width: 240px; padding: $space10+2; text-align: center; color: $color-black; @include font-size(16px); font-family: $robotoregular; @include border-radius(3px);  }
+
+.custm-banner { position: relative; height: 436px; background-repeat: no-repeat; background-position: center; text-align:center;
+  .container { position: absolute; left:0; right: 0; top:0; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: $space30 0; }
+.banner-title { @include font-size(45px); line-height: normal; margin-bottom: $space15;
+ span { display: block; font-family: $robotobold; }
+}
+aside { font-family: $robotolight; @include font-size(20px); text-align: left; color: $color-white; margin-left: 100px; }
+figure{ @extend .figure-lazy;
+    &:before { padding-top: 23%; }
+}
+}
+
+.banner-customize { background: $bg-white; @include font-size(25px); font-family: $robotolight; text-align: left;  width: 360px; padding: $space30; line-height: normal;
+    span { display: block; font-family: $robotobold; }
+    ul { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: $space15;
+      li { width: 50%; text-align:center; @include font-size(15px); padding: $space20; font-family: $robotolight;
+        img{ display: block; margin: $space0 auto $space10; }
+        &:nth-child(odd) { border-right: $common-border; }
+        &:nth-child(-n+2) { border-bottom: $common-border; }
+      } 
+    }
+}
+
+.made-section { text-align: center; padding: $space20 0; color: #1C2E34; border-bottom: $common-border;
+  .made-title { @include font-size(20px); margin: $space0 $space0 $space5; font-weight: normal; }
+    .more-content { @include font-size(14px); max-width: 940px; margin: auto; height: 20px; overflow: hidden; }
+    .more{ color: $color-orange; cursor: pointer; font-family: $robotomedium;  @include font-size(13px);
+            &:before{ content: 'View More';  }
+        }
+         &.toggle-contant{
+             .more-content { height: auto; }
+             .more{
+              &:before{ content: 'Less';  }
+             } 
+          }
+}
+.custom-heading { @include font-size(30px); text-align: center;
+  span { font-family: $robotomedium; font-weight: normal;  }
+  p { @include font-size(15px); margin-top: $space15; }
+}
+.btn_common { @include font-size(14px); color: $color-white; background: $bg-orange; padding: $space5+3 $space30; @include border-radius(3px);}
+.custome-imagine { padding: $space40 0; text-align: center; border-bottom: $common-border;
+    ul { display: flex; justify-content: space-between; margin-bottom: $space30;
+        li { width: 24%; 
+           img { margin-left: 50px; }  
+           span { display: block; font-family: $robotomedium; font-weight: normal; @include font-size(20px); margin: $space15 0 $space5; }
+        }
+    }
+
+}
+.custom-make { padding: $space40 0; color: #1C2E34; 
+    article { background: #F5F5F5; position: relative; overflow: hidden;
+     &:before { content: ''; @include size(100%); position: absolute; top: -50%; left: 0; right:0; background: #fff; @include border-radius(100%);}
+    }
+    ul { display: flex; @include box-shadow(0 0 5px rgba(0,0,0,0.28)); @include border-radius(5px); width: 790px; margin: $space40*2+10 auto; background: $bg-white; position: relative;
+        li{ width: 33%; text-align: center; border-right: $common-border; @include font-size(18px); font-family: $robotolight;
+         span { display: block; padding: $space15 $space20; border-bottom: $common-border; line-height: $space40; }
+         &:first-child { text-align: left; 
+          span { &:last-child { border: none; } }
+         }
+         &:last-child { border: none; width: 34%; margin: -45px 0; background: $bg-white;  @include box-shadow(0 0 5px rgba(0,0,0,0.28)); @include border-radius(5px); overflow: hidden; }
+         label { padding: $space20 $space20 $space0; display: block; @include font-size(20px);  }
+         p { @include font-size(12px); font-family: $robotoregular; padding: $space20; line-height: normal;
+          strong { @include font-size(20px); font-family: $robotomedium; display: block; font-weight: normal; margin-bottom: $space10; }
+         }
+         .close { font-family: $robotomedium; color: red; }
+         img { margin-right: $space10; vertical-align: middle; }
+        }
+    }
+    .btn_common { margin-bottom: $space20; }
+    .makmodal { background: $bg-orange; font-family: $robotoregular; color: $color-white; padding: $space20; }
+}
+.custmCollage {
+  .custom-heading { margin-bottom: $space20; }
+}
+.slick-carousel {  width: auto; }
+.slick-slide {  margin-right: $space20; }
+.slideOne { padding: $space30 0 $space20; display: none; }
+.slidetwo { padding-bottom: $space30; display: none; }
+.mid-section { color: #1C2E34; text-align: center; line-height: normal; border-bottom: $common-border;
+    figure { display: inline-block; vertical-align: middle; width: 45%; @extend .figure-lazy;
+     &:before { padding-top:115%; }
+    } 
+    aside { display: inline-block; vertical-align: middle; margin-left: $space40; text-align: left;}
+    strong { display: block; @include font-size(35px); font-family: $robotobold; }
+   p { margin: $space15 0; }
+   .title { @include font-size(20px); font-family: $robotolight; 
+      img { float: left; margin-right: $space20; }   
+      &:after { @include size(180px, 3px); content: ''; display: block; background: #55CD6C; margin: $space20 0; }
+   }
+}
+
+.perfect-furniture { padding: $space40 0; color: #1C2E34;  border-bottom: $common-border;
+    ul { display: flex; justify-content: space-between;  margin-top: $space30;
+      li { width: 40%;  text-align: center; @include font-size(16px);
+        span { display: block; @include font-size(20px); margin: $space10 0 $space5; }
+        p { margin-bottom: $space15; }
+        &:first-child { width: 25%; margin-top: 115px; 
+         figure { &:before { padding-top:105%; } } 
+        }
+         &:last-child { width: 30%; 
+          figure { &:before { padding-top:69%; } } 
+         }
+         article { margin-top: $space20; }
+           figure {  background:#f5f5f5; @extend .figure-lazy;
+            &:before { padding-top:92%; }
+           } 
+      }
+    }
+}
+
+.meet-the-makers { padding: $space40 0 $space10;
+    .custom-heading { margin-bottom: $space20; }
+     figure {  background:#f5f5f5; @extend .figure-lazy;
+     &:before { padding-top:48%; }
+    } 
+}
+
+
+@import "responsive/_screen-desktop.scss"; 
+@import "responsive/_screen-tablet.scss";
+
+

@@ -1,0 +1,70 @@
+
+//Emi Detail
+.swpmodal-container_i{
+    .emi-detail{ display:block;}
+}
+.emi-topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .emi-tc{
+        color:#e57200;
+        padding: 0 20px 0 0;
+    }
+}
+.emi-detail{ width:728px; position:relative; display:none;
+            .heading{@include font-size(20px); padding:$space15;}
+
+.tab-links{width:23%; border-right:$border1 #ededed;overflow: auto; height: 375px;
+          a{color:$color-black; display:block; border-right:3px solid $bg-white; padding:$space10+1 0 $space10+1 $space15; @include font-size(14px);}
+          li{
+              &.active, &:hover{
+                  a{background:#f6f6f6; border-right-color: $bg-warning; color: $color-warning;}
+              }
+          }
+}
+.tab-content{ width:77%; display:block; padding:0;}
+ table{background:#f7f7f7; text-align: center; border-spacing:0; border-collapse:collapse;
+    thead{background:#ededed;}
+    th{ padding:$space10+2 $space0; font-family:$robotolight; font-weight:normal; @include font-size(14px);}
+       tbody {
+         tr{
+             border-bottom:$border1 #ededed;
+             &.nocost{ 
+                 td{
+                   &:nth-child(2){color:#e20000;font-size:15px;}  
+                 }
+            }
+         }
+      }
+      td{@include font-size(13px); padding:$space10+3 $space0;}
+}
+
+.emi-note{ @include font-size(11px); color:#494949; padding:$space15 $space20+4 0; display:block!important;
+           ul{list-style:disc; margin:$space5 0;
+            li{@include font-size(12px); padding:$space10 0;}
+          }
+          span{ @include font-size(14px); color:$color-black; text-decoration: underline;}
+}
+.tabs{border-top:$border1 #ededed; display: flex;}
+.tab{ display:none; 
+  &.active{ display:block;}
+}
+.swpmodal-close{ position:absolute; right:-30px; top:0px; cursor:pointer;}
+
+}
+//Emi Detail
+#emi_list .gridtable thead,#emi_list .gridtable tr:nth-child(even){background:#f1f1f1}
+#emi_list{height:432px; background:$bg-white; }
+#emi_list .gridtable tr td{ @include font-size(13px);color:#6a6a6a;line-height:normal;padding:$space5+1 $space20;}
+#emi_list .gridtable tr td strong{@include font-size(13px);color:$color-black;font-weight:400}
+#emi_list .emi-note{@include font-size(12px);color:#494949; font-weight:400; padding:$space10 $space15;margin:$space10 0 0;}
+#emi_list .emi-note span{@include font-size(14px);font-family:$robotomedium; color:$color-black;}
+#emi_list .emi-note ul{list-style:disc inside;}
+
+@media #{$screen-tablet}{
+    .emi-detail .swpmodal-close {
+            right: 0; top: -35px;
+    }
+}
+

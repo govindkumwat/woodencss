@@ -1,0 +1,370 @@
+@media screen and (max-width:1366px){
+.faq-section .tab-content:after{right:-40px;} 
+}
+@media screen and (max-width:1280px){
+   .main-banner {
+       article{padding: 240px 0 50px;}
+       .heading{
+           font-size:42px;line-height:46px;
+           span{font-size:38px;}  
+       } 
+       .headingtext{font-size:17px;line-height: 25px;}
+    } 
+    .title { 
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom:30px;
+    }
+    .space-common {padding:50px 0;} 
+    .faq-section .tab-content:after{right:-22px} 
+    .ws-designer {
+        .partition-block {
+            .designer-list {
+                .ws-title{font-size: 16px;line-height:18px;margin-bottom: 3px;}
+            }
+        }
+    }
+    .work-field {
+        .sell-process {
+            .sell-list{
+                padding:25px 20px;
+                .title{font-size:19px;}
+                span{font-size: 14px;}
+            }
+        }
+        .common-btn{margin-top: 15px;} 
+    }
+    .ws-stores {
+        .title{
+             .subtitle{font-size:15px;line-height:22px;}
+        }
+        .ws-feature{
+            li{
+                p{
+                    font-size: 15px;line-height: 18px;
+                    b{font-size: 28px;line-height: 32px;}
+                } 
+            }
+        }
+        .store-box{
+            padding:32px 0;
+            img{max-width:650px;} 
+        } 
+        .common-btn{margin-bottom:0;} 
+    }
+    .warehouse-wrpr{padding-top:0 !important;}
+}
+@media screen and (max-width:1024px){
+    .main-banner {
+       article{padding: 180px 0 50px;}
+       .heading{
+           font-size:36px;line-height:42px;
+           span{font-size:33px;}  
+       } 
+       .headingtext{font-size:15px;line-height: 20px;}
+    } 
+    .space-common {padding: 35px 0;}
+    .common-btn {
+        .btn-join{ 
+            font-size: 15px;
+            padding: 10px 35px;
+        }
+    }
+    .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        letter-spacing: 0.02em; 
+        .subtitle{font-size:14px;line-height: 20px;}
+    }
+    .ws-designer {
+        figure{
+            img{max-width: 400px;}
+        }
+        .partition-block .designer-list .ws-detail{font-size:13px;letter-spacing: 0.01em;}
+        .partition-block .designer-list li:before{font-size:38px;top:-5px;}
+    }
+    .work-field {
+        .sell-process{
+            &:after{right: -20px; top: -35px;}
+            &:before{left: -45px;bottom: -25px;}
+            .sell-list {
+                .title{margin:12px auto 10px;font-size:17px;font-family:$pangrammedium;}
+            }
+        }
+    }
+    .stories-wrpr,.ws-stores,.ws-project,.faq-section { 
+        .title{margin-bottom: 25px;font-size: 24px;}
+    }
+    .ws-stores {
+        .ws-feature{
+            justify-content: end;
+            li{width:30%;}
+        }
+        .store-box{
+            max-width:800px;
+            .title{font-size:22px;line-height: 26px;}
+        }
+        .stores-list{
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+            margin: 30px auto;
+        }
+    }
+    .warehouse-wrpr{
+        .flex-box{
+            grid-template-columns:31% 64%;
+            grid-column-gap: 45px;
+            ul{
+                li{
+                    font-size:15px;line-height:18px;margin:0 0 6px;
+                }
+            }
+        }
+    }
+    .faq-section {
+        .tab-content{
+            padding:20px;
+            .qusTab{font-size: 15px;line-height: 18px;}
+            .AnsBox{font-size:13px;padding: 15px;}
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .main-banner {
+        .heading{
+            font-size: 30px;
+            line-height: 36px;
+            span{font-size: 28px;}
+        }
+    }
+    .ws-designer {
+        figure{
+            img{
+                max-width: 375px;
+                margin-right: 15px;
+            }
+        }
+        .partition-block .designer-list li:before{font-size:34px;left:4px;}
+    }
+    .work-field {
+        .sell-process{
+            &:after,&:before{display:none;}
+        }
+    }
+    .faq-section .tab-content:after{display: none;}
+    .slick-dots li button:before{background: #c9c9c9;border-radius: 100%;}
+    .slick-dots li.slick-active button:before{background:$primary-color;} 
+}
+@media screen and (max-width:767px){ 
+    .main-banner { 
+        article{padding:110px 15px 35px;} 
+        .heading {
+            text-transform: capitalize;
+            font-size: 21px;
+            line-height: 24px;
+            span{font-size:20px;}
+        }
+        .headingtext{
+            font-size: 14px;
+            line-height: 18px;
+            margin: 4px 0 0;
+        }
+        .common-btn{
+            margin:15px auto 0;
+            .btn-join{font-size:14px;padding:8px 20px;}
+        }
+    }
+    .error-block{font-size:12px;}
+    .space-common {padding: 25px 0px;}
+    .title {
+        font-size: 18px !important;
+        line-height: 23px !important;
+        margin-bottom: 15px !important;
+        letter-spacing: 0.01em;
+        padding:0 10px;
+        .subtitle{
+            font-size: 13px !important;
+            line-height: 20px !important;
+            letter-spacing: 0 !important;
+        }
+    }
+    .ws-designer{
+        background:$bg-white;
+        .partition-block{
+            display: block;
+            picture {display: block;padding: 0 10px;}
+            .common-btn{width: 100%;display: block;text-align: center;} 
+            .designer-list{
+                padding:0 10px;
+                li{margin:0 0 20px;}
+                .ws-title{font-size: 15px;}
+            }
+        }
+        figure{img{max-width:330px;margin:0 auto;border-radius: 8px;}} 
+    }
+    .work-field{
+        .sell-process{ 
+            display: block;
+            white-space: nowrap;
+            overflow: auto;
+            padding:0 0 15px 10px; 
+            .sell-list { 
+                padding: 15px 10px;
+                display: inline-table;
+                white-space: normal;
+                width: 65%;
+                margin-right: 15px;
+                &:after{right: -10px;top: 30px;}
+                .title{ 
+                    margin: 8px auto 5px !important;
+                    font-size: 15px !important;
+                    line-height: 18px !important;
+                }
+                span{font-size:13px;line-height:18px;}   
+            }
+        }
+        .common-btn{
+            font-size: 16px;line-height: 18px;margin-top:25px;
+            .btn-join{margin-right:6px;font-size: 14px;padding: 8px 20px;}
+            .call-us{
+                margin-left:6px;padding-left:30px;vertical-align: middle; font-size:14px; 
+                b{font-weight: normal;}
+                &:before{width: 27px;height:30px;background-size: 30px;}
+            }
+        } 
+    }
+    .stories-wrpr{
+        background: $bg-white;    
+        .stories-list {
+            padding: 0 0 10px 10px;
+            display: block;
+            white-space: nowrap;
+            overflow: auto;
+            article{display:inline-block;white-space: normal;width: 82%;}
+        }
+        .boxtestimonial{
+            padding:10px;margin-bottom:0;
+            figure{margin-bottom: 10px;}
+        }
+        .detail-text{font-size:13px;text-align: justify;height:80px;}
+        .name{
+            font-size:14px;
+            span{font-size:12px;}
+        }
+    }
+    .ws-stores {
+        &:before{display:none;}
+        .title{
+            .subtitle:after{display:none;} 
+        }
+        .store-box{
+            padding:25px 10px; margin:0 10px;
+            img{width:100%;}
+        }
+        .stores-list{
+            display:block;
+            overflow:auto;
+            white-space:nowrap;
+            padding:0 0 8px 10px;
+            margin: 12px auto;
+            .storebox{display: inline-block;width: 55%;margin-right: 10px;}
+        }
+        .ws-feature {
+            display:inline-block;
+            li{ 
+                text-align: center;width: 25%;margin: 0 12px;
+                img{margin: 0 auto 8px;display: block;float: none;max-width: 50px;}
+                p{font-size:13px; 
+                    b{font-size: 20px;line-height: 28px;font-weight: normal;}
+                }
+            }
+        }
+        .store-text,.content-overlay{opacity:1;font-size: 13px;white-space: normal;}
+        .common-btn{margin-top: 15px;}
+    }
+    .warehouse-block{
+        .warehouse-list{
+            display:block;
+            overflow: auto;
+            white-space: nowrap;
+            padding:0 0 5px 10px;
+            .warehouse-box{ 
+                display:inline-block;
+                width:58%;
+            }
+        }
+    }
+    .warehouse-wrpr{
+        br{display:none;}
+        background:$bg-white;
+        border: 0;
+        padding-top: 15px !important;
+        .flex-box{
+            display:block;
+            ul{
+                padding:0 10px;
+                li{font-size:14px;}
+            } 
+            .right-box{
+                padding:10px 0 6px 10px;
+                overflow:auto;
+                display:block;
+                white-space:nowrap;
+                li{
+                    display:inline-block;
+                    margin: 0 10px 0 0px;
+                    width: 45%;
+                }
+            }
+        }
+        .title{
+            .subtitle{margin: 8px 0;}
+        }
+    }
+    .ws-project{
+        .store-list{overflow: auto;white-space: nowrap;display:block;padding: 0 0 0 10px;}
+        .storebox{display:inline-block;width:58%;}
+    }
+    .faq-section{
+        background:$bg-white;
+        .tab-content{
+            padding:0 15px 10px;
+            box-shadow:none; 
+            &:after{display: none;}
+            .qusTab{padding: 10px 30px 10px 10px;font-size: 14px;}
+            .AnsBox{padding: 12px;}
+        }
+    }
+    .interior-form {
+        position: fixed;
+        top: 0;
+        bottom:0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding:20px 15px; 
+        .field{input,select{height:42px;}}
+        .half{
+            .field{ 
+                width: 47%;
+            }
+        }
+    }
+    .thanku-success-msg{
+        position:absolute;
+        top:23%;
+        width:92%;margin:0 auto;
+    }
+}
+@media screen and (min-width:320px) and (max-width:390px){  
+    .main-banner .heading{font-size: 19px;line-height: 22px;} 
+}
+@media screen and (min-width:390px) and (max-width:414px){  
+    .ws-stores .ws-feature li{width: 23%;}
+}
+@media only screen and (max-width:320px){
+    .work-field .common-btn .call-us{margin-top: 12px;}
+}
+    

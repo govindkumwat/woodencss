@@ -1,0 +1,151 @@
+.bed-combos {border: 1px dashed #bababa;@include border-radius(5px);text-align: center; margin:$space15 $space20 0; padding:$space5 $space25 $space15;  
+   small {display: block; @include font-size(13px); font-family:$robotolight;padding:$space5+1 0;}
+   img {display: block; margin: 0 auto 3px;}
+   a {display: block;background: #f3f3f3; font-size:14px; @include border-radius(3px); color:#424242; text-transform: uppercase; padding:$space5+3 0; margin-top:$space10+2;
+     &:after{ display: inline-block;  font-size:20px; margin-left:$space5+3; vertical-align:top;  font-family:$fontawesome; color:#e57200;content: '\f0d7'; vertical-align:middle;}
+    }
+}
+
+.bed-combosets{ margin:$space30+10 0;  border-bottom:$common-border; padding-bottom:$space40+10;
+     .heading{font-size:22px!important;  text-align:center!important; display:block; border-bottom:none!important; font-weight:normal; padding:0; margin:0;
+      &:after{ display:none;}
+     }
+    .namelink{padding:$space15 $space20 0; margin:$space20 0; background: #f9f9f9;
+             li {float: left; line-height:normal;}
+            a{@include font-size(14px);color: #000; padding:0 $space10 $space10+2; display: block; margin-right:$space20; border-bottom:2px solid transparent;
+             &:hover, &.active{border-bottom:2px solid #e57200;}
+            }
+       }
+       //6-8-2018
+       &.sets-combosets{ 
+          .heading{ text-align:left!important; padding-bottom:$space15;}
+          .in{display:flex; justify-content:space-between;}
+         
+          .combosets-slider{ width:65%; 
+            li{ position:relative; width:27%; margin-right:$space15; margin-bottom:$space10; 
+                a{ margin:0;} 
+                figure{ background:#f3f3f3;}
+                img{margin:0; mix-blend-mode:darken; }
+                p{ width:80%; padding-top:$space5;}
+                small{ padding:0; line-height:$space15+3; color:$color-warning;}
+                strike{ color:$color-black;}
+                .checkbox{ position:absolute; left:$space0 ; top:$space0;
+                         [type="checkbox"]{ opacity:0; position:absolute; 
+                            // &:checked{ + span{  background:url("#{$images-path}/product-detail/check-box.jpg") no-repeat left 0px;}  } 
+                         }
+                       span{  @include size(25px,22px); z-index:9; position:relative; display:block; background:$bg-warning; cursor:pointer; 
+                         img{ display:none;}
+                       }
+                       
+                  }
+                  
+                  &.active{ 
+                      .checkbox{
+                          span{ background:none;
+                              img{ display:block;} 
+                          }
+                      }
+                  
+                  }
+                 
+            }
+            
+         }
+          
+        .product-price{ width:31%; padding-top:0;
+               figure{ margin: 0 0 $space10; position:relative;
+                   img{position:absolute;  top:0;  left:0;  bottom:0;  right:0;  margin: auto;}
+                  &:before{ content:'';  display: block; padding-top:40%;}  
+               }
+          }
+         
+          .freedom_offer{ float:none; border:none; width:100%; text-align:center; padding:0; border-top:$common-border; padding-top:$space10; position:relative;
+            small{ margin-top:$space10;}
+          }
+          .shop-btn{
+              .buy-now{ width:100%; background:#e57200; &:before{ display:none;} }
+          }
+          .price-discount{ color:$color-black; position:absolute; right:$space30+2; top:12px;}
+          .ourprice{ text-align:center; @include font-size(15px); padding-bottom:$space5;}
+         }
+  
+}
+
+  .combosets-slider{  
+            li{ float:left;
+                a{ display:block; color:#000; margin:0 $space10 $space25;}
+                img{display: block; margin:$space10 auto;}
+                p{ font-size: .8125rem; color: #545454; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+                small{@include font-size(14px); display:block; padding:$space5 0 $space10+2;}
+               .btn-warning{@include font-size(12px); @include border-radius(3px); padding:$space5 - 2 $space15; margin:$space5 0px; background:none; border: 1px solid #e57200; color:#e57200;}
+            }
+          
+    }
+
+   
+.bedcombo-cart{background: #f9f9f9; padding-bottom:$space30; 
+        .top{border-bottom: 1px solid #e5e5e5; padding: 0 $space40+10; @include display-flex; @include justify-content(space-between);  @include flex-wrap(wrap);
+           .title{ text-transform:uppercase; font-family:$robotomedium; @include font-size(14px); }
+           .space{ padding:$space10+2 $space20; width:18%;}
+           .space1{padding:$space10+2 $space20; width:46%;}
+        }
+        
+ .summary{  @include display-flex;  @include flex-wrap(wrap);
+      img{display: inline-block;vertical-align: middle;}
+      p{ display: inline-block; width: 45%; @include font-size(13px); padding-left:$space10; line-height: 20px; vertical-align: middle;}
+    }
+    
+  .price{
+      small{ @include font-size(13px); color: #585858;display: block; padding-bottom:$space5;}
+      .price-discount{
+          &:before{ display:none;}
+      }
+  }
+
+ .rstotal { @include font-size(14px); font-family:$robotomedium;
+   a {background: #f3f3f3; @include border-radius(50%); @include size(26px); color: #000; font-size: 17px; padding: 1px 0 0;  display: inline-block;  text-align: center;  margin-left: 30px;}
+ .fa-trash-o::before {content: "\f014";}
+ }
+
+ .quantity{
+     .selector{ width:100%!important;
+            span{ display:none;}
+     }
+     select{background: #f3f3f3; border: 1px solid #e5e5e5; padding: 3px 6px; width:65px;
+     }
+ }
+
+.bottom { float: right; width:300px; margin: 15px 110px 0 0;
+      p {font-size: .9375rem; padding:5px 0;}
+     span{color: #e57200;float: right; width: 104px;text-align: left;}
+     .buy-btn{padding:$space10+1 $space10; width:210px; margin-top:$space10+2; float:right;  @include box-shadow(1px 2px 2px rgba(0,0,0,.11));  background:#e57200; color:#fff; font-family:$robotomedium; text-align:center; @include font-size(16px); cursor:pointer; @include border-radius(3px);}
+   }
+
+}
+
+
+
+
+
+
+
+  @media #{$screen-desktop}{  
+      .bed-combosets{
+          &.sets-combosets{
+               .price-discount{ right:$space10;}
+          }
+         
+      }
+  }
+
+  
+    @media #{$screen-tablet}{  
+      .bed-combosets{
+       
+          &.sets-combosets{
+                .product-price{ width:35%;}
+               .price-discount{ right:$space0 - $space10;}
+          }
+         
+      }
+  } 

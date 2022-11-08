@@ -1,0 +1,37 @@
+//Home Tablet
+@media #{$screen-tablet}{  
+    .career-content{
+         article{ padding-right:$space20; @include font-size(26px);}
+           p{ padding:$space20; @include font-size(17px);}
+    }
+    
+     .page-heading-career{ @include font-size(26px); }
+     
+     .carrer-value{
+           article{ padding:0 $space10; width:49%;}
+           figure{ width:49%;}
+        
+         
+     }
+     
+     .career-benfits{ padding:$space40 0;        
+           li { width:30%;} 
+      }
+
+      .career-event{padding:$space40 0;}
+     
+      .carrer-life{      
+       .slick-prev{ left:280px;}
+       .slick-next{ right:280px;}         
+    } 
+    
+    .career-hire{
+         .title{ padding-top:$space40; @include font-size(25px);}
+    }
+    
+    .career-postition{
+        li{ width:48%;}
+    }
+ 
+}
+

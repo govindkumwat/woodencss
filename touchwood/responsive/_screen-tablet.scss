@@ -1,0 +1,76 @@
+@media #{$screen-tablet}{
+    .touchBanner { width: auto; }
+    .touchContent { top: 20px; left: 25px;  width: 270px; font-size: 16px; }
+    .banner-title { font-size: 24px;
+    line-height: 30px; }
+    .rightTouch {
+        .TouchTitle, h2 { font-size: 20px; margin:0;}
+    }
+    .leftTouch{
+        ul{
+            li{
+                font-size: 14px;
+                margin-bottom: 8px;
+                line-height: 20px;
+            }
+        }
+    }
+    .flexTouch{
+        .rightTouch{
+            .TouchTitle{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            h2{
+                margin: 15px 0 5px;
+                @include font-size(18px);
+                line-height: 24px;
+            }
+            p{
+                @include font-size(14px);
+                line-height: 20px;
+            }
+		ul{
+			li{
+			font-size:14px;
+			line-height: 20px;
+			}
+		}
+            .img{
+                       &:before{
+                           padding-top:48%;
+                       }
+                   }
+        }
+    }
+    .touchfreebanner {
+        .touchContent {
+            .banner-title {
+                font-size: 26px;
+                line-height: 33px;
+
+            }
+            p {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+    .touchfreecontent {
+        .rightTouch .TouchTitle {
+            padding: 0px 2%;
+            font-size: 19px;
+        }
+        .sec {
+            .txt {
+                width: 99%;
+                padding: 0% 2%;
+                text-align: left;
+            }
+            .left_txt {
+                width: 91%;
+                padding-right: 3%;
+            }
+        }
+    }
+}

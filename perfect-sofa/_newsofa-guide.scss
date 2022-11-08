@@ -1,0 +1,167 @@
+//
+.perfectsofa{
+
+    .maiheading{background: $bg-warning; padding: 15px 65px; @include font-size(25px); color: #fff; display: inline-block; font-family:$robotolight; position: relative; margin-left: 30px;
+                strong{font-family:$robotomedium;} 
+                &:after, &:before{ position: absolute; content:url("#{$images-path}/perfect-sofa/arrow.png"); @include size(34px,55px); top: 0; right: -30px;}
+                &:before{@include rotate(180deg); left:-30px;}        
+    }
+    .shobest{
+        hr{border-top: 5px solid #000;}
+        .bigheading{
+            strong{padding: 5px 28px; font-family:$robotomedium; @include font-size(35px); display: inline-block; margin-top: -68px; background: #fff;}
+            small{@include font-size(20px); font-family: $font-family-light; display: block; padding-bottom: 5px;}
+            span{background: #fdd921; display: block; @include font-size(20px); padding: 5px; margin-top: 10px;}
+        }
+        li{
+            p {display: inline-block; @include oneline; width:55%; color:#000;}
+            strong { text-transform: uppercase; display: block; @include font-size(15px); margin-bottom:-5px;}
+            span{ float: right; text-align: right; color:#000; font-family: $font-family-light; @include font-size(12px);}
+            small { color: #e57200; @include font-size(12px); display: block; margin-bottom:-5px;}
+    
+        }
+      a{ width:31%; display:inline-block; margin:25px 7px 0px;
+        img{ display:inline-block; max-width:100%;}
+      }
+        .slick-dots{text-align: center; margin-top:15px; display:block;
+                         li{
+                            button{
+                                &:before{margin: 0; @include size(10px); background: #b2b2b2; @include border-radius(50%);}
+                            }
+                           &.slick-active{ 
+                                button{ 
+                                    &:before{background: $bg-warning;} 
+                                }
+                            }
+
+        }
+    }     
+    .slick-next{ right:0;}       
+    }        
+}
+.persofa-banner{display: block;}
+.persof-smfu{ border-bottom: $border1 #e5e5e5; font-family:$robotolight; text-align: center; padding: 40px 0; @include all-interior-icons-sprites;
+             .heading{@include font-size(35px); color: #292828; text-transform: uppercase;}
+             strong{font-family:$robotomedium;}
+             p{color: #292828; padding: 15px 0 60px;}
+             li{float: left; width: 25%; padding: $space0 $space15; @include font-size(12px); line-height: 20px;}
+             span{@include font-size(18px); display: block; padding: 15px 0 8px; font-family: $font-family-regular;}
+             i{@include size(100px); background: #f7a58f; border:9px solid #f0eaf6; @include border-radius(50%); display: block; margin: auto;}
+             .col-1{background-color: #9ae3d2;}
+             .col-2{background-color: #b4ce91;}
+             .col-3{background-color: #f4da9f;}
+}
+.persof-frame{ padding: 45px 0 55px;
+               .left{ width:58%; padding-top: $space25;}
+               p{color: #292828;font-family:$robotolight;padding: $space15 0;}
+              .right{width:34%;} 
+    article{background: #e5f0f2; @include border-radius(10px); padding: 25px 45px; position: relative; margin-bottom: $space40;
+            &:before{position: absolute; @include center(false,true); right: -5px; content: '\f00c'; color: #059207; font-family: $font-family-awesome; left: -18px; @include font-size(45px);}
+    }
+    .bx-danger{background: #faf6f8;
+               li{
+                   &:before{color: #cea3b7;}
+               }
+               &:before{content:'\f00d'; color: #d80027;}
+    }
+    span{@include font-size(22px); color: #292828; display: block; padding-bottom: $space15;}
+    li{@include font-size(18px); font-family:$robotolight; color: #343434; padding: 6px 0 6px 18px; position: relative;
+       &:before{@include font-size(14px); font-family: $font-family-awesome; content: '\f054'; color: #bcd8dd; padding-right: $space10; position: absolute; left: 0;}
+    }
+}
+.persof-model{
+    .left{float: left; width: 48%;  position: relative;
+          + .left{float: right;
+                  //i{color: #d80027;}
+                  strong{
+                      &:before{color: #d80027; content: '\f00d';}
+                  }
+                  &:after, &:before{@extend .hide;}
+          }
+          &:after{background: #d7d7d7; content: ''; width: 2px; top: 0; bottom: 0; position: absolute; right: -23px; top: 74px;}
+          &:before{background: #d7d7d7; content: ''; @include size(16px); top: 74px; right: -30px; @include border-radius(50%); position: absolute;}
+    }
+    .heading{background: #ebebeb; @include font-size(25px); font-family:$robotomedium; color: #292828; text-transform: uppercase; text-align: center; @include border-radius(3px); padding: 12px 0; position: relative; margin-bottom: 55px;
+    &:after{@include center(true,false); @include arrow("down", #ebebeb, 20); bottom: -18px;}
+    }
+    //i{@include size(55px); display: block; margin:30px auto; border: $border1 #d7d7d7; @include border-radius(50%); color: #059207; text-align: center; @include font-size(35px); line-height: 50px;}
+    strong{@include font-size(22px);font-family:$robotomedium;color: #343434; display: block; padding-bottom: $space25;
+           &:before{display: inline-block; content: '\f00c'; color: #059207; font-family: $font-family-awesome; margin-right: 5px;}
+    }
+    p{font-family:$robotolight; color: #343434; display: inline-block; width: 52%; padding-left: 10px;}
+    article{margin-bottom: 50px; display: inline-block; width: 100%;}
+    img{float: left; margin-right: 15px;}
+}
+.persof-system{background:$bg-light; margin: 70px auto;
+               .top{text-align: center; margin-top: -70px; padding-bottom: 50px;}
+              .persof-frame{padding-bottom: 5px;
+              .bx-danger{background: #f1edef;}
+              .left{margin-top: 100px;}
+              }
+              p{
+                  strong{padding-bottom: $space10;}
+              }
+              .persof-model{
+                  p{width: 57%;}
+                  .text{
+                  strong{padding-bottom: $space15;}
+                  p{width: 100%; padding: 0;}
+              }
+              }
+}
+.persof-fell{
+    article{float: left; width: 52%; margin-top: 50px;}
+    img{float: right; margin:0 30px;}
+    p{color: #292828; font-family:$robotolight; padding-top: 10px;}
+    .top{
+        article{width: 40%;}
+    }
+    section{border-bottom: 2px dashed #b7b7b7; padding: 25px 0;
+        @include every(2){
+            img{float: left;}
+            article{float: left;}
+        }
+        @include last(1){border:0;}
+    }
+    .same{ padding: 50px 0; text-align: center;
+           strong{background: #ebebeb; @include font-size(20px);font-family:$robotomedium; display: inline-block; padding: 12px 35px; text-transform: uppercase;}
+        img{margin: 0 40px;}
+        article{margin-top: 10px;}
+    }
+}
+.persof-fabric{padding-bottom: 25px; position: relative; margin-top: 100px;
+    .top{margin-top: -28px;
+         p{padding-top: 10px;}
+    }
+    .tabs{ position:relative;}
+    aside{float: left; width: percentage(245px / $width-container);
+          a{display: block; background: $bg-white; @include font-size(17px); color: #111111; margin-bottom: $space10; padding: 10px 18px;}
+          li{
+              &.active{
+                  a{background: #111111; color: #fff;}
+              }
+          }
+          
+    }
+    span{@include font-size(20px); color: #474747; display: inline-block;}
+    .option{border:$border1 #b7b7b7; padding: 10px 28px;}
+    .text{width: percentage(245px / $width-container); position: absolute; left: 0; top: 320px;
+          p{font-family:$robotolight; color: #474747; padding: 2px 0 15px;}
+    }
+    .tab-content{float: right; width: percentage(830px / $width-container);
+                 li{@include size(198px); float: left; overflow: hidden; margin: 0 12px 18px 0; position: relative;
+       @include every(4){margin-right: 0;}
+       &:before{ content: ''; border: 8px solid transparent;             
+    -o-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round; 
+  -moz-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  -ms-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  -webkit-border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round;
+  border-image: url("#{$images-path}/fabric-option/zigzag.svg") 32 round round; background-color: transparent !important; z-index: 1; position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+                 }
+    }
+    small{background: black(0.7); @include font-size(11px); color: #fff; bottom: 10px; right: 10px; position: absolute; padding: 0 8px; line-height: 22px;}
+    }
+    img{max-width: 100%;}
+}
+
+

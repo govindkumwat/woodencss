@@ -1,0 +1,27 @@
+//service
+
+          
+          .service-step{ text-align:center; padding:$space30+5 0; background:#fafafa; margin:65px auto 0; max-width:1100px;  
+                    li{ border-right:$common-border;  width:270px; padding:0 $space20; @include all-product-icon-sprites; color:#545454; font-size:(12px); font-family:$robotoregular; display: inline-block; line-height:20px;
+                       &:last-child{ border:none;}
+                     }
+                    i{ display:block; @include size(40px,32px); margin:0 auto;}
+                    span{ color:#545454; @include font-size(15px); padding-top:$space15; display:block; font-family:$robotoregular;  margin-bottom: $space5;}
+                  
+        }
+     
+     @media #{$screen-tablet}{
+         .service-step{ display:flex; margin-bottom: 20px;
+             li { width:250px;}
+         }
+
+                   
+    }
+        
+   
+               
+
+        
+ 
+     
+         

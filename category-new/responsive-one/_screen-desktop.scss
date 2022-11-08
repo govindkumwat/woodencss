@@ -1,0 +1,19 @@
+@media #{$screen-desktop}{ 
+    .category-sofa{
+        .product-image{ width:685px;}
+         .product-name{@include font-size(17px);}
+         .product-info{ padding:$space10 $space5 - 1; width:260px;}
+          .btn-view{ margin-top:$space15;}
+          .cate-available{ padding-bottom:$space10;
+               span{ padding:$space10;}
+          }
+          
+          figure{
+               img{@include size(auto);}
+          }
+         
+    }
+    
+    
+    
+}

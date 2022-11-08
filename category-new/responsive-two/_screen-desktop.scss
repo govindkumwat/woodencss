@@ -1,0 +1,13 @@
+@media #{$screen-desktop}{ 
+    
+    .category-two{
+        .box{ width:470px; }
+        figure{
+            img{@include size(auto);}
+        }
+    }
+ 
+
+    
+    
+}

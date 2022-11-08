@@ -1,0 +1,96 @@
+@media #{$screen-mobile}{
+ .resta-furniture{ background:$bg-white;
+     .btn{ color:$color-white;}
+    .comtext{
+        .heading{ font-size:18px;}
+        p{padding-top: $space5; line-height: 20px;}
+    }
+    + .container{ background:$bg-white; padding-bottom:$space5;}
+
+}
+.resfur-banner{
+    img{ width:100%;}
+    article{width:100%;}
+    .heading{@include font-size(22px); text-shadow: inherit; line-height:40px;
+     
+    }
+    h1{ font-weight:bold;}
+    p{@include font-size(14px); padding-bottom:$space10;}
+    .call{color: #fff; border:0;
+          &:before{content: '\f095'; font-family: $font-family-awesome; display: inline-block;}
+    }
+    a, span, small{ display:none;}
+}
+.resfur-step{margin:$space10 0;
+            ul{margin-top: $space15 0   ; padding: 5px 0; flex-wrap: wrap;}
+            li{ width:50%; padding: 15px 0;
+               &:after{ display:none;}
+            }
+            i{ margin-bottom:$space10;}
+} 
+.resfur-all{
+    .title{margin-bottom:$space10;}
+    img{width: 40%;} 
+    .inbox{width: 100%; margin-bottom: $space15;}
+    .top{flex-wrap: wrap;justify-content: inherit;}
+    .middle{width: 60%; padding: 0 0 0 20px;
+        article{padding: 3px 0;}
+    }
+    .right{width: 100%; text-align: center; margin-top: $space10;
+           img{display: inline-block; margin-bottom: 0;}
+    }
+    .bottom{display: block; text-align: center; border:$zero;
+        p{ display:none;}
+        .btn{float: none; display: inline-block; padding:$space5+3 $space20; color:$color-white;}
+    }
+}
+.resfur-make{margin:$space10 0; padding-bottom: 20px;
+            .top{margin:0; padding:$space20 0;}
+            img{ display:none;}
+            .call{display: block; line-height:$space20; text-align: center;}
+            .comtext{width:auto;
+                p{padding-bottom:$space10;}
+            }
+            ul{flex-wrap:wrap; text-align: center;}            
+            li{width: 50%; @include font-size(13px); padding: 15px 8px; border-right: 1px solid #dedede; border-bottom: 1px solid #dedede;
+               @include every(2){border-right: 0;}
+               @include last(2){border-bottom: 0;}
+               p{@include font-size(12px); line-height: 20px; padding-top: 0;}
+               i{margin:0 auto 5px;}
+            }
+}
+.resfur-project{
+    img{width: 100%;}
+    .inset{display: block;}
+    figure{width: 100%;}
+    figcaption{ display:none;}
+    .imgroup{ width: auto; margin-top: 15px;}
+}
+.resfur-custom{background: none; border-top: $border1 #e6e6e6; padding: 20px 0; margin-top: 20px;
+               .container{display: block;}
+              .comtext{width: auto; text-align: center;
+                       p{padding: 0 0 15px;font-size: 13px;}
+              }
+              .btn{position: fixed; bottom: 0; left: 0; width: 100%; border-radius: 0; z-index: 2; display:none;}
+              ul{width: auto;}
+}
+.resfur-form{background: #ededef; height: auto; text-align: center; padding-bottom: 20px; margin-bottom: $space20;
+    &:after{ display:none;}
+    .heading{ padding: 15px 0; font-size:20px;}
+    form{display: block; width:auto;}
+    article{width: auto;}
+    .form-control{height: 35px; margin-bottom: 10px;}
+    textarea{
+        &.form-control{height: 80px; margin-bottom: 3px;}
+    }
+    .code{
+        img{width: 132px;}
+    }
+}
+.resfur-need{display: block; padding-top: 10px; padding-bottom:0;
+            li{width:auto; margin-bottom: 10px;}
+}
+
+
+
+}

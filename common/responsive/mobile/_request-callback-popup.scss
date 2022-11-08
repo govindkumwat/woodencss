@@ -1,0 +1,15 @@
+//call-fixed
+.call-fixed{position: fixed;bottom: 50px;left: 0px; @include size(50px); z-index:9; display:block;}   
+.call-back{top: 0px; right:-100%; height:100%; width: 100%;  bottom: 0; background: #f1f2f4; position: fixed; z-index:9999999; overflow:auto;
+    .customize-heading {text-align: center; @include font-size(17px); margin:$space10 $space0; font-family:$robotomedium;
+       p{ @include font-size(12px); padding-top: $space10 - 3; line-height:normal; color:#747474; font-family: 'robotolight'}
+    }
+    .inside{padding:0 $space10;}
+    .boxsm{ margin-bottom: $space10;}
+    .form-control{ width: 100%; @include font-size(14px); appearance:none; -moz-appearance:none; -webkit-appearance:none; border: 1px solid #c8c8c8; padding: $space10;  @include border-radius(3px); background: #fff; @include placeholder{color:#c8c8c8;}}
+    .text-box{ margin-bottom: $space15; textarea{height: 80px;}}
+    .submit-btn{background:#f3601e; width:100%; color:$color-white; padding:$space10+2 $space10; text-transform:uppercase; @include border-radius(3px); margin-bottom:$space15; @include font-size(15px);}
+    .error{ color:red; @include font-size(13px); display:block; margin:0; text-align:left;}
+    .mobileNotification, .mobileNotificationError{ color:#04b392; display:block; text-align:center; padding-top:$space10;}
+    .mobileNotificationError{ color:red;}
+    }    

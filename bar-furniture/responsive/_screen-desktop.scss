@@ -1,0 +1,8 @@
+@media #{$screen-desktop}{
+      .bar-furniture{
+        img{@include size(auto);} 
+       .bar-product{a{@include font-size(13px);}}
+    
+     }
+
+} 

@@ -1,0 +1,22 @@
+@media #{$screen-desktop}{
+    .comparewood {
+        .comtext{
+            ul{
+                width: 295px;
+            }
+            ul+ul{
+                    margin-left:$space30;
+            }
+        }
+        .woodiden{
+                .inside{
+                        width: 444px;
+                }
+                section{
+                    article{
+                        width: 250px;
+                    }
+                }
+        }
+    }
+}

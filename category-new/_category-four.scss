@@ -1,0 +1,22 @@
+.category-four { 
+   .col { width: 24.4%; margin-right: 0.8%;
+      &:nth-of-type(4n) { margin-right: 0px; }
+      .price{
+          p{
+              float:none;
+          }
+      }
+   }
+   .flex {
+    &:after { content: ""; width: 50%; }
+  } 
+ 
+}
+ 
+//Home Tablet
+@media #{$screen-tablet}{
+    .category-four {
+        .col { width: 49%; }
+    }
+    
+}

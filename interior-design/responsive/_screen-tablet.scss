@@ -1,0 +1,99 @@
+//Home Tablet
+@media #{$screen-tablet}{
+        
+    .ws-interior{
+        .container-1240{ width:730px;}
+        .container-1140{ width:730px;} 
+        
+        .slick-next{ right:-18px;}
+        .slick-prev{ left:-18px; z-index:2;}
+         .banner{ 
+ background:url("#{$images-path}/interior-designer/interior-banner-tablet.jpg") no-repeat -340px !important; 
+                .interior-form{ width:340px; }
+                .link{ padding:$space0; @include font-size(13px); 
+                 span{ padding: $space5 $space10;}
+                }
+                 p{@include font-size(13px); padding-right: 0; }
+                 label{@include font-size(13px);}
+                .form-control{ padding:$space10;}
+                .btn{ padding:$space10;}
+          }
+
+            .interior-menu{display: flex;  justify-content: space-around;
+                li{ margin:0 $space5;
+                    a{@include font-size(15px);}
+                    &:after{ margin-left:$space5;}
+                }
+            } 
+            
+           .content{ padding:$space20 $space0 $space15; @include font-size(22px);} 
+          
+           .how-option{ display: inherit; text-align:center;
+               li{ padding:$space10; width: 33%; display:inline-block; vertical-align: top;
+                  &:nth-last-of-type(-n+2){ margin-top: $space20; width: 45%; padding: $space10 $space30; }
+                  &:nth-of-type(3){ border-right: 0; }
+               }
+               span{@include font-size(14px);}  
+               
+           }
+           
+          .more-link{ margin-top:$space5;}
+          .more-link-big{  padding:$space5+3 0;}
+          
+          .item{ margin-bottom:$space30;}
+          
+           .offering{
+               .left { width: 100%; margin-bottom: $space20;
+                 &:before{ padding: 0; }      
+                 img{ @include size(50%); position: inherit; vertical-align: middle;  }
+               }
+             figcaption{ width:50%; position: inherit; padding: $space0 $space15; text-align: left; vertical-align: middle; display:inline-block; top:inherit;  }
+             .right{ width:50%; 
+                 figure{ width: 50%; display: inline-block; vertical-align: top;
+                     &:before{ padding: 0; }
+                    img{ position: inherit; }
+                 }
+                 + .right { figure{ float: left; }}
+             }
+            .title{@include font-size(18px); margin-bottom:$space0;}
+             article{ padding:$space0 $space0 $space0 $space10; width: 50%; display: inline-block;  }
+             p{@include font-size(13px); line-height:$space20+4;}
+           }
+            
+          .ws-why{ padding:$space20  0 $space40;
+             &:before, &:after{ display:none;}
+             .shapes, .shapes-right{ display:none;}
+          }
+          .why-option .title{@include font-size(16px);}
+          
+         .service{ background-size:100% 100%; padding:$space30 0; margin-bottom:$space25; min-height: inherit; }
+  
+         .pricing{ padding:$space25 0;}
+         .pricing-inner{ padding:$space40 $space25; background-size: cover;
+         .page-sec.text-right { img{ width: 200px; }} 
+         }
+         .less-container{ max-width:auto;}
+         .pricing-list{
+               li{ padding:$space10; margin-bottom:$space10;}
+               a{ width:140px; @include font-size(15px); padding:$space5 0;}
+               span{@include font-size(14px);}
+          } 
+          
+         .customer{ margin:$space40 auto;} 
+         .customer-content{ float:none; width:auto; text-align:center; margin-top:0; 
+          img{ width: 250px; }                  
+          p{ display: inline-block; width: 275px; text-align: left; }
+          .more-link-big{  display: block; margin: $space20 auto 0; }
+         }
+         .customer-information{float:none; width:auto; margin-left:0;
+                              figcaption{ bottom:30px; right:80px;}
+         }
+         
+         .store-city{
+             span{ padding-bottom:$space10;} 
+             strong{@include font-size(35px); padding-bottom:$space20;}
+         }
+    }
+ 
+} 
+

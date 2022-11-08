@@ -1,0 +1,55 @@
+.swpmodal-container {
+    .media-inquery  { display: block; }
+}
+.inquiry-btn { position:fixed; z-index: 99; top: 50%; left: -50px; background: #e57200; padding: 12px; color: $color-white; @include font-size(17px); @include border-radius(3px 3px 0 0);transform: rotate(90deg); @include size(149px, 49px);  text-align: center; }
+.media-inquery { max-width:900px; background: $bg-white; position: relative;  display: none;
+    .inquery-flex { 
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        p {
+            line-height: 20px;
+    color: #2f2f2f;
+        }
+    }           
+    article { width: 45%; line-height: 28px; padding: $space40 $space40; background: #f9f9f9;
+      a { color: $color-orange; }
+    }
+    .title { @include font-size(30px); font-family: $robotomedium; padding-bottom: $space5; line-height: normal;
+      span { font-family: $robotolight;  }
+    }
+    .callto { display: inline-block; color: $color-black; @include font-size(16px); margin-top: $space15; }
+      form { width: 55%; padding: $space40; line-height: 19px;
+        p { margin-bottom: $space20; }
+      }
+    .m-flex { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: $space15;
+      label { width: 30%; font-family: $robotolight;}
+      .field__input { width: 70%; }
+      textarea { height: 80px; padding: $space10; }
+    }
+    .btn { background: $bg-orange; padding: $space10+2; width: 70%; float: right; text-transform: uppercase; cursor: pointer; font-family: $robotolight;  }
+     .close { position: absolute;  top: 15px;  right: 10px;  background: url(../images/login/close.png) no-repeat; width: 18px; height: 18px; cursor: pointer; }
+     .error-block { margin: 0px; width: 100%; padding-left: 30%; }
+}
+
+
+@media #{$screen-tablet}{
+    .media-section {
+        li {
+        p {
+        width: 67%;
+        margin-right: 0px;
+    }
+    }
+    .date {
+        float: right;
+        margin: 0px;
+    }
+    }
+    .media-inquery {
+        article { padding: $space30 $space25; width: 45%; }
+        .title { @include font-size(30px); }
+        form { width: 55%; padding: $space40 $space20; }
+    }
+}
+

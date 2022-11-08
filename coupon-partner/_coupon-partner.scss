@@ -1,0 +1,20 @@
+// Coupon Partner
+.partner-banner{text-align:center}
+.partner-banner .container{background:0 0}
+.partner-banner h1{font-size:32px;color:#202020;padding:0 0 20px; font-weight:normal; margin-bottom:0;}
+.partner-banner h1 strong{font-family:robotoregular;font-weight:400}
+.partner-banner p{font-size:16px;color:#000}
+.partner-content{padding:50px 0;}
+.partner-content hr{border-top:1px solid #ccc;width:580px;margin:0 auto;float:none}
+.partner-content p{font-size:20px;color:#e07a32;text-transform:uppercase;text-align:center;margin:-13px 0 0}
+.partner-content p span{background:#fff;padding:0 6px;display:inline-block}
+.partner-content p span:after,.partner-content p span:before{width:5px;height:5px;background:#b2b2b2;top:10px;position:relative;content:''}
+.partner-content p span:before{float:left;margin-right:10px}
+.partner-content p span:after{float:right;margin-left:10px}
+.partner-content ul{margin-top:35px;text-align:center}
+.partner-content ul li{float:left;width:23%;height:125px;-webkit-box-shadow:0 0 10px rgba(206,206,206,.9);-moz-box-shadow:0 0 10px rgba(206,206,206,.9);box-shadow:0 0 10px rgba(206,206,206,.9);text-align:center;margin:1%}
+.partner-content ul li:before{display:inline-block;vertical-align:middle;height:100%;content:''}
+.partner-content ul li img{vertical-align:middle;display:inherit!important}
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";

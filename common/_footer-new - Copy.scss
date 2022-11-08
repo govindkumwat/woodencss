@@ -1,0 +1,179 @@
+.footer-new {
+  margin: $space40 0 0;
+  background: $bg-white;
+
+  .container {
+    max-width: 1170px;
+  }
+
+  .win-chance {
+    background: #F5F5F5;
+    text-align: center;
+    padding: $space30 0;
+    @include font-size(28px);
+    color: #434343;
+    font-family: $robotomedium;
+    position: relative;
+
+    p {
+      @include font-size(14px);
+      font-family: $robotolight;
+    }
+
+    .errro {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 55px;
+    }
+  }
+
+  .email-box {
+    @include font-size(16px);
+    font-family: $robotoregular;
+    background: $bg-white;
+    display: flex;
+    @include box-shadow(0px 3px 10px rgba(0, 0, 0, 0.15));
+    overflow: hidden;
+    width: 550px;
+    margin: $space20 auto;
+    @include border-radius(3px);
+
+    .form-control {
+      @include size(450px, 50px);
+      padding: $space0 $space20;
+    }
+
+    .btn-submit {
+      background: #434343;
+      color: $color-white;
+      width: 100px;
+      line-height: 50px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .media-slider {
+    margin: $space15 auto;
+
+    .slick-slide {
+      margin: 0 $space15;
+    }
+
+    span {
+      height: 60px;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 auto;
+      }
+
+      _:-ms-fullscreen,
+      :root img.loading {
+        width: auto;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .delivery-city {
+    text-align: center;
+    border-top: 1px solid #676767;
+    padding-top: $space20 ;
+    margin-top: $space25;
+    font-family: $robotolight;
+    @include font-size(13px);
+
+    a {
+      font-family: $robotomedium;
+    }
+  }
+
+  //footer-bottom 
+  .bottom {
+    padding: $space15 0;
+    color: $color-black;
+    display: flex;
+    justify-content: space-between;
+    font-family: $robotolight;
+    @include font-size(14px);
+  }
+}
+
+.footer-mid {
+  background: #434343;
+  color: $color-white;
+  padding: $space20 $space0;
+
+  a {
+    color: $color-white;
+  }
+
+  span {
+    @include font-size(16px);
+    margin-bottom: $space10;
+    display: block;
+  }
+
+  article {
+    width: 18%;
+
+    a {
+      @include font-size(14px);
+      font-family: $robotolight;
+      display: inline-block;
+    }
+
+    &.last {
+      width: 25%;
+    }
+  }
+
+  .sup {
+    margin-bottom: $space20;
+
+    a {
+      display: inline-block;
+      width: 49%;
+
+      &:first-child {
+        margin-right: 2%;
+      }
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  .social-link {
+    display: inline-block;
+    vertical-align: middle;
+
+    a {
+      @include size(33px);
+      display: inline-block;
+      vertical-align: top;
+      @include transition(all 0.3s ease);
+      line-height: $space20+4;
+      margin: 0 $space5 $space5 0;
+      border: 1px solid $color-white;
+      @include border-radius(50%);
+      @include font-size(18px);
+      padding-top: $space5 - 1;
+      text-align: center;
+
+      &:hover {
+        background: $color-white;
+        color: #434343;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@media #{$screen-mobile}{
+    .perfectsofa{
+        .container{ padding:0;}
+        .maiheading{ @include font-size(20px); font-family:$robotoregular; padding:$space10; display:block; margin:0 $space10;
+            &:after, &:before{ display:none;}
+            strong{ font-weight:normal;}
+          }
+    }
+    
+   .persof-smfu{ padding:$space20 $space10; background:$bg-white; font-family:$robotoregular;
+        .heading{@include font-size(25px);}
+        strong{ display:block;}
+        p{ line-height:normal; padding:$space10 0 ;}
+        li{ width:50%; padding:$space5;}
+       span{ padding:$space10 0;}
+   }
+
+   .persof-frame{ padding:$space30+5 $space10; text-align:center; 
+       .left{ float:none; width:auto; padding-top:0;
+        img{mix-blend-mode:darken; background:#f1f2f4;}
+       }
+       p{font-family:$robotoregular; line-height:normal;}
+      .right{float:none; width:auto;}
+      article{ padding:$space20; margin-top:$space25; margin-bottom:0; text-align:left;
+        &:before{ display:none;}
+       }
+   }
+    
+
+    
+   .persof-model{ 
+        .left{ padding:$space25 $space10 0; background:$bg-white;   width:auto; float:none; text-align:center; margin-bottom:$space30+5;
+            &:after, &:before{ display:none;}
+            + .left{ float:none; margin-bottom:0; } 
+        } 
+       p{font-family:$robotoregular; line-height:normal; }
+        strong{ padding-bottom:$space15; @include font-size(18px);}
+       .heading{@include font-size(18px); margin-bottom:$space30;} 
+       article{ margin-bottom:$space20; border-bottom:$common-border; padding-bottom:$space20;
+         &:last-child{ margin-bottom:0; border-bottom:none;}
+       }
+      
+   }
+   
+   .persof-system{ margin:0; background:#f1f2f4;
+       .persof-frame{ 
+           padding-bottom:$space30+5;
+         .left{ margin-top:$space20;}   
+       }
+      
+       .top{ margin-top:0; padding-bottom:0;}
+   }
+   
+   .persof-fell{
+        .top article{ float:none; width:auto; text-align:center; margin:0;}
+         p{font-family:$robotoregular; line-height:normal;}
+         img{float:none; width:auto; margin:0;}
+         .same{ padding:$space30+5 $space10;
+             img{margin:0;}
+         }
+        article{float:none; width:auto; }
+         section{ padding:$space30+5 $space10;}
+   }
+   .persof-model img{ float:none;}
+   
+   
+   
+   .persof-fabric{ padding:$space30 $space10; background:$bg-white;
+         .top{ padding:$space10 0;}
+       .text{ position:inherit; width:auto; text-align:center;}
+       aside{ float:none; width:auto;
+         a{background:#f1f2f4; }
+       }
+       .tab{ display:none;}
+      .tab-content{ float:none; width:auto;
+         li{ width:47%; margin:$space5; 
+            @include every(4){ margin-right:0;}
+         }
+      }     
+   }  
+   
+    
+     
+   
+   
+   
+} 

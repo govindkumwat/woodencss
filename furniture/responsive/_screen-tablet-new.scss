@@ -1,0 +1,14 @@
+@media #{$screen-tablet}{
+          .slick-dots{ margin:auto; text-align:center;
+                 li{
+                     button{ &:before{ border-radius:100%;  background:#d0d0d0;}}
+                     &.slick-active{ button{&:before{  background:#434343;}}}
+                 }
+          }
+          .store-slider {
+              li { width: 320px; }
+          }
+          .deals {
+              a { padding: $space15 $space15 $space10; width: 32%; }
+          }
+    }

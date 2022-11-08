@@ -1,0 +1,14 @@
+ 
+  //$mysprite-layout:smart;
+
+//Global
+  @import "mixin/_global.scss"; 
+  @import "outdoor-furniture/outdoor-icons/*.png"; 
+  @import "outdoor-furniture/_outdoor.scss"; 
+  @import "landing-common/_banner-top.scss"; 
+  @import "landing-common/_category-slider.scss";
+  @import "landing-common/_shop-by.scss";  
+  //media 
+  @import "outdoor-furniture/responsive/_screen-desktop.scss"; 
+  @import "outdoor-furniture/responsive/_screen-tablet.scss";           
+     

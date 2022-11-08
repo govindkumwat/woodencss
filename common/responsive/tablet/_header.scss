@@ -1,0 +1,23 @@
+.disocunt-strip{@include font-size(11px);}
+header{
+    .header-search{ width:220px;}
+     .logo img { width: 178px; }
+    .top-login{ padding-left:6px;margin:0 7px;}
+    .cart{ margin-left:$space10;} 
+    .whislist-cart{margin-left: 6px;margin-right: 6px;} 
+    
+}
+header .store{padding-left: 10px;margin:0 10px;}
+
+.disocunt-strip .container-1200 ul li { 
+    margin-left: 5px;
+    font-size: 12px;
+}
+.disocunt-strip i{
+    margin: -1px 1px 0;  
+}
+.disocunt-strip .container-1200 ul li svg{width:14px;height:14px;}
+.disocunt-strip .container-1200 ul li .store svg{width:17px;height:17px;}
+.disocunt-strip ul li:nth-child(n+2) {   
+      padding-left: 5px;   
+    }

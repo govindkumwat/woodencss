@@ -1,0 +1,185 @@
+.citypage {
+    .citywrpr {
+        .top-heading {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: $space20;
+            position: relative;
+
+            .subhead,.text-small {
+                text-align: center;
+            }
+        }
+
+        .flex-wrpr {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .storemap {
+            .iframe-container {
+                padding-top: 120%;
+            }
+        }
+
+        .cities-list {
+            .search-box {
+                z-index: 1;
+
+                .other-city {
+                    top: 15px;
+                }
+            }
+
+            article {
+                .text-small {
+                    width: 58%;
+                    @include font-size(15px);
+                    line-height: 20px;
+                    padding: 0;
+
+                    span {
+                        @include font-size(13px);
+                        line-height: 18px;
+                        color: $secondary-700;
+                        white-space: normal;
+                    }
+                }
+
+                img {
+                    max-width: 200px;
+                    margin-right: 10px;
+                    float: unset;
+                    vertical-align: top;
+                }
+
+                .city-storewrpr {
+                    padding: $space20 $space10+5px;
+                    border: $common-border;
+                    border-top: 0;
+
+                    &:nth-child(1) {
+                        border-top: 0;
+                    }
+
+                    &:nth-last-child(1) {
+                        border-bottom: $common-border;
+                    }
+
+                    &:hover {
+                        .view-btn {
+                            transition: 0.3s all ease-in-out;
+                            background: $secondary-700;
+                            color: $color-white;
+                            border: 1px solid transparent !important;
+                        }
+
+                        .cityName {
+                            color: $primary-color;
+                        }
+                    }
+
+                    .cityName {
+                        display: block;
+                        color: $secondary-color;
+                        margin: 0 0 4px;
+                    }
+                }
+
+                .flex-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 12px;
+                }
+
+                .direction-link {
+                    color: $primary-color;
+
+                    svg {
+                        width: 21px;
+                        height: 19px;
+                        vertical-align: sub;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: $hover-color;
+                    }
+                }
+
+                .view-btn {
+                    border: 1px solid $secondary-600  !important;
+                    color: $secondary-color;
+                    @include font-size(13px);
+                    font-family: $pangramregular;
+                    padding: 6px 12px;
+                    display: inline-block;
+                    text-align: center;
+                    width: auto;
+                    @include border-radius(2px);
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .citypage {
+        .citywrpr {
+            .cities-list {
+
+                article {
+                    .city-storewrpr {
+                        padding: 15px 10px;
+                    }
+
+                    .direction-link {
+                        font-size: 14px;
+                    }
+
+                    .view-btn {
+                        padding: 4px 8px;
+                    }
+
+                    .text-small {
+                        width: 51%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .citywrpr {
+        .subhead {
+            @include font-size(20px);
+            line-height: 26px;
+        }
+    }
+
+    .citypage {
+        .citywrpr {
+            .cities-list {
+                height: 404px;
+
+                article {
+
+                    .city-storewrpr {
+                        padding: $space15 $space10;
+                    }
+
+                    img {
+                        max-width: 100px;
+                    }
+
+                    .text-small {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}

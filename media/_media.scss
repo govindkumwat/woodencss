@@ -1,0 +1,147 @@
+ .studio-banner { 
+     height: 350px; 
+     text-align: center; 
+     background: #4B4B4B; 
+     color:#FFF; 
+     padding: $space20+16px $space0 $space30 ; 
+     margin-bottom: $space30; 
+     line-height: normal;
+     @include font-size(30px); 
+   .banner-title { 
+       @include font-size(38px);  
+      margin: $space0; 
+      display: inline-block;
+   }
+   p { font-family: $robotolight; @include font-size(16px); }
+   .media-btn { background: $bg-orange; padding: $space10 $space30; @include border-radius(3px); margin-top: $space10; @include font-size(17px); }
+   article { border-top: $common-border; margin-top:$space20; padding-top: $space20; }
+   figure{
+      &:before{ padding-top:4%;} 
+   }
+   .textimg {
+       width: 290px; margin-right: 4px;
+   }
+ }
+ 
+ .breadcrumbs { margin: $space0 !important; background: #F5F5F5; }
+ .title-top { @include font-size(18px); font-family: $robotomedium; width:100%; text-align:center; display:block; color:#3B3B3B; padding-bottom: $space10;  }
+      .seen{ margin-top: -188px; display:flex; justify-content: space-between; flex-wrap: wrap;
+        a{ width: 49%; text-align: center; color: $color-black; display:block; }
+        p { 
+            border-bottom: $border1 #e7e7e7; 
+            padding: $space5 $space0; 
+            margin-bottom: $space5; 
+            @include font-size(16px); }
+            figure{ position: relative; 
+        img{ position:absolute; top:0; left:0; bottom:0; right:0; margin:auto;}
+        &:before{ padding-top:50%; content: ''; display: block;} 
+    }
+       }
+     .date{ @include font-size(12px); text-transform: uppercase;
+          &:before{
+              content: '\f073'; 
+              font-family: $font-family-awesome; 
+              display: inline-block; 
+              
+              color: #737373;
+                    font-size: 12px;
+                    margin-right: 5px;
+          }
+    } 
+    .media_list { margin-top: 60px;
+        .left_section {
+            width: 18%; margin-right: 2%; float: left;
+            
+            ul.filter { 
+                background:#f5f5f5 ;
+                border: 1px solid #e6e6e6;
+                margin-bottom: 4px;
+                li {
+                    @include font-size(14px);
+                    padding: 10px 15px 10px 20px;
+                    cursor: pointer;
+                    border-bottom: 1px solid #e6e6e6;
+                    &:hover, &.active {
+                        color: #E57200;
+                    }
+                    &:first-child {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .media-section {  width: 80%; float: left; 
+        li {             
+          p { float: left; @include font-size(15px); display: inline-block; font-family: $robotolight; line-height: 20px; width: 52%; margin-right: 9%; }
+          a { float: left; width: 100%; background: #FFFFFF; border-bottom: 1px solid #f5f5f5; color: $color-black; text-align: left; line-height: normal; display:block; margin: $space0 $space0 $space0; padding:$space20 $space15; }
+          .m-img {
+              float: left; padding: 0 50px 0 0px; 
+              display: inline-block;
+              width: 180px;
+              text-align: left;
+          }
+          
+        }
+         .date { float: left; color: #4B4B4B; margin-top: 3px;  display: inline-block;
+                 &:before {
+                    color: #737373;
+                    font-size: 12px;
+                    margin-right: 5px;
+                 }
+         }
+    }
+    .printmedia {
+        display: inline-block; width: 30%;
+        img {
+            
+        }
+    }
+    .media-kit { 
+        text-align: center;          
+        padding: $space30 0;
+       .down-btn { 
+                  width: 100%; 
+                  background: $bg-orange; 
+                  padding: $space10 $space40; 
+                  @include border-radius(3px); 
+                  margin-top: $space20; 
+                  font-family: $robotolight; 
+                  @include font-size(17px); 
+       } 
+       .title-top {
+           padding-bottom: 5px;
+           font-size: 21px;
+       }
+       p {
+           font-size: 13px;
+    line-height: 17px;
+    color: #4c4b4b;
+       }
+    }
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+ 
+ 

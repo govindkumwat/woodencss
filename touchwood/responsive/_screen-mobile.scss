@@ -1,0 +1,106 @@
+@media #{$screen-mobile}{
+  body.gray-bg  { background: $bg-white; }
+  .touchBanner { 
+   img { display: none; }
+   .mobile-banner { display: block; } 
+      figure:before {
+            padding-top: 62%;
+        }
+  }
+  .touchContent { left: 20px;
+    font-family: $robotoregular;
+    font-size: 14px;
+    background:#0000009e;
+    padding: 10px;
+    top: 80px;} 
+  .banner-title { font-size: 22px; margin: 0; line-height:28px;}
+  .flexTouch { margin-top: 20px;
+               .rightTouch{
+                   .TouchTitle{
+                       font-size:16px;
+                       line-height: 20px;
+                   }
+                   h2{
+                       font-size: 15px;
+                        line-height: 20px;
+                        max-height: 40px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; 
+                        -webkit-box-orient: vertical;
+                   }
+                   .videoTouch{ 
+                       margin:10px 0 10px 0;
+                       display:inline-block;
+                       a{
+                           width:100%;
+                       }
+                   }
+                   .img{
+                       &:before{
+                           padding-top:50%;
+                       }
+                   }
+               }
+  }
+  .leftTouch  { display:none; }
+  .rightTouch { width: auto; padding: 0 10px;
+      .TouchTitle, h2 { font-size: 18px;  }
+      .videoTouch { flex-wrap: wrap;
+           figure { margin-top: $space15; }         
+           a, figure { width: 100%; margin-top: 5px;}
+      }
+      p { margin-bottom: 15px; font-size: 14px; line-height: 20px;}
+  }
+  .rightTouch h2 { margin: 30px 0 10px; }
+  
+  .touchfreebanner {
+      display: block;
+      .touchContent {
+         width: 100%;
+    text-align: center;
+    background: #303030;
+    padding-top: 10px;
+    margin-top: -80px;
+    .banner-title {
+        font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 3px;
+    }
+    a {
+        margin-top: 10px;
+    margin-bottom: 15px;
+    }
+      }
+  }
+  .touchfreecontent {
+      .rightTouch .TouchTitle {
+    padding: 0px 1%;
+    font-size: 16px;
+}
+.sec {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    .left_txt  {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    }
+    figure {
+        br {
+            display: none;
+        }
+    }
+    .txt {
+        width: 100%;
+        p+p {
+            margin-bottom: 0px;
+        }
+    }
+}
+  }
+}
+   
+ 
+ 

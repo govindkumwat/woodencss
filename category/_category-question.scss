@@ -1,0 +1,141 @@
+.bestseller_product {
+    background: #fff;
+    padding: 40px 0;
+    width: 96%;
+    margin: 30px auto 0;
+
+    .title {
+
+        font-size: 1.875rem;
+        display: block;
+        text-align: center;
+    }
+
+    &.city-stores {
+        .title {
+            font-size: 26px;
+            text-align: center;
+            line-height: 30px;
+            color: $secondary-color;
+            margin-bottom: 25px;
+        }
+
+        .customer-slider1 {
+            margin: 30px auto;
+        }
+
+        .store_Box {
+            margin: 0 6px;
+            text-align: center;
+
+            &:hover {
+                .btn-view {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            top: 40%;
+        }
+
+        .info {
+            span {
+                font-size: 16px;
+                line-height: 20px;
+                padding: 5px 0 0;
+            }
+        }
+
+        figure {
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 5px;
+
+            &:before {
+                padding-top: 65%;
+            }
+
+        }
+
+        .btn-view {
+            padding: $space5 0 0;
+            border: 0;
+            color: $hover-color;
+            position: unset;
+            display: block;
+            box-shadow: none;
+            max-width: 100%;
+
+        }
+
+        .btn {
+            padding: 8px 20px;
+            background: $secondary-color;
+            text-transform: capitalize;
+            border-radius: 3px;
+
+            &:hover {
+                transition: 0.3s all ease;
+                background: $color-dark;
+            }
+        }
+    }
+}
+
+#infscr-loading {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .bestseller_product {
+        padding: 30px 0;
+        margin: 20px auto 0;
+
+        &.city-stores {
+            .title {
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 15px;
+            }
+
+            .customer-slider1 {
+                margin: 20px auto 30px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bestseller_product {
+        &.city-stores {
+            .customer-slider1 {
+                .slick-dots {
+                    text-align: center;
+
+                    li {
+                        button {
+                            &::before {
+                                background-color: $secondary-200;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        &.slick-active {
+                            button {
+                                &::before {
+                                    background-color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

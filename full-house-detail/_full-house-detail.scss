@@ -1,0 +1,113 @@
+//Baner
+.fuhodetail-banner{position: relative;
+                  .slick-dots{position: absolute; left: 0; right: 0; text-align: center; bottom:10px;
+                                       li{width: 83px;  margin: 0 9px; display:inline-block;}
+                                       img{cursor: pointer; border: 2px solid #f8f8f8; height:55px;}
+                                       .slick-active{
+                                           img{border-color: $bg-warning;}
+                                       }
+                  }
+                  .tag{background: url("#{$images-path}/full-house-design/tag.png") no-repeat 0 0; @include size(106px, 129px); position: absolute; top: 0; right: 100px; z-index: 1; color: $color-white; text-align: center; padding: 10px 5px 5px;
+                       strong{@include font-size(25px); font-family:$robotomedium; display: block; }
+                       p{@include font-size(13px); font-family:$robotolight; border-top: $border1 #ea8e33; margin-top: 8px; padding-top: 2px;}
+                  }
+                  img{ vertical-align:bottom;}
+                  
+}
+//packages
+.fuhodetail-packages{padding: 15px $space0 $space40+5; text-align: center; border-bottom: $border1 #d8d5d5;
+                     li{width: 24%; padding: 10px 10px 35px; 
+                        span{display: block; @include font-size(13px);  font-family:$robotolight; padding: 22px 0 25px; 
+                             strong{@include font-size(35px); font-family:$robotomedium; display: block; padding-top: 5px;font-weight:normal; }
+                        }
+                        small{@include font-size(20px); vertical-align: top;}
+                        a{background: #965a38; @include border-radius(3px); display: inline-block; @include font-size(13px); color: #fff; text-transform: uppercase; font-family:$robotolight; padding: 3px 18px;}
+                     }
+                     .title{@include font-size(18px); font-weight:normal; color: #363636;  font-family:$robotomedium; border-bottom: $border1 #dcd8d6; text-transform: uppercase; display: block; padding: 8px 0 18px;}
+                     .colo2{
+                            a{background: #a8a8a8;}
+                     }
+                     .colo3{
+                            a{background: #c98910;}
+                     }
+                     .colo4{
+                            a{background: #b1abab;}
+                     }
+}
+.fuhodetail-two-packages{
+    li{width: 32%;}
+}
+
+
+//new
+
+.fuhodetail-link{background: #ededed; text-align: center;
+                 li{display: inline-block; padding: 0 20px;}
+                 a{color: #000; @include font-size(22px); font-family:$robotomedium; padding: 15px 18px; border-bottom: 2px solid #ededed; display: block;
+                   &.active{border-color: $bg-warning; color: $color-warning;}
+                }
+}
+
+.fuhodetail-bhk{padding-top: 55px;
+
+    .toptitle{@include font-size(25px);  font-family:$robotomedium; text-align: center; padding-bottom: $space20+2;}
+    .left{width: 25%; padding: 18px 18px 0;
+        p{@include font-size(11px); font-family:$robotolight; color: #545454; text-transform: capitalize;
+                                 span{float: right;}
+                             }
+    }
+    .heading{@include font-size(20px);  font-family:$robotomedium; padding-bottom: $space10;}
+    //.heading, .price{@include font-size(24px); @extend .heading-medium; color: $color-warning; text-align: center; padding-bottom: $space15;}
+                     //.price{@include font-size(30px); color: #000;
+                            //small{@include font-size(15px); vertical-align: top;}
+                            //&:after{display: block; background: $bg-warning; @include size(28px,2px); margin:20px auto 0; content: '';}
+                     //}
+                     .title{@include font-size(15px);
+                            &:before{@include size(15px); border:$border1 #e3e3e3; border-radius: (50%); font-family: $font-family-awesome; content: '\f00c'; @include font-size(8px); display: inline-block; color: #d4d2d2; text-align: center; line-height: 16px; margin-right: 8px;}
+                     }
+                     .box{margin-bottom: $space10; padding: $space10 0; border-bottom:$border1 #e2e2e2;
+                          @include last(1){border-bottom: 0; margin: 0;}
+                     }
+                     .content-3{max-height:425px;}
+                     .inset{background: #f8f8f9; border: $border1 #e0dddd;}
+                     //.call{ border-top: $border1 #e2e2e2; text-align: center; padding-top: $space20;
+                            //span{
+                             //   &:after{display: inline-block; content: ''; @include size(28px); @include kitchen-icons-sprite(whatsapp); margin-left: 5px;}
+                           // }
+                         //p{@include font-size(18px); font-family: $font-family-regular; padding: 2px 0 8px;}
+                       //  .btn{ @include border-radius(3px);}
+                     //}
+                     .btn{display: block; @include font-size(14px); text-align: center; margin: 15px -18px 0;}
+                     .right{width: 75%; background: $bg-white;}
+                     .tab-links{background: #f8f8f9; padding: 15px 0;
+                         li{display: inline-block; margin: 0 10px;
+                            &.active{
+                                a{background: $bg-warning; color: #fff; display: block;}
+                            }
+                         }
+                         a{@include font-size(15px); color: #000; padding: 6px 20px;
+                         }
+                     }
+                     .slider-for{width: 680px; float: left;}
+                     .slider-nav{width: 110px; float: right; margin-top: 12px;
+                                 img{height: 80px; max-width: 100%; display: block; margin:auto; cursor: pointer;}
+                                 .slick-slide{margin: 7px 0;}
+                     }
+                     .slick-slide{
+                         p{font-family:$robotolight;; text-align: center; padding:10px 0;}
+                     }
+                     .tab-content{padding: 15px 10px 15px 15px;}
+                     .slick-prev, .slick-next{left: 50%;}
+                     .slick-prev{top: -10px;
+                                 &:before{content: '\f077';}
+                     }
+                     .slick-next{bottom: -28px; top:inherit;
+                                 &:before{content: '\f078';}
+                     }
+                     .mCSB_scrollTools .mCSB_draggerRail{background: none;}
+                     &:last-child{ padding-bottom:$space40+10;} 
+}
+//media css
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";
+@import "responsive/_screen-mobile.scss"; 

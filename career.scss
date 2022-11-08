@@ -1,0 +1,11 @@
+ 
+//Global
+  @import "mixin/_global.scss";
+  /*@import "careers/_careers.scss"; //live*/      
+  @import "careers/_careers-new.scss";   //upcoming               
+  @import "careers/_support-popup.scss"; // upcoming           
+     
+  //media
+  @import "careers/responsive/_screen-desktop.scss";      
+  @import "careers/responsive/_screen-tablet.scss";  
+    

@@ -1,0 +1,192 @@
+.payments-section{ padding-bottom:$space15; 
+    .pay-option{display:flex; justify-content:space-between; flex-wrap:wrap; width:90%;}                 
+    .payments-half{width:49%; margin-bottom:20px}
+    .checkbox-style{border: 1px solid #d7d7d7; padding:3px 15px; @include border-radius(3px); display:inline-block; width:100%; 
+       &.active{ border-color:$color-warning;}
+    }
+    label{ vertical-align: top; font-size:13px; padding-left:$space5+3;}
+    input[type="radio"]{ margin-top:6px; display: inline-block; cursor:pointer;}
+    
+    .delivery-address{
+         padding:$space15 $space15; 
+         background:$bg-white;
+         border:$common-border;
+         border-top:0;
+        .title{
+            margin:0px 0 $space10 - 2; 
+            padding:$space0;
+            color: $secondary-600;
+            font-family: $robotomedium;
+            text-transform:uppercase;
+            border:0;  
+            font-size:13px;
+                .continue-shoping-btn{font-size: 12px;color:$color-orange;}   
+        }
+            p{
+                margin-bottom: 7px; 
+                color:$secondary-700;
+                &:last-child{ margin:0; }
+            }
+            .user-name{
+                font-family: $robotomedium;
+                color: $secondary-color;
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .address{
+                font-size: 14px;
+                line-height: 18px;
+                color: $secondary-700;
+                width: 80%;
+            }
+            .detail{  
+                text-transform:capitalize; 
+                margin:$space15 0 0;
+                   &:first-child{margin: 0;border-bottom: 1px solid #e8e8e8;padding: 0 0 $space15;}
+            }
+    }
+    .billing-box {
+        background:$bg-white;
+        position: relative;
+        padding-left: 28px;
+        input{
+            opacity:0;
+            z-index:1;
+            width: 100%;
+            height: 22px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            cursor: pointer;
+            &:checked ~ .checkmarkbtn::after{display:block;} 
+            &:checked ~ .checkmarkbtn{background: $primary-color;border:1px solid $primary-color;}  
+        }
+    }
+}
+.billing-address {
+        padding: 15px 15px;
+        border: $common-border;
+        margin:15px 0 0;
+        position:relative;
+        display:block;
+        background:$bg-white;
+        input[type="checkbox"]{top:15px;left:15px;}
+        .checkmarkbtn{top:15px;left:15px;}
+        label{padding: 0 0 0 25px;display:block;font-size:14px;}
+        .billing-add{
+            display:inline-block;
+            text-transform: uppercase;
+            color:$primary-color;
+            line-height: 22px;
+            font-family:$robotomedium;
+            margin:0 0 0 25px;
+        }
+    }
+    .swpmodal-container{
+        .add-new-address,.address-box,#change_delivery_address_div{
+            display:block;
+        }
+    }
+    .add-new-address{
+        display:none;
+        position:relative;
+        padding:$space20 $space30;
+        .box-modal_close{
+            right:0;
+            top:-22px;
+        }
+        .heading{ 
+            font-size:17px;
+            line-height: 20px;
+            font-family: $robotomedium;
+            padding: 0 0 20px;
+            svg{vertical-align: sub;}
+        }
+        .btn-group{ 
+            text-align:unset; 
+            margin-left: 20%;
+            margin-top:15px;
+            .btn{
+                padding:$space10 $space30;
+                border-radius: 3px;
+                cursor: pointer;
+                max-width:150px;
+                width:100%;
+                display: inline-block;
+            }
+        }
+    }
+.address-box{ 
+    padding:$space20 $space30; 
+    background:$bg-white;
+    position:relative;
+    display:none;
+    max-width:580px;
+    margin:0 auto; 
+    .box-modal_close{
+            right:0;
+            top:-22px;
+        }
+    .heading{
+        float: none !important;
+        padding: 0px 0 $space10;
+        font-size: 18px;
+        color: $secondary-color;
+        font-family: $robotomedium;
+    }  
+    .address-option{
+        border:$common-border; 
+        @include border-radius(3px); 
+        padding:$space10 $space15; 
+        position:relative; 
+        margin-bottom:$space15;
+        display:block;
+        cursor:pointer;
+        &:last-of-type{margin:0;}
+            article{margin-left:$space30;width:85%;}
+            span{@include font-size(13px); font-family:$robotomedium;color:$secondary-color;}
+            p{@include font-size(14px);line-height: 18px;color:$secondary-700;margin: 0 0 5px;word-break: break-word;} 
+            [type="radio"]{
+               width:20px;
+               height:20px;
+                position:absolute;
+                top: 12px;
+                left: 15px;
+                opacity: 0;
+                z-index: 1;
+                cursor:pointer;
+                &:checked ~ .checkmarkbtn::after{display:block;border-radius:50%;border:0;background:$primary-color;@include size(12px);top:3px;left:3px;}
+            }
+            .checkmarkbtn{border-radius: 50%;@include size(20px);top: 12px;left: 15px;}
+            .btn-edit{
+                @include font-size(13px); 
+                position:absolute; 
+                right:10px;
+                top:10px; 
+                text-transform: uppercase;
+                color:$color-orange;
+            }
+    }
+    .save_address{
+        height:315px;
+        overflow:auto;
+        &::-webkit-scrollbar {
+            width: 3px;
+            background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-thumb {background: #a5a5a5;}
+        &::-webkit-scrollbar-track {box-shadow: inset 0 0 5px #e5e5e5;border-radius: 10px;}
+    }
+}
+.btn-add{
+    color:$primary-color;
+    @include font-size(15px); 
+    @include border-radius(3px);
+    padding:$space10+2 $space20; 
+    border:1px dashed $primary-color;
+    margin:$space10 auto $space20;
+    font-family:$robotomedium;
+    display:block;
+    text-align:center;
+} 
+.address-container input[type="radio"] { display: none;} 

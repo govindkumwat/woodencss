@@ -1,0 +1,704 @@
+.front-banner {
+  background: url('../images/modular-kitchen/kitchen-calc-banner.jpg') no-repeat;
+  background-size: cover;
+  min-height: 395px;
+  background-position: center;
+}
+
+.calculator-wrpr {
+  display: flex;
+  justify-content: space-between;
+
+  .main-wrpr {
+    width: 65%;
+  }
+
+  .outer-wrpr {
+    background: $bg-white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
+    @include border-radius(3px);
+
+    .title {
+      padding: $space15 $space25;
+      text-align: left;
+      margin-bottom: $space20;
+      border-bottom: $common-border;
+      @include font-size(21px);
+      line-height: 24px;
+      text-transform: capitalize;
+
+      &.s-title {
+        @include font-size(18px);
+        line-height: 20px;
+        border: 0;
+        margin: 0;
+      }
+    }
+
+    &.material-box {
+      .title {
+        margin-bottom: 10px;
+      }
+
+      .option-box {
+        display: flex;
+        justify-content: space-between;
+
+        .option-lavel {
+          .subtitle {
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .field {
+            .field__input {
+              max-width: 280px;
+              color: $secondary-600;
+              font-family: $pangramregular;
+              letter-spacing: 00.01em;
+            }
+          }
+        }
+      }
+    }
+
+    .slider-wrpr {
+      padding: $space15 $space20*2 $space25;
+
+      .slick-prev,
+      .slick-next {
+        top: 40%;
+
+        &:before {
+          color: $secondary-500;
+        }
+      }
+
+      .single-box {
+        article {
+          margin: 0 6px;
+        }
+
+        figure {
+          background: $light-gray;
+          @extend .figure;
+        }
+
+        .product-name {
+          text-align: center;
+          display: block;
+          color: $secondary-color;
+          font-family: $pangrammedium;
+          letter-spacing: 0.02em;
+        }
+
+        .quantity-wrpr {
+          display: block;
+          text-align: center;
+          margin: $space15 auto;
+          border: 1px solid $secondary-300;
+          padding: 4px;
+          @include border-radius(3px);
+          max-width: 100px;
+
+          span {
+            color: $secondary-600;
+            margin-right: 5px;
+            font-family: $pangrammedium;
+            border-right: 1px solid $secondary-500;
+            padding-right: 5px;
+          }
+
+          select {
+            border: 0;
+            padding: 2px 4px;
+            cursor: pointer;
+          }
+        }
+
+        .btn-add {
+          background: $primary-color;
+          color: $color-white;
+          @include border-radius(3px);
+          @include font-size(15px);
+          line-height: 20px;
+          text-align: center;
+          max-width: 85px;
+          padding: 6px $space10;
+          margin: $space10 auto 0;
+          font-family: $pangramregular;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .form-wrpr {
+      padding: $space15 $space25;
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .field {
+        margin-bottom: $space20;
+        display: inline-block;
+        width: 49%;
+
+        .field__input {
+          height: 47px;
+          border: 1px solid $secondary-400;
+
+          &:focus {
+            border: 1px solid $secondary-600;
+          }
+        }
+      }
+    }
+  }
+
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    margin: $space20 $space25;
+    border-bottom: $common-border;
+    padding-bottom: $space25;
+    align-items: baseline;
+
+    .layout-bx {
+      text-align: center;
+
+      .name {
+        @include font-size(15px);
+        line-height: 20px;
+        color: $secondary-color;
+        font-family: $pangrammedium;
+        letter-spacing: 0.01em;
+        padding: 5px 0 0;
+      }
+
+      img {
+        margin: 0 auto 10px;
+      }
+
+      input[type=radio] {
+        vertical-align: middle;
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        height: 25px;
+      }
+
+      .field {
+        .check {
+          background: url('../images/modular-kitchen/check.svg') no-repeat center;
+          height: 25px;
+          cursor: pointer;
+          display: block;
+        }
+
+        input[type=radio]:checked~.check {
+          background: url('../images/modular-kitchen/checked.svg')no-repeat center;
+        }
+
+      }
+    }
+  }
+
+  .option-box {
+    padding: 15px 25px;
+
+    .option-lavel {
+      width: 65%;
+      margin: 0 0 15px;
+
+      .tooltip {
+        position: relative;
+        transition: 0.5s all ease-in-out;
+        cursor: pointer;
+        margin-left: 3px;
+
+        &:hover {
+          .tooltip-box {
+            opacity: 1;
+            transition: 0.5s all ease-in-out;
+          }
+        }
+      }
+
+      .tooltip-box {
+        background: $light-gray;
+        color: $secondary-700;
+        font-size: 12px;
+        font-family: $pangramregular;
+        padding: 10px;
+        border-radius: 3px;
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        width: 170px;
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+        opacity: 0;
+
+        &:before {
+          content: '';
+          border-color: $light-gray;
+          @include size(15px, 15px);
+          position: absolute;
+          left: -8px;
+          top: 8px;
+          transform: rotate(45deg);
+          z-index: -1;
+          border-width: 0 3px 3px 0;
+          background: $light-gray;
+        }
+
+        b {
+          font-size: 13px;
+          font-family: $pangrammedium;
+          color: $secondary-color;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          padding-left: 10px;
+
+          li {
+            font-size: 12px;
+            font-family: $pangramregular;
+            margin: 0 0 3px;
+          }
+        }
+      }
+
+      .field {
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $secondary-600;
+          margin: 0 10px;
+        }
+
+        .field__input {
+          max-width: 100px;
+        }
+      }
+
+      .subtitle {
+        @include font-size(16px);
+        line-height: 22px;
+        color: $secondary-color;
+        font-family: $pangrammedium;
+        letter-spacing: 0.02em;
+        margin: 0 0 5px;
+      }
+    }
+  }
+}
+
+.talk-designer-form {
+  width: 32%;
+  position: sticky;
+  height: 100%;
+  text-align: center;
+  height: 100%;
+  top: 60px;
+
+  .title {
+    padding: 12px 20px;
+    margin-bottom: 0px;
+    font-size: 23px;
+    border-bottom: $common-border;
+    text-align: left;
+    background: $bg-white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+  }
+
+  .price-wrpr {
+    padding: 0 0px 20px;
+    background: $bg-white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+
+    .flex-d {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: $common-border;
+      padding: 20px 20px;
+
+      &:nth-last-child(1) {
+        border: 0;
+      }
+
+      .head-Est,
+      span {
+        display: block;
+        color: $secondary-color;
+        font-family: $pangrammedium;
+        letter-spacing: 0.01em;
+        @include font-size(15px);
+      }
+
+      .left {
+        text-align: left;
+        color: $secondary-700;
+        font-family: $pangramregular;
+        width: 70%;
+
+        span {
+          display: inline-block;
+        }
+      }
+
+      .total {
+        font-size: 20px !important;
+        color: $color-dark;
+        font-family: $pangrammedium;
+
+        small {
+          display: block;
+          color: $secondary-500;
+          font-size: 13px;
+          font-family: $pangramregular;
+        }
+      }
+
+      .right {
+        text-align: right;
+        @include font-size(15px);
+        color: $color-dark;
+        font-family: $pangrammedium;
+
+        &.green {
+          color: $success-color;
+        }
+      }
+    }
+  }
+
+  .consultation-btn {
+    display: block;
+    margin: 20px 0 0;
+    padding: 12px 25px;
+  }
+}
+
+.calc-page {
+  &.talk-designer-popup {
+    .inner-wrpr {
+      .talk-designer-form {
+        width: 100%;
+        position: unset;
+        height: auto;
+
+        .title {
+          box-shadow: unset;
+          border: 0;
+          text-align: center;
+          padding: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.bg-gray {
+  background: $light-gray;
+}
+
+@media screen and (max-width:1366px) {
+  .front-banner {
+    min-height: 284px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .front-banner {
+    min-height: 266px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .front-banner {
+    min-height: 214px;
+  }
+
+  .calculator-wrpr {
+    .outer-wrpr {
+      .title {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 15px 20px;
+      }
+    }
+
+    .option-box {
+      padding: 15px 20px;
+
+      .option-lavel {
+        width: 48%;
+      }
+    }
+
+    .grid {
+      margin: 15px 20px;
+      flex-wrap: wrap;
+
+      .layout-bx {
+        img {
+          width: 70%;
+        }
+
+        .name {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .talk-designer-form {
+    .title {
+      font-size: 19px;
+      line-height: 22px;
+    }
+
+    .price-wrpr {
+      .flex-d {
+        padding: 12px 20px;
+
+        span,
+        .head-Est {
+          font-size: 14px;
+        }
+
+        .left {
+          font-size: 13px;
+          width: 47%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .front-banner {
+    min-height: 159px;
+  }
+
+  .calculator-wrpr {
+
+    .outer-wrpr {
+      .title {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 12px 20px;
+      }
+
+      .form-wrpr {
+        padding: 12px 20px;
+      }
+    }
+
+    .grid {
+      padding-bottom: 15px;
+
+      .layout-bx {
+        width: 48%;
+        margin: 0 0 15px;
+
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .talk-designer-form {
+    .title {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .price-wrpr {
+      .flex-d {
+        padding: 10px 15px;
+
+        .total {
+          font-size: 18px !important;
+        }
+      }
+    }
+
+    .consultation-btn {
+      margin: 12px 0 0;
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .footer-main {
+    margin-bottom: 55px;
+  }
+
+  .front-banner {
+    background: url('../images/modular-kitchen/mobile-banner.jpg')no-repeat;
+    padding: 165px;
+    background-size: cover;
+    min-height: auto;
+  }
+
+  .calculator-wrpr {
+    display: block;
+
+    .main-wrpr {
+      width: 100%;
+
+      .outer-wrpr {
+        &.material-box {
+          .option-box {
+            display: block;
+
+            .option-lavel {
+              .field {
+                display: block;
+
+                .field__input {
+                  max-width: 90%;
+                }
+              }
+
+              .tooltip {
+                display: inline-block;
+                vertical-align: middle;
+
+                .tooltip-box {
+                  top: 30px;
+                  right: 0;
+                  left: unset;
+
+                  &:before {
+                    top: -5px;
+                    right: 8px;
+                    left: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slider-wrpr {
+          padding: 10px 10px 25px;
+
+          .slick-dots {
+            margin: 15px auto 0;
+          }
+
+          .single-box {
+            .btn-add {
+              font-size: 14px;
+              max-width: 70px;
+            }
+
+            .product-name {
+              font-size: 13px;
+              font-family: $pangramregular;
+            }
+          }
+        }
+
+        .title {
+          font-size: 16px;
+          line-height: 18px;
+          padding: 12px 15px;
+        }
+
+        .form-wrpr {
+          display: block;
+          padding: 0 15px 0px;
+
+          .field {
+            width: 100%;
+          }
+        }
+
+        .option-box {
+          .option-lavel {
+            width: 100%;
+
+            .subtitle {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .grid {
+      margin: 0;
+
+      .layout-bx {
+        input[type=radio] {
+          bottom: -25px;
+          height: auto;
+        }
+      }
+    }
+
+
+  }
+
+  .talk-designer-popup {
+    bottom: 0;
+    top: 0;
+    background: #fff;
+    padding-top: 20px;
+
+    .inner-wrpr {
+      .talk-designer-form {
+        .consultation-btn {
+          position: unset;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .talk-designer-form {
+    position: unset;
+    width: 100%;
+
+    .title {
+      padding: 12px 15px;
+    }
+
+    .consultation-btn {
+      position: fixed;
+      display: block;
+      width: 100%;
+      bottom: 0;
+      border-radius: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 15px;
+      z-index: 1;
+    }
+  }
+
+}

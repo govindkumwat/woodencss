@@ -1,0 +1,46 @@
+ 
+//Global 
+  @import "mixin/_global.scss";  
+//
+.whislist-cart{ background:$bg-white; position:fixed; top:0; right:0; @include size(400px,100%); z-index:99; 
+   .search{ background: #435471; color: $color-white; padding:$space10+2 $space15; 
+        p{font-family: $robotolight; @include font-size(14px); padding:0 0 $space5+3; margin:0; color:$color-white;}
+        input{background: $color-white; padding:$space10;  width:290px; @include font-size(14px); color:#3b3b3b; border:none; outline:none;}
+       .btn-check{ font-family: $robotolight;  @include font-size(14px); text-decoration:none;  color:$color-white; border-bottom:3px solid $color-orange; margin-left:$space10; padding-bottom:2px;} 
+   }
+   .tabs{ padding: $space15 $space20;}
+   .tab-links{ font-family: $robotomedium; border-bottom: $common-border; padding:0;
+         img{@include size(18px); vertical-align: middle; margin-right:$space5;} 
+          li{display: inline-block; padding:0 $space25 $space10 0;}
+          a{ color:$color-black; text-transform: uppercase;}
+        .active {border-bottom: 2px solid $color-orange;}
+   }
+  
+   .cart{ text-align: center; padding-top: $space40;
+          li{ margin-bottom: $space40+10;
+              p{ @include font-size(18px); padding: $space10 0 $space15;}
+              a{ background: $bg-orange; @include font-size(15px); color: $color-white; @include border-radius(3px); text-transform: uppercase; padding: $space10 - 3 $space25; display:inline-block;}
+          }
+   }
+   
+    .title{ padding: $space10 0 ; border-bottom:$common-border; display: block; color:$color-black;; @include font-size(15px);}
+   
+      .Whislist-product{ padding-top: $space20;
+              li{margin-bottom: $space20; padding-bottom:$space20; border-bottom: $common-border; display:flex; justify-content:space-between; }
+              figure{position:relative; width:180px;} 
+              figcaption{ background: #fdd922; font-family: $robotomedium; @include font-size(11px); position: absolute; top: 0; left: 0; padding: 0 $space5; line-height: 20px;}
+              article{ width:220px;} 
+             .name{ color:#363636; @include font-size(14px); padding-bottom:$space5;}
+             .retail{font-family:$robotolight;  @include font-size(14px);  display:inline-block; width:49%; color:#363636; margin-bottom:$space15+3;}
+              strike{ display: block; line-height:$space10;}
+             .offer-price{  display:inline-block; width:49%; @include font-size(14px); @include font-size(13px);  color: #363636; line-height:normal; 
+                        span{ display: block; color: $color-orange; }
+             }
+             .btn-cart{background: $bg-orange; color: $color-white; @include border-radius(3px);@include font-size(13px); padding:$space5 $space10+3; img{ @include size(18px); vertical-align:middle;}}
+             .btn-delete{ background: #efefef; padding:$space5 $space5+3;  @include border-radius(3px); margin-left:$space5; cursor: pointer; img{ @include size(18px); vertical-align:middle;} }
+          
+      }    
+   
+         .swpmodal-close{ position: absolute; right: 10px; color: $color-white; cursor: pointer;}    
+} 
+ 

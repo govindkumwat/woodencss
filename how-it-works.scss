@@ -1,0 +1,372 @@
+ 
+//Global
+  @import "mixin/_global.scss";       
+  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+.space-common{
+     margin:$space20*3 auto;
+}
+.top-banner{
+    background: url('../images/how-it-works/banner.jpg')no-repeat center; 
+    background-size: cover;
+    .banner-block {
+        padding:170px 50px 170px;
+        text-align:center;
+    }
+    .top-head{
+        color:$color-white;
+        font-size: 42px;
+        line-height: 50px;
+        font-family: 'Prata', serif;
+        letter-spacing: 0.03em;
+        margin:0 0 6px;
+    }
+    .top-text{
+        font-size:18px;
+        line-height: 24px;
+        display:inline-block;
+        color:$color-white;
+        letter-spacing: 0.03em;
+        font-family: $pangramregular;
+        max-width: 720px;
+    }
+}
+//top section
+.about-wrpr{
+    text-align:center;
+    padding:40px 0 10px;
+    .flex-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+        padding-top:40px;
+        article{
+            text-align:left;
+            &:hover{
+                img{
+                    transform: scale(1.03);
+                    filter: brightness(1.03);
+                }
+            }
+        }
+        .heading-text {
+            font-size: 17px;
+            line-height: 20px;
+            font-family: 'pangrammedium';
+            margin: 10px 0 6px;
+            letter-spacing: 0;
+        }
+        .text-about{
+            line-height:18px;
+            color:$secondary-700;
+        }
+        figure{
+            overflow:hidden;
+            position:relative;
+            &:before{
+                content:'';
+                display:block;
+                padding-top: 74%;
+            }
+            img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                border-radius: 4px;
+                margin: auto;
+                width: auto;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: 0.3s ease-in;
+                -moz-transition: 0.3s ease-in;
+                -o-transition: 0.3s ease-in;
+                transition: 0.3s ease-in;
+            }
+        }
+    }
+}
+.heading-text{
+    font-size:28px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    font-family: $pangramregular;
+    color:$color-dark;
+    margin:0;
+    text-transform:capitalize;
+}
+b,strong{font-family:$pangrammedium;}
+.text-about{
+    font-size: 14px;
+    line-height: 24px;
+    color:$secondary-color;
+    letter-spacing: 0.03em;
+    font-family: $pangramregular; 
+}
+//quote-wrpr
+.quote-wrpr{
+    text-align:center;
+    padding:55px 0;
+    background:$light-gray;
+    .heading-text{
+        font-size:32px;
+        line-height: 44px;
+        color:$secondary-color;
+        margin: 0 auto;
+        max-width: 670px;
+    }
+}
+//principles section
+.principles-wrpr{
+    .heading-text{
+        letter-spacing:0;
+    }
+    .flex-box{
+        grid-column-gap: 48px;
+        grid-row-gap:64px;
+        padding:65px 50px 0;
+        article{
+            text-align: center;
+            &:hover{
+                img{transform: scale(1);filter:unset;}
+            }
+        }
+    }
+}
+//workshop-banner
+.workshop-wrpr{
+    background: url('../images/how-it-works/workshop-banner.jpg')no-repeat right; 
+    background-size: cover;
+    padding:150px 0;
+    background-attachment: fixed;
+    .heading-text{
+        color:$color-white;
+        font-family: 'Prata', serif;
+        font-size:34px;
+        line-height: 46px;
+        display: inline-block;
+        padding: 0 0 12px;
+    }
+    .text-about{
+        color:$color-white;
+        text-align: left;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 440px;
+    }
+}
+//career block
+.join-team{
+    text-align:center;
+    padding: 15px 0 35px;
+    .heading-text{
+        font-family:$pangrammedium;
+        margin:0 0 8px;
+    }
+    .text-about{
+        font-size:15px;
+        line-height:20px;
+        color:$secondary-700;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .btn-join{
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        font-family: $pangrammedium;
+        border: 1px solid $primary-color;
+        color:$color-white;
+        background: $primary-color;
+        padding: 12px 40px;
+        display: inline-block;
+        margin: $space30 0 0;
+        transition: 0.3s all ease;
+        text-transform: capitalize;
+        border-radius: 100px;
+        &:hover{
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+            background: $bg-white;
+            color:$primary-color;
+        }
+    }
+}
+//responsive media query
+@media(max-width:1280px){
+    .about-wrpr{
+        padding:0;
+        .flex-box{
+            padding-top: 30px;
+        }
+    }
+    .workshop-wrpr{
+        background-position: 70%;
+        padding:130px 0;
+    }
+}
+@media(max-width:1024px){
+    .space-common {
+        margin: 40px auto;
+    }
+    .top-banner{
+        .banner-block{
+            padding:130px 0;
+        }
+        .top-head{
+            font-size: 40px;
+            line-height: 52px;
+        }
+        .top-text{font-size: 18px;}
+    }
+    .heading-text{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .quote-wrpr{
+        padding:40px 0;
+    }
+}
+@media (max-width:768px){
+    .space-common {
+        margin: 30px auto;
+    }
+    .top-banner {
+        .banner-block{
+            padding:100px 0;
+        }
+        .top-head{
+            font-size: 32px;
+            line-height: 42px;
+        }
+        .top-text{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .quote-wrpr{
+        .heading-text{
+            font-size: 28px;
+            line-height: 42px;
+            max-width: 600px;
+        }
+    }
+    .quote-wrpr {
+        padding: 30px 0;
+        .heading-text{
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+    .heading-text {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .principles-wrpr{
+        .flex-box{
+            grid-template-columns: 1fr 1fr;
+            padding:20px 15px 0;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+    }
+    .workshop-wrpr {
+        padding: 70px 0;
+        .heading-text{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .text-about{
+            font-size: 15px;
+            line-height: 22px;
+            max-width: 380px;
+        }
+    }
+    .join-team {
+        padding: 15px 0;
+        .text-about{
+            max-width: 630px;
+            font-size: 14px;
+        }
+        .btn-join{
+            font-size: 15px;
+            line-height: 20px;
+            margin: 20px 0 0;
+            padding: 10px 30px;
+        }
+    }
+}
+@media (max-width:767px){
+    .gray-bg{background:none;}
+    .container-1200{
+        padding:0 10px;
+    }
+    .top-banner {
+        background-position: right;
+        .top-head{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .top-text{
+            font-size: 14px;
+            line-height:18px;
+            padding:0 15px;
+        }
+        br{display:none;}
+    }
+    b, strong {
+        font-weight: normal;
+    }
+    .about-wrpr{
+        padding:10px 10px 0;
+        .flex-box{
+            display:block;
+            .heading-text{
+                margin: 20px 0 6px;
+            }
+        }
+        article{
+            margin: 0 0 30px;
+        }
+    }
+    .quote-wrpr{
+        .heading-text{
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+    .principles-wrpr {
+        .heading-text{
+            font-family: $pangrammedium;
+            padding: 0 10px;
+        }
+        .flex-box{
+            padding: 20px 0px 0;
+            .heading-text{
+                margin: 12px 0 6px;
+                font-size:20px;
+                line-height:24px;
+            }
+            article{
+                margin:0 0 40px;
+            }
+        }
+    }
+    .workshop-wrpr {
+        background:url('../images/how-it-works/mb-workshop-banner.jpg')no-repeat right;
+        padding: 115px 0;
+        text-align: center;
+        background-attachment: fixed;
+        background-size: cover;
+        .text-about{
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+    .join-team {
+        padding:15px 10px;
+        .heading-text{
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+}

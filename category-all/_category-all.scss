@@ -1,0 +1,230 @@
+h1,h2,h3,h4,h5,{
+    font-family:$pangrammedium;
+}
+.categoryAll { 
+    background: #f8f8f8; 
+    padding: 20px 0; 
+    margin-bottom: 30px;
+    .title-name { 
+        text-transform: uppercase; 
+        margin-bottom: 5px; 
+        display: block;
+            a{
+                font-size:15px;
+                line-height: 20px;
+                letter-spacing: 0.6px;
+                font-family: $pangrammedium;
+            }
+        }
+    a { 
+            display: block; 
+            font-size: 14px; 
+            line-height:20px;
+            color: #242424; 
+            padding: 3px 0;
+            letter-spacing: 0.4px;  
+            font-family: $pangramregular;
+        }
+}
+.categoryMein {
+    figure { 
+        position: relative;
+        img { 
+            position: absolute; 
+            mix-blend-mode: darken; 
+            top: 0; 
+            left: 0; 
+            bottom: 0; 
+            right: 0; 
+            margin: auto; 
+        }
+        &:before { 
+            content: ''; 
+            display: block; 
+            padding-top: 100%; 
+        }
+    }
+}
+.flexbox { 
+    display: flex;
+    flex-wrap: wrap; 
+        article { 
+            width: 19.4%; 
+            background: #fff; 
+            margin-right: 1%; 
+            box-shadow: 0 0 6px 0 rgba(0,0,0,.1); 
+            flex: 1;
+            &:last-child { margin-right: 0px; }
+        }
+        .in { padding: 15px; 
+            a {
+                &:hover{ color: #E57200; } 
+            }
+            }
+    figure {
+        &:before { padding-top: 55%; }
+    }
+}
+.mid-banner {
+                figure{
+                    &:before { padding-top: 73%; }
+                }
+                .fullmid{ width: 100%; margin-bottom: 20px;
+                    figure{
+                        &:before { padding-top: 32%; }
+                    }
+                }         
+}
+.headingOnline { 
+    text-align: center; 
+    margin-bottom: 20px;
+        .headingbold { 
+            font-size: 24px; 
+            line-height: 28px; 
+            font-family: $pangrammedium; 
+            letter-spacing: 1px;
+            margin:0 0 $space5;
+        }
+   }
+ .more-content { 
+     position:relative; 
+     font-size: 14px; 
+     line-height: 20px;
+     height: 20px; 
+     font-weight: 400; overflow: hidden; width:75%; margin: auto;color:$secondary-600;
+     font-family: $pangramregular;
+    a { color: #e57200; } 
+    b,strong{color:$secondary-color;}
+    &.more { height:auto; width: auto; 
+   .moreButton { position: inherit;  &:before { content: 'Less';}}
+  }
+ }
+ .moreButton { font-size: 14px; display: inline-block; position: absolute; bottom: 0; right: 0; background: #fff; color:#e57200; padding-left: 5px; cursor:pointer;
+  &:before { content: 'Read More..'; display: inline-block; text-decoration: underline;}
+   &:hover{&:before { text-decoration: none;}}
+ }
+ .SectionLiving { max-width: 1200px; margin: 50px auto; }
+ .livingFlex { 
+     display:  flex; 
+     justify-content: space-between; 
+     margin-top: 25px; 
+     border-bottom: 1px solid #E8E8E8;
+     padding-bottom: 40px; 
+        li { width: 32%; 
+            figure{ overflow: hidden; 
+              &:before { padding-top: 97%; }
+            }
+        }
+    a { 
+        font-size: 14px; 
+        color: #242424; 
+        line-height: normal; 
+        display: block; 
+        text-align: center; 
+        font-family: $pangramregular;
+    }
+    span { display: block; margin:10px 0 3px; font-family: $pangrammedium; text-transform: uppercase;letter-spacing: 0.4px; font-size: 15px;}
+ }
+ .saleStrip {
+     figure{
+         &:before { padding-top: 10%; }
+     }
+ }
+ .headingNew { font-size: 22px;line-height: 24px; text-align: center; text-transform: uppercase;letter-spacing: 1px; margin-bottom: 30px;font-family:$pangrammedium;}
+ .NewArrivals { padding: 50px 0; position:relative;
+    &:before { position: absolute; content: ''; left: 0; right:0; bottom: 0; top: 45%; background: #F1F9F9; }
+    span { display: block; white-space: nowrap;  text-overflow: ellipsis; overflow: hidden; width: 80%; font-family: $pangramregular;font-size: 15px;line-height:20px;}
+    label { font-family: $pangrammedium; }
+}
+  .shopSlider {
+     a { display:block;color: #4A4A4A; }
+    figure { margin-bottom: 8px;}
+   li { margin: 0 10px; font-size: 15px; 
+      figure{ overflow: hidden;
+          img{   -webkit-transform: scale(1); transform: scale(1);  @include transition(.5s ease-in);}    
+        }
+        &:hover { 
+            figure > img { transform: scale(1.02); }
+        }
+   }
+   p { font-size: 15px;line-height:20px; font-family: $pangramregular;
+    strike { font-size: 14px; color: #8B8B8B; margin-left: 4px; }
+   }
+    
+ }
+ .coffeeTable { margin-bottom: 50px; }
+  .btn-all {
+    background: #333333;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 7px 50px;
+    display: inline-block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .9375rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: 0;
+}
+.ask_questions{
+    max-width: 1200px;
+    margin:0 auto 35px;
+    padding:10px 0;
+}
+//home-garden
+.home-garden{
+    .livingFlex {
+        li{
+            width:24%;
+        }
+    }
+}
+.space20{margin:20px 0;}
+@media #{$screen-desktop}{
+    .SectionLiving { padding: 0 20px; }
+    .categoryAll {
+        .title-name {
+            a{font-size: 14px;}
+        }
+        a{font-size: 13px;}
+    }
+  
+}  
+@media #{$screen-tablet}{
+
+    .slick-dots{ 
+         margin:auto;
+         text-align:center;
+         padding: 15px 0 0;
+                 li{ margin: 0 4px !important;
+                     button{ &:before{ border-radius:100%;  background:#d2d2d2;}}
+                     &.slick-active{ button{&:before{  background:#e57200;}}}
+                 }
+          }
+    .flexbox {
+        article {
+            flex: inherit;
+            width: 19%; 
+            &:nth-child(-n+5) { margin-bottom: 10px; width: calc(100% * (1/5) - 7px - 1px); flex-grow: 1; }
+            &:nth-child(5) { margin-right:0px; }
+        }
+         .in {padding: 10px;}
+    }
+    .NewArrivals {
+        padding: 35px 0;
+        span { font-size: 14px; }
+    }
+    .coffeeTable {
+        margin-bottom: 30px;
+    }
+    .shopSlider p , .livingFlex a{ font-size: 14px; }
+    .headingNew {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+} 

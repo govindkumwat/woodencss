@@ -1,0 +1,47 @@
+
+.pro-heading{@include font-size(30px); color:$color-black; padding-bottom:$space15; padding-top:$space30; text-align: center; font-weight: normal;
+        &:after{@include size(115px,2px); background:$bg-warning; content:''; display:block; margin:$space20 auto 0;}
+      }
+.look-product{ text-align:center; /*border-bottom:$common-border;*/ padding-bottom:$space20;
+         
+         p{ @include font-size(15px); color:#3b3b3b; font-family:$robotolight;  text-align:center; padding-bottom:0; margin:0 auto;}
+       .look-full{  &:before{ padding-top:70%;} }  
+        iframe{ border:none;} 
+       }
+       
+       .look-product.hide + .angle_images{  /*border-top:$common-border;*/ margin-top:$space30;}
+       
+       .angle_images{ display:flex; justify-content:space-between; flex-wrap:wrap; padding-top:$space20; padding-bottom:$space20+20; border-bottom:$common-border;
+       
+       .look-small{ width:48%; color:#3b3b3b;  text-align:center;
+                figure{&:before{ padding-top:60%;}  }  
+                .title{ @include font-size(20px); display:block; padding:$space15 0; font-weight: normal; margin:0;}
+                p{ @include font-size(15px); width:auto;}
+          }
+       
+       }
+.incrementer { margin: $space15 $space0 $space5;   
+ .qtyminus, .qtyplus { @include size(25px); line-height: 25px; color: $color-white; @include font-size(20px); background-color: #999999; padding: $space0; vertical-align: middle; outline: none; cursor: pointer;}
+ .increment_field {  display: inline-block; @include size(40px, 25px); margin: 0; vertical-align: middle; text-align: center; font-size: 15px; background-color: #FFFFFF !important; padding-top: 2px; border: $common-border; }
+ .qtyplus {  background-color: $bg-orange; }
+    &.selected {
+        .qtyminus { background-color: $bg-orange; }
+    }
+     &.max {
+        .qtyplus { background-color: #999999; }
+    }
+ }    
+
+
+ @media #{$screen-desktop}{
+      .look-product{ margin-top:0; padding-bottom:$space30;}
+ }
+ 
+ @media #{$screen-tablet}{
+     .product-sofa {
+         .choose { width: 55%; }
+         .list { 
+             li { width: 31%; }
+         }
+     }
+ }

@@ -1,0 +1,91 @@
+.category-main { background: #ececec; margin-top: $space15;}
+.category-sofa{
+      .box-full{ margin-top:$space30;justify-content:space-between; flex-wrap:wrap;position:relative;display:flex;
+          a{color: $color-black;}
+          .w-cart{ position:absolute; margin:0; float:none; right:$space10; top:$space10;}
+        }  
+     .product-image{position:relative; width:800px; 
+             figure{ margin:0; position:relative;  background:#f7f7f8;  
+                   img{ display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); mix-blend-mode:darken;  vertical-align:bottom;}
+                   &:before{ content:''; display:block; padding-top:50%;}
+           
+           }         
+     
+     }
+     .product-info{background:#f7f7f7; width:280px; text-align:center; color:$color-black; padding:$space10;}
+    .product-name {@include font-size(20px); font-family:$robotoregular; color:$color-black; border-bottom:$common-border; padding:$space10 0; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;
+      span{ display:block; font-size:13px; }
+      small{ display:none;}
+    }
+    .cate-available{ color: $color-black; border-bottom:$common-border; padding-bottom: $space15;
+                 .heading{display: block; padding:$space5 - 2; @include font-size(14px); margin:0;}
+                 li{ display:inline-block; margin:0 $space5 - 3; }
+                 img{@include size(40px, 28px); vertical-align:middle;}
+                    
+          }
+    .inset{ padding:$space10 0; border-bottom:$common-border;
+          .price-old{ font-size: 15px;display: inline-block;
+          small{ font-size:15px;}
+          }
+        .price-discount{background:#fdd922; font-family:$robotoregular; @include border-radius(3px); vertical-align:inherit; line-height:20px; display:inline-block; padding:$space5 - 4 $space5; margin-left:$space5; position:relative; @include font-size(13px);
+       &:before{content: '\f0d9'; position: absolute; color: #fdd922; font-family: FontAwesome; left: -4px; top:0px;}
+   }
+    .price-new{@include font-size(16px); font-family:$robotomedium; color:$color-warning;
+     small{ font-family:$robotolight; @include font-size(16px); color:$color-black;}
+    }
+   }
+   
+   .price-emi{  float:left; @include font-size(12px); margin-top:25px; margin-left:$space10;}
+  
+ .extra-offer {color:$color-black;  padding:$space10 $space0; border-bottom:$common-border;  color: #e57200;
+    small{@include font-size(15px); text-transform:capitalize; display:inline-block; color:$color-black;}
+ }
+ .extra-off{ padding:$space5 - 3 $space0; color:$color-black; border:2px dotted #ccc; margin:$space15 auto $space5; @include font-size(13px); width:53%; position:relative; display:block;
+   .categ-off { color: #e57200; @include font-size(15px);  font-weight:normal;}
+      &:after { content: "\f0c4"; font-family:$fontawesome; color:#736f6f; position:absolute; @include font-size(16px); top: -$space10 - 1; left: $space10;}
+ }
+ 
+   .btn-view{ border: 1px solid #ccc; margin-top:$space25; @include border-radius(3px); padding:$space5 - 2 $space10+5; float:left;@include font-size(13px);
+     &:hover{ background:#e9e8e8; }
+    }
+    
+     .our-price{padding-top:$space10+2; display:block; 
+         span { text-decoration: line-through;}
+     }
+  .offer-price{color:$color-black;  padding:$space10+2 $space0; border-bottom:$common-border;
+         b {color: #e57200; @include font-size(18px); font-family: roboto; font-weight: 500;
+         }
+      }
+      
+       .lead{text-align: justify; @include font-size(12px); margin-top:$space15; line-height:$space20;}
+
+        .more-product{ margin-top:$space15;  border-top:$common-border; padding-top:$space15;
+        .sub-head{ @include font-size(14px); text-align:left; padding-bottom:$space10;}
+            .product-img{ width:117px;border:$common-border; display:inline-block;
+                   &:last-child{margin-right:$space0;}
+             }
+      }
+      
+         .more-links { float: right;  padding:$space5+2 $space10+3 $space0 $space0; @include font-size(13px); position:relative; margin-right:$space10; margin-top:$space5;
+         &:before { content: "\f105"; position: absolute; top:2px; right: 0px;  @include font-size(22px); font-family:$fontawesome; @include transform(rotate(4deg));}
+        &:hover {color: #e57200;}
+      }
+      
+     .hidden{ display:none;}
+     
+}
+//location page
+
+.category{
+    .art_special{ 
+          text-align:center; margin-top:$space20;
+          h1{ @include font-size(26px); font-weight:500; color:#535353;}
+          p{@include font-size(15px); color:#535353;}
+    }
+  .art_special ~ .product-list{ margin-bottom:$space30+10;} 
+ 
+} 
+
+
+
+ 

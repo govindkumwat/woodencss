@@ -1,0 +1,41 @@
+
+.trackorder{ padding:$space40+40 0 250px; background: url(../images/track-order/trackorder-bg.png) repeat-x bottom left;
+    
+   .container{ display:flex; align-items:center; max-width:930px; justify-content:space-between;}
+    
+    article{ text-align:center; width:420px;}  
+  
+    .heading{ @include font-size(40px); font-weight:normal; margin:$space20 0 $space10; 
+             &:after{ display:block; @include size(135px,2px); background:#818181; content:''; margin:$space20 auto 0;}
+       }
+         
+        aside{ width:490px; }
+        p{ @include font-size(13px); font-family:$robotolight;}
+        form{ border:$common-border; @include border-radius(5px);padding:$space30 $space30+2 $space30 $space20;
+           img{ position:absolute; right:0; top:2px;}
+          .captcha{ right:35px;}
+         .reload{ cursor:pointer;}
+        }
+       .form-group{ display:flex; justify-content:space-between; margin-bottom:$space20; position:relative;}
+       label{@include font-size(14px); color:$color-black; display:block; width:100px; text-align:right;}
+      .form-control{ border:$common-border; padding:$space10; @include font-size(14px); color:$color-black; @include border-radius(3px); width:320px;}
+     .btn{ float:right; background:$bg-warning; color:$color-white; @include font-size(15px); font-family:$robotomedium; @include border-radius(3px); width:320px; margin:0 auto; padding:$space10+4 0; text-transform:uppercase; cursor:pointer;}
+     span{ color:$color-warning; @include font-size(15px); font-family:$robotomedium; display:block; padding-top:$space10; text-align:center; ; text-transform:uppercase;}
+}
+
+
+@media #{$screen-tablet}{
+    
+    .trackorder{
+         .heading{@include font-size(35px);}
+        form{ padding:$space25;}
+        .form-control{ width:230px;}
+       .form-group{ margin-bottom:$space15;}
+       .btn{ padding:$space10 0;width:230px;}
+    }
+ 
+    
+}
+
+
+

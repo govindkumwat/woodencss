@@ -1,0 +1,40 @@
+@media #{$screen-desktop}{
+
+     .kibanner{
+        img{ height:480px;}
+        section{width:920px; height: auto;}
+        article{ margin-top:150px; 
+        h1, span{ font-size: 27px;}
+        
+        }
+        section{ padding:$space10 0;}
+      
+        .slick-dots{z-index:9;position: relative; margin-top:5px;  text-align:center;
+                          li{  margin:0px 2px; 
+                                button{ &:before{background:#d6d6d6; @include border-radius(100%); @include size(8px); } }
+                             
+                              &.slick-active{
+                                  button{
+                                  &:before{background:#e57200;}
+                                  }
+                              }
+                          }
+        }
+    
+    }
+    .customer{
+        blockquote{width: auto;}
+    }
+    .fyfit{
+        li{
+            &:after{@include size(40px); right: -20px; line-height: 45px;}
+        }
+    }
+    .choice{
+        .chbox{width: 300px;}
+        .chboxbig{width: 630px; min-height: 460px;}
+    }
+    .materials{
+        article{width: 490px;}
+    }
+}

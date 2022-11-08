@@ -1,0 +1,471 @@
+ //Global 
+ @import "mixin/_global.scss";
+ @import "home-new/_banner.scss";
+ @import "home-new/_top-category.scss";
+ @import "home-new/_furniture-banner.scss";
+ @import "home-new/_home-slider.scss";
+ //@import "home-new/_other-category.scss";
+ @import "home-new/_stores-home.scss";
+ @import "home-new/_decor.scss";
+ @import "common/_grid.scss";
+
+ [class^="col-"] {
+     &:last-child {
+         margin-right: auto;
+     }
+ }
+
+ .container-1600 {
+     max-width: 1600px;
+     margin: 0 auto;
+ }
+
+ .row {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+
+     &:after {
+         display: none;
+     }
+ }
+
+ .figure {
+     position: relative;
+     overflow: hidden;
+     margin-bottom: 6px;
+     border-radius: 4px;
+     background: $light-gray;
+
+     &:before {
+         padding-top: 100%;
+         content: '';
+         display: block;
+     }
+
+     img {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         top: 0;
+         margin: auto;
+         width: auto;
+         transform: scale(1);
+         transition: 0.3s ease-in;
+         height: 100%;
+         display: inline-block;
+     }
+ }
+
+ .headingNew {
+     text-align: center;
+     font-size: 22px;
+     line-height: 26px;
+     color: $secondary-color;
+     font-family: $pangrammedium;
+     text-transform: capitalize;
+     padding: 0 0 30px;
+
+     .subheading {
+         font-size: 15px;
+         line-height: 18px;
+         font-family: $pangramregular;
+         color: $secondary-600;
+         padding: $space5 0 0;
+         text-align: left;
+     }
+ }
+
+ .banner-mid {
+     margin: 50px auto;
+     display: block;
+
+     &.mlr-0 {
+         margin-left: 0;
+         margin-right: 0;
+         margin-bottom: $space10;
+     }
+ }
+
+ .mb-20 {
+     margin-bottom: 20px;
+ }
+
+ .link-flex {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     .view-link {
+         padding: 0;
+
+         svg {
+             vertical-align: text-top;
+         }
+
+         &:hover {
+             svg {
+                 margin-left: 3px;
+             }
+         }
+     }
+ }
+
+ .view-link {
+     color: $secondary-color;
+     font-family: $pangramregular;
+     padding: $space10 0 0;
+     font-size: 15px;
+     display: block;
+
+     svg {
+         vertical-align: text-bottom;
+         margin-left: 3px;
+     }
+
+     &:hover {
+         color: $color-orange;
+
+         svg {
+             margin-left: 5px;
+             transition: 0.3s all ease-in-out;
+
+             path {
+                 stroke: #e57200;
+             }
+         }
+     }
+ }
+
+ .TextCommon {
+     margin: 30px auto;
+ }
+
+ @media (max-width:1600px) {
+     .TextCommon {
+         padding: 20px 40px;
+     }
+ }
+
+ @media screen and (min-width:1400px) and (max-width:1500px) {
+     .Top-section {
+         height: 545px;
+     }
+ }
+
+ @media (max-width:1366px) {
+     .Top-section {
+         padding: 10px 10px 0;
+         min-height: 504px;
+         height: 504px;
+     }
+
+     .shopSlider,
+     .lamp-slider {
+         .slick-next {
+             right: 0px;
+         }
+
+         .slick-prev {
+             left: 0px;
+             z-index: 1;
+         }
+     }
+
+     .banner-mid {
+         margin: 30px auto;
+     }
+
+     .store-wrpr {
+         .stores-list {
+             padding: 0 $space30 $space30;
+
+             .store-box {
+                 width: 19%;
+                 margin: 0px 0px 15px;
+             }
+         }
+     }
+
+     .decor-section {
+         padding: 40px 15px;
+     }
+
+     .TextCommon {
+         padding: 20px 40px 20px;
+     }
+
+     .TopSelling,
+     .recently-viewed {
+         article {
+             a {
+                 margin: 0 6px;
+             }
+         }
+     }
+
+     .slick-prev:before,
+     .slick-next:before {
+         width: 32px;
+         background-size: 25px;
+         background-position: center;
+     }
+ }
+
+ @media (max-width:1280px) {
+     .banner-mid {
+         margin: 25px auto;
+     }
+
+     .Top-section {
+         min-height: 474px;
+         height: 474px;
+     }
+
+     .shop-category {
+         .top-list {
+             margin-top: 20px;
+         }
+     }
+
+     .NewForyou {
+         padding: 25px 20px;
+     }
+
+     .store-wrpr {
+         padding: 30px 0 0;
+     }
+
+     .other-categories {
+         .category-wrpr {
+             p {
+                 font-size: 15px;
+                 line-height: 18px;
+                 padding-bottom: 12px;
+
+                 img {
+                     width: 32px;
+                 }
+             }
+         }
+
+     }
+
+     .TopSelling,
+     .recently-viewed {
+         padding: 20px 20px 35px;
+     }
+
+     .onlineStore {
+         padding: 30px 20px;
+     }
+
+     .decor-section {
+         padding: 30px 15px;
+     }
+
+     .headingNew {
+         font-size: 20px;
+         line-height: 24px;
+         padding: 0 0 20px;
+     }
+ }
+
+ @media (max-width:1024px) {
+     .shop-category {
+         padding: 30px 0px;
+     }
+
+     .Top-section {
+         min-height: 382px;
+         height: 382px;
+     }
+
+     .headingNew {
+         font-size: 20px;
+         line-height: 22px;
+
+         .subheading {
+             font-size: 14px;
+         }
+     }
+
+     .onlineStore {
+         padding: 40px 15px;
+
+         .headingOnline {
+             font-size: 20px;
+             margin-bottom: 20px;
+         }
+     }
+
+     .TopSelling,
+     .recently-viewed {
+         padding: 0px 15px 30px;
+     }
+
+     .other-categories {
+         padding: 30px 15px;
+
+         .category-wrpr {
+             padding: $space10;
+
+             p {
+                 font-size: 15px;
+                 line-height: 18px;
+             }
+         }
+
+         .category-list {
+             li {
+                 margin: 0 0 10px;
+             }
+
+         }
+     }
+
+     .NewForyou {
+         padding: 30px 15px;
+     }
+
+     .decor-section {
+         .decor-list {
+             width: 19%;
+             margin: 0 auto 20px;
+         }
+     }
+
+     .mb-20 {
+         margin-bottom: 0;
+     }
+
+     .store-wrpr {
+         padding: 30px 0 0;
+     }
+
+     .TextCommon {
+         padding: 20px 15px;
+     }
+ }
+
+
+ @media (max-width:768px) {
+     .Top-section {
+         height: 283px;
+         min-height: 283px;
+
+         .other-banner {
+             width: 38%;
+         }
+     }
+
+     .shop-category {
+         .top-list {
+             grid-template-columns: repeat(4, 1fr);
+         }
+     }
+
+     .headingNew {
+         font-size: 18px;
+         line-height: 20px;
+     }
+
+     .onlineStore {
+         padding: 25px 15px;
+
+         .headingOnline {
+             font-size: 18px;
+             margin-bottom: 15px;
+
+             h1 {
+                 font-size: 18px;
+             }
+         }
+     }
+
+     .shopSlider {
+         .name {
+             font-size: 14px;
+             line-height: 18px;
+         }
+
+         .price {
+             font-size: 13px;
+         }
+     }
+
+     .other-categories {
+         .category-wrpr {
+             p {
+                 font-size: 13px;
+                 line-height: 16px;
+                 padding-bottom: 10px;
+
+                 img {
+                     width: 30px;
+                 }
+             }
+         }
+
+         .category-list {
+             li {
+                 span {
+                     font-size: 13px;
+                     line-height: 15px;
+                     padding: 3px 0 0;
+                 }
+             }
+         }
+     }
+
+     .view-link {
+         font-size: 14px;
+         padding: 5px 0 0;
+     }
+
+     .NewForyou article {
+         p {
+             font-size: 14px;
+             line-height: 18px;
+         }
+
+         span {
+             font-size: 13px;
+             margin: 0px 0 0;
+         }
+     }
+
+     .decor-section {
+         padding: 20px 15px 10px;
+
+         .headingNew {
+             padding: 0 5px 15px;
+         }
+
+         .decor-list {
+             .category-name {
+                 padding: 8px 4px;
+                 font-size: 13px;
+                 line-height: 16px;
+
+                 span {
+                     font-size: 11px;
+                     line-height: 15px;
+                 }
+             }
+         }
+     }
+
+     .banner-mid {
+         padding: 0 15px;
+     }
+
+     .store-wrpr {
+         padding: 20px 0 0;
+
+         .stores-list {
+             padding: 0 20px 15px;
+         }
+     }
+ }

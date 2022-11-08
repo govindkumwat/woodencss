@@ -1,0 +1,706 @@
+.top-banner{
+  max-width: 1440px;
+  margin   :$space0 auto $space0;
+  position : relative;
+  text-align:center;
+  figure{ margin: 0 30px;}
+
+  &:before{
+      padding-top:35%; content:''; display:block; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+  } 
+ 
+}
+
+
+.banner.slick-slider{
+    div{ position:inherit;}
+}
+
+.home-main {
+  margin  : 0 $space30;
+  //height  : 451px;
+  //overflow: hidden;
+}
+
+.homeslide {
+       
+  video {
+    max-width: 100%!important;
+    height   : auto!important;
+  }
+
+}
+
+.responsive-bg-video {
+  max-width: 100%!important;
+  height   : auto!important;
+}
+
+.h-main {
+  figure {
+    position  : relative;
+    background: #f7f7f8;
+
+    img {
+      position      : absolute;
+      mix-blend-mode: darken;
+      top           : 0;
+      left          : 0;
+      bottom        : 0;
+      right         : 0;
+      margin        : auto;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+    }
+  }
+
+  .customer-slider,
+  .iteam-five,
+  .iteam-two,
+  .item-four,
+  .item-three {
+    display: none;
+  }
+}
+//vishnu je
+
+.space {
+  margin-top: $space40+5;
+}
+
+.page-head {
+  @include font-size(20px);
+  text-align    : center;
+  text-transform: uppercase;
+  font-family   : $robotobold;
+  position      : relative;
+  z-index       : 1;
+
+  .lead {
+    text-align    : center;
+    color         : $color-black;
+    @include font-size(15px);
+    font-family   : $robotolight;
+    padding-bottom: $space5 - 3;
+  }
+}
+
+.first-online-store {
+  padding      : 0 0 $space15;
+  text-align   : center;
+  position     : relative;
+  border-bottom: $common-border;
+  margin-top   : $space20;
+
+  .title-small {
+    font-size  : 12px;
+    max-width  : 940px;
+    margin     : 0 auto;
+    font-family: $font-family-light;
+ 
+  }
+
+  .more {
+    cursor : pointer;
+    display: block;
+
+ 
+  }
+
+  .home-title {
+    font-family: $robotomedium;
+    font-weight: normal;
+    font-size  : 22px;
+
+    h1 {
+      display    : inline-block;
+      font-weight: normal;
+      font-size  : 22px;
+      margin     : 0;
+    }
+  }
+
+  &.active {
+    .title-small {
+      height: auto;
+    }
+
+    .more {
+      &:after {
+        content: "less";
+      }
+    }
+  }
+}
+
+.store-list {
+  margin   : $space20+2 auto 0;
+  max-width: 940px;
+  padding  : $space0;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+
+  li {
+    padding: 0;
+    background-image: url(../images/generated/home-icons-s0acfec4275.png);
+    background-repeat: no-repeat;
+  }
+
+  p {
+    @include font-size(12px);
+    color         : #515151;
+    line-height   : $space15+3;
+    display       : inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    @include size(51px);
+    margin        : 0 $space10 0 0;
+    display       : inline-block;
+    vertical-align: middle;
+  }
+}
+
+.top-selling-slider {
+  padding-top: $space20;
+  text-align : center;
+
+  .slick-list {
+    margin: 0 -8px;
+  }
+
+  li {
+    &.slick-slide {
+      margin: 0 $space5+3;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    p {
+      line-height: normal;
+      padding-top: $space5+3;
+      @include font-size(14px);
+      color      : #000;
+    }
+
+    span {
+      display    : block;
+      color      : #555555;
+      @include font-size(13px);
+      padding-top: $space5 - 3;
+    }
+  }
+
+  figure {
+    &:before {
+      padding-top: 112%;
+    }
+  }
+}
+
+.money-back {
+  padding-top: $space20;
+  display    : block;
+
+  figure {
+    background: $bg-white;
+
+    &:before {
+      padding-top: 11%;
+    }
+  }
+}
+
+.beds-bener {
+  display        : flex;
+  justify-content: space-between;
+  text-align     : center;
+
+  a {
+    display: block;
+  }
+
+  .beds {
+    display: inline-block;
+    width  : 49%;
+  }
+
+  figure {
+    &:before {
+      padding-top: 56%;
+    }
+  }
+
+  span {
+    color         : $color-black;
+    @include font-size(20px);
+    text-transform: uppercase;
+    font-family   : $robotomedium;
+    padding-top   : $space10;
+    display       : block;
+  }
+
+  small {
+    @include font-size(15px);
+    display    : block;
+    line-height: normal;
+  }
+}
+
+.home-Categories {
+  background: #f3f3f4;
+  padding   : $space30+5 $space0;
+
+  .list {
+    text-align : center;
+    max-width  : 970px;
+    margin     : 0 auto;
+    display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+    padding-top: $space20;
+
+    li {
+      width        : 20%;
+      padding      : $space0 $space5+2;
+      margin-bottom: $space20;
+    }
+
+    a {
+      display   : block;
+      color     : #000;
+      background: #fff;
+      @include font-size(15px);
+    }
+
+    span {
+      display: block;
+      padding: $space5 $space0;
+    }
+  }
+
+  figure {
+    background: $bg-white;
+
+    &:before {
+      padding-top: 100%;
+    }
+  }
+}
+
+.trendy-slider {
+  padding-top: $space30;
+
+  .slick-slide {
+    margin: 0 $space5+3;
+  }
+
+  .slick-list {
+    margin: 0 -8px;
+  }
+
+  figure {
+    &:before {
+      padding-top: 74%;
+    }
+  }
+}
+
+.home-Deals {
+  background: #fef9f5;
+  padding   : $space30 $space0 $space40+5;
+  position  : relative;
+  margin-top: $space40+40;  
+}
+
+.deals-slider {
+  padding-top: $space20;
+  z-index    : 8;
+
+  a {
+    display      : block;
+    margin-bottom: $space5 - 3;
+    background   : $bg-white;
+    text-align   : center;
+    padding      : $space0 $space0 $space10;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.28));
+  }
+
+  .title {
+    line-height  : $space20;
+    color        : #000;
+    @include font-size(14px);
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    padding      : $space5 $space5 $space0;
+  }
+
+  span {
+    @include font-size(11px);
+    display    : block;
+    font-family: $robotolight;
+    color      : #a3a3a3;
+  }
+
+  .off-price {
+    background : #fdd922;
+    color      : #000;
+    position   : absolute;
+    font-family: $robotoregular;
+    top        : 0;
+    left       : 0;
+    @include font-size(12px);
+    padding    : $space0 $space5+3;
+  }
+
+  article {
+    text-align: center;
+    position  : relative;
+  }
+
+  .slick-slide {
+    margin: 0 $space10;
+  }
+
+  .slick-list {
+    margin: 0 -10px;
+  }
+  //.slick-prev, .slick-next{ top:40%;}
+  figure {
+    &:before {
+      padding-top: 89%;
+    }
+  }
+}
+
+.home-room {
+  .in {
+    margin     : $space20 $space0;
+    display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+    background : #f7f7f8;
+    align-items: center;
+  }
+
+  .bottom {
+    &.in {
+      background: $bg-white;
+    }
+  }
+
+  figure {
+    width: 67%;
+
+    img {
+      display: block;
+    }
+
+    &:before {
+      padding-top: 51%;
+    }
+  }
+
+  article {
+    width        : 32%;
+    padding-left : $space30;
+    padding-right: $space20;
+    color        : $color-black;
+
+    small {
+      @include font-size(20px);
+      font-family: $robotolight;
+      display    : block;
+    }
+
+    span {
+      display: block;
+      @include font-size(30px);
+      padding: $space10 0;
+    }
+
+    p {
+      @include font-size(12px);
+      line-height: $space20;
+    }
+  }
+
+  .btn-shop {
+    background: $color-warning;
+    @include font-size(15px);
+    display   : inline-block;
+    color     : $color-white;
+    padding   : $space0+2 $space20;
+    cursor    : pointer;
+    margin-top: $space15;
+  }
+
+  .living-furniture {
+    background    : #f7f7f8;
+    color         : #000;
+    text-align    : center;
+    width         : 49%;
+    padding-bottom: $space20;
+
+    span {
+      display: block;
+      @include font-size(30px);
+      padding: $space5 $space0;
+    }
+
+    small {
+      display    : block;
+      @include font-size(20px);
+      font-family: $robotolight;
+      padding-top: $space10;
+    }
+
+    p {
+      @include font-size(12px);
+      line-height: $space20;
+      padding    : $space5+3 $space30+5 0;
+    }
+
+    figure {
+      &:before {
+        padding-top: 59%;
+      }
+      width: 100%;
+    }
+  }
+}
+
+.bedroom-slider,
+.dining-slider {
+  padding-top: $space25;
+  text-align : center;
+
+  a {
+    display: block;
+    color  : #000;
+  }
+
+  p {
+    padding-top: $space15;
+    @include font-size(15px);
+  }
+
+  span {
+    color         : $color-white;
+    margin-top    : $space5;
+    background    : $bg-warning;
+    display       : inline-block;
+    @include border-radius(2px);
+    padding       : $space5 - 3 $space15;
+    @include font-size(14px);
+    text-transform: uppercase;
+  }
+
+  .slick-slide {
+    margin: 0 $space5+3;
+  }
+
+  .slick-list {
+    margin: 0 -8px;
+  }
+
+  figure {
+    &:before {
+      padding-top: 75%;
+    }
+  }
+}
+
+.home-dining {
+  figure {
+    &:before {
+      padding-top: 112%!important;
+    }
+  }
+}
+
+.store {
+  margin-top: $space40+30;
+
+  .store-slider {
+    padding-top: $space30;
+
+    .slick-slide {
+      margin: 0 $space5+3;
+    }
+
+    .slick-list {
+      margin: 0 -8px;
+    }
+  }
+
+  figure {
+    &:before {
+      padding-top: 48%;
+    }
+  }
+}
+
+.explore {
+  margin-top: $space40+30;
+}
+
+.customers-reviews {
+  padding-top: $space30;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+
+  li {
+    width        : 50%;
+    border-bottom: 1px solid #e7ebed;
+    border-right : 1px solid #e7ebed;
+    padding      : 20px 20px 20px 0;
+
+    p {
+      float      : left;
+      width      : 49%;
+      padding-top: 40px;
+      color      : #000;
+
+      span {
+        display       : block;
+        @include font-size(20px);
+        font-weight   : bold;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+      }
+    }
+
+    .read-more {
+      display   : block;
+      margin-top: $space10;
+      @include font-size(14px);
+      color     : $color-white;
+      background: $bg-warning;
+      @include border-radius(3px);
+      padding   : $space5 - 2 $space0;
+      display   : block;
+      width     : 100px;
+      text-align: center;
+    }
+
+    figure {
+      float: right;
+      width: 44%;
+    }
+
+    &:nth-of-type(2n) {
+      border-right : 0;
+      padding-right: 0;
+
+      p {
+        float: right;
+      }
+
+      figure {
+        float      : left;
+        margin-left: 20px;
+      }
+    }
+
+    &:nth-child(n+3) {
+      border-bottom: 0;
+    }
+
+    figure {
+      &:before {
+        padding-top: 85%;
+      }
+    }
+  }
+}
+
+.Experince-our-studios {
+  background: #f9f5ee;
+  padding   : 40px 0;
+  text-align: center;
+  position  : relative;
+
+  .btn-store {
+    background: #e57200;
+    color     : #fff;
+    margin    : 15px 0 30px;
+    padding   : 7px 30px;
+    @include font-size(15px);
+    display   : inline-block;
+    position  : relative;
+    z-index   : 1;
+    width:auto;
+  }
+
+  .in{ 
+      display:flex; 
+      justify-content:space-between; 
+      flex-wrap:wrap;
+  }
+  
+ a{ 
+  width:16%;
+  background:$bg-white;
+  @include box-shadow(0 0 5px rgba(0, 0, 0, 0.28));
+  color:$color-black;
+  margin-bottom:$space10+2;
+ }
+  
+  figure {
+    position  : relative;
+    background:#fff;
+
+    img { 
+      position      : absolute;
+      top           : 0;
+      bottom        : 0;
+      right         : 0;
+      left          : 0;
+      margin        : auto;
+      mix-blend-mode: darken;
+    }
+
+    &:before {
+      padding-top:85%;
+      content    : '';
+      display    : block;
+    }
+  }
+  
+ span{
+      @include font-size(20px);
+      display:block;
+      padding-top:$space5+3;
+      line-height:$space20;
+  }
+  
+  small{ 
+      @include font-size(13px);
+      font-family:$robotolight;
+      padding-bottom:$space5;
+      display:block;
+     
+  }
+  
+  
+}
+
+.register-stripe {
+  padding: $space30 0 0;
+
+  figure {
+    &:before {
+      padding-top: 8%;
+    }
+  }
+}

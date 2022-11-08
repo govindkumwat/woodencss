@@ -1,0 +1,135 @@
+.register-accountmain{ background:#f7f7f8; border-bottom:$common-border;
+ .breadcrumbs{ background:none; margin-top:0!important; }
+}
+.register-account{ 
+    width:500px;
+    margin:$space30 auto $space40;
+    padding:$space20 $space30 $space10+2;
+    background:$bg-white;
+    border:1px solid $secondary-200;
+    border-radius:2px;
+        .heading {
+          font-family   : $robotomedium;
+          @include font-size(24px);
+          text-align    : center; 
+          color         : $secondary-color;
+            p {
+              color         : $secondary-600;
+              @include font-size(14px);
+              line-height: 16px;
+              font-family: $robotoregular;
+              padding: 4px 0 0;
+            }
+        }
+        .box {
+            margin-top: $space10+5;
+            span {
+              font-family : $robotomedium;
+              position    : absolute;
+              top         : 12px;
+              right       : 12px;
+              color       : $color-orange;
+              background  : #fbfbfb;
+              padding-left: $space5;
+              @include font-size(12px); 
+              cursor      : pointer;
+            }    
+            input{
+                border: 1px solid #c3c3c3;
+                font-family:$robotoregular;
+                &::placeholder{font-size: 14px;}
+            }
+        } 
+        .one-half{
+            margin-left:-2%;
+            .box{  
+                width:48%;
+                float:left;
+                margin-left:2%; 
+              }  
+        } 
+        .error-block{padding:0;} 
+        .signup-block {
+            margin :$space15 0;
+            p {
+                display:block;
+                @include font-size(14px);
+                line-height:16px;
+                text-align:center;
+                color:$secondary-700;
+                a {
+                  color      : $color-orange;
+                  font-family: $robotomedium;
+                }
+            }
+            .sign-btn {
+                background    : $color-orange;
+                color         : $color-white;
+                @include font-size(16px);
+                @include border-radius(3px);
+                text-transform: uppercase;
+                padding       : $space10 40px;
+                cursor        : pointer;
+                width         : 100%;
+                margin        : $space30 auto $space20;
+                display       : block;
+                font-family   : $robotomedium;
+            }
+        }
+        .social-wrap {
+            border-top:1px solid #d8d8d8;
+            text-align: center;
+            color     : $secondary-600;
+            padding   : $space10 0 0;
+            margin:$space30*2 0 0;
+                p {
+                  display    : inline-block;
+                  font-family: $robotoregular;
+                }
+                a {
+                  display: inline-block;
+                  margin: 0 5px;
+                }
+                img {
+                  vertical-align: middle;
+                }
+                .google { margin: 0 $space10;}
+        }
+        .forgot-pass{
+                color:$secondary-color;
+                padding-top:$space5; 
+                width: 100%;
+            }
+        .password-generat{ 
+            padding-top:$space5; 
+            color:$color-warning; 
+            display:block;
+            text-align: right;
+            text-transform: uppercase;
+         }
+         .field--not-empty .field__label{top:-7px;}
+         .digit-group{
+            input{
+                border: 0 !important;
+                border-bottom: 1px solid $secondary-400 !important;
+                border-radius: 0;
+                padding: 7px;
+                width: 55px;
+                margin-right: 18px;
+                text-align: center;
+                font-size: 22px; 
+                color:$secondary-700;
+            }
+        }
+        .otp-timer ,.resendOTP{
+            margin:10px 0 0;
+            display: block;
+            text-align: right;
+        }
+        .editlink{
+                font-size:13px;
+                text-transform: uppercase;
+                color:$info-color;
+                cursor:pointer;
+            }
+} 

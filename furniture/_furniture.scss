@@ -1,0 +1,161 @@
+.furniture-main{
+     figure{ position:relative;
+                img{ position:absolute; top:0; bottom:0;  right:0; left:0;margin:auto; }
+                &:before{ padding-top:100%; content:''; display:block;}
+          }
+}
+
+.furniture-text { text-align: center; padding: $space20 0; border-bottom: $common-border;
+   .title { @include font-size(20px); display: block; margin:0px; margin-bottom: $space5; font-weight: normal; }
+ }
+
+ .popular-categories { padding: $space30 0; text-align:center;
+     .title { @include font-size(20px); display: block; margin-bottom: $space5; }
+     .browse-populer {  margin-top: $space20; display: flex; justify-content: space-between; flex-wrap: wrap;
+        a {  color: $color-black; margin-bottom: $space10; width: 15.5%; }
+        figure { margin-bottom: $space5; }
+     } 
+ }
+ .furniture-heading { @include font-size(25px); line-height: normal;
+   p { @include font-size(20px); font-family: $robotolight; margin-top: $space10; }
+ }
+ .top-deals { max-width: 1350px; margin:$space5+2 auto 0; background: url("#{$images-path}/furniture/top-deals-bg.jpg") no-repeat; text-align:center; padding: $space40+$space5 $space0;
+     .coupn-box { background: #434343; padding: $space10; display: inline-block; color: $color-white; min-width: 315px;  @include font-size(18px); font-family: $robotolight;
+       span { border: 1px dashed $color-white; padding: $space0+3px $space15; margin-left: $space5; display: inline-block; }
+     }
+ }
+ 
+ .deals { display: flex; justify-content: space-between; padding: $space40 $space0 $space20;
+   a { width: 31%;  background: $bg-white; padding: $space30 $space30 $space20; color: $color-black; }
+   figure{ 
+        &:before{ padding-top: 67%; }
+    }
+    span { width: 170px; display: block; background: #434343; padding: $space5; @include border-radius(30px); color: $color-white; margin: -15px auto $space10; position:relative; }
+ }
+ .page-head { @include font-size(22px); text-align: center; 
+  .lead { text-align: center;  color: $color-black; @include font-size(15px); font-family   : $robotolight; padding-bottom: $space5 - 3;  }
+}
+.trendy-furniture  { padding: $space40 0; }
+.trendy-slider { margin-top: $space30;
+  .slick-slide {  margin: 0 $space5+3; }
+  .slick-list {  margin: 0 -8px; }
+  figure { 
+    &:before {  padding-top: 71%; }
+  }
+  a { position:relative; color: $color-white; display: block; }
+  .absolute { position:absolute; top: 20px; left: 20px; @include font-size(20px);
+    span { display: block; width:125px; background: $bg-orange; padding: $space0+3 $space0; margin-top: $space5; @include border-radius(3px); @include font-size(15px); text-align: center; }
+  }
+}
+
+.behind-slider {
+    figure {
+    &:before {  padding-top: 33%; }
+  }
+  &:before{ @include size(325px); position: absolute; top: 0; bottom: 0; left:30px; margin: auto; background: url("#{$images-path}/furniture/behind-text.png") no-repeat;  content:''; z-index: 9; }
+}
+
+.customise-home { padding: $space40 $space0;
+    .custom-flex { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: $space30;
+  a { width: 32%; text-align: center; color: $color-black; @include font-size(12px); font-family: $robotolight;
+     &:not(:nth-last-child(-n+3)){ margin-bottom: $space25; } 
+  }
+   figure {
+    &:before {  padding-top: 68%; }
+  }
+  
+  span { display: block; margin: $space10 $space0 $space5; @include font-size(16px); font-family: $robotoregular; }
+}
+}
+
+
+.why-we-are { background: #434343; color:$color-white; padding: $space40 0;
+              .page-head {
+                  .lead { color:$color-white; padding: $space5 0 0; }
+              }
+   ul { display: flex; justify-content: space-between; text-align: center; margin-top: $space30;
+     li { width: 25%; @include font-size(16px); font-family: $robotolight; padding-bottom: $space20; cursor: pointer;
+       &:not(last-child){ border-right: 1px solid #b1b1b1; }
+        &:hover {  img { transform: translatey(0px); } }
+     }
+   }
+   i { @include size(100%, 110px); display: flex; align-items: flex-end; justify-content: center; margin: 0 auto $space30; 
+     img { transform: translatey(10px); transition: all 1s; }
+   }
+}
+
+.shop-by { padding: $space40 0;
+    .custom-flex { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: $space30;}
+    a { width: 32%; text-align: center; color: $color-black; @include font-size(14px); font-family: $robotolight;
+     &:not(:nth-last-child(-n+3)){ margin-bottom: $space25; } 
+    }
+        .box-2 { width: 66%;
+                figure {
+                   &:before {  padding-top: 45%; }
+                }
+        } 
+   figure {
+    &:before {  padding-top: 93%; }
+  }
+  span { display: block; margin: $space10 $space0 $space5; @include font-size(20px);  }
+}
+
+.furniture-store { padding: $space40 0; background: #f5f5f5;
+       .page-head {
+            .lead { padding: $space5 0 0; }
+        }
+        .all-store { @include font-size(14px); text-transform: uppercase; margin-top: $space20; background: #434343; color: $color-white; font-family: $robotolight; padding: $space5 $space40; display: inline-block; }
+}
+.store-slider { margin-top: $space30; display: none;  
+    li{ width: 384px; background: $bg-white; margin: 0 $space10; padding: $space0 $space15 $space20; position: relative; }
+      figure { margin: 0 -15px $space15;
+        &:before {  padding-top: 55%; }
+      } 
+     a { color:$color-black; display: block; }
+    span  { @include font-size(18px); display: block; }
+    p { margin: $space10 0; height: 33px; padding: 3px 10px; border: $common-border; display: inline-block;
+        a { border: $common-border; padding:  $space0+3px $space10; display:inline-block; @include font-size(13px);
+          &:not(last-child){ margin-right: $space5; }
+          &:hover { background: #f5f5f5; @include transition(all 0.3s); }
+        }
+    }
+    .btn-detail { margin: 0px; color:$color-orange; border: 1px solid $color-orange; padding:  $space5 - 2px $space15; width: 104px; display:block; @include font-size(13px);  }
+    .setop { position: absolute; bottom: 53px; left: 15px; padding: 0px; border: none; background: $bg-white; }
+}
+.across-line { text-align :center; @include font-size(22px); font-family: $robotolight; margin-top: $space30; }
+.more-store { padding: $space40 0;
+     .page-head {
+            .lead { padding: $space5 0 0; }
+        }
+        .custom-flex {
+             figure {
+                &:before {  padding-top: 106%; }
+              }
+              a { @include font-size(14px); font-family: $robotolight; }
+               span { @include font-size(20px); margin: $space15 0 $space0+3px; }
+        }
+} 
+
+  .customer-box{ padding:$space20 0; text-align:center; 
+                  .page-head {
+                        .lead { padding: $space5 0 0; }
+                    }
+              .customer{ display:flex; justify-content: space-between; margin:$space20 0; text-align:left;} 
+              li{width:32%;}             
+              p{font-size:16px; color:$color-black; }
+              small{font-size:13px; color:#727272; display:block;} 
+              figure{ margin-bottom:$space10;  
+                 &:before{padding-top:57%; }
+                 &:after{ background:url("#{$images-path}/testimonials/youtube-play.svg") no-repeat 0 0; content:''; @include size(35px); position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+               } 
+      
+           .btn{ @include font-size(16px); color:$color-white; display:inline-block; text-align:center; @include border-radius(3px); background: #434343; padding:$space10 - 2 $space40+10;}
+      }
+
+.whatsfix { transform: translatey(200px); @include transition(all 0.4s); position: fixed; bottom: 80px; left: 50px; @include size(50px); z-index: 9; @include box-shadow(0 1px 10px rgba(0,0,0,.15)); padding: $space10; @include border-radius(100%); background: $bg-white; border: $common-border;
+ &.show { transform: translatey(0); }
+}
+
+.common-text {
+    b, strong { display: block; margin-top: $space10; } 
+}

@@ -1,0 +1,20 @@
+//service
+
+          
+          .service-step{ margin:0 auto;  text-align:center; padding:$space25 0; background:#fafafa; margin:$space40+10 auto; max-width:1280px;  
+                    li{ border-right:$common-border;  width:270px; padding:0 $space20; @include all-product-icon-sprites; color:#545454; font-size:(12px); font-family:$robotolight; display: inline-block;
+                       &:last-child{ border:none;}
+                     }
+                    i{ display:block; @include size(40px,32px); margin:0 auto;}
+                    span{ color:#363636; @include font-size(15px); padding-top:$space15; display:block;}
+                  
+        }
+     
+        
+   
+               
+
+        
+ 
+     
+         

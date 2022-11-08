@@ -1,0 +1,353 @@
+.matters {
+  max-width : 1340px;
+  margin: 0 auto;
+ 
+  
+  figure {
+    position: relative;
+
+    img {
+      position      : absolute;
+      mix-blend-mode: darken;
+      top           : 0;
+      left          : 0;
+      bottom        : 0;
+      right         : 0;
+      margin        : auto;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+    }
+  }
+  .btn {
+    @include font-size(15px);
+    text-align    : center;
+    font-family   : $robotomedium;
+    color         : $color-white;
+    background    : #f16521;
+    @include border-radius(25px);
+    text-transform: uppercase;
+    padding       : $space5+3 0;
+    width         : 215px;
+    z-index      : 1;
+    position:relative;
+  }
+
+  .content {
+    text-align: center;
+    padding   : $space15 0 $space20;
+
+    h1 {
+      @include font-size(24px);
+      font-family  : $robotomedium;
+      color        : $color-black;
+      font-weight  : normal;
+      margin-bottom: $space5;
+    }
+
+    p {
+      @include font-size(14px);
+      font-family: $robotoregular;
+    }
+  }
+
+  .banner{
+      figure{
+          &:before{ padding-top:45%;}
+      }
+  }
+  
+  .page-head {
+    @include font-size(26px);
+    color         : #4f5766;
+    font-family   : $robotomedium;
+    text-transform: uppercase;
+    line-height   : normal;
+    text-align    : center;
+
+    &.big {
+      width         : auto;
+      @include font-size(55px);
+      text-transform: initial;
+    }
+  }
+
+  .trial {
+    border-top   : 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    text-align   : center;
+    padding      : $space40+20 0 $space40+10;
+
+    .gird-container {
+      max-width: 900px;
+      margin   : 0 auto;
+    }
+  }
+
+  .gird-container {
+    display        : flex;
+    justify-content: space-around;
+  }
+
+  .one-third {
+    border-right: 2px solid #f2f2f2;
+    width       : 33%;
+    color       : #403e40;
+    @include font-size(16px);
+    font-family : $robotolight;
+    padding     : $space5 $space10;
+    margin      : $space25 0;
+
+    span {
+      @include font-size(18px);
+      color         : #4f5766;
+      display       : block;
+      padding-bottom: $space5+2;
+      font-family   : $robotoregular;
+      text-transform: uppercase;
+      padding-top:$space10; 
+    }
+    
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .matters {
+    border-bottom: 2px solid #f2f2f2;
+    padding      : $space30 0 $space40+20;
+  }
+
+  .matters-iteam {
+    display: none;
+    .slick-slide{ margin:0 8px;}
+    .slick-list{ margin:0 -8px;}
+  }
+
+  .one-half {
+    text-align: center;
+
+    figure {
+      background   : $bg-white;
+      margin-bottom: -45px;
+      &:before {
+        padding-top: 50%;
+      }
+    }
+
+    .title {
+      @include font-size(18px);
+      color      : #403e40;
+      padding    : $space40 $space0 $space0;
+      line-height: 30px;
+    }
+
+    .info {
+      color         : #000;
+      @include font-size(16px);
+      font-family   : $robotolight;
+      padding-bottom: $space10;
+          z-index      : 1;
+          position:relative;
+    }
+  }
+
+  .m-experences {
+    border-bottom: 2px solid #f2f2f2;
+    padding      : $space30+40 0;
+
+    .container {
+      display        : flex;
+      justify-content: space-between;
+    }
+  }
+
+  .left {
+    width: 66%;
+
+    &:before {
+      padding-top: 71%;
+    }
+  }
+
+  aside {
+    width     : 30%;
+    color     : #403e40;
+    margin-top: $space40+5;
+
+    blockquote {
+      @include font-size(25px);
+      font-family  : $robotomedium;
+      line-height  : 35px;
+      margin-bottom: $space10+2;
+
+      &:before {
+        display   : block;
+        content   : '';
+        @include size(26px,34px);
+        background: url("#{$images-path}/matters/brand-logo.png") no-repeat 0 0;
+      }
+    }
+
+    p {
+      @include font-size(14px);
+      line-height: 30px;
+    }
+
+    a {
+      @include font-size(20px);
+      font-family  : $robotomedium;
+      border-bottom: 1px solid #403e40;
+      color        : #403e40;
+      margin-top   : $space15+3;
+      display      : inline-block;
+    }
+  }
+
+  .matters-gallery {
+    text-align: center;
+    padding   : $space25 0;
+  }
+
+  .gallery-list {
+    display        : flex;
+    justify-content: space-between;
+    padding        : $space25 0;
+
+    figure {
+      width: 32%;
+
+      &:before {
+        padding-top: 115%;
+      }
+    }
+
+    figcaption {
+      position: absolute;
+      bottom  : $space25;
+      color   : $color-black;
+      left    : 0;
+      right   : 0;
+      margin  : auto;
+      padding : 0 $space10;
+      @include font-size(14px);
+    }
+
+    span {
+      @include font-size(18px);
+      display       : block;
+      font-family   : $robotomedium;
+      padding-bottom: $space5;
+    }
+  }
+
+  .size {
+    border-bottom: 2px solid #f2f2f2;
+    padding      : $space40+10 0;
+
+    .one-four {
+      width      : 19%;
+      text-align : center;
+      @include font-size(16px);
+      font-family: $robotomedium;
+      color      : #4f5766;
+    }
+
+    figure {
+      margin: $space25 0 $space10;
+
+      &:before {
+        padding-top: 100%;
+      }
+    }
+  }
+}
+//desktop
+@media #{$screen-desktop} {
+  .matters {
+    width: auto;
+
+    .trial {
+      padding: $space30+20 0;
+    }
+
+    .page-head {
+      @include font-size(24px);
+
+      &.big {
+        @include font-size(42px);
+      }
+    }
+
+    .one-half {
+      .title {
+        padding: $space15 $space40;
+      }
+    }
+  }
+}
+//tablet
+@media #{$screen-tablet} {
+  .matters {
+    width: auto;
+
+    .trial {
+      padding: $space30+10 0;
+    }
+
+    .page-head {
+      @include font-size(22px);
+
+      &.big {
+        @include font-size(35px);
+      }
+    }
+
+    .one-third {
+      padding: $space5 $space20;
+    }
+
+    .m-experences {
+      padding: $space40+10 0;
+    }
+
+    aside {
+      margin-top: $space25;
+
+      blockquote {
+        @include font-size(18px);
+      }
+
+      p {
+        @include font-size(14px);
+      }
+    }
+
+    .one-half {
+      .title {
+        padding: $space15 0;
+      }
+
+      figure {
+        margin-bottom: -25px;
+      }
+    }
+
+    .slick-prev {
+      left: -16px;
+    }
+
+    .slick-next {
+      right: -16px;
+    }
+
+    .size {
+      .one-four {
+        @include font-size(14px);
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+.mattress_offer { padding-top: 50px; }
+.btns {
+    margin: 0px auto;
+    width: 186px;
+    padding: 10px 15px;
+    background: #e57200;
+    color: #FFF; 
+    border-radius: 4px; 
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+.mattressPrefact{
+   
+    .persofatype {
+        border-bottom: 0px;
+        ul {
+            li {
+                a {
+                    color: #242424;
+                }
+                width: 24%;
+                span { 
+                    font-size: 19px;
+                }
+                p {
+                    line-height: 20px;  
+                }
+            }
+        }
+    }
+}
+.VideoSection { line-height: 18px; padding: 50px 0; font-size: 15px; border-top: 1px solid #e2e2e2;  border-bottom: 1px solid #e2e2e2;  text-align: center;
+                article { 
+                    float: left;
+                    width: 100%;
+                    line-height: 24px;
+                    font-size: 14px; 
+                     margin-bottom: 40px;
+                }               
+}
+.videoClass {   width: 60%;  margin: 0px auto; } 
+.more-mattress-toggle {  height: 134px; overflow: hidden;   margin: 5px auto 0; position:relative; line-height: normal;
+       &.active {  height: auto;  padding: $space0 $space10; white-space: normal;
+            .more { position: inherit;
+              &:before { content: 'Less';  }
+              .bed_more{display:block;}
+            }       
+        }
+        .headingType {
+            padding: 0 0 20px 0; 
+            
+        }
+}
+.care-mattress { margin-top: 60px; 
+    padding: 40px;
+    background: #F5F5F5; 
+    .content-section {
+        padding: 0px;
+         text-align: left;
+         span {
+             margin-bottom: 0px;
+         }
+         p {
+             margin-bottom: 12px; 
+         }
+    }
+    .headingType {
+        text-align: left;
+    }
+}
+.more.bed_more{display:none;}
+.more {  
+        display:inline-block;
+        position: absolute; 
+        right: 0; bottom: 0 ; 
+        background: #fff; 
+        font-weight: 400; 
+        cursor: pointer;
+        color: $color-orange; 
+        font-family: $robotoregular; 
+        padding-left: 2px;
+      &:before { content: 'Read More'; display: inline-block; }
+    }
+ 
+.matters-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.matters-gallery figure {
+    width: 32%;
+    position: relative;
+}
+.matters-gallery figure:before {
+    padding-top: 115%;
+    content: '';
+    display: block;
+}
+.matters-gallery figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.matters-gallery figcaption {
+    position: absolute;
+    bottom: 25px;
+    color: #000;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 10px;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 20px;
+}
+.matters-gallery span {
+    font-size: 1.25rem;
+    display: block;
+    font-family: robotomedium;
+    padding-bottom: 9px;
+    
+}
+
+
+
+.Materials  { margin-top: 50px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    border-top: 1px solid #dedede;
+  ul {display:flex; justify-content: space-between; flex-wrap: wrap;
+    li { width: 32%;
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+    background: #f5f5f5;
+    padding: 10px;
+    min-height: 190px;
+    &:hover {
+       box-shadow:  0px 5px 6px #00000029;
+    }
+    img {
+        display: block;
+        margin: -50px auto 20px auto;
+    }
+    }
+  }
+  span { font-size: 17px; font-family: $robotomedium; }
+}
+
+
+@media only screen and (max-width: 720px){
+    .matters-gallery {
+        display: block;
+        justify-content: inherit;
+        overflow: auto;
+        white-space: nowrap;
+        margin-left: 12px;-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {display: none;}
+    }
+    .matters-gallery figure {
+        width: 83%;
+        position: relative;
+        display: inline-block;
+        white-space: normal;
+        margin-right: 12px;
+    }
+    .mattress_offer {
+    padding: 20px 0;
+}
+.mattressPrefact .persofatype ul li {
+       width: 80%;
+       background: #FFF;
+       min-height: 353px;
+       p {
+           padding: 0px 10px 10px 10px;
+       }
+}
+.Materials {
+    background: #FFF;
+        margin-top: 30px;
+        padding-top: 30px;
+       
+        ul {
+           white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    display: block;
+    padding-top: 50px;
+            li {
+                width: 80%;
+                white-space: normal;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0px 10px;
+                line-height: 20px;
+                min-height: 307px;
+                
+            }
+        }
+}
+.mattressPrefact {
+    .sofa-savespace {
+    padding: 20px 10px;
+}
+}
+.care-mattress {
+   background: #FFF;
+    margin-top: 20px;
+    padding: 15px;
+    line-height: 21px;
+}
+.videoClass {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px;
+    iframe {width: 100%;
+    height: 250px;}
+}
+.VideoSection {
+    font-size: 14px;
+    padding: 20px 10px;
+    margin-top: 0;
+    border-top: inherit;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: justify;
+     background: #FFFFFF;
+     
+    article { 
+         line-height: 20px;
+         margin-bottom: 20px;
+     }
+}
+.mattressPrefact { 
+.shopSlider li { width: 80%; background: #FFF;
+                span, p {
+                    padding: 1px 8px;
+                }
+                p {
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                }
+}
+}
+}

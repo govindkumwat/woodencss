@@ -1,0 +1,73 @@
+@media #{$screen-desktop}{
+    //How It Works
+.howitwork-banner{
+    p{
+        &:before{@extend .tl-hide;}
+    }
+}
+.tl-hide{display: none;}
+.how-it-work-content{
+    .design-process{
+        article{width: 173px; height:200px} 
+        .btn-common{margin:30px 0px 10px}
+    }
+    .frequently-question{
+        section{ display: flex; flex-wrap: wrap;}
+        article{float: none; min-height: auto;}
+    }
+    .room-decoration{
+        section{margin: 0 0 80px;}
+        .step-five{margin: 48px 0 0;}
+    }
+    
+}
+//our works
+.project-gallery{
+    article{width: 466px;}
+}
+.how-dreroom{
+    span{font-size: $font-size-25+1;}
+}
+//how-it-work
+.howitwork{
+    .menu-container{
+         .menu-section{width:auto}
+    }
+    
+ //new-how-it-work
+ .How-process{
+      figure{width:477px;}  
+        article{width:46%; padding:68px 28px;
+        }
+        section{
+            .furnishing-img{margin-top:$space30; margin-bottom:$space30}
+        }
+        .project-requirment{padding:112px 28px;}
+        .talented-team{padding:105px 28px;}
+ }
+ 
+ .How-process{text-align:center;
+     .step-three{width:auto; height:auto;     
+     .left{width:auto;float:none; text-align:center;
+      .heading{padding:$space15 0 0px 2px}      
+     .call{padding:0;}
+     }
+     ul{width:auto;float:none; padding-top:$space15; margin-right: 0}  
+     li{width:23%; padding:$space15 $space5+2; margin:0 8px 0px 0px; float:none; height:180px; display:inline-block; vertical-align:top; span{font-size:14px;}
+     i{margin:0 auto $space5}
+     }
+     p{padding:$space5+2 0; line-height: 19px}
+     }
+ }
+ 
+//monitor-project
+.monitor-project{width:auto; text-align:center; height:400px; padding-top:$space30*2;
+        article{float:none; width: auto;}
+}
+
+.how-dreroom{
+     article{width:680px}
+}
+      
+} 
+}

@@ -1,0 +1,110 @@
+ 
+//related-slider slider
+   .related-product{ 
+            border-top: $common-border; 
+            border-bottom: $common-border; 
+            margin: 0 auto !important; 
+            padding: 30px 0 20px;
+            .heading-light{
+                @include font-size(22px);
+                padding-bottom: 12px; 
+                text-transform: none; 
+                margin:0 0 $space15+3;
+                padding:0; 
+                font-weight:normal; 
+                font-family:$robotomedium; 
+                text-align: left;
+            }
+            .related-slider{
+                        background:#fff ; 
+                        display: block !important;
+                        margin: 0 -10px;
+                        .slick-slide{margin: 0 $space10;}
+                        .title{
+                           padding:5px 0 0; 
+                           @include font-size(15px);
+                           line-height:20px; 
+                           overflow: hidden; 
+                           white-space: nowrap; 
+                           text-overflow: ellipsis; 
+                           padding-right: 70px; 
+                           position:relative; 
+                       }
+                        .clearfix{ margin-top:2px;}
+                        .related-cart {
+                           position: absolute;
+                           right: 0; 
+                           top: 7px; 
+                            .cartIcon { margin-right: 10px; 
+                            &.active {
+                                svg { path { fill: #E57200; } }
+                            }
+                         }
+                         
+                       }
+                        .price{
+                           @include font-size(15px);
+                           line-height: 20px;  
+                           padding:$space0!important; 
+                           margin:0;
+                           font-family:$robotomedium;
+                       }
+                        del{
+                            padding-left:$space5+2; 
+                            display:inline-block;
+                            @include font-size(13px);
+                            font-family:$robotoregular;
+                        }
+                        .price-discount{ 
+                           color: #E57200;
+                           font-family: $robotoregular;
+                           font-size: 13px; 
+                           padding-left: 10px; 
+                       }
+                        .proprice { 
+                           border-top: $common-border; 
+                           padding-top: 5px; 
+                           margin-top: 5px; 
+                        }
+                        .item{ color: $color-black; background:#fff; display:block;}
+                        .slick-prev, .slick-next{ top:50%; left:-30px; width: 10px;} 
+                        .slick-next{ right:-30px; left: inherit;
+                            &:before{@include transform(rotate(0deg)); @include font-size(14px);}
+                        }
+                        .slick-prev{
+                            &:before{@include transform(rotate(-360deg));@include font-size(14px);}
+                       }
+                        figure{ position:relative; 
+                            img{
+                                position:absolute; 
+                                top:0;  
+                                left:0;  
+                                bottom:0;  
+                                right:0;  
+                                margin:0 auto;
+                            }
+                            &:before{ content:'';  display: block; padding-top:69%;} 
+                        }
+                    }
+}       
+ //media css start
+     @media #{$screen-desktop}{
+         .related-product{
+                 .related-slider{
+                      .slick-next{ right:-16px;}
+                     .slick-prev{ left:-16px;}
+                 }
+             }
+         }
+      
+      
+         
+@media #{$screen-tablet}{
+          .related-product{ margin:$space20+5 $space30;
+            .heading-light{@include font-size(16px);}
+          }
+       
+      }
+      
+
+

@@ -1,0 +1,126 @@
+.product-sofas{
+      //common
+       .btn-field{ display:flex; justify-content:space-between; align-items:center; padding-top:$space15;}
+        .btn{@include font-size(15px); background:$bg-warning; @include border-radius(3px); color:$color-white; width:49%; width:215px; padding:$space10; text-align:center;
+           &:before{ content:"\f107"; font-family:$fontawesome; margin-right:$space5+3; @include font-size(30px); vertical-align:middle;}
+        }
+     
+           figure{ position:relative;  
+               img{ position:absolute;  top:0;  left:0;  bottom:0;  right:0;  margin: auto;}
+                  &:before{ content:'';  display: block;}
+          }
+        
+    }
+    .sofa-info{
+       
+              //back link
+              .back-link{@include font-size(14px); margin-bottom:$space30; color:$color-warning; text-align:right; display:block; border-bottom:$common-border; padding-bottom:$space10;
+              &:before{ content:''; vertical-align:middle; margin-right:$space10; display:inline-block; background:url("#{$images-path}/product-sofa/back-arrow.png") no-repeat 0 0; @include size(20px,15px);}
+             }
+               //product left
+              .product{ float:left; width:65%; margin-right:2%; position:relative;    }
+                  
+             //product slider
+            .product-slider{ display:none;
+                    figure{ 
+                     &:before{ padding-top:47%;}  
+                    }   
+              }
+              
+              .slick-prev, .slick-next{top:50%; z-index:1;}
+            .slick-prev{ left:0;}
+            .slick-next{ right:0;}
+          
+            .slick-dots{ margin-top:$space40+10;
+                  li{  border:$common-border; @include border-radius(4px); width:87px; padding:$space5+3 $space10; margin-right:$space5 - 1;  margin-bottom:$space5+3;
+                  a{  display:block; img{ max-width:100%;}    }
+                  &.slick-active{ border-color:#e57200;}
+               }
+          }
+              
+          .video-icon{top:386px; cursor:pointer;left:0; border: 1px solid #d7d7d7; @include border-radius(5px);@include size(92px,58px); text-align: center; position:absolute; z-index: 9; display:none;
+                &:before{ padding-top:62%;}
+           }
+            .video-play{ 
+               .video-icon{display:block;}
+               .slick-dots{  li { &:first-child{ margin-left:97px;}   }  }
+           }
+      
+            .share-win{ border:$common-border; padding:$space5+3 $space25; margin-top:$space20; display:inline-block; 
+                label{@include font-size(14px); color:#000; padding-right:$space10;
+                  &:before{ content:"\f1e0"; font-family:$fontawesome; display:inline-block; margin-right:$space5; color:$bg-orange; @include font-size(16px); vertical-align:middle;}
+                }
+                i{ color:#000; margin:0 $space5 - 1; @include font-size(18px); vertical-align:middle;}
+  
+           }
+  
+           
+               .product-detail{ width:33%; float:right; }
+               
+               
+           
+           .title{ color:$color-black; @include font-size(22px); font-family:$robotomedium; padding-bottom:$space10;}
+           
+           .countreview, .wishlist-add{ display:inline-block; color:$color-soft-gray; @include font-size(13px); border-right:$common-border; padding-right:$space10;
+                 img{ vertical-align:middle; margin-right:$space5;}
+              } 
+              
+              .wishlist-add{ border:none; padding-left:$space10;
+                  &:before{font-family:$fontawesome; content: "\f08a"; @include font-size(17px); display:inline-block; vertical-align:middle; margin-right:$space5+1;}
+              }
+              
+              
+              .sub-title{@include font-size(20px); color:#3b3b3b; display:block; padding-top:$space20;}
+              .lead{ color:#545454;@include font-size(12px); font-family:$robotolight; padding-top:$space5;}
+              
+              .options{ padding-top:$space15;
+                    label{ @include font-size(14px); padding-bottom:$space5; margin-bottom:$space10;  width:90px; color:$color-black; font-family:$robotolight; display:inline-block;  border-bottom:2px solid #e5e5e5; }
+              }
+           
+           .option-choose{ margin:0 -5px; 
+                li{ display:inline-block; vertical-align:middle; margin:0 $space5;  
+                    &.active{position:relative;
+                        &:before{position:absolute; left:$space10+4; top:$space5+3; content:'\f00c'; font-family:$fontawesome; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; z-index: 2; color:$color-black;}
+                    }
+                }
+                 a{ display:block; @include border-radius(100%); border:1px solid #e5e5e5; @include size(40px); padding:$space5 - 2; position:relative;}
+                 [type="radio"]{ position:absolute; cursor:pointer; left:0; right:0; margin:0 auto; top:0;  @include size(100%); opacity:0; z-index:1;}
+                img{ @include border-radius(100%);}
+              }
+
+           .delivery-field{ border-top:$common-border; border-bottom:$common-border; padding:$space10+5 $space0 $space15 $space15; position:relative; margin-top:$space20;
+                     label{ color:$color-black;@include font-size(15px); width:70px; display:inline-block;}
+                    .form-control{@include size(185px,35px); background:#f3f3f3; padding:$space0  $space10; @include font-size(13px); font-family:$robotolight;}
+                    [type="button"]{ color:$color-warning;  @include font-size(13px); cursor:pointer; text-decoration:underline; width:50px;}
+               }
+              
+               .price{ @include font-size(13px); color:#363636;
+                 strong{@include font-size(25px); font-weight:normal; display:block;}
+                }
+           
+    }
+    
+    
+    
+       
+    
+   
+         
+          
+          
+        
+           
+            
+  
+          
+   
+       
+
+       
+   
+         
+          
+       
+        
+
+         

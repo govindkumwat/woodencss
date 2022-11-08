@@ -1,0 +1,169 @@
+.affiliate-banner { margin-top: $space20; height: 510px;  position: relative; display: flex; align-items: center; background-repeat: no-repeat; background-position: top center;
+  .banner-heading { @include font-size(60px); font-family: $robotoregular; text-transform: uppercase; line-height: 45px; }  
+  p { @include font-size(25px); margin: $space25 $space0 $space30+5; }
+  ul { width: 580px; display: flex; justify-content: space-between; flex-wrap: wrap;
+    li { width: 48%; margin-bottom: $space20; @include font-size(14px); 
+     &:before { @include size(25px); content: '';  vertical-align: middle; display: inline-block; background: url(../images/affiliate-marketing/tik.png) no-repeat; margin-right: $space10; }
+    }
+  }
+  .btnWhy { cursor:pointer; margin-left: $space40+5; @include font-size(14px); text-transform: uppercase; font-family: $robotomedium; }
+}
+  .join-btn { background: $bg-orange; border-bottom: 4px solid #e7d37e; margin: $space15 $space0 $space10; width: 250px; display:block; text-align: center; padding: $space15 $space0; color: $color-white; @include font-size(16px); text-transform: uppercase; @include border-radius(3px);
+     span { @include border-radius(3px); display: inline-block; background: $color-white; color: $color-black; padding: $space0 $space10; margin-left: $space5+3; @include font-size(13px); text-transform: capitalize; vertical-align: bottom; }
+  }
+.affiliate-heading { text-align: center;  color: #707070; @include font-size(25px); 
+  &:after { @include size(60px, 2px); content: ''; display:block; margin: $space20 auto $space10; background: $bg-orange; }
+}
+.light { @include font-size(15px); font-family: $robotolight; line-height: 30px; }
+.section-program { padding: $space30 $space0; text-align: center; color: #434343;}
+
+.affiliate-steps {  text-align: center; color: #434343; }
+.EasySteps { display: flex; justify-content: space-between; margin-top: $space40; 
+    li { width: 25%; padding: $space0 $space20; border-right: $common-border;
+      span { border: $common-border; display:block; padding: $space10; text-transform: uppercase; color: $color-orange; @include font-size(15px); position: relative;
+       &:after, &:before { position: absolute; left: 0; right: 0; margin: 0 auto; bottom: -11px; content: ''; z-index: 2;  width: 0px; height: 0px; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 12px solid #fff;}
+       &:after { border-top: 12px solid #cfcfcf; bottom: -12px; z-index: 1;}
+      }
+      i { @include size(120px); display: block; background: #fff4d5; @include border-radius(100%); margin: $space30+5 auto $space20; position: relative;
+        img { position: absolute; top:0; bottom:0; left: 0; right: 0; margin: auto; }
+        &:before{ content:''; display:block; padding-top:25%;} 
+      }
+      &:last-child{ border: none; }
+    }
+}
+
+.why-woodenStreet { color: #434343; margin-top: $space40+20; padding: $space40+20 $space0 $space0; background: #f9f9f9; 
+  .video { margin: $space30+5 $space0 $space0; cursor: pointer; 
+       figure{ position:relative; background: #f7f7f8;
+        img{ display:block; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; } 
+        &:before{ content:''; display:block; padding-top:53%;} 
+      } 
+  }
+            .img{ position:relative;  
+                 img{display:block;  position:absolute; left:0; right:0; top:0; bottom:0; margin:auto;  mix-blend-mode:darken;} 
+                 &:before{ content:''; display:block; padding-top:25%;} 
+                 &.one{ } 
+                 &.two{ &:before{ padding-top:21%;}}
+                 &.three{ &:before{ padding-top:22%;}} 
+           }
+
+} 
+.affiliate-join { text-align: center; padding: $space40 $space0; background-color: #fe5000; background-image: linear-gradient(90deg, #fe5000 0%, #fe184f 100%);
+    article {  color: $color-white; }
+    .top { @include font-size(18px); font-family: $robotomedium;
+     small { @include font-size(15px); font-family: $robotolight; display: block; }
+    }
+    p { @include font-size(16px); font-family: $robotolight; line-height: 27px; margin: $space10 $space0; font-style: italic; }
+    .join-btn { background: $bg-white; border: none; color: #fe2c33; width: auto; padding: $space10+2 $space40+10; display:inline-block; }
+}
+.affiliateSlider { width: 780px;  margin: auto; 
+      .slick-dots{ position:absolute; bottom:-25px; left:0; right:0; 
+                li{ background:#f9f9f9; @include size(10px);@include border-radius(100%); border:none; display:inline-block; margin: 0 3px;
+                    button{ display:none; }
+                 &.slick-active{ background:#4f4f4f;}
+              } 
+   
+            } 
+}
+
+.affiliate-comissions { padding: $space40+20 $space0; text-align: center; color: #434343;
+  ul { margin-top: $space20; display: flex; justify-content: space-between; flex-wrap: wrap;
+     li { width: 32.7%; margin-bottom: $space5+3; position: relative; color: $color-black;
+      .rated { position: absolute; bottom: 20px; left: 20px;
+        span { background: $bg-white; display:inline-block; padding: $space0+3 $space25; @include border-radius(30px); @include font-size(15px);  }
+        .bg { background: $bg-orange; color: $color-white; margin-left: $space10; padding: $space0+3 $space10; }
+      }
+      figure{ position:relative; background: #f7f7f8;
+        img{ display:block; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; } 
+        &:before{ content:''; display:block; padding-top:84%;} 
+      }
+      &:last-child { width: 66.3%;
+       figure{   
+        &:before{ padding-top:41%;} 
+       }
+      }
+     } 
+  }
+}
+.referal-Payouts{ color: #707070;
+    .label { @include font-size(18px); margin-bottom: $space5; display: block; }
+    article { margin: $space20 $space0 $space30; }
+    p { margin-bottom: $space20; line-height: 27px; }
+    .join-btn { margin: auto; }
+
+.referal-table { width: 100%; text-align:center; margin-top: $space20;
+    tr {
+        td { width: 33.3%; padding: $space5 $space20;
+         &:first-child { text-align: left;}
+        }
+    }
+    thead { @include font-size(16px);
+       tr {
+          td { padding: $space5+3 $space20; }
+      }
+    }
+
+}
+
+.referal-table, tr, td { border: 1px solid #d8d8d8; border-collapse: collapse; }
+}
+.Faqs { padding: $space40+20 $space0; text-align: center; color: #707070; }
+.Faqs-queries { text-align: left; margin-top: $space30;
+    li { @include box-shadow(0px 2px 10px -3px rgba(0,0,0,0.2)); margin-bottom: $space20; padding: $space0 $space20;
+     .top { position: relative; cursor: pointer; display: block; padding: $space15 $space0; @include font-size(16px); position: relative; padding-left: $space25;
+      &:before { content: 'Q'; display: inline-block; color: $color-orange; position: absolute; left: 0; }
+      &:after { content: '+'; color: $color-orange; position: absolute; right: 0;  @include font-size(25px); }
+      &.active{ color: $color-orange;
+          &:after { content: '-'; @include font-size(41px); }
+      }
+     }
+     .faq-open { display: none; @include font-size(14px); position: relative; padding-left: $space25; padding-bottom: $space15;
+      &:before { content: 'A'; display: inline-block; @include font-size(16px); position: absolute; left: 0;  }
+     }
+    }
+}
+#whywooden_video { position: fixed; display: none; width: 80%; height: 80%; margin: auto; top: 0; bottom: 0; left: 0; right: 0; 
+   #wooden_video { position: absolute; display: block; width: 100%; height: 100%; margin: auto; top: 0; bottom: 0; left: 0; right: 0; }
+   .video_close.swpmodal-close { position: absolute; z-index: 9; right: -10px; top: -10px; cursor: pointer; color: #000; background: #fff; width: 22px; height: 22px; border-radius: 100%; text-align: center; line-height: 20px; font-size: 1.25rem; }
+}
+.swpmodal-container {
+    #whywooden_video { display: block; }
+}
+
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+
+
+
+
+@media #{$screen-tablet}{ 
+    .affiliate-join {
+        article { width: auto; }
+    }
+    #whywooden_video { @include size(90%, 400px); }
+   .affiliateSlider { width: 95%; }
+}

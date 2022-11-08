@@ -1,0 +1,27 @@
+@media #{$screen-tablet}{
+    .persof-smfu .heading{@include font-size(32px);}
+    .persof-frame{ 
+        article{ padding:$space25;
+           &:before{@include font-size(30px);}
+        }
+        li{@include font-size(14px);}
+    }
+
+    .persof-model{
+       .heading {@include font-size(22px);}
+       article{ margin-bottom:$space30;}
+       p{ width:auto; padding-top:$space10; padding-left:0;}
+       strong{@include font-size(20px);}
+    }
+    
+    .persof-system .persof-model p{width:auto; padding-top:$space10; padding-left:0;}
+    .perfectsofa .maiheading{@include font-size(22px); padding:$space15 $space30;}
+    .persof-fell article { width:35%;}
+    .persof-fell img{ width:50%;}
+    .persof-fabric .tab-content li{ @include size(170px);} 
+    .persof-fabric .text{ top:180px;}
+    .persof-fabric .option { padding:$space10; @include font-size(16px);}
+
+
+    
+} 

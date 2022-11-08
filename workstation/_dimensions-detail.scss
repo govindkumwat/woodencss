@@ -1,0 +1,258 @@
+.overview {
+	.title {
+		@include font-size(18px);
+		line-height: 23px;
+		color: $secondary-color;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		border-bottom: $common-border;
+		font-family: $robotomedium;
+	}
+	.detail-prolist {
+		padding-bottom: 20px;
+		border-bottom: $common-border;
+		font-family: $robotoregular;
+		li {
+			display: flex;
+			width: 100%;
+			margin-bottom: 15px;
+			&:last-child {
+				margin: 0;
+			}
+			.product-attr {
+				width: 140px;
+				flex-shrink: 0;
+				color: $secondary-color;
+			}
+			span {
+				@include font-size(14px);
+				line-height: 18px;
+				color: $secondary-600;
+			}
+		}
+	}
+	.more-link {
+		color: $secondary-color;
+		font-family: $robotomedium;
+		text-decoration: underline;
+		margin-top: 10px;
+		display: inline-block;
+		@include font-size(15px);
+		line-height: 18px;
+		transition: 0.3s all ease-in-out;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	.shiping-contnt{
+		background:$light-gray;
+		box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+		z-index: 2;
+		border: 0px;
+		color: $secondary-color;
+		width: 400px;
+		padding: 10px;
+		bottom: 26px; 
+		position: absolute;
+		left:unset;
+		font-size: 12px !important;
+	}
+}
+.dimensions-details {
+	display: flex;
+	flex-wrap: wrap;
+	@include font-size(15px);
+	article {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 25px;
+		width: 45%;
+		margin-right: 2%;
+	}
+	label {
+		@include font-size(13px);
+		display: inline-block;
+		width: 48%;
+		margin-right: 2%;
+		vertical-align: top;
+		font-family: $robotoregular;
+		font-weight: normal;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	p {
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+	}
+	.NOTE1 {
+		width: 100%;
+		padding-top: $space10;
+		border-top: $common-border;
+		margin-top: $space20;
+		label {
+			width: auto;
+			padding-right: $space5;
+			&:after {
+				display: inline-block;
+				content: ':';
+			}
+		}
+		p {
+			width: auto;
+		}
+	}
+	#right_description {
+		margin-right: $space0;
+		width: 100%;
+		p {
+			width: auto;
+		}
+	}
+	#left_description {
+		border-right: $common-border;
+		padding-right: $space15;
+	}
+}
+.dimensions-overview {
+	.togglTab {
+		display: none;
+		margin-top: 20px;
+	}
+	.accordion_example1 {
+		.accordion_in {
+			border-bottom: $common-border;
+			&:last-child {
+				border: none;
+			}
+		}
+		.acc_head {
+			@include font-size(13px);
+			cursor: pointer;
+			position: relative;
+			padding: $space10 $space10 $space10 $space30;
+			display: block;
+		}
+		.acc_icon_expand {
+			@include size(20px);
+			@include border-radius(3px);
+			background: $bg-white;
+			border: $common-border;
+			position: absolute;
+			left: 0px;
+			top: 8px;
+			&:before {
+				content: '+';
+				color: #000;
+				position: absolute;
+				left: 1px;
+				right: 0px;
+				text-align: center;
+				@include size(15px);
+				top: 0px;
+			}
+		}
+		.acc_active {
+			.acc_icon_expand {
+				border-color: $bg-warning;
+				&:before {
+					content: '-';
+					color: $color-warning;
+				}
+			}
+		}
+		.acc_content {
+			@include font-size(13px);
+			color: $color-black;
+			padding-left: $space30+10;
+			padding-bottom: $space10;
+			line-height: 22px;
+			padding-right: 0;
+		}
+		ul {
+			list-style: disc;
+			li {
+				padding: $space5 0 !important;
+			}
+		}
+	}
+	.tabs {
+		background: $light-gray;
+		li {
+			color: #424242;
+			display: inline-block;
+			padding: 10px 10px;
+			cursor: pointer;
+			margin: 0 10px;
+			font-family: $robotoregular;
+			&:last-child {
+				margin-right: 0px;
+			}
+			&.hide {
+				display: none!important;
+			}
+			&.current {
+				border-bottom: 2px solid #e57200;
+			}
+			&:hover {
+				border-bottom: 2px solid #e57200;
+			}
+		}
+	}
+}
+.tab-content {
+	display: none;
+	padding: 15px;
+	border: $common-border;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	&.hide {
+		display: none!important;
+	}
+	span,h3,h2 {
+		@include font-size(13px);
+		text-transform: capitalize;
+		color: #707070;
+		display: block;
+		font-family: $robotomedium;
+		margin: $space5 0;
+	}
+	.care {
+		list-style: disc;
+		padding-left: $space10+2;
+	}
+	b,strong {color: $secondary-color;}
+	&.current {display: inherit;}
+	p,ul li {
+		@include font-size(13px);
+		line-height: 20px;
+		color: #707070;
+		font-family: $robotoregular;
+		letter-spacing: 0.01em;
+		margin: 0 0 3px;
+		a {
+			color: $color-warning;
+			display: inline-block;
+		}
+	}
+}
+@media screen and (max-width:1024px){
+	.dimensions-overview {
+		.togglTab{margin-top: 15px;}
+		.tabs{
+			li{
+				padding: 7px;
+			}
+		}
+	}
+}
+@media screen and (max-width:768px){
+	.tb_scroll{
+		white-space: nowrap;
+		overflow: auto;
+	}
+}
+@media screen and (max-width:767px){
+	.dimensions-overview .tabs li{margin:0 auto;}
+}

@@ -1,0 +1,425 @@
+.menu-hover {
+    .main_menu {
+        display: block !important;
+    }
+}
+
+.menu-overlay {
+    &.overlay {
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 991;
+        position: fixed;
+        left: 0px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.main_menu {
+    display: none;
+}
+
+nav ul li a {
+    text-transform: capitalize !important
+}
+
+.menu .menu-show .salemenus {
+
+    span {
+        position: absolute;
+        background: #ff4343;
+        color: #FFF;
+        font-size: 10px;
+        padding: 1px 4px;
+        border-radius: 3px;
+        left: 32px;
+        top: 7px;
+    }
+}
+
+.menu {
+    padding-top: $space5+3;
+    /*@include box-shadow(1px 2px 2px rgba(0,0,0,.1));*/
+    background: #fff;
+    border-bottom: $common-border;
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+        text-transform: capitalize;
+
+        li {
+            float: left;
+            padding: 0;
+            margin: 0;
+            @include font-size(14px);
+
+            a {
+                text-decoration: none;
+                padding: 5px 0px 15px 0px;
+                margin: 0px 20px;
+                display: inline-block;
+                color: $color-soft-gray;
+                position: relative;
+                text-decoration: none !important;
+
+                &:hover {
+                    @extend %orange;
+
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        background: $bg-orange;
+                    }
+                }
+
+            }
+
+            &.decor {
+                position: relative;
+                background: #fff;
+
+                .main_menu {
+                    width: 150px;
+                    min-height: initial !important;
+                    padding-bottom: 0;
+
+                    article {
+                        margin-top: $space15;
+                        width: auto;
+                    }
+                }
+
+                .decor {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+
+            &.stores {
+                display: none;
+            }
+
+            &.franchisee {
+                display: none;
+            }
+
+            &.custom {
+                display: none;
+            }
+
+            &.bulk {
+                display: none;
+            }
+
+            ul {
+                li {
+                    @include font-size(13px);
+                    @include clearfix;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        display: block;
+                        padding: 4px 0;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &:first-child {
+                a {
+                    margin-left: 0;
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .last-menu {
+            a {
+                color: #E57200;
+            }
+        }
+
+        li.menu-hover>a {
+            @extend %orange;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: '';
+                height: 2px;
+                width: 100%;
+                background: $bg-orange;
+            }
+        }
+    }
+
+    .decor-menu,
+    .Office-menu {
+        margin-top: $space10;
+
+        i {
+            height: 55px;
+        }
+    }
+
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        /*@include size(24px,20px);*/
+        margin-right: $space5+3;
+        float: left;
+        margin-top: -2px;
+    }
+
+    .heading {
+        display: block;
+        text-transform: uppercase !important;
+        color: #000;
+        margin-bottom: $space5+2;
+        font-family: $robotomedium;
+
+        &:hover {
+            color: $color-soft-gray !important;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    article {
+        padding: $space0 2% $space20;
+        margin: $space25 0 0;
+        flex: 1;
+
+        //ul{ display:table;}
+        &.decor-flex {
+            flex: 2.5;
+
+            .flex {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .col {
+                width: 50%;
+            }
+        }
+    }
+
+    article+article {
+        border-left: 1px solid #eae4e2;
+        min-height: 245px;
+    }
+
+    figure {
+        float: $right;
+        width: 310px;
+        margin: 0;
+        padding: $space30+5 $space40 $space0 $space0;
+        text-align: right;
+
+        &.width-one {
+            width: 310px;
+        }
+
+        img {
+            height: auto;
+        }
+
+        &.width-two {
+            width: 223px;
+
+            a {
+                padding-top: 0px;
+            }
+        }
+
+        &.width-three {
+            width: 650px;
+        }
+
+        &.width-decor {
+            width: auto;
+        }
+    }
+
+
+    //package 
+    .options {
+        width: 25%;
+        border: none;
+        color: #333333;
+        text-align: center;
+
+        .title {
+            @include font-size(16px);
+            padding-top: $space5;
+
+            span {
+                font-family: $robotomedium;
+                @include font-size(16px);
+            }
+        }
+
+        span {
+            @include font-size(25px);
+            font-family: $robotobold;
+        }
+
+        small {
+            @include font-size(13px);
+            display: block;
+            margin-top: $space5;
+        }
+
+        .btn-view {
+            border: 1px solid #a1a1a1;
+            padding: $space10 0;
+            margin-top: $space15;
+        }
+
+        a:hover {
+            color: inherit;
+        }
+    }
+
+
+    //matter 
+    .mattress {
+        ul {
+            padding-bottom: $space10;
+        }
+
+        article {
+            width: 200px;
+            padding: $space0 $space20 $space20;
+            min-height: 240px;
+        }
+
+        .last {
+            width: 220px;
+        }
+
+        .main_menu {
+            min-height: auto;
+        }
+
+        .width-one {
+            width: 320px;
+            padding: 15px 15px 0px;
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        img {
+            margin: 0px;
+        }
+
+        figure {
+            a {
+                margin-left: $space10;
+                padding: $space0;
+            }
+        }
+    }
+
+
+
+}
+
+.menu>ul>li .main_menu .bospace {
+    margin-top: $space20;
+}
+
+.menu>ul>li>ul {
+    width: 100%;
+    top: 100%;
+    background: #fff;
+    padding: $space0 $space0 $space10;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid #f1f1f1;
+    display: none;
+    box-shadow: 0 4px 7.28px 0.72px rgba(0, 0, 0, .2);
+}
+
+.menu ul li ul li img {
+    margin-bottom: $space10;
+}
+
+//.main_menu i {@include size(142px,75px);  display:inline-block; margin-bottom:$space10+2}
+.main_menu {
+    min-height: 190px;
+
+    //Sapce
+    .boicon-space {
+        margin-top: $space30 - 2;
+    }
+
+    &.package {
+        padding-bottom: 0;
+        min-height: 380px;
+    }
+
+}
+
+.menu>ul>li .sofa_nav,
+.menu>ul>li .mattress_nav,
+.menu>ul>li .study_nav {
+    width: 80%;
+}
+
+.menu>ul>li .study_nav,
+.menu>ul>li .mattress_nav {
+    left: 9%;
+}
+
+.menu-mobile {
+    display: none;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        .menu-show {
+            .salemenus {
+                span {
+                    left: 0;
+                    top: -6px;
+                    padding: 0px 4px;
+                }
+            }
+        }
+    }
+}

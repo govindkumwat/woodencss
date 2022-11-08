@@ -1,0 +1,18 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .export-choose{
+    li{@include font-size(12px);}
+}
+.export-products{
+    .diflex-spabet{flex-wrap: wrap; text-align: center;}
+    img{display: block; margin:auto;}
+    .tabs{width: 100%;}
+}
+
+.resfur-all{
+    .bottom {
+        p{ width:225px;}
+    }
+}
+}
+

@@ -1,0 +1,109 @@
+ 
+//Global
+  @import "mixin/_global.scss";  
+// 
+.sitemap{
+    .main-heading{
+        font-size:28px;
+        line-height: 30px;
+        font-family: $robotomedium;
+        color:#e57200;
+        margin:0;
+        padding:$space20 0;
+    }
+    .box {
+        width: 20%;
+        border: 1px solid #e5e5e5;
+        border-left: none;
+        border-bottom: none;
+        padding: 0 10px;
+    }
+    .heading{
+        font-size: 1rem;
+        line-height: 22px;
+        color: #e57200;
+        font-family: $robotoregular;
+        .category-name{
+             color: #e57200;
+        }
+    }
+    .alink{
+        display: flex;
+        flex-wrap: wrap;
+        margin: $space20 0 $space30;
+    }
+    .category-list {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        overflow: hidden;
+        li {
+            display: block;
+            padding-bottom: 5px;
+            a {
+                font-size: .8125rem;
+                line-height: 20px;
+                color: #5b5b5b;
+                font-family: $robotoregular;
+            }
+            &:before{
+                display: inline-block;
+                font-family: fontawesome;
+                content: "\f105";
+                color: #e57200;
+                font-size: 1rem;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .sitemap{
+        .box{
+            width: 33%;
+            &:nth-child(3n){
+                border-right:0;
+            }
+        }
+        .alink{
+            margin:0 0 $space30;
+        }
+        .main-heading{
+            padding: 12px $space10;
+        }
+    }
+}
+@media (max-width:767px){
+    .sitemap{
+        background: $bg-white;
+        .main-heading{
+            font-size: 20px;
+            line-height: 22px;
+        }
+        .box{
+            width:100%;
+            border-right: 0;
+            .category-list{
+                height:auto;
+                overflow:scroll;
+                li{
+                    margin: 0 0 5px;
+                    &:before{
+                        content:'';
+                        border: 1px solid #e57200;
+                        width: 5px;
+                        height: 5px;
+                        border-left: 0;
+                        border-top: 0;
+                        transform: rotate(-45deg);
+                        margin-right:8px;
+                    }
+                }
+            }
+        }
+    }
+    .mCustomScrollbar {
+        -ms-touch-action: none;
+        touch-action: unset;
+    }
+}

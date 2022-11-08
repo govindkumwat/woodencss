@@ -1,0 +1,44 @@
+// Interior Desgin popup new = Not Live
+.interior-popup{ width: 350px; @include box-shadow(inherit); padding: 0; @include border-radius(5px); 
+                  .clickable, button, input[type=button], input[type=submit] {cursor: pointer;}
+    .top{ color: $color-black;  padding: $space20 $space20 $space10; @include font-size(20px); text-align: center;
+         span{ display: none; @include font-size(13px); color:$color-white; background: $bg-warning; @include border-radius(20px); padding: 2px 20px; margin-top: $space5;}
+         a{color:$color-white;}
+    }
+    label{@include font-size(12px); font-family: $font-family-medium; color: #585858; font-weight: $font-weight-regular; padding-bottom: $space5 - 3; display: block;}
+    .box{margin: $space5 $space0 $space10+2;}
+    .form-control{border:$common-border; height: 40px;  width:100%; padding:$space5 $space10+2; outline: $zero; @include border-radius(3px);
+                  @include placeholder{@include font-size(13px); color: #a4aab0;}
+                  &:focus{border-color: #b7b7b7;}
+    }
+    textarea{
+        &.form-control{height: 50px;}
+    }
+    .box-code{position: relative;
+        //p{width: 100%; position: relative; display: inline-block; padding: $zero;}
+    img{position: absolute; top: 1px; right: 45px;}
+    .form-control{padding-right: 210px;}
+    }
+    .btn{background: #ffcc01; color: $color-black;  @include border-radius(3px); @include font-size(15px); font-family: $font-family-medium; font-weight: $font-weight-regular; text-transform: uppercase; padding: $space10+2 $space40; margin-top: $space20; width: 100%;
+         &:hover{background: #f1c000;}
+    }
+    form{padding: $space0 $space20 $space20;}
+    .red_border{border: $border1 #ff0000;}
+    #reload{ border: $zero; background:url(../images/reload.png) no-repeat; @include size(35px); position: absolute; top: 1px; right: 6px; outline: $zero;}  
+    .interior_error{padding: $space5 $space25 - 1; color: $color-error-msg;}
+    .interior_success{@extend .interior_error; color: $color-error-sussess;}
+       
+    .box-close-gray { @include transition(all 0.5s ease); background:#414141; border: 2px solid #fff; @include size(22px); @include border-radius(100%); font-size: 13px; color: #fff;position: absolute; top: 5px; right: 5px; line-height:18px; cursor: pointer; text-align: center;
+     &:hover{ background:$bg-orange;}
+    }
+}
+
+
+
+
+@media #{$screen-mobile}{
+    .interior-popup{ width:100%; top:0px;
+      .btn{ color:$color-white;}
+    
+    }
+}

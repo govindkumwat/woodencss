@@ -1,0 +1,637 @@
+//Bulk Order
+.bulk-banner {
+  color: $color-white;
+  position: relative;
+  background: url('../images/bulk-furniture/bulkorder-banner.jpg') no-repeat;
+  background-size: cover;
+  padding: $space25*2 0;
+
+  span {
+    @include font-size(18px);
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    font-family: $pangrammedium;
+    display: block;
+  }
+
+  .bulk-banner-heading {
+    @include font-size(52px);
+    line-height: 60px;
+    font-family: $pangrammedium;
+    letter-spacing: 0.03em;
+    display: inline-block;
+  }
+
+  .detail-text {
+    @include font-size(16px);
+    line-height: 23px;
+    font-family: $pangramregular;
+    margin: $space15 auto 0;
+  }
+
+  .bulk-form {
+    background: $bg-white;
+    color: $secondary-color;
+    padding: $space15 $space20;
+    @include border-radius(3px);
+    max-width: 383px;
+
+    .field {
+      margin-bottom: 15px;
+
+      input[type="submit"] {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: $pangrammedium;
+      }
+    }
+
+    .flex {
+      .field {
+        &:nth-child(1) {
+          margin-right: $space10;
+        }
+      }
+    }
+
+    textarea {
+      padding: 10px;
+      height: unset;
+    }
+
+    .btn-warning {
+      color: $color-white;
+      font-size: 16px;
+      padding: 10px 15px;
+      display: block;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      @include border-radius(25px);
+    }
+  }
+
+  .bulk-heading {
+    @include font-size(24px);
+    text-align: center;
+    line-height: 30px;
+    font-family: $pangrammedium;
+    margin-bottom: 15px;
+    color: $secondary-color;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-warning {
+  @include border-radius(3px);
+  @include font-size(18px);
+  letter-spacing: 0.03em;
+  color: $color-white;
+  font-family: $pangramregular;
+  padding: $space10+2 $space20;
+  background: $primary-color;
+  margin-top: $space10;
+  transition: 0.3s all ease-in-out;
+
+  &.loader {
+    i {
+      content: '';
+      background: url('../images/spinner-solid.png')no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      animation: fa-spin 2s infinite linear;
+      vertical-align: sub;
+      margin-left: 8px;
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+  }
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-banner {
+  display: block;
+  margin: 20px auto;
+  padding: $space20 0;
+}
+
+.bulk-title {
+  @include font-size(30px);
+  line-height: 38px;
+  font-family: $pangrammedium;
+  color: $secondary-color;
+  text-align: center;
+  padding-bottom: $space20;
+
+  .small-title {
+    @include font-size(14px);
+    line-height: 20px;
+    font-family: $pangramregular;
+    color: $secondary-600;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 5px 0 0;
+  }
+}
+
+//customizing-furniture
+.customizing-furniture {
+  padding: $space40 0;
+  text-align: center;
+
+  .bulk-title {
+    .small-title {
+      max-width: 780px;
+      margin: 5px auto 0; 
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: $space20;
+    margin-top: 28px;
+
+    li {
+      width: 32%;
+      background: $bg-white;
+      box-shadow: 0 2px 4px #ddd;
+      margin-bottom: 30px;
+      @include border-radius(3px);
+      figure{
+        border-radius: 3px;
+        img{
+          transition: 0.4s all ease-in-out;
+        }
+      }
+      figcaption {
+        @include font-size (15px);
+        font-family: $pangrammedium;
+        padding: 10px 10px 25px;
+        color: $secondary-color;
+        letter-spacing: 0.02em;
+      }
+      &:hover{
+        figure{
+          img{
+            transform: scale(1.04);
+            filter: brightness(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  figure {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      transform: scale(1);
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 55%;
+    }
+  }
+
+}
+
+//why-choose-us
+.about-work {
+  background: $light-gray;
+  padding: $space25*2 0;
+
+  .btn-warning {
+    margin-top: $space20;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+}
+
+.order-with-us {
+  margin: $space30 auto;
+  align-items: unset;
+
+  article {
+    text-align: center;
+    background: $bg-white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    padding: $space30 $space20;
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -35px;
+      left: -30px;
+      right: 0px;
+      bottom: 0;
+      background: #F3601E;
+      opacity: 0.2;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    img {
+      height: 80px;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    .list {
+      text-align: left;
+      margin-top: $space30;
+
+      li {
+        position: relative;
+        font-family: $pangramregular;
+        @include font-size(14px);
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: $secondary-700;
+        margin-bottom: 10px;
+        padding-left: $space20;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          width: 10px;
+          height: 5px;
+          border-bottom: 2px solid #F3601E;
+          border-left: 2px solid #f3601e;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .title {
+    @include font-size(20px);
+    line-height: 20px;
+    font-family: $pangrammedium;
+    color: $secondary-color;
+    margin: 10px auto;
+  }
+}
+
+//home solution
+.home-solution {
+  background: $light-gray;
+  padding: $space25*2 0;
+
+  .home-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    a {
+      width: 24%;
+      display: block;
+      text-align: center;
+      margin: 0 0 40px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 21px;
+      color: $secondary-color;
+      font-family: $pangramregular;
+      letter-spacing: .01em;
+      padding: 10px 0 0;
+    }
+  }
+
+  .btn-warning {
+    border-radius: 50px;
+    padding: 10px 60px;
+    margin: 15px auto 0;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
+
+//store-locator
+.store-block {
+  padding: $space25*2 0;
+  text-align: center;
+
+  figure {
+    margin-top: $space40;
+    margin-bottom: $space40;
+  }
+}
+
+//r&d solution
+.warehouse-block {
+  padding: $space25*2 0;
+  text-align: center;
+  background: #ffddd2;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60%;
+    background: $bg-white;
+  }
+
+  .warehouse-list {
+    padding: 30px 0 0;
+
+    .warehouse-box {
+      display: inline-block;
+      margin: 0 7px;
+    }
+
+    .slick-next,
+    .slick-prev {
+      top: 55%;
+    }
+  }
+}
+
+.warehouse-wrpr {
+  padding: $space25*2 0;
+
+  .left-box {
+    text-align: left;
+    margin-right: 50px;
+
+    .bulk-title,
+    .small-title {
+      text-align: left;
+      margin: 10px 0;
+      font-family: $pangramregular;
+    }
+
+    .bulk-title {
+      padding: 0;
+    }
+
+    .small-title {
+      line-height: 20px;
+      color: $secondary-600;
+    }
+
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: .03em;
+        margin: 0 0 5px;
+        font-family: $pangrammedium;
+      }
+    }
+  }
+
+  .right-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 760px;
+
+    li {
+      width: 31%;
+      margin-bottom: 30px;
+      position: relative;
+      display: inherit;
+    }
+  }
+}
+
+//faq
+.faq-section {
+  background: $light-gray;
+  padding: $space25*2 0;
+
+  .container-1200 {
+    position: relative;
+    z-index: 1;
+  }
+
+  .faq-wrpr {
+    background: $bg-white;
+    padding: 30px;
+    margin-top: 25px;
+
+    &::after {
+      content: '';
+      background: url(../images/franchise/dots-bg.png) no-repeat;
+      width: 130px;
+      height: 115px;
+      position: absolute;
+      right: -65px;
+      top: 20px;
+      z-index: -1;
+    }
+
+    .Qustions {
+      li {
+        &:first-child {
+          .qusTab {
+            border-top: 0;
+          }
+        }
+      }
+    }
+
+    .qusTab {
+      padding: 14px 10px;
+      display: block;
+      font-family: $pangrammedium;
+      font-size: 17px;
+      line-height: 20px;
+      color: $secondary-color;
+      cursor: pointer;
+      border-top: $common-border;
+      position: relative;
+
+      &::after {
+        content: '+';
+        font-size: 20px;
+        color: #646464;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+        font-family: robotomedium;
+      }
+
+      &.current {
+        background: $light-gray;
+        border-bottom: $common-border;
+        border-top: 0;
+
+        &::after {
+          content: '-';
+        }
+      }
+    }
+
+    .AnsBox {
+      padding: 20px;
+      font-family: $pangramregular;
+      color: $secondary-color;
+      font-size: 14px;
+      line-height: 20px;
+      display: none;
+    }
+  }
+}
+
+//popup
+.talk-designer-popup {
+  position: relative;
+
+  .close-popup {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .inner-wrpr {
+    .talk-designer-form {
+      background: $bg-white;
+      padding: 25px;
+      border-radius: 4px;
+
+      .bulk-title {
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 32px;
+        padding-bottom: 0;
+
+        .small-title {
+          font-size: 14px;
+        }
+      }
+
+      .field {
+        margin-bottom: 15px;
+
+        input {
+          height: 44px;
+        }
+
+        textarea {
+          padding: 10px;
+          height: auto;
+        }
+      }
+
+      .flex {
+        .field {
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .btn-warning {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+//customer-service
+.customer-reviews {
+  background: $bg-white;
+  border-top: 10px solid #f5f5f5;
+}
+
+.hidden {
+  display: none;
+}
+
+//responsive media 
+@media screen and (max-width:1366px) {
+  .faq-section .faq-wrpr:after {
+    right: -28px;
+  }
+}
+@media screen and (max-width:1280px) {
+  .bulk-banner {
+    padding: 35px 0;
+    .bulk-banner-heading{
+        @include font-size(44px);
+        line-height: 52px;
+    }
+  }
+  .bulk-title{
+    @include font-size(28px);
+    line-height: 32px;
+  }
+  .customizing-furniture {
+    padding: 35px 0 15px;
+    ul{
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  }
+  .about-work{
+    padding: 35px 0;
+  }
+  .order-with-us{
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,33 @@
+//vertical-center
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+     -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+      -webkit-transform:translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              -o-transform: translate(0, -50%);
+  }
+}
+//display
+//inline-blockwidth
+@mixin displaywidthalign($display,$width,$ver-align){
+    display:$display;
+    width:$width;
+    vertical-align:$ver-align; 
+}  

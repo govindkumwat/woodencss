@@ -1,0 +1,71 @@
+//Recently Customer Question Answer
+  .pro-cusques { text-align:center; 
+    background:#f3f3f3; @include border-radius(2px); padding:$space30+5 0 $space40; margin:$space20 0;
+            .title{@include font-size(25px); font-family:$robotomedium;}
+             p{padding:$space5+1 $space0 0; @include font-size(15px); color:$color-soft-gray; ont-family:$robotolight;
+               a{color:$color-warning; padding-bottom:$space5; display:inline-block;}
+               &:before{ display:none;}
+            }
+         // .in{ display:flex; justify-content:space-between; flex-wrap:wrap;}
+            
+          //.form{width: 550px; margin:$space15 auto $space0;}
+          //  .form-control{border:$border1#d9d9d9; height:40px; background:$bg-white; width:49%; margin:0 0 $space10; @include border-radius(3px); padding:0 8px;@include placeholder{font-size: 14px; color: #8d8d8d;}
+                //          &:focus{border-color: darken(#d9d9d9,15%);}
+           // }
+          //  textarea{&.form-control{width:100%; height: 58px; padding-top:8px; margin-bottom:6px; } }
+           // .text-right{ text-align:right; position:relative;}
+
+           
+           .btn{border: $zero; @include font-size(16px); @include border-radius(3px); padding:10px 60px; margin-top:4px; color:$color-white; cursor:pointer;}
+        // .btn-close{ background:$color-white; color:$color-gray; border:$border1#d9d9d9; padding:$space10 $space25; margin-right:$space5; @include font-size(14px);}
+    }
+    
+    
+
+   
+    #questions{
+          .heading{ font-family:$robotomedium;  text-align:left; border-bottom: $border1 #d9d9d9; padding-bottom:10px;  position: relative; margin-bottom: 10px; font-size:14px;
+             &:after{content: '\f0d7'; font-family:$fontawesome; position: absolute; color: #d9d9d9; font-size: 20px; left: 8px; bottom: -16px;}
+    }
+    }
+    
+   .pst{padding: 12px 0; text-align:left;
+  
+    p, span{ position: relative; padding-left: 35px; display:block; font-size:14px; line-height:24px;
+             &:before{display: inline-block; @include font-size(16px); color: $color-warning; content:'Q'; position: absolute; left: 10px; top:0; line-height: normal;}
+    }
+    p{@include font-size(13px);   line-height: 22px; margin:10px 0; padding-top:0!important;
+        &:before{content: 'A'; color: #000;}
+    } 
+   }
+ .btn{@include border-radius(2px); display:inline-block; padding:$space10+2 $space30+5; text-transform:uppercase; @include font-size(14px);}
+.btn-helpful{position:relative; width:151px;  margin-left: 35px;
+.helpful-btn{border:$border1 #b7b7b7; cursor:pointer; @include font-size(14px); color: $color-warning; @include border-radius(3px); padding:8px 40px; display: inline-block; background:#fff;
+            &:before{color: $color-warning; display: inline-block; content: '\f164'; @include font-size(16px); margin-right: 7px; font-family:$fontawesome;}
+            &:hover{background:$color-warning; color:#fff; border-color:$color-warning;}
+            &.active{ background:$color-warning; color:#fff; border-color:$color-warning;}
+}
+
+ &:before{ color: $color-warning; display: inline-block; content: '\f164'; @include font-size(15px); position:absolute; left:18px; top:4px; font-family:$fontawesome;}
+ 
+ &.HelpFulactive{ &:before{ color:white;}}
+ &:hover{&:before{ color:white;}}
+  }
+  
+ 
+  
+  //media css start
+ 
+  @media #{$screen-tablet}{   
+           .pro-cusques{ padding:$space20 0 $space30;
+                .title{@include font-size(22px);}
+                .btn{ padding:$space5+4 $space40+10;}
+                btn{ padding:$space10 $space30;}
+           }
+  }
+
+
+
+
+
+

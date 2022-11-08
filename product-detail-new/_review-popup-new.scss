@@ -1,0 +1,53 @@
+//Reviw Popup
+.swpmodal-container_i .review-popup{ display:block;}
+.review-popup{ box-shadow:none; /*width:590px;*/  @include border-radius(4px); position:relative;  padding:$space25; background:$bg-white; display:none; width:347px; text-align:center;
+            
+               //review popup 
+              .starRating{display: inline-block; position:relative;} 
+              .starRating + .error-block{ text-align:center;} 
+             .starRating:not(old)>input{ opacity:0; position:absolute; left:0; top:0;}
+             .starRating:not(old)>label{ float:right!important;  vertical-align:middle; position:relative; margin:0 3px; cursor:pointer;}
+             //.starRating:not(old)>label> small{ position:absolute; left:0px; top:0px; opacity:1; transition:opacity .2s linear;}
+             .starRating:not(old)>input:checked ~ label, .starRating:not(old)>input:hover ~ label{opacity:2; position:relative;}
+             .starRating:not(old)>input:checked ~ label > small, .starRating:not(old)>input:hover ~ label > small{ opacity:1; position:absolute; left:0; top:0;} 
+             //.starRating:not(:hover)>:checked~label:before,.starRating:not(old)>label:hover:before,.starRating:not(old)>label:hover~label:before{ opacity:0;}
+              .svg-star { background: url("../mobile/images-m/product-detail-new/off-star.svg") no-repeat;  }
+              .svg-star-off { background: url("../mobile/images-m/product-detail-new/new-star.svg") no-repeat; }
+              .svg-star-dims, .svg-star-off-dims { @include size(25px); }
+             //review popup and uestion aswer popup
+             .error-block{ text-align:left}
+              form{display:flex; justify-content:space-between; flex-wrap:wrap;} 
+             .title{@include font-size(20px); text-transform:uppercase; padding-bottom:$space10;}
+             .field{ width:49%; margin-bottom:$space10+2;} 
+             .full{ width:100%!important;} 
+             .btn{border: $zero; @include font-size(16px); margin-top:15px; width:100%; @include border-radius(3px); padding:11px 0px;  color:$color-white; cursor:pointer; background: #434343 !important; }
+             .swpmodal-close{ position:absolute; right:-30px; top:0px;} 
+              textarea{ padding-top:$space10; height:80px!important; vertical-align:middle; }
+            
+              //review popup
+/*              .file-text{ position:absolute; left:$space10; top:$space5+2; color:#a6acb2; text-align: left; @include oneline(); width: 220px;
+                 &:before{  display:inline-block; content:''; vertical-align:middle; @include size(15px,28px); margin-right:$space5; background:url("#{$images-path}/product-detail/attachment-small.png") no-repeat; }
+             }                                                                          */
+             // input[type="file"]{ position:absolute; left:0; top:0; @include size(100%); opacity:0; cursor:pointer; z-index:1;}
+              .thanku-success-msg{ width:auto;} 
+              .fileBx { height: 45px; background: #E8E8E8; position:relative; position: relative;  line-height: 46px;  padding: 0 15px; width: 100%; text-align:left; 
+    input { position: absolute; top:0; right:0 ; left: 0; bottom: 0; opacity: 0; width: 100%; }
+    span{     color: #6f6f6f; svg{   margin-right: 5px;  vertical-align: sub; }}
+} 
+
+.table { width: 100%;
+    li { padding: 10px 0; border-bottom: 1px solid #D9D9D9; color:#8B8B8B; display: flex;align-items: center; justify-content: space-between; }
+    .close{  font-size: 20px;font-style: normal; line-height: 15px; cursor:pointer; }
+}
+  
+}
+ 
+  
+.review-popup.askquestions{width:520px; text-align:left;
+ .btn{ padding:10px 60px; margin:$space15 auto 0; width:auto;}
+
+}        
+  
+     
+
+

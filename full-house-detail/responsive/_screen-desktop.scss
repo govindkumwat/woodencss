@@ -1,0 +1,16 @@
+@media #{$screen-desktop}{      
+   .fuhodetail-bhk{
+    .slider-for{float: none;}
+    .slider-nav{float: none; width: 450px; margin: auto;
+                .slick-slide{margin: 7px;}
+    }
+    .slick-prev, .slick-next{top: 50%;}
+    .slick-next{right: -20px; left: inherit;
+                &:before{content:'\f054';}
+    }
+    .slick-prev{left: -20px;
+                &:before{content:'\f053';}
+    }
+}
+
+}

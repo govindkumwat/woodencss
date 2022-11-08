@@ -1,0 +1,127 @@
+.linkTop{display:none;}
+.SectionLiving.mattress{
+    margin:0 auto;
+} 
+.mattress{
+    .headingOnline{
+        margin:30px auto;
+    }
+} 
+.livingFlex{
+    padding: 0 0 50px;
+    border-bottom: 1px solid #e5e5e5;
+    li{
+        figure{
+            &:before{padding-top: 55%;}
+        }
+    }
+}
+.matters-step{
+    margin: 50px auto 25px;
+}
+.NewArrivals{
+    .shopSlider{
+        li{
+            figure{
+                &:before{padding-top: 75%;}
+            }
+        }
+    }
+}
+.btn-matters{ @include font-size(15px); color:$color-white; width:235px; margin:0 auto; display:block; text-align:center; @include border-radius(3px); background:#f16521; padding:$space10; text-transform:uppercase;}
+.Matterss{ 
+    text-align:center;
+    padding:50px 0 0;
+    .shopSlider {
+        li {
+            figure{
+                &:before{
+                    padding-top:55%;
+                }
+            }
+        }
+    }
+    span{
+        width:100%;
+    }
+}
+.make-options{ display:flex; justify-content:space-between; padding:$space25 0; text-align:center;  
+            li{ @include border-radius(3px);  background:#f9f9fa; width:24%;   @include all-matters-icon-sprites; padding:$space40+10 $space40;}
+            span{ color:#f16521; @include font-size(18px); padding:$space5 0; display:block;}
+            i{ display:block; @include size(60px,57px); margin:0 auto;}
+            p{ color:#4f5766; @include font-size(16px); font-family:$robotolight;}
+} 
+.matters-type{ margin:$space0 auto 0; padding-bottom:30px; text-align:center;  border-bottom:$common-border; } 
+
+.type-option{ display:flex; justify-content:space-around;   margin:$space30+5 $space40+40 0;
+         li{ border-right:$common-border; width:48%; padding:0 $space20;
+              &:last-child{ border-right:none;}
+           }   
+        .btn-matters{ margin:$space10 auto;}
+        span{@include font-size(25px); color:#f16521; font-family:$robotomedium; display:block; padding-bottom:$space5+2;} 
+        p{@include font-size(14px); color:#403e40; max-width:70%; margin:0 auto;}
+       .info{color:#383735; padding-top:$space5;
+        &:before{ content:''; margin-right:$space10; @include font-size(18px); background:url("#{$images-path}/matters/check.png") no-repeat 0 0; @include size(10px); display:inline-block;}
+       }
+       .rating{@include font-size(12px); color:#403e40; font-family:$robotoregular; padding:$space15 0; display:block;}
+          img{ display:block; margin:0 auto $space5;}
+          
+         figure{  position: relative;
+               img{ position:absolute; top:0; left:0; bottom:0; right:0; margin:auto;}
+              &:before{padding-top:35%; content: ''; display: block;} 
+       } 
+  }
+   .matters-gallery{  display: flex; justify-content:space-between; padding: $space25 0 $space40; 
+       figure{width: 32%; position: relative;
+          img{ position:absolute;  top:0; left:0; bottom:0;  right:0; margin:auto;}
+          &:before {padding-top: 115%; content: ''; display: block;}
+       }
+    figcaption{position: absolute; bottom:$space25;color: $color-black; left: 0; right: 0; margin: auto; padding: 0 $space10; text-align:center; @include font-size(14px);}
+    span{ @include font-size(20px); display: block;font-family: $robotomedium; padding-bottom: $space5;}
+
+  } 
+      
+        
+      
+      //media
+      
+      @media #{$screen-desktop-landscape}{ 
+           .Matterss{ 
+               padding:30px 0;
+    .shopSlider {
+        li {
+            figure{
+                &:before{
+                    padding-top:66%;
+                }
+            }
+        }
+    }
+}
+                
+       }
+      
+      
+       @media #{$screen-desktop}{          
+              .type-option{ margin:$space30+5 0 0;
+                           figure{
+                               &:before{
+                                   padding-top: 45%;
+                               }
+                           }}
+              .livingFlex{
+                  li{
+                      figure{
+                          &:before{padding-top:75%;}
+                      }
+                  }
+              }
+      }
+      
+      
+       @media #{$screen-tablet}{
+                  .make-options li{ padding:$space25 $space10;}
+                  .type-option p{ max-width:100%;}
+                  .matters-gallery{span{@include font-size(18px);}}
+                 .btn-matters{ padding:$space5+3;}    
+          }

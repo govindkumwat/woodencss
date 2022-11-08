@@ -1,0 +1,85 @@
+ .category-two{display:flex; justify-content:space-between; flex-wrap:wrap;  
+     .box{margin-top:$space30; border:1px solid transparent; width:49%;  position: relative;
+         &:hover { border:1px solid #dadada;} 
+     
+         .tooltip{ text-align:right; position:relative; 
+           .fastship{ display:block; color:#515151; @include font-size(12px); padding-right:$space10;
+            // &:before{display: inline-block; @include size(32px,16px); content: ''; background:url("#{$images-path}/truck.png") no-repeat; vertical-align:middle;} 
+              img{ vertical-align:middle; margin-right:$space5;} 
+           } 
+           .inside{ z-index:10; right:0; top:22px; position:absolute; display:none; width:110px; text-align:center; @include font-size(13px); line-height:normal;  background:#e1e5e9;   padding:4px 0; font-family:$robotolight;
+                 &:before{ @include arrow("up", #e1e5e9, 10); position:absolute; left:0; top:-7px; right:0; margin:0 auto;}
+                        
+             }
+           &:hover .inside{ display:block;}    
+         }
+           
+ 
+     
+     
+     }  
+           figure{ margin:0; position:relative;  background:#f7f7f8;  
+                   img{ display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); mix-blend-mode:darken;}
+                   &:before{ content:''; display:block; padding-top:69%;}
+           
+           } 
+            
+           
+  
+              .top{ border-bottom:$common-border; padding:$space10 $space5 $space15;; margin-bottom:$space5+3;}
+              .detail{display:inline-block; vertical-align:top; line-height:normal; background:#ffd922; width:40px; text-align:center; color:$color-black; @include font-size(12px); height:inhert; padding:$space0+3 $space0;  @include border-radius(3px);}
+              .cat-product-name{ display:inline-block; line-height: normal; width:200px; @include font-size(15px); margin-left:$space5; color:$color-black; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; 
+                   small{ display: block; color:#8d8d8d;}
+                 }
+             .pull-right{ padding-right:$space5;
+               span{color: $color-black; display: inline-block;  @include font-size(14px);}
+            }
+            
+            .finish_option_static{ position:relative; display:inline-block; vertical-align:top;
+               li{ margin-left:$space5 - 1; cursor: pointer; display:inline-block;}
+                img {@include border-radius(3px); @include size(26px);}
+         }
+                
+         .bottom{color: $color-black;line-height: $space20+2; padding-left:$space5+2;}
+        .price-old{@include font-size(14px);  display: inline-block; line-height: $space20; text-decoration: inherit; 
+             small{color: #848484; display: block; @include font-size(12px);}      
+          }
+        .price_with_emi{margin-left: $space10; @include font-size(17px); line-height: $space20;  text-align: left; color: $color-black; display: inline-block; font-family: robotomedium; font-weight: 400;
+               small{ color: #848484; display: block; @include font-size(12px);
+               } 
+         }
+          .price-new {float: right; color: #e57200; @include font-size(12px); line-height: $space20; text-align: right; padding-right: $space5+2;
+                  small{ display: inline-block; color: #848484; @include font-size(12px);
+                  }
+           }
+         
+       //rent category
+       //.rent-box{ margin-top:$space10;
+         //   .top{ border:none;}
+          //}
+           
+           //.rent-price{  text-align:right;
+             //.price{ @include font-size(16px); color:#1f1414; display:block;}
+             // small{ color:#676767; @include font-size(12px);}
+          // }
+ }
+        
+    //solid our product
+ .product-sold{ background: rgba(255,255,255,0.8); position: absolute; top: 0; left: 0; @include size(100%);
+            .sold-send{width: 148px; margin:110px auto 0;
+               p{background: url(../images/sold-arrow.png) 129px 15px no-repeat #e07a32;  font-size: 13px;color: #fff; text-align: center;text-transform: uppercase; margin: 0; padding:5px 0; cursor: pointer; }
+               form{ background: #fff; padding:8px 8px 25px;  border: 1px solid #f3f2f2; border-top:none; z-index:2; position:relative;}
+               input[type=email], input[type="tel"] {border: 1px solid #d1d1d1; width:100%; padding:3px 5px; margin:6px 0 0; background: 0 0; font-size: 13px;}
+              input[type=button]{ background: #636363; cursor:pointer; float:right; font-size: 11px; color: #fff; text-transform: uppercase; border:0; padding:3px; margin:5px 0 0;}
+            }
+            .clear{ clear:both;}
+            .out_of_stock_err{ padding:0 $space10; color:red;  border-left: 1px solid #f3f2f2; border-right: 1px solid #f3f2f2;}
+            .success{color:green;}
+            .out_of_form{ position:relative; background:$bg-white;}
+}   
+      
+ .off {display: none;}
+                  
+ 
+
+ 

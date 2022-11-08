@@ -1,0 +1,77 @@
+
+//Global 
+@import "mixin/_global.scss";    
+
+//Reset
+@import "reset/_reset.scss";             
+
+//fonts  
+@import "fonts/_fonts.scss"; //live       
+      
+@import "fonts/_fontawesome.scss"; //live
+
+// slider slick  
+@import "common/_slick.scss";     
+ 
+//slider-nav
+@import "common/_direction-nav.scss"; 
+ 
+//Header        
+@import "common/_header-new.scss"; // live  
+
+//footer 
+@import "common/_footer-new.scss";// live 
+
+//menu 
+@import "common/_menu-new.scss"; //upcoming     
+
+
+//tabs
+@import "common/_tabs.scss"; 
+
+//common scroll
+@import "common/_common-scroll.scss";     
+
+//auto-complete   
+@import "common/_auto-complete.scss";
+ 
+
+@import "common/_request-call-back-popup-new.scss";// live
+
+//back-top
+@import "common/_back-top.scss"; 
+
+//color-box  
+@import "common/_swpmodal.scss";    
+
+//Breadreumbs   
+@import "common/_breadcrumbs.scss";    
+
+//customer-reveiw 
+
+@import "common/_customer-reveiw-new.scss"; // live
+
+//produt related  
+
+//thanku message     
+@import "common/_thanku-message.scss";      
+//input-effect   
+@import "common/_input-effect.scss";   
+
+//mini-car    
+@import "common/_mini-cart.scss";//upcoming     
+
+//toster
+@import "common/_toaster.scss";
+
+//search box
+@import "common/_search-box.scss";
+
+//media scss        
+@import "common/_screen-desktop.scss";   
+@import "common/_screen-tablet.scss";                                        
+
+
+@import "common/_feedback.scss";
+@import "common/_chatbox.scss";
+@import "common/_ask-question.scss";

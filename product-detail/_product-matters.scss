@@ -1,0 +1,162 @@
+
+     .matter-options{ border-bottom:$common-border; padding-bottom:$space25;
+             .title{ @include font-size(14px); color:$color-grey; padding:$space10 0;}
+             
+             .cate{
+                 li{ display:inline-block;  @include border-radius(3px); text-align:center; margin-right:$space10; border:$common-border; @include font-size(14px); width:85px;  padding:$space5 - 1  $space5; cursor:pointer; color:#393939; position:relative;
+                    &:hover,&.active{ background:#434343; color:$color-white; border: none; }
+                  } 
+                [type="radio"]{ position:absolute; left:0; right:0; margin:0 auto; top:0px; opacity:0; cursor: pointer; @include size(100%);}
+             }
+             
+             
+             .size{ margin:0;
+                     li{ display:inline-block; @include font-size(14px); color:#1c1c1c; margin-right:$space10; position:relative; }
+                     label{ background:url("#{$images-path}/product-detail/radio-list.png") no-repeat left -16px; padding-left:$space20+4; display:inline-block; height:20px; 
+                        span{@include font-size(14px); display:block; margin-top:-2px;} 
+                     }
+                    [type="radio"]{ opacity:0; position:absolute; left:0; top:6px; @include size(16px); z-index:2; cursor:pointer;
+                          &:checked { 
+                              + label{ background:url("#{$images-path}/product-detail/radio-list.png") no-repeat left 2px; color:$color-warning;}
+                          
+                          } 
+                       } 
+                       
+                     
+                 
+             }
+             
+            
+      } 
+       
+      
+            .matter-drope{   @include appearance(none); margin:$space15 0 0; background:#f3f3f3 url("#{$images-path}/product-detail/drope-yellow.png") no-repeat 96% center;  @include size(100%,42px); @include border-radius(3px); border:none; padding:0 10px; cursor: pointer; 
+                   
+                   small{ color:$color-warning;}    
+            }   
+            
+            select::-ms-expand {display: none;}
+ 
+
+/*.select {margin:$space15 0 0; cursor:pointer; position:relative; @include size(100%,42px); background:#f3f3f3;}
+.styledSelect{position:absolute;  top:0; right:0; bottom:0;left:0;@include border-radius(3px); padding:$space5+3 $space10; background:#f3f3f3 url("#{$images-path}/product-detail/drope-yellow.png") no-repeat 310px center;  @include appearance(none);text-align:center; }
+.options{display:none; text-align:center; padding:0!important; position:absolute;top:100%; right:0; left:0; z-index:999; margin:0;; list-style:none; border:$common-border; background-color:white;}
+.options li{padding:$space5+3 $space10; border-top:$common-border;}
+.options li:hover{color:$color-warning;}*/
+      
+      
+
+             .matter-page-head{ color:$color-black; @include font-size(30px); text-align:center; max-width:60%; margin:0 auto; line-height:$space40;
+                       p{ color:#4b4a4a;@include font-size(14px); font-family:$robotolight; padding-top:$space10; line-height:$space20+4;}
+                  } 
+          
+          
+          
+      
+         .matters-different{ padding:$space40 0; }
+         
+         .different-option{ display:flex; justify-content:space-between;  @include all-product-matters-icons-sprites; padding-top:$space40+10;
+                       li{width:28%; text-align:center;}
+                       i{display:block; @include size(85px,70px); margin:0 auto;}
+                      span{color:$color-warning; @include font-size(18px); text-transform:uppercase; padding:$space20 0 $space5; display:block;}
+                      p{ color:#4f5766; @include font-size(16px); font-family:$robotolight;}
+           }
+      
+           
+           
+.chosse-matters{ max-width:1400px; margin:0 auto; background:#f9f9fa; padding-top:$space40;
+                figure{  position: relative; background:#f9f9fa; margin-top:$space40;
+                img{ position:absolute; top:0;  bottom:0; right:0; margin:auto; mix-blend-mode:darken;}
+                &:before{padding-top:47%; content: ''; display: block;} 
+                 .lazy{ left:0;} 
+               .loaded{ left:initial;}
+             } 
+               
+             
+} 
+           
+           
+           
+  
+          
+          .matters-perfect{ background:#f9f9fa; max-width:1400px; margin:0 auto; padding:$space40+10 0 0;
+                   
+                    figure{ position:relative; text-align:right; padding:$space40 0;
+                         img{position:absolute;  top:0; bottom:0;  right:0;  margin: auto;}
+                         &:before{ content:'';  display: block; padding-top:45%;}
+                   }
+                    
+          }
+          
+          .matters-support{ padding:$space40 0; border-bottom:$common-border;
+               figure{ margin-top:$space40+10; position:relative;
+                      img{position:absolute;  top:0;  left:0;  bottom:0;  right:0;  margin: auto;}
+                      &:before{ content:'';  display: block; padding-top:33%;}
+                 }
+              
+               
+          }
+          
+          
+          
+          .make-options{ display:flex; justify-content:space-between; padding:$space25 0; text-align:center;  
+             li{ @include border-radius(3px);  background:#f9f9fa; width:24%;    @include all-product-matters-icons-sprites; padding:$space40;}
+            span{ color:#f16521; @include font-size(18px); padding:$space5 0; display:block; text-transform:uppercase;}
+            i{ display:block; @include size(60px,57px); margin:0 auto;}
+            p{ color:#4f5766; @include font-size(16px); font-family:$robotolight;}
+}
+    
+
+.matters-foam{ padding:$space20 0  $space40+10; margin-bottom:$space40; border-bottom:$common-border;
+          .divider{ display:block; @include size(100px,2px); background:$bg-warning; margin:$space10 auto;}
+         .step-foam{ position:relative; margin-top:$space40+10;
+                     img{position:absolute;  top:0;  left:0;  bottom:0;  right:0;  margin: auto;}
+                     &:before{ content:'';  display: block; padding-top:29%;}
+          
+           }
+         .step-no{ display:block; position:absolute; left:0; top:-20px; right:0; margin:0 auto; @include size(70px); @include border-radius(100%); background:$bg-warning; text-align:center; color:$color-white; line-height:$space40+25; @include font-size(40px); font-family:$robotobold;}
+    
+
+}
+
+
+
+
+ 
+//media
+     @media #{$screen-desktop}{
+             .make-options{
+                  li{ padding:$space30+5 $space20;} 
+             
+              }  
+              
+              .chosse-matters{ 
+                      figure{ margin-top:$space30;
+                         img{ max-width:90%;}
+                     }
+              }
+     }
+
+
+     @media #{$screen-tablet}{
+         .matter-page-head{@include font-size(24px); line-height:$space30;}
+         .matter-drope{ width:50%; margin:$space15 auto 0;}
+         .make-options{
+                li{ padding:$space20 $space10;} 
+                span{@include font-size(15px);} 
+                p{@include font-size(14px);}
+             }  
+         
+         .matters-different{ margin-top:$space40;}
+         
+         .different-option{ padding-top:$space30;
+               span{@include font-size(15px);} 
+                 p{@include font-size(14px);}
+         }
+         
+         .matters-foam{ 
+             .step-foam { margin-top:$space40;}
+              .step-no{@include font-size(35px); @include size(60px); line-height:$space40+20;}
+         }
+
+     }

@@ -1,0 +1,17 @@
+@media #{$screen-desktop}{
+    .persof-model p{ width:47%;}
+    .persof-system{ width:auto;
+        .persof-model p{ width:50%;} 
+    } 
+    
+    .persof-fabric{
+        .tab-content{
+            li{ 
+               @include every(4){margin-right:$space10+2;} 
+            } 
+        }
+    }
+    
+    
+    
+} 

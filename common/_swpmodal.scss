@@ -1,0 +1,21 @@
+.swpmodal-container,.swpmodal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:99999999}
+.swpmodal-container_i{height:100%;margin:0 auto}
+.box-modal{position:relative;/*width:1000px;padding:16px;*/background:#fff;color:#000;/*box-shadow:0 0 0 6px rgba(153,153,153,.3);*/}
+.box-modal_close{position:absolute;right:-8px;top:-8px;font-size:20px;line-height:15px;font-weight:700;color:#999;cursor:pointer;z-index:999}
+.box-modal_close:hover{color:#666}
+
+#mask{position:absolute;left:0;top:0;z-index:9999;background-color:#000;display:none;opacity:.8}
+#boxes .window{display:none;z-index:9999;}
+#boxes #dialog{width:750px;height:550px;background:none;z-index:2147483647}
+#boxes #dialog,#boxes .window{top:199.5px;left:551.5px;position:fixed;}
+
+.window_popup .email .subs_success{color:#00ab04;}
+.small-fixed-popup{position:fixed;bottom:10px;left:1px;z-index:9;cursor:pointer;}
+
+@media only screen and (max-width: 767px){
+.swpmodal-container, .swpmodal-overlay {overflow-x: auto;overflow-y: scroll;}
+}
+
+
+img:not([src]) {visibility: hidden;}
+@-moz-document url-prefix() {img:-moz-loading {visibility: hidden;}}

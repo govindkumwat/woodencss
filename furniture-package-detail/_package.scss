@@ -1,0 +1,84 @@
+.furniture-package{ padding-bottom:$space30;
+        .content{ text-align:center; margin-bottom:$space20;
+         h1{@include font-size(24px); font-family:$robotomedium; font-weight:normal;}
+          p{@include font-size(14px); font-family:$robotolight;}
+        }
+        
+        .banner{  position:relative;
+              img{ vertical-align:bottom;}
+              figcaption{ position:absolute; bottom:-190px; border:2px solid #fff; right:$space30; background:$bg-warning;  line-height:$space40+20; @include size(284px); text-align:center; color:$color-white;@include font-size(16px);@include border-radius(100%);}
+              strong{@include font-size(25px);display:block; line-height:0px; font-weight:normal;}
+     
+        }
+        
+        .tabs{ background:$bg-white; z-index:8; position:relative; padding:$space30 0;}
+        .tab-links{ border-bottom:$common-border; text-align:center;
+                 li{ display:inline-block; vertical-align:middle; margin-bottom:$space5 - 6; 
+                  &.active{
+                       a{ border:$common-border; border-bottom-color:$color-white; color:$color-warning; @include border-radius(4px 4px 0 0); }
+                   } 
+                }
+              a{@include font-size(20px); color:$color-black; display:block; font-family:$robotolight; padding:$space10+2 $space20; border:1px solid transparent;}
+        } 
+   
+        .tab{ padding-top:$space40+5; }
+        .title{@include font-size(25px); font-family:$robotomedium; padding-bottom:$space20+2;}
+        
+     
+        .product-list{ width:66%; display:inline-block; vertical-align:top;
+                 li{ text-align:center; width:31%; margin-right:$space10+2;  @include font-size(14px); font-family:$robotolight;  margin-bottom:$space25; display:inline-block; vertical-align:top;
+                    @include every(3){ margin-right:0;}
+                    a{color:#333;}
+                }
+            
+            
+            
+        }
+        
+        
+        .product-detail{width:30%; margin-left:4%;  background:#f8f8f8; border:1px solid #e1e1e1; @include border-radius(4px);  padding:$space20 $space25;  display:inline-block; vertical-align:top;
+               .heading{@include font-size(17px); font-family:$robotomedium; padding-bottom:$space10+2; display:block;}
+                p{@include font-size(14px); padding-bottom:$space5; font-family:$robotolight;}
+               .total-price{@include font-size(38px); font-family:$robotobold; display:block; color:#333333; text-align:center; padding-top:$space10;}
+               small{ display:block; @include font-size(18px); font-family:$robotolight; text-align:center; padding-top:$space15; }
+               .btn{@include font-size(20px); font-family:$robotolight; color:$color-white; background:$bg-warning; margin-top:$space30; @include border-radius(4px); padding:$space10+2; display:block; text-align:center;}
+        }
+        
+        .inquery{ border-top:$common-border; text-align:center;            
+            .container{ padding:$space40+30 0 $space40+10; max-width:900px; background:url("#{$images-path}/furniture-package-details/inquery.png") no-repeat right center;}
+             a{@include font-size(18px); color:$color-black;  border:2px solid $color-warning; margin-top:$space15; @include border-radius(4px); padding:$space10+2 0; display:inline-block; width:250px; text-align:center;}
+            .title{padding-bottom:$space15;}
+        }
+} 
+ 
+//responsive
+@media #{$screen-desktop}{
+    .furniture-package {
+      .tab-links { a{padding:$space10;} }
+    .product-list li{ margin-right:$space15; width:31%;}
+
+  .product-detail .total-price{@include font-size(35px);}
+    }
+    
+}
+@media #{$screen-tablet}{
+    .furniture-package {
+        .inquery {
+            .container{ padding:$space40 0;}
+             a{ padding:$space10 0;}
+        }
+        .tab{ padding-top:$space20;}
+        .tabs{ padding-bottom:0;}
+        .tab-links { 
+            a{
+                @include font-size(15px);
+            } 
+        }
+       .banner{
+            figcaption{ bottom:-145px;@include size(135px);}
+       }
+         .product-detail .total-price{@include font-size(30px);}
+    }
+    
+    
+}

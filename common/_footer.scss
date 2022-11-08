@@ -1,0 +1,293 @@
+.footer {
+  padding-top: $space0;
+  background: #f7f7f8;
+
+  .footer-top {
+    padding: $space15 0;
+    border-bottom: $common-border;
+  }
+
+  .footer-menu {
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+
+    .title {
+      @include font-size(14px);
+      color: $color-black;
+      margin-bottom: $space0;
+    }
+
+    li {
+      padding: 0;
+
+      a {
+        font-size: 13px;
+        font-family: $robotoregular;
+        color: #4a4a4a;
+      }
+    }
+  }
+
+  .facebook-like {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    color: #4a4a4a;
+    text-align: left;
+
+    span {
+      display: block;
+      @include font-size(14px);
+      padding-bottom: $space0;
+    }
+
+    p {
+      @include font-size(13px);
+      line-height: $space20+1;
+      padding-bottom: $space5+3;
+    }
+
+    .email {
+      margin-top: $space10;
+      padding-bottom: 0;
+      text-decoration: underline;
+
+      i {
+        color: $color-warning;
+        @include font-size(18px);
+        vertical-align: middle;
+        margin-right: $space5+3;
+      }
+
+      .support {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+
+    a {
+      color: #4a4a4a;
+    }
+  }
+
+  .socail-link-title {
+    @include font-size(14px);
+    display: block;
+    padding-bottom: $space10;
+    padding-top: $space20+2;
+  }
+
+  .social-link {
+    display: inline-block;
+    vertical-align: middle;
+
+    li {
+      margin: $space0 $space5 - 3 $space0;
+      display: inline-block;
+      vertical-align: top;
+
+      a {
+        @include size(33px);
+        display: block;
+        line-height: $space20+4;
+        margin-bottom: $space0  !important;
+        border: 2px solid $color-black;
+        @include border-radius(50%);
+        @include font-size(18px);
+        padding-top: $space5 - 3;
+        text-align: center;
+
+        &.facebook {
+          border-color: $color-blue-dark;
+          color: $color-blue-dark;
+        }
+
+        &.google-plus {
+          border-color: $color-red;
+          color: $color-red;
+        }
+
+        &.pinterest {
+          border-color: $color-red-dark;
+          color: $color-red-dark;
+        }
+
+        &.youtube-link {
+          border-color: $color-dark-medium;
+          color: $color-dark-medium;
+        }
+
+        &.instagram {
+          color: $color-black;
+        }
+
+        &.twitter {
+          color: #1da1f2;
+          border-color: #1da1f2;
+        }
+      }
+    }
+
+  }
+
+
+
+  //delivery-city
+  .delivery-city {
+    padding: $space10+2 $space0 $space30;
+    text-align: center;
+
+    span {
+      color: $color-warning;
+      display: block;
+      @include font-size(14px);
+    }
+
+    p {
+      color: #4a4a4a;
+      @include font-size(13px);
+    }
+  }
+
+  //footer-bottom 
+  .bottom {
+    padding: $space15 0 $space10;
+    border-top: $common-border;
+    color: #4a4a4a;
+
+    .copyright {
+      float: $right;
+    }
+
+    .copyright p {
+      @include font-size(13px);
+    }
+
+    .delivery {
+      float: $left;
+      font-size: 12px;
+      padding: $space0;
+      text-transform: capitalize
+    }
+  }
+
+  .rating {
+
+    .left,
+    .right,
+    span {
+      display: inline-block;
+      color: #4a4a4a;
+      @include font-size(13px);
+    }
+
+    a {
+      color: $color-warning;
+    }
+  }
+
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+//newsletter-section
+.newsletter-main {
+  padding: $space15 0;
+  border-bottom: $common-border;
+  @include display-flex;
+  @include justify-content(space-between);
+
+  .newsletter {
+    position: relative;
+    width: 35%;
+  }
+
+  span {
+    @include font-size(14px);
+    color: #4a4a4a;
+    padding-bottom: $space5;
+    display: block
+  }
+
+  .form-control {
+    border: $common-border;
+    @include size(100%, 40px);
+    padding: $space0 $space10;
+    background: $bg-white;
+    @include font-size(14px);
+
+    @include placeholder {
+      color: #bebebe;
+    }
+
+    ;
+  }
+
+  .btn-primary {
+    @include size(80px, 38px);
+    text-align: center;
+    line-height: 38px;
+    @include font-size(14px);
+    cursor: pointer;
+    background: $bg-orange;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .app-mobile {
+    text-align: right;
+    padding-top: $space25;
+    width: 55%;
+
+    .label {
+      display: inline-block;
+      vertical-align: middle;
+      @include font-size(18px);
+      font-family: $robotobold;
+      padding: 0 $space10 0 0;
+      text-transform: uppercase;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: $space5+3;
+      //i{ display:block; margin:auto; @include size(142px,40px);}
+    }
+  }
+
+  .alert-warning {
+    color: $color-red;
+
+    &.attention {
+      background: none;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .email-box {
+    position: relative
+  }
+
+  .warning {
+    color: $color-warning;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .success {
+    color: $color-sussess;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+}

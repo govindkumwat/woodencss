@@ -1,0 +1,13 @@
+@media #{$screen-desktop}{
+    
+    //Track Order
+.trackorder{
+    .my-account{
+        article{width: 44%;padding:35px 30px;}
+        .form-group{ width:auto; 
+            .btn{padding-right: $space25;}
+        }
+    }
+}
+
+}

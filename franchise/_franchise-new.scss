@@ -1,0 +1,146 @@
+//Banner live
+.franchise{ max-width:1440px; margin:0 auto; 
+            
+        figure{ position:relative; 
+          img {position:absolute;  top:0; left:0;  bottom:0; right:0; margin: auto;}
+           &:before {content: '';  display: block;}
+       }
+       
+     p{@include font-size(15px); font-family:$robotolight; color:#4b4a4a;}
+    
+     .page-head{@include font-size(30px); text-align:center; font-family:$robotobold; color:#4b4a4a;
+        p{ padding-top:$space10;}
+    }
+    
+    .btn{@include font-size(15px); color:$color-white; background:$bg-warning; text-transform:uppercase; @include border-radius(4px); padding:$space10 - 1  $space30+5; display:inline-block;}
+    
+    .content-top{ text-align:center;@include font-size(22px); color:$color-black;  font-family:$robotomedium; border-bottom:$common-border; padding:$space15 0;        
+                h1{display:inline-block; font-weight:normal;  @include font-size(22px); margin:0;}
+               .title-small{ font-family:$robotoregular; line-height:$space20+4; font-size:14px;  height:20px; overflow:hidden; max-width:960px; margin:0  auto;}
+              .more{ cursor:pointer; display: block;  @include font-size(14px);
+                &:after{ content: 'Read More'; color  : $color-warning;}
+               }
+            &.active  {
+             .title-small{ height: auto;}
+    .more{
+      &:after {  content: "Less"; } 
+    }
+  }
+        
+    }
+            //banner
+  .franchise-banner{  position:relative;
+                .container{ position:absolute; left:0; top:0; right:0; bottom:0; display:flex; align-items:center; justify-content:space-between;}
+                 article{ width:40%;} 
+                 h1{@include font-size(47px); color:#4b4a4a; line-height:60px;}
+                .heading{@include font-size(40px); line-height: normal;}
+                .sub-head{ @include font-size(16px); padding: $space5 $space0;
+                     &:before{ @include size(175px,3px); background:$bg-black; content: ''; display:block; margin:$space15 0;}
+                 }   
+                 
+                 figure{
+                     &:before{ padding-top:39%;}
+                 }
+            }   
+     
+            
+            //form
+   .banner-form{ background:$bg-white;  width:35%; padding:$space30 0 0;
+           .title{@include font-size(18px); color:$color-black; text-align:center;}
+           .lead{@include font-size(13px); text-align:center; padding-top:$space5 - 3;}
+           form{ padding:$space25 $space30 $space30+5;}
+          .field{ margin-bottom:$space20 - 2;}
+         .btn-submit{ background:$bg-warning; color:$color-white; @include font-size(15px);  @include border-radius(4px); cursor:pointer; padding:$space10+2 0; width:180px; text-transform:uppercase; float:right;}
+         .error-block{ @include font-size(12px); color:$color-red!important; font-family:$robotoregular;}     
+   } 
+
+ 
+ .success{ text-align:center; padding:$space40+18 $space20; display:none;
+         .heading{  @include font-size(20px); color:$color-black;}
+         img{ margin:0 auto; display:block;}
+         p{@include font-size(14px); padding:$space5 0;}
+         a{ border:2px solid $color-warning; @include font-size(14px); color:$color-warning; display:block; padding:$space10 - 2 0; margin:$space15 auto; width:160px;}
+   }
+ 
+ //inform
+  .inform{  border-bottom:1px solid #e5e5e5; padding:$space10 0; text-align:center;
+           span{@include font-size(24px); font-family:$robotolight;display:inline-block; padding-right:$space15; }
+           strong{ font-family:$robotomedium; display:inline-block; font-weight:normal;}
+           a{display:inline-block; color: #000; @include font-size(18px); font-family:$robotolight;  padding:$space10  $space15;  border-left:1px solid #e5e5e5; }
+           i{@include font-size(25px); color:$color-warning; vertical-align:middle; margin:0 $space10;}
+           
+    }
+    
+    
+     
+  .why-franchise{ padding:$space40+10 0; text-align:center; border-bottom:$common-border;
+       figure{margin:$space30+5 auto;
+        &:before{ padding-top:22%;}
+       }
+  }
+    
+   
+    //process
+   .process{ padding:$space30+5 0 $space30+40;}    
+   .process-step{
+                display:flex;  text-align:center; padding-top:$space40;
+                figure{ margin-bottom:$space20;
+                 &:before { padding-top:50%;}
+                }
+                li{ 
+                    width:25%; border-right:$common-border; padding:0 $space15;
+                     &:last-child{ border-right:none;}
+                }
+               span{
+                   @include font-size(18px); color:#4b4a4a;
+                   &:after{ display:block; background:#eddcc2; @include size(81px,3px); content:""; margin:$space10 auto;}
+               }
+                 p{@include font-size(14px); color:$color-black; font-family:$robotolight;}   
+    }
+    
+  
+     //process
+    .benefits{ background:#faf8f5; padding:$space40+35 0; text-align:center;} 
+    .inner{ display:flex; justify-content:space-between; padding:$space40 0; align-items:center; 
+           .content{ width:45%; text-align:left;
+              span{@include font-size(20px); color:#4b4a4a; padding-bottom:$space5; display:block;}
+              p{ padding-bottom:$space10;}
+            }
+            figure{ width:52%;
+             &:before { padding-top:70%;}  
+            }
+     }
+     
+     .full-width{
+         &:before{ padding-top:122%;} 
+     }
+
+          //store-city
+     .store-city{ display:flex; justify-content:space-between;  padding:$space40+20 0 $space30; 
+           span{ display:block; @include font-size(25px); color:#4b4a4a; padding-bottom:$space25;}
+           strong{display:block; @include font-size(50px); color:#4b4a4a; font-weight:normal;  padding-bottom:$space40; font-family:$robotobold; }
+            p{ padding-top:$space15; line-height:$space30+2;}
+           article{ width:40%; padding-top:$space30+20;}
+           figure{ width:52%;
+            &:before { padding-top:70%;}
+           }
+     }
+   
+     
+    
+
+
+//media
+     .media{ border-top:$common-border; border-bottom:$common-border; padding:$space25 0;
+        figure{ padding:$space30 0;
+         &:before{ padding-top:34%;}
+        }
+     }
+
+
+    
+}
+
+
+
+

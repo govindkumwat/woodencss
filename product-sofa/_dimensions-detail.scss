@@ -1,0 +1,122 @@
+.dimensions-details{ max-width: 80%; margin: 0 auto; display: flex; justify-content: space-between; @include font-size(15px); font-family: $robotolight; font-weight: normal; 
+    article{  display: inline-block; vertical-align: top; width: 45%; line-height: 35px;}
+    .heading{ font-size: 20px; margin-bottom: $space10; font-weight: normal;font-family: $robotoregular; }
+    label{ display: inline-block; width:49%;vertical-align:top; font-family: $robotoregular; font-weight: normal; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+     p{display: inline-block; width:49%; vertical-align:top;} 
+}
+
+.dimensions-slider{ margin: $space30+20 0 $space30+40; 
+
+   .slick-dots{ margin:0; text-align:center; position:absolute; left:0; right:0; bottom:-40px;
+            li{  width:auto; padding:$space0; border:none;
+                button{
+                  &:before{ @include border-radius(100%); @include size(14px); background:#f5f5f5;}  
+               }
+               &.slick-active{border:none;
+                     button{
+                      &:before{ background:$bg-warning;}  
+                  }
+               }
+       } 
+   }
+
+    img{ margin: 0 auto;}
+        
+    }
+.dimensions-slider{  
+         figure{ 
+          &:before{ padding-top:47%;}  
+       }   
+ }
+
+ 
+ 
+ //tabs
+ 
+ .dimensions-slider.hide + .dimensions-overview{ margin-top:$space40;}
+ 
+.dimensions-overview{border-bottom: 1px solid #e5e5e5; padding-bottom: $space30+20; margin-bottom: $space30;
+   .accordion_example1{ 
+                .accordion_in{ border-bottom:$common-border;
+                 &:last-child{ border:none;}
+                
+                } 
+               .acc_head{ @include font-size(14px); cursor:pointer;  position:relative; padding:$space10  $space10 $space10 $space30; display:block;}
+               .acc_icon_expand{ @include size(20px); @include border-radius(3px);  background:$bg-white; border:$common-border;position:absolute; left:0px; top:12px;
+                            &:before{content: '+'; color:#000; position:absolute; left:0px;  right:-1px; text-align: center; font-size:15px; top:-3px;}       
+                } 
+               .acc_active{
+                   .acc_icon_expand{ border-color:$bg-warning;
+                     &:before{ content:'-'; color:$color-warning; }
+                   }
+              }
+             
+              .acc_content{@include font-size(13px);   color:$color-black;padding-left:$space30+10; padding-bottom:$space10; line-height:22px; padding-right:0;}
+                ul{ list-style:disc;
+                li{ padding:$space5 0 !important;}
+              }
+                      
+             }
+}
+
+
+ ul.tabs{ margin: 0px; padding: 0px; list-style: none;  border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5}
+ ul.tabs li{background: none;color: #222;display:inline-block!important;padding:10px;cursor: pointer; @include font-size (15px); position:relative; margin-right:$space30; }
+ ul.tabs li:after{ content:'';  background:#e5e5e5; @include size(1px,25px); position:absolute; right:-12px; top:10px;}
+ ul.tabs li:last-child{ &:after{ display:none;} }
+ ul.tabs li.hide{ display:none!important;}
+ ul.tabs li.current{ border-bottom: 2px solid #e57200;}
+.tab-content{display: none;background: #fff;padding: 15px;}
+.tab-content.hide{ display:none!important;}
+.tab-content span, h3, h2{ @include font-size(16px); color:#3b3b3b;  display:block;  font-weight:normal; font-family:$robotomedium; font-weight: normal; margin:$space5 0;}
+.tab-content strong{ display:block;}
+//.tab-content span:before{display:inline-block; content:''; @include size(8px); @include border-radius(100%); background:$bg-black; margin-right:$space10; }
+.tab-content li{ padding-bottom:$space10;}
+.tab-content p{  @include font-size(14px); color:#3b3b3b; font-family:$robotoregular;}
+.tab-content p a{ color:$color-warning;}
+.tab-content.current{display: inherit; } 
+.tab-content .care{ list-style:disc; padding-left:$space10+2;}
+
+         
+
+//meet the makers 
+.meet-the-makers{
+     figure{ 
+        &:before{ padding-top:47%;}  
+        }  
+}
+
+
+
+    #look_video{
+         position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+               iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}  
+        a{ cursor: pointer; 
+           
+           &:after{
+        display:block;position:absolute;content:'';background-image:url(../images/product-sofa/youtube-play.svg);background-size:contain;background-repeat:no-repeat;
+        background-position:center center;width:80px;height:80px;top:50%;left:50%;margin-left:-40px;margin-top:-40px;
+        opacity:.5;-webkit-transition:opacity .3s ease;-moz-transition:opacity .3s ease;transition:opacity .3s ease;
+        
+        }
+        
+        &:hover{
+            &:after{ opacity: 1;}
+        }
+    }
+    }
+
+
+
+     @media #{$screen-tablet}{
+         .dimensions-details{ max-width:100%;}
+         .meet-the-makers{
+               .slick-prev{ left:-18px; z-index:1;}
+               .slick-next{ right:-18px; z-index:1;}
+         }
+
+
+
+     }

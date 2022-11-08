@@ -1,0 +1,71 @@
+// Refer a friend
+.referafriend{  padding-bottom:$space40+40;
+.container-1440{ width:1440px; margin:0 auto;}  
+.form_sec{ display:flex; align-items:top; justify-content:space-between; 
+        .title{font-family: $robotolight; font-size:55px;  margin-bottom:$space30+5;}
+        form{ width:55%;  position:relative; 
+          &:after{ position:absolute; right:-60px; top:0px; content:'';  @include size(1px,300px);  @include refer-icon-sprite(divider-big); }
+        } 
+       .form-control{@include size(100%,48px); border:1px solid #dde2e6; padding:$space0 $space10; margin-bottom:$space10+5;  @include font-size(14px); color:$color-grey; background-color:$bg-white;; @include placeholder{ color:#c1c1c1;};}
+       textarea{ height:110px!important;  padding-top:$space15!important; }
+      .btn{color:$color-white; display:block; width:100%; background:$color-warning;@include border-radius(25px); @include font-size(18px); font-family:$robotomedium; text-transform:uppercase; cursor:pointer; padding:$space15 0;}
+      
+}
+
+ .container{ margin-top:-160px; background:$bg-white; z-index:9; position:relative; @include border-radius(10px); padding:$space40 $space40+40+40; } 
+ .title{@include font-size(30px); padding-bottom:$space25;}
+ 
+.social_links{width:30%; padding-top:$space40+10;
+       a{@include font-size(15px); color:$color-white; @include border-radius(3px); padding:$space10+2 $space15; display:block;  @include all-refer-icon-sprites;}
+        i{display:inline-block; @include size(33px,21px); margin-right:$space20; vertical-align:sub; position:relative;
+          &:after{ content:"";   position:absolute; left:$space40; top:-1px;  @include refer-icon-sprite(divider);  @include size(1px,25px);}
+        }
+       li{ margin-top:$space10+2;}
+      .facebook{background:#4069b1;}
+      .gmail{background:#e06548;}
+ }
+ 
+
+
+}
+
+
+
+//responsive start
+//desktop
+@media #{$screen-desktop-landscape}{
+   .referafriend{
+    .container-1440{ width:1330px; } 
+   }
+
+
+}
+
+//tablet landscape
+@media #{$screen-desktop}{
+   .referafriend{
+     .container-1440{ width:auto; } 
+     .title{ font-size:50px; }
+   }
+
+}
+
+// tablet
+@media #{$screen-tablet}{
+    .referafriend {
+         .container{ padding:$space40; margin-top:-100px;}
+            .title{@include font-size(45px);}
+            .btn{@include font-size(19px); padding:$space10+2 0;}
+            
+     .social_links{
+         a{ 
+             @include font-size(13px);  
+             padding:$space10 $space5;
+         } 
+         i{ margin-right:$space10;
+          &:after{ left:35px;}
+         } 
+     }
+
+}
+}

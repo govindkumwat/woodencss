@@ -1,0 +1,43 @@
+ .other-categories{
+        background:$light-gray;
+        padding: $space20*2 $space20;
+        .other-categories-list{align-items: flex-start;}
+        .category-wrpr{ 
+            background:$bg-white;
+            padding:$space15 $space10+2;
+            border-radius:2px;
+            p{
+                color:$color-dark;
+                font-size:18px;
+                line-height: 20px;
+                text-transform: capitalize;
+                font-family:$pangramregular;
+                padding-bottom:$space15;
+                span{
+                    color: $success-color;
+                    text-transform: uppercase;
+                }
+                img{vertical-align:sub;margin-right: 5px;width: 38px;} 
+            }
+            .orange-text{color:$color-orange;}
+            
+        }
+        .category-list {
+            border-bottom:$common-border;
+            li{
+               margin:0 0 $space10+5;
+                &:hover{
+                    span{color:$color-orange;transition:0.3s all ease;}
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $secondary-color;
+                    display: block;
+                    padding: 5px 0;
+                    font-family:$pangramregular;
+                    transition:0.3s all ease;
+                }
+            }
+        }
+    }

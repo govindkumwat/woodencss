@@ -1,0 +1,22 @@
+.menu{
+    ul{
+        li{ 
+            a{
+                padding:$space5 $space5 $space15; margin: 0px;
+                &:first-child{padding-left: 4px;}
+            } 
+        } 
+    }
+      figure{ width:432px;
+       &.width-one{width:258px;}
+       &.width-two{ display:none;}
+    }
+    
+    .mattress {
+        article { width: 180px; padding: $space0 $space10; }
+        .last { width: 190px; }
+        .width-one { width: 400px;
+         img { @include size(178px, 238px); }
+        }
+    }
+}

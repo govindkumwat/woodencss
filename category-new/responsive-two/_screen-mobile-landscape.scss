@@ -1,0 +1,9 @@
+@media #{$screen-mobile-landscape}{
+    .category-two{
+        .box{ width:50%; border-right:$common-border; border-left:$common-border;  padding:$space10 $space5; margin:0; border-top:none;
+           @include every(2){ margin-left:$space0;  border-left:none; }
+        }
+
+    }
+    
+}

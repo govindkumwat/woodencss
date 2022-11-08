@@ -1,0 +1,65 @@
+.list{ border:$common-border;  margin-bottom:$space20; @include border-radius(4px); line-height:$space20+2; 
+     thead{ 
+         td{padding:$space5 $space10; background:#e3e3e3; @include font-size(15px); margin-bottom:$space5+3}
+     }
+    tbody{ 
+      td{@include font-size(14px); color:#000000; padding:$space5 $space10;  }
+    }
+    
+   tfoot{
+      td{@include font-size(14px); color:#000000; padding:$space5 $space10;}
+  }
+    
+     &.one{ 
+         tbody{
+             td{ display:block; padding-top:0; padding-bottom:0;}
+         } 
+     }
+     
+     &.two{ 
+         thead{ td{ width:50%;} }
+         tbody{ 
+             td{ border-right:$common-border;&:last-child{ border-right:none;}
+               label, span{ display:block;}
+             }
+         
+         }
+         
+     }
+      &.three{
+          td{border:$common-border; border-bottom:none; border-left:none; width:17%;
+              &:last-child{ border-right:none;}
+             } 
+      } 
+   
+      
+      &.four{
+          td{border:$common-border; border-bottom:none; border-left:none; width:33%;
+              &:last-child{ border-right:none;}
+             } 
+      } 
+  
+       &.five{
+          td{border:$common-border; border-bottom:none; border-left:none; width:33%;
+              &:last-child{ border-right:none;}
+             } 
+      } 
+  
+     
+  
+
+a{ color:$color-warning;}
+b{ font-weight:normal; font-family:$robotomedium;}
+.tooltip{@include size(16px); color:$color-white; float:none; @include border-radius(100%); background:#969696; text-align:center; line-height:$space10+4; padding:0; margin-left: 2px; margin-top:$space5+3; position: relative;  display:inline-block;cursor:pointer; font-size: 10px;
+                               
+            .inside{ display:none; background: #838282; border: 0; color: #fff; width: 200px; padding:10px; bottom:26px; right:-90px; font-size:12px; position:absolute; line-height:$space10+8;
+                                  &:before{ content:"\f0d7"; position:absolute; bottom:-10px; left:100px; color:#838282;  font-family:$fontawesome;  @include font-size(16px);} 
+                    }
+                                 &:hover{
+                                    .inside{ display:block;}
+                                }
+    }
+}
+
+.pagination{ text-align:center; @include font-size(13px); color:#999999;} 
+

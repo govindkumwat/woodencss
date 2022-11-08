@@ -1,0 +1,141 @@
+// Refer a friend
+  .referafriend{
+      
+        
+   figure{  position:relative;
+           img{position:absolute;  top:0; left:0; bottom:0;  right:0;   margin: auto; }
+           &:before{ content:''; display:block;}
+       }  
+      
+.container-1440{ max-width:1440px; margin:0 auto;}  
+
+.banner{   margin-bottom:$space30; position:relative;
+      figure{ width:50%; float:left; margin:0 $space5 - 6 ;    
+       &:before{ padding-top:57%;} 
+      }       
+   } 
+
+
+.btn{ background:$bg-white; padding:$space5+2 $space30; @include border-radius(4px); @include font-size(14px); font-family:$robotomedium; color:$color-warning; text-transform:uppercase;}
+.btn-refer{ background:$color-orange;color: $color-white!important;}    
+
+    .howitoptions{ display: flex;justify-content: space-between;   border-bottom:$common-border;
+                   article{ width: 48%; text-align: center; padding:$space40+20 0 0;  margin-bottom:$space40;
+                            border-right:$common-border;  
+                            &:last-child{ border-right:none;}
+                      } 
+                         .social-icon{                       
+                                ul{display:inline-block;}
+                                li{display:inline-block; @include all-refer-icon-sprites; margin:$space20 $space5+3; vertical-align:middle;
+                                  &:last-child{}
+                                }                       
+                               i{height:90px; width:65px; display: block;}
+                            }  
+
+                            span{ font-size:25px;  font-family:$robotolight; color:$color-dark-gray;}
+                             p{font-size:45px; font-family:$robotolight; padding:$space30 0;}    
+                              
+                          small {font-size:14px;  color:$color-black;}
+                          a{ color:$color-warning;}
+                          .refer_code{ display:none}
+                 
+    }
+
+
+    
+.howitworks {  position:relative; margin-top:$space40+5;  text-align: center; /* width:100%; display: flex;  margin-top:$space40+5; align-items:center; padding-top:375px; justify-content:space-around;  padding-bottom:80px; background-position:top center; background-repeat:no-repeat; background-size:contain;*/
+         article{ width:30%;}   
+        .slider{width:30%;
+            p{padding-bottom:0;}
+        }  
+        .inner{ position:absolute; left:0;  bottom:75px; right:0; display:flex; justify-content:space-between;}
+        
+          span{ font-size:30px; color:#4A4949; font-family:$robotomedium; display:block; }
+          p{font-size:14px; padding:$space15 0; color:#4A4949; } 
+       
+
+      .slick-dots{ margin:auto; text-align:center; left:0; right:0; position:absolute;
+               li{ 
+                   button{
+                       &:before{
+                           @include border-radius(100%);
+                           background:#dbdbdb; 
+                           @include size(9px);
+                       }
+                   }
+                   &.slick-active{
+                       button{
+                           &:before{ background:#f37920;}
+                       }
+                   }
+               }
+             }
+             
+     figure{    
+         &:before{ padding-top:50%;} 
+     } 
+
+       
+
+}
+
+
+.tnc{
+    article {margin:$space30+20 auto 0; border-top:$common-border;  padding:$space20 0;
+             .title {font-size:20px; font-family:$robotoregular; margin:$space5+2 0; color:#4A4949; padding:0;} 
+              p{@include font-size(14px); color:#4A4949; padding-bottom:$space15;}
+    }  
+ 
+     span {font-size:30px; margin:$space15 0; display:block; color:#4A4949;}
+     ul{ list-style:disc; margin-left:$space30;
+         li {font-size:13px; color:#4A4949;  line-height:$space30;}
+     }
+      ul + p{  padding-top:$space10;}
+
+} 
+
+
+  }
+//responsive start
+//desktop
+@media #{$screen-desktop-landscape}{
+    .referafriend{
+       // .container-1440{ width:1330px; } 
+    }
+
+
+}
+
+//tablet landscape
+@media #{$screen-desktop}{
+    .referafriend{
+        //.container-1440{ width:auto; } 
+        .howitworks{
+              img{ max-width:60%;}
+             article{ width:35%;}
+             .slider{ width:35%;}
+             .inner{ bottom:40px;}
+        }
+    
+    }
+
+}
+
+// tablet
+@media #{$screen-tablet}{
+    .referafriend {        
+       .howitoptions{
+             article { padding-top:$space30; margin-bottom:$space30;}
+             p{@include font-size(45px);}
+            
+      }     
+        .howitworks{ 
+                 .inner{ bottom:$space0;}
+                 p{ padding:$space5 0;}
+                span{ @include font-size(27px);}
+          }
+
+        
+    }
+
+}

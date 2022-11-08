@@ -1,0 +1,27 @@
+.banner-landing{height:403px; margin-top:$space30;background: #f7f7f7;} 
+.banner-top{ display:none;  margin-top: 30px;
+    .slick-prev, .slick-next{ z-index:1; top:40%; transform:translate(0px);}
+    .slick-prev{left:0;}
+    .slick-next{right:0; transform: rotate(-180deg); right:0; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg);
+                &:before{ content:'\f053';}
+          }  
+    .slick-prev, .slick-next{background:rgba(243,243,243,0.8); opacity:1; @include size(43px,79px); @include border-radius(0 3px 3px 0);@include box-shadow(5px 0 5px rgba(0,0,0,.2)); text-align: center;
+                     &:hover{background: #f3f3f3;}
+       } 
+         figure{ &:before{padding-top:33%;}  }
+  }
+  
+  
+    
+  @media #{$screen-desktop}{
+     .banner-landing{ height:340px;}  
+  }
+  
+  @media #{$screen-tablet}{
+     .banner-landing{ height:255px;}
+     .banner-top{
+     .slick-prev, .slick-next{@include size(33px,65px);  z-index:1;}
+     .slick-next{right:0; }
+     .slick-prev{left:0}
+   }  
+  }

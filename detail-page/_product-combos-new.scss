@@ -1,0 +1,325 @@
+.boughtTogether {
+	padding: 40px 0; 
+	border-bottom: $common-border;
+	position:relative;
+	.grid-list {
+		border-bottom: $common-border;
+		display: block;
+		.grid-menus {
+			padding-bottom: 5px;
+			margin-right: 22px;
+			font-size: 15px;
+			&.active {
+				font-family: $robotomedium;
+			}
+		}
+	}
+	.special-text {
+		color: #28782b;
+		font-size: 12px;
+		margin: 8px auto 0;
+	}
+	.bundle-save {
+		border: 1px solid #4CAF4F;
+		color: #4CAF4F;
+		padding: 5px 5px;
+		border-radius: 100px;
+		margin: 10px auto;
+		max-width: 200px;  
+		font-size: 13px;
+		svg{vertical-align:middle;}
+	}
+	.combosets-slider {
+		margin-top: 20px;
+		width:75%;
+		.combo-product {
+			margin-right: 10px;
+			display: inline-block;
+			position:relative;
+			a {
+				display: block; 
+				&:hover{
+					figure{
+						img{
+							transform: scale(1.04);
+						}
+					}
+				}
+			}
+			figure {
+				background: $light-gray;
+				border-radius: 3px;
+				position: relative;
+				overflow: hidden;
+				&:before {
+					content: '';
+					padding-top: 100%;
+					display: block;
+				}
+				img {
+					mix-blend-mode: darken;
+					width: auto;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					margin:auto; 
+					transform: scale(1);
+					transition: 0.3s all ease-in-out;
+				}
+			}
+			.dropdown-qty {
+				color: $secondary-600;
+			  	margin: 10px auto 0;
+				  select{
+					color:  $secondary-600;
+					border-radius: 3px;
+					padding:1px 7px 1px 4px;
+					font-size:13px;
+					cursor:pointer;
+				  }
+		  }
+		}
+		.slick-next {
+			right: -10px;
+		}
+		.slick-next,.slick-prev{top:38%;}
+	}
+	.check-field {
+		z-index: 1;
+		[type="checkbox"] {
+			opacity: 0;
+			position: absolute;
+			right: 25px;
+			top: 10px;
+			@include size(28px);
+			z-index: 1;
+			cursor: pointer;
+			&:checked {
+				+.checkbox {
+					background: $primary-color;
+					border: 0;
+					&:before {
+						content: '';
+						display: block;
+						width: 5px;
+    					height: 12px;
+						right: 10px;
+						border: solid $color-white;
+						border-width: 0 3px 3px 0;
+						transform: rotate(45deg);
+						position: absolute;
+						top: 5px;
+					}
+				}
+			}
+		}
+		.checkbox {
+			right:25px;
+			@include size(28px);
+			left: unset;
+			top: 10px;
+			border: 1px solid $secondary-400;
+			border-radius: 3px;
+			background:$bg-white;
+		}
+	}
+	
+	#combosets-slider{
+		min-height: 330px;
+	}
+	.BuyTogether {
+		position: absolute;
+		right: 0;
+		top: 35%;
+	}
+	.combo-note  {
+		color: $secondary-600;
+		display: block;
+		margin: 10px auto 0;
+		font-size: 13px;
+	b{
+		font-family: $robotomedium;
+		color: $primary-color;
+	}
+	}
+}
+.combo-add-list{display:none;}
+.price {
+	@include font-size(14px);
+	display: inline-block;
+	font-family: $robotomedium;
+	color: $color-dark;
+	.offprice {
+		font-size: 13px;
+		color: $secondary-600;
+		margin-left: 4px;
+		font-family: $robotoregular;
+	}
+}
+
+.name {
+	font-size: 14px;
+	line-height: 20px;
+	color: $secondary-color;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 90%;
+	padding: $space5+3 0 3px;
+	letter-spacing: 0.01em;
+	font-family: $robotoregular;
+}
+
+.discount-off {
+	color: $success-color;
+	font-size: 14px;
+	margin-left: 6px;
+	font-family: $robotomedium;
+}
+
+.checkbox {
+	@include size(22px);
+	top: 0;
+	left: 0;
+	position: absolute;
+	border: 1px solid $secondary-500;
+	cursor: pointer;
+	text-align: center;
+}
+
+.BuyTogether {
+	justify-content: flex-end;
+	margin: 0;
+	.total-combo{text-align: center;}
+	.newOffer{font-size: 20px;
+		margin-bottom: 4px;
+		b{color: $secondary-color;font-family: $robotomedium;}
+	}
+	.offerprice {
+		font-size: 17px;
+		font-family: $robotomedium;
+		color: $secondary-color;
+		margin-bottom: 15px;
+		.offprice {
+			color: $secondary-600;
+			font-size: 14px;
+			font-family: $robotoregular;
+			margin-left: 3px;
+		}
+		&.combo-remove{
+			font-size: 22px;
+			.offprice{font-size: 16px;}
+		}
+	}
+	.EMIFrom {
+		margin-top: 5px;cursor: pointer;
+		span {
+			margin-left: 5px;
+			display: inline-block;
+		}
+		small {
+			color: $primary-color;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	}
+	.buy-now {
+		padding:10px 20px;
+		display: inline-block;
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	.discount-off {
+		margin: 8px 0 0;
+	}
+}
+.baughtTogether-product{
+	background: $bg-white;
+	position: fixed;
+	right: -110%;
+	bottom: 0;
+	top:0;  
+	z-index: 9999;
+	width: 38%;
+    height: 100%;
+    overflow-y: hidden;
+	transition: 0.3s all ease-in-out;
+	.head-title{
+		padding:$space10+2 $space15;
+		text-align: center;
+		font-size: 17px;line-height: 22px;letter-spacing: 0.02em;color: $secondary-color;
+		font-family: $robotomedium;
+		position: relative;
+		box-shadow: 0 2px 3px rgba(0, 0 ,0,0.10);
+		.close{
+			position: absolute;left: 10px;top: 10px;
+		}
+	}
+	.close {
+		display: inline-block;
+		cursor: pointer;
+		transition: 0.3s all ease-in-out;
+		&:hover{ 
+			transform: rotate(90deg);
+			svg{
+				path{fill: $primary-color;}
+			}
+		}
+	}
+	.inner-detail-combo{
+		.mainDetail{
+			width: 100%;
+    		margin-top: 20px;
+			.overview {
+				.detail-prolist{
+					padding-bottom: 0;
+    				border-bottom: 0;
+				}
+			}
+		}
+		.productFlex {
+			display: block;
+			padding: 15px 0 0;
+			border-bottom: none;
+			margin-bottom: 0px;
+			margin: 15px 0 0;
+			border-top: 1px solid #e5e5e5;
+		}
+		.product-main{width: 100%;}
+		.share-link,.buyingguide{display: none;}
+		.productSlider {
+			figure{
+				&:before{padding-top: 58%;}
+			}
+			iframe{
+				height: 275px !important;
+			}
+			.slick-dots { 
+				li{ 
+					&:nth-child{margin-top: 10px;}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1280px){
+.boughtTogether{
+	padding: $space30 0;
+	.combosets-slider{
+		.slick-next{right: 28px;}
+		.slick-prev{left:0;z-index: 1;}
+		.slick-next:before, .slick-prev:before{font-size: 16px;}
+		.slick-arrow{
+			background: #ffffffde;
+			@include size(30px,30px);
+		}
+	}
+}
+}
+@media screen and (max-width:1024px){
+	.boughtTogether #combosets-slider{min-height: 270px;}
+	.boughtTogether .combosets-slider{width:100%;}
+	.boughtTogether .BuyTogether{position: unset;display: block;}
+}

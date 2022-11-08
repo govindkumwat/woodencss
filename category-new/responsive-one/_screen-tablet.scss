@@ -1,0 +1,19 @@
+@media #{$screen-tablet}{
+    .category-sofa{
+        .lead{ display:none;}
+        .product-image{ width:500px;}
+       .product-info{ width:220px;}
+        .btn-view{ display:none;}
+        .product-name{@include font-size(15px); padding:$space5 0 $space10;}
+        .extra-offer{ border-bottom:none; padding:$space10 0;}
+       .extra-off{ width:80%; padding:$space5 0; margin:$space15 auto 0;}
+       .more-product{ margin-top:$space5+2;border-top:none; padding-top:$space10;
+           .product-img{ width:107px;}
+       }
+        .offer-price{@include font-size(14px);
+          b{@include font-size(16px);}
+        }
+        .cate-available img{ width:33px;}
+    }
+
+} 

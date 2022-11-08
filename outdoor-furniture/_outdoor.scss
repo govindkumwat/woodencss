@@ -1,0 +1,26 @@
+.outdoor-furniture{
+    .container-1220{ max-width:1220px; margin:0 auto;}
+    figure{  position:relative;  background:#f7f7f8;
+                   img{position:absolute;  mix-blend-mode:darken; top:0; left:0; bottom:0;  right:0;   margin: auto}
+                  &:before{ content:''; display:block;}
+        }
+    .outdoor-categorie{ display: none; @include all-outdoor-icons-sprites;}
+    .title-new{ text-align:center; padding:$space0; margin:$space25 0; }
+    .heading{font-size: $font-size-25; font-family:$font-family-medium; margin:$space5 0 ; font-weight:$font-weight-regular;}
+    .lead{@include font-size(13px); color:#080808; font-family:$robotolight;}
+    
+
+  .outdoor-product{ display:flex; flex-wrap:wrap;  margin-top:$space20;
+       a{ color:#252525; text-align:center; width:353px; margin-bottom:$space40; margin-right:$space15+4; 
+        span{@include font-size(15px); font-family:$robotomedium; display:block;  margin-top:$space5; text-transform:uppercase;}
+        small{@include font-size(13px);font-family:$robotolight; display:inline-block; color:$color-warning; border:1px solid $color-warning; margin-top:$space5+3; padding:$space0+2 $space15;}
+        @include every(3){ margin-right:0;}
+      }
+      figure{ &:before{padding-top:95%;}  } 
+   }
+   
+ 
+  
+}
+ 
+ 

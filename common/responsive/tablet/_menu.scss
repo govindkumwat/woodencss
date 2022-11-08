@@ -1,0 +1,15 @@
+.menu{
+    ul{
+        li{
+            a{ padding:$space5 $space5 - 1  $space10; @include font-size(12px);}
+        }
+    } 
+
+   figure{ display:none;
+     &.width-three{ width:470px; display:block;}
+   }
+   article{ width:145px; padding:0 $space10 $space20;
+      + article{; padding:0 $space10 $space20;}
+   }
+   // i{ margin-right:$space5; @include size(20px,16px);} 
+}  

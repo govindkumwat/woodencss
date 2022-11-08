@@ -1,0 +1,79 @@
+.tobanner{ height:270px; background:#fe924c url(../images/trackorder.png) no-repeat; color:$color-white;
+           padding:$space30*2+20 $space0 $space0 $space30+5; box-sizing: border-box; @include background-position(right 45,top 6);
+           .heading{ font-size: $font-size-20*2;line-height:45px; font-family: $font-family-medium;
+                    @include text-shadow(1px 1px 2px rgba(0,0,0,.2)); display:inline-block;margin: 0 0 12px;}
+          p{ font-size: $font-size-15+2;line-height:20px; font-family: $font-family-light; display:block;}
+}
+.trackorder{
+    .my-account{ margin-top: $space30; margin-bottom:$space40+40;
+                 p{font-size: $font-size-10+5;line-height:20px; font-family: $font-family-regular; color:$color-dark; 
+                   text-align:center;padding-bottom: $space20;}
+        article{ float: left; width: 48%; margin: $space0; background:#fbfbfb; border:1px solid #ebebeb; 
+                 padding: $space30+5 $space20*2+6;} 
+        .form-group{ margin-bottom: $space10+6;
+            .form-control{width: 100%; display: initial; background:#fff; border:1px solid  #ebebeb; padding:$space10;border-radius: 2px;}
+            .btn{  cursor:pointer;  
+                  background:$bg-warning url(../images/track-order-icon.png) no-repeat $space5*2+2 $space5+3; 
+                  padding: $space10 $space20 $space10 $space20*2; 
+                  font-size: $font-size-20 - 4; 
+                  font-family: $font-family-medium;
+                  background-size:22px;
+                  border-radius:2px;
+                  margin: $space5+5 $space0 $space0;
+                  &:hover{
+                      background-color: #ff8409;
+                      transition: 0.3s all ease;
+                  }
+            }
+        }
+        .bottom{
+            p{float: right; font-size: $font-size-15 - 1; padding: $space15 - 1 $space0;
+              small{ font-size: $font-size-10+4; font-family: $font-family-medium; padding: $space0 $space15;} 
+              a{ @include transitionall;color:$color-warning;}
+            }
+        }
+    }
+    #error_msg{ color:$color-error-msg; padding: $space0; text-align: left;font-size: 12px;}
+}
+
+
+
+
+.orderde {
+    .steps{ 
+        li {
+            .icon{background:url("#{$images-path}/cartsprite.png") no-repeat center 0; @include size(62px,55px);     margin: 0px auto 9px; display:block;}
+           .icon-orderplace{background-position:-6px -6px;}
+             .icon-rawsta{background-position:-75px -6px;}
+             .icon-quacheck{background-position:-145px -6px;}
+             .icon-readis{background-position:-205px -6px;}
+             .icon-transit{background-position:-269px -6px;}
+             .icon-delivered{background-position:-340px -6px;}
+            i{ }
+            &.active i:after{ position: absolute; top: 0; padding: $space0+4 $space0 $space0 $space0+2;
+            }
+            &:before {top: 98px; height: 12px;}
+            &.active i{ @include size(24px); margin-top:2px;
+                &:hover .inside{ display: block;}
+            }
+        
+        }
+        .tooltip {width: 20px; height: 20px; text-align: center;
+       .inside{width: 301px; top: $space30; display: none; position: absolute;
+    }
+  
+    
+}
+    }
+}
+.deladdress {
+    address{display: none;}
+     p { display: none;}
+}
+
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";
+@import "responsive/_screen-mobile.scss";
+@import "responsive/_screen-mobile-portart.scss";
+@import "responsive/_screen-mobile-landscape.scss";

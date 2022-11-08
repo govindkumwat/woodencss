@@ -1,0 +1,157 @@
+.swpmodal-container_i .combos-popup{ display:block;}
+.combos-popup{ display:none; background:$bg-white; height:700px; width:1140px; margin:0 auto; overflow:auto; padding:0 $space20 $space20; position:relative;
+  .heading{ @include font-size(18px); border-bottom:$common-border; padding-bottom:$space15;}
+  .porduct-main{float:$left; width:62%; position:relative;}
+  .product-price{float:$right; width:35%;  padding-top:$space10+5;}
+
+        .price-discount{background:#fdd922; font-family:$robotoregular; @include border-radius(3px); vertical-align:bottom; line-height:24px; display:inline-block; padding:$space0 $space5; margin-left:$space10; position:relative; @include font-size(13px);
+       &:before{content: '\f0d9'; position: absolute; color: #fdd922; font-family: FontAwesome; left: -4px; top:0px;}
+   }
+   
+   .slick-dots{ margin-top:$space15;
+       li{  border:$common-border; @include border-radius(4px); width:87px; padding:$space5+3 $space10; margin-right:$space5+3;
+           a{ display:block;
+               img{ max-width:100%;}
+           }
+           
+           &.slick-active{ border-color:#e57200;}
+       }
+   }
+   
+           .slick-next{ right:0; left:initial; z-index:2;}
+           .slick-prev{ left:0;z-index:2;}
+   
+//product-price
+
+
+                .pricefes{ border-bottom:$common-border; padding-bottom:$space10+2;
+                   article{ padding-top:$space20;}
+               }
+              .retprice{@include font-size(14px);color:#8f8f8f;}
+              .ourprice{@include font-size(14px);color:#717070; line-height:normal;  padding:$space5 - 1 $space0;}              
+              .offerprice{color:#e57200;  @include font-size(16px); font-family:$robotomedium;}          
+               .three-price{ position:relative; @include size(212px,103px); 
+                   span{position:absolute; bottom:0px; right:$space0; left:0; text-align:center; @include font-size(14px); color:$color-white;
+                   strong{ @include font-size(13px);}
+                   }
+               }  
+        .delivery {@include font-size(13px); color:$color-grey; line-height:$space15+1; border-left:$common-border; padding-left:$space15; padding-top:$space10+8; position:relative;
+               &:before{ background:url("#{$images-path}/product-detail/truck.png") no-repeat ;@include size(25px); position:absolute; left:12px; top:0; content: ""; }
+        }
+        
+        
+        
+        
+        
+        
+            .helight{font-size:.75rem; padding-top:$space0; display:block;}
+  
+            .tab-finish{ padding:$space15 0; border-bottom:$common-border;
+                  .title{vertical-align:middle; width:105px; display:inline-block; @include font-size(14px);}
+                }
+                
+              .finish-links{display:inline-block; vertical-align:middle; margin-top:$space0;
+                    li{ float:left; margin-right:$space5+3; position:relative; cursor:pointer;
+                       label{ display:block; cursor:pointer; }
+                        [type="radio"]{ position:absolute; left:0; right:0; margin:0 auto; top:12px; opacity:0;}
+                        img{ @include size(35px);}
+                        &.active{
+                            &:before{position:absolute; left:$space5+4; top:$space5; content:'\f00c'; font-family:$fontawesome; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; z-index: 1; color:$color-black;}
+                        }
+                        span{ display:none;}
+                  }
+                }
+                
+                .size{ margin:$space15 0; }
+                
+                 .final_size{  display:inline-block; vertical-align:middle;
+                      li{ float:left; margin-right:$space5; position:relative;
+                        label{ display:block; cursor:pointer; text-align:center;}
+                        [type="radio"]{ position:absolute; left:0; right:0; margin:0 auto; top:12px; opacity:0; cursor: pointer;}
+                        span{ display:block;@include border-radius(3px); text-align:center; border:$common-border; @include font-size(14px); width: 92px; height: auto; padding:3px 5px; cursor: pointer;color: #393939;}
+                        &.active{
+                                 span{ border-color:#e57200;}
+                                  &:before{ display:none;}
+                         }
+                         
+                      }
+                   
+                     .tooltip{@include size(18px); color:$color-white; @include border-radius(100%); background:$bg-orange; text-align:center; line-height:$space10+4; padding:0; margin-left: 2px; margin-top:$space5+3; position: relative;  display:inline-block;cursor:pointer; font-size: 10px;
+                               &:hover .inside{
+                                   display:block;
+                               }
+                                .inside{ display:none; background: #838282; border: 0; color: #fff; width: 200px; padding:10px; bottom:26px; right:-90px; font-size:12px; position:absolute; line-height:$space10+8;
+                                  &:before{ content:"\f0d7"; position:absolute; bottom:-10px; left:100px; color:#838282;  font-family:$fontawesome;  @include font-size(16px);} 
+                                }
+                      }      
+                  }
+              
+      
+                  
+                  
+          .select-fabric{ margin-top:$space15; 
+               .helight{ display:inline-block; @include font-size(15px); color:$color-black; padding:0; width:100px;}
+                li{ display:inline-block; margin-right:$space5; margin-bottom:$space5 - 2;}
+                 a{ display:block;
+                img{@include size(35px);}
+               }
+           }
+        
+    
+             .price-offer{@include font-size(16px); padding:$space10+2 $space0 $space15+3; border-bottom:$common-border; text-align:center; p{ text-align:center;} }
+                .helight{font-size:.75rem; padding-top:$space5+3; display:block;}
+  
+            .tab-finish{ padding:$space15 0 $space10; border-bottom:$common-border;
+                .title{vertical-align:middle; padding:0; width: 100px; display:inline-block;}
+              .finish-links{display:inline-block; vertical-align:middle;}
+               li{ float:left;}
+               a{ display:block; margin:$space0 $space5 - 1;}
+           }
+   
+           
+           .offerpr-emi{ margin-top:$space15;}
+           
+           .freedom_offer{font-size:1.4375rem;line-height: 30px; padding:$space5+3 $space25 $space5+3 $space5; color:#e57200; text-align:center; 
+              small{ font-size: .75rem;color: #000; display:block; padding-top:$space5;}
+              strong{font-family:$font-family-medium; @include font-size(14px);line-heigth:18px; border:1px dashed #d8b502; padding:$space5 - 4 $space5+1; margin-left:$space5 - 3; font-weight:normal;}
+           }
+          
+           
+           .shop-btn{ @include display-flex; @include justify-content(space-between);  margin-top:$space20;}
+           .buy-now{ width:100%;background: #ff9f00; @include border-radius(3px);  @include box-shadow(1px 2px 2px rgba(0,0,0,.11)); padding:$space10+4 $space20;text-transform: inherit; @include font-size(16px); font-family:$font-family-medium; text-align:center; color:#fff;  cursor: pointer; position:relative; display:block;                 
+             &:hover{ background:#717171;transition:all .5s ease;}
+           }
+.swpmodal-close{ position:absolute; right:10px; top:5px; cursor:pointer;}
+}
+ 
+.detail-dimension{ text-align: center; margin-top:$space30; 
+.heading {@include font-size(18px); padding:$space15+3 0 $space5; margin-bottom:$space20; padding-bottom:0; border-bottom:none;}
+
+}
+//media css start
+  @media #{$screen-desktop}{  
+     .combos-popup{ width:950px;
+      .three-price{@include size(160px,82px);background:url("../images/product-detail/usecoupon.jpg") no-repeat 0 0 / 100% 100%;
+       span{@include font-size(12px);}
+      }
+      .pricefes{
+          article{ padding-top:$space10;}
+      }
+     
+     } 
+      
+  }
+  @media #{$screen-tablet}{  
+     .combos-popup{ width:700px;
+                    .porduct-main{ width:100%; float:none;}
+                    .product-price{width:100%; float:none;}
+                    .tab-finish{ text-align:center;}
+           } 
+      
+  }
+
+
+
+
+
+

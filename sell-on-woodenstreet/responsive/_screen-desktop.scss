@@ -1,0 +1,23 @@
+@media #{$screen-desktop}{
+    .container-1300{width:100%;
+    .sellon-banner{
+    .heading{@include font-size(30px);}
+       p{@include font-size(14px);}
+       
+}
+.sellon{
+    .common-text{ @include font-size(27px); padding:0;
+     p{ padding:$space10 $space0;}
+    }
+}
+
+.grow-business{    margin-top: $space30+5;
+    .grow-process-mob{
+        li{
+            &.support{ left:75px;}
+            &.shipping{ right:50px;}
+        }
+    }
+}
+    }
+}

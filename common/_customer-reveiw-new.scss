@@ -1,0 +1,248 @@
+.customer-reviews {
+  background: $light-gray;
+  padding: $space20*2 0;
+  &.city-stores{
+    .box{
+      padding: 0 10px;
+      .user{display: none;}
+      .btn-view{
+        display: block;
+        position: unset;
+        box-shadow: none;
+      }
+      .info{text-align: left;margin:10px auto 15px;}
+      &:hover{
+        .btn-view{text-decoration: underline;}
+      }
+      .bottom{margin-top: 15px;}
+    }
+  }
+  .testimonial-heading {
+    @include font-size(26px);
+    line-height: 30px;
+    text-align: center;
+    font-family: $pangramregular;
+    color: $secondary-color;
+  }
+
+  .lead {
+    display: block;
+    @include font-size(15px);
+    line-height: 20px;
+    color: $secondary-600;
+    margin: 5px 0 0;
+    text-align: center;
+    font-family: $pangramregular;
+  }
+
+  .customer-slider {
+    margin: 40px auto;
+
+
+  }
+
+  .customer-slider,
+  .customer-slider1 {
+
+    .slick-prev:before,
+    .slick-next:before {
+      content: "";
+      background: url(images/home-new1/CaretLeft.svg) no-repeat #fff;
+      width: 30px;
+      height: 32px;
+      background-size: 30px;
+    }
+
+    .slick-next {
+      transform: rotate(180deg);
+    }
+  }
+
+  .in {
+    padding: $space15 $space20; 
+    background: $bg-white;
+    display: inline-block;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.10);
+    margin: 0 $space5 $space10;
+    text-align: center;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    figure {
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        display: none;
+      }
+ 
+      img {  
+        max-height: 100%;   
+        margin:auto;
+      }
+    }
+
+    .text-common {
+      padding: 10px 0;
+      display: block;
+      height: 90px;
+      overflow: auto;
+      font-family: $pangramregular;
+      color: $secondary-600;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      margin: 8px auto 10px;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+        background-color: #F5F5F5;
+        padding-right: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #707070;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+      }
+    }
+
+    &:hover {
+      .btn-view {
+        display: block;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+
+  .info {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-dark;
+    font-family: $pangramregular;
+
+    span {
+      font-size: 13px;
+      line-height: 16px;
+      color: $secondary-700;
+      padding-top: 3px;
+      display: block;
+    }
+  }
+
+  .rating-box {
+    display: inline-block;
+    border-top: $common-border;
+    padding-top: $space15;
+    margin-bottom: $space5+3;
+
+    .star-fill {
+      display: inline-block;
+      margin: 0 2px;
+
+      &.disabled {
+        &:before {
+          background: url('../images/home-new1/star-grey.svg') no-repeat;
+        }
+      }
+
+      &:before {
+        content: '';
+        background: url('../images/home-new1/star.svg') no-repeat;
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .view-link {
+    color: $secondary-color;
+    font-family: $pangramregular;
+    padding: $space10 0 0;
+    font-size: 15px;
+    display: block;
+
+    svg {
+      vertical-align: text-bottom;
+      margin-left: 3px;
+    }
+
+    &:hover {
+      color: $color-orange;
+
+      svg {
+        transition: 0.3s all ease-in-out;
+
+        path {
+          stroke: #e57200;
+        }
+      }
+    }
+  }
+
+  .btn-view {
+    display: none;
+    border: 0;
+    background: $bg-white;
+    color: $secondary-color;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 180px;
+    margin: 0 auto;
+    bottom: 8px;
+    font-size: 14px;
+    padding: 8px 15px;
+    font-family: $pangramregular;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .customer-reviews {
+    padding: $space30 0;
+
+    .testimonial-heading {
+      @include font-size(21px);
+      line-height: 26px;
+    }
+
+    .in {
+      .text-common {
+        @include font-size(13px);
+        padding-top: 0;
+      }
+    }
+
+    .lead {
+      @include font-size(14px);
+      line-height: 18px;
+      margin: 2px 0 0;
+    }
+
+    .customer-slider {
+      margin: 30px auto;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .customer-reviews {
+    .bottom {
+      margin-top: $space20;
+      padding-top: 0px;
+    }
+  }
+}

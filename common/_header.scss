@@ -1,0 +1,359 @@
+   .container {
+      width: 1100px;
+      margin: 0 auto;
+   }
+
+   .container-1200 {
+      max-width: $container-1200;
+      margin: 0 auto;
+   }
+
+   .disocunt-strip {
+      background: $color-blue;
+      padding: $space10;
+      color: $color-white;
+      text-align: center;
+      @include font-size(14px);
+      line-height: normal;
+
+      .closebtn {
+         float: $right;
+         color: $color-white;
+      }
+
+      i {
+         display: inline-block;
+         vertical-align: middle;
+         width: 24px;
+         height: 16px;
+         margin: 0 3px;
+      }
+
+      strong {
+         background: $bg-orange;
+         @include border-radius(2px);
+         border: 1px dashed $color-white;
+         padding: $space5 - 4 $space5+1;
+         margin: $space0 $space5;
+         font-weight: normal;
+      }
+   }
+
+   header {
+      line-height: normal;
+
+      .top {
+         padding: $space10+5 $space0 $space0;
+         text-align: right;
+
+         li {
+            display: inline-block;
+            @include font-size(13px);
+            vertical-align: top;
+            position: relative;
+
+            @include last(3) {
+               border-left: $common-border;
+            }
+         }
+
+         a {
+            color: #5d5853;
+            /*margin-right:$space10; */
+            padding: 0 $space5+3;
+
+            &:hover {
+               @extend %orange;
+            }
+         }
+
+         i {
+            margin-right: $space5+2;
+            margin-top: -5px;
+            display: inline-block;
+            vertical-align: middle;
+         }
+
+      }
+
+      .support-dropdown {
+         display: none;
+      }
+
+      .support-option {
+         background: $bg-white;
+         border: $common-border;
+         position: absolute;
+         left: -60px;
+         top: 28px;
+         text-align: left;
+         width: 225px;
+         z-index: 99;
+         padding: $space5 0;
+         @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.28));
+
+         li {
+            display: block;
+            border-bottom: 1px solid #e0e0e0;
+            border-left: none !important;
+
+            &:last-child {
+               border-bottom: none;
+            }
+         }
+
+         //.trackorder{background:url("#{$svg-path}/truck-b.svg") no-repeat 0 0 / 100% 100%;}
+         // .faq{background:url("#{$svg-path}/question.svg") no-repeat 0 0 / 100% 100%;}
+         // .email{background:url("#{$svg-path}/email.svg") no-repeat 0 0 / 100% 100%;}
+         //.rupees{background:url("#{$svg-path}/bag.svg") no-repeat 0 0 / 100% 100%;} 
+         a {
+            @include font-size(13px);
+            color: #5d5853;
+            ;
+            padding: $space10 $space10+2;
+            display: block;
+            margin: 0;
+            text-transform: capitalize;
+         }
+
+         &:before,
+         &:after {
+            position: absolute;
+            right: 0px;
+            left: 0;
+            margin: 0 auto;
+            z-index: 9;
+            top: -8px;
+            @include arrow("up", #fff, 10);
+         }
+
+         &:after {
+            @include arrow("up", $color-light-gray, 10);
+            top: -11px;
+            z-index: 8;
+         }
+      }
+
+      .login {
+         @extend %orange;
+
+         a {
+            @extend %orange
+         }
+      }
+
+      .bottom {
+         padding: $space0 $space0 $space5;
+      }
+
+      .logo {
+         float: $left;
+      }
+
+      .header-search {
+         width: 500px;
+         position: relative;
+         margin-top: $space15;
+         float: $right;
+
+         form {
+            position: relative;
+         }
+      }
+
+      .form-control {
+         @include size(100%, 40px);
+         outline: none;
+         box-shadow: none;
+
+         @include placeholder {
+            color: #7d7d7d
+         }
+
+         ;
+         background:$color-light-gray;
+         @include border-radius(3px);
+         padding:$space0 $space40 $space0 $space10;
+         @include font-size(14px);
+         color:$color-dark-gray;
+      }
+
+      .btn-search {
+         position: absolute;
+         border: none !important;
+         opacity: 0.5;
+         right: 10px;
+         text-indent: -9999px;
+         outline: none;
+         top: 9px;
+         cursor: pointer;
+         z-index: 1;
+      }
+
+      .cart {
+         float: $right;
+         font-family: $robotolight;
+         margin-top: $space20+7;
+         margin-left: 20px;
+         position: relative;
+         cursor: pointer;
+
+         i {
+            display: inline-block;
+         }
+
+         #cart {
+            display: none;
+         }
+
+         .count {
+            display: block;
+            line-height: $space10;
+            @include font-size(10px);
+            position: absolute;
+            left: 8px;
+            top: -8px;
+            color: $color-white;
+            @include size(16px);
+            background: $bg-orange;
+            @include border-radius(100%);
+            text-align: center;
+            padding-top: 3px;
+         }
+      }
+
+
+      .header-right {
+         display: none;
+      }
+
+      .top-login {
+         float: right;
+         width: 124px;
+         margin-top: $space20+8;
+         padding-left: $space20;
+         line-height: normal;
+
+         .my_account {
+            position: relative;
+
+            &:before {
+               position: absolute;
+               right: 5px;
+               top: 0px;
+               content: "\f107";
+               font-family: $fontawesome;
+               @include font-size(20px);
+            }
+         }
+
+         li {
+            color: $color-black;
+         }
+
+         a {
+            @include font-size(13px);
+            color: $color-black;
+            margin-right: 0;
+         }
+      }
+
+      .whislist-cart {
+         float: right;
+         margin-top: $space25+3;
+         margin-left: $space10;
+         position: relative;
+
+         i {
+            display: inline-block;
+         }
+
+         .count {
+            @include font-size(10px);
+            position: absolute;
+            right: -4px;
+            top: -6px;
+            color: $color-white;
+            @include size(16px);
+            background: $bg-orange;
+            @include border-radius(100%);
+            text-align: center;
+            line-height: $space15+1;
+         }
+      }
+
+
+      .container {
+         width: 1170px;
+         margin: 0 auto;
+      }
+
+   }
+
+   .mobile-search {
+      display: none;
+   }
+
+   .my_account {
+      cursor: pointer;
+      position: relative;
+      padding-bottom: 15px;
+      line-height: normal;
+
+      .sub {
+         background: #fff;
+         position: absolute;
+         z-index: 99999;
+         width: 150px;
+         box-shadow: 0 2px 4px #ddd;
+         border: 1px solid #ddd;
+         display: none;
+         left: 0;
+         top: 25px;
+      }
+
+      .sub-options {
+         li {
+            padding: 0 !important;
+            float: none;
+            width: 100%;
+
+            +li {
+               border-top: 1px solid #e0e0e0
+            }
+
+            a {
+               padding: 10px;
+               display: block;
+
+               :hover {
+                  background: #fbfbfb;
+               }
+            }
+         }
+      }
+
+      .orange {
+         display: inline-block;
+         vertical-align: top;
+         @include size(60px, 18px);
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+         text-transform: capitalize
+      }
+   }
+
+
+
+   .fixed-header {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      z-index: 999;
+   }
+
+
+   .app-install-strip {
+      display: none;
+   }

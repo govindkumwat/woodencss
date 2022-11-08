@@ -1,0 +1,36 @@
+@media #{$screen-desktop}{
+    
+    .ws-interior-society{
+        .container-1440{ width:auto;}
+        .container-1240{ width:960px;}
+        .container-1140{ width:960px;}
+        .banner { background-position: -115px 0; 
+          p{ padding-top:$space5+3;}
+        }
+        .interior-menu li{ margin:$space5 $space10;}
+        .how-option li{padding:$space20 $space10;
+            span{@include font-size(17px);     text-overflow: ellipsis; overflow: hidden; white-space: nowrap; display:block;} 
+        }
+        .offering{ padding-bottom: $space30;
+            article{ padding:$space20}
+           .title{@include font-size(25px);}
+           figcaption { top: 30px; }
+        }
+         .service{ margin-bottom:$space40; min-height: 530px; padding: $space40 $space0; }         
+          .service-list{
+             li{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; padding:$space20 $space10;}
+             .heading{ margin-bottom:0;}
+         }
+         .item { margin-bottom: $space40; }
+         
+         .pricing{ border-top: 0; }
+         
+         .pricing-inner{ margin-top:0; 
+           .less-container{ align-items: inherit; }
+           .page-sec.text-right { width: 33%; margin-top: $space10;}
+         }
+         .pricing-list li{ padding:$space15;}
+       
+    }
+
+}

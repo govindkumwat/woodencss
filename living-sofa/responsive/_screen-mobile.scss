@@ -1,0 +1,86 @@
+@media #{$screen-mobile}{
+    .bedroom-furniture{
+       
+        .container-1220{ max-width:100%;}
+        .space40{ height:$space20; }
+       .title-new{ padding-bottom:0;
+          .heading{ margin-bottom:0;@include font-size(20px);}
+         .title-small{ margin:$space0 -10px 0 0; height:70px;}      
+       } 
+       .mobile-banner {margin-bottom:$space30;}
+     .bedroom-categorie-slider{   overflow: hidden; height: 258px;
+          li{ float:left; width:33%;  border-bottom:$common-border; border-right:$common-border; padding:0 $space5 $space5+3;;
+            @include every(3){ border-right:none; } 
+        }
+        a{@include font-size(12px); overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        
+    }
+   .active { height: auto; 
+     }
+    .more { text-align: center; background: #e57200; color:#fff; text-transform: uppercase; padding:$space5 $space0; margin: $space10 $space5; @include border-radius(3px);
+          &:after{content: "more"; display:block;}
+    }
+    .text{
+        &:after{content: "less"; display:block;}
+    }  
+    
+    .bedroom-banner { display: inline-block;}
+   .categorie-new{ margin-top:$space15;}
+    .page-heading{ 
+        &:before{ width:auto; top:15px;}
+        strong{@include font-size(14px); padding:$space5  $space15;}
+    }
+    
+    .product-new{ justify-content:space-between;
+        a{width:49%; margin:$space15 0 0; @include font-size(14px); display: table;
+            @include every(3){ margin-right:0;}
+            span{@include font-size(13px); overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+            small{ margin-top:$space5+2; padding:$space5 - 3  $space10+2;}
+        }
+       .info{ padding:0;}
+    }
+    
+       .new-storage-slider, .Bedroom-Storage-slider, .shop-by-slider{
+            .slick-slide{ margin:$space20 $space5 $space0;
+            
+            }
+        }
+ 
+        
+    .new-storage{ margin-top:$space0; margin-bottom:$space10+2;
+     span{@include font-size(14px); padding:$space5 0 $space5 - 3;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+        small{@include font-size(12px);}    
+        .slick-list {
+    padding: 0 20% 0 0;
+  }
+    }
+    .Bedroom-Storage-slider{
+        .slick-list { padding: 0 20% 0 0;}
+    }
+    .shop-by-slider{
+        .slick-list { padding: 0 20% 0 0;}
+    }
+    .multi-storage-banner {margin-top:$space20;}   
+
+ 
+   
+ .slick-dots{ margin:auto; text-align:center; left:0; right:0; position:absolute; bottom:-20px;
+               li{
+                   button{
+                       &:before{@include border-radius(100%); background:#fff; border:1px solid #dbdbdb; @include size(9px);}
+                   }
+                   &.slick-active{
+                       button{
+                            &:before{ background:#f37920;}
+                       }
+                   }
+               }
+  }
+ 
+  
+}
+   
+}
+
+
+    

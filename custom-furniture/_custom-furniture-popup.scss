@@ -1,0 +1,183 @@
+.custom-popup {
+  @include size(960px, auto);
+  display: flex;
+  background: $bg-white;
+  margin: 0 auto;
+  position: relative;
+
+  .heading {
+    font-family: $robotomedium;
+    @include font-size(24px);
+    text-align: center;
+    text-transform: capitalize;
+    color: #282828;
+    position: relative;
+    margin-bottom: $space15+3;
+
+    &:after {
+      @include size(95px, 2px);
+      content: "";
+      background: $bg-orange;
+      margin: $space5+3 auto 0;
+      display: block;
+    }
+  }
+
+  .left {
+    width: 52%;
+
+    img {
+      vertical-align: bottom;
+    }
+
+    .call,
+    p,
+    span {
+      display: none;
+    }
+  }
+
+  .right {
+    width: 49%;
+    padding: $space20 $space40;
+  }
+
+  .close {
+    position: absolute;
+    top: -2px; 
+    right: 10px;
+    z-index: 1;
+    @include font-size(22px);
+    color: $secondary-color;
+  }
+
+  .field {  
+    margin-bottom: $space10;
+  }
+   
+  .one-half {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .field {   
+      width: 49%;
+    }
+  }
+
+  textarea {
+    height: 90px;
+    resize: vertical;
+    padding-top: $space10;
+  }
+
+  .field__input.field {
+    margin-bottom: 0;
+    padding: 0;
+
+    .error-block {
+      padding-top: $space10;
+    }
+  }
+
+  input[type=file] {
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+    height: 100%;
+  }
+
+  .attachment-image {
+    vertical-align: middle;
+    margin-right: $space5;
+    margin-left: $space5;
+    margin-top: $space5+3;
+    display: inline-block;
+    width: 19px;
+  }
+
+  .file-return {
+    color: #969696;
+    padding: 0;
+    display: inline-block;
+    margin-top: $space5+3;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 110px;
+    vertical-align: middle;
+  }
+
+  .submit-btn {
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    background: $color-orange;
+    color: $color-white;
+    @include font-size(16px);
+    @include border-radius(3px);
+    padding: $space10 0 $space10 $space20;
+    border: none;
+  }
+
+  &.thMsg {
+    width: auto;
+    height: auto;
+    @include border-radius(4px);
+
+    .heading {
+      display: none;
+    }
+
+    .left {
+      float: none;
+      width: auto;
+      display: none;
+    }
+
+    .right {
+      float: none;
+      width: auto;
+      padding: 0;
+    }
+  }
+}
+
+
+@media #{$screen-tablet} {
+  .custom-popup {
+    width: 750px;
+
+    .heading {
+      @include font-size(18px);
+    }
+
+    .file-return {
+      width: 100px;
+    }
+
+    .left {
+      width: 57%;
+      background: #f5f6fb;
+    }
+
+    .right {
+      padding: $space10;
+      width: 42%;
+    }
+
+    .submit-btn {
+      @include font-size(13px);
+    }
+
+    textarea {
+      height: 65px;
+    }
+  }
+
+}

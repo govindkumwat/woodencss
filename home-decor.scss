@@ -1,0 +1,12 @@
+ //Global
+  @import "mixin/_global.scss";
+  @import "home-decor/_home-decor.scss";                         
+  //media         
+  @import "home-decor/_screen-tablet.scss"; 
+  @import "home-decor/_screen-mobile.scss"; 
+  
+  .mt-0{margin-top:0;}
+  .pt-0{padding-top: 0;}
+  .pb-0{padding-bottom: 0;}
+  .mb-0{margin-bottom: 0;}
+  

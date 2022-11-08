@@ -1,0 +1,183 @@
+//Reviw Popup
+
+.swpmodal-container_i2 {
+    .review-popup {
+        display: block;
+
+        svg {
+            width: 18px;
+            height: 18px;
+
+            path {
+                fill: #000;
+            }
+        }
+
+        span {
+            font-size: 15px;
+        }
+    }
+}
+
+#reviewform_submit {
+    .table {
+        width: 100%;
+
+        li {
+            padding: 0 0 15px;
+
+            i {
+                color: $color-red;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.review-popup {
+    box-shadow: none;
+    @include border-radius(4px);
+    position: relative;
+    padding: $space25;
+    background: $bg-white;
+    display: none;
+    width: 350px;
+    text-align: center;
+    font-family: $pangramregular;
+
+    //review popup 
+    .starRating {
+        display: inline-block;
+        position: relative;
+    }
+
+    .starRating+.error-block {
+        text-align: center;
+    }
+
+    .starRating:not(old)>input {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include size(30px, 25px);
+    }
+
+    .starRating:not(old)>label {
+        float: right !important;
+        position: relative;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+
+    .starRating:not(old)>input:checked~label,
+    .starRating:not(old)>input:hover~label {
+        opacity: 2;
+        position: relative;
+    }
+
+    .starRating:not(old)>input:checked~label>small,
+    .starRating:not(old)>input:hover~label>small {
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .svg-star {
+        background: url("../images/testimonials/star-gray.svg") no-repeat;
+    }
+
+    .svg-star-off {
+        background: url("../images/testimonials/star.svg") no-repeat;
+    }
+
+    .svg-star-dims,
+    .svg-star-off-dims {
+        @include size(25px);
+    }
+
+    //review popup and uestion aswer popup
+    .error-block {
+        text-align: left;
+    }
+
+    .title {
+        @include font-size(20px);
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-bottom: $space10;
+        color: $secondary-color;
+    }
+
+    .field {
+        margin-bottom: $space15;
+    }
+
+    .btn {
+        @include font-size(16px);
+        line-height: 20px;
+        width: 100%;
+        @include border-radius(3px);
+        padding: 12px 0px;
+        color: $color-white;
+        cursor: pointer;
+        background: $secondary-color !important;
+        font-family: $pangramregular;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .swpmodal-close {
+        right: 10px;
+        top: 10px;
+    }
+
+    textarea {
+        padding-top: $space10;
+        height: 80px !important;
+    }
+
+    //review popup
+    .file-text {
+        position: absolute;
+        left: $space10;
+        top: $space5+2;
+        color: #a6acb2;
+        text-align: left;
+        @include oneline();
+        width: 220px;
+
+        &:before {
+            display: inline-block;
+            content: '';
+            vertical-align: middle;
+            @include size(15px, 28px);
+            margin-right: $space5;
+            background:url("#{$images-path}/product-detail/attachment-small.png") no-repeat;
+        }
+    }
+
+    .fileBx {
+        text-align: left;
+        margin: 0 0 15px;
+    }
+
+    .thanku-success-msg {
+        width: auto;
+    }
+
+}
+
+
+.review-popup.askquestions {
+    width: 520px;
+    text-align: left;
+
+    .btn {
+        padding: 10px 60px;
+        margin: $space15 auto 0;
+        width: auto;
+    }
+
+}

@@ -1,0 +1,641 @@
+.container { max-width: 1200px; }
+.HotelBanner { max-width: 1366px; margin: 7px auto 0;  position:relative;
+              .container-1200 { color: #242424; font-family: 'Pangram'; position: absolute; top: 34px; left: 0; right: 0; padding-left: 12%;
+                  span { display: block; font-family: 'Trirong'; font-size: 24px; }
+                  .title {      font-size: 42px; font-weight: normal;  line-height: 42px;
+                    &:after { content: ''; display: block; width: 100px; height: 1px; background: #adadad;  }
+                  }
+                  a { font-size: 14px; color: #242424; }
+              }
+              .slick-prev, .slick-next {
+                  &:before { color: #fff; font-size: 40px; }
+              }
+              .slick-next { right: 25px; 
+                &:before { content: '\f105'; }
+              }
+              .slick-prev { left: 25px; z-index: 1; 
+                &:before { content: '\f104'; }
+              }
+}
+
+
+.TopContent { display: flex; justify-content: space-between; padding: 55px 0;
+    article { width: 50%; }
+    .left { font-family: 'robotobold'; border-right: 1px solid #e8e8e8; font-size: 45px; color: #131D28; line-height: 55px; width: 48%; text-transform: uppercase; margin: 0; }
+    .right { font-size: 15px; text-align: justify;}
+}
+.Head { font-family: 'Pangram'; font-size: 24px; text-align: center; margin-bottom: 30px;
+  p { font-size: 14px; color: #707070; }
+}
+
+
+.flexbox {  display: flex;  justify-content: space-between; margin-bottom: 22px; align-items: center;
+    .size-1 { width: 44.5%; }
+    .size-2 { width: 54%; }
+    figure { position:relative;
+     span { position: absolute; bottom: 10px; left: 10px; background: #fff; color: #434343; padding: 5px 15px; display: inline-block; }
+     img { vertical-align: middle; }
+    }
+    .size-3 { width: 72%; }
+    .size-4 { width: 26%; text-align:center; font-size: 19px;
+      span { font-size: 23px;  font-family: 'Pangram'; display: block;  }
+      p { font-size: 14px; color: #707070; margin: 5px 0; }
+      label { font-size: 29px; color: #E57200; }
+      .btn { background: #E57200; }
+    }
+    .flex { display: flex; margin-top: 22px; justify-content: space-between; 
+    figure { width: 48.5%; }
+}
+}
+
+
+.RoomStyle { padding: 40px 0; }
+.RoomFlex { display: flex;  justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 80%; margin: auto;
+  .room { width:32%;   margin-bottom: 20px;
+    img { vertical-align:middle; }
+  }
+  p { text-align: center; line-height: normal; padding: 8px 0 0; color: #707070; 
+      span { display: block; font-size: 16px; font-family: 'Pangram'; color: #242424; }
+  }
+}
+
+.freeStrip { background: #242424; color:#fff; margin-bottom: 50px;
+  .container { display: flex; justify-content: center; align-items: center; padding: 30px 20px; position:relative;
+    &:before, &:after { content: ''; @include size(160px, 90px); background: url(../images/hotel/left.png) no-repeat; position: absolute; left: 0; bottom: 0; background-size: contain;}
+    &:after { left: inherit; right: 0px; background: url(../images/hotel/right.png) no-repeat; background-size: contain; }
+  }
+    .left { font-size: 24px; margin-right: 30px; position:relative; z-index: 1;
+      p { font-size: 14px; color: #f5f5f5; }
+    }
+    form {position:relative; z-index: 1;
+        .box { width: 200px; display: inline-block; margin-right: 15px; }
+        input { width: 100%; border: 1px solid #E8E8E8; padding: 10px; color: #fff; }
+        .btn { background: #E57200; height: 38px; cursor: pointer; font-size: 14px; }
+    }
+}
+.online-custom { background: #f5f5f5; }
+.TopIn { max-width: 1200px; margin: -100px auto 0; background: #fff; padding: 20px; position:relative; }
+.stepFlex { display: flex; justify-content: space-between;  margin: 30px auto; align-items: center;
+    li { width: 24%; color: #2D2D2D; }
+    article { width: 85%; background: #FCECCB; text-align: center; padding: $space20; margin-right: 0;  margin-left: auto; margin-top: -30%; position: relative; min-height: 145px;
+      span { font-family: 'Open Sans'; font-size: 15px; font-weight: 600; line-height: 22px; margin-bottom: 5px; display: block; }
+      i { position: absolute; right: 0px; top: -47px; font-style: normal; font-size: 34px; font-family: 'Open Sans'; font-weight: 600; color: #E8E8E8; transform: rotate(90deg); }
+      p { line-height: 20px; }
+    }
+    figure { margin-right: 45px; 
+     &:before { padding-top: 111%; }
+    }
+    .step2{
+        article { background: #F0EFFF; }
+    }
+     .step3{
+        article { background: #FFEAE4; }
+    }
+    .step4 { width: 160px; }
+    .counter { color: #2D2D2D;
+        div { margin: 25px 0; }       
+        .counter-value { font-size: 35px;  font-family: 'Open Sans'; font-weight: 600; }
+        label { font-size: 35px;  font-family: 'Open Sans'; font-weight: 600;  }
+        p {  font-size: 16px;  }
+      }
+}
+
+.Customize { padding: 50px 0; display: flex;
+    .left { width: 35%;
+      .btn { background: #E57200; }
+      span { font-size: 24px; display: block; font-family: 'Pangram'; }
+      p { margin: 8px 0; }
+    }
+    ul { width: 65%; display: flex; justify-content: space-between; flex-wrap:wrap;
+      li{ width: 49%; background: #fff; padding: 15px; margin-bottom: 15px; display: flex; box-shadow: 0 0 9px #d8d8d8; }
+      figure { width: 40%; }
+      .right { widsth: 60%; padding-left: 10px; }
+      span { font-size: 17px; display: block; font-family: 'Pangram'; }
+      p { color: #707070; line-height: normal; }
+    }
+}
+.HotelFurnishing { padding: 50px 0; text-align:center;
+    .brand { margin-bottom: 20px; }
+}
+.NewForyou { padding: 0px 0 40px; position:relative;
+    &:before { position: absolute; content: ''; left: 0; right:0; bottom: 0; top: 45%; background: #F1F9F9; }
+    .shopSlider {
+        li{
+            figure{
+                &:before{ padding-top: 107%; }
+            }
+        }
+    }
+    span { display: block; white-space: nowrap;  text-overflow: ellipsis; overflow: hidden;}
+}
+ .shopSlider {  display: none;
+     a { color: #4A4A4A; }
+    figure { margin-bottom: 8px; 
+       &:before { padding-top: 108%; }
+    }
+   li { margin: 0 10px; font-size: 15px; 
+      figure{ overflow: hidden;
+          img{   -webkit-transform: scale(1); transform: scale(1);  @include transition(.5s ease-in);}    
+        }
+        &:hover { 
+            figure > img { transform: scale(1.02); }
+        }
+   }
+   p { font-size: 16px; 
+    strike { font-size: 14px; color: #8B8B8B; margin-left: 4px; }
+   }
+    
+ }
+ .resto { margin-top: 50px; }
+.slick-dots {
+    position: inherit!important;;
+    bottom: 0px!important;;
+    list-style: none!important;;
+    display: block!important;;
+    text-align: center;
+    padding: 0!important;
+    margin: 10px 0 0 0!important;;
+    width: 100%!important;
+    left:0;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 10px!important;;
+        width: 10px!important;;
+        margin: 0 3px!important;;
+        padding: 0!important; 
+        border-radius: 100%!important;;
+        cursor: pointer!important;;
+        background: #C4C4C4!important;;
+        border:1px solid #C4C4C4!important;; 
+        button {
+            font-size: 0px;
+            &:before { background: none; }
+        }
+        &.slick-active { background: #707070!important;; border-color: #707070!important;}
+    }
+}
+
+
+.AcrossIndia { display: flex; background: #f5f5f5; margin: 50px 0;
+    .left { width: 50%; text-align: right; background: url(../images/hotel/store.png) left / cover no-repeat; padding: 50px; color: #fff;     display: flex;  align-items: center;}
+    .right { width: 50%; padding: 30px 50px; }
+    .center {width: 250px; text-align: center;  margin: 0 0 0 auto;
+      span { font-family: 'Pangram'; font-size: 42px;  display: block; }
+      .same { font-family: 'Pangram'; font-size: 20px; margin: 10px 0; }
+      p { font-size: 14px; line-height: 20px;}
+      .call { font-size: 16px; color: #fff; display: block; margin: 15px 0 30px; }
+      .btnview { border: 1px solid #fff; padding: 8px 25px; color: #fff; display: inline-block; }
+    }
+
+}
+    .rightIn  { width: 510px; color: #434343;
+        .RightHead { font-size: 26px; font-family: 'Pangram';  margin-bottom: 15px;
+          p  { font-size: 14px;  } 
+        }
+        .box { width: 49%; display: inline-block; margin-bottom: 20px; }
+        .pull-right { float: right; }
+        .form-control { background: #fff; padding: 12px; width: 100%; border: 1px solid #d8d8d8; }
+        textarea { height: 95px; vertical-align: middle; }
+        .contactBtn { background: #E57200; color: #fff; padding: 8px 30px;  display: inline-block; }
+    }
+    .error-block {
+    font-size: .75rem;
+    color: #e32526;
+    line-height: normal;
+    padding: 0;
+    position: absolute;
+}
+.HotelFurnishing { max-width: 1265px; }
+.hotel-collage { display: flex; justify-content: space-between;
+    figure{ margin: 10px 5px;  position:relative; overflow: hidden; cursor: pointer;
+        img {vertical-align: middle; }
+       span {     position: absolute; height: 100px;
+    z-index: 1; bottom: -80px; left: 0;  right: 0;   //background: linear-gradient(540deg, rgb(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+     background: linear-gradient(540deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+       }
+       label {color: #fff;
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    bottom:0;
+    display: block;
+    font-size: 16px;   
+       }
+       
+       &:hover {
+           span { bottom: 0;  transition: 0.5s; }
+       }
+    }
+}
+
+@media only screen and (max-width: 1024px) { 
+.TopContent .left { font-size: 46px; }
+.AcrossIndia .left { width: 40%; }
+
+}
+@media only screen and (max-width: 768px) { 
+    .HotelBanner .container-1200 { top:20px; }
+.TopContent .left {
+    font-size: 34px;
+    line-height: normal;
+}
+.flexbox .size-3 {width: 65%;}
+.flexbox .size-4 {
+    width: 35%;
+}
+.flexbox .size-4 p { margin: 0px; }
+.freeStrip .container { padding: 25px 0; }
+.freeStrip form .box {
+    width: 140px;
+    margin-right: 10px;
+}
+.TopIn { margin-top: -40px; }
+.AcrossIndia .left {
+    padding: 50px 20px;
+}
+.AcrossIndia .center { width: auto; }
+ .rightIn { width: auto; }
+.AcrossIndia .right {
+    width: 60%;
+    padding: 25px;
+}
+.flexbox .flex { margin-top: 11px; }
+}
+
+@media only screen and (max-width: 767px) { 
+/* Slider */
+.gray-bg { background: #fff; }
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-dots>li:only-child {
+    display: none;
+}
+
+
+/* Dots */
+
+
+.HotelBanner { background: #f5f5f5; padding-bottom: 0px; }
+.HotelBanner .container-1200 span { font-size: 18px; }
+.HotelBanner .container-1200 .title { font-size: 18px; margin: 5px 0; line-height: normal;}
+.HotelBanner .container-1200 a { font-size: 13px; }
+.HotelBanner .container-1200 {left: 10px;     right: inherit;padding: 0;}
+.TopContent { padding: 10px 10px 20px;
+    flex-wrap: wrap;
+    .left {
+        width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'robotomedium';
+    font-weight: normal;
+    }
+  .left, .right{ width: 100%; text-align: center; }
+}
+.TopContent .right {
+    color: #707070;
+    font-size: 14px;
+    &.intro {
+        p { height: auto; }
+        .morebtn {  
+        &:before { content: 'Less'; } 
+      }
+    }
+}
+.TopContent .right p { height: 17px; overflow: hidden; }
+.morebtn {     text-align: center; display: block;  width: 100%;
+  &:before { content: 'Read More..'; display: block; font-size: 14px; color: #f3601d; }
+}
+.Head {
+    font-family: 'Pangram';
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.flexbox { flex-wrap:wrap; margin-bottom: 10px;}
+.flexbox .size-1 { width: 100%; margin-bottom: 10px;  height: 190px; overflow: hidden; display: flex; align-items: flex-end; }
+.flexbox .size-2 { width: 100%; }
+.ExploreCat  {
+    .flex { margin-top: 10px; }
+    .flex figure {
+        width: 48.5%;
+    }
+}
+.flexbox figure span { font-size: 12px;
+    bottom: 5px;
+    left: 5px;
+    padding: 5px 10px;
+}
+.flexbox .size-3 { width: 100%; }
+.flexbox .size-4 { width: 100%; margin-top: 15px;}
+.flexbox .size-4 p {
+    margin: 5px 0;
+}
+.flexbox .size-4 .btn {
+    background: #E57200;
+    padding: 12px;
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.RoomStyle {
+    padding: 20px 0;
+    border-top: 15px solid #f5f5f5;
+    margin-top: 20px;
+}
+.RoomFlex {
+    display: block;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
+    max-width: inherit;
+    margin: 0;
+    white-space: nowrap;
+    overflow: auto;
+    padding-left: 10px;
+    -ms-overflow-style: none;  
+  scrollbar-width: none;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.RoomFlex .room {
+    width: 70%;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 10px;
+    white-space: normal;
+    vertical-align: top;
+}
+.freeStrip { margin: 0;text-align: center; }
+.freeStrip .container {
+    padding: 25px 10px;
+    display: block;
+}
+.freeStrip form .box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.freeStrip .left {     margin: 0 0 10px 0; }
+.freeStrip form .btn {padding: 8px 20px;
+    color: #fff;
+    display: inline-block;
+    height: auto;}
+.online-custom center { display: none; }
+.TopIn {
+    margin-top: 0;
+    padding: 20px 0 100px 0;
+    .Head { padding: 0 10px; }
+}
+.stepFlex {
+    display: block;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: center;
+    white-space: nowrap;
+    overflow: auto;
+    padding-left: 10px;
+      -ms-overflow-style: none;  
+  scrollbar-width: none;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.stepFlex li {
+    width: 85%;
+    color: #2D2D2D;
+    white-space: normal;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.stepFlex article { min-height: 115px; }
+
+.stepFlex .step4 {
+   width: 100%;
+    white-space: normal;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+}
+.stepFlex .counter {
+    color: #2D2D2D;
+    display: flex;
+    justify-content: space-around;
+}
+.stepFlex .counter div {
+    margin: 0;
+}
+.stepFlex .counter .counter-value {
+    font-size: 25px;}
+.stepFlex .counter label {
+    font-size: 25   px;}
+.stepFlex .counter p {
+    font-size: 13px;
+}
+.Customize {
+    padding: 25px 0 90px 0;
+    flex-wrap: wrap;
+    position: relative;
+}
+.Customize .left {
+    width: 100%;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+.Customize .left span { font-size: 20px; }
+.Customize ul {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 10px;
+        -ms-overflow-style: none;  
+  scrollbar-width: none;
+    &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.Customize ul li {
+    width: 78%;
+    white-space: normal;
+    display: inline-flex;
+    margin: 0 15px 0 0;
+    vertical-align: top;
+    padding: 10px;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+.Customize ul .right {
+    width: 65%;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.Customize ul figure {
+    width: 35%;
+}
+
+.Customize .left .btn {
+    background: #E57200;
+    padding: 12px 0px;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 180px;
+}
+
+.HotelFurnishing {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+.shopSlider {
+    .slick-list { padding-right: 20%; }
+}
+
+.resto {
+    margin-top: 25px;
+}
+
+.NewForyou { padding-bottom: 20px; }
+
+.AcrossIndia { flex-wrap: wrap; margin: 25px 0; }
+.AcrossIndia .left { width: 100%; padding: 20px;}
+.AcrossIndia .center .call { margin: 10px 0 20px; }
+.AcrossIndia .center .same { margin: 5px 0 10px; }
+.AcrossIndia .right {  width: 100%; padding: 15px;}
+ .rightIn .RightHead { font-size: 18px; }
+ .rightIn .RightHead p { font-size: 13px;     height: auto; }
+ .rightIn .box { width: 100%; float: none !important;     margin-bottom: 10px; } .rightIn .contactBtn { background: #E57200; color: #fff; padding: 10px 30px; display: block; text-align: center; font-size: 16px; }
+.hotel-collage figure {
+    margin: 4px;
+}
+.hotel-collage figure label { padding: 5px; font-size: 12px;}
+.hotel-collage { flex-wrap: wrap;
+    li{ width: 100%;
+       &:first-child { width: 40%; } 
+       &:nth-of-type(2) { width: 60%; } 
+       &:nth-of-type(3) {display: flex; justify-content: space-between;
+         figure { width: 49%; }
+       } 
+    }
+}
+.rightIn {
+    width: auto;
+    padding: 20px 10px;
+    background: #f5f5f5;
+    margin: 15px -10px 0;
+}
+.error-block { position:inherit; padding-top: 5px;text-align: left; }
+.shopSlider p {
+    font-size: 14px;    margin-top: 5px
+}
+
+}
+

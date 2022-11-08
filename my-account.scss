@@ -1,0 +1,18 @@
+  
+@import "mixin/_global.scss";
+// 
+@import "my-account/*.png";
+@import "my-account/_order-success.scss"; 
+@import "my-account/_account.scss";
+@import "my-account/_address-book.scss";  
+@import "my-account/_order-history.scss"; 
+@import "my-account/_order-informations.scss"; 
+@import "my-account/_order-track.scss";           
+@import "my-account/_error-message.scss"; 
+@import "my-account/_wishlist.scss";  
+@import "my-account/_wallet.scss";
+@import "my-account/_refer-a-friend.scss"; 
+  
+//my account
+@import "my-account/responsive/_screen-desktop.scss";   
+@import "my-account/responsive/_screen-tablet.scss";   

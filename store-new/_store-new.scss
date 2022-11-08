@@ -1,0 +1,640 @@
+body {
+    background: $light-gray;
+}
+
+.common-box {
+    padding: $space20*2 0;
+}
+
+.banner-wrpr {
+    background-size: cover;
+    background-position: bottom;
+    padding: 155px 0;
+}
+
+.subhead {
+    @include font-size(22px);
+    line-height: 30px;
+    color: $secondary-color;
+    font-family: $pangrammedium;
+    padding: $space10 0;
+    text-align: center;
+}
+
+.text-small {
+    @include font-size(15px);
+    line-height: 20px;
+    color: $secondary-color;
+    font-family: $pangramregular;
+    display: block;
+}
+
+.citywrpr {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.26);
+    margin: -125px 0 0px;
+    background: $bg-white;
+    @include border-radius(10px);
+
+    .subhead {
+        padding: $space20+5px 0 0px;
+        @include font-size(28px);
+        letter-spacing: 0.03em;
+        margin: 0;
+    }
+
+    .subtext {
+        @include font-size(15px);
+        line-height: 20px;
+        color: $secondary-600;
+        text-align: center;
+        letter-spacing: 0.01em;
+        font-family: $pangramregular;
+        margin: $space5+3px 0 0;
+
+        &::after {
+            content: '';
+            border-bottom: $common-border;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            padding: $space10+2px 0 0;
+        }
+    }
+
+    .flex-wrpr {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-column-gap: $space20 +5px;
+        margin-top: $space20;
+        padding: $space20 $space25 $space15*2;
+    }
+
+    .storemap {
+        padding-top: 7px;
+
+        .iframe-container {
+            position: relative;
+            padding-top: 100%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .gm-ui-hover-effect {
+            top: 0;
+            right: 0;
+
+            span {
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                margin: 0px;
+            }
+        }
+
+        .loader-animate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translate(0%, 240px);
+
+            &:after {
+                content: '';
+                border: 5px solid $light-gray;
+                border-top: 5px solid $primary-color;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                animation: spin 2s linear infinite;
+
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .cities-list {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 670px;
+        position: relative;
+
+        .search-box {
+            position: sticky;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding-top: 7px; 
+            background: $bg-white;
+
+            input {
+                padding: 0 $space10 0 $space30 +5px;
+                height: 55px;
+                box-shadow: 0 3px 6px #9e9e9e7a;
+                border-bottom: 0;
+                font-family: $pangrammedium;
+                color: $secondary-color;
+
+                &::placeholder {
+                    font-family: $pangramregular;
+                    color: $secondary-600;
+                    font-size: 15px;
+                    letter-spacing: 0.02em;
+                }
+            }
+
+            .current-loc {
+                position: absolute;
+                top: 18px;
+                left: 8px;
+                cursor: pointer;
+            }
+
+            .search-btn {
+                position: absolute;
+                right: 0;
+                top: 0px;
+                padding: 13px 16px;
+                cursor: pointer;
+
+                &::placeholder {
+                    color: $secondary-600;
+                }
+            }
+
+            .error {
+                color: $color-red;
+                @include font-size(12px);
+                line-height: 16px;
+                letter-spacing: 0.01em;
+                font-family: $pangramregular;
+                padding: $space10;
+                border: $common-border;
+                border-top: 0;
+            }
+
+            .other-city {
+                position: absolute;
+                right: 10px;
+                top: 9px;
+                border: 0;
+                width: auto;
+                background: $primary-color;
+                color: $color-white;
+                font-family: $pangramregular;
+                padding: 7px;
+                @include border-radius(3px);
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+
+                &:hover {
+                    background: $hover-color;
+                }
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: $light-gray;
+            padding-right: 10px;
+            padding-top: 5px; 
+        }
+        &::-webkit-scrollbar-thumb{background: $secondary-500;border-radius: 10px;cursor: pointer;}
+        &::-webkit-scrollbar-track{background-color:$light-gray ;}
+        .store_list {
+            background: $bg-white;
+            border: $common-border;
+            border-top: 0;
+            border-bottom: 0;
+            position: sticky;
+            top: 62px; 
+
+            li {
+                border-bottom: $common-border;
+
+                a {
+                    padding: $space5+3px $space10;
+                    display: block;
+                    color: $secondary-color;
+                    font-family: $pangramregular;
+                    line-height: 22px;
+                    letter-spacing: 0.02em;
+                    padding-left: 35px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        background: url('../images/store-new/PinMap.svg')no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 18px;
+                        position: absolute;
+                        left: 8px;
+                        top: 10px;
+                        display: inline-block;
+                    }
+                }
+
+                &:hover {
+                    background: #f1f1f1;
+
+                    a {
+                       font-family: $pangrammedium;
+                    }
+                }
+            }
+        }
+
+        article {
+            .city {
+                width: 50%;
+                display: inline-block;
+                text-align: left;
+                padding: $space10;
+                border: $common-border; 
+                border-top: 0;
+                vertical-align: top;
+
+                &:nth-child(even) {
+                    border-left: 0;
+                }
+
+                &:nth-child(-n + 2) {
+                    border-top: 0;
+                }
+                &:hover{background: $light-gray;}
+            }
+
+            img {
+                max-width: 56px;
+                width: auto;
+                height: auto;
+                float: left;
+                margin-right: 12px;
+            }
+
+            .text-small {
+                padding: $space5 0 0;
+                display: inline-block;
+                @include font-size(17px);
+                line-height: 22px;
+                font-family: $pangrammedium;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 63%;
+
+                span {
+                    @include font-size(14px);
+                    line-height: 20px;
+                    display: block;
+                    font-family: $pangramregular;
+                }
+            }
+        }
+    }
+}
+
+.figure {
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 10px;
+
+    img {
+        transform: scale(1);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        transition: 0.3s all ease-in-out;
+    }
+
+    &:before {
+        padding-top: 100%;
+        content: '';
+        display: block;
+    }
+}
+
+.service-store {
+    margin: $space20 0;
+    text-align: center;
+    background: $bg-white;
+
+    .subhead {
+        @include font-size(26px);
+        padding: 0;
+    }
+
+    .text-small {
+        color: $secondary-700;
+    }
+
+    .service-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0;
+
+        .service-box {
+            width: 25%;
+            margin: 0 20px 0 0;
+            text-align: center;
+
+            figure {
+                @extend .figure;
+
+                &::before {
+                    padding-top: 75%;
+                }
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.request-btn {
+    margin: $space40 0 0;
+    text-align: center;
+
+    &:hover {
+        .btn {
+            background: $hover-color;
+        }
+    }
+
+    .btn {
+        background: $primary-color;
+        display: inline-block;
+        color: $color-white;
+        padding: $space10 $space20;
+        @include border-radius(3px);
+        font-family: $pangramregular;
+        @include font-size(16px);
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+        position: unset;
+        width: auto;
+        text-transform: capitalize;
+    }
+}
+
+.category-wrpr {
+    background: $bg-white;
+    text-align: center;
+    border-bottom: $common-border;
+
+    .subhead {
+        padding: 0;
+    }
+
+    .text-small {
+        color: $secondary-600;
+    }
+
+    .category-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: $space30 0 0;
+
+        .popular_catgry {
+            width: 16%;
+            margin: $space10 auto $space20;
+
+            img {
+                transition: 0.3s all ease-in-out;
+                width: auto;
+                height: auto;
+            }
+
+            .category-name {
+                @include font-size(15px);
+                line-height: 20px;
+                font-family: $pangramregular;
+                color: $secondary-color;
+                padding: 8px 0 0;
+                text-transform: capitalize;
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.8;
+                }
+
+                .category-name {
+                    color: $primary-color;
+                }
+
+            }
+        }
+    }
+}
+
+.customer-reviews {
+    .slick-track {
+        margin: 0 auto;
+    }
+
+    .btn-view {
+        bottom: 20px;
+    }
+
+    .in {
+        figure {
+            height: 186px;
+        }
+
+        .text-common {
+            font-size: 13px;
+            text-align: justify;
+            padding-right: 6px;
+        }
+    }
+}
+
+.detailmap {
+    .storeAdd {
+        display: block;
+        font-family: $pangramregular;
+        color: $secondary-700;
+        @include font-size(13px);
+        line-height: 16px;
+        margin: 0 0 $space5;
+    }
+
+    .storeDetail,
+    .direction-link {
+        text-decoration: none;
+        @include font-size(14px);
+        line-height: 20px;
+        font-family: $pangramregular;
+        color: $primary-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .direction-link {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .common-box {
+        padding: $space30 0;
+    }
+
+    .citywrpr {
+        .subhead {
+            @include font-size(22px);
+            line-height: 29px;
+        }
+
+        .flex-wrpr {
+            padding: $space15 $space15 $space20;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .cities-list {
+            height: 542px;
+
+            article {
+                .text-small {
+                    width: 54%;
+                    @include font-size(14px);
+                }
+            }
+        }
+    }
+
+    .text-small {
+        @include font-size(14px);
+    }
+
+    .service-store {
+        margin: $space10 0;
+
+        .subhead {
+            @include font-size(23px);
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .banner-wrpr {
+        padding: 90px 0;
+    }
+
+    .citywrpr {
+        margin: -90px 0 0px;
+
+        .flex-wrpr {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .subtext {
+            @include font-size(14px);
+            line-height: 18px;
+            margin: $space5 0 0;
+        }
+
+        .cities-list {
+            height: 338px;
+
+            article {
+                .text-small {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .service-store {
+        .service-list {
+            .service-box {
+                margin: 0 $space10+2px 0 0;
+            }
+        }
+    }
+
+    .request-btn {
+        margin: $space20 0 $space0;
+
+        .btn {
+            padding: 8px 12px;
+            font-size: 15px;
+        }
+    }
+
+    .category-wrpr {
+        .category-list {
+            margin: $space20 0 0;
+
+            .popular_catgry {
+                margin: 0px $space5 $space15;
+                width: 14%;
+
+                .category-name {
+                    @include font-size(14px);
+                    padding: 5px 0 0;
+                }
+            }
+        }
+    }
+
+    .customer-reviews .in {
+        padding: 12px;
+    }
+
+    .service-store {
+        .subhead {
+            @include font-size(22px);
+            line-height: 28px;
+        }
+    }
+
+    .slick-dots {
+        text-align: center;
+
+        li {
+            &.slick-active {
+                button {
+                    &::before {
+                        background: $primary-color;
+                    }
+                }
+            }
+
+            button {
+                &::before {
+                    background: $secondary-500;
+                    @include border-radius(100%);
+                }
+            }
+        }
+    }
+}

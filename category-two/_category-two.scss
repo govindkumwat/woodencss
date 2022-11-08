@@ -1,0 +1,61 @@
+/*.category-main { background: #f5f5f5; padding: $space25 0;
+ .container { width: 1170px; }}*/
+ 
+ 
+.flex { 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap 
+}
+.category-two { 
+    width: 75%; 
+    background: $bg-white; 
+    height: 100%; 
+    color: #4A4949; 
+        .shortBy {
+            border-bottom: $common-border;
+            padding: $space0 $space20; 
+            margin-bottom: $space25; 
+                a {
+                    display: inline-block; 
+                    padding: $space10; 
+                    color:#333; 
+                        &.active, &:hover { border-bottom: 2px solid $color-orange;}       
+                }
+        } 
+        .full-flex { padding: $space0 $space20; }
+        .col-main{ padding:0 20px} 
+        .col { width: 48.5%; position: relative; margin-bottom: $space15;
+            a {color:$color-black;}
+            .small_img{   
+                   figure{ display:inline-block; margin-right:$space5;}
+                  }                   
+            .proud-name{ border-bottom:$common-border; padding: $space5 0; margin-bottom:$space5; }         
+            .w-cart{ position:absolute; right: 0; bottom:55px;
+                 a{ margin-left:$space10; @include size(20px); display:inline-block;
+                  i{ background:url("#{$images-path}/category-new/cart.svg") no-repeat; @include size(20px); display:block; text-indent:-9999;} 
+                  + a { i{ background:url("#{$images-path}/category-new/wishlist.svg") no-repeat; }  }
+                 } 
+        }         
+            .price { width: 60%; display: inline-block;
+            span{ color:$color-orange;}
+            label{ display:block; @include font-size(13px); color:#8B8B8B }
+            strong { padding: $space0 $space5; font-weight: normal; font-family: $robotomedium; }
+        }        
+            .ship { float: right; margin-top: $space15;
+            img{ vertical-align:middle}
+        }        
+            .best-seller{ 
+                position:absolute; 
+                left:10px; 
+                top:10px; 
+                background: $bg-orange; 
+                padding:$space5 $space15; 
+                color:#fff; 
+                @include border-radius(20px);
+            }          
+ }
+ 
+}
+
+ 

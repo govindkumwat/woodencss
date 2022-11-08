@@ -1,0 +1,84 @@
+ //Global
+@import "mixin/_global.scss";
+
+.timesenter {
+  padding: 40px 0;
+}
+
+.timesenter img {
+  margin: 20px auto;
+  display:block; 
+}
+
+.timesenter .title {
+  font-size : 20px;
+  color     : #fff;
+  background: #000;
+  display   : inline-block;
+  padding   : 5px 35px 5px 15px;
+  margin    : 10px 0;
+  position  : relative;
+}
+
+.timesenter .title:after {
+  position   : absolute;
+  font-family: FontAwesome;
+  content    : '\f0d9';
+  color      : #fff;
+  font-size  : 65px;
+  right      : 0;
+}
+
+.timesenter p {
+  font-size: 14px;
+  padding  : 10px 0;
+}
+
+.timesenter .cheading {
+  font-size : 22px;
+  text-align: center;
+  
+  .text-orange{ color:$color-warning;}
+}
+
+.bigheading {
+  text-align   : center;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.timesenter .cheading strong {
+  font-family: robotoregular;
+  font-weight: 400;
+}
+
+ .h1-heading {
+   font-family: robotomedium;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    background: #f5f5f5; 
+    padding:$space10 $space20;
+    margin:$space15 0;
+  }
+@media #{$screen-mobile} {
+  .timesenter { background: #fff;
+    padding: 20px 15px;
+  }
+
+  .timesenter .cheading {
+    font-size  : 14px;
+    line-height: 22px;
+  }
+
+  .h1-heading {
+    background: none;   
+    font-size: 20px;
+    margin:0;
+    padding-top:0;
+  }
+.timesenter .title:after {  display:none; }
+  .bigheading {
+    border-bottom-color: #e2dfdf;
+  }
+  .timesenter p { line-height: 22px; }
+}

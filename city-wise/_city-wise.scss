@@ -1,0 +1,68 @@
+.city-wise {
+   figure{ position:relative; background: #f5f5f5;
+        img{ position:absolute; top:0; bottom:0;  right:0; left:0;margin:auto; mix-blend-mode: darken; opacity: 0; }
+        &:before{ padding-top:100%; content:''; display:block; }
+        img:not(.initial) { @include transition(opacity 1s);  }
+        img.initial,img.loaded,	img.error {opacity: 1;}
+        img:not([src]) {visibility: hidden;}
+   }
+}
+
+.city-text { text-align: center; padding: $space30 0; background: #f5f5f5; margin-bottom: $space40; }
+.city-title { @include font-size(22px); display: block; margin-bottom: $space5; }
+
+ .city-banner { max-width: 1440px; margin: auto;
+     figure {
+         &:before { padding-top: 35%; }
+     }
+ }
+ .popular-categories { padding: $space30 0; text-align:center;
+     .browse-populer {  margin-top: $space20; display: flex; justify-content: space-between; flex-wrap: wrap;
+        a {  color: $color-black; margin-bottom: $space10; width: 15.5%; }
+        figure { margin-bottom: $space5; }
+     } 
+ }
+
+ .city-stores { display: flex; margin-top:$space30; justify-content: center;
+     a { background: $bg-white; padding: $space20; width: 32%; display: block; text-align: left;color: $color-black; border: $common-border; @include border-radius(3px);
+       &:not(:last-child){ margin-right: 1.5%;  }
+     }
+     .store-name { background: $bg-orange; min-width: 150px; padding: $space5 $space10 $space5 $space20; margin-left: -20px; color: $color-white; display: inline-block; }
+     address { padding: $space10 0; font-style: normal; }
+     .detail-btn { border: 1px solid $color-orange; padding: $space5 $space20; display: inline-block; color: $color-orange; }
+ }
+ 
+ 
+  .city-heading { @include font-size(22px); line-height: normal; text-align: center;  position: relative; margin: $space30 0;
+  &:before { content: ''; border-bottom: $common-border; display: block; }
+  span  { position: absolute; bottom: -12px; background: $bg-white; width: 320px; left:0; right:0; margin: auto; }
+ }
+ 
+ .view-btn { background: #434343; padding: $space5 - 2 $space10; color: $color-white; width: 100px; display: block; margin:0 auto $space40*2; text-align: center; }
+ 
+ .all-flex { display: flex; justify-content: space-between; margin: $space40 $space0;
+     a { width: 24%; color: $color-black; }
+      figure {  
+         &:before { padding-top: 68%; }
+     }
+     p { padding: $space10 $space0 $space5; @include oneline(); }
+     span { @include font-size(17px); margin-right: $space10; vertical-align: middle; }
+ }
+ 
+ .city { text-align: center; 
+        a { color: $color-orange; }
+ }
+ 
+ .bottom-content { padding: $space40 10% 0; margin: $space40 auto 0; border-top: $common-border;
+  a { color: $color-black; }
+  h2 { text-align: center; }
+  h1, h2, h3 { @include font-size(20px); font-family: $robotolight; font-weight: normal; }
+  p { margin-bottom: $space15; @include font-size(13px); }
+  ol, ul { list-style-position: inside; padding: 0px; 
+    li { margin-bottom: $space15; @include font-size(13px); }
+  }
+ }
+ 
+ 
+ 	
+			

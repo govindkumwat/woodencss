@@ -1,0 +1,16 @@
+@media #{$screen-desktop}{
+    .export-products{
+    li{margin-right: $space5;}
+}
+.furniture-export{
+    .resfur-all{
+        .btn{padding: 3px 10px; @include font-size(12px);}
+        img{width:150px;}
+        .right{
+            img{
+                width: auto;
+            }
+        }
+    } 
+}
+}

@@ -1,0 +1,155 @@
+body{
+    font-family:$pangramregular;
+    color:$secondary-color;
+}
+.space70{
+    margin:70px 0 0;
+}
+.banner-section{
+    background:url('../images/gift-page/banner-main.jpg')no-repeat;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    .banner-content {
+        background: #FEFAF5;
+        width: 24%;
+        text-align:center;
+        padding: 45px 58px;
+        margin: 16px;
+        float: right;
+    }
+}
+.main-text {
+    @include font-size(45px);
+    line-height: 48px;
+    font-weight: normal;
+    font-family: 'Vidaloka', serif;
+    color:$color-black; 
+    margin:25px 0 45px;
+}
+.text-middle{
+    @include font-size(17px);
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    &:after{
+        content:'';
+        border-bottom:1px solid #acacac;
+        margin: 0 auto;
+        width:86px;
+        display: inline-block;
+    }
+}
+.explore-btn {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #131313;
+    border: 1.5px solid #333;
+    padding: 4px 15px;
+    font-family: $pangrammedium;
+    transition: 0.5s all ease;
+    &:hover{
+        box-shadow: 0px 4px 4px rgba(0, 0,0,0.18);
+        color: $color-white;
+        background:$secondary-color;
+        transition: 0.5s all ease;
+    }
+}
+.section-head{
+    @include font-size(23px);
+    line-height: 26px;
+    text-align:center;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+.gift-recipient-list{
+    display:flex;
+    justify-content: space-between;
+    .single-box{
+       position: relative;
+       margin:0 10px;
+       .text-common{
+           color:$color-white;
+           @include font-size(20px);
+           line-height: 24px;
+           letter-spacing: 0.2px;
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            text-align: center;
+       }
+    }
+}
+.gift-list{
+    .gift-recipient-list{
+        .single-box{
+            .text-common{
+                @include font-size(19px);
+                line-height:24px;
+                letter-spacing:0.5px;
+                font-family:$pangramlight;
+                bottom:20px;
+                b{
+                font-family: $pangrammedium;
+                display:block;
+                font-weight: normal;
+                @include font-size(22px);
+            }
+            }
+        }
+    }
+}
+.clients-testimonial{
+    p{
+        text-align: center;
+    }
+}
+.shopSlider{
+    li{
+        a{
+            span{
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.footer-content{  
+    margin-bottom: 60px;
+    .common-details{
+    height: 180px;
+    overflow: auto;
+    border: 1px solid #e5e5e5;
+    padding: 15px 20px;
+}
+    a{color:#e57200;}
+    ul,ol{
+        li{
+            font-family: $pangrammedium;
+        }
+    }
+    b,strong{font-weight:normal; font-family:$pangrammedium;color: $secondary-color;}
+    h2,h3{
+        @include font-size(22px);
+        line-height: 26px;
+        margin: 15px 0 6px 0;
+        text-align: left;
+        font-weight: normal;
+        font-family: $pangrammedium;
+    }
+    h3{
+        @include font-size(20px);
+        line-height: 24px;
+    }
+    p{
+        color:$secondary-600;
+        font-family: 'pangramregular';
+    }
+}

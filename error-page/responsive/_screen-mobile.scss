@@ -1,0 +1,25 @@
+@media #{$screen-mobile}{
+    .found-error { background:$bg-white;
+        ul{
+                background-position: center top; padding-top: 145px; background-size: 300px 130px; height: auto;
+                li{
+                    margin-bottom: $space10; text-align: center;
+                    a{
+                        i{
+                                float: none; display: block; margin: auto;
+                        }
+                    }
+                }
+                li+li{ text-align: center;}
+        }
+        p{
+            font-size: $font-size-15+3;
+        }
+    }
+    header{
+        .logo{
+            margin:13px 0 5px;
+        }
+    }
+}
+

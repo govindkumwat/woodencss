@@ -1,0 +1,45 @@
+.footer{
+.footer-top{ margin:0 -10px; padding:0 0 $space15;}
+     .footer-menu{ display:block; width:100%; 
+                  .title{ background:#f5f5f5; margin-bottom:0; padding:$space10+2 $space10; border-bottom:1px solid #e5e5e5;  cursor:pointer; 
+                     &:before{ font-family:$fontawesome; content:"\f107"; float:right; @include font-size(20px);}
+                      
+                  }
+      ul{ display:none;}
+       li{ border-bottom:1px solid #f5f5f5; padding:$space10; }
+     }
+    .facebook-like{ width:100%; text-align:center; display:block; margin-top:$space10;
+     p{ padding-bottom:$space5;}
+    }
+     
+    .top-categroy, .delivery-city{ display:none;}
+
+    .bottom{ border:none;
+        .delivery, .copyright{ float:none; text-align:center; padding-bottom:$space5+3;}
+        
+    }
+   .socail-link-title{@include font-size(16px); padding:$space10 0;}
+   
+}
+
+.newsletter-main{ display:block; padding:$space15 0 0;
+/*   article{ width:100%; text-align:center; padding:$space5 0;
+     span{@include font-size(16px);}
+   }
+   p{ margin:$space10 $space0;}*/
+
+.newsletter{ width:100%;}
+ .app-mobile{ width:100%; text-align:center; padding:$space10 0 $space20; border-bottom:none;
+  .label{ display:block; padding:$space5 0; @include font-size(15px);}
+ }
+}
+ 
+
+#backtop{ display:none;}
+
+
+.zopim{ bottom:55px!important;
+    +.zopim{z-index:99px!important;
+        +.zopim{z-index:9px!important;}
+    }
+}

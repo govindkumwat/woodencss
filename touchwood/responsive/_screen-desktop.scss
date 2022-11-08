@@ -1,0 +1,61 @@
+@media #{$screen-desktop}{
+   .touchBanner { width: auto; }    
+   .touchContent { 
+       font-size: 18px;
+    line-height: 22px; 
+   }
+  .banner-title { 
+      font-size: 34px;
+    line-height: 40px;
+  }
+   .flexTouch { 
+       padding: 0px;
+       margin-top: 35px;
+       .rightTouch{
+           .TouchTitle{
+               font-size:20px;
+               line-height: 26px;
+           }
+           h2{
+               margin:15px 0 0px;
+               font-size:18px;
+               line-height: 24px;
+           }
+           p{
+               line-height:20px;
+               margin-bottom: 10px; 
+               font-size:14px;
+           }
+           .img{
+                       &:before{
+                           padding-top:48%;
+                       }
+                   }
+           .videoTouch{
+               margin:20px 0 20px 0;
+               a{
+                   width:50%;
+               }
+           }
+           ul{
+               padding:0 0 0 15px;
+               li{
+                   margin:0 0 5px 0;
+               }
+           }
+       }
+   }
+   .touchfreebanner {
+    height: auto;
+    .touchContent {
+        width: 70%;
+        padding: 0px 3% 0px 2%;
+        .banner-title {
+            font-size: 28px;
+    line-height: 36px;
+    
+        }
+    }
+}
+}
+

@@ -1,0 +1,23 @@
+@media #{$screen-desktop}{
+    .custm-banner {
+        .banner-bg { height: 420px; }
+        .container { padding: $space20 0; }
+    }
+    .custome-imagine {
+        ul {
+            li {
+                img { width: 160px; }
+            }
+        }
+    }
+    .perfect-furniture {
+        ul {
+            li{
+                &:first-child { margin-top: 100px; }
+            }
+        }
+    }
+
+
+
+}

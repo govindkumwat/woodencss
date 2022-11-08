@@ -1,0 +1,162 @@
+//Career
+.text-center{ text-align: center;}
+.bigheading { text-align: center; margin: 15px 0px;}
+.h1-heading {text-align: center; font-size: 1.5625rem; font-family: robotomedium; font-weight: 400; line-height: normal;  display: inline-block; background: #f5f5f5; padding: 5px 20px;}
+.heading-blenda, .resfur-banner .heading, .media-explore .title { font-family: blenda_scriptregular; font-weight: 400;}
+.heading-sacramento, .media-explore span {font-family: sacramentoregular; font-weight: 400;}
+.heading-light { font-size: 24px; font-family: robotoregular; font-weight: 300; padding: 5px 0px;}
+.heading-style{font-size: 40px; color: #848484; line-height: normal;  padding-bottom: 10px;}
+.text-left { text-align: left;}
+.career{
+    .slick-dots{
+                   li{
+                       button{
+                           &:before{@include size(11px); border: $border1 #c9c9c9; @include border-radius(100%);}
+                       }
+                   }
+               }
+    .topbanner{color: $color-white; position: relative; margin: $space20 $space0 $space10; position: relative;
+               figure{ position: relative;
+               &:after{position: $postion-absolute; background: black(0.2); top: $zero; bottom: $zero; left: $zero; right: $zero; content: '';}
+               }
+               article{ background:none!important; position: $postion-absolute; top: 50%; width: 100%; transform: translate(0,-50%); z-index: 1;
+                 &:before{ display:none;}
+               }
+               p{font-size: $font-size-25*2+$space5; line-height: 52px;}
+              .slick-dots{ position: absolute; bottom:15px; right: 10px; width:auto;} 
+    }
+    .rejobs{
+        article{width: percentage(733px / $width-container);}
+        aside{width: percentage(341px / $width-container);}
+        .heading-bold,strong{font-size: $font-size-20;}
+        .heading{color: lighten($color-dark,10%); padding-bottom: $space10;
+                 small{font-size: $font-size-10+3;}
+                 a{color: lighten($color-dark,10%);
+                   &:hover{color: $color-warning;}
+                 }
+        }
+        ul{border: $border1 darken($bg-light,8%); @include border-radius(5px);
+           li{border-bottom: $border1 darken($bg-light,8%); padding: $space10+2 $space15;
+              p{width: 50%; box-sizing: $border-box; padding-right: $space10; line-height: 24px;
+               span{font-size: $font-size-15+1; display: block;}
+               small{font-size: $font-size-10+3; margin-right: $space10;}
+           }
+           .city{font-size: $font-size-15+1; padding-top: $space5;
+                 .fa{vertical-align: text-top; margin-right: $space10; font-size: $font-size-20;}
+           }
+           .btn{@include border-radius(5px); font-size: $font-size-10+2; font-family: $font-family-bold; pointer-events:none;  padding: $space5+3 $space10+2;}
+           .btn-part{background: #57ddc2;
+                     &:hover{background: darken(#57ddc2,8%);}
+           }
+           .btn-freelance{background: #1daadf;
+                     &:hover{background: darken(#1daadf,8%);}
+           }
+           @include last(1){border:$zero;}
+        }
+        }
+        figure{position: relative; color: $color-white;}
+        figcaption{position:absolute; background:rgba(0,0,0,0.5); left:$zero; right:$zero; bottom: $zero; padding: $space15 $space20;
+                   p{line-height: $line-height-small; font-size:13px;}
+        }
+    }
+    .opport{border: $border1 darken($bg-light,8%); @include border-radius(5px); margin: $space25 $space0; padding: $space20*4 $space0; color: $color-dark; position: relative;
+            .heading{font-size: $font-size-30+$space10; line-height: 48px;}
+            p{font-size: $font-size-20; padding: $space5 $space0 $space20;}
+            span{font-size: $font-size-15;}
+            a{padding: $space5 - 1 $space10+2; margin-left: $space10; @include border-radius(5px);}
+            &:before,&:after{position: $postion-absolute; left: 80px; top: 42px; background:url("#{$images-path}/careers/opport-left.jpg"); content: ''; @include size(174px,282px);}
+            &:after{background:url("#{$images-path}/careers/opport-right.jpg"); right: 52px; left: inherit; top: 27px;}
+    }
+    .life{
+        ul{margin:$space25+3 $space0 $space20*2;
+            li{float: left; overflow: hidden;
+               img{display: block; @include transition(0.5s ease-in); @include transform(scale(1));
+               &:hover{@include transform(scale(1.03));}
+               }
+            }
+        }
+    }
+    .department{ color: $color-dark; padding-bottom: $space30*2; position: relative;
+        figure{width: percentage(490px / $width-container); margin-left: $space30*2; margin-top: $space25*2}
+   
+                p{font-size: $font-size-15+1; padding: $space10 $space0; line-height: $ling-height-large;}
+    
+        strong{font-size: $font-size-25+2;}
+        blockquote{width: 87%; font-style: italic; font-family:$robotolight; line-height:25px;
+                   span{ display: block; font-style: normal; padding-top: $space5; }
+        }
+        .quote{ margin-top: $space20;
+        img{@include size(44px); border-radius:(100%);}
+        }
+        .single-item-career {float:left; width: percentage(495px / $width-container); box-sizing:border-box;  margin-top: $space25*2; padding-top:$space40; padding-left:$space30+15;
+                     .slick-dots{left: $zero; right: $zero; text-align: center;
+                   li{
+                       button{
+                           &:before{ background:#c9c9c9; }
+                              &:hover{
+                                   &:before{ background:#000;}
+                                 }
+                       }
+                       &.slick-active{
+                           button{
+                           &:before{ background:#fd6d26;}
+                       }
+                       }
+                   }
+              }
+                     
+        }
+    }
+    .post{border-top:$border1 darken($bg-light,12%); border-bottom:$border1 darken($bg-light,12%); padding: $space30+$space5 $space0;
+          .box{ width: percentage(541px/$width-container); background:#f5f5f5; float: left; margin-right: $space15;
+                span{font-size: $font-size-20; display: block; padding: $space10 - 2 $space0;}
+                p{line-height: 22px;}
+                @include every(2){margin-right: $space0;}
+          }
+          article{width: 53%; padding-top: 70px;}
+          .quote{background: none;}
+          blockquote{ color:#b5b5b5; line-height: 38px; padding: $space30*2 $space30 $space0 $space0; font-size: $font-size-25 - 1;}
+    }
+    .happy-employes{padding: $space30 $space0 $space30*2; color: $color-white;
+                   .inset{background:url("#{$images-path}/careers/happy-employes.jpg") no-repeat 0 0; height: 485px; box-sizing: $border-box; padding:122px 100px; position: relative;}
+                   .box{width:421px; margin-right: $space25*2;
+                        @include last(1){margin-right: $space0;}
+                   }
+                   blockquote{ border:1px dashed $bg-white; @include border-radius(5px); box-sizing: $border-box; padding: $space25; font-style: italic; line-height: $ling-height-large; margin-bottom:$space25; position: relative;
+                               &:after{position: $postion-absolute; content: '\f0d7'; font-family: $font-family-awesome; font-size: $font-size-30+$font-size-15; left: 18px; bottom: -20px;}
+                   }
+                   img{@include size(44px); margin: $space0 $space10+2; @include border-radius(100%);} 
+                   p{font-size: $font-size-20 - 2; line-height: $line-height-normal;
+                     small{display: block; font-size: $font-size-10+2;}
+                   }
+                   .single-item-career{
+                       .slick-dots{left: $zero; right: $zero; text-align: center; bottom:0px; position:absolute;}
+                   }
+    }
+    .workwith{
+        .heading-style{line-height: $line-height-small;}
+        p{font-size: $font-size-15+1; color: $color-dark;
+          a{color: $color-dark;
+            &:hover{color: $color-warning;}
+          }
+        }
+        article{width: auto; margin-top: $space25;}
+        ul{height: 329px; padding: $space10;
+            li{
+                p{ width:70%;
+                    span{display: inline-block; width:240px;}
+                    small{margin: $space0 $space0 $space0 $space20;}
+                }
+            }
+        }
+        .mCSB_scrollTools{width: 4px;
+                          .mCSB_draggerRail{width: 4px; background: darken($bg-light,5%); @include border-radius(2px);}
+                          .mCSB_dragger{
+                              .mCSB_dragger_bar{width: 4px; background: $bg-warning; @include border-radius(2px);}
+                          }
+        }
+    }
+}
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss"; 

@@ -1,0 +1,169 @@
+.tab-finish {
+	padding: $space5 0 $space10;
+	&.size {
+		.create-set {
+			vertical-align: top;
+		}
+
+		.setslink {
+			color: $primary-color;
+			font-size: 14px;
+			padding: 7px;
+			vertical-align: super;
+			display: inline-block;
+			min-height: 55px;
+		}
+	}
+	
+	ul {
+		li {
+			display: inline-block;
+			margin: 0 $space5+3 $space10 0;
+			cursor: pointer;
+			position: relative;
+			text-align: center;
+			border: $common-border;
+			transition: 0.3s all ease-in-out;
+
+			[type="radio"] {
+				position: absolute;
+				cursor: pointer;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				top: 0;
+				bottom: 0;
+				@include size(100%);
+				opacity: 0;
+				z-index: 1;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.finish-name {
+				@include font-size(12px);
+				line-height: 20px;
+				font-family: $robotomedium;
+				color: $secondary-600;
+			}
+
+			.finish-price {
+				display: block;
+				font-family: $robotoregular;
+				color: $secondary-600;
+				font-size: 12px;
+			}
+
+			&.active {
+				border-color: $primary-color;
+
+				&:hover {
+					border-color: $primary-color;
+				}
+			}
+
+			&:hover {
+				border: 1px solid $secondary-400;
+			}
+		}
+	}
+
+	.finish-btn {
+		padding: 4px;
+		min-height: 140px; 
+		min-width: 115px;
+
+		img {
+			max-width: 105px;
+			min-height: 90px;
+			display: grid;
+			margin: 0 auto;
+		}
+	}
+
+	.finishText {
+		color: $secondary-600;
+		font-family: $robotoregular;
+
+		&.mattressSize {
+			padding: 4px;
+		}
+
+		span {
+			padding: 4px 12px;
+			display: block;
+			background: $light-gray;
+			@include font-size(13px);
+			color: $secondary-600;
+		}
+
+		.pricebox {
+			display: block;
+			@include font-size(13px);
+			border-top: $common-border;
+			padding: 6px 12px;
+			color: $secondary-600;
+		}
+	}
+
+	.final_size {
+		li {
+			@include border-radius(2px);
+
+			&.active {  
+				.finishText {
+					span {
+						background: #fff2ec;
+					}
+				}
+			}
+		}
+	}
+}
+
+.titleFinish {
+	color: $secondary-700;
+	margin-bottom: 10px;
+	@include font-size(15px);
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: 0.01em;
+	font-family: $robotomedium;
+}     
+.all-option-ajax{
+	width: 100%;
+}
+.inside {
+	display: none;
+	background: $secondary-color;
+	border: 0; 
+	color: $color-white;   
+	width: 200px;
+	padding: 10px;
+	position: absolute;
+	bottom: 26px;
+	right: -86px;
+	@include font-size(12px);
+	line-height: 20px;
+
+	&:before {
+		content: "\f0d7";
+		position: absolute;
+		bottom: -12px;
+		left: 100px;
+		color: $secondary-color;
+		font-family: $fontawesome;
+		@include font-size(20px);
+	}
+}
+
+@media screen and (max-width:768px) {
+	.tab-finish {
+		.finish-btn {
+			min-height: 125px;
+		}
+	}
+}

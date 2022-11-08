@@ -1,0 +1,27 @@
+@media #{$screen-desktop}{ 
+    .career-content{
+        article{ padding-right:$space40;}
+         p{ padding:$space30;}
+      }
+
+      .carrer-value{
+           article{ padding:0 $space30+5;}
+            
+        
+      }  
+    
+      
+       .carrer-life{      
+       .slick-prev{ left:400px;}
+       .slick-next{ right:400px;}         
+    } 
+      
+      
+    .career-benfits ul{ max-width:100%; }
+    .career-employees{
+        .slick-prev{ left:-10px;}
+        .slick-next{ right:-10px;}
+    }
+    
+    
+}

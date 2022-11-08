@@ -1,0 +1,35 @@
+
+.payments-section{ font-size: 14px;padding-left:22px; padding-bottom: 22px; 
+    
+    .payments-half{ width:60%; margin-bottom: 10px}
+    .checkbox-style{border: 1px solid #d7d7d7; padding: 6px 15px; @include border-radius(3px); display: block; width: 100%; 
+     &.active{ border-color:$color-warning;}
+    }
+    label{ vertical-align: top}
+    input[type="radio"]{ margin-top: 7px; display: inline-block}
+    
+    .delivery-address{ 
+        
+        .title{ padding-left: 0px; margin-top:70px;text-transform: none;
+         a{ color: #0091d8; font-size: 12px; }   
+        }
+        p{ margin-bottom: 5px; }
+              
+        
+    .address-slider{ overflow:auto; white-space:nowrap;}
+    
+      .detail{ @include size(230px); overflow:hidden; cursor:pointer; white-space:normal;display:inline-block;  margin:0 2px; position:relative; border:$common-border; @include border-radius(4px); padding:$space10 $space0 $space10  $space10; text-transform:capitalize; @include font-size(14px);
+        .select-text{ display:none;color:$color-warning; padding:$space0; 
+        img{ vertical-align:middle; margin-right:$space5;}
+      }
+      &.active{ border:1px solid $color-warning;
+          .select-text{ display:block;} 
+      }  
+ }
+ 
+ 
+}
+
+}
+
+.address-container input[type="radio"] { display: none} 

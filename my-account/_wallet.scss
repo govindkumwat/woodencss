@@ -1,0 +1,14 @@
+.transactions{
+    .account_wallet{ padding-bottom:$space10;}
+    .list{
+        thead{ border-bottom:$common-border;
+            th{width:20%; background:none; padding:$space5 $space10;}
+        }
+        tbody{
+            td{width:20%; border-right:$common-border; border-top:$common-border;
+             &:last-child{ border-right:none;}
+            }
+        }
+    }
+    ol { padding: $space0; list-style-position: inside; line-height: 30px;  }
+}

@@ -1,0 +1,18 @@
+ .category-three{  justify-content:flex-start;
+     .box{ width:32%; margin-right:$space20+2;
+         @include every(3){ margin-right:0;}
+          figure{ position:relative; /*@include size(350px);*/ position:relative;
+           .whenLoading{ @include size(54px!important); max-width:auto;  position:absolute; left:50%; top:50%; @include transform( translate(-50%,-50%));}
+          }
+     }  
+     
+     
+          figure{&:before{ padding-top:100%;} } 
+ }
+
+        
+        
+   
+        
+      
+  

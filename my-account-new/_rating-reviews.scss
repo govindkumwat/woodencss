@@ -1,0 +1,63 @@
+.order-ratings { 
+    .Rate-product.flex { align-items: center; }
+     .title { margin-bottom: $space5; display:block; @include font-size(15px); }
+      .starRating{display: inline-block; position:relative;} 
+              .starRating + .error-block{ text-align:center;} 
+             .starRating:not(old)>input{ opacity:0; position:absolute; left:0; top:0;}
+             .starRating:not(old)>label{ float:right!important;  vertical-align:middle; position:relative; margin:0 3px; cursor:pointer;}
+             //.starRating:not(old)>label> small{ position:absolute; left:0px; top:0px; opacity:1; transition:opacity .2s linear;}
+             .starRating:not(old)>input:checked ~ label, .starRating:not(old)>input:hover ~ label{opacity:2; position:relative;}
+             .starRating:not(old)>input:checked ~ label > small, .starRating:not(old)>input:hover ~ label > small{ opacity:1; position:absolute; left:0; top:0;} 
+             
+             .product-box {
+                 p {
+                     small { @include font-size(16px); }
+                 }    
+             }
+             .prod-delivered { display:block; color: #03AE12; font-family: $robotomedium; @include font-size(16px); }
+             .form-control { border: $common-border; display:block; padding: $space10; @include border-radius(3px); width:100%; }
+             .Review-Title {  margin-bottom: $space20; }
+             textarea.form-control { height: 130px; }
+                   .file-text{ position:absolute; left:$space10; top:$space5+2; color:#a6acb2;
+                 &:before{  display:inline-block; content:''; vertical-align:middle; @include size(15px,28px); margin-right:$space5; background:url("#{$images-path}/product-detail/attachment-small.png") no-repeat; }
+             }                                                                          
+              input[type="file"]{ position:absolute; left:0; top:0; @include size(100%); opacity:0; cursor:pointer; z-index:1;}
+              .reviewsfiles { margin: $space20 0; width: 200px; }
+              .submit { background: $bg-orange; display: block; padding: $space10+2; color: $color-white; width: 250px; text-align: center; text-transform: uppercase; font-family: $robotoregular; @include border-radius(3px); cursor: pointer; }
+
+
+   .checkbox {  @include font-size(12px); display: inline-block; border: $common-border; padding: $space5 $space10; line-height: 22px; cursor: pointer; -webkit-user-select: none;-moz-user-select: none;  -ms-user-select: none;  user-select: none;
+         input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+        .checkmark { @include size(15px); border: 1px solid #EBEDED; display: inline-block; vertical-align: sub; margin-right: $space5; position: relative; }
+        .checkmark:after { content: "";position: absolute;display: none; }
+         input:checked ~ .checkmark:after { display: block; }
+        .checkmark:after { left: 4px; top: 1px; width: 4px; height: 7px; border: solid #E57200; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+       }
+}
+
+.better-experience {
+    ul{ margin-bottom: $space10;
+        li { display: inline-block; margin-right: $space10; margin-bottom: $space10;}
+    }
+}
+
+.reviewsThanks { text-align: center; margin-top: $space40*3;
+    figure { margin-bottom: $space10; }             
+    span { color: #03AE12; @include font-size(30px); font-family: $robotomedium; }
+    p { margin: $space5 0 $space20; }
+}
+
+
+//my-reviews
+.my-reviews { 
+    .starRating { vertical-align: middle;  }
+  .Reviews-edit { display: inline-block; vertical-align: middle; margin-left: $space10; border-left: $common-border; padding-left: $space10; 
+   a { margin-right: $space10; color: $color-orange;}
+  }
+.date { margin-top: $space10; }
+.light { line-height: 30px; margin-top: $space20; padding-top: $space15; border-top: $common-border; }
+}
+
+
+
+

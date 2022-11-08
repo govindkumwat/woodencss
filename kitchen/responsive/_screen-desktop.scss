@@ -1,0 +1,45 @@
+@media #{$screen-desktop}{
+    //Kitchen Furniture
+   
+
+
+    .kibanner{
+        img{ height:430px;}
+        section{width:920px; height: auto;}
+        article{ margin-top:150px; 
+        h1, span{ font-size: 27px;}
+        
+        }
+        section{ padding:$space10 0;}
+      
+        .slick-dots{z-index:9;position: relative; margin-top:5px;  text-align:center;
+                          li{  margin:0px 2px; 
+                                button{ &:before{background:#d6d6d6; @include border-radius(100%); @include size(8px); } }
+                             
+                              &.slick-active{
+                                  button{
+                                  &:before{background:#e57200;}
+                                  }
+                              }
+                          }
+        }
+    
+    }
+    .portfolio{
+        .tab-content{width: 740px;}
+        .slides{
+            p{padding: $space0 $space10;}
+        }
+        .slider-nav .slick-slide { width:135px!important;}
+
+    }
+    .customer{
+        blockquote{width: 350px; margin-top: $space10;}
+    }
+    .units{
+        li{margin-right: $zero; width: 33.33%; padding: 0 1%;}
+    }
+    .possib{
+        .mate{margin: $space10 - 2;}
+    }
+}

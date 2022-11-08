@@ -1,0 +1,36 @@
+     //links
+     .becomdes-links-main{ border-bottom:$common-border; 
+         .heading{ display:none;}
+     }
+     .becomdes-links{background: $bg-white; margin-top:0px; text-align:center; padding: $space15+3 $space0; position: relative; z-index: 2;
+                li{display: inline-block; padding: 0 20px;}
+                a{@include font-size(15px); font-family: $font-family-medium; color: #000; font-weight: $font-weight-regular; text-transform: uppercase; border-bottom: $border2 $bg-white; padding-bottom: $space5;
+                 &:hover, &.active{color: $color-warning; border-color: $bg-warning;}
+               }
+}
+//Links Fixed on scroll
+.becomdes-links-fixed{position:fixed; top:0; left:0; @include size(100%!important,51px); margin:$zero; padding:$zero; z-index:999; padding-top:$space10+1; @include box-shadow(0px 3px 10px rgba(0,0,0,0.15));
+     a{ @include font-size(14px);}
+}
+
+.m-interior-button{ display:none;} 
+
+@media #{$screen-desktop}{
+.becomdes-links{
+               li{padding: 0 16px;}
+          }
+
+}
+
+
+@media #{$screen-tablet}{
+.becomdes-links{     display: flex;  justify-content: space-around;
+               li{padding: $space0 $space10 - 2;}
+               a{ text-transform: inherit;}
+}
+
+}
+
+
+
+

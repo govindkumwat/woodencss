@@ -1,0 +1,118 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .category-more-toogle{ 
+        max-width: 540px;
+        margin:$space15 auto;
+        &.active{
+            max-width: 95%;
+        }
+    }
+    .filter_slider { width: 700px;
+        a { padding: $space5 }
+    }
+    .category-wrpr {
+       .category-slider{
+           width:710px;
+           display:none !important;
+           .category-name{
+               @include font-size(13px);
+               line-height:15px;
+           }
+           article{
+                a{
+                    margin:0 10px;
+                    figure{
+                        min-height: 119px;
+                    }
+                }
+           }
+       } 
+   }
+    .left-filter {
+        width: 30%;  
+       article { padding: 8px 10px; }
+       .drop{font-size:13px;}
+    }
+    .m-fiopen{margin:0;
+             span{font-size: 12px;}
+    }
+    .category-common { 
+        width: 69%;
+        .col{
+            width:49.5%;
+            margin-bottom:15px;
+            &:nth-of-type(3n){margin-right:0.8%;}
+            &:nth-of-type(2n){margin-right:0;} 
+        }
+    }
+    .filter-box {
+        padding: 5px 0;
+        margin: 0 20px;
+    }
+    .filter-by{
+        max-width: 100%;
+        overflow: visible;
+        white-space: nowrap;
+        }
+    .filter-menu {
+        li{padding-bottom:10px;}
+        .filter-name{ 
+            padding:3px 7px;
+            margin-right:5px;
+            font-size: 11px;
+        }
+    }
+    .category-main{
+        padding:30px 0 20px;
+    }
+    .category-common .col .proud-box .heading{@include font-size(14px);}
+    .category-common .col .price strong{@include font-size(15px);}
+    .category-common .col .by-brand{@include font-size(13px);}
+    .category-common .col .price .off-price{@include font-size(13px);padding: 0 5px;}
+    .category-common .col .price .orange{@include font-size(14px);}
+    .filter-dropdown{top:40px;}
+    .filter_results { width: 68%; }
+    .FindBox{
+        .SelectBox{vertical-align: bottom;}
+    }
+    .category-more-toogle{
+         .m-toggle-heading{font-size: 22px;}
+    }
+    .filter_slider_main.fixed+.category-main { padding-top: 100px; }
+    .filter_slider_main.fixed{
+        .category-wrpr{margin-left: -8px;}
+    }
+    .filter_slider_main.fixed {
+        .category-slider{padding:9px 15px;} 
+    }
+    .filter_slider_main {display: none;}
+    .search-pages .w-cart .w-tooltip {
+                left: -12px;
+        }
+        .popular-category{
+            .subhead{font-size: 20px;line-height: 22px;}
+            .category-list{
+                max-width: 650px;
+                grid-row-gap: 15px;
+                grid-column-gap:15px;
+                .browsecat-head{font-size: 14px;line-height:18px;}
+            }
+        }
+        .finish-popup{
+            .finish-slider{
+                .slick-dots{
+                    text-align: center;
+                    li{
+                        &.slick-active{
+                            button{
+                                &::before{background: $primary-color;}
+                            }
+                        }
+                        button{
+                            &::before{border-radius: 50%;background-color: $secondary-500;}
+                        }
+                    }
+                }
+            }
+        }   
+}

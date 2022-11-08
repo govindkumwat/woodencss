@@ -1,0 +1,48 @@
+@media #{$screen-mobile}{
+    .category-sofa{
+           .hidden{ display:none;}
+         .box-full{ margin-top:0; border-bottom:$common-border; padding-top:$space5+3;}
+         .product-image{ width:100%;}
+         .product-info{ width:100%; background:$bg-white; padding:$space5+3 0 0;}
+         .cate-available{ display:none;}
+         .product-name{@include font-size(14px); border-bottom:none; padding:0;
+           span{ display:inline-block;}
+         }
+         .extra-offer{ padding:$space5 - 3 0; line-height:$space20; @include font-size(12px); font-family:$robotomedium;  color:$color-black;
+            b{ color:$color-black; text-transform:capitalize;}
+            //small{ text-transform:lowercase;}
+         }
+          .extra-off{ margin:0; width:100%; color:$color-orange;  text-transform:uppercase; text-align:center;@include font-size(12px); font-family:$robotomedium; border:none; padding:$space0;
+           &:after{ display:none;}
+             .categ-off{@include font-size(14px);}
+           
+          }
+          .offer-price{ padding:$space5 - 3 0 $space5;color:$color-orange;
+            b{@include font-size(14px);}
+          }
+       .our-price{ padding-top:0;}
+        .more-product{ text-align:center; margin-top:$space5; padding-top:$space5;
+          .sub-head{ text-align:center; padding-bottom:$space5;}
+        }
+        .more-links{ margin:0 auto $space10; display:block; float:none; width:100px;}
+        .inset{ border:none; padding:0;
+            .price-old{ display:none;}
+            .price-new{ color: #000; font-family: "robotomedium";  font-size: 13px;  padding: 0;
+                 small{font-size: 14px; font-family: "robotomedium";}
+            }   
+             .price-discount{ @include border-radius(0px);position: absolute; background: #435471; top: 10px; left: 10px; font-size: 10px; color: #fff; padding: 0px 5px; line-height: 19px;}
+        }
+        
+        .price-emi{ float:none; text-align:center; margin-left:0;}
+        
+      .bestSellerProduct{ top: inherit;bottom: 75px;
+         img{ width:35px;}
+      }
+        .half-price{ display:none;}
+        
+    }
+    
+}
+
+
+    

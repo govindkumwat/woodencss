@@ -1,0 +1,204 @@
+//All Mixin Inculdes
+    
+//Black opacity function
+@function black($opacity) {
+  @return rgba(black, $opacity)
+}
+@function white($opacity) {
+  @return rgba(white, $opacity)
+} 
+     
+/*//Border Radius
+@mixin border-radius($border-radius){
+    -moz-border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -khtml-border-radius: $border-radius;
+    border-radius: $border-radius;
+}*/
+//Transtion
+@mixin transition($transition){
+     -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -o-transition:$transition;
+    transition:$transition;
+}
+@mixin transitionall($transition:all 0.5s ease){
+     -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -o-transition:$transition;
+    transition:$transition;
+}
+//text-shadow
+@mixin text-shadow($text-shadow){
+    text-shadow:$text-shadow;
+}
+//box-shadow
+@mixin box-shadow($box-shadow){
+    -webkit-box-shadow:$box-shadow;
+    -moz-box-shadow:$box-shadow;
+    box-shadow:$box-shadow;
+}
+//font size in rem
+/*@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+} */
+
+
+// Verticle Three color mixin
+@mixin gradient-vertical-three-colors($start-color: #fff, $mid-color: #d5d5d5, $color-stop: 50%, $end-color: #fff) {
+  background-image: -webkit-linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-image: -o-linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+}
+// backround Position 
+@mixin background-position($x:0, $y:0){
+    background-position: #{$x}px #{$y}px;
+}   // Used :- @inculde sprite-filter(0,24);
+// All Sprite
+@mixin allsprite($allsprite:url(../images/allsprite.png) no-repeat 0 0){
+    background:$allsprite;
+} 
+
+//Placeholder
+//Placeholder Mixin
+/*@mixin placeholder {
+    &.placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder{@content}
+    &:-ms-input-placeholder{@content}
+    &::-webkit-input-placeholder { @content }
+}*/
+
+//
+@mixin fonts($font-size, $font-family, $color, $font-weight){
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $color;
+    font-weight: $font-weight;
+}
+//Animation
+@mixin animation($animation){
+  -webkit-animation: $animation;
+    -moz-animation:    $animation;
+    -o-animation:      $animation;
+    -ms-transition:    $animation;  
+    animation:         $animation;
+}
+//Transform
+@mixin transform($transform){
+  -webkit-transform:$transform; // Safari and Chrome 
+    -moz-transform:$transform; // Firefox
+    -ms-transform:$transform; // IE 9 
+    -o-transform:$transform; // Opera 
+     transform:$transform;
+}
+//Transform Rotate
+@mixin rotate( $val: -2deg ) {
+  -webkit-transform: rotate($val);
+  -moz-transform: rotate($val);
+  -ms-transform: rotate($val);  
+  -o-transform: rotate($val);  
+  transform: rotate($val);
+}
+@mixin clearfix {
+  overflow: hidden;
+   *zoom: 1;
+}
+// Width Height Mixin
+/*@mixin size($width, $height: $width){ 
+    width: $width;
+    height: $height;  
+}*/
+ 
+// -- (Use :- @inculde size(400px);, @inculde size(200px, 150px);) -- // 
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left; 
+  position: absolute;      
+}
+// use for one line text
+@mixin oneline(){
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
+
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%; 
+  list-style: none;       
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+
+/*
+//Keyframes auto smooth animated arrow
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}*/

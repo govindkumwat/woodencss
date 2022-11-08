@@ -1,0 +1,30 @@
+.cart-footer{ position: fixed; bottom: 0px;}
+html {
+    position: relative;
+    min-height: 100%;
+}
+.cart-body {
+    margin: 0 0 100px;
+}
+.cart-footer {
+    background: $bg-white;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    overflow: hidden;
+}
+.cart-footer {
+    padding: $space15 0;
+    border-top:$common-border;
+    .d-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    span {
+       font-size: 14px;
+       color: $secondary-500;
+       font-family: $robotoregular;
+    }
+}

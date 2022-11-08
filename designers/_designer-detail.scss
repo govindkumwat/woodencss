@@ -1,0 +1,134 @@
+.subhead-title{
+    @include font-size(27px);
+    line-height: 20px;
+    font-weight: normal;
+    margin:0 0 $space10+4;
+    color:$secondary-color;
+}
+.detail-banner{
+    figure{  
+        height:386px;
+        overflow: hidden;
+    }
+}
+.content {
+    height: 40px;
+    overflow: hidden;
+    position:relative;
+    .toggle-more{
+        color:$primary-color;
+        background: $bg-white;
+        cursor:pointer;
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        padding: 0 10px;
+        &:before{
+                content: 'Read More';
+            }
+    }
+    &.more{
+        height:auto;
+        .toggle-more{
+            position: inherit;
+            &:before{
+                content: 'Read Less';
+            }
+        }
+    }
+}
+.detail-container{position:relative;}
+.detail-wrpr{
+    letter-spacing:1px;
+    text-align: center;
+    max-width:1030px;
+    margin:0px auto 90px;
+    img{
+        width:120px;
+        height:120px;
+        display: block;
+        border-radius:100%;
+        border:2px solid #fff;
+        margin:-75px auto $space20;
+    }
+}
+.product-list {
+    background: #ececec;
+    .subhead-title{
+        @include font-size(24px);
+        line-height: 24px;
+        text-align: center;
+        width:100%;
+        padding:50px 0 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+//responsive css
+@media only screen and (max-width:768px){
+    .subhead-title{
+        @include font-size(24px);
+        line-height: 26px;
+        margin:0 0 $space5;
+    }
+    .product-list .subhead-title{
+        padding:$space30 0;
+        @include font-size(22px);
+        line-height: 24px;
+    }
+    .detail-wrpr{
+        margin:0 auto 60px;
+        img{
+            width:90px;
+            height: 90px;
+            margin:-50px auto 10px;
+        }
+    }
+    .detail-banner{
+        figure{
+            height:280px;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .detail-banner{
+        figure{
+            height: auto;
+            display: flex;
+        }
+    }
+    .detail-wrpr{
+        background: $bg-white;
+        margin: 0;
+        padding: $space15;
+        img{
+            margin:-65px auto 10px;
+        }
+    }
+    .subhead-title{
+        @include font-size(20px);
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    .product-list{
+        margin:0 5px;
+        .subhead-title{
+            @include font-size(20px);
+            line-height: 22px;
+            padding: $space15;
+        }
+        .category-common{
+            .col {
+                .sale{
+                    font-size: 10px;
+                   line-height: 12px;
+                    padding: 7px;
+                    top: 5px;
+                    left: 5px;
+                    img{top:1px;}
+                }
+            }
+        }
+    }
+}

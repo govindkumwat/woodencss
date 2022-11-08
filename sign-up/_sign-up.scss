@@ -1,0 +1,251 @@
+.full-blog {  
+  background: rgba(0, 0, 0, 0.8);
+  position  : fixed;
+  top       : 0;
+  bottom    : 0;
+  right     : 0;
+  left      : 0;
+  z-index   : 99;
+  display   : none;
+  overflow: auto;
+} 
+.sign-up {  
+    margin: auto;
+    z-index: 99;
+    position: relative;
+    overflow: auto;
+    background: $bg-white;
+    display: inline-block;
+    .close {
+      position  : absolute;
+      top       : 15px; 
+      right     : 10px;
+      background: url("../images/login/close.png") no-repeat;
+      @include size(18px);
+      cursor    : pointer;
+    }
+    .float-none{
+        float:none !important;
+        display: block;
+        text-align: right;
+    } 
+    .heading {
+        @include font-size(18px);
+        line-height   : 22px;
+        font-family   : $robotomedium;
+        text-align    : left;
+        color         : $secondary-color;
+        letter-spacing:0.03em;
+            p {
+              color         : $secondary-700;
+              @include font-size(13px);
+              line-height   : 18px;
+              position      : relative;
+              letter-spacing: 0;
+              font-family: $robotoregular;
+              margin: 3px 0 0;
+            }
+            b,strong {
+                font-family: $robotomedium;
+                margin: 0 5px;
+                color:$secondary-color;
+            }
+            .editlink{
+                font-size:13px;
+                text-transform: uppercase;
+                color:$info-color;
+                cursor:pointer;
+            }
+            #register_message{
+                text-transform:lowercase;
+                &:first-letter{ text-transform:uppercase;}
+            }
+    }
+    .box { 
+        margin-top: $space15;  
+        span {
+            position    : absolute;
+            top         : 12px;
+            right       : 12px;
+            color       : $secondary-color;
+            background  : #fff;
+            padding     : 0 5px;
+            @include font-size(13px);
+            cursor      : pointer;
+        }
+        input{ 
+            border:1px solid $secondary-400;
+            &:placeholder{color:$secondary-400;}
+            &:focus{
+                border: 1px solid $secondary-700;  
+            }
+        }
+        &:nth-last-child{ margin:0; } 
+        label.error {
+            display: none!important;
+          }
+    }
+    .field--not-empty .field__label{top:-7px;} 
+    .forgot-pass,.link-mobile{
+        font-size:13px;
+        line-height: 16px;
+        cursor:pointer;
+        font-family:$robotoregular;
+        margin: 15px 0 0;
+    }
+    .forgot-pass{  color:$secondary-700;float:left;} 
+    .link-mobile{
+        color:$primary-color;
+        float:right;
+        text-transform: uppercase;
+    }
+    .one-half{
+        margin-right:-3%;
+        .box{  
+            width:50%;
+            float:left;
+            margin-right:4%; 
+            &.pincode{
+                width: 43%;
+                margin-right: 0;
+            }
+        }      
+    }
+    .left { 
+      float: left;
+      display: grid;
+      width: 380px;
+    } 
+    .warning {color: red;}
+    .right {
+        width       : 400px;
+        height      : 100%;
+        float       : right;
+        position    : relative;
+        display     : inline-block;
+        min-height  : 542px; 
+        padding     : $space20+5 $space20+5 $space0;
+    }
+    .signup-block { 
+        margin-top     : $space20+5;
+        display: flex;
+        flex-direction: column-reverse;
+        float:left;
+        width:100%;
+        margin-left:0; 
+        p {
+            @include font-size(13px);
+            line-height: 19px;
+            color: $secondary-color;
+            display: block;
+            text-align: center;
+            a {color  : #e8581a;}
+        }
+        &.registration-block{
+            margin-top:$space20; 
+            .reg-text{
+                font-size:12px;
+                line-height: 15px;
+                color:$secondary-700;
+                margin: 0 0 $space10+2;
+            }
+        }
+        .sign-btn {
+            @include font-size(16px);
+            background    : $primary-color;
+            color         : $color-white;
+            line-height   : 20px;
+            display       : block;
+            width         :100%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            padding       : $space10+3 $space10;
+            cursor        : pointer;
+            font-family   : $robotomedium;
+            margin        : 0 auto $space30;
+            @include border-radius(4px);
+            &:hover{
+                 background : #e8581a;
+            }
+            &.btn-loader{
+                .loader{display:inline-block;}
+            }
+            .loader{
+                display:none;
+                vertical-align: middle;
+                margin-right: 10px;
+                img{
+                    -webkit-animation:2s infinite linear; 
+                    animation:fa-spin 2s infinite linear;   
+                    z-index:1;
+                    @include size(18px); 
+                    @keyframes fa-spin{
+                        0%{ @include transform(rotate(0deg));}
+                        100%{@include transform(rotate(359deg));} 
+                    }
+                }   
+                }
+        }
+    }
+    .social-wrap { 
+            border-top:$common-border;
+            text-align: center;
+            color     : $secondary-600;
+            padding   : $space10 0 $space10+5;
+            position  : absolute;
+            left      : 0;
+            bottom    : 0;
+            width     : 100%;
+            p {
+              display    : inline-block;
+              font-family: $robotoregular;
+              color:$secondary-700;
+              font-size:14px;
+              line-height: 18px;
+              vertical-align: text-top;
+            }
+            a {
+              display: inline-block;
+              padding: 0px 0 0 $space10;
+            }
+            img {vertical-align: bottom;}   
+            .facebook {margin: 0 $space5;padding: 0 0 0 5px;}  
+    }
+    .error {display: none;}
+    .error-block{ padding:0;}
+    .cart_error {
+        .close {background: none;}
+    }
+    
+    .otp-timer,.resendOTP {
+        text-align: right;
+        margin: 10px 0 0;
+    }
+    .resendOTP{
+        color:$info-color;
+    }
+    .thanku-success-msg{
+            width:100%;
+        }
+}
+.digit-group{
+    input{
+        border: 0 !important;
+        border-bottom: 1px solid $secondary-400 !important;
+        border-radius: 0;
+        padding: 7px;
+        width: 48px;
+        margin-right: 12px;
+        text-align: center;
+        font-size: 22px; 
+        color:$secondary-700;
+        &:last-of-type{margin-right: 0;}
+    }
+  }
+#loginclose {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor:pointer;
+}
+.swpmodal-container, .swpmodal-overlay { @include size(100%); overflow: auto; }

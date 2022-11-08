@@ -1,0 +1,108 @@
+@media #{$screen-mobile}{
+    .category{ margin-top:$space10;
+        .cate-strip{
+             .cat-topstrip{ display:none;}
+             .scrollbar{ max-height:70px; @include font-size(11px);}
+             .heading{ padding:0; background:$bg-white;}
+             .title{@include font-size(14px); margin:0;}
+           }  
+      
+       .filter-box{ margin:0; padding:0; border-top:none;.title, .low-to-high{ display:none;}}
+       .filter-by{position:$postion-fixed; top:$space0; left:-300px; z-index:99; @include size(280px,100%); background:#f7f7f9; padding:0; float:none;
+           .cleap{ display:block;}
+       }
+       
+       .filter-menu{ @include size(125px,100%);  border-right:$common-border; background:$bg-white; 
+                li{ position:initial; display:block; padding-bottom:0;
+                 &:hover{ 
+                     .filter-dropdown{display:block;}
+                     .filter-name{color:$color-black;background:#f7f7f9; border-color:#f7f7f9;}    
+                     }
+                     &.active{
+                          .filter-name{background:#f7f7f9; color:$color-black; border-color:#e5e5e5;}
+                     }
+                }
+            .filter-name{ border-top:none; border-right:none; border-left:none; margin:0;@include border-radius(0px); padding:$space10;
+                  &:after{display:none;}
+                
+            }  
+       }
+
+       
+      .filter-dropdown{left:125px; top:$space0; border:none; @include size(155px,100%);  background:#f7f7f9; padding:0 $space5; display:none;
+                li{ border-bottom:$common-border; padding:$space5 0!important; margin:0; overflow:hidden;
+                   span{ padding-left:$space20;  white-space:nowrap;}
+                }
+               
+            }
+       
+            
+ .allfilres { position: absolute; left: 0; right: 0;  bottom:50px; background: #fff; z-index:999; }
+       .cleap{position:$postion-absolute; bottom:0; left:0; right:0; z-index:9999; display:none; text-align:center;
+          .cancle{width:50%; color:$color-white; background:#686868 ;padding:$space10; @include font-size(16px);}
+          .apply{ background:$bg-orange;}
+       }
+     
+       .filter-colfin{
+         i{ display:none;}  
+         li{
+            input[type="checkbox"]{ position:inherit; @include size(inherit); opacity:1;
+              &:checked{+ span{ background:url("#{$images-path}/category/check-list.png") no-repeat left -16px !important;} } 
+            }
+              span{ background:url("#{$images-path}/category/check-list.png") no-repeat left 2px!important; padding-left:$space20+4; }
+         }
+    }
+    
+.common-filter-result{ margin:$space0;}
+    .filter-slider{ width:100%;}
+       
+    }
+    
+
+    
+      .short-by-menu{ width:225px;
+                    li{ border-bottom:$common-border; padding:$space5+1 $space10; @include font-size(14px);
+                          [type="checkbox"]{ vertical-align:middle;}
+                          &:last-child{ border-bottom:none;}
+                          a{ color:$color-black;}
+                          &.active{
+                             a{ color:$color-warning;}
+                          }
+                    } 
+             }
+               
+              
+        .m-filtertext{display: block; background: #f7f7f9;text-transform: uppercase;text-align: center; @include font-size(16px); border-top:$common-border; position:fixed; left:0; right:0; z-index:9; bottom:0;
+              a{ display:inline-block; padding:$space10; width:49%; @include font-size(15px); border-right:$common-border; margin-bottom:0; color:$color-black;
+              &:last-child{ border-right:0;}
+             }  
+             
+      }
+        
+         .mobile_menu_filter{    
+             &.active{background:rgba(black, 0.8);position:$postion-fixed; top:$space0; left:$space0; bottom:$space0; @include size(100%!important); z-index:999;}
+         }
+         
+            .breadcrumbs{
+               .filter-slider{ width:auto; margin-top:$space5;  background:#435471;
+                  li{  margin:0; padding:$space5 $space10; img{ display:none;}
+                   &:after{ display:none;}
+                   &.active{
+                        .title{ color:#ffd251;} 
+                    }
+                  } 
+                  .title{ color:$color-white; @include font-size(12px);
+                      span{ display:none;}
+                  }
+              } 
+         
+         }
+         
+   
+ 
+        
+   
+}
+
+
+    

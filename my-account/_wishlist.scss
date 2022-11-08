@@ -1,0 +1,67 @@
+
+.wishlist-main{
+    .warning{ color:red; 
+              a{}
+              img{ display:none;}
+    
+    }
+}   
+.my-wishlist{ 
+              .title{@include font-size(20px); color:$color-black; padding:0; font-family:$robotoregular; border-bottom:$common-border; padding:$space10 $space15;margin-bottom:$space15; }      
+     .wishlist-info{ display:flex; justify-content:space-between;  flex-wrap:wrap; border-bottom:$common-border; padding:$space0 $space15; margin-bottom:$space15+3;   }
+       #input_div{ margin-top: $space20;
+                    [type="button"]{ cursor:pointer;}
+                     input[type="text"]{width:33px; border:$common-border; padding: $space5+3 0; text-align: center}
+            }
+    
+          .product{width:300px;
+             figure{  margin:0; display:inline-block;  vertical-align:middle;}
+             article{ display:inline-block; vertical-align:middle; padding-left:$space10; width:200px;
+               a{@include font-size(14px); color:$color-black; display:block; line-height:$space10+4; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;}
+               small{@include font-size(11px); color:$color-black; font-family:$robotolight;}
+            }  
+        }
+        
+        
+          .price{ width:120px; margin-top:$space10;
+            strong{ font-family:$robotomedium; @include font-size(16px); color:$color-black; font-weight:normal; display:block; line-height:$space20;}
+            span{font-family:$robotolight; @include font-size(11px); color:$color-black; line-height:$space10+4; display:inline-block;}
+            small{ font-family:$robotoregular; color:#ec5738;}
+        }
+    
+        
+         .btn-add{ background:$bg-warning; color:$color-white; @include font-size(13px); @include border-radius(4px); padding:$space5 - 1 $space0;width:115px; text-align:center; text-transform:capitalize; display:inline-table; margin-top:$space20;}
+         .delete-btn{ width:15px;  margin-top:$space25+2;}
+         .warning{ color:red; @include font-size(14px);
+            img{ display:none;}
+         } 
+         .success{ img{ display:none;} }
+        
+         //empty wishlist
+      .empty-wishlist{ text-align:center; padding:$space10 0 $space30; 
+      .heading{@include font-size(20px); color:#4b4a4a; padding-bottom:$space10;}
+      img{ height:80px; display:block; margin:$space0 auto $space15;}
+      a{ padding:$space10 - 2 $space40+10; display:inline-block; color:$color-white;  background:$color-warning;  text-transform:uppercase;  @include border-radius(3px);}
+}
+         
+         //out-of-stock
+         .out-of-stock{
+             .product{
+                  figure{ opacity:0.3;  pointer-events:none; }
+             }
+               .btn-add{ background:#b3b3b3;  pointer-events:none; }
+         }
+         
+         
+         
+         
+}   
+
+
+    
+    
+        
+     
+
+        
+    

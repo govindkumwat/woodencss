@@ -1,0 +1,38 @@
+@media #{$screen-mobile} {
+  .pro-cusques {
+    margin: 0;
+    padding: 0;
+
+    article,
+    .form {
+      width: auto;
+    }
+
+    .form-control {
+      width: 100%;
+      margin: 0 0 $space10;
+      height: 36px;
+    }
+
+    textarea.form-control {
+      width: 100%;
+      margin: 0;
+    }
+
+    .text-right {
+      text-align: center;
+
+      .btn {
+        width: 300px;
+        margin: 0 auto;
+        padding: $space10;
+      }
+
+    }
+  }
+
+  .pro-recques {
+    margin: $space15 0;
+  }
+
+}

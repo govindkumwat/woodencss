@@ -1,0 +1,62 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    //how it works
+    .tablet-font-size-14{font-size: $font-size-10+4;}
+    .tablet-width-auto{width: auto;} 
+.how-it-work-content{
+    .design-process{ margin-bottom: $space30;
+          section{display: flex;}
+          article{width: 142px; padding: $space20+15 $space5; height: 210px;
+                  span{@extend .tablet-font-size-14; line-height: normal;}
+    p{line-height: normal;}
+    }
+    article + article{margin-left: $space5;}
+    }
+    .room-decoration{@extend .tablet-width-auto;
+    }
+    .room-decoration{
+        article{width: 49%; margin-top: 10px;
+                span{font-size: 17px;}
+        }
+        figure{width: 49%;}
+    }
+    .room-banner{
+        article{width: 100%;}
+    }
+}
+//how it Works
+.project-gallery{
+    article{width: 358px;
+        @include odd(){margin-left: $space10;}
+    }
+}
+
+.how-dreroom{
+    section{padding: 0 25px;}
+}
+
+.howitwork{
+    .menu-container{
+        .menu-section{width:auto;}
+    }
+}
+
+       
+ //how-it-work-new
+     .howitwork{
+            .How-process{
+                article,.talented-team,.project-requirment{width:auto; float:none; padding:55px 10px 35px; margin-top: 10px;
+                 i{top:0; display: inherit; @include center(true,false);}
+                &::before{display:none}
+                }
+                  figure{width:auto; float:none}
+                  .step-three{
+                      li{span{text-transform:capitalize}} 
+                  }
+                 }
+            
+                 .monitor-project{ margin-bottom:$space25;}
+             }  
+
+}
+

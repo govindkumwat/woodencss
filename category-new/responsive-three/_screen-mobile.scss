@@ -1,0 +1,14 @@
+@media #{$screen-mobile}{
+ .category-three{
+        .box{ width:100%;
+          figure{@include size(auto);}
+        }
+        
+    }
+  
+    
+    
+}
+
+
+    

@@ -1,0 +1,104 @@
+@media #{$screen-mobile}{
+    @import "../../common/_slick.scss";
+    .m-marginb20{margin:$space20;}
+    .font-light{font-family: $robotoregular;} 
+    .m-margin0{margin:$space10;} 
+    .m-margint10{margin-top: $space10;}
+    .m-marginb10{margin-bottom: $space10;}
+    .m-font20{font-size: $font-size-20;}
+    .m-font22{font-size: $font-size-20+2;}
+    .m-width-full{width:100%;}
+    .m-flewrap{flex-wrap:wrap;}
+    .furniture-export{ background:$bg-white; 
+        .btn-warning{ padding:$space5+3  $space10; color:$color-white; display:inline-block;}
+    .export-heading{ 
+        .title{@extend .m-font20;}
+    }
+    .resfur-all{
+        .top{
+                flex-wrap: wrap; justify-content: inherit;
+        }
+        .middle{
+            width: 60%; padding: 0 0 0 $space20;
+        }
+        img{
+            width: 40%;
+        }
+        .right{
+                width: 100%; text-align: center; margin-top: $space10;
+                img{
+                        display: inline-block; margin-bottom: 0;
+                }
+        }
+        .bottom{    display: block; text-align: center; border: 0;
+            p{
+                display: none;
+            }
+            .btn{float: none; padding:$space5+3 $space15; display:inline-block;}
+        }
+    }
+}
+.export-banner{
+    .title{@extend .m-font22;} 
+}
+.export-form{
+    .export-heading{@extend .m-margin0;}
+    form{width: auto; margin: -40px 2% 0; padding: 10px;}
+    .form-control,.field{ width:100%; margin-bottom:$space15;margin-top:0;
+        .field__input{height: 44px;}
+        &.full{
+            textarea{height: 80px;}
+        }
+      &:last-child{ display:block;} 
+    }
+    .bottom {
+        margin: 10px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .box-code{ width:100%;} 
+    .btn{margin: 10px auto;  padding:$space10+2 $space30; }
+
+ 
+}
+.export-city{margin: 30px 0;
+            img{@extend .m-width-full;}
+}
+.resfur-all{
+    .inset{
+        .inbox{
+            width: 100%;
+        }
+    }
+}
+.export-choose{@extend .m-marginb20;
+    ul{@extend .m-flewrap;}
+    li{@extend .m-marginb10; width: 48%;
+        strong{@include font-size(25px); padding: 10px 0 5px;}
+    }
+}
+.export-products{
+    .tab-links{ border-bottom: $border2 $bg-light;}
+    li{display: block;
+       &.active{
+           a{background: $bg-light;}
+       }
+    }
+    .tab-content{
+        .tab{ display:none;
+         &.active{ display:block;}
+        }
+    }
+}
+.fur-bangalore{
+    .m-interior-button .interior-m-menu{ width:60%; padding:$space15 $space10;}
+}
+.footer-common{
+    h2,h3,h4{font-size: 15px;line-height: 20px;font-family: $robotomedium;margin:5px 0;color:$secondary-600;}
+    ul li,p{font-family: $robotoregular;font-size: 13px;line-height: 18px; color: $secondary-500;text-align: justify;margin: 0 0 12px;}
+}
+.fuhode-media{ margin:$space20 0;}
+.thanku-success-msg{ background:$bg-white; position:relative; 
+   .swpmodal-close{ position:absolute; right:$space10; top:$space0; @include font-size(24px); cursor:pointer; padding:0; background:none; color:$color-black;}    
+}  
+}

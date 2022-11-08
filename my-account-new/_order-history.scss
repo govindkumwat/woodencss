@@ -1,0 +1,108 @@
+.OrderHistory {
+         .btn-help { border: 1px solid $color-orange; color: $color-orange; margin: $space0 $space20 $space20; padding: $space5 $space40; @include border-radius(3px); display: inline-block; }
+
+}
+.history-detail { 
+    li{ border: $common-border; @include border-radius(3px); margin-bottom: $space20; 
+      .flex { background: #F5F5F5; padding: $space5+2px $space20; }
+      .date { margin: $space0 $space20; }
+      .right { width: 155px; 
+          a { @include font-size(13px); color: $color-black;
+           &:before { content: '';  display: inline-block;  background: url(../images/my-account-new/Facebook_Places.svg) no-repeat; @include size(12px, 14px); vertical-align: sub; margin-right: $space5; }
+          }
+          .track { margin-left: $space15; }
+      }
+       .help {@include font-size(13px); color: $color-black;
+                &:before { display: inline-block; content: '?'; margin-right: $space5; background: $bg-orange; @include size(15px); @include border-radius(100%); color: $color-white; line-height: normal; @include font-size(11px); text-align: center; vertical-align: middle; }
+          }
+          .view { color: $color-orange; }
+     article { display: flex; flex-wrap: wrap; justify-content: space-between; padding: $space10 $space20; align-items: center; border-bottom: $common-border; position: relative; 
+       &:last-child { border-bottom: none; }
+     }
+     .save-price { display:block; color: $color-orange; }
+     .price { line-height: normal; }
+     .process { width: 160px;
+         &:before { @include size(10px); background: #03AE12; display: inline-block; content: ''; @include border-radius(100%); margin-right: $space5; }
+     }
+     .delivered-items { padding-top: $space40; }
+        .items-delivered{ 
+           .process {
+               &:before {  background: $bg-orange; }
+           }
+         }
+         .items-refund {
+             .process { 
+               &:before {  background: $color-red; }
+           }
+         }
+     .msg-sticky { position: absolute; @include border-radius(3px); @include font-size(12px); background: $bg-orange; padding: $space0 $space15; display: inline-block; top:$space5+3px; color: $color-white; }
+    }
+    
+      .Review { display:block; color:#4A4A4A;
+          &:before { content: ''; @include size(20px, 17px); display: inline-block; background: url(../images/my-account-new/star.svg) no-repeat; vertical-align: sub; margin-right: $space5; }
+      }
+      
+      .address-box { width: 48%;
+         span { @include font-size(15px);}              
+      }
+      .Review-bx {
+          a { color: $color-orange;  }
+      }
+      
+}
+
+ .product-box {
+     figure { display: inline-block; vertical-align: middle; margin-right: 20px; width: 90px; }
+        p { display: inline-block; vertical-align: middle; width: 200px; line-height: 20px;
+            .name { @include oneline();  display: block; color:#4A4A4A; 
+            &:hover { color: $color-orange; }
+            }
+             small { display: block; color: #8B8B8B; }
+        }  
+      }
+      
+
+      .time-status { border-top: $common-border; padding-top: $space20; margin-top: $space20;
+          .title { display: block;  @include font-size(16px); margin-bottom: $space5;  }
+          .btn-common { width: 250px; padding:$space10;; }
+          .ontime { background: #03AE12; }
+          .due { text-align: left; background: #F9A33F; line-height: 20px; }
+          .support { float: right;
+             span { display: block; @include font-size(14px); }        
+            a { @include font-size(13px); border: $common-border; padding: $space0+3px $space10; display: inline-block; margin-right: $space5; color: #707070;
+              &:hover { color: $color-orange; }
+            }
+          }
+        } 
+        
+      ///empty-order
+      .empty-order { text-align: center; padding: 35px;
+            figure { margin-bottom: $space20; }             
+            span { @include font-size(20px); }
+            p { margin: $space5 0 $space20; }
+            .btn-common { padding: $space5+3 $space30*2; }
+            .address-box { width: 100%; }
+        }
+      
+      @media #{$screen-tablet}{
+          .history-detail{
+              li { 
+                  article {padding: $space10;}
+                  .date { margin-left: $space10; }
+                   .right { width: 145px;
+                       .track{margin-left:$space10;}
+                   }
+              }
+              .address-box { width: 100%; margin-top: $space20; padding-top: $space15; border-top: $common-border;  }
+          }
+
+           .time-status {
+                .support { float: none; margin-top: $space15; }
+                .btn-common { width: auto; }
+            }
+            .product-box {
+                p { width: 130px; }
+                figure { width: 70px; margin-right: $space10; }
+            }
+          
+      }

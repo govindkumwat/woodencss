@@ -1,0 +1,26 @@
+
+   @import "mixin/_global.scss"; 
+   //@import "finish-icons/*.png";    
+  // css start    
+   @import "category-new/_filter.scss"; //filter  
+   @import "category-new/_category-one.scss";
+   @import "category-new/_category-two.scss";    
+   @import "category-new/_category-three.scss"; 
+   @import "category-new/_category-question.scss";    
+   @import "category-new/_whislist.scss";    
+  //media css start   
+  //filter  
+   @import "category-new/responsive/_screen-desktop.scss";
+   @import "category-new/responsive/_screen-tablet.scss"; 
+  //categore one
+   @import "category-new/responsive-one/_screen-desktop.scss";   
+   @import "category-new/responsive-one/_screen-tablet.scss";
+ //categore two 
+   @import "category-new/responsive-two/_screen-desktop.scss";
+   @import "category-new/responsive-two/_screen-tablet.scss";
+  //categore three 
+   @import "category-new/responsive-three/_screen-desktop.scss";
+   @import "category-new/responsive-three/_screen-tablet.scss";
+   //for media
+   @import "category-new/question-answer/_screen-tablet.scss"; 
+    

@@ -1,0 +1,72 @@
+@media #{$screen-mobile}{
+ #content{ background:$bg-white;
+ [alt~=wallet] {margin-top:$space20;  }
+ }
+ #content + .container{ background:$bg-white;
+  [alt~=wallet] {margin-top:$space20;}
+ }
+.login_account .tab-links ul li a { font-size: .75rem; padding: 10px 3px; text-transform: capitalize;}
+.login_account{ width: auto; margin:$space10 0;}
+.login_account .left input[type=email], .login_account .left input[type=password], .login_account .left input[type=text] { padding: 8px 2%; width:100%; margin: 5px auto; display: block; font-size: 13px; outline: none}
+.login_account .left{ margin-top: 5px; width:auto;}
+.login_account h1{ margin:0;}
+.checkout-new .checkout-step ul li{ float: none;}
+.checkout-new .checkout-step ul li a i{ display: none}
+
+//Checkout Page Desing
+.billing-address{float: none; width: auto; margin: $zero $zero $space15;
+                .form-half{margin-top: $space5; display: inline-block; width: 100%;}
+}
+
+.checkout-new{
+    .check-left{
+        .form-group{
+            label{float: left;  @include font-size(11px); padding-top: $space5;}
+            .form-control{width: 58%; float: right;}
+        }
+    }
+    #msform{
+        .action-button{margin-top: $space15; margin-right: 3px;}
+    }
+}
+
+//old Design
+.checkout-new .checkout-step ul li.active a {
+    background: #5F6064;
+}
+.checkout-new .check-left .form-group .form-half{float: none; width: auto; margin: 0;}
+.checkout-new .checkout-step ul li a i{ display:none;}
+.checkout-new .checkout-step ul li:last-child a{padding:11px 0; width: auto}
+
+.showFabric_cart{@include font-size(12px); padding: 4px 0;
+//li{@include oneline;}
+}
+
+.checkout-new .check-left{ width: inherit; float: none;}
+
+.checkout-new .check-left .form-group input[type=text], .checkout-new .check-left .form-group input[type=tel]{ font-size: 14px; padding: 10px}
+.checkout-new .check-right, .ship-payment{ width: auto; float:none; min-height: auto}
+.achievements, .about-furniture, section{ text-align: left;}
+.checkout-new .check-right{ background: none;}
+.ship-address{ width: auto; float: none; display: block; border: none; border-bottom: 1px solid #eee; min-height: auto; padding-bottom: 30px;}
+ 
+
+ 
+  //mobile   slider
+  .Similar-Products{ background:#f1f2f4; padding:10px 0 20px 5px; margin:0 -10px; overflow:hidden;    
+      .prod-name{@include font-size(16px); font-family:$robotomedium; margin:$space10 0;}
+.relatdes_slider{overflow: scroll; white-space: nowrap;padding-bottom: 1.923rem; margin-bottom: -1.923rem; 
+            li{display:inline-block; width:150px; }
+              .product-box {display: block;color: $color-black;background:$bg-white; margin: $space0 $space5 - 1;}
+             .product-name {@include font-size(13px);padding: $space5+3 $space10;overflow: hidden;white-space  : nowrap;text-overflow: ellipsis;border-bottom:$common-border;
+              smal{display    : block;@include font-size(13px);font-family: $robotolight;margin-top : $space5 - 2;}
+           }
+           .price-new {padding: $space5+3 $space10; @include font-size(11px); overflow: hidden; white-space  : nowrap; text-overflow: ellipsis;  strike { color  : #8b8b8b; display: inline-block;}
+            span {color: #f3601e; display     : inline-block;padding-left: $space5;}
+          strong {@include font-size(13px);display    : block;color      : $color-black;padding-top: $space5;font-weight:normal;}
+       }
+   }
+     
+    
+}  
+}

@@ -1,0 +1,108 @@
+@media #{$screen-mobile}{
+    @import "../../common/_slick.scss";
+//Mobile
+.m-float-width-none{width: auto;}
+.m-floatnone{float: none;}
+.m-hide{display: none;}
+.m-font20{font-size:20px;}
+.m-font18{font-size:18px;}
+.m-font14{font-size:14px;}
+.m-margint20{margin-top: 20px;}
+.m-text-align-center{text-align: center;}
+.m-width-auto{width: auto;}
+.career{ background:$bg-white;   
+    .topbanner{ margin:0;
+        p{font-size: 33px;}
+        .heading-light{font-size: $font-size-15+3;}
+       figure{ margin:$space20 0 0;}
+    }
+  .rejobs{ padding-top:0;
+      ul{padding:0 $space10;
+         li{
+             .btn{ color:$color-white;}
+         }
+      } 
+      .h1-heading{ margin:0; @include font-size(18px);}
+   .bigheading{ margin:$space15 0 $space5;} 
+    article{@extend .m-float-width-none; float: none; text-align:center;}    
+      aside{@extend .m-hide; }  
+      .heading-bold{ 
+          small{@extend .m-floatnone; display:block}  
+      }
+   } 
+   .opport{padding:$space15;
+       &::after,&::before{@extend .m-hide} 
+       .heading{@extend .m-font20; line-height:normal}
+       p{padding:0 0 $space5} 
+       a{ color:$color-white; display:block; padding:$space5+3;}
+   }
+   .department{padding-bottom:$space30;
+                   .single-item-career{float: none; width: auto; @extend .m-margint20; margin-top:$space15; padding:0;
+                                .slick-dots{display: block !important; bottom: 0;}
+        }
+         figure{@extend .m-float-width-none; float: none; margin: $space25 0 0 0;
+        img{width:80%}
+       }
+       .quote{margin-top:0;     
+       img{@extend .m-text-align-center; @extend .m-floatnone; margin:auto; display:block}  
+       }
+         blockquote{@extend .m-width-auto}
+         strong{text-align: center; font-size:20px; display:block}
+   }
+       .post{padding:$space15 0;
+        .box{margin-right:0; @extend .m-float-width-none; float: none;
+             &:nth-child(2n){    margin-top: $space20;;}
+             span{padding:0; @extend .m-font18}
+             p{@extend .m-font14;
+                 br{@extend .m-hide}
+             }
+            }   
+        .text-right{text-align:center}
+        blockquote{
+            font-size:$font-size-15+1; padding: $space0; margin: $space15 $space0;
+        }
+    }
+    .heading-blenda{font-size: $font-size-20+2;}
+      .happy-employes{padding:$space30 0;   
+         .box{@extend .m-float-width-none; margin-right:0; margin-bottom:$space10;
+         }   
+         .inset{padding:$space5*6 $space5; background-size:cover; height:inherit}          
+       
+         .single-item-career{
+             .slick-dots{bottom:$space0; display: block !important;}
+         }
+       
+      blockquote{padding:$space5+3}
+      .heading-style{font-size: $font-size-20+2;}
+    }  
+   .workwith,.rejobs{
+        .heading-style{line-height:$space30+10; font-size: $font-size-20+2;}
+        ul{li{padding:$space5+3 0;   
+               p{padding-right:$space10; width:43%;
+                 span{@extend .m-font14;}
+                   small{margin:0; display:block}
+               }
+               .city{@extend .m-font14; padding-right:$space10;  
+                 .fa{margin-right: 0} 
+               }
+           }}
+    } 
+    .workwith{
+        .mCSB_draggerContainer{display:block}
+        ul{padding:0 $space5 0 $space10}
+    }
+    .life{
+        .heading-style{font-size: $font-size-20+2;
+        
+        }
+    }
+    .text-warning{font-size: $font-size-20+2;}
+}  
+
+
+
+
+
+
+
+}

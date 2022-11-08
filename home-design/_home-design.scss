@@ -1,0 +1,84 @@
+.container-1440{ width: 1440px; margin: auto; }
+.design-banner { position: relative; height: 550px;
+       article { position: absolute;  top: 140px; left: 51%; line-height: normal; }
+       .banner-heading { @include font-size(50px); text-transform: uppercase; font-family: 'Santana-BlackCondensed'; color: $color-white; @include text-shadow(2px 1px 4px #555);
+         span { display: block; @include font-size(80px); }
+       }
+       p { color: $color-white; @include text-shadow(2px 1px 4px #555); line-height: 25px; }
+       .btn { background: $bg-orange; @include font-size(18px); font-family: $robotolight; text-transform: uppercase; @include border-radius(30px);margin-top: $space20; padding: $space15 $space25*2; }
+}
+.home-design {
+    .design-heading { @include font-size(30px); font-family: $robotolight; text-transform: uppercase; margin-bottom: $space20;   }
+       figure { position: relative; background: $bg-light-soft;          
+       img{position:absolute; top:0; left:0; bottom:0; right:0 ;margin:auto; width:auto;}
+        &:before {content:'';display:block; padding-top:38%; }
+       }
+    .comming-app { text-align: center; margin: $space40 0; 
+      .title { @include font-size(25px); font-family: $robotolight; margin-bottom: $space20; }
+      p { display:inline-block; margin: 0 $space10; color: #4b4a4a; @include font-size(12px); 
+       img { display: block; }
+      }
+    }
+    .home-disign-features { position: relative; padding-top: $space40; overflow: hidden;
+       .container { display: flex; justify-content: space-between; align-items: center; }                     
+       img { vertical-align: bottom; }
+    }
+    .disign-features {  color: #4b4a4a; margin-left:100px;
+      ul{ width: 520px;
+          li{ border: $common-border; @include border-radius(5px); padding: $space0 $space20; margin-bottom: $space10; font-family: $robotolight;
+           .top { padding: $space10+2px $space0; display:block; cursor: pointer; @include font-size(17px); position: relative; padding-right: $space30;
+            &:before { @include size(25px); position: absolute; right: 0; top: 12px; background: url(../images/home-design/add.png) no-repeat;  content: ''; }
+            &.active {
+                &:before { background: url(../images/home-design/less.png) no-repeat; top: 21px; }
+            }
+           }
+           .features-open { display: none; @include font-size(15px);  }
+          }
+      }
+    }
+    .design-reality { padding: $space30*2 0 0; color: #4b4a4a;
+        .design-heading { text-align: center; 
+           p { @include font-size(15px); text-transform: capitalize; font-family: $robotoregular; margin-top:$space10;  }
+        }
+        figure { display: inline-block; 
+         &:before  { padding-top: 65%; }
+        }
+        article { padding: $space30 $space0 $space0 $space20; position:relative;
+          span { @include font-size(30px); font-family: $robotolight; margin-bottom: $space20; display: block; }
+          p { margin-bottom: $space20; line-height: 28px; 
+           &:last-child { margin: 0px; }
+          }
+           &:before { position: absolute; left: 0px; top: 25px; @include size(4px, 40px); display: inline-block; content: ''; background: $bg-orange; }
+        }
+        .reality { margin-bottom: $space40; }
+        .home2 {
+            &:before { padding-top: 93%; }
+        }
+    }
+    .video { margin-bottom: $space40;
+        figure {
+            &:before { padding-top: 47.4%; }
+        }
+    }
+    .bottom-section {
+        figure {
+            &:before { padding-top: 80%; }
+        }
+    }
+}
+
+@media #{$screen-desktop}{ 
+.container-1440{ width: auto; }
+.design-banner { background-position: -200px 0; }
+.home-design {
+    .disign-features { margin-left: 50px; }
+}
+}
+
+@media #{$screen-tablet}{ 
+.design-banner { background-position: -285px 0; }
+.container-1440{ width: auto; }
+.home-design {
+    .disign-features { margin-left: 0px; }
+}
+}

@@ -1,0 +1,362 @@
+@media #{$screen-mobile} {
+    .gray-bg {
+        background: $bg-white;
+    }
+
+    .bulk-banner {
+        background-position: left;
+        text-align: center;
+        padding: 60px 10px 35px;
+
+        .bulk-banner-heading {
+            @include font-size(28px);
+            line-height: 32px;
+        }
+
+        .detail-text {
+            display: none;
+        }
+
+        .btn-warning {
+            display: none;
+        }
+
+        .hidden {
+            display: block;
+
+            .btn-warning {
+                display: inline-block;
+                margin-top: 28px;
+                font-size: 15px;
+            }
+        }
+
+        span {
+            display: none;
+        }
+
+        .bulk-form {
+            display: block;
+            display: none;
+        }
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .customizing-furniture {
+        background: $bg-white;
+        padding: 25px 0px 15px;
+
+        ul { 
+            li {
+                width: 48%;
+                margin-bottom: 20px;
+
+                figcaption {
+                    padding: 6px 6px 15px;
+                    font-family: $pangramregular;
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .bulk-title {
+        @include font-size(19px);
+        line-height: 22px;
+
+        .small-title {
+            @include font-size(13px);
+            line-height: 18px;
+        }
+    }
+
+    .about-work {
+        padding: 25px 0px;
+
+        .btn-warning {
+            margin-top: 12px;
+            padding: 10px 40px;
+            font-size: 15px;
+        }
+    }
+
+    .order-with-us {
+        margin: 0 -10px 0px 0px;
+        white-space: nowrap;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .title {
+            @include font-size(15px);
+            line-height: 20px;
+        }
+
+        article {
+            max-width: 250px;
+            white-space: normal;
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 12px;
+            min-height: 335px;
+            margin-bottom: 15px;
+            &:nth-last-child(1){margin-right: 12px;}
+        }
+    }
+
+    .offer-banner {
+        padding: 0px 10px;
+    }
+
+    .home-solution {
+        padding: 25px 10px;
+
+        .home-list {
+            flex-wrap: wrap;
+
+            a {
+                width: 48%;
+                margin: 0px 0 15px;
+            }
+
+            p {
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        .btn-warning {
+            padding: 10px 40px;
+            font-size: 15px;
+        }
+    }
+
+    .store-block {
+        padding: 25px 10px;
+    }
+
+    .warehouse-block {
+        padding: 25px 10px;
+
+        &::before {
+            display: none;
+        }
+        b{font-family: $pangrammedium;}
+        .warehouse-list {
+            white-space: nowrap;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            margin-right: -10px;
+
+            .warehouse-box {
+                width: 55%;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .warehouse-wrpr {
+        padding: 25px 10px;
+
+        .left-box {
+            margin-right: 0;
+            ul{
+                li{
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                }
+            }
+            .bulk-title {
+                font-family: $pangrammedium;
+                br {
+                    display: none;
+                }
+            }
+            .small-title{color: $secondary-600;font-size: 13px;}
+        }
+
+        .right-box {
+            margin-top: 15px;
+        }
+    }
+
+    .customer-reviews {
+        padding: 25px 10px;
+
+        .testimonial-heading {
+            @include font-size(18px);
+            line-height: 22px;
+            font-family: $pangrammedium;
+            text-align: center;
+            color: $secondary-color;
+        }
+
+        .lead {
+            font-size: 13px;
+            font-family: $pangramregular;
+            text-align: center;
+            display: block;
+            color: $secondary-600;
+            margin: 2px auto 0;
+        }
+
+        .customer-slider {
+            display: block;
+            overflow: auto;
+            white-space: nowrap;
+            margin-top: 10px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .box {
+                display: inline-block;
+                width: 68%;
+                margin: 12px 12px 12px 0px;
+                white-space: normal;
+                vertical-align: top;
+                padding: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            figure {
+                height: 150px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 5px;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            .text-common {
+                height: 85px;
+                overflow-x: hidden;
+                display: block;
+                overflow-y: auto;
+                font-family: $pangramregular;
+                @include font-size(13px);
+                line-height: 18px;
+                color: $secondary-600;
+                padding: 12px 0;
+            }
+
+            .info {
+                @include font-size(14px);
+                color: $secondary-color;
+                font-family: $pangrammedium;
+                margin: 5px 0;
+            }
+        }
+
+        .view-link {
+            background: $secondary-color;
+            color: $color-white;
+            padding: 10px 30px;
+            display: inline-block;
+            margin: 14px auto 0;
+            border-radius: 3px;
+
+            svg {
+                vertical-align: sub;
+
+                path {
+                    stroke: $color-white;
+                }
+            }
+        }
+    }
+
+    .faq-section {
+        padding: 25px 10px;
+
+        .faq-wrpr {
+            padding: 15px;
+
+            .qusTab {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+
+            .AnsBox {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .thanku-success-msg {
+        background: $bg-white;
+        font-family: $pangramregular;
+        span{font-family: $pangrammedium;}
+        p{color: $secondary-color;}
+    }
+    .talk-designer-popup {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        background: $bg-white;
+        z-index: 11; 
+        .inner-wrpr{
+            display: block;
+            .left{display: none;}
+            .talk-designer-form{
+                .bulk-title{
+                    font-size: 22px;   
+                    padding-bottom: 15px;
+                }   
+            }
+        }
+        .close-popup{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0px;
+            padding: 10px;
+            svg{
+                path{
+                    fill: $secondary-color;
+                }
+            }
+        }
+        .talk-designer-form{
+            padding: 10px 20px 0 !important;
+            border-radius: 0 !important;
+            margin-top: 30px;
+            .bulk-title{margin:0 !important;}
+            .flex{display: flex;}
+            .field{
+                    margin-bottom: 15px !important;
+                    &:nth-of-type(1){ 
+                        margin-right: 10px;
+                    }
+                textarea{padding: 10px;height: unset;}
+                input{height: 44px;}
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,111 @@
+.apppage-banner{
+    background:$light-gray;
+    font-family:$pangramregular;
+    text-align:center;
+    padding:$space40 0;
+    .page-text {
+            @include font-size(14px);
+            line-height: 20px;
+            color: $secondary-600;
+        }
+    .page-title{
+            @include font-size(50px);
+            line-height:56px;
+            font-weight:normal;
+            color:$secondary-color;
+            margin:0;
+            }
+    .app-page-content {
+        margin: 0 auto;
+        max-width: 720px;
+        .app-form {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin: $space40 0;
+            .page-text {
+                    @include font-size(15px);
+                    font-family: $pangrammedium;
+                    margin-right:$space20;}
+            form{
+                display:flex;
+                .form-field {
+                    height:54px;
+                    .input-field {
+                       height: 54px;
+                       border: 2px solid #bbbbbf;
+                       border-radius: 4px;
+                       padding:0 $space10;
+                        &:focus + .label-text {
+                        margin-top: 20px;
+                        -moz-transform: translateY(-95px);
+                        -ms-transform: translateY(-95px);
+                        -webkit-transform: translateY(-95px);
+                        transform: translateY(-95px);
+                      }
+                       }
+                    .label-text {
+                        color:$secondary-600;
+                        @include font-size(14px);
+                        line-height: 20px;
+                        -moz-transform: translateY(-40px);
+                        -ms-transform: translateY(-40px);
+                        -webkit-transform: translateY(-40px);
+                        transform: translateY(-40px);
+                        transition: all 0.3s;
+                        text-align:left;
+                        padding:0 $space10;
+                      }
+                    
+                    
+                }
+            .submit-btn {
+                        background: $primary-color;
+                        color: $color-white;
+                        font-family: $pangrammedium;
+                        @include font-size(15px);
+                        line-height: 18px;
+                        padding: 16px;
+                        cursor:pointer;
+                        border-radius: 0px 4px 4px 0px;
+                        margin: 0 0px 0px -4px;
+                    }
+            }
+            }
+            .app-btns {
+                display: flex;
+                justify-content: center;
+                margin: $space40 0 $space30;
+                img{
+                    max-width: 180px;
+                    margin: 0 20px;
+                }
+            }
+        }
+    .app-block {
+    display: flex;
+    justify-content: space-between;
+    .app-content{
+        background: $primary-color;
+        color:$color-white;
+        padding: 50px 50px 50px 170px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .page-title,.page-text{color:$color-white;display:block;text-align: start;padding: $space15 0 0;}
+        .small-text{text-transform: uppercase;color:$color-white;}
+    }
+    .app-banner{
+        img{display: block;}
+    }
+    &:nth-child(2n-1){
+        .app-content{ 
+            background: transparent;
+            padding:50px 100px 50px 50px;
+            .page-title,.page-text{color:$secondary-color;}
+            
+        }
+    }
+}
+}

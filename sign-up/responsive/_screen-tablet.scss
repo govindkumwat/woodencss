@@ -1,0 +1,13 @@
+@media #{$screen-tablet}{
+    .sign-up { width: 750px; background-size: 50% 100%;
+        .left { width: 375px; }       
+        .right{ width: 50%;min-height: 535px;
+        }
+        .signup-block{ margin-bottom: 45px;}
+    } 
+    .digit-group{
+        input{
+            width:44px;
+        }
+    }
+}

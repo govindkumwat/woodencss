@@ -1,0 +1,38 @@
+.addressbook{
+    .btn{ background: none}
+    h5{ margin: 0; font-size: 16px; font-weight: normal}
+    .block-main{display: flex; flex-wrap: wrap; justify-content:space-between;  }
+    .block{  width:49%; border: $common-border; margin-bottom: $space20; padding:$space15 $space10 $space5; margin-right:$space15;
+             label{ display:block;}
+             p{ font-size: 14px; color: #555555;}
+             + .block{ margin-right:0;}
+             &.active{ border-color:$color-warning;
+               a{ width:100%; text-align:center;}
+             }
+    }
+    .bottom-button{ border-top: $common-border; margin-top: $space15; display: flex;justify-content:space-between; text-align:center;
+                    a{  padding: 5px 0; width: 50%; margin-top: $space5; color: #9b9b9b;
+                        &:hover{ color: #e57200;}
+                        &:before{ content:"\f0f6"; font-family: $font-family-awesome; font-size: 15px; margin-right: 8px;}
+                    }
+                    a+a{ border-left: $common-border;
+                    &:before{ content:"\f014"; font-size: 17px}
+                    }
+    }
+    
+    .add-address-btn-new{ float: right; background: #0fb60f; color: #fff; @include border-radius(3px); font-size: 12px; padding: 0 $space20;}
+   
+    .form-group{ position:relative; float:none;}
+     .hidden{ padding:0; margin:0; display:none!important;}
+    .submit_button{ margin-top: $space20;  border: none; background:#e57200!important; color: #fff; text-align:center; @include border-radius(5px); text-transform: uppercase; font-size: 15px;} 
+
+   .de_address{
+     label{ display:inline-block; }
+     span{display:inline-block; width:105px;}
+     input{ width:25px!important; display:inline-block; vertical-align:middle;}
+  
+}   
+
+.address-note{ color:$color-red; @include font-size(13px); display:block; padding-bottom:$space5;} 
+}
+

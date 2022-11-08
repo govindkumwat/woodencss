@@ -1,0 +1,99 @@
+.my-account { padding: $space40 0; color: #4A4A4A; }
+.bg-gray { background: #f7f7f8; }
+.flex { display:flex; flex-wrap: wrap; justify-content: space-between; }
+.myaccount-left { width: 25%; }
+.profile { background: $bg-white; display:flex; flex-wrap: wrap; align-items: center; padding: $space15; margin-bottom: $space20;
+  figure { @include size(50px); @include border-radius(100%); overflow: hidden; margin-right:$space10; }
+  .proyt { @include font-size(12px); width: 180px;
+    .name { @include font-size(14px); @include oneline(); }
+  } 
+  .edit-pro { display: block; width: 100%; @include font-size(13px); padding-top: $space10; margin-top: $space10; border-top: $common-border; color: #4A4A4A; 
+    &:before { content: ''; @include size(15px); display: inline-block; background: url(images/my-account-new/edit.svg) no-repeat; vertical-align: sub; margin-right: $space5; background-size: cover; }
+  }
+}
+.success { color: $alert-success-font; @include font-size(13px); background: $alert-success; padding: $space5 $space10; line-height: normal; }
+.backward-arrow { @include size(8px, 14px); margin-top:$space5; display: inline-block; background: url(images/my-account-new/backward-arrow.svg) no-repeat; float: right;  background-size: cover;}
+.sidebar { background: $bg-white; 
+    li { border-bottom: $common-border;
+        a { padding: $space5+3px $space15; display: block; @include font-size(13px); color: #4A4A4A;  
+          &:hover { color: $color-orange; } 
+        }
+    }
+    .logout { border: none;
+        a { color: $color-orange;
+            &:before { content: ''; @include size(20px, 14px); display: inline-block; background: url(images/my-account-new/logout.svg) no-repeat; vertical-align: sub; margin-right: $space5; background-size: contain;  }
+        }
+    }
+     .active_account_menu { 
+      a { color: $color-orange; }
+    }
+}
+.just-order { background: $bg-white; margin-top: $space20; padding: $space20; text-align:center;
+  span { @include font-size(18px); display:block; margin-top: $space5; }
+  .btn-common { margin-top: $space20; display:block; }
+}
+.btn-common { text-transform: uppercase; background: $bg-orange;  text-align: center; @include border-radius(3px); color: $color-white; padding: $space10 - 4px $space15;  display:inline-block; }
+   .order-right .myaccount-right  { width: 100%; }
+   .myaccount-right  { width: 72%; background: $bg-white; padding: $space0 $space20 $space20; 
+      .top { padding: $space15 $space0; border-bottom: $common-border; @include font-size(18px); margin-bottom: $space20; }
+   }
+   .acountdetail {
+    p { margin-bottom: $space10;  
+      &:last-child { margin: 0px; }
+      span { width: 70px; display: inline-block; }
+      .view{ width: auto; }
+    }
+ }
+   .account-right {
+      .top { padding: $space10+2px $space0; border-bottom: $common-border; @include font-size(18px);
+      .edt { margin-left: $space30; padding-left: $space20; border-left: $common-border; color: $color-orange; }
+      }
+      form {  width: 85%; }
+      .box{ width: 47%; display: inline-block; margin-right: 3%; margin-bottom: $space20; vertical-align: top;
+        .form-control { border: $common-border; display:block; padding: $space10; @include border-radius(3px); width:100%; -webkit-appearance: none; }
+          label {@include font-size(16px); display:block; margin-bottom: $space5; }
+      }
+      .btns { 
+        .btn { background: #4A4A4A; padding: $space5+3px;  width: 150px; text-align: center; @include border-radius(3px); cursor: pointer;
+          &.active { background: $bg-orange; }
+          &.buttonload{
+              &:before { top: 8px; }
+          }
+        }
+      }
+     
+   }
+    .last-order { padding: $space20 $space0 $space10; border-top: $common-border; margin-top: $space20;
+     span { @include font-size(18px); }
+    }
+    .select-gender { margin-bottom: $space20;
+           span { @include font-size(18px); }          
+            ul {
+                li{ display: inline-block; margin-right: $space15; 
+                  span { cursor: pointer; @include font-size(14px); }
+                }
+            } 
+        input[type="radio"] { opacity: 0; visibility: hidden; @include size(0px);}
+        input[type="radio"] + span:before { content: "";  display: inline-block; @include size(16px); display: inline-block; background: url(images/my-account-new/radio.svg) no-repeat; vertical-align: sub; margin-right: $space5; }
+        input[type="radio"]:checked + span:before { background: url(images/my-account-new/radio-check.svg) no-repeat; }
+      }
+      #edit_form{
+          input[type="email"] { background: #f2f2f2; } 
+      }   
+@media #{$screen-desktop}{ 
+    .profile {
+        .proyt { width: 150px; }
+    }
+
+}
+
+@media #{$screen-tablet}{
+ .myaccount-left { width: 25%; }
+ .profile .proyt { width: 85px; }
+ .myaccount-right  { width: 72%; }
+ .just-order { padding: $space20 $space10; }
+ .account-right { 
+  form { width: 100%; }
+ }
+}
+      

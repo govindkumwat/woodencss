@@ -1,0 +1,120 @@
+
+.full-houdesign{
+   .diflex-spabet, .resfur-all .bottom, .export-product .bottom { display: flex; justify-content: space-between;}
+    .diflex { display: flex;}
+    .comtext{
+        p{; color: #151515;padding: 10px 0; text-align: center;}
+    }
+    .heading-main{margin: 0; font-family:$font-family-blenda; font-size:30px; text-align:center;
+                  h1{display: inline-block; font-weight:normal;}
+    }
+        .pacll{
+                    a{color: #000; text-decoration: underline;
+                      &:after{display: inline-block; content: ''; @include size(34px,38px); @include full-houdes-icons-sprite(call); vertical-align: middle; margin-left: 8px;}
+                    }
+                    }
+                    
+                    
+                    .fuhode-media{@include border-radius(5px); @include box-shadow(0 0 5px rgba(0,0,0,.22)); text-align: center; margin: 60px 0;
+              .heading{@include font-size(20px); font-family:$robotolight; padding-bottom: 25px;}
+             .top{padding:20px 0;
+                  ul{
+                      a{@include font-size(12px); font-family:$robotolight; color: #000; padding: 0 20px; display: block;}
+                  }
+                  img{display: block; margin:0 auto;}
+             }
+             .btn-default{background: #f8f8f8; @include border-radius(3px); display: inline-block; padding: 5px 18px; color: #000; margin-top: 45px;
+                          &:hover{background:darken(#f8f8f8,5%);}
+             }
+             .bottom{background: #f8f8f8; padding: 25px 0;
+                     li{display: inline-block; margin-right: 5px;}
+                     .heading{padding-bottom: 20px;}
+             }
+             img{margin: auto;}
+}
+}
+//banner
+.fuhode-banner{position: relative;
+              article{position: absolute; bottom: 90px; left: 0; right: 0; text-align: center;}
+              .heading{@include font-size(35px); color: #fff; text-transform: uppercase; padding-bottom: 24px;}
+              a{@include border-radius(3px); @include box-shadow(1px 1px 3px rgba(0,0,0,.32)); text-transform: uppercase; background: rgba(239,153,10,0.9);  padding: 10px 20px; margin: 0 4px;
+                &:before{display: inline-block; content: ''; @include size(41px,25px); @include full-houdes-icons-sprite(build); vertical-align: middle; margin-right: 12px;}
+                + a{background: rgba(216,113,10,0.9);
+                    &:before{ content: '\f095'; font-family: $font-family-awesome; background: none; margin-right: $space10 - 2; @include font-size(22px); @include size(auto);}
+                }
+              }
+              img{}
+}
+//how it works
+.fuhode-howork{text-align: center; padding: 40px 0; @include all-full-houdes-icons-sprites;
+               li{ color: #545454; padding: 30px 15px 0; width: 20%;}
+              i{display: block; margin:0 auto 8px; @include size(32px);}
+}
+//Packages
+.fuhode-packages{background: #f8f8f8; padding: 70px 0 40px;
+                .comtext{margin-bottom: 18px;}
+                img{}
+                section{position: relative; margin:0 0 40px 0; 
+                        &:hover{
+                            a{visibility: visible;}
+                        }
+                }
+                article{background: $bg-white; @include border-radius(10px); padding:25px 25px 25px 42px; @include center(false,true); right: 0; width: 413px; text-align: center;
+                        .midline{ font-family:$robotolight; padding: 15px 0 25px; text-align: left;}
+                }
+                i{@include size(45px); background: #f09a0b; @include border-radius(50%); position: absolute; top:28px; left: -22px; @include font-size(22px);font-family:$robotomedium;text-align: center; color: #fff; font-style: normal; padding-top: 10px;}
+                .top{display: flex; justify-content: space-between;
+                     span{@include font-size(15px); color: #151515;font-family:$robotolight; text-align: left;
+                         + span{text-align: right;}
+                    }
+                    strong{ @include font-size(25px); display: block;}
+                }
+                .option{border-top: $border1 #c6c6c6; text-align: center;
+                        span{background: #fff; padding: 0 15px;}
+                        p{margin: -13px 0 9px;}
+                }
+                li{display: inline-block; @include border-radius(3px); border: $border1 #c3c3c3; @include font-size(12px);font-family:$robotolight; padding: 0 15px; margin:0 $space5 - 1;}
+                .btn{@include border-radius(3px); @include font-size(13px); margin-top: $space25 - 1; padding: 5px 30px; visibility: hidden;}
+}
+//what you get
+.fuhode-what{@include all-full-houdes-icons-sprites; margin: 65px 0;
+             .tabs{@include box-shadow(0 1px 6px rgba(0,0,0,.19)); @include border-radius(3px); display: flex; justify-content: space-between; padding-right: 42px; margin-top: 20px;}
+             .tab.active{display: block}  
+    .tab-links{background: #f8f8f8; width: 260px; padding: $space20 $space0;
+               a{display: block; padding: 8px 15px; font-family:$robotolight;color: #000; margin-bottom: 12px;}
+               li{
+                   &.active{
+                       a{background: $bg-white;}
+                   }
+               }
+               i{display: inline-block; @include size(24px); vertical-align: middle; margin-right: 15px;}
+    }
+    .title{@include font-size(22px); font-family:$robotomedium;}
+    .tab-content{padding: 50px 0; 
+        p{font-family:$robotolight;}
+        section{display: flex; align-items: center;}
+        article{width: 285px; text-align: center; margin-right: 30px;}
+    }
+}
+//Real
+.fuhode-real{
+    ul{flex-wrap: wrap;}
+    li{border-bottom: $border1 #cccccc; @include font-size(15px);font-family:$robotolight; padding-bottom: 12px; margin-top: 30px;
+       span{ font-family:$robotomedium; float: right; margin-right: $space20; position: relative;
+       }
+       p{position: relative; text-align: left;
+         &:before{background: $bg-white; content: ''; @include size(60px,45px); position: absolute; top: -20px; @include border-radius(50%); right: 12px;}
+       }
+    }
+}
+//Video
+.fuhode-video{background: #f8f8f8; padding: $space30+5 0; margin: 85px auto 65px;
+              section{align-items: center; margin-top: 18px;}
+             article{padding-left: 35px;}
+             .title{@include font-size(25px); font-family:$robotomedium; padding-bottom: 12px;}
+             p{font-family:$robotolight;}
+}
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss"; 
+@import "responsive/_screen-mobile.scss";  

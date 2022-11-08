@@ -1,0 +1,24 @@
+//Global
+  @import "mixin/_global.scss";
+ 
+  @import "cart/_cart-header.scss"; 
+   
+  @import "cart/_cart-footer.scss";
+   
+  @import "cart/_cart-stepone.scss";
+ 
+  @import "cart/_cart-steptwo.scss";
+   
+  @import "cart/_cart-stepthree.scss";
+  
+  @import "cart/_cart-popup.scss";
+    
+  @import "cart/_cart-stepfive.scss";  
+  @import "cart/_cart-wallet.scss"; 
+  @import "cart/_cart-remove-popup.scss";
+   @import "cart/_emi-detail.scss";   
+  
+  //media 
+  @import "cart/responsive/_screen-desktop.scss";    
+  @import "cart/responsive/_screen-tablet.scss"; 
+         

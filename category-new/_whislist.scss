@@ -1,0 +1,31 @@
+
+ //whislit cart                   
+ .w-cart{  background:$bg-white; cursor:pointer; @include border-radius(100%); @include size(28px); float:right; margin-top:-154px;  text-align:center; margin-right:$space5; position:relative; 
+       a{display:block; line-height:$space20+8;}
+      img{@include size(15px); vertical-align:middle;}
+     .fill, .remove{ display:none;}
+     
+     @media only screen and (min-width:1026px){
+         &:hover{
+          .simple{ display:none;}
+         .fill{ display:inline-block;}
+      }
+   
+   &.active{
+         .remove, .fill{display:inline-block;}
+         .add, .simple{ display:none;}
+   } 
+   
+    } 
+   
+   .w-tooltip{ background:$bg-warning; color:$color-white; display:none; position:absolute; width:150px; top:$space0 - 50; left:$space0 - 62 ; @include font-size(13px); line-height:$space30+3; z-index:9;
+       &:after{@include arrow("down", $color-warning, 10); position:absolute; bottom:$space0 - 10 ; left:0; right:0; margin:auto;}
+   }
+  
+    
+ }
+ .addcart-btn{float:$right; background:$bg-warning; margin-top:$space0 - $space40; @include border-radius(3px); @include font-size(14px); padding:$space5+3  $space10; color:$color-white; text-transform:uppercase; margin-right:$space5; cursor:pointer;}
+        
+ 
+  
+ 

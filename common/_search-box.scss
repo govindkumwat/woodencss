@@ -1,0 +1,61 @@
+.TopSearchesBox {  width: 100%; background: #fff; position: absolute; top: 100%; display: none; left: 0; right: 0;z-index: 9; @include border-radius(5px);  box-shadow: 0 7px 7px 0.72px rgba(0,0,0,0.1);     border: 1px solid #f5f5f5;
+  .flex { position: relative;  box-shadow: 0 7px 7px 0.72px rgba(0,0,0,0.1);     border: 1px solid #f5f5f5;
+    //&:before { content: ""; position: absolute; width: 0; height: 0; top: 2px; left: 30%; box-sizing: border-box; border: 10px solid black; border-color: transparent transparent #fff #fff; transform-origin: 0 0; transform: rotate(-225deg); box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1); }
+  }
+  #noresult { width: 100%; padding: $space15 $space0; text-align: center; border-bottom: $common-border; font-size: 15px; display: block; }
+  .left { border-right: 1px solid #F3F3F4; width: 100%; }
+  .right{ width: 65%; padding: $space20;}
+  .title { @include font-size(14px); color: $color-black; display: block; margin-bottom: $space5; }
+}
+.treding {
+    .resent-searchs {
+           a { display:block; @include font-size(13px); color: #4A4A4A; padding: 12px $space0 12px $space0; position: relative;
+         
+        // &:before { content: ''; @include size(11px, 14px); display: inline-block; background: url(../images/common/search.svg) no-repeat top / contain; position: absolute; left: 15px; top: 12px; }
+        b { font-weight: normal; font-family: $robotomedium;  }
+        }
+        li{ padding-left: 45px; position:relative; border-bottom: 1px solid #f5f5f5;
+            &:before { content: ''; position: absolute; background: url("../mobile/images-m/icons/resent.svg") no-repeat;  width: 22px; height: 19px; top: 12px; left: 15px;}
+        &:hover { background: #F5F5F5; a {color: #E57200;} }
+        }
+    }
+  .titlesm { font-size: 15px; padding: 15px 17px 10px; }
+}
+    .mostSearches { 
+        a { display:block; @include font-size(13px); color: #4A4A4A; border-bottom: 1px solid #f5f5f5; padding: 12px $space10 12px $space20; position: relative;
+         &:last-child { border: none;  }
+         &:hover { background: #F5F5F5; color: #E57200; }
+        // &:before { content: ''; @include size(11px, 14px); display: inline-block; background: url(../images/common/search.svg) no-repeat top / contain; position: absolute; left: 15px; top: 12px; }
+        b { font-weight: normal; font-family: $robotomedium; color: #000;  }
+        }
+        .selected{
+            a { background: #F5F5F5; color: #E57200; }
+        }
+    }
+     .Products-list { display: flex; flex-wrap: wrap;
+          li { width: 31%; text-align: center; margin-right: 3%; 
+            a { color: #4A4A4A; @include font-size(13px);   }
+            &:nth-child(-n+3) { margin-bottom: $space15; }  
+            figure { margin-bottom: $space5; }
+            p { margin-top: $space5; @include font-size(12px);
+              span { text-decoration: line-through; }
+            }
+            .proname { display:block; @include oneline(); }
+           &:nth-of-type(3n) { margin-right: $space0; }
+          }
+     }
+      .help-you { border-top: 1px solid #F3F3F4; padding-top: $space20;
+       .helplinks { margin-bottom: $space0; }
+       span { display:inline-block; margin-bottom: $space5; }
+        a { border: 1px solid #E8E8E8; @include border-radius(30px); @include font-size(13px); padding: $space5 $space20; color: $color-black;  display:inline-block; margin-bottom: $space5; 
+         &:hover { color: $color-orange; }
+         &:first-child{margin-right: $space0+3;}
+        }
+     }
+ 
+@media #{$screen-tablet}{
+    .TopSearchesBox { width: 400px; left: -70px; 
+       
+    }
+    
+}

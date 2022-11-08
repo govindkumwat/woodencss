@@ -1,0 +1,274 @@
+.heading1 {
+    .shipping-address {padding-left: 0;}
+}
+.shipping-address{
+        background:$bg-white;
+        padding:35px 50px 20px;   
+        border:$common-border;
+        border-top:0;
+            a{ color:$color-warning;}
+            .half{
+                margin-bottom:$space10+5; 
+                position: relative;
+                .location-auto-fill{
+                    font-size: 13px;  
+                    display: inline-block; 
+                    width:70%;
+                } 
+                .error{margin:2px 0 0 20%;color:$color-red;}
+                .form_left{float: left;width: 20%;}
+                .form-input{
+                    width:80%;
+                    &.error{margin:0;}
+                }
+                .half-input {
+                        width: 40%;
+                        display: inline-block;
+                        input{width:95%;}
+                        &.disabled{
+                            input{cursor: not-allowed;background:$light-gray;width:100%;color:#707070 !important;} 
+                        }
+                }
+                .add-num{
+                    color:$primary-color;
+                    font-size:14px;
+                    padding: 5px 0 0;
+                    cursor: pointer;
+                    margin-left: 20%;
+                    display:inline-block;
+                } 
+            }
+            label{
+                display:inline-block; 
+                font-size:14px;
+                font-family:$robotoregular;
+                color:$secondary-600;
+                vertical-align: top;
+                margin: 10px 0;
+            }
+            input[type="text"],input[type="number"],input[type="password"],textarea, select,input[type="tel"]{
+                border:1px solid #d7d7d7;
+                @include border-radius(2px);
+                padding:12px 10px; 
+                width:100%; 
+                display:inline-block;
+                @include placeholder { font-size: 14px;}
+                color:$secondary-700 !important; 
+                font-family:$robotoregular;
+                &::placeholder{
+                    color:$secondary-400;
+                }
+                &:focus{ 
+                    border:1px solid #646464; 
+                }
+            } 
+            select{
+                padding:10px;
+                -webkit-appearance: none;
+                background: url(../images/cart/drop.svg) no-repeat right;
+                background-position: 96%;
+                height:42px;
+            }
+            hr{ margin-right: 20px; } 
+            .save-btn{
+                width: 20%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                margin-left: 20%; 
+            }
+            .title{
+                font-size:18px;
+                line-height: 20px;
+                font-family: $robotomedium;
+                color: $secondary-color;
+                padding:10px 0;
+                margin: 0 0 15px;
+                text-align:center;
+            }
+}
+.address-optionbx{
+                display: inline-block;
+                margin-left: 140px;
+                margin-top: 10px;
+                .form_right{margin-bottom: 15px;position:relative;}
+                input[type="checkbox"]{
+                    cursor:pointer; 
+                    opacity:0;
+                    position:absolute; 
+                    top:0px; 
+                    left:0;
+                    @include size(18px);
+                    z-index:1;
+                    &:checked ~ .checkmarkbtn::after{display:block;}
+                    &:checked ~ .checkmarkbtn{background:$primary-color;border:1px solid $primary-color;}
+                }
+                            label{
+                                padding-left:$space20+5;
+                                margin:0;
+                                font-size: 14px;
+                                line-height: 18px; 
+                                color:$secondary-color;
+                            } 
+                            .toglegst{
+                                span{font-size:14px;}
+                            }
+
+                        }
+.checkmarkbtn{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 18px;
+                width: 18px;
+                border:1px solid #d1d1d1;
+                border-radius:2px;
+                &:after{
+                    content: '';
+                    display:none;
+                    border-bottom:2px solid $color-white;
+                    border-right: 2px solid $color-white;
+                    width: 4px;
+                    height: 8px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    left: 5px;
+                    top: 1px;
+                }
+            }
+#billing_address_div{
+    border-top: $common-border;
+}
+.address-head {  
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 22px;
+    color: $secondary-700;
+    font-family: $robotomedium;
+    margin: 0 0 20px;
+}
+#order_summary_div{
+    .price-detail{
+        .clearfix{
+            &:after,&:before{display:none;}
+        }
+    }
+}
+.required{
+    color:$color-red;
+    padding:0 5px;
+}
+.login-text{
+    text-align: center; 
+    font-size: 14px; 
+    padding:0 $space25*2;
+    color:$secondary-600; 
+    background:$bg-white;
+    border-left: $common-border;
+    border-right: $common-border;
+        .loginbtn{ 
+            max-width: 180px;
+            margin: 0 auto $space10;
+            font-size: 15px;
+            display: block;
+            padding:$space10;
+        }
+        p{border-bottom:$common-border;padding:20px 0;}
+} 
+.Gstin {
+    &.main{ 
+        box-shadow: 0 2px 4px rgba(0, 0, 0,0.10);
+        .title{
+            margin-bottom:0;border:0;
+            padding:$space15;
+            cursor:pointer;
+            &:after{
+                    content:'';
+                    border-top: 1px solid $secondary-600;
+                    border-right: 1px solid $secondary-600;
+                    width:8px;
+                    height:8px;
+                    display:inline-block;
+                    transform: rotate(45deg);
+                    margin: 0 0 0 6px;
+                }
+        }
+        .Gstin-box{margin-top:0;}
+    }
+   
+}
+.Gstin-box{
+        padding: $space20 $space15; 
+        background:$bg-white;
+        margin-top:$space20;
+        border:$common-border;
+         .title{
+                border: 0 !important;
+                padding: 0 0 15px !important;
+                display: block !important; 
+            }
+        input[type="text"],input[type="number"],textarea{
+            border:1px solid #d7d7d7; 
+            @include border-radius(2px); 
+            padding:12px 10px; 
+            width:100%; 
+            display:inline-block;
+            font-family:$robotoregular;
+            &::placeholder{
+                    color:$secondary-400;
+                }
+                &:focus{
+                    border:1px solid #646464; 
+                }
+        }
+        .half{ display: inline-block; width:49%;margin-bottom:$space15;
+            + .half{ float: right}
+        }
+        p{ font-size: 13px;color:$secondary-600;}
+        .btn{ display:inline-block; margin:$space20 auto; padding:$space10 $space5; width:160px;}
+}
+.heading-gst {
+    font-size: 15px;
+    position: relative;
+    padding:$space15;
+    font-family: $robotomedium;
+    background: $bg-white;
+    color: $secondary-color;
+    margin-top: $space20;
+    border: $common-border;
+    padding-left: 40px;
+    input[type="checkbox"]{
+            opacity: 0;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+            z-index: 1;
+            cursor: pointer;
+            position: absolute;
+            &:checked ~ .checkmarkbtn::after{display:block;}
+            &:checked ~ .checkmarkbtn{background:$primary-color;border:1px solid $primary-color;}
+        }
+        .checkmarkbtn{
+            top: 16px;
+            left: 15px;
+        }
+        .gst-num {
+            color: $secondary-600;
+            font-family: $robotoregular;
+            font-size: 14px;
+            margin: 3px 0 0;
+            display: flex;
+            justify-content: space-between;
+            .check-btn {
+                color: $color-orange;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-size: 14px;
+            }
+        }
+}
+.gstnbox{
+    margin:0;
+    border-top:0;
+    .half,.full{margin-bottom:$space15;}
+}

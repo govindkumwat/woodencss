@@ -1,0 +1,87 @@
+@media #{$screen-mobile}{
+.fuhode-banner{padding-top:100px;
+              article{top:$space10;} 
+              .heading{@include font-size(15px); color: #000; padding-bottom:$space10;}
+              a{@include font-size(13px); padding:8px 10px; text-transform: capitalize; color:$color-white;
+                  &:before{ display:none;}
+              }
+}
+.fuhode-howork{ margin-top:0px; padding:$space15 0;
+              ul{flex-wrap: wrap; padding: 10px 0;}
+              li{width: 50%; border-right: 1px solid #eeeeee;  border-bottom: 1px solid #eeeeee; font-size: 12px; line-height: normal; padding: 10px;
+                 @include every(2){border-right: 0;}
+                 @include last(1){border-bottom: 0; border-right: 0; width: 100%;}
+              }
+}
+.full-houdesign{ background:$bg-white; padding-bottom:$space5;
+   .heading-main{@include font-size(18px);}
+    .comtext{
+        p{@include font-size(12px); line-height: 20px; padding: 0;}
+    }
+    .fuhode-media{
+        .bottom{
+            li{width: 30%;}
+        }
+    }
+    picture{
+        img{width: 100%; vertical-align:bottom;}
+    }
+  
+    
+    .fuhode-media{margin:20px 0; 
+             .top{padding: 20px 0;
+                  ul{flex-wrap:wrap;
+                     a{padding: 10px; line-height: 18px;}
+                  }
+                  li{width: 50%; border: 1px solid #f5f5f5;}
+             } 
+             .btn-default{ margin-top:$space10;} 
+}
+
+}
+.fuhode-packages{ padding:$space20 0;
+                article{ position: initial; transform: translate(0); -webkit-transform: translate(0); -ms-transform: translate(0); -o-transform: translate(0); width:auto; margin: -20px 5px 0; padding: 10px;
+                         .midline{padding: 10px 0 20px; @include font-size(13px); line-height: 22px;}
+                }
+                i{top: -23px; left: 50%; transform: translate(-50%, 0);}
+                .btn{visibility: visible; margin-top: $space15; display:inline-block; padding:$space10 $space30; color:$color-white;}
+                section{ margin-bottom:$space20;}
+                li{ padding:$space5 $space10+2; margin:0 2px;}
+}
+.fuhode-what{ margin:15px 0; text-align:center;
+             .comtext{ padding-bottom:0px;}
+             .tabs{ padding:0; }
+    .tab-links{ width:100%; padding: 0;
+                li{border-bottom:$border1 #e0dfdf;
+                    &.active{
+                        a{background: none;}
+                    }
+                    @include last(1){border-bottom: 0;} 
+                }
+                a{font-family: $font-family-medium; @include font-size(15px);
+                  &:after{float: right; font-family: $font-family-awesome; content: '\f107'; margin: 4px 0 0; @include font-size(18px);}
+                }
+    }
+    .tab{padding: 0 15px; display:none;
+         &.active{ display:none;}
+    }
+    .title{display:none;}
+    p{font-size: 13px; line-height: 22px; padding-bottom: 10px;}
+    .tab-content, img{display:none;}
+}
+.fuhode-real{
+    li{width: 100%; margin-top: $space20;}
+}
+.fuhode-video{margin: 20px 0; padding: 20px 0;
+              .diflex{display: block;}
+             article{width: auto; padding: 0;}
+            .title{ font-size:18px; padding:$space10 0;}
+            iframe{@include size(100%,250px);}
+            p{ line-height:$space20+4;}
+}
+
+
+.fuhode-banner a:before{ display: none}
+
+
+}

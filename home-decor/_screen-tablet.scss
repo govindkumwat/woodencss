@@ -1,0 +1,159 @@
+@media screen and (max-width:1366px) {
+  .Top-section {
+    height: 469px;
+    min-height: 469px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .Top-section {
+    height: 440px;
+    min-height: 440px;
+
+    .decore-slider {
+      width: 73%;
+      margin-right: 13px;
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .Top-section {
+    min-height: 350px;
+    height: 350px;
+
+    .decor-slider {
+      width: 72%;
+    }
+
+    .other-banner {
+      figure {
+        &::before {
+          padding-top: 136% !important;
+        }
+      }
+    }
+  }
+
+  .decorHeading {
+    @include font-size(20px);
+    line-height: 24px;
+    padding: $space20 0;
+
+    .head-title {
+      @include font-size(20px);
+      line-height: 24px;
+    }
+  }
+
+  .top-content {
+    margin-top: 20px;
+  }
+
+  .decor-section {
+    padding: 20px 0;
+
+    .decor-wrpr {
+      .decor-list {
+        width: 23%;
+      }
+    }
+  }
+
+  .newarrivals {
+    padding-top: $space20;
+    padding-bottom: $space20;
+  }
+
+  .slick-dots li button:before {
+    background: $secondary-400;
+    border-radius: 50%;
+  }
+
+  .slick-dots {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .slick-dots .slick-active button::before {
+    background: $primary-color;
+  }
+
+  .shopSlider .name {
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .shop-category {
+    .top-list {
+      a {
+        width: 13%;
+      }
+
+      figure {
+        margin: 0 0 $space5;
+      }
+    }
+  }
+
+  .shopSlider,
+  .blogSlider,
+  .bannerslider {
+    margin: $space10 auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .decorHeading {
+    padding: 10px 0;
+  }
+
+  .Top-section {
+    min-height: 261px;
+    height: 261px;
+  }
+
+  .shop-category {
+    padding-bottom: 0;
+
+    .top-list {
+      a {
+        margin: 0 auto $space20;
+        width: 22%;
+      }
+    }
+  }
+
+  .decor-toggle {
+    width: 600px;
+  }
+
+  .shopSlider {
+    margin: $space15 auto;
+
+    a {
+      margin: 0 5px;
+    }
+  }
+
+  .decor-section {
+    padding: 20px 0;
+
+    .decorHeading {
+      margin-bottom: 15px;
+    }
+
+    .decor-wrpr {
+      .name {
+        @include font-size(14px);
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        padding: 5px;
+      }
+    }
+  }
+
+  .newarrivals {
+    margin-top: 20px;
+  }
+}

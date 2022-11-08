@@ -1,0 +1,111 @@
+.filter_slider_main {  
+                .category-slider{
+                width: 1000px; 
+                margin: 0 auto;
+                text-align: center; 
+                min-height: 181px;
+                    article{
+                        &.active{
+                            a{
+                                &:before{
+                                    display:block;
+                                }
+                            }
+                        }
+                        a {
+                            display: inline-block;
+                            cursor:pointer;
+                            margin:0px 7px;
+                            position:relative;
+                            figure{background:#fff;min-height:154px;}  
+                            img{margin:auto;}
+                            &:hover{
+                                .category-name{color:#000;}
+                                &:before{
+                                    display:block;
+                                }
+                            }
+                            &:before{
+                            content:'';
+                            background: url(images/category-new/fill-tik.svg) no-repeat;
+                            width: 30px;
+                            height: 30px;
+                            display: none;
+                            -moz-border-radius: 100%;
+                            -webkit-border-radius: 100%;
+                            border-radius: 100%;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            margin: auto;
+                            z-index: 999;
+                        }
+                        }
+                    }
+                    .category-name {
+                       @include font-size(14px);
+                        line-height: 20px;
+                        color: #707070;
+                        font-family: $pangramregular; 
+                        padding: $space5 0 0 0; 
+                        display: block;
+                    }
+                    .slick-prev, .slick-next {
+                        &:before{color: #9E9E9E;}
+                    }
+                    .slick-track{margin:0 auto;}
+                }         
+                &.fixed {position:fixed; top: 0; left:0; right: 0; width: 100%; background: $bg-white; text-align: center; z-index: 999;border-bottom:$common-border;
+                        .category-wrpr{width: calc(100% + 15px); margin-left: -15px;} 
+                        .category-slider{padding:6px 0;min-height:auto;   
+                            article{ 
+                                a{padding: 8px 5px; border: 1px solid $color-white;cursor:pointer;margin: 2px;display:block;
+                                &:hover { border-color: $color-orange; background: #fff7ef; }
+                                &:before{display:none;}
+                                figure { display: none; }
+                                .category-name{@include font-size(13px);padding: 0; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+                                }
+                               &.active {
+                                   a{border-color: $color-orange; background: #fff7ef; @include box-shadow(none);}
+                               }                               
+                            }
+                            .slick-track {right: 0;margin: 0 auto;}
+                        }
+                      + .category-main { padding-top: 213px; }  
+               }
+}
+.brand-section{
+    font-family: $pangramregular;
+    .brand-head{ 
+        text-align: center;
+        color:$secondary-600;
+        margin:30px 0 0;
+        .top-title{
+            margin: 0;
+            font-weight: normal;
+            font-family: $pangrammedium;
+            font-size: 24px;
+            line-height: 30px;
+            color:$secondary-color;
+        }
+        figure{
+            .brand-logo{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .head-detail{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        }
+    .brand-detail{
+        height: 44px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #707070;
+        }
+}

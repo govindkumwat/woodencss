@@ -1,0 +1,7 @@
+     .field{position: relative;}
+     .field__label { color:#4b4a4a;   font-size:13px;line-height: 1; opacity: 0;overflow: hidden;pointer-events: none;position: absolute; padding:0 5px;  text-overflow: ellipsis;top:-5px;left:10px; display:inline-block;text-align: left;transform: translateY(3px); transition: all .2s ease-out; user-select: none; white-space: nowrap; background:$bg-white;z-index: 1;}
+     .field__input{background-color:$bg-white;border:$common-border; @include border-radius(2px); color:#4b4a4a;  @include font-size(13px); transition: all .2s ease-out; @include size(100%,40px);padding:0 $space10; @include placeholder{ color:#4b4a4a; }
+       @include placeholder{font-size:13px;color:#a6acb2;} } 
+     .field--not-empty .field__label{ opacity: 1; transform: none;}   
+     .field{ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {-webkit-box-shadow: 0 0 0 30px white inset !important;} }
+     input::-ms-clear {display: none;}

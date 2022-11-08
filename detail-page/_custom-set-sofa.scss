@@ -1,0 +1,113 @@
+.shop-btn {
+	.create-your-set {
+		width: 100%;
+		padding: 12px;
+	}
+}
+.choose-set {
+	padding: 30px 0;
+	border-bottom: 1px solid #e5e5e5;
+	.choose {
+		display: flex;
+		align-items: center;
+		padding: $space15 $space0 $space25;
+	}
+	.list {
+		display: flex;
+		li {
+			display: inline-block;
+			text-align: center;
+			margin-right: $space10+2;
+			border: $common-border;
+			padding: $space5 $space5 $space15;
+			width: 32%;
+			transition: 0.3s all ease;
+			&.active {
+				border-color: $primary-color;
+				&:hover {
+					border-color: $primary-color;
+				}
+			}
+			&:hover {
+				border-color: $secondary-400;
+				transition: 0.3s all ease;
+			}
+		}
+		.heading {
+			@include font-size(14px);
+			line-height: 20px;
+			margin: 10px 0 0;
+			color: $secondary-600;
+			.price {
+				display: block;
+				font-family: $robotoregular;
+				font-size: 15px;
+				color: $secondary-color;
+			}
+		}
+	}
+	.choose-price {
+		width: 35%;
+		margin-left: 40px;
+		text-align: center;
+		.title-set {
+			@include font-size(19px);
+			line-height: 20px;
+			color: $secondary-700;
+			margin: 0 0 15px;
+			display:block;
+		}
+		.lead {
+			@include font-size(17px);
+			line-height: 22px;
+			padding: 10px;
+			color: $secondary-color;
+			display: block;
+			border: 1px dashed #d1d1d1;
+		}
+		.retail-price {
+			@include font-size(20px);
+			font-family: $robotomedium;
+			color: $secondary-color;
+			padding: $space15 0 0px;
+			.offprice {
+				color: $secondary-600;
+				font-family: $robotoregular;
+				@include font-size(15px);
+				margin: 0 4px;
+			}
+		}
+		.BuyTogether{display: block;margin-top: 15px;
+			.buy-now{margin-top:0;}
+			.total-combo{margin-top:10px;}
+		} 
+	}
+	.shop-btn {
+		.button-create-Set {
+			display: none;
+		}
+	}
+	.incrementer {
+		margin: $space15 $space0 $space5;
+		.qtyminus,
+		.increment_field,
+		.qtyplus {
+			@include font-size(15px);
+			padding: 7px;
+			cursor: pointer;
+			border: $common-border;
+		}
+		.increment_field {
+			width: 41px;
+			text-align: center;
+			margin-left: -4px;
+			margin-right: -4px;
+			border-left: 0;border-right:0;
+		}
+		span {
+			font-size: 13px;
+			color: #515151;
+			margin-right: 10px;
+		}
+	}
+}

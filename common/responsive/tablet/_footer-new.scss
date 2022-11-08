@@ -1,0 +1,51 @@
+.footer-mid {
+    article {
+        a { @include font-size(13px); }
+    }
+    .social-link{
+        text-align: center;
+        margin: 15px 0 0;
+    }
+     .bottom{
+        display:block;
+        padding: 25px 0;
+        .footer-left{
+            justify-content: space-evenly;
+        }
+        .other-links{
+            margin:0;
+        }
+    }
+    .delivery-wrpr{
+        display:block;
+        padding: 20px 0;
+        margin-top: 25px;
+            .accept-cards,.download-wrpr{ 
+                 width: 48%;
+                 display:inline-block;
+                 vertical-align: top;
+            }
+            .accept-cards{margin:0 20px 0 0px;}
+            .delivery-city{
+               width: 100%;
+                margin: 0 0 15px;
+            
+            }
+    }
+}
+.footer-new { 
+    .media-slider { width: 700px; } 
+}
+#backtop{ display:none;}
+.footer-mid article.last{ padding-left: 15px; }
+.footer-common{
+    display:block;
+    height: 390px;
+    position: relative; 
+    overflow: auto;
+}
+.footer-common,.TextCommon{  
+     margin: 25px auto;
+     padding:15px 15px;
+     h2,h3,h4{font-size:15px;}
+}

@@ -1,0 +1,97 @@
+.disocunt-strip{ display:none;}
+.m-topstrip {position: fixed; display:block; left: 0; right: 0; top: 0; text-align: center; background: #435471;  padding: 5px 0px; z-index: 9; color: #fff; @include font-size(14px); line-height: normal; 
+  span{background: #e57200;display: inline-block; padding:4px 5px!important;@include border-radius(2px);}
+}
+
+header{position:fixed; top:46px; left:0; width:100%; background:#fff !important; z-index:9;border-bottom:1px solid #eee!important; height:48px; 
+         .top{ display:none;}        
+         .header-search{ width:100%; margin-top:$space10;}
+         .logo{   width:140px; float:none; display:block; img{ width:226px; height:30px;} position:absolute; left:45px; top:5px; /*transform:translate(-50%,0px);*/}
+         .cart{ display:none;}
+         .form-control{ height:36px;}
+         .header-right{ display:block;  position:absolute; right:3px; top:13px;
+                        i{@include font-size(20px); color:#474747;}
+            a{ display:inline-block; padding:0 $space5+3;}
+         }
+         .header-search{ display:none;}
+        .delivery{ display:none;}
+        .top-login{ display:none;}
+}
+
+ 
+     .mobile-search{ width:100%!important; position:relative; margin-top:102px!important; display:block; margin-bottom:$space10!important;
+     .form-control{@include size(100%,38px); @include placeholder{color:#7d7d7d}; background:$color-light-gray; @include border-radius(3px); padding:$space0 $space10 $space0 $space40!important; @include font-size(16px); color:$color-dark-gray;}
+     .btn-search{ position:absolute; text-indent:-999px; left:18px; top:10px; cursor:pointer; background:url("#{$svg-path}/search.svg") no-repeat 0 0; @include size(20px,20px);}
+  } 
+  
+
+.home-main,  .converstion-strip{ display:none;}
+
+
+.request-call, .small-fixed-popup{ display:none;}
+
+
+
+.app-install-strip {
+    display:block;
+  color     :#fff;
+  background:#26416e;
+   position:fixed;
+   z-index:9;
+   width:100%;
+   top:0;
+ line-height:14px;
+  .left { float:$left;
+    @include font-size(12px);
+    font-family: $robotolight;   
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+   line-height:13px;
+
+    font-weight: normal;
+    img {
+      width       : 30px;
+      height      : 30px;
+      float       : left;
+      margin-right: $space10;
+    }
+  }
+  .right { 
+      float:$right;
+    text-align: right;
+        margin: 0.5rem 2%;
+    min-height: 0.125rem;
+     
+    img {
+      width         : 17px;
+      height        : 17px;
+      display       : inline-block;
+      vertical-align: middle;
+      margin-left   : $space5+2;
+    }
+  }
+  .install-button {
+    @include font-size(13px);
+    padding        : $space5 $space10;
+    text-decoration: none;
+    text-transform : uppercase;
+    color          : $color-white;
+    @include border-radius(2px);
+    text-align     : center;
+    border         : 1px solid #fff;
+    display        : inline-block;
+  
+  }
+}
+
+
+.m-callwhat{width: 280px; margin:0px auto; background: #fff; @include border-radius(5px); text-align: center; padding:20px 15px; box-sizing: border-box; flex-wrap:wrap;     display: flex;
+    justify-content: space-between;
+            p{width: 100%; padding-bottom:12px; font-size: 16px;}
+           a{width: 48%; @include border-radius(5px); color: #fff; @include font-size(15px); padding: 10px 0;}
+           i{display: block; @include font-size(25px); margin-bottom:$space5;}
+           .whatsno{background: #2cb742;}
+           .mobno{background: $bg-warning;}
+}
+
+

@@ -1,0 +1,154 @@
+ .description-detail{ @include display-flex; @include justify-content(space-between); min-height:400px;   @include flex-wrap(wrap); margin-top:$space40; border-top:$common-border; border-bottom:$common-border;                   
+    .title{@include font-size(15px); font-family:$robotomedium; color:#3b3b3b; display:inline-block; /*padding-right:$space20;*/border-bottom:2px solid #b2b2b2;  padding-bottom:$space5+2; margin-bottom:$space15;}
+    p{@include font-size(13px); color:#3b3b3b; padding-bottom:$space5+3; line-height:$space20+2; 
+     span{ display:inline-block; font-family:$robotomedium; @include font-size(13px);}
+       a{ color:$color-warning; display:inline-block;}
+    }
+    h2{@include font-size(18px); margin:$space0 0 $space5; font-weight:normal;}
+    .care{ padding:0 $space15+3;
+          p{ padding-bottom:$space20; padding-left:$space10+2;}
+          span{ display:block; font-family:$robotomedium; color:#656565; @include font-size(13px); padding-bottom:$space5; position:relative; padding-left:$space15+3;
+           &:before{ content: ""; position:absolute; left:0; top:10px; @include border-radius(100%); @include size(6px); background:$bg-black; }
+          }
+          
+    }
+    
+     strong{ display:block;display:block; font-family:$robotomedium; @include font-size(15px); font-weight:normal; padding-bottom:$space5;}
+    .description{ width:28%; border-right:$common-border; padding-top:$space20; padding-left:$space10+2;}
+    .overview{ width:32%; border-right:$common-border; padding-right:$space0; padding-top:$space20; height:400px;}
+    
+    .tabs-coloum{ width:35%; padding-top:$space20; background:$bg-white; margin:0; position:relative; overflow:hidden;
+      .in{height:300px; overflow:auto;}
+      p{padding:0 $space15+3 $space5+3; line-height:$space20+2; }
+    
+    } 
+       
+           .tab-links{ margin:0; padding:0;
+                    li{ width:100%; margin-bottom:$space5+3; border:none; padding:0; }
+                    a{@include font-size(15px); position:relative; color:#3b3b3b; @include border-radius(2px); background:#e9e8e8; padding:$space5+4 $space10 $space5+4 $space30; display:block;
+                      &:before{ position:absolute; left:8px; @include font-size(24px); top:10px; content:"\f107"; font-family:$fontawesome; @include transform (rotate(-90deg));}
+                    } 
+                } 
+         .tab{ display:none; padding-bottom:$space10; &.active{ display:block;}}
+         .tab-content{ position:absolute; background:$bg-white; top:20px;  right:-740px; @include size(100%); border:$common-border; display:block; padding:0;}
+         .active.move{ display:inline-block; cursor:pointer; @include font-size(15px); color:#3b3b3b; margin-bottom:$space10+2; @include border-radius(2px); background:$bg-white; border-bottom:$common-border; padding:$space10 $space10 $space10 $space30; width:100%; position:relative;
+          &:before{ position:absolute; left:10px; top:10px;  @include font-size(24px); @include transform (rotate(90deg)); content:"\f107"; font-family:$fontawesome;}
+           .close{@include size(18px); line-height:$space15+1; color:$color-white; text-align:center; background:$bg-warning; @include border-radius(100%); display:block; position:absolute; top:15px; right:12px;}
+         }
+
+         .accordion_example1{ margin-top:0; height:300px; overflow:auto; 
+                              .accordion_in{ border:$common-border; border-bottom:none; border-left:none;}
+               .acc_head{ @include font-size(13px); cursor:pointer;  position:relative; padding:$space5  $space5 $space5 $space40; display:block;}
+               .acc_icon_expand{ @include size(18px); @include border-radius(3px);  background:$bg-white; border:$common-border;position:absolute; left:10px; top:8px;
+                            &:before{content: '+'; color:#000; position:absolute; left:0px;  right:-1px; text-align: center; font-size:15px; top:-5px;}       
+                } 
+               .acc_active{
+                   .acc_icon_expand{ border-color:$bg-warning;
+                     &:before{ content:'-'; color:$color-warning; }
+                   }
+              }
+             
+              .acc_content{@include font-size(13px);   color:$color-black;padding-left:$space30+10; padding-bottom:$space10; line-height:22px; padding-right:0;}
+             
+                      
+             }
+             
+             &.remove-border{
+                 .description{ width:38%;}
+                 .tabs-coloum{ width:60%;}
+                 .tabs-coloum{ 
+                     .description{width:100%;}
+                 }
+             }
+           
+         
+}
+
+//media css start
+@media #{$screen-tablet}{
+    .description-detail{ margin-top:$space20;}    
+}
+/*
+@media #{$screen-mobile}{
+    .description-detail{ margin-top:$space20; min-height:100%; border-bottom:none; border-top:5px solid #e5e5e5;  
+                       .title{ display:block;}
+                         .tab{ padding:0;}
+            .tab-links{ margin:0 -10px; 
+                       li{ margin-bottom:1px;}
+                a { padding:$space5+2 $space10 $space5+2 $space30+5; @include border-radius(0px);&:before{ top:13px;}
+                   &.selected{
+                    &:before{  @include rotate(-180deg); top:5px; }
+                     
+                   }
+                } 
+            }         
+         .active.move{ display:none;}
+           .description, .overview{ padding-top:$space10; width:100%; border-right:none; padding-left:0; height:inherit; 
+              &.mCustomScrollbar{touch-action:inherit;} 
+           }
+           .tabs-coloum{ width:100%; padding:$space5 0 $space10; overflow:inherit;
+            .in{ height:inherit;  margin:$space10 0; padding:0 $space10;
+              .mCustomScrollBox{ height:auto;}
+               &.mCustomScrollbar{touch-action:inherit;} 
+                
+            }
+           p{ padding:$space5 $space0 $space0;}
+         }
+      span{ display:none;}
+     .tab-content{ z-index:99; position:fixed; top:0; position:inherit; display:none;}
+     &.remove-border{ .description, .tabs-coloum{ width:100%;}}
+             .care{ padding:0;
+                    span{ padding-bottom:0; padding-top:$space5;
+                        &:before{ top:15px; left:5px;}
+                    }
+             }
+     .accordion_example1{ margin-left:$space10; height:475px;  
+                           &.mCustomScrollbar{touch-action:inherit;} 
+        .accordion_in{ border-left:$common-border;}
+        .acc_content{ padding-right:$space10;}
+}      
+            .descriptionf .in{ padding:0;} 
+            .description{
+                p span{ width:40%;}  
+            }
+            #frequently{
+                .in{ height:100%;}
+                
+            }
+            
+    }
+    
+    .append-tabs{ margin-top:20px;
+         li{ width:100%; margin-bottom:$space5+3; border:none; padding:0; }
+                    a{@include font-size(15px); position:relative; color:#3b3b3b; @include border-radius(2px); background:#e9e8e8; padding:$space5+4 $space10 $space5+4 $space30; display:block;
+                      &:before{ position:absolute; left:10px; top:15px; background:url("#{$images-path}/product-detail/drope-left.png") no-repeat; @include size(10px,20px); content:"";}
+                    }
+                    
+            .tab{ padding-bottom:$space10; display:block!important; &.active{ display:block;}}
+         .active.move{ display:none;}
+         .move{ display:none;}
+
+         .accordion_example1{ border-bottom:$common-border;
+                              .accordion_in{ border:$common-border; border-bottom:none; }
+               .acc_head{ @include font-size(13px); cursor:pointer;  position:relative; padding:$space5  $space5 $space5 $space40; display:block;}
+               .acc_icon_expand{ @include size(18px); @include border-radius(3px);  background:$bg-white; border:$common-border;position:absolute; left:10px; top:8px;
+                            &:before{content: '+'; color:#000; position:absolute; left:0px;  right:-1px; text-align: center; font-size:15px; top:-5px;}       
+                } 
+               .acc_active{
+                   .acc_icon_expand{ border-color:$bg-warning;
+                     &:before{ content:'-'; color:$color-warning; }
+                   }
+              }
+             
+              .acc_content{@include font-size(13px); display:block;  color:$color-black;padding-left:$space30+10; padding-bottom:$space10; line-height:22px; padding-right:0;}
+             
+                      
+             }
+             .mCSB_container{margin-right:0px;}
+                 .mCustomScrollbar{touch-action:inherit;} 
+                 .mCustomScrollBox{ height:auto;}
+    }
+    
+           
+           
+  }*/

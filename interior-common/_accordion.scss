@@ -1,0 +1,53 @@
+//SMK Accordion
+.accordion_example1{
+.smk_accordion{margin-top: 30px;}
+.accordion_in{position:relative;margin-top:0;overflow:hidden;}
+.accordion_in .acc_head{position: relative;
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #eeecec;}
+ .accordion_in .acc_head {
+    border: 0;
+    border-top: 1px solid #dcdcdc;
+    padding: 15px 50px;
+    background: #fff;
+}
+ .accordion_in .acc_head .acc_icon_expand {
+    width: 22px;
+    height: 22px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    background: none;
+    border: 1px solid #a89f9a;
+    line-height: normal; 
+    left: 10px;
+    top: 13px;
+    position: absolute;
+}
+ .accordion_in .acc_head .acc_icon_expand:before {
+    content: '+';
+    color:$color-black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    top: -3px;
+    line-height: 26px;
+    font-size: 14px;
+}
+ .accordion_in .acc_content {
+    border: 0;
+    line-height: 22px;
+    padding: 0 10px 10px 50px;
+    display: none;
+    background: none;
+}
+.accordion_in.acc_active>.acc_head .acc_icon_expand{ background:#e9833a; border: none; color:$color-white; }
+}  
+.accordion_in.acc_active>.acc_head .acc_icon_expand:before{color:$color-white; content:"-";}

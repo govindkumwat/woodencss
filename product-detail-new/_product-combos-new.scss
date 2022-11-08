@@ -1,0 +1,99 @@
+
+       .bed-combosets {  
+          .combosets-slider{ display:inline-flex; justify-content:space-between; max-width: 925px; flex-wrap: wrap;
+            li{ position:relative; width:220px; margin-bottom:$space10; margin-right:10px;float:left;
+                a{ display:block; color:#000;}
+                img{display: block;  mix-blend-mode: darken;}
+                p{  font-size: 14px; line-height: 20px;color: #545454; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;  width:90%; padding-top:$space5; }
+                small{ @include font-size(14px); display:block; line-height:$space15+3; color:$color-warning;}
+                figure{ background:#f3f3f3;
+                 &:before{padding-top: 69%;}
+                }
+                strike{ color:$color-black; margin-right: 5px; }
+                 .checkbox{
+                        span{  @include size(22px); z-index:9; font-size: 13px; position:relative; display:block; background:#ababab; cursor:pointer;  text-align: center; color: #fff;
+                         
+                        }
+                          [type="checkbox"]{ opacity:0; position:absolute; 
+                              &:checked{ + span{ background:#e57200; 
+                                        &:before { content: ''; display: block; width: 3px;height: 6px;border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg);position: absolute; left: 8px; top: 6px; } 
+                                       }  } 
+                          }
+                   }
+            }
+         }
+          .flexcheck { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; 
+           select { padding: 4px; width: 40px; border: 1px solid #e5e5e5; cursor: pointer; -webkit-appearance: none; margin-left: 2px;
+                -moz-appearance: none; appearance: none; background: url(../images/product-detail-new/polygon.svg) no-repeat center right 5px; }
+           .qty { font-size: 12px; }
+        }
+                
+       }
+.BuyTogether { display: inline-block; vertical-align: top; margin-left: 30px; border: 1px solid #E8E8E8; width: 245px; text-align: center; padding: 15px 10px;
+    .total { font-size: 16px; text-align: center;}
+    .comboprice_head{color: #999999;font-size: 15px;
+    span {font-size: 12px;}
+    }
+    .offerprice { font-size: 22px; font-family: $robotomedium; color: #e57200; padding:5px 0; margin: 0; border-top: none; border-bottom: none;
+                  strike{
+                      color: #888888;
+                       font-size: 14px;
+                  }
+    }
+    .usecoupon{position:relative;}
+    .coupon{
+        strong {  padding: 2px 5px; display: inline-block; margin-left: 5px; border: 1px dashed #ccc; line-height: normal; font-family: $robotomedium; font-weight: normal; }
+    }
+    .EMIFrom { font-size: 14px;
+        label { margin-left: 5px; display: inline-block; }
+        span { color: #e57200; cursor: pointer; }
+    }
+    .btnNew { display: block; margin-top: 15px; }
+    .heading-product { 
+      p { font-size: 14px; }
+    }
+}
+
+.btnNew { display: inline-block; text-align: center; background: #e57200; color: #fff; font-family: $robotomedium; cursor: pointer; padding: 8px 30px; @include border-radius(3px); font-size: 15px; font-weight: normal;  position:relative;
+          &:before { content: ''; position: absolute; top: 0; left: 0;width: 100%; height: 100%; z-index: 1; opacity: 0; background-color: rgba(255, 255, 255, 0.15); -webkit-transition: all 0.4s;
+         -moz-transition: all 0.4s;  -o-transition: all 0.4s; transition: all 0.4s; -webkit-transform: scale(0.5, 1); transform: scale(0.5, 1);
+            }
+            &:hover{
+                &:before {  opacity: 1; -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+            }
+        }
+         .prcDetailpopup {
+            .use, .use1{text-align: left;margin-top: -5px;font-size:10px;}
+            ul li.coupondiscount_pop, ul li.coupondiscount_pop1 {
+                border-top: 1px solid #e8e8e885;
+                margin: 2px 0 0px;
+            }
+            label{text-align: left;}
+            label.CloseDetail svg, label.CloseDetail svg {
+            display: none;
+        }
+        }
+         
+
+
+
+
+
+
+  @media #{$screen-desktop}{  
+      .bed-combosets{
+               .combosets-slider { 
+                  li{  width: 160px; }
+               }
+      }
+  }
+
+  
+    @media #{$screen-tablet}{  
+      .bed-combosets{
+        .combosets-slider {  width: 64%; flex-wrap: wrap; 
+          li{width: 31%; margin: 0 0 20px;}
+        }
+      }
+      .BuyTogether { margin-left: 15px; }
+  } 

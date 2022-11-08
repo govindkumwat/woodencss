@@ -1,0 +1,58 @@
+.request-call{ position:fixed; right:0; top:0; top:230px; width:65px; outline:none; z-index:9;}
+
+//small popup
+.small-fixed-popup{position:fixed;bottom:10px;left:1px;z-index:9;cursor:pointer;
+        .close-btn{position:absolute; right:-7px; top:-8px; @include size(23px); background:url("#{$images-path}/common/close.png") no-repeat; cursor:pointer;}
+     }
+     
+//Talk Our Designer
+.reg-call{
+    p{color: #596470; padding: $space5 - 3 $space0 $space5; font-size: $font-size-10+4;}
+    .number{font-size: $font-size-20; color: $color-primary; font-family: $font-family-medium; font-weight: $font-weight-regular; padding-bottom:$space15+2;
+            &:before{@include common-icons-sprite(reqcall); @include size(20px); display: inline-block; content: ''; margin-right: $space10 - 2; vertical-align: middle;}  
+    }
+    i{background: $bg-white; font-size: $font-size-10+3; font-family: $font-family-medium; color: #b8c0c9; font-weight: $font-weight-regular; padding: $space0 $space10 - 2; display: block; font-style: normal; margin:auto; z-index: 9; position: relative; width: 34px;}
+    hr{margin: $space0; border-top: $border1 #dbdee3; height: $space0; margin-top: -13px;}
+    span{font-size:20px; color: #1d2228; font-weight:$font-weight-regular; display:block; }
+    .form-control, .selector{float: left; width: 48%; height: 40px; padding: $space5 $space10; border:1px solid #dbdee3; color:#000; outline:none; margin:$space15 1% $space0; @include border-radius(3px);
+    @include placeholder{font-size:13px;color:#a6acb2;}
+    }
+    textarea{
+        &.form-control{width: 98%; height: 70px;}
+    }
+    .selector{ width:48% !important; padding:0; height:40px !important;
+               span{width:100% !important; padding:10px 4% 2px; font-size:13px;color:#a6acb2;}
+               select{ height:100% !important; width: 100% !important; margin: 0;}
+               
+    }
+    input[type="button"]{ border:0; outline: 0; text-transform:uppercase; cursor:pointer; margin:0px auto 0; padding:13px 0; background:#ffcc01; color:#000;  @include font-size(18px); font-family: $font-family-medium; font-weight: $font-weight-regular; width: 98%; @include border-radius(3px);
+                                     &:hover{background:darken(#ffcc01, 3%);}
+               }
+    .red-placeholder{ border:1px solid #f00 !important;
+    @include placeholder{color:#f00;}
+    }
+    .request-success{ color:#00be0d; padding:0;}
+    .antispam{ height:auto; padding:0;}
+    .swpmodal-close{ position:absolute; right:15px; top:0; cursor:pointer;}
+}
+
+.reqcall-popup{ background: #fff; padding: $space25 $space20; box-shadow: inherit; @include border-radius(5px); text-align:center; width:500px!important;}
+
+
+.g-hidden{ display:none;}
+
+.call-fixed{ display:none;}
+
+//message sucess
+.reqcall-mesaage{ display:none;
+    figure{ border-bottom:$common-border; padding-bottom:$space10;}
+    p{@include font-size(13px); padding:$space5 0;
+     span{ display:inline-block; font-family:$robotomedium; @include font-size(13px); }
+     a{ color:$color-black;}
+    } 
+    
+    .close{ margin-top:$space10; display:inline-block; background:$bg-warning; font-family:$robotomedium; @include font-size(13px); padding:$space5 - 1 $space30; @include border-radius(3px); color:$color-white; text-transform:uppercase;}
+}
+
+ 
+

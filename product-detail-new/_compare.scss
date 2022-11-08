@@ -1,0 +1,30 @@
+               .CompareSction {padding: 25px 0; border-bottom: 1px solid #e5e5e5;}
+                .scroll { overflow: auto; -ms-overflow-style: none; scrollbar-width: none;
+                  &::-webkit-scrollbar {
+                    display: none;
+                  }
+                  .btn { background: #434343; color: #fff; padding: 5px 0px; width: 120px; margin: 0 auto; display: block; font-size: 13px; text-align:center; @include border-radius(3px); }
+              }
+               .compare { width: 100%; white-space: nowrap; 
+                       .str { 
+                        .fa{ color:#E57200; display: inline-block; margin-right:2px;
+                        }
+                     }
+                     th{ width: 300px;
+                         a { white-space: normal; text-align:left; color: #000; font-family: $robotoregular; font-size: 14px;  display: block; font-weight: normal;  margin-right: 3px;  
+                           img { display: block }
+                           span { display: block; line-height: normal; padding: 5px 5px 0; }
+                         }
+                          &:first-child { width:150px; }
+                     }
+                   tr{ 
+                       td { padding: 8px 5px; white-space: normal;
+                          &:first-child { font-family: $robotomedium; 
+                            p { font-family:$robotoregular; color: #707070; display:inline-block; }
+                          }
+                       } 
+                       &:nth-child(odd) {background: #F5F5F5}
+                       &:first-child { background: #fff; }
+                   }
+                   .green { font-size: 14px; color:#3AA70C; }
+               }  

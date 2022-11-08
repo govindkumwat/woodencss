@@ -1,0 +1,14 @@
+@media #{$screen-tablet}{
+    .category-two{
+        .box{ width:355px;} 
+      
+         .cat-product-name{ width:150px; @include font-size(14px);}
+         .pull-right {
+             span{ display:block; text-align:center;}
+             
+         }
+        .price_with_emi{@include font-size(15px);}
+        .box{ margin-top:$space20;}
+    }
+    
+}

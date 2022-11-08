@@ -1,0 +1,586 @@
+//Kitchen Design
+.heading-main {
+	margin-bottom: $space20;
+	margin-top: $space20;
+	text-align: center;
+	font-size: 30px;
+	font-family: $font-family-blenda;
+	span {
+		display: block;
+		font-size: 14px;
+		line-height: 20px;
+		font-family: $robotoregular;
+		padding-top: $space10+2;
+		color: $secondary-700;
+	}
+}
+
+.btn-warning-kitchen {
+	margin-top: $space25;
+	width: auto;
+	display: inline-block;
+	padding: 10px 16px!important;
+	@include font-size(15px);
+	text-transform: uppercase;
+	&:before {
+		@include size(30px, 26px);
+		display: inline-block;
+		content: '';
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+
+.kitchen-icons-sprite,
+.btn-warning-kitchen:before,
+.customer blockquote:before,
+.customer .title:before {
+	background-image: url(../images/generated/kitchen-icons-sa10fbdf758.png);
+	background-repeat: no-repeat;
+}
+
+.interior-icons-sprite {
+	background-image: url(../images/generated/interior-icons-s93359cfe86.png);
+	background-repeat: no-repeat;
+}
+
+.kibanner {
+	position: relative;
+	section {
+		position: absolute;
+		@include size($width-container, auto);
+		top: $space0;
+		left: 0;
+		right: 0;
+		padding: $space40+30px 0;
+		margin: auto;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	article {
+		text-align: left;
+		margin-top: 190px;
+		.title {
+			@include font-size(22px);
+			font-family: $robotolight;
+			background: rgba(255, 255, 255, 0.8);
+			@include border-radius(0px 10px 10px 10px);
+			padding: 14px 26px;
+			width: 380px;
+		}
+		h1 {
+			display: inline-block;
+			font-weight: normal;
+		}
+		span {
+			@include font-size(35px);
+			font-family: $font-family-blenda;
+			background: rgba(0, 0, 0, 0.8);
+			color: $color-white;
+			@include border-radius(10px 10px 0px 0px);
+			display: inline-block;
+			padding: 22px 30px 22px 25px;
+		}
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+	.slick-prev,
+	.slick-next {
+		top: 45%;
+		background: rgba(255, 255, 255, 0.95);
+		z-index: 1;
+		@include size(43px, 79px);
+	}
+	.single-items {
+		height: 569px;
+		text-align: center;
+	}
+	div+div {
+		display: none;
+	}
+	/*     .slick-slide{  position:relative; 
+                  img{display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); ; width:100%;}
+                &:before{ content:''; display:block; padding-top:30%; }
+              
+          }  */
+	img {
+		height: 569px
+	}
+}
+
+//How it works
+.order-step {
+	text-align: center;
+	.heading {
+		@include font-size(28px);
+		font-family: $robotolight;
+		margin: $space25 0;
+	}
+}
+
+.order-step-list {
+	position: relative;
+	.list {
+		display: inline-table;
+		width: 20%;
+		font-family: $robotoregular;
+		line-height: $space20;
+		padding: $space0 $space10;
+		font-size: $font-size-10+3;
+	}
+	i {
+		@include size(87px);
+		border: 1px dashed #e1e1e1;
+		@include border-radius(50%);
+		display: block;
+		margin: auto;
+		background: $bg-white;
+		background-image: url(../images/generated/interior-icons-s93359cfe86.png);
+		background-repeat: no-repeat;
+		&.interior-icons-meet {
+			background-position: 0 -1343px;
+		}
+		&.interior-icons-made {
+			background-position: 0 -1119px;
+		}
+		&.interior-icons-review {
+			background-position: 0 -2007px;
+		}
+		&.interior-icons-order {
+			background-position: 0 -1517px;
+		}
+		&.interior-icons-delivery {
+			background-position: 0 -507px;
+		}
+	}
+	span {
+		@include font-size(16px);
+		font-family: $robotomedium;
+		display: block;
+		padding: $space25 $space0 $space5;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		@include size(80%, 1px);
+		background: #e1e1e1;
+		top: 42px;
+		z-index: -1;
+		left: $zero;
+		right: $zero;
+		margin: auto;
+	}
+}
+
+//portfolio
+.portfolio {
+	text-align: center;
+	border-top: $border1 #e1e1e1;
+	border-bottom: $border1 #e1e1e1;
+	margin-top: 52px;
+	padding-bottom: 52px;
+	//.slickslide{position: relative; padding-bottom: 115px;}
+	.slider-nav {
+		text-align: center;
+		padding-top: $space10;
+		.slick-slide {
+			margin: 0 $space5;
+			width: 166px!important;
+			&:hover {
+				opacity: 0.5;
+			}
+			&.slick-current {
+				opacity: 0.5;
+			}
+		}
+		img {
+			cursor: pointer;
+		}
+		.slick-track {
+			width: 100%!important;
+		}
+	}
+	.slider-for {
+		display: none;
+		.slick-slide {
+			position: relative;
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:before {
+				content: '';
+				display: block;
+				padding-top: 60%;
+			}
+		}
+		+div {
+			display: none;
+		}
+	}
+	.tab-links {
+		width: 219px;
+		background: #f8f8f9;
+		float: left;
+		text-align: center;
+		a {
+			@include font-size(16px);
+			text-transform: uppercase;
+			color: #000;
+			border-bottom: $border1 #d2d2d2;
+			display: block;
+			padding: $space15+3 $space0 $space10+3;
+		}
+		small {
+			@include font-size(12px);
+			color: #898989;
+			text-transform: none;
+			display: block;
+			font-family: $robotolight;
+			line-height: 20px;
+		}
+		i {
+			display: block;
+			@include size(34px, 25px);
+			margin: 0 auto 8px;
+			background-image: url(../images/generated/kitchen-icons-sa10fbdf758.png);
+			background-repeat: no-repeat;
+		}
+		.str {
+			background-position: 0 -283px;
+		}
+		.par {
+			background-position: 0 -199px;
+		}
+		.lsh {
+			background-position: 0 -149px;
+		}
+		.ush {
+			background-position: 0 -354px;
+		}
+		.isl {
+			background-position: 0 -99px;
+		}
+		li {
+			position: relative;
+			&.active {
+				background: #ddddde;
+				&:after {
+					@include center(false, true);
+					@include arrow("right", #ddddde, 20);
+					right: -20px;
+					z-index: 1;
+				}
+				.str {
+					background-position: 0 -258px;
+				}
+				.par {
+					background-position: 0 -174px;
+				}
+				.lsh {
+					background-position: 0 -124px;
+				}
+				.ush {
+					background-position: 0 -329px;
+				}
+				.isl {
+					background-position: 0 -74px;
+				}
+			}
+			&.mob {
+				@include font-size(18px);
+				a {
+					border-bottom: none;
+				}
+				small {
+					@include font-size(14px);
+					color: #343434;
+					font-family: $font-family-regular;
+					font-weight: $font-weight-regular;
+					&:after {
+						@include size(28px, 28px);
+						display: inline-block;
+						content: '';
+						margin-left: 5px;
+						vertical-align: sub;
+					}
+				}
+			}
+		}
+	}
+	.tab-content {
+		float: left;
+		width: 880px;
+		p {
+			font-family: $robotolight;
+			margin-top: 10px;
+			font-size: $font-size-10+4;
+			line-height: 22px;
+		}
+		// .slick-thumbs {position:absolute; left: -9999px;}
+		.tab {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+}
+
+//Customers
+.customer {
+	figure {
+		float: left;
+		position: relative;
+		width: 45%;
+		img {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 64%;
+		}
+	}
+	figcaption {
+		position: absolute;
+		bottom: 12px;
+		right: 0;
+		width: 198px;
+		padding: $space10 $space15;
+		background: $bg-white;
+	}
+	i {
+		display: inline-block;
+		@include size(48px);
+		vertical-align: top;
+		margin-right: 14px;
+		background-position: 0 -26px;
+		background-image: url(../images/generated/kitchen-icons-sa10fbdf758.png);
+		background-repeat: no-repeat;
+	}
+	blockquote {
+		float: left;
+		width: 45%;
+		margin-left: $space30;
+		font-family: $robotolight;
+		margin-top: 95px;
+		font-size: $font-size-10+4;
+		line-height: 25px;
+		&:before {
+			display: block;
+			content: '';
+			@include size(27px, 21px);
+			margin: 0 0 17px -4px;
+			background-position: 0 -308px;
+		}
+	}
+	img {
+		display: block;
+	}
+	p {
+		display: inline-block;
+		@include font-size(16px);
+		line-height: normal;
+	}
+	span {
+		@include font-size(14px);
+		font-family: $robotolight;
+		display: block;
+	}
+	.title {
+		&:before {
+			content: '';
+			@include size(34px);
+			display: inline-block;
+			margin-right: $space10;
+			vertical-align: middle;
+			background-position: 0 -224px;
+		}
+	}
+}
+
+//Units
+.units {
+	border-top: $border1 #e1e1e1;
+	border-bottom: $border1 #e1e1e1;
+	margin-top: $space30+4;
+	text-align: center;
+	padding-bottom: 65px;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li {
+		float: left;
+		width: 353px;
+		margin: $space0 $space20 $space30 - 2 $space0;
+		font-family: $robotolight;
+		font-size: $font-size-10+4;
+		line-height: 25px;
+		@include every(3) {
+			margin-right: $zero;
+		}
+		span {
+			display: block;
+			@include font-size(16px);
+			font-family: $font-family-regular;
+			font-weight: $font-weight-regular;
+			text-transform: uppercase;
+		}
+	}
+	figure {
+		position: relative;
+		img {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 87%;
+		}
+	}
+}
+
+//Possib
+.possib {
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 58px;
+	text-align: center;
+	.kibox {
+		width: 48%;
+		background: #f8f8f9;
+		padding: $space15+1;
+	}
+	img {
+		display: inline-block;
+	}
+	.slider-nav {
+		padding-top: $space10+2;
+		.slick-slide {
+			padding-bottom: 3px;
+			border-bottom: $border2 #f8f8f9;
+			margin-right: 5px;
+			cursor: pointer;
+			width: 59px!important;
+			&:hover {
+				border-color: $bg-warning;
+			}
+			&.slick-current {
+				border-color: $bg-warning;
+			}
+		}
+		.slick-track {
+			width: 100%!important;
+		}
+	}
+	.slider-for {
+		display: none;
+		.slick-slide {
+			position: relative;
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:before {
+				content: '';
+				display: block;
+				padding-top: 50%;
+			}
+		}
+		+div {
+			display: none;
+		}
+	}
+	.kibox-full {
+		width: 100%;
+		margin: 36px 0;
+		.slider-for {
+			.slick-slide {
+				&:before {
+					content: '';
+					display: block;
+					padding-top: 36%;
+				}
+			}
+		}
+	}
+	.mate {
+		@include font-size(20px);
+		font-family: $robotolight;
+		display: inline-block;
+		text-align: center;
+		margin: $space25 - 1;
+		img {
+			@include size(194px);
+			@include border-radius(50%);
+			border: $border3 #ddddde;
+			display: block;
+			margin-bottom: $space15;
+		}
+	}
+	.text {
+		p {
+			font-family: $robotolight;
+			padding-top: $space30+5;
+			font-size: $font-size-15 - 1;
+			line-height: 25px;
+		}
+	}
+}
+
+.kitchen_success,
+.interior_success {
+	color: $color-error-sussess;
+	padding: 0;
+}
+
+.interior_error {
+	color: $color-error-msg;
+	padding: 0;
+}
+
+.profaq {
+	padding-top: $space30;
+	ul {
+		list-style: disc;
+		margin-left: $space30;
+		padding: $space5 $space0;
+	}
+	article {
+		text-align: center;
+	}
+	span {
+		display: block;
+		padding-bottom: $space5;
+		font-size: $font-size-20;
+	}
+	p {
+		font-size: $font-size-10+4;
+		padding-bottom: $space20;
+	}
+}
+
+//media
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";

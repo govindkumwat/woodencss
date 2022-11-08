@@ -1,0 +1,21 @@
+//Window Popup
+.windowpop{ background:url(../images/offer/home-popup-bg.png) no-repeat 0 0; width: 497px; margin: auto; height: 497px; position:$postion-relative; z-index: 9999; 
+            *{box-sizing: border-box;}
+            form{ position: $postion-absolute; bottom: 80px; left: $space0; right: $space0;
+                  label{@include font-size($font-size-15); font-family: $font-roboto-light; color: $color-black; font-weight:$font-weight-light; display: block; padding-bottom: $space5+1;}
+                  .form-control{width: 216px; border: $border1 #999999; height: 42px; outline: 0;
+                                @include placeholder{ font-size: $font-size-10+4; font-family: $font-roboto-light; font-weight: $font-weight-light; color: #a3a3a3;}
+                                &:focus{border-color:#000;}
+                  }
+                  .btn-warning{ border: $zero; font-size: $font-size-15 - 1; padding: $space10 - 2 $space15; @include transition(all 0.5s ease); box-sizing: border-box; cursor: pointer; height: 42px; background: $bg-black; vertical-align: top; text-transform: inherit; margin-left: -5px;
+                                &:hover{ background:#ec5a4c; outline: none;}
+                  }
+                  .subs_error, .subs_success1{ position: $postion-absolute; bottom: -28px; color: $color-error-msg; font-size: $font-size-10+2; left:0; right: 0; text-align: center;}
+                  .subs_success1{ color: $color-error-sussess;}
+                       }
+           
+                       .window_close{ position:$postion-absolute; bottom: -24px; right:0; left: 0; margin: auto; @include size(50px); @include border-radius(50%); line-height: 70px; z-index: -9; color:#fff; text-align:center;}
+                
+                       .popupclick{ display:block; width:100%; height:495px;}
+
+} 

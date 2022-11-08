@@ -1,0 +1,145 @@
+.resta-furniture{
+.btn-gradient{ background-image:linear-gradient(to left, #ff522f,#f1951a); @include border-radius(3px); padding:$space5+3 $space20; text-transform:uppercase; cursor:pointer;}
+                 .comtext{text-align: center;
+                    .heading{ font-family:$robotomedium; @include font-size(25px);}
+                    p{@include font-size(13px);font-family:$robotolight; color: #464646; padding-top: $space10;}
+                }
+                
+                
+
+}
+//banner
+.resfur-banner{position: relative;
+              article{color: #fff; @include center; text-align: center;}
+              .heading{  font-family:$font-family-blenda; @include font-size(50px); line-height: normal; text-shadow: 0 3px rgba(0,0,0,.3); }
+              p{font-family:$robotolight; @include font-size(20px); padding-bottom: $space40+5;}
+              span{font-family:$robotolight; @include font-size(17px); padding: 0 12px;}
+              .call{@include font-size(20px); border-left:$border1 #a7a29c; color: #fff; display: inline-block; line-height: 18px; text-align: left; vertical-align: middle; padding-left: 5px;}
+              small{display: block; color: #fed11f;font-family:$robotolight; @include font-size(12px);}
+              h1{display: inline-block;font-weight:normal;}
+}
+//Steps
+.resfur-step{@include all-full-houdes-icons-sprites; margin: $space40+4 auto; border-bottom: $border1 #e5e5e5;
+             ul{ @include border-radius(3px); padding: $space40 $space0; margin-top: $space25+1;}
+             li{font-family:$robotolight; color: #757575; width: 25%; line-height: normal; position: relative; text-align: center;
+                &:after{position: absolute; border-top: 1px dotted #999999; @include size(97px,1px); content: ''; top: 30px; right: -48px;}
+                @include last(1){
+                    &:after{@extend .hide;}
+                }
+             }
+    i{@include size(52px,45px); display: block; margin:0 auto 26px;}
+}
+//All
+.resfur-all{
+    .inset{flex-wrap: wrap; margin-top: $space25+1;}
+    .inbox{width: 48%; @include box-shadow(0 0 8px rgba(0,0,0,.08)); border:$border1 #ebebeb; padding: $space10+2 $space0; margin-bottom: $space30;
+           p{@include font-size(13px); font-family:$robotolight; line-height: 18px;}
+    }
+    .title{@include font-size(20px); color: $color-warning; padding: 0 18px; font-weight: 400;}
+    .top{padding: 0 18px; display:flex; align-items: center; justify-content: space-between;}
+    .middle{padding: 0 15px; width: 165px;
+            strong{font-family:$robotomedium;}
+            .des{@include font-size(12px); color: #656565;}
+            .price{font-family:$robotomedium; @include font-size(18px);
+                   small{display: block; @include font-size(12px);}
+            }
+            article{padding: $space10 $space0;}
+    }
+    .right{
+        img{display: block; border:$border1 #dddddd; margin-bottom: $space10;}
+    }
+    .bottom{padding: 12px 18px 0; border-top: $border1 #eae6e6; display:flex; align-items: center;
+            p{color: #656565; width: 320px; line-height: 20px;}
+    }
+    .btn{float: right; @include font-size(14px); text-transform: uppercase; @include border-radius(3px); padding: 3px 30px;}
+}
+// Make 
+.resfur-make{background: #f6f6f6; border:$border1 #ebebeb; @include all-full-houdes-icons-sprites; padding-bottom: 54px; margin: 40px auto;
+            .comtext{width: 590px; text-align: left;
+                     .heading{@include font-size(30px);}
+                     p{@include font-size(14px); color: #818181; padding: $space20 - 2 $space0;}
+            }
+            .top{align-items: center; padding: $space30 $space0;}
+            .call{background: #3ed028; @include border-radius(3px); @include font-size(15px); color: #fff; display: inline-block;padding: 3px 15px}
+            li{@include font-size(15px); color: #282828; width: 25%; padding: 0 30px;
+               p{color: #7f7f7f; @include font-size(13px);font-family:$robotolight; line-height: 22px; padding-top: 2px;}
+               i{@include size(32px); display: block; margin-bottom: $space15+1;}
+            }
+            
+}
+//Project
+.resfur-project{
+    .inset{margin-top: 16px;}
+    .imgroup{width: 545px;
+             img{float: left;
+                 @include every(2){float: right;}
+                 @include last(2){margin-top: 20px;}
+             }
+    }
+    figure{//position: relative;
+    .comtext{
+        .heading{@include font-size(28px);}
+        p{color: #fff; padding-top: 5px; @include font-size(14px);}
+    }
+    }
+//    figcaption{position: absolute; bottom: 15px; left: 0; right: 0; text-align: center; color: #fff;}
+    
+    img{display: block;}
+}
+//Custom
+.resfur-custom{background: url("#{$images-path}/restaurant-furniture/custom-bg.jpg") no-repeat left bottom; padding: 52px 0 50px;
+              .container{align-items: center;}
+              .comtext{width: 435px; text-align: left;
+                       .heading{@include font-size(30px)}
+                       p{@include font-size(14px); padding: 15px 0 40px;}
+              }
+              ul{width: 542px; text-align: center; flex-wrap:wrap;}
+              li{color: #464646; width: 50%; padding: 25px 15px; border-bottom: $border1 #e6e6e6;  border-right: $border1 #e6e6e6; box-sizing:border-box;
+                 span{display: block; @include font-size(18px);font-family:$robotomedium;}
+                 p{@include font-size(13px); color: #464646;font-family:$robotolight; line-height: 20px; padding-top: 8px;}
+                 @include every(2){border-right: 0;}
+                 @include last(2){border-bottom: 0;}
+              }
+              
+}
+//Form
+.resfur-form{height: 468px; background: url("#{$images-path}/restaurant-furniture/form-bg.jpg") repeat-x; position: relative;
+            &:after{position: absolute; background: url("#{$images-path}/restaurant-furniture/form-bg-right.jpg") no-repeat 0 0; top:0; right: 0; content: ''; @include size(988px,468px);}
+            .heading{@include font-size(32px); font-family:$robotolight; line-height: normal; padding: 22px 0 15px; position: relative; z-index: 1;}
+            p{@include font-size(14px); color: #6c6c6d; padding-top: 8px;}
+            form{width: 580px; position: relative; z-index: 1;}
+            article{width: 48%;}
+            .form-control{@include size(100%,40px); background:$bg-white; padding:$space5+3; border:$border1 #b6b6b6; margin-bottom: $space15; @include border-radius(3px);
+                          &:focus{border-color:darken(#b6b6b6,10%);}
+            }
+            .code{position: relative;
+                  img{position: absolute; top: 2px; right: 45px;}
+                  .form-control{padding-right: 210px;}
+            }
+            #reload{ border: 0; background: url(../images/reload.png) no-repeat; width: 35px; height: 35px; position: absolute; top: 2px; right: 6px; outline: 0;}
+            .btn{ border: 0; width: 100%; @include border-radius(3px);}
+            textarea{
+                &.form-control{height: 150px;}
+            }
+            .interior_error{color: $color-error-msg;}
+            .interior_success{color: $color-error-sussess;}
+}
+//Need
+.resfur-need{padding: 100px 0 20px;
+             li{ border:$border1 #e1e1e1; font-family:$robotolight; color: #6f6f6f; width: 346px; text-align: center; padding-bottom: 12px; line-height: normal;
+                 @include from-end(2){ border: 0; color: #000;
+                          img{margin:15px auto;}
+    }
+    }
+    strong{@include font-size(17px);font-family:$robotomedium; color: #fd6133; display: block; padding-top: 12px; text-transform: uppercase;}
+    img{display: block; margin:auto;}
+    a{@include font-size(27px); font-family:$robotomedium; text-transform: uppercase; color: #000;
+      span{color: #fd6133;}
+    }
+}
+.about-woodenstreet ul{ list-style:disc inside;}
+
+//media css
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";
+@import "responsive/_screen-mobile.scss";

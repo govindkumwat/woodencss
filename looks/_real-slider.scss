@@ -1,0 +1,232 @@
+.realStories {
+	padding: 70px 0 0;
+}
+
+.real_slider {
+
+	margin: 30px auto;
+	text-align: center;
+	display: none;
+
+	.slick-next,
+	.slick-prev {
+		top: 38%;
+	}
+
+	article {
+		background: $bg-white;
+		padding: 5px;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+
+		figure {
+			width: 49%;
+			position: relative;
+
+			&:before {
+				padding-top: 82%;
+			}
+		}
+	}
+
+	.content {
+		@include font-size(14px);
+		line-height: 22px;
+		font-family: $pangramregular;
+		max-width: 600px;
+		margin: $space20 auto $space30;
+		color: $secondary-color;
+	}
+
+	.bottom {
+		margin-bottom: -90px;
+		color: $secondary-600;
+
+		figure {
+			@include size(75px);
+			border-radius: 100%;
+			overflow: hidden;
+			margin: auto;
+			background: $bg-white;
+		}
+
+		span {
+			display: block;
+			@include font-size(15px);
+			font-family: $pangrammedium;
+			padding: 10px 0 0px;
+			color: $secondary-color;
+		}
+	}
+
+	figcaption {
+		position: absolute;
+		background: $bg-white;
+		padding: 3px 15px;
+		top: 0;
+		left: 0;
+		text-transform: uppercase;
+		@include font-size(13px);
+		color: $secondary-color;
+		font-family: $pangramregular;
+	}
+
+	.slick-dots li button:before {
+		background: $secondary-500;
+		border-radius: 50%;
+	}
+
+	.slick-dots li.slick-active button:before {
+		background: $primary-color;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.real_slider {
+		margin: $space20 auto;
+	}
+
+	.customer-reviews {
+		.in {
+			padding: 12px 10px;
+
+			figure {
+				height: 165px;
+			}
+		}
+
+
+		.info {
+			@include font-size(14px);
+		}
+	}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	.realStories {
+		padding: $space30 0 0;
+	}
+
+	.customer-reviews {
+		background: $light-gray;
+
+		.in {
+			padding: 0;
+
+			figure {
+				height: 220px;
+				overflow: hidden;
+			}
+
+			.text-common {
+				color: $secondary-600;
+				font-family: $pangramregular;
+				letter-spacing: 0.02em;
+				font-size: 13px;
+				line-height: 18px;
+				text-align: justify;
+				display: block;
+				height: 90px;
+				overflow-y: auto;
+				overflow-x: hidden;
+				padding: 10px 10px 0 0;
+				margin-bottom: 12px;
+			}
+		}
+
+		.btn-view {
+			color: $primary-color;
+			font-size: 15px;
+			padding: 8px;
+			display: inline-block;
+			text-decoration: underline;
+			display: none;
+		}
+
+		.info {
+			font-family: $pangrammedium;
+			line-height: 20px;
+
+			span {
+				display: block;
+				font-size: 13px;
+				font-family: $pangramregular;
+				color: $secondary-600;
+			}
+		}
+	}
+
+	.real_slider {
+
+		margin: $space20 auto;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		.mb-slide {
+			white-space: normal;
+			display: inline-block;
+			width: 78%;
+			vertical-align: top;
+			margin-right: 15px;
+			background: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+
+		.flex {
+			figure {
+				position: relative;
+			}
+		}
+
+		article {
+			margin: 0;
+		}
+
+		.slick-slide {
+			margin-bottom: $space20*4;
+		}
+
+		.bottom {
+			margin-bottom: -75px;
+		}
+
+		.content {
+			margin: $space15 auto;
+			@include font-size(13px);
+			line-height: $space20;
+		}
+
+		.bottom {
+			figure {
+				@include size(75px);
+			}
+		}
+
+		figcaption {
+			@include font-size(10px);
+			padding: 3px 5px;
+		}
+	}
+
+	.interior-form {
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		max-width: 100%;
+		padding: 50px 20px 0;
+	}
+}

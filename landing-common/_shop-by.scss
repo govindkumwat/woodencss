@@ -1,0 +1,17 @@
+  .page-heading{ position:relative; text-align:center;
+                &:before{ position:absolute; left:0; top:25px; right:0; margin:0 auto; content:''; @include size(735px,1px); background:$bg-warning;}  
+                strong{ display:inline-block; padding:$space5+3 $space30; line-height:normal;   position:relative; background:$bg-warning; color:$color-white; font-weight:$font-weight-regular; @include font-size(19px); @include border-radius(25px);}
+            }  
+.shop-by-slider{ margin:$space40 0;  display:none;
+       .slick-slide{margin:0px $space10;}
+       .slick-list {margin:0 -10px;}
+       figure{ &:before{padding-top:48%;}  }
+   }
+   
+     @media #{$screen-tablet}{
+         .shop-by-slider{ margin:$space30 0;
+            .slick-next{right:-20px; z-index:1;}
+           .slick-prev{left:-20px;z-index:1;} 
+         }
+          .page-heading{ strong{@include font-size(17px);}}
+     }

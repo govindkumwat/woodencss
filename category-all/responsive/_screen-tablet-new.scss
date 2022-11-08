@@ -1,0 +1,11 @@
+@media #{$screen-tablet}{
+
+     .slick-dots{ margin:auto; text-align:center;
+                 li{ margin: 0 4px !important;
+                     button{ &:before{ border-radius:100%;  background:#d2d2d2;}}
+                     &.slick-active{ button{&:before{  background:#e57200;}}}
+                 }
+          }
+     
+     
+    }

@@ -1,0 +1,50 @@
+ //Global
+ @import "mixin/_global.scss";
+
+ .topsection {
+   text-align: center;
+   padding: 50px 10px;
+
+   .title-head {
+     margin: 0 0 2px;
+     @include font-size(30px);
+     line-height: 40px;
+     font-family: $pangrammedium;
+     color: $secondary-color;
+     letter-spacing: 0.02em;
+   }
+
+   .title-text {
+     font-size: 14px;
+     line-height: 20px;
+     font-family: $pangramregular;
+     color: $secondary-600;
+     letter-spacing: 0.02em;
+   }
+
+   .media-list {
+     margin: 20px auto 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     a {
+       color: $secondary-color;
+       padding: 5px;
+       margin: 0 5px;
+       font-size: 16px;
+       line-height: 30px;
+       font-family: $pangramregular;
+       border: 1px solid #e7e7e7;
+       width: 40px;
+       height: 40px;
+       border-radius: 2px;
+
+       &.active {
+         background: $secondary-color;
+         color: $bg-white;
+         border: 1px solid transparent;
+       }
+     }
+   }
+ }

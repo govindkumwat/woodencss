@@ -1,0 +1,312 @@
+.video-testimonial {
+    background:url("#{$images-path}/testimonials/banner-bg.jpg") no-repeat 0 0 / 100% 100%;
+    padding: 30px 0;
+
+    h1 {
+        @include font-size(32px);
+        line-height: 38px;
+        text-align: center;
+        color: $secondary-color;
+        margin: $space0 0;
+        font-family: $pangramregular;
+    }
+
+    p {
+        @include font-size(16px);
+        color: $secondary-600;
+        line-height: $space25;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px auto 0;
+    }
+
+    .subscribe {
+        text-align: center;
+        width: 35%;
+
+        #subscribe_count {
+            @include font-size(20px);
+            line-height: 26px;
+            color: $secondary-500;
+            display: block;
+            margin: $space5 0 $space10;
+        }
+
+        a {
+            @include font-size(15px);
+            line-height: 20px;
+            font-family: $robotomedium;
+            color: $color-white;
+            background: $color-red;
+            text-transform: uppercase;
+            padding: $space10 $space20;
+            @include border-radius(3px);
+            display: inline-block;
+        }
+
+        small {
+            color: #ffd3d3;
+            font-family: $robotoregular;
+        }
+    }
+
+    .video-banner {
+        width: 66%;
+
+        p {
+            @include font-size(18px);
+            line-height: 22px;
+            text-align: left;
+            margin-top: $space10;
+            font-family: $pangrammedium;
+        }
+
+        small {
+            font-size: 13px;
+            color: $secondary-600;
+        }
+
+        span {
+            font-size: 13px;
+            color: #fff;
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+            background: #000;
+            padding: 2px 5px;
+        }
+
+        figure {
+            position: relative
+        }
+
+        img {
+            width: 100%;
+            height: auto
+        }
+    }
+
+
+}
+
+.title-main {
+    @include font-size(30px);
+    line-height: 35px;
+    text-align: center;
+    padding-bottom: $space20+2;
+    margin: $space20+4 0;
+    font-family: $pangrammedium;
+    border-bottom: $common-border;
+    color: $secondary-color;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .video-li {
+        width: 32%;
+        margin-bottom: $space30;
+
+        small {
+            @include font-size(13px);
+            color: $secondary-600;
+            display: block;
+        }
+
+        figure {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.video-li,
+.video-banner {
+    span {
+        @include font-size(14px);
+        color: #fff;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        background: $secondary-color;
+        padding: 2px 5px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 8px 0 0;
+        color: $secondary-color;
+        font-family: $pangramregular;
+    }
+
+    figure {
+        @extend .figure;
+
+        &:after {
+            content: '';
+            display: block;
+            background:url("#{$images-path}/testimonials/youtube-play.svg") no-repeat;
+            height: 45px;
+            width: 45px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: 0 auto;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+
+        &:before {
+            padding-top: 56%;
+        }
+    }
+}
+
+.video-li {
+    &:hover {
+        img {
+            transition: 0.3s all ease-in-out;
+            transform: scale(1.04);
+        }
+    }
+}
+
+#product_video {
+    position: fixed;
+    display: none;
+    width: 55%;
+    height: 58%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .video_close {
+        &.swpmodal-close {
+            position: absolute;
+            z-index: 9;
+            right: -10px;
+            top: -10px;
+            cursor: pointer;
+            color: $secondary-color;
+            background: $color-white;
+            @include size(30px);
+            @include border-radius(100%);
+            text-align: center;
+            line-height: 26px;
+            @include font-size(24px);
+        }
+    }
+
+    #videoFrame {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width:1366px) {
+    #product_video {
+        width: 60%;
+        height: 60%;
+    }
+
+    
+}
+
+@media #{$screen-desktop} {
+    .video-testimonial {
+        h1 {
+            @include font-size(28px);
+            line-height: 34px;
+        }
+
+        .subscribe {
+            width: 50%;
+        }
+
+        .video-banner {
+            width: 50%;
+        }
+    }
+
+    #product_video {
+        #videoFrame {
+            height: 78%;
+            margin: 0;
+        }
+    }
+
+    .video-gallery {
+        .video-li {
+            width: 49%;
+        }
+    }
+}
+
+@media #{$screen-tablet} {
+
+
+    #product_video {
+
+        #videoFrame {
+            height: 48%;
+        }
+    }
+
+
+}
+
+
+@media #{$screen-mobile} {
+    .client-testimonails {
+        margin-top: 0;
+        background: $bg-white;
+
+        h1 {
+            margin-bottom: $space0;
+            padding-bottom: $space5;
+            padding-top: $space10;
+        }
+
+    }
+}
+
+@media #{$screen-iphone} {
+    .client-testimonails {
+        margin-top: 0;
+        background: $bg-white;
+
+        h1 {
+            margin-bottom: $space0;
+            padding-bottom: $space5;
+            padding-top: $space10;
+        }
+
+        .grid {
+            width: 100%;
+            padding: 0;
+        }
+
+        &.container {
+            width: 100%;
+        }
+    }
+}

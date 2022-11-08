@@ -1,0 +1,21 @@
+@media #{$screen-tablet}{
+.living-furniture{
+      img {@include size(auto);}
+     .container-1220{ max-width:100%;}
+     .product-new{a{ width: 49%; margin:$space10+5 0; @include font-size(16px); span{@include font-size(14px);}}}
+     .page-heading{ strong{@include font-size(17px);}}
+      .new-storage-slider, .Bedroom-Storage-slider{
+       .slick-slide{margin:30px 5px 0px;}
+       .slick-list {margin:0 -5px;}
+       .slick-next{ right:$space0 - $space20}
+       .slick-prev{ left:$space0 - $space20}
+   }
+   
+
+   
+ }
+
+
+ 
+ 
+}

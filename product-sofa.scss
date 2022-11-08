@@ -1,0 +1,12 @@
+//Compass
+  @import "compass";
+  @import "compass/utilities/sprites";
+  
+//Global
+  @import "mixin/_global.scss"; 
+  @import "product-icon/*.png";
+  @import "product-sofa/_sofa-detail.scss";
+  @import "product-sofa/_sofa-service.scss";
+  @import "product-sofa/_sofa-choose.scss";
+  @import "product-sofa/_sofa-look.scss";
+  @import "product-sofa/_dimensions-detail.scss"; 

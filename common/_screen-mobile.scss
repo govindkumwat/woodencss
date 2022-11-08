@@ -1,0 +1,12 @@
+@media #{$screen-mobile}{
+    .container{ width:auto; padding:$space0 $space10;}
+    .container-1300{width:auto;}
+    @import "responsive/mobile/_header.scss";
+    @import "responsive/mobile/_menu.scss";
+    @import "responsive/mobile/_footer.scss";
+    @import "responsive/mobile/_breadcrumbs.scss";
+    @import "responsive/mobile/_more-toggle.scss";
+    @import "responsive/mobile/_request-callback-popup.scss";
+    @import "responsive/mobile/_category-header.scss";
+    
+}

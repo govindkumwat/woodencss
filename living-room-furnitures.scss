@@ -1,0 +1,13 @@
+  
+//Global
+  @import "mixin/_global.scss"; 
+  @import "living-icons/*.png";
+  @import "living-sofa/_living-room.scss";       
+  @import "landing-common/_banner-top.scss";
+  @import "landing-common/_category-slider.scss";
+  @import "landing-common/_shop-by.scss";   
+  
+  //media 
+  @import "living-sofa/responsive/_screen-desktop.scss";  
+  @import "living-sofa/responsive/_screen-tablet.scss";            
+     

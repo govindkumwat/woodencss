@@ -1,0 +1,58 @@
+.banner-top { text-align: center; margin-top: 8px; }
+.living-new h1, .beds-category h1 {
+	text-align: center;
+	font-size: 19px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 20px 0 10px
+}
+.living-new p, .beds-category p {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px
+}
+.living-new ul, ul.beds-bottom {
+	margin: 20px 0;
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.living-new ul li, ul.beds-bottom li {
+	margin: 0 0 25px 0;
+        width: 32%;
+        img { vertical-align: middle; }
+}
+.living-new ul li:nth-child(even) {
+	margin-right: 0
+}
+#content img {
+	max-width: 100%
+}
+.living-new .about-woodenstreet {
+	display: inline-block;
+	margin: 25px 0 0
+}
+.living-new .about-woodenstreet h2, .living-new .about-woodenstreet h2 b {
+	font-size: 16px;
+	font-family: 'robotolight';
+	font-weight: 300
+}
+.living-new .about-woodenstreet h3 {
+	font-size: 14px;
+	text-align: left;
+	margin-top: 5px
+}
+.living-new .about-woodenstreet p {
+	font-size: 12px; 
+	text-align: left
+} 
+
+
+@media #{$screen-mobile}{
+    .living-new { padding: 0 10px;
+        ul { 
+          li { width: 100%; margin-bottom: $space15;}
+        }
+    }
+}

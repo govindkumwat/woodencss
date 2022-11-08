@@ -1,0 +1,198 @@
+.safedelivery {
+    background: #f0f5f8;
+    figure {
+        background: url(../images/touchwood/safe_delivery.jpg) no-repeat top center; 
+        padding: 54px 20px 56px 25px;
+       margin-top: 5px;
+       span {
+           font-family: $robotoregular;
+           color: #363636;
+           font-size: 20px;
+           display: block;
+           margin-bottom: 9px;
+       }
+        .title {
+            font-family: 'Gelasio';
+            font-size: 35px;
+            color: $color-orange;
+            margin: 0px;
+        }
+        p {
+            width: 40%;
+            color: #363636;
+            line-height: 16px;
+            font-size: 13px;
+            margin-top: 6px;
+        }
+    }
+} 
+.shorttxtlst {
+    width: 70%; margin: 30px auto; text-align: center;
+}
+.corona_prevention {
+    margin: 45px 0px 25px 0px;
+    .subtitle {
+        font-family: 'Gelasio';
+        font-size: 32px;
+        text-align: center;
+        margin: 0px 0px 6px 0px;
+    }
+    p {
+        color: #4B4B4B;
+    }
+    .shorttext {
+        text-align: center;
+        line-height: 18px;
+    }
+    strong {
+        font-family: $robotomedium; font-weight: normal;
+        
+    }
+    ul.icons { width: 60%;
+    margin: 30px auto 10px auto; 
+        li { display: inline-flex;
+             width: 100%;
+             padding: 15px;
+             border: 1px solid #F6F6F6; 
+             margin: 2%;
+             i { 
+                background-image: url(../images/generated/touchwood/safe-icon-s25a4e83178.png);
+                background-repeat: no-repeat;width: 154px; margin-right: 10px; height: 90px;  display: inline-block;
+                 
+                 &.icon2{ background-position: 0 -157px;} 
+                 &.icon3{background-position: 0 -247px;width: 182px; } 
+                 &.icon4{ background-position: 0 -337px; width: 186px;}
+                 
+                 &.setuapp{ 
+                    background-image: url(../images/generated/touchwood/safe-icon-s25a4e83178.png);
+                    background-repeat: no-repeat;
+                    background-position: 0 -777px;
+                    width: 200px;
+                    height: 100px;
+                 }
+                 
+             }
+             
+             p {
+                 width: 100%;
+                 line-height: 18px;
+                 margin-top: 6px;
+             }
+             strong {
+                 font-size: 20px;
+                 margin-bottom: 10px;
+             }
+             ul li {
+                padding: 0px 0px 0px 24px;
+                line-height: 19px;
+    border: none;
+    color: #4B4B4B;
+    list-style: decimal;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    &:before { 
+        content: "";
+        width: 15px;
+    height: 13px;
+        background: url(../images/touchwood/check.png) no-repeat top center; 
+        position: absolute; left: 2px;
+    top: 5px;
+    }
+             }
+        }
+    }
+}
+@media #{$screen-desktop}{
+    .breadcrumbs {
+        display: none;
+    }
+    .safedelivery {
+        figure { padding: 50px 0px 56px 0px;
+            .title {
+                font-size: 30px;
+            }
+        }
+    }
+    .corona_prevention ul.icons {
+    width: 80%;
+    }
+    .corona_prevention .subtitle {
+            font-size: 28px;
+    }
+}
+@media #{$screen-tablet}{
+    .safedelivery figure {
+       background: #f0f5f8 url(../images/touchwood/safe_delivery.jpg) no-repeat -118px 0px;
+    padding: 34px 0px 46px 0px;
+    p {
+        width: 55%;
+    }
+    }
+    .corona_prevention .subtitle {
+    font-size: 26px;
+}
+}
+@media #{$screen-mobile}{
+    .safedelivery {
+        figure {
+            margin:0;
+            padding: 12px 10px 20px 10px;
+            background-size: cover;
+            .title {font-size: 18px;}
+            span {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+            p {opacity:0;}
+        }
+    }
+    .corona_prevention {
+    margin: 20px 0px 15px 0px;
+    .subtitle {
+        font-size: 19px;
+        margin-bottom: 3px;
+    }
+    .shorttext {
+        font-size: 13px;
+    padding: 0px 8px;
+    line-height: 16px;
+    font-family: $robotoregular;
+    }
+    ul.icons {
+        background: #F6F6F6;
+    padding: 5px;
+    width: 100%;
+    }
+    ul.icons li {
+        width: 100%;
+        margin: 2px 0px;
+        background: #FFFFFF; 
+        display: block;
+        text-align: center;
+        i { 
+         width: 90px !important; margin: 0px auto;  
+         
+}
+ul { margin-top: 5px;
+    font-family: $robotoregular;
+    li { padding: 0px;
+    margin-bottom: 10px; 
+    &:before {
+        display: none;
+    }
+}
+}
+ 
+    }
+}
+.shorttxtlst {
+    margin: 0px;
+    width: 100%;
+    text-align: center;line-height: 18px;
+    font-family: $robotoregular;
+}
+}
+@media only screen and (max-width:320px){
+    .safedelivery figure{background-position: -165px 0;}
+}

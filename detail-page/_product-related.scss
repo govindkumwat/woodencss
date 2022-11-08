@@ -1,0 +1,95 @@
+.related-product {
+	padding: 35px 0;
+	.SimilarItems {
+		li{display: inline-block;}
+		.item {
+			display: block;
+			margin:0 7px;
+		}
+		figure {
+			position: relative;
+			background: $light-gray;
+			overflow: hidden;
+			&:before {
+				content: '';
+				display: block;
+				padding-top: 69%;
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin:auto;
+				height: 100%;
+				transform: scale(1);
+				transition: 0.3s ease-in;
+			}
+			&:hover {
+				img {
+					transform: scale(1.04);
+				}
+			}
+		}
+		&.DecorItems {
+			figure {
+				&:before {
+					padding-top: 100%;
+				}
+				img {
+					height: auto;
+					margin: auto;
+				}
+			}
+		}
+	}
+}
+
+.goes-well-with {
+	.grid-list {
+		.grid-menus {
+			padding-bottom: 5px;
+		}
+	}
+	.SimilarItems {
+		margin-top: 15px;
+		figure {
+			img{height: unset;}
+			&:before{
+				padding-top: 100%;
+			}
+		}
+	}
+}
+
+.recentlySection {
+	background: $light-gray;
+	padding: 30px 0;
+	.related-product {
+		padding: 0;
+	}
+	.SimilarItems {
+		.item {
+			background: $bg-white;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+			margin-bottom: 10px;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+	.name {
+		padding: 8px $space10 3px;
+		width: 98%;
+	}
+	.price {
+		padding: 0 $space10 10px;
+	}
+}
+@media screen and (max-width:1280px){
+	.SimilarItems  {
+			.slick-next{right: 5px;}
+			.slick-prev{left:5px;z-index: 1;}
+			.slick-next:before, .slick-prev:before{font-size: 16px;}
+			.slick-arrow{background: #ffffffde;@include size(30px,30px);top:45%;}
+	}
+}

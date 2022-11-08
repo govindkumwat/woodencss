@@ -1,0 +1,21 @@
+  .categorie-bg{ background: #f7f7f7; padding:$space5 $space0 $space10+4; height:130px;}    
+.top-categorie{ display:none;
+       a{@include font-size(13px); color:$color-black; text-align:center; display: block;} 
+       span {background:#fff; border-radius:12px; padding:$space0 $space5; display: block; margin:$space5 $space15+3;}
+       i{@include size(110px, 75px); display:block; margin:0 auto $space10;}
+       .slick-track{ margin: $auto;}  
+    }
+   
+    
+    @media #{$screen-desktop}{
+        .top-categorie{
+            a{@include font-size(13px);}
+            span{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+        }        
+    }    
+        @media #{$screen-tablet}{
+              .top-categorie{
+             .slick-next{right:-20px; z-index:1;}
+           .slick-prev{left:-20px;z-index:1;} 
+         }
+        }

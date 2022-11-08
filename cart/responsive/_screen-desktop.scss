@@ -1,0 +1,36 @@
+@media #{$screen-desktop}{
+    .cart-step { 
+        margin-top: 20px;
+        .offer {
+            img{ width: 50%}
+            .coupon-code{ padding-top: 6px;}
+        }
+        .btn{
+            padding:10px;
+            font-size:15px;
+            line-height:20px;
+        }
+    .order-list{
+        .detail{ width: 165px;}
+    }
+    .shipping-address{ 
+        padding: 20px 30px;
+         .half{ 
+             label{
+                 &.error{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;  width:65%;}
+             }
+             .location-auto-fill{ margin-left: 38%; width:60%;}
+         }
+         .address-optionbx 
+         {
+             label{
+                 width:auto;
+                 span{font-size: 12px; }
+             }
+            
+         }
+    } 
+    .address-optionbx{margin-left: 115px;}
+    }
+    .contribute-box label{ width: 230px;}
+}

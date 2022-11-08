@@ -1,0 +1,653 @@
+
+.space-common{
+    padding: 50px 0;
+}
+.container-fluid{
+    max-width: 96%;
+    margin:0 auto;
+}
+.headingOnline{
+    font-family: $pangramregular;
+    text-align: center;
+    max-width: 940px;
+    padding-bottom: 0;
+        .headingbold {
+            color: $secondary-color;
+            @include font-size(25px);
+            line-height: 30px;
+            margin: 0 0 $space10;
+        }
+        .more-content {
+            color: $secondary-600;
+            @include font-size(14px);
+            line-height: 20px;
+            position: relative;
+            height: 40px;
+            overflow: hidden;
+            &.more{
+                height: auto;
+                .moreButton{
+                    right: unset;
+                    &:after{
+                        content: 'Less';
+                    }
+                }
+            }
+        }
+        hr{ 
+            border-bottom: 1px solid $secondary-300;
+            width: 78px;
+            margin: $space25 auto 0;
+        }
+        .moreButton{
+                cursor: pointer;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: $bg-white;
+                padding: 0 6px;
+                color: $primary-color;
+            &:after{
+                content: 'Read More';
+            }
+            
+        }
+        .about-ws {
+            padding: 30px 0 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{ 
+                display: inline-block;
+                text-align: left;
+                flex: 1;
+                img{
+                    float: left;
+                }
+                p{
+                    @include font-size(27px);
+                    font-family: $pangrammedium;
+                    color: $secondary-color;
+                    display: inline-block;
+                    margin: 12px 0px 0 10px;
+                    span{font-family: $pangramregular;@include font-size(15px);color: $secondary-600;display: block;}
+                }
+            }
+        }
+}
+.title{
+    color: $secondary-color;
+    @include font-size(25px);
+    line-height: 30px;
+    margin: 0 0 $space10;
+    text-align: center;
+    font-family: $pangramregular;
+    .subtitle{
+        color: $secondary-600;
+        @include font-size(14px);
+        line-height: 20px;
+        margin: 5px 0 0;
+        a{color: $primary-color;}
+        &:hover{
+            a{text-decoration: underline;}
+        }
+    }
+}
+.mattress-banner{
+    a{
+        display: block;
+    }
+}
+.mattres-types{
+    .mattres-single{
+        display: inline-block;
+        width: 48%;
+        margin: 0 10px;
+    }
+}
+.mb-view{display: none;}
+.matters-size{
+    .mattress-slider{
+        li{
+            display: inline-block;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                a{color: $primary-color;}
+            }
+            a{
+                line-height: 22px;
+                margin: 0 $space40;
+            }
+        }
+    }
+}
+.mattress-slider{
+    padding-top: $space30*2;
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto;
+    li{
+        a{
+            display: inline-block;
+            text-align: center;
+            color: $secondary-color;
+            font-family: $pangramregular;
+            @include font-size(15px);
+            img{margin: 0 auto $space15;}
+        }
+    }
+}
+.emi-banner {
+    background: $light-gray;
+    padding: $space30 0;
+    text-align: center;
+    position: relative;
+    img{
+        padding: 0 $space30;
+        max-width: 580px;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+    small{
+        border: 1px solid #eee;
+        height: 90px;
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+    }
+}
+.btn-matters {
+    @include font-size(15px);
+    line-height: 20px;
+    color: $color-white;
+    border-radius: 3px;
+    background: $primary-color;
+    padding: $space10 $space20*2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: $pangrammedium;
+    transition: 0.4s all ease-in-out;
+    letter-spacing: 0.04em;
+    border: 2px solid transparent;
+    &:hover{
+        background: $bg-white;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+    }
+}
+.center-block{
+    text-align: center;
+    margin: $space40 auto 0;
+}
+.mattres-comfort{
+    .mattress-slider{
+        li{
+            text-align: center;
+            display: inline-block;
+            transition: 0.4s all ease-in-out;
+            &:hover{
+                a{
+                    p{
+                        color: $primary-color;
+                    }
+                }
+            }
+            a{
+                border:$common-border;
+                padding: $space30 $space20;
+                margin: 0 $space15;
+                min-height: 284px;
+                img{max-width: 100px;}
+                p{
+                    font-family: $pangrammedium;
+                    padding: 0 0 5px;
+                    letter-spacing: 0.02em;
+                    @include font-size(17px);
+                }
+                span{
+                    @include font-size(13px);
+                    color: $secondary-600;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+    }
+}
+.mattress-brand {
+    text-align: center;
+    max-width: 1040px;
+    border-bottom: $common-border;
+    .title{
+        margin-bottom: $space30;
+    }
+    .brand-slider{
+        li{
+            display: inline-block;
+            img {
+                display: inline-block;
+                width: 170px;
+                margin: 0 10px;
+            }
+        }
+    }
+    
+}
+.top-selling{
+    border-bottom: $common-border;
+    .mattress-slider{
+        padding-top: $space30;
+        li{
+            &:hover{
+                img{transform: scale(1.04);}
+            }
+            a{
+                margin-right: 15px;
+                text-align: left;
+                display: block;
+            }
+        }
+    }
+    .name{
+        padding: 5px 0;
+        @include font-size(15px);
+        line-height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 90%;
+    }
+    .price{
+        @include font-size(15px);
+        line-height: 20px;
+        font-family: $pangrammedium;
+        color: $secondary-color; 
+        padding:0 0 5px;
+        del{
+            font-family: $pangramregular;
+            color: $secondary-600;
+            margin:0 5px;
+            font-size: 14px;
+        }
+        .price-discount{color: $success-color; font-size: 14px;}
+    }
+    figure{
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+        &::before{
+            content: '';
+            padding-top: 68%;
+            display: block;
+        }
+        img{
+            position: absolute;transition: 0.3s all ease;
+            right: 0;left: 0;bottom: 0;top:0;margin:auto !important;width: auto;transform: scale(1);
+        }
+    }
+    .str{
+        i{
+            color: $color-orange;
+            margin-right: 6px;
+        }
+    }
+}
+.mattress-gallery{
+    display: flex;
+    justify-content: space-between;
+    padding-top: $space30;
+    max-width: 1140px;
+    margin: 0 auto;
+    figure{
+        width: 32%;
+        position: relative;
+        display: inline-block;
+        &:before{
+            content: '';
+            padding-top: 115%;display: block;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+        }
+        &:hover{
+            figcaption{
+                bottom: 40px;
+            }
+        }
+    }
+    figcaption{
+        position: absolute;
+        bottom: 25px;
+        color: $secondary-color;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0 10px;
+        text-align: center;
+        @include font-size(14px);
+        transition: 0.3s all ease-in-out;
+        font-family: $pangramregular;
+        p{
+            @include font-size(20px);
+            line-height: 24px;
+            font-family: $pangrammedium;
+            padding-bottom: 5px;
+        }
+    }
+}
+.quick-delivery{
+    background: #eb7b3a;
+    text-align: center;
+    color: $color-white;
+    padding: 12px;
+    @include border-radius(4px);
+    @include font-size(20px);
+    font-family: $pangramregular;
+    letter-spacing: 0.02em;
+    max-width: 1140px;
+    svg{
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    span{font-size:17px ;}
+}
+.store-wrpr{
+    .stores-list{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        align-items: flex-end;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        padding-top: $space30;
+        .store-box{
+            position: relative;
+            display: grid;
+            &:hover{
+                .content-overlay,.store-text{opacity: 1;}
+            }
+        }
+    }
+    .content-overlay{
+        background: linear-gradient(0deg,#2a2a2a,#fff0);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: all .4s ease-in-out 0s;
+        @include border-radius(4px);
+    }
+    .store-text{
+        position: absolute;
+        text-align: center;
+        padding: 0 10px;
+        width: 100%;
+        bottom: 5px;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%,-50%);
+        transition: all .3s ease-in-out 0s;
+        color: $color-white;
+        text-transform: capitalize;
+        font-size: 16px;
+        letter-spacing: .02em;
+        font-family: $pangramregular;
+    }
+}
+      
+//media 
+@media #{$screen-desktop}{ 
+    .title{
+        font-size: 22px;line-height: 26px;
+    }
+    .space-common{
+        padding:$space40 0;
+    }
+    .mattres-types {
+        text-align: center;
+        .mattres-single{
+            width: 46%;
+        }
+    }
+    .mattress-slider{
+        padding-top: $space40+5;max-width: 100%;
+    }
+    .emi-banner{
+        padding:$space20 0;
+        img{
+            max-width: 450px;display: inline-block;
+        }
+        small{height: 70px;top:20px;}
+    }
+    .mattres-comfort{
+        .mattress-slider{
+            li{
+                a{
+                    padding: 20px 12px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .top-selling {
+        .mattress-slider{
+            max-width: 96%;
+        }
+    }
+}
+ @media #{$screen-tablet}{
+    .title{
+        font-size: 20px;line-height: 24px;
+        .subtitle{font-size: 13px;line-height: 18px;}
+    }    
+    .space-common{
+        padding:$space30 0;
+    }   
+    .headingOnline {
+        .about-ws{
+            li{
+                text-align: center;
+                img{float: unset;}
+                p{display: block;}
+            }
+        }
+    }
+    .mattress-slider{
+        padding-top: $space20;
+    }
+    .emi-banner{
+        padding: $space10 0;
+        img{
+            max-width: 350px;padding:0 20px;
+        }
+        small{display: none;}
+    }
+    .slick-dots li button::before{background: $secondary-400;border-radius: 50%;}   
+    .slick-dots .slick-active button::before{background: $primary-color;}    
+    .mattress-gallery{
+        figcaption{
+            bottom: 10px;
+            font-size: 13px;
+            p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .store-wrpr {
+        .stores-list{
+            grid-template-columns: repeat(4,1fr);
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+            padding-top: $space20;
+        }
+    }
+}
+@media #{$screen-mobile}{
+    .breadcrumbs{background: $bg-white;}
+    .container-fluid {
+        max-width: 100%;
+    }
+    .space-common{
+        background: $bg-white;
+        padding:$space30 $space10;
+    }
+    .headingOnline{
+        .headingbold{@include font-size(20px);line-height: 24px;}
+        .more-content{
+            @include font-size(13px);
+            b,strong{font-family: $pangrammedium;font-weight: normal;color: $secondary-color;}
+        }
+        hr{display: none;}
+        .about-ws{
+            padding:$space20 0 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            li{
+                flex: unset;margin-bottom:$space15;
+                img{width: 60px;}
+                &:nth-child(odd){border-right: $common-border;}
+                p{ 
+                    font-size: 20px;
+                    margin:0;
+                    span{font-size: 14px;}
+                }
+            }
+        }
+    }
+    .mattres-types {
+        padding-top: 0;
+        .mattres-single{
+            width: 100%;margin: 0 auto;
+            &:last-child{
+                margin-top: $space15;
+            }
+        }
+    }
+    .mattress-slider{
+        li{
+            width: 46%;
+            margin:0 5px 20px;
+            a{
+                font-size: 14px;
+                img{max-width: 132px;margin-bottom: 10px;}
+            }
+        }
+    }
+    .matters-size{
+        .mattress-slider{
+            li{
+                a{
+                    margin: 0 $space10;
+                }
+            }
+        }
+    }
+    .mattress-brand{
+        .title{margin-bottom: $space20;}
+        .brand-slider{
+            display: block;white-space:nowrap;overflow:auto;
+            li{
+                width: 46%;margin:0 $space15 0 0;vertical-align: middle;
+                img{margin: auto;width: 152px;}
+            }
+        }
+    }
+    .top-selling {
+        .mattress-slider{
+            max-width: 100%;
+            padding-top: $space20;
+            display: block;
+            white-space: nowrap;
+            overflow: auto;
+            li{
+                width: 70%;display: inline-block;padding-bottom: 10px;margin:0;
+                a{
+                    img{max-width: 224px;}
+                }
+            }
+        }
+        .name,.price{@include font-size(14px);line-height: 18px;}
+        .name{white-space: normal;width: auto;font-size: 13px;}
+        .price{
+            del,.price-discount{font-size: 13px;}
+        }
+        .str{
+            i{
+                margin-right: 3px;
+            }
+        }
+    }
+    .fa {
+        background: url(../mobile/images-m/icons/star.svg) no-repeat;
+        @include size(13px,13px);
+        display: inline-block;
+    }
+    .mattress-gallery{
+        display: block;
+        white-space: nowrap;
+        overflow: auto;
+        figure{
+            width: 76%;white-space: normal;margin-right: $space15;
+        }
+        figcaption{bottom: 25px;}
+    }
+    .quick-delivery{
+        font-size: 14px;
+        line-height: 18px;
+        position: relative;
+        padding-left: 23%;
+        border-radius: 0;
+        text-align: left;
+        b{font-weight: normal;font-size: 15px;}
+        span{font-size: 14px;}
+        svg{
+            position: absolute;
+            left: 10px;
+            top: 14px;
+            margin:0;
+        }
+    }
+    .store-wrpr {
+        .stores-list{
+            display: block;white-space: nowrap;overflow: auto;padding-top:$space10;
+            .store-box{display: inline-block;width: 55%;margin-right: 15px;white-space: normal;}
+        }
+        .content-overlay,.store-text{opacity: 1;font-size: 14px;}
+    }
+    .mattress-banner{background: $bg-white;}
+    .emi-banner{display: none;}
+    .mb-view{display: block;padding: 0 $space10;background: $bg-white;border-top:10px solid $light-gray;border-bottom:10px solid $light-gray;
+    img{margin: $space15 auto;} }
+    .mattres-comfort{
+        .mattress-slider {
+            li{
+                a{
+                    padding:10px;
+                    margin: 0;
+                    display: inline-table;
+                    min-height:240px;
+                    img{max-width: 55px;}
+                    p{font-size: 15px;}
+                    span{font-size: 13px;line-height: 18px;}
+                }
+            }
+        }
+    }
+    .center-block{margin:$space20 auto 0;}
+    .btn-matters{
+        font-size: 14px;padding: 8px 15px;
+    }
+    .faq-wrpr{
+        background: $light-gray !important;
+        .title{margin-bottom: $space20;}
+    }
+}

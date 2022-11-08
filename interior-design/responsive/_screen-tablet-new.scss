@@ -1,0 +1,95 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .tablet-fw-none{float: none; width:auto;}
+    //new-interior-design
+
+.interior-design{ padding-bottom:$space20;
+     .in{
+        .slick-prev{left:-16px;}
+        .slick-next{right:-16px; } 
+    }
+    .container-1220{ width: 750px;  }  
+    .interior-banner{
+        article{
+            .heading { line-height:80px;
+            .heading-d{ @include font-size(70px);}
+             p{@include font-size(30px); line-height:$space30+5;
+                span{@include font-size(40px);}
+            }
+        }
+        
+        .pera{@include font-size(15px);}
+       }
+
+   .banner-add{ padding:0 $space20;}
+        
+    }
+    .heading-main{ margin:$space25 0;}
+ 
+    .interior-banner-new{
+         article{width:45%;}
+       
+    }
+
+ 
+    .design-philosophy{padding-bottom:$space30; 
+         .container{padding: 0 20px 25px;}
+    }
+    
+    .design-services{margin:0; padding:$space5 0 $space30; 
+       article{width:32%; padding:$space15 $space10 $space5;
+         & + article{margin-left:$space5}     
+         .cost{font-size:25px; margin:$space5 0;
+         &::before{font-size:25px;}
+         }
+        @include from-end(2){padding:$space40+2 $space10 $space15+3}
+        p{@include font-size(12px);}
+      } 
+      &:before, &:after{display: none;}
+    }
+    
+    .map-section{ margin:$space30 auto; text-align: center;
+       .heading-main{ @include font-size(30px); }
+        article{float: none; width: auto; padding-top: $space10; text-align:center; padding-bottom: $space20;
+         p{ padding-bottom: 0px;}
+        }
+        figure{@extend .tablet-fw-none;}
+        img{margin: auto;}
+       
+        
+        .pull-right{ float:none; width:85%; margin:0 auto;}
+    }
+    .hoitwo{
+        .list-main {
+            span{ @include font-size(15px);}
+        }
+    }
+
+   
+   .visit-our{ padding:$space30 0;}
+
+   
+     .happy-customer{padding:$space40 0; 
+     .slick-prev, .slick-next{bottom:-50px;}
+     
+        .in{ position:relative; margin:0 $space5;}
+     .slick-list{margin:0 $space0 - 5;}
+     
+
+}
+     
+.media-coverage {padding: 0px 0 10px;
+                 ul{
+                      li{ padding:$space20 $space10 0; min-height:100px;}
+                 }
+          
+  }
+
+}
+
+
+
+
+
+}
+

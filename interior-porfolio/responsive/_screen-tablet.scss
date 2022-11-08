@@ -1,0 +1,12 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .interportfolio{
+    .box{
+        .first{width: 370px; margin-right: $space15;}
+        .second, .third{width: 168px;}
+        .fourth, .fifth{width: 345px;}
+        figure{width: auto;}
+    }
+}
+}
+

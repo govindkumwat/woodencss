@@ -1,0 +1,64 @@
+
+     
+        .choose-main{display:flex; justify-content:space-between; border-bottom:$common-border; padding-bottom:$space40+20;
+        
+         .heading{@include font-size(20px); color:#000000; font-family:$robotomedium;text-align:center; display:inline-block; padding-left: $space5+2; font-weight: normal}
+        
+        .choose-option{width:60%;}
+        
+        .choose-list{ display:flex; flex-wrap:wrap;  margin:$space20 -3px;
+               
+             li{@include border-radius(5px); border:$common-border; text-align:center; width:24%; padding:$space10 $space0; margin:0 $space10; position:relative; 
+                  &.active{ border-color:$color-warning;
+                    &:after{position:absolute;  top:-1px; right:-1px; @include size(27px,25px); content: '\f00c'; font-family:$fontawesome;background:$bg-orange; @include border-radius(5px);color:#fff;}
+                  }
+                }
+                
+               figure{ margin-top:$space5;
+                   &:before{ padding-top:62%;} 
+               }
+               
+               .product-name{ display:block; @include font-size(14px); color:$color-black; font-family:$robotoregular; line-height:normal; padding-top:$space10; text-transform: capitalize;
+                &:last-child{ padding-top:4px;}
+               }
+               
+              form{ margin:$space10 auto 0;}
+              select{  vertical-align: text-bottom; border:none;  border-radius:(3px); padding:5px 10px; cursor:pointer; background:#f5f5f5 url("#{$images-path}/product-sofa/drope-down.png") no-repeat right center; width:80px; border:$common-border; outline:none; @include appearance(none);}
+         }
+      
+         .choose-info{ 
+                border:$common-border; width:35%; padding:$space30+5 $space20 $space10; text-align:center; position:relative;
+               figure{ margin-top:$space5;
+                   &:before{ padding-top:63%;} 
+               }
+            .product-name{ @include font-size(14px); font-family:$robotolight; color:#525252; display:block;  border-bottom:$common-border; padding:$space10+2 0; } 
+            .retail-price{@include font-size(14px); font-family:$robotolight; color:#000; display:block; padding-top:$space15;}    
+            .price-discount{background:#fdd922; font-family:$robotoregular; @include border-radius(3px); vertical-align:inherit; line-height:19px; display:inline-block; padding:$space0 $space5 - 3; margin-left:$space5; position:relative; @include font-size(12px);
+            &:before{content: '\f0d9'; position: absolute; color: #fdd922; font-family: FontAwesome; left: -4px; top:0px;}
+           }
+           .offerprice{@include font-size(18px); color:#000; padding-bottom:$space15; display:block; border-bottom:$common-border;}
+           .offerpr-emi{display:flex; justify-content:space-between; margin:$space15 0;} 
+           
+           .price{font-size:1.4375rem; border-right:$common-border; color:#e57200; width:55%; 
+               small{ font-size: .75rem;color: #000; display:block;}
+           }
+           
+           .product-emi{  width:40%;  
+                 strong{display:block; font-size: .9375rem;font-weight: normal; line-height:normal;}
+                a{ color:$color-warning;}
+           }
+      
+       .btn-close{ @include font-size(13px); font-family:$robotolight; color:#000; position:absolute; right:0px; top:-30px;
+         &:after{ content:"x"; display:inline-block; line-height:20px; margin-left:$space10; @include size(22px);  @include font-size(16px); font-family:$robotoregular; background:$bg-orange; color:#fff; border-radius:(100%); }
+         }
+         
+         }
+         
+
+         .button-buy-now{  width:100%;
+              &:before{ content:"\f18e";}
+           } 
+       
+         }
+     
+         

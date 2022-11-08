@@ -1,0 +1,29 @@
+@media #{$screen-tablet}{
+
+    .my-account{
+        .myaccount-options{
+            li{ width:48%; margin:$space10 $space5 - 1;
+                a{ padding:$space10;}
+            }
+        }
+    }
+
+    
+    
+    .addressbook{
+        .block{ margin-right:$space10}
+    }
+        
+  .order-track{ 
+    .order-status{
+          li{ padding:$space0 $space10 $space20;}
+      }
+    }
+    
+    .my-wishlist{
+  .product{ width:300px;}
+ .product article{ width:200px;}
+    
+}
+    
+}

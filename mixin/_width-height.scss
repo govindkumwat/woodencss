@@ -1,0 +1,7 @@
+// Width Height Mixin
+@mixin size($width, $height: $width){
+    width: $width;
+    height: $height;
+}
+
+// -- (Use :- @inculde size(400px);, @inculde size(200px, 150px);) -- //

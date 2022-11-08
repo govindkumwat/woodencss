@@ -1,0 +1,58 @@
+.request-call{ position:fixed; right:0; top:0; top:230px; width:65px; outline:none; z-index:9;}
+
+//small popup
+.small-fixed-popup{position:fixed;bottom:10px;left:1px;z-index:9;cursor:pointer;
+        .close-btn{position:absolute; right:20px; top:8px; @include size(23px); background:url("#{$images-path}/common/close.png") no-repeat; cursor:pointer;}
+     } 
+       
+//Talk Our Designer
+.reg-call{   background: #fff; padding: $space25 $space20; box-shadow: inherit; @include border-radius(5px); text-align:center; width:500px!important;
+    .lead{color: #596470; padding: $space5 - 3 $space0 $space5; font-size: $font-size-10+4;}
+    .number{font-size: $font-size-20; color: $color-primary; font-family: $font-family-medium; font-weight: $font-weight-regular; padding-bottom:$space15+2;
+            &:before{ @include size(20px); display: inline-block; content: ''; margin-right: $space10 - 2; vertical-align: middle;}  
+    } 
+    i{background: $bg-white; font-size: $font-size-10+3; font-family: $font-family-medium; color: #b8c0c9; font-weight: $font-weight-regular; padding: $space0 $space10 - 2; display: block; font-style: normal; margin:auto; z-index: 9; position: relative; width: 34px;}
+    hr{margin: $space0; border-top: $border1 #dbdee3; height: $space0; margin-top: -13px;}
+    span{font-size:20px; color: #1d2228; font-weight:$font-weight-regular; display:block; }
+     form{ margin:0 -1%;}
+    .field{ display:inline-block; vertical-align:top; width:48%; margin:$space15 1% 0;@include border-radius(3px); text-align:left;}
+    .field__input {
+        color:#000;
+        border: 1px solid #d9d9d9;
+        &::placeholder{
+            color: #707070;
+        }
+    } 
+    .full{ width:98%;
+        .field__input{ height: 70px; padding-top:$space10; resize:vertical;}
+    }
+
+    
+
+   [type="button"], [type="submit"]{ border:0; outline: 0; text-transform:uppercase; cursor:pointer; 
+    margin:0px auto 0; padding:13px 0; background:$bg-warning; color:$bg-white; 
+     @include font-size(18px); font-family: $font-family-medium; font-weight: $font-weight-regular; 
+     width: 98%; @include border-radius(3px);margin:15px 0 0;
+                   //&:hover{background:darken(#ffcc01, 3%);}
+                   &.buttonload:before{ top:15px;}
+                } 
+   .red-placeholder{ border:1px solid #f00 !important;
+    @include placeholder{color:#f00;}
+    }
+    .request-success{ color:#00be0d; padding:0;} 
+    .antispam{ height:auto; padding:0;}
+    .swpmodal-close{ position:absolute; right:15px; top:10px; cursor:pointer;}   
+  
+}  
+
+ .reqcall-popup{&.box-modal{ background:none;}}
+
+
+
+ 
+.g-hidden{ display:none;}
+.call-fixed{ display:none;} 
+
+
+ 
+

@@ -1,0 +1,156 @@
+
+ .figure{ position:relative;
+        img{ position:absolute; top:0; bottom:0;  right:0; left:0; margin:0;} 
+        &:before{ padding-top:100%; content:''; display:block;}
+  }
+.touchBanner { position: relative; margin-top: 5px;
+  figure { @extend .figure;
+    &:before{ padding-top: 24%; }
+  }
+}
+
+
+.mobile-banner { display: none; } 
+.touchContent { position: absolute; top: 50px; left: 40px; color: $color-white; width: 410px; font-size: 20px; font-family: $robotolight; } 
+.banner-title { font-family: 'Gelasio'; font-size: 46px; line-height: normal; }
+.flexTouch { margin-top: 50px; display: flex; justify-content: space-between; padding: 0 40px 0 20px; }
+.leftTouch { width: 20%; 
+            ul {
+                li  { font-size: 15px; margin-bottom: 10px; position: relative; padding-left: $space15; 
+                   &:before { content: ''; @include size(4px); display: inline-block; background: #434343; position: absolute; left: 0px; top: 10px; }
+                   a { color:#434343; }
+                }
+            }
+}
+.rightTouch { color: #4E4E4E; width: 78%; 
+   .TouchTitle {  font-family: 'Gelasio'; font-size: 25px; line-height: normal; text-align:center; margin-bottom: $space25;
+     span { display: block; }
+   }
+   .videoTouch { display: flex; justify-content: space-between; margin-bottom: $space20;
+     figure { width: 48%; @extend .figure;
+      &:before{ padding-top: 61%; }
+     }
+   }
+   h2 { font-family: 'Gelasio'; font-size: 25px; line-height: normal; margin: 30px 0 10px;  }
+   p { margin-bottom: $space10+2; @include font-size(15px); }
+   .img { @extend .figure; 
+    &:before{ padding-top:46%;} 
+   }
+      ul {
+                li  { font-size: 15px; margin-bottom: 10px; position: relative; padding-left: $space15; 
+                   &:before { content: ''; @include size(4px); display: inline-block; background: #434343; position: absolute; left: 0px; top: 10px; }
+                   a { color:#434343; }
+                }
+            }
+}
+.touchfreebanner {
+    background:#303030 ;
+    display: flex;
+    justify-content: space-between;
+     height:506px;
+    .banner-title {
+        font-size: 41px;
+    }
+    figure {
+        display: inline-flex;
+    }
+    .touchContent {
+       padding: 0px 3% 0px 0px;
+        color: #FFFFFF;
+    left: 0px;
+    position: relative;
+    width: 46%;
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    a  {
+        color: #f5f5f5;
+    font-size: 17px;
+    padding: 6px 15px;
+    display: inline-block;
+    border: 1px solid #adadad;
+    margin: 30px 0px 0px 0px;
+    }
+    }
+}
+.touchfreecontent {
+    margin-top:30px;
+   
+    .rightTouch {
+        width: 100%;
+        text-align: center;
+        .TouchTitle {
+            padding: 0px 13%;
+            font-size: 21px;
+        }
+         
+    }
+    .sec {
+        display: flex;
+        padding: 30px 0px 30px 0px;
+    border-bottom: 1px solid #f5f5f5;
+        h2 { width: 100%; margin: 0px;}
+        p {
+            line-height: 21px;
+        }
+        figure {
+            
+        }
+        .txt {
+            width: 45%;
+            padding: 4% 3%;
+            text-align: left;
+        }
+        .left_txt {
+            width: 56%;
+            padding-right: 3%;
+    text-align: left;
+    ul {
+        li {
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
+    }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .touchContent{
+            @include font-size(18px);
+                line-height: 22px;
+            
+        }
+    .banner-title{
+                @include font-size(36px);
+                line-height: 40px;
+            }
+    .flexTouch{
+        margin-top: 35px;
+        .rightTouch{
+            h2{
+                margin:15px 0 0px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p{
+                line-height:22px;
+                margin-bottom:10px;
+            }
+            .TouchTitle{
+                font-size: 22px;
+                line-height:28px;
+                margin-bottom: 15px;
+            }
+            .videoTouch{
+                margin:15px 0 0px 0;
+            }
+            ul{
+                li{
+                    margin:0 0 5px 0;
+                }
+            }
+        }
+    }
+}

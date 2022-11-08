@@ -1,0 +1,14 @@
+//full text show for click
+.m-textshow{
+    .title-small{height: 20px; overflow: hidden; margin:0 $space5;}
+    .more{display: block;
+          &:after{display: block; content: 'More...'; color: $color-warning;}
+    }
+    &.active{
+        .title-small{height: auto;}
+        .more{
+            &:after{content: 'Less';}
+        }
+    }
+}
+

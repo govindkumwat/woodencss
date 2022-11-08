@@ -1,0 +1,330 @@
+.ws-interior{ margin-bottom:$space20; 
+  .container-1440{ width:1440px; margin:0 auto;}
+  .container-1240{width:1240px; margin:0 auto;}
+  .container-1140{width:1140px; margin:0 auto;}
+  .interior-form { width: 420px;
+     .form-control, .file{ padding: $space10+2;}
+     .field { margin-bottom: $space15; }
+  }
+   figure{  position:relative;
+           img{position:absolute;  top:0; left:0; bottom:0;  right:0;   margin: auto; }
+           &:before{ content:''; display:block;}
+       }  
+   
+       
+      .banner{ 
+     
+    .interior-form{ width:420px; float:right; position:relative;  background:$bg-white;
+           h3{text-align: center; text-transform:uppercase; @include font-size(18px); font-weight:400; color:$color-black; padding-top:$space25; margin:0;}
+          .link{@include font-size(18px); margin:$space20 $space0 $space5; display:block; color:$color-black; text-align:center; padding-bottom:0;}         
+          .lead{ @include font-size(14px); font-family:$robotolight; color:$color-black; display:block; text-align:center;  padding-top:$space0!important; padding-bottom:$space10;} 
+          form{ padding:0 $space20+4; display:flex; flex-wrap:wrap; justify-content:space-between; background:#fff;  }
+          .form-group{ margin-top:$space10; width:48%;}
+          label{ display:block; @include font-size(14px); color:#737373; padding-bottom:$space5; text-transform:uppercase;}
+          .form-control{ @include font-size(13px); @include border-radius(3px); @include placeholder{color:#c2c2c2}; border:1px solid #b7b7b7; color:#737373;  width:100%; padding:$space10+2 $space10+5;
+           &.error{ border-color:  $color-red; }
+          }
+        .full{ width:100%;}
+        textarea{ resize:vertical;}
+        .btn{  color:$color-white; background:$color-warning;@include border-radius(3px); @include font-size(14px); float:right; margin-bottom:$space30; cursor:pointer; padding:$space10+3; float:right;}
+        .interior_error{ color:red; display:block; text-align:center; position:absolute; left:0; right:0; margin:-5px auto;}
+        .interior_success{color: $color-error-sussess; padding:0; text-align:center; position:absolute; left:0; right:0; margin:-5px auto;} 
+     } 
+         p{ font-family:$robotolight; color:$color-white; @include font-size(15px); padding-top:$space10; text-align:right;
+           a{ color:$color-white;} 
+        }
+        
+   
+}
+       
+            
+     //menu
+     .interior-menu{ text-align:center; padding:$space10 0; background:#f3f3f4; 
+        li{ display:inline-block;  margin:$space10 $space15; 
+             a{ 
+              color:$color-black; @include font-size(16px); text-transform:capitalize;
+             &:hover, &.active{ color:$bg-warning;}
+             }
+            &:after{ display:inline-block; content:""; margin-left:$space25; background:#c2c2c3; @include size(1px,25px); vertical-align:middle;}
+            &:last-child{
+                &:after{ display: none; }
+            }
+       }
+     }   
+     
+     //scroll fixed
+     .becomdes-links-fixed{ border-bottom:none;   padding: $space5+1px;  @include box-shadow(0px 3px 10px rgba(0,0,0,0.15));   
+         &.interior-menu{ background:#fff; padding:0; 
+                      li{
+                          &:after{ display:none;}
+                      }
+                      
+                } 
+    }
+     
+     
+     
+       .page-head{ @include font-size(18px); font-family:$robotomedium; text-align:center;  background-repeat:no-repeat;  background-position:center bottom;
+           &:after{ display:block; content:''; /*background:url("#{$images-path}/interior-designer/pattern-water.png") no-repeat 0 0;*/ @include size(100px,14px); margin:$space5+2 auto 0;}
+           p{@include font-size(16px); font-family:$robotolight; color:$color-black;}
+       }  
+     
+       
+        
+        .more-link{ @include font-size(14px); color:$color-black; border:2px solid #000; @include border-radius(4px); margin-top:$space10; width:125px; text-align:center; display:inline-block; padding:$space5 0;}
+        .more-link-big{ width:210px; background:$bg-warning; border-color:$color-warning; color:$color-white; padding:$space10 0; @include font-size(16px); }
+        
+      
+       
+        .page-sec{ width:30%;
+          &.text-right{ text-align:right;}
+          .page-head{text-align:left; @include font-size(40px); line-height:normal; 
+              &:after{ margin:$space10 0;}
+          }
+       }
+     
+       
+     
+       
+      
+          //banner
+     .banner{ /*background:url("#{$images-path}/interior-designer/banner-interior.jpg") no-repeat 0 0 ; */min-height:600px; height:100%; display:flex; align-items:center; position:relative;
+          .container-1240 { position:absolute; left:0; right:0; top:0; bottom:0;  margin:$space30 auto 0;}   
+         figure{ display:none; 
+               //   &:before{padding-top:42%;}  
+               }  
+               
+        .interior-form + p{ font-family:$robotolight; color:$color-white; @include font-size(15px); padding-top:$space10; text-align:right;
+           a{ color:$color-white;} 
+        }  
+}
+     
+      
+      .content{  padding:$space30 $space0 $space25; font-family:$robotomedium; text-align:center;
+            h1{ @include font-size(24px); font-weight:normal; margin:0;}
+                 .more-content { @include font-size(13px); font-family:$robotolight; max-width: 940px; margin:$space5 auto $space0; height: 20px; overflow: hidden; }
+          .more{ color: $color-orange; cursor: pointer; font-family: $robotomedium;  @include font-size(13px);
+              &:before{ content: 'View More';  }
+          }
+         &.toggle-contant{
+             .more-content { height: auto; }
+             .more{
+              &:before{ content: 'Less';  }
+             } 
+          }
+     }
+      
+     .how-it{  border-bottom:$common-border; border-top:$common-border; padding-top:$space20;}
+    
+    .how-option{/*background:url("#{$images-path}/interior-designer/pattern-big.jpg") no-repeat 0 0 / cover;*/  display:flex; justify-content:space-between;  padding:$space20 0;
+        
+          li{ 
+            width: 20%;  text-align:center; border-right:$common-border; padding:$space25 $space15; 
+            &:last-child{ border-right:none;}
+          }
+          span{ @include font-size(20px); font-family:$robotomedium; color:$color-black;}
+          
+          i{
+             @include size(67px); border-radius:(100%); background:$bg-warning; display:block; margin:$space15+3 auto; position:relative;
+             &:before{ content: ''; @include size(50px); position:absolute; left:0; top:5px; right:0; margin:0 auto; }
+             &.meet{&:before{@include interior-icon-sprite(meet);}}
+             &.custom{&:before{@include interior-icon-sprite(custom);}}
+             &.review{&:before{@include interior-icon-sprite(review);}}
+             &.order{&:before{@include interior-icon-sprite(order);}}
+             &.delivery{&:before{@include interior-icon-sprite(delivery);}}
+          }          
+          p{@include font-size(14px); font-family:$robotolight; color:$color-black;}
+        }
+     
+   
+     
+     
+     .offering{ border-bottom:$common-border; padding-bottom:$space40+20; padding-top:$space30;
+            .in{display:flex; margin-top:$space20; flex-wrap:wrap; align-items:end;}
+            .left{ width:47%; position:relative;
+                &:before{padding-top:104%;} 
+              }
+            figcaption{ position:absolute; left:0; top:70px; right:0; margin:0 auto; width:400px; text-align:center;}
+           .right{width:26%;
+            figure{ 
+                &:before{padding-top:89%;}  
+               }  
+           
+           }
+           .title{@include font-size(30px); color:$color-black; font-family:$robotomedium; margin-bottom:$space10;}
+           p{@include font-size(14px); font-family:$robotolight; line-height:$space25+3;}
+           article{ padding:$space30+14;}
+           
+     } 
+     
+      
+     .ws-why{ padding:$space40 0 $space40+15; position:relative; background-position:left 70px;
+        //&:before{background:url("#{$images-path}/interior-designer/ws-why-left.jpg") no-repeat left top; content:''; position:absolute; left:0; top:105px; @include size(121px, 131px);}
+        //&:after{background:url("#{$images-path}/interior-designer/ws-why-right.jpg") no-repeat left top; content:''; position:absolute; right:0; top:0px; @include size(95px,180px);}
+         .shapes{@include size(121px, 131px); position:absolute; left:0; top:105px; }
+        .shapes-right{@include size(95px, 180px); position:absolute;  right:0; top:0; }
+     }
+      
+   
+     .why-option{  display:flex; justify-content:space-between;  flex-wrap:wrap;  /*background:url("#{$images-path}/interior-designer/ws-why-bg.jpg") no-repeat bottom center; */ background-repeat: no-repeat; background-position:center, bottom;
+            li{ width:49%; display:flex; align-items:center; justify-content:space-between; margin-top:$space10;}
+           .title{@include font-size(18px); display:block; padding-bottom:$space10;
+            &:after{ display:block; content:''; @include size(110px,3px); background:$bg-warning; margin-top:$space10;}
+           }
+           p{@include font-size(14px); font-family:$robotolight; font-style:italic;}
+          figure{ width:45%;
+           &:before{ padding-top:105%;}
+          }
+          article{ width:52%;}
+       
+     } 
+     
+     
+     
+     //service
+   .service{/*background:url("#{$images-path}/interior-designer/ws-service-bg.jpg") no-repeat left center;*/ padding:$space40+45 0;  margin-bottom:$space40+20;
+      .container-1240{display:flex; justify-content:space-between;}
+   }
+   
+
+  
+   .service-list{ display:flex; justify-content:space-between; width:65%; flex-wrap:wrap;
+       li{ border:$common-border; background: $bg-white; width:19%; text-align:center; @include font-size(14px); font-family:$robotolight; @include all-interior-icon-sprites; padding:$space30 $space20; line-height:$space20+2; margin-bottom:$space20; }
+       i{@include size(55px,54px); margin:0 auto $space15; display:block;  }
+   }
+   
+   
+   
+   //slider
+   .item{ margin-bottom:$space40+20; position:relative; 
+       .btn-view{ position:absolute; right:0; top:$space20; color:$color-warning; @include font-size(15px);}
+   } 
+   
+   .three-items{ margin-top:$space20; display:none;
+            .slick-slide{ margin:0 $space10;}
+            .slick-list{ margin:0 $space0 - 10 ;}       
+            figure{ 
+                &:before{padding-top:68%;} 
+            }  
+   } 
+   
+   
+   .quality{ border-top:$common-border; border-bottom:$common-border;  padding:$space40+10 0; 
+     .container{display:flex; justify-content:space-around; flex-wrap:wrap; align-items:center;}
+      .page-sec{ width:41%;}
+   }
+    
+   
+   .quality-img{ width:50%; 
+           &:before{padding-top:100%;} 
+ 
+   }
+ 
+   .customer{margin:$space40+30 auto;}
+   
+   .customer-content{ float:left; width:38%;   margin-top:$space25;}
+   
+   .customer-information{ float:left; width:61%; margin-left:1%;  
+      figure{position:relative; margin:0;
+        &:before{padding-top:80%;}   
+      }
+      figcaption{ position:absolute; bottom:$space10;  right:$space20; width:400px; text-align:center;}
+      span{ font-family:$robotomedium; @include font-size(16px); padding-bottom:$space5; display:block;}
+      .slick-prev, .slick-next{bottom:-45px; top:inherit; background:none;  z-index:1;  left:0; right:0; text-align:center;  margin:0 auto; z-index:1; }
+      .slick-next{ left:36%; right:0!important;}
+      .slick-prev{ left:27%!important;}
+   }
+    
+   
+ .pricing{border-top:$common-border; padding:$space40 0;
+          .page-head {
+              p{ margin-top: $space5+3; }
+          }
+ } 
+   
+ .pricing-inner{ margin-top:$space30;/* background:url("#{$images-path}/interior-designer/ws-modal-bg.jpg") no-repeat 0 0 /cover; */display: flex; justify-content: flex-end; padding:$space40+10 $space40+10 $space40+40+40+30; background-repeat: no-repeat; background-position:cover; }
+    
+.less-container{ max-width:1090px; display: flex; justify-content:space-between ; align-items:center;} 
+ 
+.pricing-list{display:flex; justify-content:space-between; flex-wrap:wrap; width:64%;
+           li{ width:48%; background:$bg-white; @include border-radius(5px); padding:$space20 $space25; margin-bottom:$space25;
+              &:first-child{ small{ background:$bg-warning; color:$color-white; border-color:$color-warning;} }
+           }
+           span{@include font-size(15px);  font-family:$robotomedium; text-transform: uppercase; }
+           small{font-family:$robotomedium; margin-top:$space10; @include font-size(18px); color:$color-black; text-align:center;  display:inline-block; border:2px solid #000; @include border-radius(3px); width:200px; padding:$space5+2 0;}
+      p{ @include font-size(14px);  font-family:$robotolight; }    
+}  
+   
+
+.visit{ border-bottom:$common-border; padding-bottom:$space40; margin-bottom:$space40;}
+
+.visit-slider{margin:$space25 auto; display:none;
+      figure:before{ padding-top:25%;} 
+}
+
+
+          //store-city
+     .store-city{ display:flex; justify-content:space-between; align-items:center;
+           span{ display:block; @include font-size(25px); color:#4b4a4a; padding-bottom:$space25;}
+           strong{display:block; @include font-size(45px); color:#4b4a4a; font-weight:normal;  padding-bottom:$space40; font-family:$robotobold; }
+            p{ padding-top:$space15; line-height:$space30+2;}
+           article{ width:45%;} 
+           figure{ width:52%;
+            &:before { padding-top:70%;}
+           }
+           
+           .btn{@include font-size(15px); color:$color-white; background:$bg-warning; text-transform:uppercase; @include border-radius(4px); padding:$space10 - 1  $space30+5; display:inline-block;}
+     }
+
+
+  .faq{ 
+       article{text-align:center;}
+       span{display: block; padding-bottom:$space5; font-size: $font-size-20; }
+       p{font-size: $font-size-10+4; padding-bottom:$space20;  }
+       ul{list-style: disc; margin-left: $space30; padding: $space5 $space0;}
+   }
+   
+.btn-warning{@include border-radius(4px); padding:$space10 0; ; display:block; text-transform: uppercase; width:260px; margin: 0 auto; text-align:center; position: relative; @include font-size(14px);}   
+
+.slick-dots{ margin:auto; text-align:center; left:0; right:0; position:absolute; bottom:-40px;
+               li{ 
+                   button
+                   {
+                       &:before{@include border-radius(100%); background:#fff; border:1px solid #dbdbdb; @include size(12px);}
+                   }
+                   &.slick-active{
+                       button{ 
+                           &:before{ background:#f37920;}
+                       }
+                   }
+               }
+      }
+      
+      
+      
+
+} 
+
+.furniture-store { padding: $space40 0; background: #f5f5f5; margin-bottom: $space40+10px;
+       .page-head {
+            &:after { display: none;}
+        }
+        .all-store { @include font-size(14px); text-transform: uppercase; margin-top: $space20; background: #434343; color: $color-white; font-family: $robotolight; padding: $space5 $space40; display: inline-block; }
+}
+.store-slider { margin-top: $space30; display: none;  
+    li{ width: 384px; background: $bg-white; margin: 0 $space10; padding: $space0 $space15 $space20; position: relative; }
+      figure { margin: 0 -15px $space15;
+        &:before {  padding-top: 55%; }
+      } 
+     a { color:$color-black; display: block; }
+    span  { @include font-size(18px); display: block; }
+    p { margin: $space10 0; height: 33px; padding: 3px 10px; border: $common-border; display: inline-block;
+        a { border: $common-border; padding:  $space0+3px $space10; display:inline-block; @include font-size(13px);
+          &:not(last-child){ margin-right: $space5; }
+          &:hover { background: #f5f5f5; @include transition(all 0.3s); }
+        }
+    }
+    .btn-detail { margin: 0px; color:$color-orange; border: 1px solid $color-orange; padding:  $space5 - 2px $space15; width: 104px; display:block; @include font-size(13px);  }
+    .setop { position: absolute; bottom: 53px; left: 15px; padding: 0px; border: none; background: $bg-white; }
+}
+.across-line { text-align :center; @include font-size(22px); font-family: $robotolight; margin-top: $space30; }

@@ -1,0 +1,65 @@
+//SMK Accordion
+.smk_accordion .accordion_in {
+	position: relative;
+	margin-top: 20px;
+	overflow: hidden
+}
+
+.smk_accordion .accordion_in .acc_head {
+	position: relative;
+	padding: 10px;
+	font-size: 15px;
+	color: #000;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #eeecec
+}
+
+.smk_accordion .accordion_in .acc_head .acc_icon_expand {
+	display: block !important;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	top: 24%;
+	background: #a9a9a9;
+	padding: 0 !important;
+}
+
+.smk_accordion .accordion_in .acc_head .acc_icon_expand:before {
+	content: '+';
+	color: #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 20px;
+	top: -4px;
+}
+
+.smk_accordion .accordion_in .acc_content {
+	background: #fff;
+	padding: 15px 10px;
+	border: 1px solid #eeecec;
+	font-size: 12px;
+	color: #000;
+	line-height: 20px;
+}
+
+.smk_accordion .accordion_in.acc_active>.acc_head .acc_icon_expand {
+	background: #e9833a;
+}
+
+.smk_accordion .accordion_in.acc_active>.acc_head .acc_icon_expand:before {
+	content: '-';
+	color: #fff;
+}
+
+.acc_active .acc_head {
+	background: #bb5d1d;
+	color: #fff;
+}
+
+.smk_accordion {
+	margin-top: 30px;
+}

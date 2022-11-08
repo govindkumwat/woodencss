@@ -1,0 +1,30 @@
+  
+@import "mixin/_global.scss";
+@import "modular-kitchen/_main-page.scss";
+@import "modular-kitchen/_faqs.scss"; 
+@import "modular-kitchen/_calculator.scss"; 
+
+
+.figure {
+    position: relative;
+    overflow: hidden; 
+    margin-bottom: 15px;
+  
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: auto;
+      transform: scale(1);
+      transition: 0.3s ease-in;
+    }
+  }

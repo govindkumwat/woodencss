@@ -1,0 +1,13 @@
+@media #{$screen-tablet}{
+    .container{ width:730px;}
+    .container-1300{width:730px}
+    .container-1200{width:730px}
+    .container-1170{width:730px}
+    
+    //header start 
+    @import "responsive/tablet/_header.scss"; 
+    @import "responsive/tablet/_menu.scss";
+    //@import "responsive/tablet/_footer.scss";live
+    @import "responsive/tablet/_footer-new.scss"; //upcoming
+    //@import "responsive/tablet/_customer-reveiw.scss";
+} 

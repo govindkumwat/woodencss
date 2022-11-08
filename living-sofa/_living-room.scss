@@ -1,0 +1,64 @@
+.living-furniture{
+    .space40{ height: 40px; display: block;}
+    .container-1220{ max-width:1220px; margin:0 auto;}
+    .title-new{ text-align:center; padding:$space0; margin:0 0 $space10; 
+    .heading{font-size: $font-size-25; font-family:$font-family-medium; margin:$space10 0 ; font-weight: normal;}
+         p{@include font-size(13px); color:#080808; font-family:$robotolight;  height:60px; border:none; margin:0px; padding:0; text-align:center;}
+    }
+      figure{  position:relative;  background:#f7f7f8;
+                   img{position:absolute;  top:0; left:0; bottom:0;  right:0;   margin:auto; }
+                  &:before{ content:''; display:block;}
+             
+        }  
+   
+    .living-categorie{ @include all-living-icons-sprites; 
+       i{@include size(135px, 75px);}
+    } 
+    
+    .multi-storage-banner {
+         figure{ &:before{padding-top:34%;}  } 
+    }
+    .kids-banner {
+     figure{ &:before{padding-top:26%;}  }
+   }
+
+
+   .categorie-new{ margin-top:$space20;}  
+   
+   .product-new{ display:flex; flex-wrap:wrap; justify-content: space-between;
+      a{  color:#252525; text-align:center; width:353px; margin-bottom:$space40+2; 
+        span{@include font-size(15px); font-family:$robotomedium; display:block;  margin-top:$space5 - 2; text-transform:uppercase;}
+        small{@include font-size(13px);font-family:$robotolight; display:inline-block; color:$color-warning; border:1px solid $color-warning; margin-top:$space10; padding:$space0+2 $space15;}
+        @include every(3){ margin-right:0;}
+      }
+      .info{padding:$space10 $space20 0;}
+      figure{ &:before{padding-top:95%;}  } 
+   }
+   
+  .new-storage{ 
+         a{ text-align:center; color:#080808; margin-top:$space30;} 
+       span{@include font-size(15px); font-family:$robotomedium; display:block;  margin-top:$space10; text-transform:uppercase;}
+        small{@include font-size(13px);font-family:$robotolight; display:inline-block; color:$color-warning; border:1px solid $color-warning; margin-top:$space10 - 2; padding:$space0+2 $space15;}
+        @include every(3){ margin-right:0;}
+        figure{ &:before{padding-top:112%;}  } 
+   }
+   
+   .new-storage-slider, .Bedroom-Storage-slider{ display:none;
+       .slick-slide{margin:40px 9px 0px;}
+       .slick-list {margin:0 -8px;}
+   }
+   .Bedroom-Storage { text-align:center;
+       a{ color:#252525;
+        span{@include font-size(15px); font-family:$robotomedium; display:block;  margin-top:$space10; text-transform:uppercase; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
+        small{@include font-size(13px);font-family:$robotolight; display:inline-block; color:$color-warning; border:1px solid $color-warning; margin-top:$space10 - 2; padding:$space0+2 $space15;}
+   }
+          
+         figure{ &:before{padding-top:111%;}  } 
+   }
+   
+
+
+  
+}
+
+ 

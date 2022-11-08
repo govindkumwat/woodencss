@@ -1,0 +1,159 @@
+//how it works new
+.howitwork{  padding-bottom:$space30;
+    .howitwork-banner{height: 500px; background: url(../images/how-it-works/banner.jpg) no-repeat center; background-size: cover; text-transform: none; text-align: center; padding-top: 150px;
+                      .heading-sacramento{ font-family:$font-family-sacramento;}
+                      .heading-blenda{ font-family:$font-family-blenda;}
+                      .heading{font-size: $font-size-30*2; display: block; line-height: 80px; color:$color-white; font-weight:normal;
+                               &:after{display: none;}
+    } 
+    }
+    .menu-container{ 
+        .menu-section{background: #fbfbfb; width:1100px; padding-top: $space40+5; margin:0 auto 30px;
+                      p{margin-bottom: $space30; color: #000; font-family: $font-roboto-light; }
+        }
+    }
+    .btn-common{background: $bg-black; font-size: $font-size-15 - 2; text-transform: uppercase; @include border-radius(3px); padding: 8px 70px;}
+    .text-common{padding-bottom: $space40; text-align:center;
+                 .heading{@include font-size(30px); line-height: normal; font-family:$font-family-sacramento; font-weight:400;}
+                 .heading-blenda{ font-family:$font-family-blenda;}
+        p{@include font-size(15px); font-family: $font-roboto-light; font-weight: $font-weight-light;}
+    }
+    .interor-comtext{text-align: center;
+                .heading{@include font-size(25px); font-family: $font-family-blenda; font-weight: 400;}
+                p{@include font-size(15px);}
+}
+ 
+.btn-warning{  @include border-radius(4px); padding: 10px 0; display: block; text-transform: uppercase; width: 260px; margin: 0 auto; text-align: center; position: relative; font-size:14px;}
+   figure{  position:relative;  background:#f7f7f8;
+               img{position:absolute;top:0; left:0; bottom:0;  right:0; margin: auto}
+               &:before{ content:''; display:block; padding-top:66%;}
+        }
+
+}
+.how-it-work-content{
+    .design-process{background: #fbfbfb; margin: 0 0 60px !important; padding-bottom: $space40; 
+                    article{background: $bg-white;}
+                    .call{@include font-size(18px); font-family: $font-family-medium; font-weight: normal; text-transform: uppercase;}
+                    .btn-common{margin: $space25*2 $space0 $space10;}
+                    .text-warning{ color:$color-warning;}
+    }
+    .room-decoration{ 
+        section{position: relative;}
+        article{text-align: left; position: relative; width: 455px; padding-left: 25px;}
+        i{position: absolute; left: 0; top: 0; background: none; @include font-size(25px); color: #333;}
+        .text{border-left: $border1 #d8d8d8; padding: $space0 $space20;}
+    }
+    .profaq{
+    ul{list-style: disc; margin-left: $space30; padding: $space5 $space0;}
+    article{text-align:center;
+        span{
+            display: block; padding-bottom:$space5; font-size: $font-size-20;
+        }
+        p{
+            font-size: $font-size-10+4; padding-bottom:$space20;
+        }
+    }
+}
+}
+
+// New
+.How-process{
+    article{width: 510px; padding:105px 28px; position: relative;
+            &:before{ position: absolute; left: 0; top: 0; bottom: 0; content: ''; width: 1px; background: #d8d8d8;}
+            strong{@include font-size(30px); font-family: $font-family-medium; color: #393939; font-weight: $font-weight-regular; padding-left: $space20; display: block; line-height: 35px;
+                   span{display: block; @include font-size(20px); color: #474747;}
+            }
+             p{font-family: $font-roboto-light; font-weight: $font-weight-light; border-top: $border1 #d8d8d8; margin: $space20 $space0 $space0; padding: $space15 $space0 $space0 $space20; font-size: $font-size-10+4; line-height: 25px;}
+            i{@include center(true,true); text-align:center; @include font-size(22px); @include size(49px);  @include border-radius(50%); background:$bg-danger; font-family: $font-family-medium; color:$color-white; font-weight: $font-weight-regular; font-style: normal; left:0; padding: $space10+1 $space0;}
+            .circle-gray{background:#50aaa9} 
+            .circle-blue{background:#2b627f}  
+            .circle-orange{background:#cac124} 
+         
+    }  
+    
+    figure{width:550px;}  
+       
+    section{    
+        .furnishing-img{margin-top:$space40+30;}
+        .project-requirment{padding:$space40*4 $space25+3}   
+        .talented-team{padding:$space40*3+10 $space25+3} 
+  
+        @include every(2){
+            article{ 
+                    i{right: -49px; left: inherit;} 
+                    &:before{right: 0; left: inherit; top: -46px;}
+            } 
+        }
+    }
+    .step-three{background: url("#{$images-path}/how-it-works/step-three-bg.jpg") no-repeat center; height: 596px; margin: auto; padding: $space15+1 $space0;
+                //@include all-interior-icons-sprites;
+                .left{width: 455px; color: $color-white;
+                      .no{@include size(49px); @include border-radius(50%); background: $bg-warning; @include font-size(22px); font-family: $font-family-medium; font-weight: $font-weight-regular; display: inline-block; font-style: normal; text-align: center; line-height: 48px; }
+                      .heading{@include font-size(30px); font-family: $font-family-blenda; font-weight: $font-weight-regular; line-height: normal; padding: 65px 0 25px 10px;
+                               strong{font-family: $font-family-medium; @include font-size(20px);}
+                      }
+                }
+                strong{font-family: $font-family-medium; @include font-size(20px); display: block; font-weight: $font-weight-regular;}
+                p{font-family: $font-roboto-light; font-weight: $font-weight-light; padding: $space10+2 $space0; line-height: 28px;}
+                .text{padding-left: $space25;}
+                .call{@include font-size(24px); padding: 170px 0 0 25px;
+                      i{@include size(40px); display: inline-block; vertical-align: middle; margin-right: $space10;}
+                } 
+                ul{ width:535px; float: right; margin-right: $space30; padding-top: 95px;
+                    //@include all-interior-icons-sprites;
+                    li{background: rgba(255,255,255,.80); width:251px; float: left; margin:0 9px 9px 10px; padding: $space30+2 $space30;
+                    @include every(2){margin-left: $space0;}
+                    } 
+                    span{@include font-size(15px); text-transform: uppercase; border-bottom: $border2 $bg-warning; padding-bottom:$space5;}
+                    p{@include font-size(13px); line-height: 22px;}
+                    i{@include size(32px); display: block; margin-bottom: $space10;}
+                }
+    }
+}
+ 
+//monitor-project
+.monitor-project{background:url("#{$images-path}/how-it-works/monitor-project.jpg") no-repeat center; height:485px; margin:0 auto $space25*2; padding-top:$space40*2;          
+       article{width:65%; float:left; color:$color-white; 
+      .btn{@include border-radius(3px);display:inline-block; text-transform:capitalize;width:auto; margin-right:$space5+2;vertical-align:top; font-size:18px; color:$color-white; font-family:$font-family-medium; padding:$space10 $space25; background:#50aaa9}      
+      .btn-warning{background:#cac124}
+      .btn-danger{background:#f26f71} 
+       span{font-size:40px; margin-bottom:$space30; display:block; small{display:block; font-size:20px; margin-top:15px;}} 
+       p{line-height:$space25; margin:$space30 0; font-family:$font-roboto-light;}
+      .call-number{font-size:30px; font-family:$font-family-medium;
+      &::before{@include size(50px); background:$bg-white; box-sizing:border-box; color:#f095;font-family:$font-family-awesome; text-align:center; content:'\f095'; display:inline-block; @include border-radius(50%); color:#4f4e4f; padding-top:$space10+2; margin-right:$space10+5}
+      } 
+      } 
+}   
+
+//Dream room
+.how-dreroom{background:url("#{$images-path}/how-it-works/design-quick.jpg") no-repeat center;  height:500px; display:table; width:100%;
+             section{display:table-cell; vertical-align:middle; }
+             article{text-align: center; position: relative; padding:$space40 0 0; width:866px; margin:auto; background:rgba(255,255,255,0.96);} 
+             span{font-size: $font-size-30; font-family: $font-family-medium; font-weight: normal;}
+             p{font-size: $font-size-15+1; padding: $space5+3 0 0; line-height: 25px;}
+             .btn{position:relative; bottom:-22px}
+
+}
+
+//old design
+
+.how-it-work-content{
+    //design-process
+     
+.design-process{text-align:center; background: #fbfbfb; margin: 20px 0 60px; padding-bottom: $space40;  
+                    .interor-comtext{margin-bottom:$space15}               
+                    article{@include box-shadow(0 0 4px rgba(0,0,0,.21)); float:left; width:200px; padding:$space25 0; //@include all-interior-icons-sprites; background: $bg-white;
+                            & + article{margin-left:23px}       
+                            span{display:block; font-size:15px; }   
+                            i{@include size(50px); display:block; margin:$space10+2 auto;}
+                            p{font-size:13px;}  
+                    }
+                    .call{@include font-size(18px); font-family: $font-family-medium; font-weight: normal; text-transform: uppercase; padding-top: $space5;}
+                    section{margin-bottom: $space25;}
+    } 
+
+
+}   
+
+@import "responsive/_screen-desktop.scss";
+@import "responsive/_screen-tablet.scss";  

@@ -1,0 +1,25 @@
+//Home Tablet
+@media #{$screen-tablet}{
+   .inset{flex-wrap: wrap;}
+   .fuhodetail-bhk{
+    .left, .right{width:100%}
+    .mCSB_container{display: flex; justify-content: space-between;}
+    .box{width: 30%; border: 0;}
+   }
+    //.left{display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 0;}
+    .top{width: 100%; text-align: center; padding-bottom: $space15;}
+    //.heading{width: 100%;}
+    //.price{display: inline-block; vertical-align: middle; padding: 0;
+      //     &:after{@extend .tablet-none;}
+    //}
+   
+    //.call{width: 100%; border-bottom: 1px solid #e2e2e2; padding: 10px 0;
+      //    span{display: block;}
+        //  p{display: inline-block; margin: 0 5px; padding-top: 10px;}
+   // }
+   
+   .btn{margin: 0;}
+   .tab-links{text-align: center;}
+    
+}
+

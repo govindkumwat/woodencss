@@ -1,0 +1,9 @@
+   
+  .container-1300{ margin: 0 auto; max-width: 1300px;}
+  .clickable, button, input[type=button], input[type=submit] {cursor: pointer;}
+  .rating-desc{ margin-top:5px;}
+  .diflex-spabet, .resfur-all .bottom, .export-product .bottom {display: flex;justify-content: space-between;}
+  //Global
+  @import "mixin/_global.scss";
+  @import "interior-common/_interior-popup.scss"; 
+  @import "full-house-detail/_full-house-detail.scss";        

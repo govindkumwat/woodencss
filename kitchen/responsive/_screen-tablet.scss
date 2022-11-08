@@ -1,0 +1,55 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    //Kitchen
+
+    .tablet-none{display: none;}
+    .kibanner{
+        section{width: 730px;}
+        article{ 
+                 span{font-size: $font-size-20; padding: 15px;}
+                 .title{width: auto; @include font-size(14px); padding: $space15 $space10+2;}
+        }
+    } 
+    .portfolio{
+        .tab-links{ float: none; width: auto;
+                    li{float: left; width: 20%;
+                       &.active{
+                           &:after{@include arrow("down", #ddddde, 20); @include center(true,false); bottom: -38px; top: inherit;}
+                       }
+                    }
+                    .mob{display:none;}
+                    a{border:$zero;}
+        }
+        .tab-content{float: none; width: auto;}
+
+        .slides{
+            p{margin-top: 112px;}
+        }
+       // .slider-nav .slick-track{ width:auto;}
+        .slider-nav .slick-slide{ width:135px!important;} 
+     
+    }
+    .customer{ 
+        blockquote{width: auto; text-align: center;}
+        .commonslider{
+            .flex-direction-nav{
+                a{background-color: transparent;}
+            }
+        }
+        figure{float: none; width: 488px; margin: auto;}
+        .slick-next{ right:-18px;}
+        .slick-prev{ left:-18px;}
+    }
+    .possib{
+        .mate{margin: $space15;
+            img{@include size(100px); margin: 0 auto 15px;}
+        }
+        
+        .slider-nav{
+            .slick-slide{ width:48px!important;}
+        } 
+    }
+}
+
+
+

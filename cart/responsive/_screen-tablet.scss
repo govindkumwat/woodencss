@@ -1,0 +1,102 @@
+@media screen and (max-width:1024px){
+   .cart-step {
+       .main{width:64%;}
+       .sidebar{width:34%;} 
+        .shopping-info {
+            .product-info{
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+            }
+            .product-name{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .quantity-box{
+            padding:6px;
+            margin: 15px 20px 0 0px; 
+        }
+        .price{margin:15px 0 0px;}
+        .free-delbox{right:0;top:30px;}
+        .prod_remove{margin-top:25px;}
+        .price-detail{
+            p,.lead{padding:10px 12px;}
+            .total{font-size: 16px;}
+        }
+        .order-list{
+            .detail{width:155px;}
+            .Quantity{font-size:13px;}
+        }
+        .payments-section{
+            .delivery-address{
+                padding:12px 15px;
+                .title{padding:0;} 
+            }
+        }
+    } 
+    .header-cart{max-width:unset;}    
+}
+@media #{$screen-tablet}{
+    .cart-body {
+        margin: 0 0 60px;
+        .cart_error {
+            .success,.warning{width:100%;}
+        }
+    }
+    .header-step{
+        li{
+            margin:0 20px;
+        }
+    }
+    .cart-step{
+        .left-main{width: inherit; float:none;}
+        .main{
+            width: inherit;
+            float:none;
+        }
+        .payments-section{padding:0;}
+        .sidebar{ width:auto; margin-top: 3%; margin-bottom: 4%; margin-left: 0px; float:none;}
+        .in-ipad{width:100%;
+         .cart-coupon{ float:none; width:auto;}
+        }
+        .cart-coupon{ float:left; width:100%;}
+        .price-detail{
+            &:first-child{ margin-left:0;}
+        }
+        .btn{
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+        .shopping-info{ 
+            padding: 10px 15px 15px;margin-bottom: 15px;}
+        .order-list{
+            background:$bg-white;
+            li{margin:5px;}
+            .detail{width:210px;padding-left: 15px;}  
+        }
+        .no-costlink{
+            width: 100%;
+            margin: 0 0 15px;
+            display: inline-block;
+        }
+        .address-optionbx{
+            margin-left:140px;
+        }
+    }
+    .address-box{
+        max-width:475px;
+        .address-option{
+            [type='radio']{width: 85%;height: 92px;}
+        }
+    }
+    .login-text { 
+        padding:0 25px;
+        .loginbtn{
+            margin:0 auto 10px;
+        }
+    }
+ .cart-footer{
+     .container{ display:flex;}
+ }
+}

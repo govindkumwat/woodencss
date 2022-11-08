@@ -1,0 +1,84 @@
+.furniture-rental{ line-height: normal;
+   .container-1425{ max-width:1425px; margin: auto;}
+   .container-fluid{max-width:1300px; margin:auto;}
+   .banner{ position: relative; line-height:normal;}
+  
+   .heading{  @include font-size(24px); font-family: $robotomedium; text-transform: uppercase; margin-bottom:$space20; text-align: center;
+    p{@include font-size(15px); font-family: $robotolight; line-height: 24px; padding-top: $space5; text-transform: capitalize;}
+   }  
+   
+   .banner-text{ position: absolute; top:$space40+40+50; left:12%; text-align:center;
+       .title{ @include font-size(17px); font-family: $robotomedium; text-transform: uppercase;}
+       .banner-heading{ @include font-size(35px);  text-transform: uppercase; font-family: $robotobold; margin: $space10 - 2 0;} 
+       p{ @include font-size(13px);}
+      .available{ text-align: left; margin-top:100px;
+          p{ @include font-size(15px); font-family: $robotobold; text-transform: uppercase; padding-top: $space5;}
+      }
+   } 
+    .consultation-btn{ margin-top: $space15; background: $bg-orange; display: inline-block; padding: $space10+2 $space40; text-transform: uppercase; @include font-size(14px); text-align: center; @include border-radius(3px); color: $color-white;
+       &:hover{opacity: 0.9;}
+      }
+
+    .Cities{ text-align:center; padding:$space40 0; border-bottom:$common-border;}
+    .city-list{ display: flex; justify-content: space-between;
+            li{ width:32%;}
+            p{ @include font-size(22px); font-family: $robotomedium; padding-top:$space10;}
+       }
+      
+   .services-offered{ text-align: center; border-bottom: $common-border; padding:$space30 0; margin-top:$space25;}
+    .service-list{ 
+                   li{ display: inline-block;  width: 33%; vertical-align:top; padding: 0 $space15;}
+                   span{ display: block; @include font-size(16px); padding: $space5+2 0; font-family: $robotomedium;}
+                   p{ font-family: $robotolight; line-height: 24px;}
+              }
+                    
+
+   .furniture-rent{ padding-bottom:$space40; border-bottom: $common-border; margin-top:$space40;
+        .three-product{ display: flex; justify-content: space-between;
+          li{ width: 32%;}   
+       }
+       .produc-name{ padding-top:$space15; @include font-size(18px); text-align: center;}
+   }
+   
+   
+   .dubble-product{ margin-top:$space30; display: flex; justify-content: space-between;}
+   
+   .how-it-works{ text-align: center; margin-top:$space40;
+        ul{ display: flex;justify-content: space-between; max-width:1035px; margin:0 auto; 
+           li{border: $common-border; @include border-radius(3px);  width: 18%; padding: $space30 0;}
+           p{padding-top: $space5; @include font-size(15px);} 
+          img{ @include size(80px,75px); margin:0 auto;}
+       }
+       
+      
+       
+        .consultation-btn{ margin-top: $space30;}
+   }
+   
+   .video-gallery{ display: flex; justify-content: space-between; margin:$space40+25 auto;
+        article{ width:50%; background:#e57100; text-align:center; padding:$space40+20 $space20 0; }
+        .right{ width:50%; img{ vertical-align:bottom;} }
+        .title{ @include font-size(27px); color: $color-white; font-family: $robotolight; padding-bottom: $space40+10; display:block; width:100%;}
+       
+       .content{ float:right; width:85%;
+            .div{ color:$color-white; padding: $space20 $space15; display:inline-block; width:48%; border-right:1px solid #ed9c4d;
+              &:last-child{ border:none;}
+            } 
+            span{ display: block; @include font-size(18px); padding: $space5+2 0; font-family: $robotolight; text-transform: uppercase;}
+            p{ font-family: $robotolight; line-height: 24px; }
+       }
+      
+       
+   }
+
+   .media-coverage{ padding-bottom: $space30; text-align: center; border-bottom: $common-border; margin-bottom:$space40;
+      ul{ padding: $space20 0 ;
+       li{ border-right:$common-border; padding: $space30 0 ;}   
+       img{ margin: auto;}
+      }
+   }
+   .media-slider{ display: none}
+   
+}  
+#video{ display:none!important;}
+.swpmodal-container_i2 #video{ display:block!important;}

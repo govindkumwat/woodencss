@@ -1,0 +1,115 @@
+ 
+//Global
+  @import "mixin/_global.scss"; 
+
+  .feedback-form{
+    background: $light-gray;
+    padding:50px 0;
+    .form-wrpr{
+        background: $bg-white;
+        padding: $space20 $space30;
+        border: 1px solid #d8d8d8;
+        width: 820px;
+        font-family: $pangramregular;
+        color:$secondary-color;
+        .form-heading {
+            @include font-size(28px);
+            line-height: 30px;
+            font-weight: 400;
+            font-family: $pangrammedium;
+        }
+        .form-text {
+            @include font-size(14px);
+            line-height: 18px;
+            color: $secondary-600;
+            margin: 0 0 $space10;
+        }
+        .sub-heading{
+            @include font-size(15px);
+            line-height: 18px;
+            font-family: $pangrammedium;
+            padding:0 0 $space5;
+        }
+        .fieldbox {  
+            position:relative;
+            padding: 10px 0;
+            display:block;
+            label{
+                opacity: 0;
+                position:absolute;
+            }
+            .input_field{
+                width: 100%;   
+                min-height: 35px;
+                border: 1px solid #d8d8d8;
+                border-radius: 3px;
+                padding: 3px 5px;  
+            }
+            &.rating-number{
+                .ratingbox {
+                    position: relative;
+                    display: inline-block;
+                    width: 10%;
+                    text-align:center;
+                    label{
+                    opacity: 1;
+                    padding: 5px;
+                    border: 1px solid #d8d8d8;
+                    text-align: center;
+                    background: #fff;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    cursor:pointer;
+                    .svg-star-off {
+                        background: url('../images/star.svg')no-repeat;
+                        width: 23px;
+                        height: 23px;
+                        display: block;
+                        margin:0 auto;
+                    }
+                }
+                &.checked{
+                    label{
+                        background:$light-gray !important;
+                    }
+                }
+                }
+                
+            }
+            &.rate{
+                .ratingbox{width:20%;
+                label{padding:10px 5px;}
+                }
+            }
+            .rating-anchor {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: $space20 0 0;
+                    span{
+                        @include font-size(12px);
+                        line-height: 15px;
+                    }
+                } 
+             small{color:#c00;text-align:right;display:block;}
+    }
+        .submitbtn {
+        display: block;
+        text-align: center;
+        margin: 15px 0 10px;
+        button{
+            background:$primary-color;
+            padding: 12px 40px;
+            @include font-size(16px);
+            line-height: 20px;
+            color:$color-white;
+            font-family: $pangrammedium;
+            cursor:pointer;
+            border-radius:3px;
+            &:hover{
+                background:#ff793e;
+            }
+        }
+    }
+    }
+  }

@@ -1,0 +1,104 @@
+%svg-common {
+	background: url("svg/sprite.view-913d16e6.svg") no-repeat;
+}
+
+.svg-call {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-call-dims {
+	width: 22.93px;
+	height: 23px;
+}
+
+.svg-cart {
+	@extend %svg-common;
+	background-position: 33.231884057971016% 0;
+}
+
+.svg-cart-dims {
+	width: 23px;
+	height: 21.42px;
+}
+
+.svg-email {
+	@extend %svg-common;
+	background-position: 0 33.04597701149426%;
+}
+
+.svg-email-dims {
+	width: 23px;
+	height: 17.4px;
+}
+
+.svg-interior {
+	@extend %svg-common;
+	background-position: 66.56521739130434% 0;
+}
+
+.svg-interior-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-like {
+	@extend %svg-common;
+	background-position: 0 63.125%;
+}
+
+.svg-like-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-search {
+	@extend %svg-common;
+	background-position: 33.333333333333336% 63.125%;
+}
+
+.svg-search-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-support {
+	@extend %svg-common;
+	background-position: 99.8985507246377% 0;
+}
+
+.svg-support-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-support-fill {
+	@extend %svg-common;
+	background-position: 99.8985507246377% 35.9375%;
+}
+
+.svg-support-fill-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-truck {
+	@extend %svg-common;
+	background-position: 0 99.0625%;
+}
+
+.svg-truck-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-truck-b {
+	@extend %svg-common;
+	background-position: 99.8985507246377% 65.99713055954089%;
+}
+
+.svg-truck-b-dims {
+	width: 23px;
+	height: 17.3px;
+}
+

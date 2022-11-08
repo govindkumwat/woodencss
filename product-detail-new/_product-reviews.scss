@@ -1,0 +1,223 @@
+.customerReviews { padding: 30px 0; border-bottom: 1px solid #E8E8E8;
+    .heading-product { margin-bottom: 35px; }
+}
+b, strong { font-family: 'robotomedium';  font-weight: normal; }
+.ratingsBox { margin-bottom: 20px; 
+     .fa { color: #E88616;  font-size: 21px; margin-right: 5px; }
+     span { font-size: 18px; margin-left: 5px; display: inline-block;  }
+     
+}
+.leftReviews { width: 27%; border-right: 1px solid #E8E8E8; padding-right: 5%;     position: sticky;  height: 100%;   top: 60px;
+.side {
+  float: left;
+  width: 15%;
+  .fa { color: #707070; }
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 7px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+      color: #858585;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Individual bars */
+.bar-5 {width: 80%;  background-color: #4CAF50;}
+.bar-4 {width: 10%;  background-color: #2196F3;}
+.bar-3 {width: 5%;  background-color: #00bcd4;}
+.bar-2 {width: 3%; background-color: #ff9800;}
+.bar-1 {width: 2%;  background-color: #f44336;}
+.bar-1,.bar-2,.bar-3,.bar-4,.bar-5 { height: 8px; }
+}
+
+.btnbx { margin-top: 20px; 
+    .btnNew { width:207px; background: #434343; margin-top: 10px; }
+}
+.flexSection { display: flex; justify-content: space-between; }
+.rightReviews{width:  70%; }
+.custmReview { 
+    li { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #E5E5E5; }               
+    figure { margin-right: 5px; position:relative; max-width: 130px; margin-top:10px; display: inline-block; overflow: hidden; @include border-radius(3px);
+      img { vertical-align: middle; max-width: max-content; height: 100px;
+}
+      .MoreView {  position: absolute; bottom: 0; z-index: 9;background: #fff; padding: 5px 7px 3px; line-height: normal; color:#e57200; cursor: pointer; svg{vertical-align: top;} }
+    }
+    strong{ font-size: 15px; font-family: $robotomedium; font-weight: normal; }
+    .nameFlex { color: #707070; font-size: 12px;  display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 10px;
+      label { font-size: 12px; font-family: $robotolight; color: #707070; margin-left: 10px; }
+    }
+    .checkmark {  position: relative; display: inline-block;  width:16px;   height:16px;  background-color: #DFDFDF;  border-radius:11px; vertical-align: middle; margin-right: 5px;
+      &:after{  content: ''; display: block; width: 3px; height: 6px; border: solid #707070; border-width: 0 2px 2px 0; transform: rotate(45deg);position: absolute;  left: 5px; top: 3px;}
+    }
+    .date { font-family: $robotolight; font-size: 12px; margin-left: 10px;}
+    .str {
+       .fa { color:#E88616; margin-right: 2px; } 
+    }
+    p { color: #707070; line-height: 20px; }
+ 
+}
+   .helpBtn { border: 1px solid #E8E8E8; padding: 5px 10px; @include border-radius(20px ); display: inline-block;  font-size: 13px; line-height: normal; cursor: pointer;
+        .fa {
+            &:before { content: '\f164'; display: inline-block; color: #707070; font-size: 15px; }
+        }
+        &.active, &:hover { background:#26416E; border-color: #26416E; color: #fff;
+             .fa {
+            &:before {color: #fff;  }
+          }
+        }
+    }
+.readAll { background: #434343;  display: block;  width: 200px;  margin-left: auto; }
+
+
+.MoreviewPopup { padding: 10px; width: 850px; position: fixed;  left: 0;right: 0; margin: auto;top: 0;bottom: 0; z-index: 99999; background: #fff; height: 343px; overflow: hidden;
+    display: none; justify-content: space-between;
+    .CloseView {position: absolute; right: 10px; top: 4px; cursor: pointer;
+                &:hover { svg {
+                              path{ fill: #e57200; }
+                          }  }
+    }
+}
+.swpmodal-container {
+    .MoreviewPopup { display: flex; }
+}
+.slideView {width: 430px;
+    display: inline-block;
+  .slick-prev, .slick-next {z-index: 99; background: rgba(255,255,255,0.7); width: 27px; height: 27px; border-radius: 100%;  border: 1px solid #717171; 
+   &:before { font-size: 14px; } 
+  }
+  .slick-prev  { left: 5px; } 
+  .slick-next  { right: 5px; }
+}
+
+.viewright {
+    width: 370px;
+    .name { font-size: 12px; margin-bottom: 5px;}
+    .str {
+       .fa { color:#E88616; margin-right: 2px; } 
+       .disable { color: #b1b1b1; }
+    }
+    p { font-size: 13px; }
+    .slick-dots { margin-top: 15px;
+        li { width: 66px; height: 50px; border: 1px solid #E5E5E5; padding: 2px; margin: 0 2px; overflow: hidden;
+          img{ max-width: max-content; height: 45px;}
+        }
+        .slick-active { border-color: #e57200; }
+    }
+}
+
+
+.allReviews { margin-top: -25px;
+    .proName { font-size: 22px; color: #242424;    display: flex; align-items: center; margin-bottom: 15px;
+     span { border-bottom: 1px solid #E5E5E5; padding: 8px 0;  margin-left: 10px; }
+    }              
+    .shop-btn { margin-top:20px;
+        .buy-now { padding: 7px 0; font-size: 15px; }
+    }
+    .ReviewProduct {     width: 27%;
+    border-right: 1px solid #E8E8E8;
+    padding-right: 2%;
+    position: sticky;
+    height: 100%;
+    top: 60px;
+    figure{ margin-bottom: 15px; }
+    }
+    .leftReviews {
+    width: 100%;
+    border-right: inherit;
+    padding-right: inherit;
+    position: inherit;
+    height: inherit;
+    top: inherit;
+    margin-bottom: 30px;
+}
+.custmReview {
+    width: 100%;
+}
+.rightAside { width: 70%; }
+.ratingsBox {line-height:normal;
+    margin-bottom: 0;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rightReviews { width:100%; }
+.row{width: 330px;
+    display: inline-block;
+     vertical-align: middle;
+   border-left:1px solid #E5E5E5; padding-left: 30px;
+}
+.ratingsBox span {     font-size: 35px;
+    margin: 0 5px 3px 0;
+    display: inline-block;
+    vertical-align: middle; }
+.usecoupon:before, .usecoupon:after { display: none; }
+
+.preNextBtn {margin-top: 20px;
+  a { background: #707070; padding:  5px; width:100px; display: inline-block; margin-right: 10px; color:#fff; text-align:center; @include border-radius(2px);
+   &.active { background: #434343; }
+  }
+}
+
+}
+.reviewimages { margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+  span { display: block; margin-bottom: 5px; } 
+}
+.reviewImg { display: flex; 
+    li { margin-right: 8px; cursor: pointer; overflow:hidden; 
+      img { vertical-align: middle; max-width: max-content; height: 98px;}
+    }
+    .last { position:relative; }
+    label { position: absolute;  cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5);}
+}
+
+.emptyRevewBx { padding: 40px;  text-align: center; background: #f5f5f5; margin-top: -1px; margin-bottom: 30px;
+    .title { font-size: 24px; }   
+    p { margin: 5px 0 10px;  }
+    .btnNew { width: 207px; background: #434343; }
+}
+
+.disable { color: #b1b1b1 !important; }
+  
+    @media #{$screen-tablet}{ 
+    .leftReviews { width: 28%; padding-right: 2%;}
+    .MoreviewPopup { width: 95%; height:300px; }
+    .slideView { width: 52%; }
+    .viewright {
+        width: 45%; 
+    }
+    .btnbx .btnNew { width:auto; }
+    .slick-dots {text-align:center;}
+    .slick-dots li button:before { @include border-radius(100%); background: #adadad;}
+    .slick-dots li{
+        &.slick-active {
+          button:before {     background: #e88616; }
+        }
+    }
+    .allReviews .row { width: 290px; }
+    .allReviews .shop-btn svg { display: none; }
+    .shop-btn .button-Buy-Now:before { display: none; }
+    }

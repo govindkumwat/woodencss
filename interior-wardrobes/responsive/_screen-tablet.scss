@@ -1,0 +1,30 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .kibanner{
+        section{width: 730px;}
+        article{ 
+                 span{font-size: $font-size-20; padding: 15px;}
+                 .title{width: auto; @include font-size(14px); padding: $space15 $space10+2;}
+        }
+    } 
+        .tablet-font-size-14{font-size: $font-size-10+4;}
+    .choice{
+        .chbox{margin-right: $space10; width: 236px;}
+        .chboxbig{width: 484px; margin-right: $zero;
+                  .text{width: 200px;
+                  & + .text{width: 200px;}
+                  }
+        }
+    }
+    .finishes{
+        .tab-links{
+            a{@extend .tablet-font-size-14;}
+        }
+    }
+    .materials{
+        img{width: 350px;}
+        article{width: 50%;} 
+    }
+
+} 
+

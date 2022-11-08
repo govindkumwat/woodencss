@@ -1,0 +1,789 @@
+
+//Global 
+@import "mixin/_global.scss";
+.main-section{
+    padding:$space20*5 $space20;
+    background:url('../images/seller/bg-seller.png')no-repeat;
+    background-size: cover;
+    font-family: $pangramregular;
+    color:$color-white;
+    position:relative;
+    .heading{
+        font-size: 52px;
+        line-height: 56px;
+        color:$color-white;
+        font-family: $pangrammedium;
+        margin:0 0 $space10+2;
+        letter-spacing: 0.03em;
+    }
+    .sub-head{
+        font-size:17px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        display: inline-block;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 20px;
+        display: inline-block;
+        letter-spacing: 0.03em;
+        &:after{
+            content:'';
+            border: 1px solid #fff;
+            width:100px;
+            display: inline-block;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+    .banner-form {
+        background: $bg-white;
+        padding:$space15 $space20 $space30;
+        float: right;
+        text-align:center;
+        position: absolute;
+        right: 15%;
+        top: 15px;
+        width:23%;
+        box-shadow:0 2px 4px rgba(0,0,0,0.25);
+        @include border-radius(6px);
+        .title-form{
+            font-size: 18px;
+            line-height: 22px;
+            font-family: $robotomedium;
+            color: $secondary-color;
+            display: block;
+            text-transform: uppercase;
+        }
+        .title-text{
+            display: block;
+            margin: 0 0 15px;
+            color: $secondary-700;
+            font-family: $robotoregular;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .form-text{
+            font-size:12px;
+            line-height:19px;
+            font-family: $robotoregular;
+            color:$secondary-700;
+            a{color:$color-orange;}
+        }
+        .btn-submit{
+            background:$primary-color;
+            color:$color-white;
+            font-size: 16px;
+            line-height:20px;
+            font-family: $robotomedium;
+            padding:$space10+2 $space10;
+            width:100%;
+            transition:0.3s all ease;
+            @include border-radius(100px);
+            margin:$space10+2 auto $space20;
+            cursor: pointer;
+            &:hover{
+                background:#d1490c;
+                transition:0.3s all ease;
+            }
+        }
+        .basic-detail-form{
+        .field{
+            margin:0 0 $space15;
+            input{
+                border:1px solid #acacac;
+                height:46px;
+            }
+        }
+    }
+    }
+}
+.seller-profile{
+    padding:$space30 0 $space30*2;
+    margin-bottom: 20px;
+    .user-wrpr {
+       li{
+           display: inline-block;
+           width:32%;
+           article{
+               display:inline-block;
+               width:46%;
+           }
+           img{float:left;padding:0 $space20 0 0;}
+           .user-quote {
+                font-size: 15px;
+                line-height: 20px;
+                font-family: $pangramregular;
+                color: $secondary-color;
+                letter-spacing: 0.02em;
+                margin-bottom: $space20*2;
+            }
+            .user-name {
+                font-size: 14px;
+                font-family: $pangramregular;
+                color: $secondary-700;
+                display: block;
+                letter-spacing: 0.02em;
+                b{display:block;font-family:$pangrammedium;color: $secondary-color;font-size: 15px;}
+            }
+       }
+    }
+}
+.sell-block{
+    background: $light-gray;
+    padding:$space25*2 0;
+    .ws-sellbox{
+        padding-bottom:$space20*2;
+        position:relative;
+        text-align:center;
+        &:after,&:before{
+            content:'';
+            background: url('../images/seller/dots-bg.png')no-repeat;
+            width:130px;
+            height:120px;
+            position:absolute;
+        }
+        &:before{
+            right:-50px;
+            top:-50px;
+        }
+        &:after{
+            left:-70px;
+            bottom:-10px;
+        }
+        li{
+            background: $bg-white;
+            padding:$space30+4 $space30 $space25;
+            text-align:center;
+            display:inline-table;
+            width:31%;
+            margin-right:28px;
+            box-shadow:0 2px 4px rgba(0 ,0, 0,0.22);
+            position:relative;
+            z-index:1;
+                .count {
+                    font-size: 44px;
+                    line-height: 50px;
+                    color: $primary-color;
+                    font-family: $pangrammedium;
+                    display:block;
+                }
+                .sub-title{
+                    font-size:22px;
+                    line-height:26px;
+                    font-family: $pangrammedium;
+                    color: $secondary-color;
+                    letter-spacing: 0.03em;
+                }
+                .detail-text{
+                    font-size:16px;
+                    line-height: 22px;
+                    color:$secondary-600;
+                    font-family: $pangramregular;
+                    border-top: 1px solid #E7E7E7;
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    height: 115px;
+                    overflow: auto;
+                }
+                &:last-child{
+                    margin-right:0;
+                }
+        }
+    }
+}
+.sell-heading{
+        letter-spacing: 0.02em;
+        font-size: 28px;
+        line-height: 42px;
+        color: $color-dark;
+        font-family: $pangrammedium;
+        display:block;
+        text-align: center;
+        padding-bottom:$space20;
+        
+    }
+.work-process{
+    padding:$space25*2 0;
+    .sell-process{
+        padding-top:$space20*2;
+        padding-bottom:$space20;
+        display: flex;
+        justify-content: space-between;
+        .sell-list {
+            display: inline-table;
+            width: 23%;
+            margin-right: 20px;
+            position:relative;
+            min-height:225px;
+            .title{
+                font-size:21px;
+                line-height:23px;
+                color:$color-dark;
+                font-family: $pangramregular;
+                margin:$space20 0 $space10;
+                letter-spacing:0.03em;
+            }
+            p,span{
+                font-size: 15px;
+                line-height: 18px;
+                font-family: $pangramregular;
+                margin: 0 0 5px;
+                letter-spacing: 0.03em;
+                color:$secondary-color; 
+            }
+            span{
+                padding: 0 0px 10px 22px;
+                display: block;
+                position: relative;
+                &:before{
+                    content:'';
+                    background: url('../images/seller/check.svg')no-repeat;
+                    width:20px;
+                    height:20px;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            &:last-child{
+                margin-right:0;
+                &:after{display:none;}
+            }
+            &:after{
+                content: '';
+                background: url('../images/seller/process-arrow.svg')no-repeat;
+                width: 82px;
+                height: 22px;
+                display: inline-block;
+                position: absolute;
+                right: 45px;
+                top: 15px;
+            }
+        }
+    }
+    .sell-btn {
+        background: $primary-color;
+        color: $color-white;
+        padding: 12px 20px;
+        border-radius: 100px;
+        font-size: 15px;
+        line-height: 20px;
+        font-family: $pangrammedium;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: block;
+        max-width: 266px;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        &:hover{
+            background:#d1490c;
+            transition:0.3s all ease;
+        }
+    }
+}
+.faq-section{
+    padding:$space25*2 0 $space10*7;
+    background:$light-gray;
+    .tabs-nav {
+        background: $bg-white;
+        display:flex;
+        justify-content:space-between;
+        box-shadow:0 2px 5px rgba(0,0,0,0.22);
+        border-bottom:$common-border;
+        li{
+            display:inline-block;
+            font-family:$pangrammedium;
+            padding:$space20 $space20+5;
+            width:24%;
+            text-align:center;
+            a{color:$secondary-color;font-size:15px;letter-spacing:0.03em;}
+            &.active{
+                border-bottom:2px solid $color-orange;
+                a{color:$color-orange;}
+                .sell-icon{
+                    &.registration{background:url('../images/seller/registration-fill.png')no-repeat;}
+                    &.catalog{background:url('../images/seller/catalog-fill.png')no-repeat;}
+                    &.shiping{background:url('../images/seller/shipping-fill.png')no-repeat;}
+                    &.payment{background:url('../images/seller/payment-fill.png')no-repeat;}
+                }
+            }
+            .sell-icon {
+                margin: 0 auto 10px;
+                display: block;
+                width: 62px;
+                height: 62px;
+                &.registration{background:url('../images/seller/registration.png')no-repeat;}
+                &.catalog{background:url('../images/seller/catalog.png')no-repeat;}
+                &.shiping{background:url('../images/seller/shipping.png')no-repeat;}
+                &.payment{background:url('../images/seller/payment.png')no-repeat;}
+            }
+        }
+    }
+    .faq-wrpr{
+        background:$bg-white;
+        padding:$space30;
+        .qusTab {
+            padding: $space10+4 $space10;
+            display: block;
+            font-family: $pangrammedium;
+            font-size: 17px;
+            line-height:20px;
+            color: $color-dark;
+            cursor:pointer;
+            border-top:1px solid #dbdbdb;
+            position:relative;
+            &.current{
+                background: $light-gray;
+                border-bottom:1px solid #dbdbdb;
+                border-top:0;
+                &:after{
+                content:'-';
+            }
+            }
+            &:after{
+                content:'+';
+                font-size: 20px;
+                color:$secondary-600;
+                position: absolute;
+                right:0;
+                top:0;
+                padding:12px;
+                font-family:$robotomedium;
+            }
+        }
+        .AnsBox {
+            padding: 20px;
+            font-family: $pangramregular;
+            color: $secondary-color;
+            line-height: 20px;
+            display:none;
+            p{margin-bottom: 5px;}
+            b{font-family: $pangrammedium;color: $color-dark;}
+            a{color:$primary-color;}
+            ul,ol{
+                padding: 10px 0 10px 15px;
+                li{
+                    font-family:$pangramregular;
+                    margin-bottom: 5px;
+                    line-height: 20px;
+                    width: 100%;
+                    list-style: disc;
+                }
+            }
+            ol{
+                li{list-style: decimal;}
+            }
+            .title {
+                font-size: 15px;
+                font-family: $pangrammedium;
+                padding-bottom: 10px;
+            }
+            table {
+                border: 1px solid #d1d1d1;
+                padding: 5px;
+                font-size: 13px;
+                margin-bottom: 15px;
+                td,th{padding: 4px;}
+                tr{
+                    border-bottom: 1px solid #ddd;
+                    &:last-child{border: 0;}
+                    &:nth-child(even) {background-color: #f5f5f5;}
+                }
+            }
+        }
+        .Qustions{
+            li{
+                &:first-child{
+                    .qusTab{border-top:0;}
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1366px){
+    .main-section {
+        .banner-form{
+            width:27%;
+            right:10%;
+        }
+    }
+}
+@media screen and (max-width:1280px){
+    .main-section .banner-form {
+        width: 30%;
+        right: 8%;
+    }
+    .sell-block {
+        .ws-sellbox{
+            li{
+                .count{
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                .sub-title{font-size: 20px;}
+                .detail-text{
+                    font-size: 15px;
+                    line-height: 22px;
+                    margin-top:$space15;
+                    padding-top:$space15;
+                    height:85px;
+                }
+            }
+            &:before{
+                right: -22px;
+                top: -58px;
+            }
+            &:after{
+                left: -20px;
+                bottom: 0px;
+            }
+        }
+    }
+    .main-section{
+        .heading{
+            font-size: 46px;
+            line-height: 52px;
+        }
+        .description{font-size: 15px;}
+    }
+    .sell-heading{
+        font-size:25px;
+        line-height:35px;
+    }
+    .work-process{
+        .sell-process {
+            padding-top: $space30;
+            padding-bottom: $space10;
+            .sell-list {
+                .title{
+                    font-size: 19px;
+                    line-height: 22px;
+                    margin:$space15 0 $space10;
+                }
+                p,span{font-size:14px;}
+            }
+        }
+    }
+    .faq-section {
+        .tabs-nav {
+            li{
+                .sell-icon{
+                    background-size: 50px !important;
+                    background-position: center !important;
+                    width:50px;
+                    height:50px;
+                }    
+        }
+    }
+}
+}
+@media screen and (max-width:1024px){
+    
+    .main-section {
+        padding: 75px 20px;
+        .heading {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        .sub-head{font-size:16px;}
+        .banner-form{
+            width: 36%;
+            right: 3%;
+            padding: 10px 20px 15px;
+            .btn-submit{
+              margin:8px auto $space10;
+              font-size: 15px;
+            }
+            .title-form{font-size: 16px;}
+            .basic-detail-form{
+                .field{
+                    input{height: 43px;}
+                }
+            }
+        }
+    }
+    .seller-profile {
+        .user-wrpr {
+            li{
+                .user-quote{
+                    margin-bottom:$space10+2;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .user-name{
+                    font-size:13px;
+                    b{font-size: 14px;}
+                }
+            }
+        }
+    }
+    .sell-block{
+        padding:$space30+5 0;
+        .ws-sellbox{
+            padding-bottom: $space25;
+            li{
+                padding:$space20 $space15;
+                .sub-title{
+                    font-size:17px;
+                    line-height: 22px;
+                }
+                .count{
+                    font-size:30px;
+                    line-height: 38px;
+                }
+                .detail-text{
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 100px;
+                }
+            }
+            &:before{
+                right: -15px;
+                top: -40px;
+            }
+            &:after{
+                left: -15px;
+                bottom: -15px;
+            }
+        }
+    }
+    .sell-heading {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .work-process{
+        padding:$space30+5 0;
+        .sell-process{
+            padding-top: $space20;
+            padding-bottom: 0;
+            .sell-title{
+                .title{
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin: $space10 0 5px;
+                    font-family: $pangrammedium;
+                }
+            }
+        }
+    }
+    .faq-section{
+        padding:$space30+5 0 $space25*2;
+        .tabs-nav{
+            li{
+                padding:$space15 $space10+2;
+                a{font-size:14px;}
+            }
+        }
+        .faq-wrpr{
+            padding:$space30 $space20;
+            .qusTab{
+                font-size: 15px;
+            }
+            .AnsBox{padding: $space15;}
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .sell-block {
+        .ws-sellbox{
+            &:before,&:after{display:none;}
+        }
+    }
+    .main-section{
+        background-position:right;
+        padding:$space30 20px;
+        article {
+            text-align: center;
+            margin: 0 0 30px;
+            br{display: none;}
+        }
+        .sub-head{font-size:15px;}
+        .heading{
+            font-size: 30px;
+            line-height: 38px;
+        }
+        .description{font-size: 14px;line-height: 18px;}
+        .banner-form{
+            width: 85%;margin:0 auto;
+           position: unset; float: none;
+            padding:$space15 $space15 $space20;
+            .title-text,.title-form{display: none;}
+            .btn-submit{width: 48%;}
+        }
+    }
+    .seller-profile{
+        padding:$space30 0;margin:0 auto; 
+        .user-wrpr{
+                overflow: auto;
+                white-space: nowrap;
+            li{
+                width:62%; 
+                margin: 0 0 10px;
+                white-space: normal;
+                article{width:80%;}
+                img{width:20%;}
+            }
+        }
+    }
+    .sell-block{
+        padding:$space20+5 0;
+        .ws-sellbox{
+            padding-bottom:$space20;
+            li{
+                padding:$space15;
+                width: 30%;
+                margin-right: 20px;
+                .count{
+                    font-size:26px;
+                    line-height: 30px;
+                }
+                .detail-text{
+                    font-size: 13px;
+                    height:78px;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .work-process{
+        padding:$space20+5 0;
+        .sell-process {
+            .sell-list{
+                &:after{
+                    right:0;
+                }
+                .title{
+                    font-size:15px;
+                    line-height:20px;
+                    margin:$space10 0 $space5;
+                }
+                p,span{font-size:13px;}
+            }
+        }
+        .sell-btn{max-width:220px;line-height:18px;margin:$space10 auto;}
+    }
+    .sell-heading{font-size:20px;}
+    .faq-section{
+        padding:$space20+5 0 $space30+5;
+        .faq-wrpr{
+            .qusTab{
+                font-size:14px;
+                padding:$space10+2 $space10;
+                &:after{
+                    padding:8px 12px;
+                }
+            }
+            .AnsBox{
+                font-size:13px;
+                padding:$space10+2 $space15;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .main-section{
+        .description{
+            &:after{display:none;}
+        }
+        .banner-form{
+            width: 100%;
+            .btn-submit{width: 85%;}
+        }
+        article{margin-bottom: 20px;
+        .sub-head,.description{display:none;}
+        .heading{font-size:26px;line-height: 30px;font-family:$pangramregular;}
+        }
+        br{display:none;}
+    }
+    .seller-profile {
+        padding: $space25 $space15;
+        background: $bg-white;
+        .user-wrpr{
+            li{
+                margin: 0 $space20 0 0;
+                width: 80%;
+                padding: 0 0 $space10;
+                article{width: 50%;}
+                img{padding:0 $space15 0 0;width:auto;}
+                .user-name{
+                    b{font-weight:normal;}
+                }
+            }
+        }
+    }
+    .sell-heading {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .sell-block{
+        .ws-sellbox{
+            padding:0 $space15 $space20;
+            li{
+                width: 100%;
+                margin: 0 0 $space20;
+                &:last-child{margin-bottom:0;}
+                .detail-text{height: auto;padding: 0;}
+            }
+        }
+    }
+    .work-process{
+        background:$bg-white;
+        .sell-process{
+            display:block;
+            white-space:nowrap;
+            overflow: auto;
+            padding:$space0 $space15 0;
+            .sell-list{
+                width:58%;
+                display:inline-table;
+                min-height: unset;
+                margin:0 $space20 $space10 0;
+                &:last-child{margin:0;}
+                img{height:60px;}
+                p,span{white-space:normal;}
+                span{padding:0 0 6px 22px;}
+                &:after{right:20px;}
+            }
+        }
+        .sell-btn{
+            max-width: 175px;
+            font-size: 14px;
+            padding: $space10;
+        }
+    }
+    .faq-section {
+        .tabs-nav {
+            display: block;
+            white-space: nowrap;
+            overflow: auto;
+            li{
+                width:35%;
+                height:112px;
+                white-space:normal;
+                padding:$space10+2 $space5+3;
+                a{font-size:13px;font-family:$pangramregular;display:inline-table;}
+                .sell-icon{
+                    background-size:40px !important;
+                    height: 40px;
+                    width: 40px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .faq-wrpr{
+            padding:$space15 $space10;
+            .AnsBox{padding:$space10 $space5;}
+            .qusTab{
+                padding:12px 30px 12px 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:320px){
+    .seller-profile .user-wrpr li article{width:42%;}
+}

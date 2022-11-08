@@ -1,0 +1,210 @@
+    // Custom Furniture popup 
+
+.custom-link-for-mobile,.g_custommade{text-decoration:none;color:#E07A32;text-transform:uppercase;float:left;margin:0 0 0 25px;font-size:13px;font-family:robotoregular;font-weight:400}
+.g_custommade:hover{text-decoration:underline}
+.custom-page-modal{top:10px!important}
+.custom-make{width:728px;box-shadow:none;padding:0}
+.custom-make figure{float:left}
+.custom-make form p{font-size:13px;color:#404040;font-weight:300;padding:2px 0 0}
+.custom-make .box-modal_close{top:6px;right:6px}
+.custom-make .minimize{top:1px;right:25px;font-size:33px}
+.custom-make .text{padding:30px 0;text-align:center;float:right;width:60%}
+.custom-make .text img{max-width:100%;margin-top:10px}
+.custom-make .text span{font-size:23px;color:#e07a32;font-weight:400}
+.custom-make .text p{font-size:13px;color:#272727;font-weight:300}
+.custom-make .left article p,.custom-make .left article span{font-family:robotoregular;font-weight:400}
+.custom-make form{padding:0 20px;display:block}
+.custom-make .custom_request{margin:20px 0 0 20px;padding:8px 18px;font-size:15px}
+.custom-make .left{float:left;width:48%}
+.custom-make .left article p{font-size:14px;color:#000;padding:0;display:inline-block}
+.custom-make .left article .heading{position:relative;border-bottom:1px solid #e5e5e5;margin-bottom:5px;padding-bottom:2px}
+.custom-make .left article .heading .tooltip{display:inline-block;width:auto;height:auto;right:inherit;top:inherit}
+.custom-make .left article .heading .tooltip .text-orange{ color:$color-warning;}
+.custom-make .left article .heading .tooltip .inside{padding:5px;top:-50px;left:130px;width:260px;background:#ededed;border:1px solid #dfdfdf; line-height:initial; z-index:9; position:absolute; display:none; font-size:13px;}
+.custom-make .left article .heading .tooltip:hover .inside{ display:block;}
+.custom-make .left article span{font-size:16px;cursor:pointer}
+.custom-make .left article ul li{float:left;margin:8px 15px 0 0;font-size:11px;color:#000;text-align:center;position:relative;cursor:pointer}
+.custom-make .left article ul li img{display:block;width:51px;height:51px;border-radius:50%}
+.custom-make .left article .custom-wood li:nth-child(3),.custom-make .left article .custom-wood li:nth-child(6){margin-right:0}
+.custom-make .right{float:right;width:48%}
+.custom-make .left .box .bigselect{float:left;width:100%}
+.custom-make .left .box .bigselect .selector{height:33px!important;margin:0;padding:0;width:100%!important}
+.custom-make .left .box .bigselect .selector span{background:url(../images/drop-arrow.png) 292px 1px no-repeat;height:inherit!important;padding-top:5px;width:98%!important}
+.custom-make .left .box .bigselect .selector select{height:33px!important;width:100%!important}
+.cumade-popup{width:874px;padding:0}
+.cumade-popup .left,.cumade-popup .right{float:left;width:455px}
+.custom-make .left article+article{margin-top:25px}
+.cumade-popup .right{float:right;width:325px;margin-top:12px}
+.custom-make .left article .custom-polish li{margin-right:10px}
+.custom-make .left article .custom-polish li.other{margin:30px 0 0 20px}
+.custom-make .left article .custom-polish li.other label{font-size:13px;text-transform:uppercase}
+.custom-make .left article .custom-polish li.other input[type=radio]{margin:5px 7px 0 0;float:left}
+.choose-fabric .option-radio .checkbox,.custom-make .left article ul li .checkbox{position:absolute;top:0;right:0}
+.choose-fabric .option-radio label,.custom-make .left article ul li label{background:0 0;cursor:pointer;width:19px;height:19px;left:0;top:0}
+.choose-fabric .option-radio .checkbox input[type=radio]:checked+label::after,.custom-make .left article ul li .checkbox .inputcheck:checked+label::after,.custom-make .left article ul li .checkbox input[type=radio]:checked+label::after{opacity:1}
+.choose-fabric .option-radio .checkbox input[type=radio],.custom-make .left article ul li .checkbox .inputcheck,.custom-make .left article ul li .checkbox input[type=radio]{opacity:0}
+.choose-fabric .option-radio .checkbox label::after,.custom-make .left article ul li .checkbox label::after{content:"\f00c";height:25px;opacity:0;position:absolute;width:25px;background:#ee873e;right:0;font-family:FontAwesome;color:#fff;font-size:16px;line-height:25px}
+.custom-make .discuss,.custom-make .right .tooltip .inside{font-size:13px}
+.custom-make .discuss{color:#616161;padding:20px 0 15px 15px}
+.custom-make .right .tooltip{width:auto;height:auto;position:relative;top:0;right:0}
+.custom-make .right .tooltip:hover .inside{ display:block;}
+.custom-make .right .tooltip .inside{background:#ededed;border:1px solid #dfdfdf;padding:10px;width:305px;text-align:left;color:#363636;left:0; top:-130px; position:absolute; display:none;}
+.custom-make .right .tooltip .inside p{padding:0 0 5px}
+.custom-make .right .tooltip .inside .fa{color:#919191;font-size:10px}
+.custom-make .right .tooltip .inside .arrow-down,.product .box .tooltip .inside .arrow-down{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #ededed;bottom:-10px;right:20px;position:absolute}
+.custom-make .left .box label{font-size:14px;padding:0 0 8px;display:block}
+.custom-make .left .box .selector,.custom-make .left .box input[type=text],.custom-make .left .box input[type=email],.custom-make .right .box textarea,.custom-make .right .box-code{-webkit-box-shadow:inset 0 0 7px rgba(0,0,0,.03);-moz-box-shadow:inset 0 0 7px rgba(0,0,0,.03);box-shadow:inset 0 0 7px rgba(0,0,0,.03);border:1px solid #b7b7b7;width:96%;padding:5px 2%;background:#fff;font-size:13px;outline:0}
+.custom-make .left .box .selector{width:96%!important}
+.custom-make .left .box .selector span{width:99%!important;background:url(../images/common-select-arrow.png) right center no-repeat}
+.custom-make .left .box .selector select{height:36px!important}
+.custom-make .proceed{background:#f2f2f2;padding:10px 0;text-align:center;margin:10px -20px 0}
+.custom-make .proceed .btn{ border-bottom:3px solid #038169; background:#04b392; text-transform:uppercase; @include font-size(16px); padding:$space10 $space15+3; cursor:pointer;}
+.custom-make .left .box{margin-bottom:10px}
+.custom-make .left .box textarea{height:54px;font-size:12px;display:block}
+.custom-make .left .box .file{padding:0;width:100%;height:30px;position:relative;font-size:13px;color:#000;line-height:35px; border: $common-border; padding: 1px; @include border-radius(5px);}
+.custom-make .left .box .file span{background:#858585;float:right;height:100%;font-size:12px;font-family:robotoregular;color:#fff;font-weight:400;text-align:center;line-height:30px;padding:0 20px;border-radius:5px}
+.custom-make .left .box input[type=file]{overflow:hidden;opacity:0;position:absolute;left:0;width:100%;height:100%;cursor:pointer}
+.custom-make .left .box .file #file_one_text{float:left;font-family:robotoregular;font-size:14px;padding-left:10px; line-height: 30px;}
+.error_fabric,.error_polish,.error_wood{font-size:14px!important;color:red;cursor:inherit!important}
+.custom-minimize{position:fixed;left:0;bottom:0;cursor:pointer; z-index: 1;}
+.custom-minimize .close{position:absolute;top:2px;right:9px;font-size:11px;font-family:robotoregular;color:#fff;font-weight:400}
+.product-custompop .left article+article{margin-bottom:25px}
+.product-custompop{width:874px;}
+.custom-make .left .box input[type=text].red-placeholder{ border: 1px solid red}
+
+.custom_top{padding:35px 20px 21px}
+
+.custom-make .left .box-code{width:86%;display:inline-block;position:relative;margin-bottom:10px}
+
+.custom-make .left .box-code #captcha_i{ position:absolute; right:0px; top:0;}
+
+.cumade-popup .text{float:none;padding:10px 0 25px;width:100%}
+.custom-make .left .custom-security #reload_custom{ cursor:pointer;}
+
+
+//custom furniture (Custom Now Popup)
+.cumade-popup{
+    .left{
+        .tab-product-customize{
+            .select-woopolish{
+                .leftside{ width:auto; margin:0;}
+            }
+        }
+    }
+}
+.custom-make{
+    .left{
+        input, textarea{
+                @include placeholder{font-size: $font-size-10+3; font-family: $font-family-light; color:lighten($color-dark,20%); font-weight: $font-weight-light;}
+            }
+        article{
+            ul{
+                li{
+                    .checkbox{left: $space0; bottom: $space0;
+                              label{position:$postion-absolute; width: auto; height: auto; line-height: 38px; right: $space0; bottom:$space0; 
+                                  &:after{ border: $border3 $bg-warning; @include border-radius(50%); width: 45px; height: 45px; background: $bg-none; line-height: 45px; font-size: $font-size-25; top:$space0; bottom:$space0; @include transitionall;} 
+                              }
+                    }
+                }
+                }
+            }
+            .custom-choose-fabric{
+            ul{
+                li{img{width: 60px; height: 40px; @include border-radius(0);}
+                    .checkbox{
+                              label{
+                                  &:after{@include border-radius(0); width:auto; height:auto; line-height: 45px; font-size: $font-size-25; left: $space0; line-height: 35px;}
+                              }
+                    }
+                }
+                }
+            }
+            .custom-choose-wood{
+            ul{
+                li{
+                    .checkbox{
+                              label{
+                                  &:after{border:$zero; content: '';}
+                              }
+                    }
+                }
+                }
+            }
+         
+        }
+        .proceed{
+            .btn{@include font-size(16px); padding: $space10 - 2 $space20 - 2;}
+        }
+        .select-woopolish{
+                              li{background:none; border:$border1 darken($bg-light, 9.5%); @include fonts($font-size-10+3, $font-family-light, $color-dark, $font-weight-light); text-transform: uppercase; float: left; padding: $space5 - 3 $space10; margin:$space5+1 $space10 $space0 $space0; @include transitionall; z-index: 1;
+                                &.square-class, &:hover{background:$bg-sussess; color:$color-white; border-color:$bg-white; outline:$border1 darken($bg-light, 9.5%); } 
+                              }  
+    }
+    }
+    
+    .custom-order-success{text-align: center; background: #f5f5f5; color: #08aa00; font-size: 14px;}
+    
+//media
+
+@media #{$screen-tablet}{
+    .cumade-popup{ width:auto;}
+    .custom-make{
+        .left,.right{ width:48%;
+            .box{ width:auto;}
+        }
+    }
+
+    
+}
+
+
+@media #{$screen-mobile}{
+    .cumade-popup {
+     height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    width:300px;
+}
+    .custom-make{
+        .text{ padding:$space10 0;
+            img{ display:none;}
+             span{ font-size:18px;}
+             p{ font-size:12px; line-height:initial;}
+        }
+        .left,.right{ width:100%;
+                          .box{
+                          input[type=text]{ padding:$space5+3 2%;}
+                      }
+                      
+        
+        };
+        .right{
+            .tooltip .inside{ width:280px; line-height:initial;}
+        }
+        .left{
+            .box-code{ padding:$space5+4 2%;
+                #captcha_i{ width:120px; height:35px;}
+            }
+            article{
+                .heading {
+                    .tooltip{
+                        .inside{ left:0; right:0;}
+                    }
+                }
+                +article{ margin-top:$space10;}
+                .wood li{ padding:$space5+3;}  
+            }
+            .box{
+                .file{
+                    #file_one_text{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis; width:160px;}
+                     span{ padding:0 $space10+2;}
+                }
+            }
+        }
+     
+         .btn{ color:$color-white;}
+    }
+    
+    
+    
+}

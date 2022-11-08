@@ -1,0 +1,25 @@
+.login-form{ width:340px; margin:0 auto;
+        a{ color:$color-warning;}
+        label{ display: block; font-size: 13px;
+         
+        } 
+       .form-group{ margin-bottom:$space10+2;
+             .form-control{@include border-radius(3px); border:1px solid #d7d7d7; @include border-radius(2px); padding:10px 10px; width: 100%; font-size: 14px;}
+             &.space{ margin-bottom:0;}
+       }
+        .sign-btn{@include font-size(14px);}
+       .forgot-pass{ display:block; text-align:center;@include font-size(13px);margin-bottom:$space5 - 2; margin-top:2px;}
+       p{@include font-size(14px); padding-top:$space10; text-align:center;
+         a{
+             &:hover{ text-decoration:underline;}
+         }
+       } 
+}
+
+.login-btn{ text-align:center;  @include box-shadow(0px -5px 15px -10px rgba(0,0,0,0.7)); padding-bottom:$space25;  margin-top:$space40+5; position:relative;
+    label{@include font-size(12px);  width:100px; position:absolute; left:0; right:0; top:-10px; margin:0 auto; background:$bg-white; padding:0 $space5 - 2;}
+    .btn-facebook{@include border-radius(5px); @include font-size(13px); padding:$space5+3 $space10 0; width:160px; display:inline-block; margin:$space25 $space5 0 ; border:$common-border; color:#636572; font-family:$robotomedium; text-transform:uppercase;
+     img{ vertical-align:middle; margin-right:$space10; margin-bottom:7px;}
+     &:hover{ color:$color-warning;}
+    }
+}

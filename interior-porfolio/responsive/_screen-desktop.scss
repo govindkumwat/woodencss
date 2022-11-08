@@ -1,0 +1,10 @@
+@media #{$screen-desktop}{
+.interportfolio{
+    .box{
+        .first{width: 481px;}
+        .second, .third{width: 222px;}
+        .fourth, .fifth{width: 456px;}
+        figure{width: auto;}
+    }
+}
+}

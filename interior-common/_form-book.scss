@@ -1,0 +1,64 @@
+                
+    .form-book{ width:33%; text-align: center; float:right; position:relative;  background:$bg-white;  @include box-shadow(0 7px 27px rgba(0, 0, 0, 0.28)); @include border-radius(5px 5px 0 0); overflow: hidden;
+           h3{text-align: center; text-transform:uppercase; @include font-size(18px); font-weight:400; color:$color-black; padding-top:$space25; margin:0;}
+          .link{@include font-size(18px); margin:$space20 $space0 $space5; display:block; color:$color-black; text-align:center; padding-bottom:0;}         
+          .lead{ @include font-size(14px); font-family:$robotolight; color:$color-black; display:block; text-align:center;  padding-top:$space0!important; padding-bottom:$space10;} 
+           form{ padding:0 $space20 $space20; display:flex; flex-wrap:wrap; justify-content:space-between; background:#fff;  }
+          .field{ margin-bottom:$space10; width: 100%; }
+          .half { width:48%; }
+          .one-half { display: flex; justify-content: space-between;
+              .form-control { width: 49%;}
+          }
+          textarea{ resize:vertical; height:60px; padding-top:$space10;}
+         .btn{  color:$color-white; width: 100%; background:$color-warning;@include border-radius(3px); @include font-size(14px); cursor:pointer; padding:$space10+2 $space20 $space10+2 $space20; float:right;
+           &.buttonload { padding-left: $space30+4; }
+         }
+        .field--not-empty.buttonload:before{ left:inherit; top:40px; right:10px;  background:url(../images/spinner-orange.png) no-repeat left center;}
+       div + div{ display:block;} 
+       .pincodeloader { top:30px; }
+            .form-control, .file{ width: 100%; @include font-size(14px); appearance:none; -moz-appearance:none; -webkit-appearance:none; border: 1px solid #c8c8c8; padding: $space10;  @include border-radius(3px); background: #fff; @include placeholder{color:#c8c8c8;}}
+            textarea { height: 70px; vertical-align: middle; }
+        .form-title { font-size: 1.125rem; margin-bottom: $space10; position: relative; color: #fff; text-transform: uppercase;  font-family: $robotomedium; background: #e57200; padding: 10px 0;
+       }
+       .error-block { text-align: left; }
+        #captcha1 {  position: absolute;  right: 38px;  top: 3px;  width: 133px;  height: auto;}
+     .box-code {  position: relative;  margin-top: 7px; width: 100%; }
+     .main_reload {  border: 0; background: url(../images/reload.png) no-repeat;  position: absolute;  top: 1px;  right: 0;  outline: 0;  width: 35px;  height: 35px;  cursor: pointer;}
+  .form-control {  width: 100%;  height: 36px;  border: 1px solid #e5e5e5;  padding: 0 10px;  margin-bottom: 7px; @include border-radius(4px); font-size: .8125rem; color: #000; }
+   textarea {  height: 45px!important;  padding-top: 5px!important;  margin: 0!important; }
+    
+    } 
+
+
+
+
+
+
+
+ 
+ 
+//Home Tablet
+
+@media #{$screen-desktop}{
+        .interior-form{
+            .error-block{ overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+             .field{margin-top:$space5;} 
+             .lead{ padding-bottom:$space0;}
+              h3{padding-top:$space15;}
+             label{ padding-bottom:0;} 
+            
+          }
+    
+}  
+
+@media #{$screen-tablet}{
+    .form-book {
+    width: 45%;
+}
+    .interior-form{ width:340px; 
+    
+    .pincodeloader { top: 18px; }
+    }
+    
+    
+}  

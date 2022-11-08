@@ -1,0 +1,64 @@
+.support-popup{ width:652px; margin:0 auto; background:$bg-white; position:relative; padding:$space40 $space40+5 $space40+20; display:none;  
+        .title{@include font-size(20px); color:#202124; font-family:$robotolight; display:block; padding-bottom:$space15;}
+         form{ display:flex; justify-content:space-between;  flex-wrap:wrap; align-items:top;}
+
+            
+     
+          
+         
+          .field__input{  @include size(100%,46px);}
+       .field{position: relative; width:48%; margin-bottom:$space20;
+         &.full{ width:100%} 
+       } 
+     .field__label { color:#4b4a4a;   font-size:13px;line-height: 1; opacity: 0;overflow: hidden;pointer-events: none;position: absolute; padding:0 5px;  text-overflow: ellipsis;top:-5px;left:10px; display:inline-block;text-align: left;transform: translateY(3px); transition: all .2s ease-out; user-select: none; white-space: nowrap; background:$bg-white;z-index: 1;}
+     .field__input{background-color:$bg-white;border:$common-border; @include border-radius(2px); color:#4b4a4a;  @include font-size(13px); transition: all .2s ease-out; @include size(100%,40px);padding:0 $space10; @include placeholder{ color:#4b4a4a; }
+       @include placeholder{font-size:13px;color:#a6acb2;} } 
+     .field--not-empty .field__label{ opacity: 1; transform: none;}
+        
+        textarea{ resize:vertical; padding-top:$space10 !important; height:80px!important;}  
+        .file-upload{ border:1px solid #E8E8E8;  height:46px;}
+        .file{ position:relative; opacity:0; z-index:1; cursor:pointer;}
+        span{ position:absolute; right:0px; top:0px; padding:$space10 $space10+2; background:#E8E8E8; @include font-size(15px); font-family:$robotolight; cursor:pointer;}
+       .file-return{ left:$space0; background:none; width:55%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} 
+        [type="button"]{ width:200px; @include border-radius(3px); padding:$space10+4 $space0; background:$bg-warning; cursor:pointer; color:$color-white; @include font-size(15px);}
+        a{ color:$color-warning;}
+       .email-text{@include font-size(15px); font-family:$robotolight;}   
+       .swpmodal-close{ position:absolute; right:12px; top:10px; cursor:pointer;}
+      .buttonload:before{ top:14px;}
+      #thanksMsg{ text-align:center;
+       #post{ position:inherit; padding:0; background:none; color:$color-warning;}         
+     } 
+      
+     
+     
+       .thanku-success-msg{ width:100%; text-align:center;       
+             span{ display:block; @include font-size(25px); color:#05C716; font-family:$robotomedium; padding-top:$space15;}
+             p{@include font-size(15px); color:$color-black; padding:$space10 0;}
+             a{ color:$color-white; text-transform:uppercase;  background:$bg-warning; @include font-size(16px); padding:$space10 $space25; @include border-radius(3px); display:inline-block;}
+            .text-bottom{ @include font-size(12px); display:block; color:$color-black; padding:$space15 0;}  
+            .swpmodal-close{ position:absolute; right:$space10; top:$space10;}    
+  } 
+         
+      
+      
+      .buttonload{ position:relative;
+            &:before{-webkit-animation:2s infinite linear; animation:fa-spin 2s infinite linear;   z-index:1; position:absolute; left:10px; top:11px;  background:url(../images/spinner-solid.png) no-repeat left center; content:''; @include size(18px); display:block;}
+             @keyframes fa-spin{
+                 0%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);transform: rotate(0deg);}
+                 100%{-webkit-transform: rotate(359deg); -moz-transform: rotate(359deg);    transform: rotate(359deg);} 
+             }     
+        
+      }   
+      
+     // disabled
+      .button-disabled{ cursor:not-allowed!important; pointer-events:none; opacity:0.7;}
+      
+     
+      //alert mesage
+     .error-block{ @include font-size(12px); color:$color-red; line-height:normal; padding-top:$space5;}  
+
+}  
+
+
+.swpmodal-container_i .support-popup{ display:block;}
+

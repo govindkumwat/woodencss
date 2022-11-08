@@ -1,0 +1,14 @@
+@media #{$screen-desktop}{
+        .customers-reviews{
+        li{
+            p{
+              span{@include font-size(18px);}
+            }
+        }
+    }
+    
+    .Experince-our-studios{
+        .city{ margin:0 $space15;}
+    }
+ 
+}

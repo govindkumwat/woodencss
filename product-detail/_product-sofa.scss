@@ -1,0 +1,93 @@
+.product-sofa{
+
+     figure{ position:relative;  
+               img{position:absolute;  top:0;  left:0;  bottom:0;  right:0;  margin:auto;}
+               &:before{ content:'';  display: block; }
+         }
+
+ //.product-fadelivery{ border-top:none; margin:0; padding:0;}
+    .choose-set{ margin:$space30+40 0 0 0 ;  border-bottom:$common-border; padding-bottom:$space30+20;
+      .title{@include font-size(20px); color:#000000; font-family:$robotomedium;text-align:center; display:inline-block;}
+    
+    }
+   
+     .choose{ float:$left; width:50%;
+      .buy-now{ display:none;}
+     }
+     #ownSetError{ color:$color-red;}
+   .list{ margin:$space15 $space0 $space25;
+       li{ display:inline-block; vertical-align:top; margin-bottom:$space5; text-align:center; margin-right:$space5+4; border:$common-border;@include border-radius(5px); width:30%; padding:$space20 $space10+2 $space5;}
+       .heading{ display:block; @include font-size(12px); color:#000; font-family:$robotolight; }
+
+  
+       
+       
+       select{ border:none;  border-radius:(3px); margin:$space15 auto $space10; padding:3px 0px 3px 10px;cursor:pointer; background:#f5f5f5 url("#{$images-path}/product-detail/drope-down.png") no-repeat right center; width:80px; border:$common-border; outline:none; @include appearance(none);}
+       &.popular{
+           img{ margin-bottom:$space10;}
+          li{ position:relative; cursor:pointer;
+              &.active{border-color:$bg-orange;
+                  &:after{position:absolute;  top:-1px; right:-1px; @include size(27px,25px); content: '\f00c'; font-family:$fontawesome;background:$bg-orange; @include border-radius(5px);color:#fff;}
+              }
+             
+               
+           }
+       }
+   
+   }
+   
+   .choose-price{ width:37%; float:$right; position:relative; text-align:center;border:$common-border; padding:$space20;
+    .lead{@include font-size(14px); font-family:$robotolight; color:#525252; display:block;  border-bottom:$common-border; padding-bottom:$space10;}
+    .retail-price{@include font-size(14px); font-family:$robotolight; color:#000; display:block; padding-top:$space10;}
+    .o-price{@include font-size(18px); color:#000; padding:$space5+3 0; display:block; border-bottom:$common-border;}
+   .offer-price{@include font-size(20px);
+        span{ color:$bg-orange;}
+    }
+    .emi-price{@include font-size(14px); color:#515151;}
+    .emi_list_popup{ color:$bg-orange; display:inline-block; padding-left:$space5; cursor:pointer;}
+    
+    .remove-btn{ @include font-size(13px); font-family:$robotolight; color:#000; position:absolute; right:0px; top:-30px;
+      &:after{ content:"x"; display:inline-block; line-height:20px; margin-left:$space10; @include size(22px);  @include font-size(16px); font-family:$robotoregular; background:$bg-orange; color:#fff; border-radius:(100%); }
+    }
+       .shop-btn{.button-Buy-Now{ width:100%; }}
+       .close{position: absolute; top: 8px; right:15px;  background:$bg-orange; color:$color-white; @include border-radius(100%); @include size(22px); line-height:22px;}
+   }
+  /*.create-btn{ margin-bottom:15px;}*/
+  .shop-btn{
+      .button-create-Set{ display:none;}
+      .button-Buy-Now{ /*width:90%; margin:$space20 auto $space15;*/}
+  }
+  
+
+ 
+   .setext{ background:#f8f8f8; padding:$space5; text-align:center; width:200px; margin:0 auto $space5;}
+  .error{position: $postion-absolute; background:#f8f8f8; padding:$space10; left:o; right:0; @include box-shadow(0 0 3px rgba(0,0,0,.34)); text-align:center; top:0px; width:100%; @include font-size(14px); color: $color-black; z-index:1;}
+
+  select::-ms-expand {display: none;}
+
+
+
+  
+}
+    
+   //media css start
+   @media #{$screen-desktop}{
+       .product-sofa{
+            .choose-price{ padding:$space15;}
+              .freedom_offer{ width:50%; font-size:16px;}
+       }
+       
+   }
+   
+  @media #{$screen-tablet}{
+           .product-sofa{
+               .share-main{ margin-top:$space25;}
+               .choose-set{ margin:$space30 0;}
+               .fabric{ padding:$space5+2 $space5 - 2}
+               .choose-price{ width:40%;}
+               //.offerpr-emi{ text-align:left;}
+               .product-emi{ width:48%;}
+           }          
+  }
+  
+  

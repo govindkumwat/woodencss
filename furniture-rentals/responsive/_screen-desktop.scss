@@ -1,0 +1,26 @@
+@media #{$screen-desktop}{
+    .furniture-rental{
+        .container-1425{ width:960px;  max-width:100%;}
+       .banner-text{ top:$space40+20;
+                   .banner-heading{ @include font-size(30px); } 
+                  .available{ margin-top:$space40;}
+         }
+         .video-gallery{
+             .title{ padding-bottom:$space30;}
+             .content{ width:auto;
+                 .div{ padding:$space10; }
+             }
+            article{ padding:$space15 $space10;}
+         }
+         
+         .dubble-product{
+             li{
+                 &:last-child{ margin-left:$space15;}
+             }
+         }
+         
+        
+    }
+ 
+}
+

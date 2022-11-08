@@ -1,0 +1,27 @@
+.bed-lamps-information{ padding:$space40 0 $space20;
+    .pull-left{float:$left; width:35%;} 
+    .pull-right{ float:$right; width:62%;
+      a{ color:$color-warning;}
+    }
+    .inner{overflow:hidden; height:600px;}
+    .inner.active{ height:auto;}
+    .title, h2{ @include font-size(20px); color:$color-black; padding-bottom:$space10; font-weight:normal; margin:0;}
+    h3{@include font-size(16px); color:$color-black; font-weight:normal; margin:0;  padding-bottom:$space10;}
+  
+    p, ol li, ul li{@include font-size(13px); color:$color-black; font-family:$robotolight; line-height:$space20+2; padding-bottom:$space15;}
+    ol{ padding-left:$space15; margin:0;}
+    .link-more{ border:1px solid $bg-warning; display:none; font-family:$robotolight; margin-top:$space10; color:$bg-warning; @include font-size(14px); padding:$space5 - 1 $space20; }
+  
+   .price-list{
+       li{ border-bottom:$common-border; padding:$space10 0;
+        &:last-child{ border-bottom:none;}
+        a{ color:$color-gray;}
+       }
+       .title{ font-family:$robotoregular; @include font-size(14px); color:$color-black;
+           p{font-family:$robotoregular; }
+       }
+        p{ display:inline-block; width:75%; vertical-align:top; padding:0;}
+        span{display:inline-block; width:23%;vertical-align:top; text-align:right; @include font-size(14px); }
+   }
+   .lead-bottom{ padding-top:$space15;}
+}  

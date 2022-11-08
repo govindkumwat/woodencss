@@ -1,0 +1,35 @@
+.signup-thanku{ text-align:center;  display:flex; align-items:center;  
+        .text-bottom{padding-top:$space40+20!important;} 
+        #signup_popup_wrapper{width:100%; text-align:center; }  
+}   
+               
+  .thanku-success-msg{ width:100%; text-align:center;  background:$bg-white; @include border-radius(4px); padding:$space30 $space25; margin:0 auto; position:relative;      
+             span{ display:block!important; @include font-size(25px);  font-family:$robotomedium; padding:$space15 0 0!important; text-transform: capitalize}
+             p{@include font-size(15px); color:$color-black; padding:$space10 0; line-height: 25px}
+             a { text-decoration: none; color:$color-white; text-transform:uppercase;  background:$bg-warning; @include font-size(16px); padding:$space5+1 $space15+2; @include border-radius(3px); display:block; margin-top: $space10}
+            .text-bottom{ @include font-size(12px); display:block; color:$color-black; padding:$space15 0;}  
+            .swpmodal-close{ position:absolute; right:$space10; top:$space0; @include font-size(24px); cursor:pointer; padding:0; background:none; color:$color-black;}    
+            .wallet-btn { margin-left: $space5+3px; }
+  }  
+ 
+      
+      
+      .buttonload{ position:relative;
+            &:before{-webkit-animation:2s infinite linear; animation:fa-spin 2s infinite linear;   z-index:1; position:absolute; left:10px; top:11px;  background:url(../images/spinner-solid.png) no-repeat left center; content:''; @include size(18px); display:block;}
+             @keyframes fa-spin{
+                 0%{ @include transform(rotate(0deg));}
+                 100%{@include transform(rotate(359deg));} 
+             }      
+        
+      }   
+     .pincodeloader{ position:absolute; right:$space40; top:2px; 
+       &:before{ background:url(../images/spinner-orange.png) no-repeat left center;} 
+    } 
+     // disabled
+      .button-disabled{ cursor:not-allowed!important; pointer-events:none; opacity:0.7;}
+      
+     
+      //alert mesage
+     .error-block{ @include font-size(12px); color:$color-red; line-height:normal; padding-top:$space5;}    
+     
+ 

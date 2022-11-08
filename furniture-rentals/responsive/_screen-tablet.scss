@@ -1,0 +1,49 @@
+//Home Tablet
+@media #{$screen-tablet}{
+    .furniture-rental{
+          .container-1425{ width:730px;  max-width:100%;}
+          .banner-text{ top:40px;
+             .banner-heading{ margin:0; @include font-size(28px);}
+             .available{ margin-top:$space10;}
+             .consultation-btn{ margin-top:$space10;}
+          } 
+      
+       .heading{@include font-size(20px);}
+        .Cities{ padding:$space25 0;}
+        .city-list{ 
+            p{@include font-size(20px);} 
+        }
+        .services-offered{ margin-top:0;}
+      
+        .service-list{ 
+                  li{padding: 0 $space5;}
+                  span{@include font-size(15px);} 
+              }
+              
+        .how-it-works{
+                  ul {
+                      li{ padding:$space20 0; @include font-size(14px);}
+                  }
+              }
+      
+      
+        .video-gallery{ margin:$space40+10 auto;         
+                   .title{@include font-size(20px); padding-bottom:$space10;}
+                    article{ padding:$space10;}
+                    .content{
+                        span{@include font-size(15px); padding:0;}
+                        p{@include font-size(13px);}
+                       .div{ padding:$space0 $space5;}
+                   }
+                
+              }
+           .slick-next{ right:-16px;}   
+           .slick-prev{ left:-16px;}   
+           
+           .media-coverage{
+               ul{  li { padding:$space20 0;} }
+           }
+    }
+  
+}
+

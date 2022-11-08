@@ -1,0 +1,33 @@
+@media #{$screen-desktop}{
+    .container{ width:960px; margin:0 auto;}
+    .container-1300{width:960px;margin:0 auto;}
+    .container-1200{width:960px;margin:0 auto;}
+    .container-1170{width:960px;margin:0 auto;}
+    @import "responsive/desktop/_header.scss"; 
+    @import "responsive/desktop/_menu.scss";
+    @import "responsive/desktop/_request-call-popup.scss"; 
+}
+@media (max-width:1280px){
+    header{padding-top: 23px;}
+    .disocunt-strip {
+        padding: 8px 14px;
+        i{
+            &.store{vertical-align: top;}
+        }
+    }
+}
+@media (max-width:1024px){
+    .menu{
+        figure {width: 310px;padding:20px 20px 0px 0px;}
+        article{padding:0 1% 20px;margin: 10px 0 0;}
+    }
+    .disocunt-strip {
+        padding:10px 14px;
+        i{ 
+            &.store{
+                width:16px;
+                svg{margin: 0 0px 0 -3px;}
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@media #{$screen-tablet}{
+    .comparewood-banner {
+        article{
+                width: auto;
+        }
+        .heading{
+            font-size: $font-size-30+5;
+        }
+    }
+    .comparewood{
+        .comwood{
+            ul{
+                li{
+                    p{    line-height: normal;
+                        span{
+                            font-size: $font-size-20;
+                        }
+                    }
+                }
+            }
+        }
+        .comtext{
+            ul{
+                width: 30%; text-align: left;
+            }
+        }
+        .woodiden{ padding: $space20 $space25+5; height: inherit; background: #212123;
+            .inside{
+                width: 48%;
+            }
+            section{
+                padding: $space20 $space15;
+                article{
+                        width: auto; text-align: center; float: none;
+                }
+                figure{
+                        float: none; width: 142px;margin: 15px auto 0;
+                }
+            }
+            .title{
+                padding: 0 0 $space10;
+            }
+        }
+    }
+    
+}
+

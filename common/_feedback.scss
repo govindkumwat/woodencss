@@ -1,0 +1,32 @@
+.feedback,.chatbox{
+    display:none; 
+    width: 64px;
+    height: 64px;
+    z-index:99;
+    background:$bg-white;
+    border:1px solid $secondary-400;
+    position:fixed;
+    transform: translatey(115px);
+    bottom: 202px;
+    right:25px;
+    text-align:center; 
+    cursor:pointer;
+    @include transition(all 0.8s);
+    .feedback-text,.chatbox-text{
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 10px;
+        @include font-size(10px);
+        text-transform: uppercase;
+        color: $secondary-600;
+        line-height: 12px;
+        }
+    .chatbox-icon{margin:$space10+4 0 0;}
+} 
+.chatbox{
+    bottom:140px;
+    background:$secondary-200;
+}
+ 

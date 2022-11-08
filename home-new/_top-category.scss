@@ -1,0 +1,32 @@
+.shop-category{
+        padding: $space20*2 $space0;
+        border-bottom: 1px solid #e8e8e8;
+        flex-direction:column;
+        max-width: 1250px;
+        .headingNew{
+            .subheading{text-align: center;}
+        }
+        .top-list{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 30px;
+            grid-column-gap: 20px; 
+                a{    
+                    margin:0 auto;
+                    text-align: center;
+                    &:hover{
+                        .category-name{color: $primary-color;}
+                    }
+                }
+                .category-name{
+                    @include font-size(15px);
+                   line-height:20px;
+                   color:$secondary-color;
+                   font-family:$pangrammedium;
+                   text-transform: capitalize;
+                   letter-spacing:0.03em;
+                   margin:5px auto 0;
+                   transition: 0.3s all ease-in-out;
+                }
+        }
+    }

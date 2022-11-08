@@ -1,0 +1,22 @@
+ 
+//Global 
+   @import "mixin/_global.scss";
+  // @import "finish-icons/*.png";    
+   @import "category/_category-top.scss";
+   @import "category/_filter.scss"; 
+   //filter  
+   @import "category/_sidebar-category.scss";  
+   @import "category/_category-common.scss";
+   @import "category/_category-two.scss";   
+   @import "category/_category-three.scss"; 
+   @import "category/_category-four.scss"; 
+   @import "category/_category-question.scss";
+   @import "category/_whislist.scss";
+   @import "category/_no-reuselt.scss"; 
+   @import "category/responsive/_screen-desktop.scss";
+   @import "category/responsive/_screen-tablet.scss";
+   .footer-common{
+       width:96%;
+       margin:0 auto;
+       display:block;
+   }

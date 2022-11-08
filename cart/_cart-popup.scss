@@ -1,0 +1,39 @@
+.swpmodal-container_i{
+    .cart-popup, .billingaddress{ display:block;}
+     .box-close-gray{ position:absolute; right:8px; top:5px; cursor:pointer;}
+   
+}
+
+.cart-popup{  padding:$space20; display:none; background:$bg-white; width:750px; margin:0 auto; position:relative; 
+  .heading{@include font-size(20px); color:#ea5140; margin-bottom:$space20; display:block;  text-transform:capitalize;}
+  .detail{ @include size(200px); position:relative; border:1px solid $color-warning; @include border-radius(4px); padding:$space10; text-transform:capitalize; @include font-size(14px);}
+  .new-address{ background:#f1f3f6; cursor:pointer; position:relative; text-align:center; height:100px; border:1px dashed $color-warning; @include border-radius(3px); margin-top:$space40+10;
+   input{ position:absolute; left:44%; right:0; top:50%; @include transform(translate(-44%,-50%)); cursor:pointer; @include size(50px); border:1px dashed $color-warning; @include font-size(24px); background:$bg-white;@include border-radius(100%); text-align:center;}
+    &:before{ content:"ADD NEW ADDRESS"; position:absolute; right:25%; top:50%; color:#ea5140; @include transform(translate(-25%,-50%));}
+  }
+ .select-text{  color:$color-warning; position:absolute; bottom:0; left:0; width:100%; padding:$space0 $space30; height:30px;
+    img{ vertical-align:middle; margin-right:$space5;}
+ } 
+ 
+}
+
+
+.billingaddress{ background:$bg-white; width:750px; display:none; padding:$space20  $space30;  position:relative; 
+  .title{ margin-top:0; font-weight:normal; @include font-size(24px); font-family:$robotomedium; color:$color-warning; text-transform:capitalize;}
+    form{ display:flex; justify-content:space-between; flex-wrap:wrap;}
+          .half{ width:49%;  margin-bottom:15px; position: relative;}
+           label{ display: block; font-size: 13px; padding:$space5 - 2;}
+          .form-control{ border:1px solid #d7d7d7; @include border-radius(2px); padding:10px 10px; width: 100%; font-size: 14px;}
+          .location-auto-fill{ position: absolute; background: #efefef; right:0px; top:25px; padding:9px 10px; width: 52%; font-size: 14px;}   
+          .country-code{ .form-control{ padding-left:50px;}
+              span{position: absolute; left: 10px; top:0px; font-size: 14px; top: 30px; border-right:1px solid #efefef; padding-right: 10px}
+          }
+  .bottom-btn{ text-align:center;  margin-top:$space10; width:100%;}
+  [type="button"]{ background:$bg-warning; color:$color-white; @include font-size(14px); text-transform:uppercase; margin:0 $space5 - 3; display:inline-block; vertical-align:middle; padding:$space10 $space30; cursor:pointer; @include border-radius(3px);}
+  .Cancel{ background:$bg-white; border:1px solid $color-warning; color:$color-warning;}
+}
+
+
+
+
+
